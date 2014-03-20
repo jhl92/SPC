@@ -70,7 +70,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel5.setText("How many hours?");
 
-        jLabel6.setText("**PRICE*");
+        jLabel6.setText("**PRICE**");
 
         jButton1.setText("BOOK");
 
