@@ -6,13 +6,19 @@
 
 package spc;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Zarkov
  */
 public class CasablancaGUI extends javax.swing.JFrame
 {
-
+    
+    
+    
+    private final ImageIcon ArrowUp = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"));
+    private final ImageIcon ArrowDown = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDown.png"));
     /**
      * Creates new form CasablancaGUI
      */
@@ -338,15 +344,15 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom6RoomID = new javax.swing.JLabel();
         jLabelRoom6RoomSize = new javax.swing.JLabel();
         jPanelRoom5Day07 = new javax.swing.JPanel();
-        jLabel256 = new javax.swing.JLabel();
+        jLabelRoom5Day07FirstName = new javax.swing.JLabel();
         jLabel257 = new javax.swing.JLabel();
         jLabel258 = new javax.swing.JLabel();
         jPanelRoom5Day01 = new javax.swing.JPanel();
-        jLabel259 = new javax.swing.JLabel();
+        jLabelRoom5Day01FirstName = new javax.swing.JLabel();
         jLabel260 = new javax.swing.JLabel();
         jLabel261 = new javax.swing.JLabel();
         jPanelRoom5Day04 = new javax.swing.JPanel();
-        jLabel262 = new javax.swing.JLabel();
+        jLabelRoom5Day04FirstName = new javax.swing.JLabel();
         jLabel263 = new javax.swing.JLabel();
         jLabel264 = new javax.swing.JLabel();
         jPanelRoom6Day07 = new javax.swing.JPanel();
@@ -354,7 +360,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabel266 = new javax.swing.JLabel();
         jLabel267 = new javax.swing.JLabel();
         jPanelRoom5Day08 = new javax.swing.JPanel();
-        jLabel268 = new javax.swing.JLabel();
+        jLabelRoom5Day08FirstName = new javax.swing.JLabel();
         jLabel269 = new javax.swing.JLabel();
         jLabel270 = new javax.swing.JLabel();
         jPanelRoom6Day08 = new javax.swing.JPanel();
@@ -402,7 +408,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabel302 = new javax.swing.JLabel();
         jLabel303 = new javax.swing.JLabel();
         jPanelRoom5Day05 = new javax.swing.JPanel();
-        jLabel304 = new javax.swing.JLabel();
+        jLabelRoom5Day05FirstName = new javax.swing.JLabel();
         jLabel305 = new javax.swing.JLabel();
         jLabel306 = new javax.swing.JLabel();
         jPanelRoom6Day12 = new javax.swing.JPanel();
@@ -410,11 +416,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabel308 = new javax.swing.JLabel();
         jLabel309 = new javax.swing.JLabel();
         jPanelRoom5Day02 = new javax.swing.JPanel();
-        jLabel310 = new javax.swing.JLabel();
+        jLabelRoom5Day02FirstName = new javax.swing.JLabel();
         jLabel311 = new javax.swing.JLabel();
         jLabel312 = new javax.swing.JLabel();
         jPanelRoom5Day03 = new javax.swing.JPanel();
-        jLabel313 = new javax.swing.JLabel();
+        jLabelRoom5Day03FirstName = new javax.swing.JLabel();
         jLabel314 = new javax.swing.JLabel();
         jLabel315 = new javax.swing.JLabel();
         jPanelRoom6Day01 = new javax.swing.JPanel();
@@ -426,7 +432,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabel320 = new javax.swing.JLabel();
         jLabel321 = new javax.swing.JLabel();
         jPanelRoom5Day06 = new javax.swing.JPanel();
-        jLabel322 = new javax.swing.JLabel();
+        jLabelRoom5Day06FirstName = new javax.swing.JLabel();
         jLabel323 = new javax.swing.JLabel();
         jLabel324 = new javax.swing.JLabel();
         jPanelRoom6Day13 = new javax.swing.JPanel();
@@ -450,7 +456,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabel338 = new javax.swing.JLabel();
         jLabel339 = new javax.swing.JLabel();
         jPanelRoom5Day09 = new javax.swing.JPanel();
-        jLabel340 = new javax.swing.JLabel();
+        jLabelRoom5Day09FirstName = new javax.swing.JLabel();
         jLabel341 = new javax.swing.JLabel();
         jLabel342 = new javax.swing.JLabel();
         jPanelRoom7Day01 = new javax.swing.JPanel();
@@ -575,6 +581,10 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabel432 = new javax.swing.JLabel();
         jButtonFacilities = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButtonRoomArrowUp = new javax.swing.JButton();
+        jButtonRoomArrowDown = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -3483,9 +3493,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day07.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel256.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel256.setText("First Name");
-        jLabel256.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day07FirstName.setText("First Name");
+        jLabelRoom5Day07FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel257.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel257.setText("Last Name");
@@ -3502,7 +3512,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day07Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel257, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel256, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel258, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -3510,7 +3520,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day07Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel256, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day07FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel257, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -3522,9 +3532,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day01.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel259.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel259.setText("First Name");
-        jLabel259.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day01FirstName.setText("First Name");
+        jLabelRoom5Day01FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel260.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel260.setText("Last Name");
@@ -3541,7 +3551,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day01Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel260, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel259, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel261, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -3549,7 +3559,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day01Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel259, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day01FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel260, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -3561,9 +3571,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day04.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel262.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel262.setText("First Name");
-        jLabel262.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day04FirstName.setText("First Name");
+        jLabelRoom5Day04FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel263.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel263.setText("Last Name");
@@ -3580,7 +3590,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day04Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel263, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel262, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel264, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -3588,7 +3598,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day04Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel262, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day04FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel263, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -3639,9 +3649,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day08.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel268.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel268.setText("First Name");
-        jLabel268.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day08FirstName.setText("First Name");
+        jLabelRoom5Day08FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel269.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel269.setText("Last Name");
@@ -3658,7 +3668,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day08Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel269, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel268, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel270, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -3666,7 +3676,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day08Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel268, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day08FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel269, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -4100,9 +4110,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day05.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel304.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel304.setText("First Name");
-        jLabel304.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day05FirstName.setText("First Name");
+        jLabelRoom5Day05FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel305.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel305.setText("Last Name");
@@ -4119,7 +4129,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day05Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel305, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel304, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel306, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -4127,7 +4137,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day05Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel304, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day05FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel305, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -4178,9 +4188,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day02.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel310.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel310.setText("First Name");
-        jLabel310.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day02FirstName.setText("First Name");
+        jLabelRoom5Day02FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel311.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel311.setText("Last Name");
@@ -4197,7 +4207,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day02Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel311, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel310, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel312, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -4205,7 +4215,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day02Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day02FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel311, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -4217,9 +4227,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day03.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel313.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel313.setText("First Name");
-        jLabel313.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day03FirstName.setText("First Name");
+        jLabelRoom5Day03FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel314.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel314.setText("Last Name");
@@ -4236,7 +4246,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day03Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel314, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel313, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel315, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -4244,7 +4254,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day03Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel313, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day03FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel314, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -4334,9 +4344,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day06.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel322.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel322.setText("First Name");
-        jLabel322.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day06FirstName.setText("First Name");
+        jLabelRoom5Day06FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel323.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel323.setText("Last Name");
@@ -4353,7 +4363,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day06Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel323, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel322, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel324, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -4361,7 +4371,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day06Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel322, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day06FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel323, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -4568,9 +4578,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day09.setPreferredSize(new java.awt.Dimension(60, 60));
 
-        jLabel340.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel340.setText("First Name");
-        jLabel340.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day09FirstName.setText("First Name");
+        jLabelRoom5Day09FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabel341.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel341.setText("Last Name");
@@ -4587,7 +4597,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom5Day09Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel341, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel340, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel342, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
@@ -4595,7 +4605,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day09Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel340, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day09FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel341, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
@@ -5779,6 +5789,34 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
+        jButtonRoomArrowUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"))); // NOI18N
+        jButtonRoomArrowUp.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButtonRoomArrowUp.setPreferredSize(new java.awt.Dimension(41, 26));
+        jButtonRoomArrowUp.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonRoomArrowUpActionPerformed(evt);
+            }
+        });
+
+        jButtonRoomArrowDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDown.png"))); // NOI18N
+        jButtonRoomArrowDown.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButtonRoomArrowDown.setPreferredSize(new java.awt.Dimension(41, 26));
+        jButtonRoomArrowDown.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonRoomArrowDownActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("<html>Previous<br>8 Rooms</html>");
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("<html>Next<br>8 Rooms</html>");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -5799,12 +5837,8 @@ public class CasablancaGUI extends javax.swing.JFrame
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
+                        .addGap(10, 10, 10)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jPanelRoom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0)
-                                .addComponent(jPanelRoom1Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jPanelRoom2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5831,9 +5865,21 @@ public class CasablancaGUI extends javax.swing.JFrame
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom7Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButtonRoomArrowDown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
-                                .addComponent(jPanelRoom8Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jPanelRoom8Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jButtonRoomArrowUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanelRoom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
+                                .addComponent(jPanelRoom1Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6085,7 +6131,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jButtonDeleteBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
+                .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6101,7 +6147,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanelRoom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelRoom1Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelRoom1Day02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6116,8 +6162,12 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jPanelRoom1Day11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelRoom1Day12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelRoom1Day13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom1Day14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, 0)
+                    .addComponent(jPanelRoom1Day14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButtonRoomArrowUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4)
+                        .addGap(0, 0, 0)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanelRoom2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelRoom2Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6220,22 +6270,27 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jPanelRoom7Day13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelRoom7Day14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day07, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day08, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day09, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelRoom8Day14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonRoomArrowDown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day07, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day08, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day09, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanelRoom8Day14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -6270,33 +6325,46 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonDeleteBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonDeleteBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonDeleteBookingActionPerformed
-        
+        //Delete a booking, but how??
+        //This button may be obsolete, as we think about implementing the delete-booking-option into the detail-window of each cell in mainscreen. 
     }//GEN-LAST:event_jButtonDeleteBookingActionPerformed
 
     private void jButtonBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingActionPerformed
-        
+        //Open booking-jDialog-window to perform a booking.
+        //This button could be implemented somehow with the Find/Search-button.
     }//GEN-LAST:event_jButtonBookingActionPerformed
 
     private void jButtonSearchActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchActionPerformed
-        
+        //Find/Search for different data in database.
+        //Data to be searched for, could be: RoomID, Customer-names, Dates, Availabilities/booked/reserved, BookingID, etc.
     }//GEN-LAST:event_jButtonSearchActionPerformed
 
     private void jButtonEditBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonEditBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonEditBookingActionPerformed
-        
+        //Change data like start/end dates, names or roomsize in an existing booking/reservation.
     }//GEN-LAST:event_jButtonEditBookingActionPerformed
 
     private void jButtonFacilitiesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonFacilitiesActionPerformed
     {//GEN-HEADEREND:event_jButtonFacilitiesActionPerformed
-        
+        //Opens facility window with the possibility of viewing all booked times in all facilities.
     }//GEN-LAST:event_jButtonFacilitiesActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        
+        //I dont know what the hell this button is for yet, but Im sure we will come up with something 1-2 days before the hand-in...
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButtonRoomArrowUpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomArrowUpActionPerformed
+    {//GEN-HEADEREND:event_jButtonRoomArrowUpActionPerformed
+        //Show the 8 rooms below shown Room1. If below 0 (zero) show RoomID's 001-008.
+    }//GEN-LAST:event_jButtonRoomArrowUpActionPerformed
+
+    private void jButtonRoomArrowDownActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomArrowDownActionPerformed
+    {//GEN-HEADEREND:event_jButtonRoomArrowDownActionPerformed
+        //Show the next 8 rooms higher than shown Room8. If higher than maximum room (RoomID 104) then show RoomID's 097-104.
+    }//GEN-LAST:event_jButtonRoomArrowDownActionPerformed
 
     /**
      * @param args the command line arguments
@@ -6349,6 +6417,8 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonDeleteBooking;
     private javax.swing.JButton jButtonEditBooking;
     private javax.swing.JButton jButtonFacilities;
+    private javax.swing.JButton jButtonRoomArrowDown;
+    private javax.swing.JButton jButtonRoomArrowUp;
     private javax.swing.JButton jButtonSearch;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel100;
@@ -6468,19 +6538,15 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel250;
     private javax.swing.JLabel jLabel251;
     private javax.swing.JLabel jLabel252;
-    private javax.swing.JLabel jLabel256;
     private javax.swing.JLabel jLabel257;
     private javax.swing.JLabel jLabel258;
-    private javax.swing.JLabel jLabel259;
     private javax.swing.JLabel jLabel260;
     private javax.swing.JLabel jLabel261;
-    private javax.swing.JLabel jLabel262;
     private javax.swing.JLabel jLabel263;
     private javax.swing.JLabel jLabel264;
     private javax.swing.JLabel jLabel265;
     private javax.swing.JLabel jLabel266;
     private javax.swing.JLabel jLabel267;
-    private javax.swing.JLabel jLabel268;
     private javax.swing.JLabel jLabel269;
     private javax.swing.JLabel jLabel270;
     private javax.swing.JLabel jLabel271;
@@ -6514,16 +6580,13 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel301;
     private javax.swing.JLabel jLabel302;
     private javax.swing.JLabel jLabel303;
-    private javax.swing.JLabel jLabel304;
     private javax.swing.JLabel jLabel305;
     private javax.swing.JLabel jLabel306;
     private javax.swing.JLabel jLabel307;
     private javax.swing.JLabel jLabel308;
     private javax.swing.JLabel jLabel309;
-    private javax.swing.JLabel jLabel310;
     private javax.swing.JLabel jLabel311;
     private javax.swing.JLabel jLabel312;
-    private javax.swing.JLabel jLabel313;
     private javax.swing.JLabel jLabel314;
     private javax.swing.JLabel jLabel315;
     private javax.swing.JLabel jLabel316;
@@ -6532,7 +6595,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel319;
     private javax.swing.JLabel jLabel320;
     private javax.swing.JLabel jLabel321;
-    private javax.swing.JLabel jLabel322;
     private javax.swing.JLabel jLabel323;
     private javax.swing.JLabel jLabel324;
     private javax.swing.JLabel jLabel325;
@@ -6550,7 +6612,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel337;
     private javax.swing.JLabel jLabel338;
     private javax.swing.JLabel jLabel339;
-    private javax.swing.JLabel jLabel340;
     private javax.swing.JLabel jLabel341;
     private javax.swing.JLabel jLabel342;
     private javax.swing.JLabel jLabel343;
@@ -6604,6 +6665,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel397;
     private javax.swing.JLabel jLabel398;
     private javax.swing.JLabel jLabel399;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel400;
     private javax.swing.JLabel jLabel401;
     private javax.swing.JLabel jLabel402;
@@ -6637,6 +6699,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel430;
     private javax.swing.JLabel jLabel431;
     private javax.swing.JLabel jLabel432;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
@@ -6750,6 +6813,15 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelRoom4Day09FirstName;
     private javax.swing.JLabel jLabelRoom4RoomID;
     private javax.swing.JLabel jLabelRoom4RoomSize;
+    private javax.swing.JLabel jLabelRoom5Day01FirstName;
+    private javax.swing.JLabel jLabelRoom5Day02FirstName;
+    private javax.swing.JLabel jLabelRoom5Day03FirstName;
+    private javax.swing.JLabel jLabelRoom5Day04FirstName;
+    private javax.swing.JLabel jLabelRoom5Day05FirstName;
+    private javax.swing.JLabel jLabelRoom5Day06FirstName;
+    private javax.swing.JLabel jLabelRoom5Day07FirstName;
+    private javax.swing.JLabel jLabelRoom5Day08FirstName;
+    private javax.swing.JLabel jLabelRoom5Day09FirstName;
     private javax.swing.JLabel jLabelRoom5RoomID;
     private javax.swing.JLabel jLabelRoom5RoomSize;
     private javax.swing.JLabel jLabelRoom6RoomID;
