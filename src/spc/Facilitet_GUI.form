@@ -25,7 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <Component id="jTabbedPane1" pref="821" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -92,11 +92,6 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="101" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -106,12 +101,17 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="345" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace pref="91" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="101" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -146,9 +146,9 @@
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
                       <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -241,7 +241,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel19">
               <Properties>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;Badminton is a racquet sport usually played individual against eachother &lt;br&gt;but can be player 2v2. Bring your sweaty pants &lt;br&gt; and prepare for loads of fun and action in a game of strength, speed and skills. &lt;br&gt; Our highly experienced instructors are always available for hire&lt;/html&gt;"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;Badminton is a racquet sport usually played individually against each other &lt;br&gt;but can also be a 2v2 team sport. Bring your sweaty pants &lt;br&gt; and prepare for loads of fun and action in a game of strength, speed and skills. &lt;br&gt; Our highly experienced instructors are always available for hire&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -306,7 +306,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel24">
               <Properties>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;Our Fitness room allows you to train your body exactly how &lt;br&gt; you want it. "/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;Our Fitness room allows you to train your body exactly how you want it.&lt;br&gt; The fitness center has all kinds of equipment so there is something for everyone."/>
               </Properties>
             </Component>
           </SubComponents>
@@ -471,7 +471,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="345" max="32767" attributes="0"/>
+                      <EmptySpace pref="336" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
@@ -502,7 +502,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel21">
               <Properties>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;We have placed tabletennis in the hall, where you can go play without booking required. &lt;br&gt; A classic fun little activity for people at all ages."/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;We have placed a tabletennis in the hall, where you can go and play without booking first. &lt;br&gt; A classic fun little activity for people at all ages."/>
               </Properties>
             </Component>
           </SubComponents>
