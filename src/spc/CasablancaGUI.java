@@ -17,8 +17,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     
     
     
-    private final ImageIcon ArrowUp = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"));
-    private final ImageIcon ArrowDown = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDown.png"));
     /**
      * Creates new form CasablancaGUI
      */
@@ -109,14 +107,14 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom1Day02FirstName = new javax.swing.JLabel();
         jLabelRoom1Day02LastName = new javax.swing.JLabel();
         jLabelRoom1Day02Availability = new javax.swing.JLabel();
-        jPanelRoom1Day04 = new javax.swing.JPanel();
-        jLabelRoom1Day04FirstName = new javax.swing.JLabel();
-        jLabelRoom1Day04LastName = new javax.swing.JLabel();
-        jLabelRoom1Day04Availability = new javax.swing.JLabel();
         jPanelRoom1Day03 = new javax.swing.JPanel();
         jLabelRoom1Day03FirstName = new javax.swing.JLabel();
         jLabelRoom1Day03LastName = new javax.swing.JLabel();
         jLabelRoom1Day03Availability = new javax.swing.JLabel();
+        jPanelRoom1Day04 = new javax.swing.JPanel();
+        jLabelRoom1Day04FirstName = new javax.swing.JLabel();
+        jLabelRoom1Day04LastName = new javax.swing.JLabel();
+        jLabelRoom1Day04Availability = new javax.swing.JLabel();
         jPanelRoom1Day05 = new javax.swing.JPanel();
         jLabelRoom1Day05FirstName = new javax.swing.JLabel();
         jLabelRoom1Day05LastName = new javax.swing.JLabel();
@@ -124,39 +122,39 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom1Day06 = new javax.swing.JPanel();
         jLabelRoom1Day06FirstName = new javax.swing.JLabel();
         jLabelRoom1Day06LastName = new javax.swing.JLabel();
-        jLabel92 = new javax.swing.JLabel();
+        jLabelRoom1Day06Availability = new javax.swing.JLabel();
         jPanelRoom1Day07 = new javax.swing.JPanel();
         jLabelRoom1Day07FirstName = new javax.swing.JLabel();
         jLabelRoom1Day07LastName = new javax.swing.JLabel();
-        jLabel95 = new javax.swing.JLabel();
+        jLabelRoom1Day07Availability = new javax.swing.JLabel();
         jPanelRoom1Day08 = new javax.swing.JPanel();
         jLabelRoom1Day08FirstName = new javax.swing.JLabel();
         jLabelRoom1Day08LastName = new javax.swing.JLabel();
-        jLabel98 = new javax.swing.JLabel();
+        jLabelRoom1Day08Availability = new javax.swing.JLabel();
         jPanelRoom1Day09 = new javax.swing.JPanel();
         jLabelRoom1Day09FirstName = new javax.swing.JLabel();
         jLabelRoom1Day09LastName = new javax.swing.JLabel();
-        jLabel101 = new javax.swing.JLabel();
+        jLabelRoom1Day09Availability = new javax.swing.JLabel();
         jPanelRoom1Day10 = new javax.swing.JPanel();
-        jLabel102 = new javax.swing.JLabel();
+        jLabelRoom1Day10FirstName = new javax.swing.JLabel();
         jLabelRoom1Day10LastName = new javax.swing.JLabel();
-        jLabel104 = new javax.swing.JLabel();
+        jLabelRoom1Day10Availability = new javax.swing.JLabel();
         jPanelRoom1Day11 = new javax.swing.JPanel();
-        jLabel105 = new javax.swing.JLabel();
+        jLabelRoom1Day11FirstName = new javax.swing.JLabel();
         jLabelRoom1Day11LastName = new javax.swing.JLabel();
-        jLabel107 = new javax.swing.JLabel();
+        jLabelRoom1Day11Availability = new javax.swing.JLabel();
         jPanelRoom1Day12 = new javax.swing.JPanel();
-        jLabel108 = new javax.swing.JLabel();
+        jLabelRoom1Day12FirstName = new javax.swing.JLabel();
         jLabelRoom1Day12LastName = new javax.swing.JLabel();
-        jLabel110 = new javax.swing.JLabel();
+        jLabelRoom1Day12Availability = new javax.swing.JLabel();
         jPanelRoom1Day13 = new javax.swing.JPanel();
-        jLabel111 = new javax.swing.JLabel();
+        jLabelRoom1Day13FirstName = new javax.swing.JLabel();
         jLabelRoom1Day13LastName = new javax.swing.JLabel();
-        jLabel113 = new javax.swing.JLabel();
+        jLabelRoom1Day13Availability = new javax.swing.JLabel();
         jPanelRoom1Day14 = new javax.swing.JPanel();
-        jLabel114 = new javax.swing.JLabel();
+        jLabelRoom1Day14FirstName = new javax.swing.JLabel();
         jLabelRoom1Day14LastName = new javax.swing.JLabel();
-        jLabel116 = new javax.swing.JLabel();
+        jLabelRoom1Day14Availability = new javax.swing.JLabel();
         jPanelRoom2 = new javax.swing.JPanel();
         jLabelNoChange2 = new javax.swing.JLabel();
         jLabelRoom2RoomID = new javax.swing.JLabel();
@@ -164,59 +162,59 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom2Day01 = new javax.swing.JPanel();
         jLabelRoom2Day01FirstName = new javax.swing.JLabel();
         jLabelRoom2Day01LastName = new javax.swing.JLabel();
-        jLabel121 = new javax.swing.JLabel();
+        jLabelRoom2Day01Availability = new javax.swing.JLabel();
         jPanelRoom2Day02 = new javax.swing.JPanel();
         jLabelRoom2Day02FirstName = new javax.swing.JLabel();
         jLabelRoom2Day02LastName = new javax.swing.JLabel();
-        jLabel124 = new javax.swing.JLabel();
+        jLabelRoom2Day02Availability = new javax.swing.JLabel();
         jPanelRoom2Day03 = new javax.swing.JPanel();
         jLabelRoom2Day03FirstName = new javax.swing.JLabel();
         jLabelRoom2Day03LastName = new javax.swing.JLabel();
-        jLabel127 = new javax.swing.JLabel();
+        jLabelRoom2Day03Availability = new javax.swing.JLabel();
         jPanelRoom2Day04 = new javax.swing.JPanel();
         jLabelRoom2Day04FirstName = new javax.swing.JLabel();
         jLabelRoom2Day04LastName = new javax.swing.JLabel();
-        jLabel130 = new javax.swing.JLabel();
+        jLabelRoom2Day04Availability = new javax.swing.JLabel();
         jPanelRoom2Day05 = new javax.swing.JPanel();
         jLabelRoom2Day05FirstName = new javax.swing.JLabel();
         jLabelRoom2Day05LastName = new javax.swing.JLabel();
-        jLabel133 = new javax.swing.JLabel();
+        jLabelRoom2Day05Availability = new javax.swing.JLabel();
         jPanelRoom2Day06 = new javax.swing.JPanel();
         jLabelRoom2Day06FirstName = new javax.swing.JLabel();
         jLabelRoom2Day06LastName = new javax.swing.JLabel();
-        jLabel136 = new javax.swing.JLabel();
+        jLabelRoom2Day06Availability = new javax.swing.JLabel();
         jPanelRoom2Day07 = new javax.swing.JPanel();
         jLabelRoom2Day07FirstName = new javax.swing.JLabel();
         jLabelRoom2Day07LastName = new javax.swing.JLabel();
-        jLabel139 = new javax.swing.JLabel();
+        jLabelRoom2Day07Availability = new javax.swing.JLabel();
         jPanelRoom2Day08 = new javax.swing.JPanel();
         jLabelRoom2Day08FirstName = new javax.swing.JLabel();
         jLabelRoom2Day08LastName = new javax.swing.JLabel();
-        jLabel142 = new javax.swing.JLabel();
+        jLabelRoom2Day08Availability = new javax.swing.JLabel();
         jPanelRoom2Day09 = new javax.swing.JPanel();
         jLabelRoom2Day09FirstName = new javax.swing.JLabel();
         jLabelRoom2Day09LastName = new javax.swing.JLabel();
-        jLabel145 = new javax.swing.JLabel();
+        jLabelRoom2Day09Availability = new javax.swing.JLabel();
         jPanelRoom2Day10 = new javax.swing.JPanel();
-        jLabel146 = new javax.swing.JLabel();
+        jLabelRoom2Day10FirstName = new javax.swing.JLabel();
         jLabelRoom2Day10LastName = new javax.swing.JLabel();
-        jLabel148 = new javax.swing.JLabel();
+        jLabelRoom2Day10Availability = new javax.swing.JLabel();
         jPanelRoom2Day11 = new javax.swing.JPanel();
-        jLabel149 = new javax.swing.JLabel();
+        jLabelRoom2Day11FirstName = new javax.swing.JLabel();
         jLabelRoom2Day11LastName = new javax.swing.JLabel();
-        jLabel151 = new javax.swing.JLabel();
+        jLabelRoom2Day11Availability = new javax.swing.JLabel();
         jPanelRoom2Day12 = new javax.swing.JPanel();
-        jLabel152 = new javax.swing.JLabel();
+        jLabelRoom2Day12FirstName = new javax.swing.JLabel();
         jLabelRoom2Day12LastName = new javax.swing.JLabel();
-        jLabel154 = new javax.swing.JLabel();
+        jLabelRoom2Day12Availability = new javax.swing.JLabel();
         jPanelRoom2Day13 = new javax.swing.JPanel();
-        jLabel155 = new javax.swing.JLabel();
+        jLabelRoom2Day13FirstName = new javax.swing.JLabel();
         jLabelRoom2Day13LastName = new javax.swing.JLabel();
-        jLabel157 = new javax.swing.JLabel();
+        jLabelRoom2Day13Availability = new javax.swing.JLabel();
         jPanelRoom2Day14 = new javax.swing.JPanel();
-        jLabel158 = new javax.swing.JLabel();
+        jLabelRoom2Day14FirstName = new javax.swing.JLabel();
         jLabelRoom2Day14LastName = new javax.swing.JLabel();
-        jLabel160 = new javax.swing.JLabel();
+        jLabelRoom2Day14Availability = new javax.swing.JLabel();
         jPanelRoom3 = new javax.swing.JPanel();
         jLabelNoChange3 = new javax.swing.JLabel();
         jLabelRoom3RoomID = new javax.swing.JLabel();
@@ -224,59 +222,59 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom3Day01 = new javax.swing.JPanel();
         jLabelRoom3Day01FirstName = new javax.swing.JLabel();
         jLabelRoom3Day01LastName = new javax.swing.JLabel();
-        jLabel171 = new javax.swing.JLabel();
+        jLabelRoom3Day01Availability = new javax.swing.JLabel();
         jPanelRoom3Day02 = new javax.swing.JPanel();
         jLabelRoom3Day02FirstName = new javax.swing.JLabel();
         jLabelRoom3Day02LastName = new javax.swing.JLabel();
-        jLabel174 = new javax.swing.JLabel();
+        jLabelRoom3Day02Availability = new javax.swing.JLabel();
         jPanelRoom3Day03 = new javax.swing.JPanel();
         jLabelRoom3Day03FirstName = new javax.swing.JLabel();
         jLabelRoom3Day03LastName = new javax.swing.JLabel();
-        jLabel177 = new javax.swing.JLabel();
+        jLabelRoom3Day03Availability = new javax.swing.JLabel();
         jPanelRoom3Day04 = new javax.swing.JPanel();
         jLabelRoom3Day04FirstName = new javax.swing.JLabel();
         jLabelRoom3Day04LastName = new javax.swing.JLabel();
-        jLabel180 = new javax.swing.JLabel();
+        jLabelRoom3Day04Availability = new javax.swing.JLabel();
         jPanelRoom3Day05 = new javax.swing.JPanel();
         jLabelRoom3Day05FirstName = new javax.swing.JLabel();
         jLabelRoom3Day05LastName = new javax.swing.JLabel();
-        jLabel183 = new javax.swing.JLabel();
+        jLabelRoom3Day05Availability = new javax.swing.JLabel();
         jPanelRoom3Day06 = new javax.swing.JPanel();
         jLabelRoom3Day06FirstName = new javax.swing.JLabel();
         jLabelRoom3Day06LastName = new javax.swing.JLabel();
-        jLabel186 = new javax.swing.JLabel();
+        jLabelRoom3Day06Availability = new javax.swing.JLabel();
         jPanelRoom3Day07 = new javax.swing.JPanel();
         jLabelRoom3Day07FirstName = new javax.swing.JLabel();
         jLabelRoom3Day07LastName = new javax.swing.JLabel();
-        jLabel189 = new javax.swing.JLabel();
+        jLabelRoom3Day07Availability = new javax.swing.JLabel();
         jPanelRoom3Day10 = new javax.swing.JPanel();
-        jLabel223 = new javax.swing.JLabel();
+        jLabelRoom3Day10FirstName = new javax.swing.JLabel();
         jLabelRoom3Day10LastName = new javax.swing.JLabel();
-        jLabel225 = new javax.swing.JLabel();
+        jLabelRoom3Day10Availability = new javax.swing.JLabel();
         jPanelRoom3Day08 = new javax.swing.JPanel();
         jLabelRoom3Day08FirstName = new javax.swing.JLabel();
         jLabelRoom3Day08LastName = new javax.swing.JLabel();
-        jLabel192 = new javax.swing.JLabel();
+        jLabelRoom3Day08Availability = new javax.swing.JLabel();
         jPanelRoom3Day09 = new javax.swing.JPanel();
         jLabelRoom3Day09FirstName = new javax.swing.JLabel();
         jLabelRoom3Day09LastName = new javax.swing.JLabel();
-        jLabel195 = new javax.swing.JLabel();
+        jLabelRoom3Day09Availability = new javax.swing.JLabel();
         jPanelRoom3Day11 = new javax.swing.JPanel();
-        jLabel226 = new javax.swing.JLabel();
+        jLabelRoom3Day11FirstName = new javax.swing.JLabel();
         jLabelRoom3Day11LastName = new javax.swing.JLabel();
-        jLabel228 = new javax.swing.JLabel();
+        jLabelRoom3Day11Availability = new javax.swing.JLabel();
         jPanelRoom3Day12 = new javax.swing.JPanel();
-        jLabel229 = new javax.swing.JLabel();
+        jLabelRoom3Day12FirstName = new javax.swing.JLabel();
         jLabelRoom3Day12LastName = new javax.swing.JLabel();
-        jLabel231 = new javax.swing.JLabel();
+        jLabelRoom3Day12Availability = new javax.swing.JLabel();
         jPanelRoom3Day13 = new javax.swing.JPanel();
-        jLabel232 = new javax.swing.JLabel();
+        jLabelRoom3Day13FirstName = new javax.swing.JLabel();
         jLabelRoom3Day13LastName = new javax.swing.JLabel();
-        jLabel234 = new javax.swing.JLabel();
+        jLabelRoom3Day13Availability = new javax.swing.JLabel();
         jPanelRoom3Day14 = new javax.swing.JPanel();
-        jLabel235 = new javax.swing.JLabel();
+        jLabelRoom3Day14FirstName = new javax.swing.JLabel();
         jLabelRoom3Day14LastName = new javax.swing.JLabel();
-        jLabel237 = new javax.swing.JLabel();
+        jLabelRoom3Day14Availability = new javax.swing.JLabel();
         jPanelRoom4 = new javax.swing.JPanel();
         jLabelNoChange4 = new javax.swing.JLabel();
         jLabelRoom4RoomID = new javax.swing.JLabel();
@@ -284,59 +282,59 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom4Day01 = new javax.swing.JPanel();
         jLabelRoom4Day01FirstName = new javax.swing.JLabel();
         jLabelRoom4Day01LastName = new javax.swing.JLabel();
-        jLabel198 = new javax.swing.JLabel();
+        jLabelRoom4Day01Availability = new javax.swing.JLabel();
         jPanelRoom4Day02 = new javax.swing.JPanel();
         jLabelRoom4Day02FirstName = new javax.swing.JLabel();
         jLabelRoom4Day02LastName = new javax.swing.JLabel();
-        jLabel201 = new javax.swing.JLabel();
+        jLabelRoom4Day02Availability = new javax.swing.JLabel();
         jPanelRoom4Day03 = new javax.swing.JPanel();
         jLabelRoom4Day03FirstName = new javax.swing.JLabel();
         jLabelRoom4Day03LastName = new javax.swing.JLabel();
-        jLabel204 = new javax.swing.JLabel();
+        jLabelRoom4Day03Availability = new javax.swing.JLabel();
         jPanelRoom4Day04 = new javax.swing.JPanel();
         jLabelRoom4Day04FirstName = new javax.swing.JLabel();
         jLabelRoom4Day04LastName = new javax.swing.JLabel();
-        jLabel207 = new javax.swing.JLabel();
+        jLabelRoom4Day04Availability = new javax.swing.JLabel();
         jPanelRoom4Day05 = new javax.swing.JPanel();
         jLabelRoom4Day05FirstName = new javax.swing.JLabel();
         jLabelRoom4Day05LastName = new javax.swing.JLabel();
-        jLabel210 = new javax.swing.JLabel();
+        jLabelRoom4Day05Availability = new javax.swing.JLabel();
         jPanelRoom4Day06 = new javax.swing.JPanel();
         jLabelRoom4Day06FirstName = new javax.swing.JLabel();
         jLabelRoom4Day06LastName = new javax.swing.JLabel();
-        jLabel213 = new javax.swing.JLabel();
+        jLabelRoom4Day06Availability = new javax.swing.JLabel();
         jPanelRoom4Day07 = new javax.swing.JPanel();
         jLabelRoom4Day07FirstName = new javax.swing.JLabel();
         jLabelRoom4Day07LastName = new javax.swing.JLabel();
-        jLabel216 = new javax.swing.JLabel();
+        jLabelRoom4Day07Availability = new javax.swing.JLabel();
         jPanelRoom4Day08 = new javax.swing.JPanel();
         jLabelRoom4Day08FirstName = new javax.swing.JLabel();
         jLabelRoom4Day08LastName = new javax.swing.JLabel();
-        jLabel219 = new javax.swing.JLabel();
+        jLabelRoom4Day08Availability = new javax.swing.JLabel();
         jPanelRoom4Day09 = new javax.swing.JPanel();
         jLabelRoom4Day09FirstName = new javax.swing.JLabel();
         jLabelRoom4Day09LastName = new javax.swing.JLabel();
-        jLabel222 = new javax.swing.JLabel();
+        jLabelRoom4Day09Availability = new javax.swing.JLabel();
         jPanelRoom4Day14 = new javax.swing.JPanel();
-        jLabel238 = new javax.swing.JLabel();
-        jLabel239 = new javax.swing.JLabel();
-        jLabel240 = new javax.swing.JLabel();
+        jLabelRoom4Day14FirstName = new javax.swing.JLabel();
+        jLabelRoom4Day14LastName = new javax.swing.JLabel();
+        jLabelRoom4Day14Availability = new javax.swing.JLabel();
         jPanelRoom4Day13 = new javax.swing.JPanel();
-        jLabel241 = new javax.swing.JLabel();
-        jLabel242 = new javax.swing.JLabel();
-        jLabel243 = new javax.swing.JLabel();
+        jLabelRoom4Day13FirstName = new javax.swing.JLabel();
+        jLabelRoom4Day13LastName = new javax.swing.JLabel();
+        jLabelRoom4Day13Availability = new javax.swing.JLabel();
         jPanelRoom4Day12 = new javax.swing.JPanel();
-        jLabel244 = new javax.swing.JLabel();
-        jLabel245 = new javax.swing.JLabel();
-        jLabel246 = new javax.swing.JLabel();
+        jLabelRoom4Day12FirstName = new javax.swing.JLabel();
+        jLabelRoom4Day12LastName = new javax.swing.JLabel();
+        jLabelRoom4Day12Availability = new javax.swing.JLabel();
         jPanelRoom4Day11 = new javax.swing.JPanel();
-        jLabel247 = new javax.swing.JLabel();
-        jLabel248 = new javax.swing.JLabel();
-        jLabel249 = new javax.swing.JLabel();
+        jLabelRoom4Day11FirstName = new javax.swing.JLabel();
+        jLabelRoom4Day11LastName = new javax.swing.JLabel();
+        jLabelRoom4Day11Availability = new javax.swing.JLabel();
         jPanelRoom4Day10 = new javax.swing.JPanel();
-        jLabel250 = new javax.swing.JLabel();
-        jLabel251 = new javax.swing.JLabel();
-        jLabel252 = new javax.swing.JLabel();
+        jLabelRoom4Day10FirstName = new javax.swing.JLabel();
+        jLabelRoom4Day10LastName = new javax.swing.JLabel();
+        jLabelRoom4Day10Availability = new javax.swing.JLabel();
         jPanelRoom5 = new javax.swing.JPanel();
         jLabelNoChange5 = new javax.swing.JLabel();
         jLabelRoom5RoomID = new javax.swing.JLabel();
@@ -344,239 +342,239 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day01 = new javax.swing.JPanel();
         jLabelRoom5Day01FirstName = new javax.swing.JLabel();
         jLabelRoom5Day01LastName = new javax.swing.JLabel();
-        jLabel261 = new javax.swing.JLabel();
+        jLabelRoom5Day01Availability = new javax.swing.JLabel();
         jPanelRoom5Day02 = new javax.swing.JPanel();
         jLabelRoom5Day02FirstName = new javax.swing.JLabel();
         jLabelRoom5Day02LastName = new javax.swing.JLabel();
-        jLabel312 = new javax.swing.JLabel();
+        jLabelRoom5Day02Availability = new javax.swing.JLabel();
         jPanelRoom5Day03 = new javax.swing.JPanel();
         jLabelRoom5Day03FirstName = new javax.swing.JLabel();
         jLabelRoom5Day03LastName = new javax.swing.JLabel();
-        jLabel315 = new javax.swing.JLabel();
+        jLabelRoom5Day03Availability = new javax.swing.JLabel();
         jPanelRoom5Day04 = new javax.swing.JPanel();
         jLabelRoom5Day04FirstName = new javax.swing.JLabel();
         jLabelRoom5Day04LastName = new javax.swing.JLabel();
-        jLabel264 = new javax.swing.JLabel();
+        jLabelRoom5Day04Availability = new javax.swing.JLabel();
         jPanelRoom5Day05 = new javax.swing.JPanel();
         jLabelRoom5Day05FirstName = new javax.swing.JLabel();
         jLabelRoom5Day05LastName = new javax.swing.JLabel();
-        jLabel306 = new javax.swing.JLabel();
+        jLabelRoom5Day05Availability = new javax.swing.JLabel();
         jPanelRoom5Day06 = new javax.swing.JPanel();
         jLabelRoom5Day06FirstName = new javax.swing.JLabel();
         jLabelRoom5Day06LastName = new javax.swing.JLabel();
-        jLabel324 = new javax.swing.JLabel();
+        jLabelRoom5Day06Availability = new javax.swing.JLabel();
         jPanelRoom5Day07 = new javax.swing.JPanel();
         jLabelRoom5Day07FirstName = new javax.swing.JLabel();
         jLabelRoom5Day07LastName = new javax.swing.JLabel();
-        jLabel258 = new javax.swing.JLabel();
+        jLabelRoom5Day07Availability = new javax.swing.JLabel();
         jPanelRoom5Day08 = new javax.swing.JPanel();
         jLabelRoom5Day08FirstName = new javax.swing.JLabel();
         jLabelRoom5Day08LastName = new javax.swing.JLabel();
-        jLabel270 = new javax.swing.JLabel();
+        jLabelRoom5Day08Availability = new javax.swing.JLabel();
         jPanelRoom5Day09 = new javax.swing.JPanel();
         jLabelRoom5Day09FirstName = new javax.swing.JLabel();
         jLabelRoom5Day09LastName = new javax.swing.JLabel();
-        jLabel342 = new javax.swing.JLabel();
+        jLabelRoom5Day09Availability = new javax.swing.JLabel();
         jPanelRoom5Day10 = new javax.swing.JPanel();
-        jLabel319 = new javax.swing.JLabel();
-        jLabel320 = new javax.swing.JLabel();
-        jLabel321 = new javax.swing.JLabel();
+        jLabelRoom5Day10FirstName = new javax.swing.JLabel();
+        jLabelRoom5Day10LastName = new javax.swing.JLabel();
+        jLabelRoom5Day10Availability = new javax.swing.JLabel();
         jPanelRoom5Day11 = new javax.swing.JPanel();
-        jLabel298 = new javax.swing.JLabel();
-        jLabel299 = new javax.swing.JLabel();
-        jLabel300 = new javax.swing.JLabel();
+        jLabelRoom5Day11FirstName = new javax.swing.JLabel();
+        jLabelRoom5Day11LastName = new javax.swing.JLabel();
+        jLabelRoom5Day11Availability = new javax.swing.JLabel();
         jPanelRoom5Day12 = new javax.swing.JPanel();
-        jLabel286 = new javax.swing.JLabel();
-        jLabel287 = new javax.swing.JLabel();
-        jLabel288 = new javax.swing.JLabel();
+        jLabelRoom5Day12FirstName = new javax.swing.JLabel();
+        jLabelRoom5Day12LastName = new javax.swing.JLabel();
+        jLabelRoom5Day12Availability = new javax.swing.JLabel();
         jPanelRoom5Day13 = new javax.swing.JPanel();
-        jLabel289 = new javax.swing.JLabel();
-        jLabel290 = new javax.swing.JLabel();
-        jLabel291 = new javax.swing.JLabel();
+        jLabelRoom5Day13FirstName = new javax.swing.JLabel();
+        jLabelRoom5Day13LastName = new javax.swing.JLabel();
+        jLabelRoom5Day13Availability = new javax.swing.JLabel();
         jPanelRoom5Day14 = new javax.swing.JPanel();
-        jLabel337 = new javax.swing.JLabel();
-        jLabel338 = new javax.swing.JLabel();
-        jLabel339 = new javax.swing.JLabel();
+        jLabelRoom5Day14FirstName = new javax.swing.JLabel();
+        jLabelRoom5Day14LastName = new javax.swing.JLabel();
+        jLabelRoom5Day14Availability = new javax.swing.JLabel();
         jPanelRoom6 = new javax.swing.JPanel();
         jLabelNoChange6 = new javax.swing.JLabel();
         jLabelRoom6RoomID = new javax.swing.JLabel();
         jLabelRoom6RoomSize = new javax.swing.JLabel();
         jPanelRoom6Day01 = new javax.swing.JPanel();
-        jLabel316 = new javax.swing.JLabel();
+        jLabelRoom6Day01FirstName = new javax.swing.JLabel();
         jLabelRoom6Day01LastName = new javax.swing.JLabel();
-        jLabel318 = new javax.swing.JLabel();
+        jLabelRoom6Day01Availability = new javax.swing.JLabel();
         jPanelRoom6Day02 = new javax.swing.JPanel();
-        jLabel334 = new javax.swing.JLabel();
+        jLabelRoom6Day02FirstName = new javax.swing.JLabel();
         jLabelRoom6Day02LastName = new javax.swing.JLabel();
-        jLabel336 = new javax.swing.JLabel();
+        jLabelRoom6Day02Availability = new javax.swing.JLabel();
         jPanelRoom6Day03 = new javax.swing.JPanel();
-        jLabel328 = new javax.swing.JLabel();
+        jLabelRoom6Day03FirstName = new javax.swing.JLabel();
         jLabelRoom6Day03LastName = new javax.swing.JLabel();
-        jLabel330 = new javax.swing.JLabel();
+        jLabelRoom6Day03Availability = new javax.swing.JLabel();
         jPanelRoom6Day04 = new javax.swing.JPanel();
-        jLabel301 = new javax.swing.JLabel();
+        jLabelRoom6Day04FirstName = new javax.swing.JLabel();
         jLabelRoom6Day04LastName = new javax.swing.JLabel();
-        jLabel303 = new javax.swing.JLabel();
+        jLabelRoom6Day04Availability = new javax.swing.JLabel();
         jPanelRoom6Day05 = new javax.swing.JPanel();
-        jLabel292 = new javax.swing.JLabel();
+        jLabelRoom6Day05FirstName = new javax.swing.JLabel();
         jLabelRoom6Day05LastName = new javax.swing.JLabel();
-        jLabel294 = new javax.swing.JLabel();
+        jLabelRoom6Day05Availability = new javax.swing.JLabel();
         jPanelRoom6Day06 = new javax.swing.JPanel();
-        jLabel280 = new javax.swing.JLabel();
+        jLabelRoom6Day06FirstName = new javax.swing.JLabel();
         jLabelRoom6Day06LastName = new javax.swing.JLabel();
-        jLabel282 = new javax.swing.JLabel();
+        jLabelRoom6Day06Availability = new javax.swing.JLabel();
         jPanelRoom6Day07 = new javax.swing.JPanel();
-        jLabel265 = new javax.swing.JLabel();
+        jLabelRoom6Day07FirstName = new javax.swing.JLabel();
         jLabelRoom6Day07LastName = new javax.swing.JLabel();
-        jLabel267 = new javax.swing.JLabel();
+        jLabelRoom6Day07Availability = new javax.swing.JLabel();
         jPanelRoom6Day08 = new javax.swing.JPanel();
-        jLabel271 = new javax.swing.JLabel();
+        jLabelRoom6Day08FirstName = new javax.swing.JLabel();
         jLabelRoom6Day08LastName = new javax.swing.JLabel();
-        jLabel273 = new javax.swing.JLabel();
+        jLabelRoom6Day08Availability = new javax.swing.JLabel();
         jPanelRoom6Day09 = new javax.swing.JPanel();
-        jLabel295 = new javax.swing.JLabel();
+        jLabelRoom6Day09FirstName = new javax.swing.JLabel();
         jLabelRoom6Day09LastName = new javax.swing.JLabel();
-        jLabel297 = new javax.swing.JLabel();
+        jLabelRoom6Day09Availability = new javax.swing.JLabel();
         jPanelRoom6Day10 = new javax.swing.JPanel();
-        jLabel274 = new javax.swing.JLabel();
-        jLabel275 = new javax.swing.JLabel();
-        jLabel276 = new javax.swing.JLabel();
+        jLabelRoom6Day10FirstName = new javax.swing.JLabel();
+        jLabelRoom6Day10LastName = new javax.swing.JLabel();
+        jLabelRoom6Day10Availability = new javax.swing.JLabel();
         jPanelRoom6Day11 = new javax.swing.JPanel();
-        jLabel277 = new javax.swing.JLabel();
-        jLabel278 = new javax.swing.JLabel();
-        jLabel279 = new javax.swing.JLabel();
+        jLabelRoom6Day11FirstName = new javax.swing.JLabel();
+        jLabelRoom6Day11LastName = new javax.swing.JLabel();
+        jLabelRoom6Day11Availability = new javax.swing.JLabel();
         jPanelRoom6Day12 = new javax.swing.JPanel();
-        jLabel307 = new javax.swing.JLabel();
-        jLabel308 = new javax.swing.JLabel();
-        jLabel309 = new javax.swing.JLabel();
+        jLabelRoom6Day12FirstName = new javax.swing.JLabel();
+        jLabelRoom6Day12LastName = new javax.swing.JLabel();
+        jLabelRoom6Day12Availability = new javax.swing.JLabel();
         jPanelRoom6Day13 = new javax.swing.JPanel();
-        jLabel325 = new javax.swing.JLabel();
-        jLabel326 = new javax.swing.JLabel();
-        jLabel327 = new javax.swing.JLabel();
+        jLabelRoom6Day13FirstName = new javax.swing.JLabel();
+        jLabelRoom6Day13LastName = new javax.swing.JLabel();
+        jLabelRoom6Day13Availability = new javax.swing.JLabel();
         jPanelRoom6Day14 = new javax.swing.JPanel();
-        jLabel331 = new javax.swing.JLabel();
-        jLabel332 = new javax.swing.JLabel();
-        jLabel333 = new javax.swing.JLabel();
+        jLabelRoom6Day14FirstName = new javax.swing.JLabel();
+        jLabelRoom6Day14LastName = new javax.swing.JLabel();
+        jLabelRoom6Day14Availability = new javax.swing.JLabel();
         jPanelRoom7 = new javax.swing.JPanel();
         jLabelNoChange7 = new javax.swing.JLabel();
         jLabelRoom7RoomID = new javax.swing.JLabel();
         jLabelRoom7RoomSize = new javax.swing.JLabel();
         jPanelRoom7Day01 = new javax.swing.JPanel();
-        jLabel343 = new javax.swing.JLabel();
+        jLabelRoom7Day01FirstName = new javax.swing.JLabel();
         jLabelRoom7Day01LastName = new javax.swing.JLabel();
-        jLabel345 = new javax.swing.JLabel();
+        jLabelRoom7Day01Availability = new javax.swing.JLabel();
         jPanelRoom7Day02 = new javax.swing.JPanel();
-        jLabel352 = new javax.swing.JLabel();
+        jLabelRoom7Day02FirstName = new javax.swing.JLabel();
         jLabelRoom7Day02LastName = new javax.swing.JLabel();
-        jLabel354 = new javax.swing.JLabel();
+        jLabelRoom7Day02Availability = new javax.swing.JLabel();
         jPanelRoom7Day03 = new javax.swing.JPanel();
-        jLabel376 = new javax.swing.JLabel();
+        jLabelRoom7Day03FirstName = new javax.swing.JLabel();
         jLabelRoom7Day03LastName = new javax.swing.JLabel();
-        jLabel378 = new javax.swing.JLabel();
+        jLabelRoom7Day03Availability = new javax.swing.JLabel();
         jPanelRoom7Day04 = new javax.swing.JPanel();
-        jLabel415 = new javax.swing.JLabel();
+        jLabelRoom7Day04FirstName = new javax.swing.JLabel();
         jLabelRoom7Day04LastName = new javax.swing.JLabel();
-        jLabel417 = new javax.swing.JLabel();
+        jLabelRoom7Day04Availability = new javax.swing.JLabel();
         jPanelRoom7Day05 = new javax.swing.JPanel();
-        jLabel379 = new javax.swing.JLabel();
+        jLabelRoom7Day05FirstName = new javax.swing.JLabel();
         jLabelRoom7Day05LastName = new javax.swing.JLabel();
-        jLabel381 = new javax.swing.JLabel();
+        jLabelRoom7Day05Availability = new javax.swing.JLabel();
         jPanelRoom7Day06 = new javax.swing.JPanel();
-        jLabel355 = new javax.swing.JLabel();
+        jLabelRoom7Day06FirstName = new javax.swing.JLabel();
         jLabelRoom7Day06LastName = new javax.swing.JLabel();
-        jLabel357 = new javax.swing.JLabel();
+        jLabelRoom7Day06Availability = new javax.swing.JLabel();
         jPanelRoom7Day07 = new javax.swing.JPanel();
-        jLabel400 = new javax.swing.JLabel();
+        jLabelRoom7Day07FirstName = new javax.swing.JLabel();
         jLabelRoom7Day07LastName = new javax.swing.JLabel();
-        jLabel402 = new javax.swing.JLabel();
+        jLabelRoom7Day07Availability = new javax.swing.JLabel();
         jPanelRoom7Day08 = new javax.swing.JPanel();
-        jLabel427 = new javax.swing.JLabel();
+        jLabelRoom7Day08FirstName = new javax.swing.JLabel();
         jLabelRoom7Day08LastName = new javax.swing.JLabel();
-        jLabel429 = new javax.swing.JLabel();
+        jLabelRoom7Day08Availability = new javax.swing.JLabel();
         jPanelRoom7Day09 = new javax.swing.JPanel();
-        jLabel424 = new javax.swing.JLabel();
+        jLabelRoom7Day09FirstName = new javax.swing.JLabel();
         jLabelRoom7Day09LastName = new javax.swing.JLabel();
-        jLabel426 = new javax.swing.JLabel();
+        jLabelRoom7Day09Availability = new javax.swing.JLabel();
         jPanelRoom7Day10 = new javax.swing.JPanel();
-        jLabel367 = new javax.swing.JLabel();
-        jLabel368 = new javax.swing.JLabel();
-        jLabel369 = new javax.swing.JLabel();
+        jLabelRoom7Day10FirstName = new javax.swing.JLabel();
+        jLabelRoom7Day10LastName = new javax.swing.JLabel();
+        jLabelRoom7Day10Availability = new javax.swing.JLabel();
         jPanelRoom7Day11 = new javax.swing.JPanel();
-        jLabel373 = new javax.swing.JLabel();
-        jLabel374 = new javax.swing.JLabel();
-        jLabel375 = new javax.swing.JLabel();
+        jLabelRoom7Day11FirstName = new javax.swing.JLabel();
+        jLabelRoom7Day11LastName = new javax.swing.JLabel();
+        jLabelRoom7Day11Availability = new javax.swing.JLabel();
         jPanelRoom7Day12 = new javax.swing.JPanel();
-        jLabel346 = new javax.swing.JLabel();
-        jLabel347 = new javax.swing.JLabel();
-        jLabel348 = new javax.swing.JLabel();
+        jLabelRoom7Day12FirstName = new javax.swing.JLabel();
+        jLabelRoom7Day12LastName = new javax.swing.JLabel();
+        jLabelRoom7Day12Availability = new javax.swing.JLabel();
         jPanelRoom7Day13 = new javax.swing.JPanel();
-        jLabel397 = new javax.swing.JLabel();
-        jLabel398 = new javax.swing.JLabel();
-        jLabel399 = new javax.swing.JLabel();
+        jLabelRoom7Day13FirstName = new javax.swing.JLabel();
+        jLabelRoom7Day13LastName = new javax.swing.JLabel();
+        jLabelRoom7Day13Availability = new javax.swing.JLabel();
         jPanelRoom7Day14 = new javax.swing.JPanel();
-        jLabel409 = new javax.swing.JLabel();
-        jLabel410 = new javax.swing.JLabel();
-        jLabel411 = new javax.swing.JLabel();
+        jLabelRoom7Day14FirstName = new javax.swing.JLabel();
+        jLabelRoom7Day14LastName = new javax.swing.JLabel();
+        jLabelRoom7Day14Availability = new javax.swing.JLabel();
         jPanelRoom8 = new javax.swing.JPanel();
         jLabelNoChange8 = new javax.swing.JLabel();
         jLabelRoom8RoomID = new javax.swing.JLabel();
         jLabelRoom8RoomSize = new javax.swing.JLabel();
         jPanelRoom8Day01 = new javax.swing.JPanel();
-        jLabel421 = new javax.swing.JLabel();
+        jLabelRoom8Day01FirstName = new javax.swing.JLabel();
         jLabelRoom8Day01LastName = new javax.swing.JLabel();
-        jLabel423 = new javax.swing.JLabel();
+        jLabelRoom8Day01Availability = new javax.swing.JLabel();
         jPanelRoom8Day02 = new javax.swing.JPanel();
-        jLabel388 = new javax.swing.JLabel();
+        jLabelRoom8Day02FirstName = new javax.swing.JLabel();
         jLabelRoom8Day02LastName = new javax.swing.JLabel();
-        jLabel390 = new javax.swing.JLabel();
+        jLabelRoom8Day02Availability = new javax.swing.JLabel();
         jPanelRoom8Day03 = new javax.swing.JPanel();
-        jLabel358 = new javax.swing.JLabel();
+        jLabelRoom8Day03FirstName = new javax.swing.JLabel();
         jLabelRoom8Day03LastName = new javax.swing.JLabel();
-        jLabel360 = new javax.swing.JLabel();
+        jLabelRoom8Day03Availability = new javax.swing.JLabel();
         jPanelRoom8Day04 = new javax.swing.JPanel();
-        jLabel394 = new javax.swing.JLabel();
+        jLabelRoom8Day04FirstName = new javax.swing.JLabel();
         jLabelRoom8Day04LastName = new javax.swing.JLabel();
-        jLabel396 = new javax.swing.JLabel();
+        jLabelRoom8Day04Availability = new javax.swing.JLabel();
         jPanelRoom8Day05 = new javax.swing.JPanel();
-        jLabel403 = new javax.swing.JLabel();
+        jLabelRoom8Day05FirstName = new javax.swing.JLabel();
         jLabelRoom8Day05LastName = new javax.swing.JLabel();
-        jLabel405 = new javax.swing.JLabel();
+        jLabelRoom8Day05Availability = new javax.swing.JLabel();
         jPanelRoom8Day06 = new javax.swing.JPanel();
-        jLabel349 = new javax.swing.JLabel();
+        jLabelRoom8Day06FirstName = new javax.swing.JLabel();
         jLabelRoom8Day06LastName = new javax.swing.JLabel();
-        jLabel351 = new javax.swing.JLabel();
+        jLabelRoom8Day06Availability = new javax.swing.JLabel();
         jPanelRoom8Day07 = new javax.swing.JPanel();
-        jLabel406 = new javax.swing.JLabel();
+        jLabelRoom8Day07FirstName = new javax.swing.JLabel();
         jLabelRoom8Day07LastName = new javax.swing.JLabel();
-        jLabel408 = new javax.swing.JLabel();
+        jLabelRoom8Day07Availability = new javax.swing.JLabel();
         jPanelRoom8Day08 = new javax.swing.JPanel();
-        jLabel364 = new javax.swing.JLabel();
+        jLabelRoom8Day08FirstName = new javax.swing.JLabel();
         jLabelRoom8Day08LastName = new javax.swing.JLabel();
-        jLabel366 = new javax.swing.JLabel();
+        jLabelRoom8Day08Availability = new javax.swing.JLabel();
         jPanelRoom8Day09 = new javax.swing.JPanel();
-        jLabel430 = new javax.swing.JLabel();
+        jLabelRoom8Day09FirstName = new javax.swing.JLabel();
         jLabelRoom8Day09LastName = new javax.swing.JLabel();
-        jLabel432 = new javax.swing.JLabel();
+        jLabelRoom8Day09Availability = new javax.swing.JLabel();
         jPanelRoom8Day10 = new javax.swing.JPanel();
-        jLabel412 = new javax.swing.JLabel();
+        jLabelRoom8Day10FirstName = new javax.swing.JLabel();
         jLabelRoom8Day10LastName = new javax.swing.JLabel();
-        jLabel414 = new javax.swing.JLabel();
+        jLabelRoom8Day10Availability = new javax.swing.JLabel();
         jPanelRoom8Day11 = new javax.swing.JPanel();
-        jLabel418 = new javax.swing.JLabel();
+        jLabelRoom8Day11FirstName = new javax.swing.JLabel();
         jLabelRoom8Day11LastName = new javax.swing.JLabel();
-        jLabel420 = new javax.swing.JLabel();
+        jLabelRoom8Day11Availability = new javax.swing.JLabel();
         jPanelRoom8Day12 = new javax.swing.JPanel();
-        jLabel382 = new javax.swing.JLabel();
+        jLabelRoom8Day12FirstName = new javax.swing.JLabel();
         jLabelRoom8Day12LastName = new javax.swing.JLabel();
-        jLabel384 = new javax.swing.JLabel();
+        jLabelRoom8Day12Availability = new javax.swing.JLabel();
         jPanelRoom8Day13 = new javax.swing.JPanel();
-        jLabel370 = new javax.swing.JLabel();
+        jLabelRoom8Day13FirstName = new javax.swing.JLabel();
         jLabelRoom8Day13LastName = new javax.swing.JLabel();
-        jLabel372 = new javax.swing.JLabel();
+        jLabelRoom8Day13Availability = new javax.swing.JLabel();
         jPanelRoom8Day14 = new javax.swing.JPanel();
-        jLabel385 = new javax.swing.JLabel();
+        jLabelRoom8Day14FirstName = new javax.swing.JLabel();
         jLabelRoom8Day14LastName = new javax.swing.JLabel();
-        jLabel387 = new javax.swing.JLabel();
+        jLabelRoom8Day14Availability = new javax.swing.JLabel();
         jButtonEditBooking = new javax.swing.JButton();
         jButtonDeleteBooking = new javax.swing.JButton();
         jButtonFacilities = new javax.swing.JButton();
@@ -1164,6 +1162,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom1Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day01MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day01FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -1200,6 +1205,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom1Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day02MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day02FirstName.setText("First Name");
@@ -1236,48 +1248,16 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addContainerGap())
         );
 
-        jPanelRoom1Day04.setBackground(new java.awt.Color(255, 0, 0));
-        jPanelRoom1Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanelRoom1Day04.setPreferredSize(new java.awt.Dimension(60, 60));
-
-        jLabelRoom1Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom1Day04FirstName.setText("First Name");
-        jLabelRoom1Day04FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
-
-        jLabelRoom1Day04LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom1Day04LastName.setText("Last Name");
-        jLabelRoom1Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
-
-        jLabelRoom1Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom1Day04Availability.setText("BOOKED");
-        jLabelRoom1Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
-
-        javax.swing.GroupLayout jPanelRoom1Day04Layout = new javax.swing.GroupLayout(jPanelRoom1Day04);
-        jPanelRoom1Day04.setLayout(jPanelRoom1Day04Layout);
-        jPanelRoom1Day04Layout.setHorizontalGroup(
-            jPanelRoom1Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelRoom1Day04Layout.createSequentialGroup()
-                .addGroup(jPanelRoom1Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabelRoom1Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRoom1Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRoom1Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28))
-        );
-        jPanelRoom1Day04Layout.setVerticalGroup(
-            jPanelRoom1Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelRoom1Day04Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jLabelRoom1Day04FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(jLabelRoom1Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addComponent(jLabelRoom1Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
         jPanelRoom1Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day03MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day03FirstName.setText("First Name");
@@ -1314,9 +1294,62 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addContainerGap())
         );
 
+        jPanelRoom1Day04.setBackground(new java.awt.Color(255, 0, 0));
+        jPanelRoom1Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelRoom1Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day04MousePressed(evt);
+            }
+        });
+
+        jLabelRoom1Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day04FirstName.setText("First Name");
+        jLabelRoom1Day04FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
+
+        jLabelRoom1Day04LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day04LastName.setText("Last Name");
+        jLabelRoom1Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
+
+        jLabelRoom1Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day04Availability.setText("BOOKED");
+        jLabelRoom1Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
+
+        javax.swing.GroupLayout jPanelRoom1Day04Layout = new javax.swing.GroupLayout(jPanelRoom1Day04);
+        jPanelRoom1Day04.setLayout(jPanelRoom1Day04Layout);
+        jPanelRoom1Day04Layout.setHorizontalGroup(
+            jPanelRoom1Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRoom1Day04Layout.createSequentialGroup()
+                .addGroup(jPanelRoom1Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLabelRoom1Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom1Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom1Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28))
+        );
+        jPanelRoom1Day04Layout.setVerticalGroup(
+            jPanelRoom1Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRoom1Day04Layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jLabelRoom1Day04FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jLabelRoom1Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(jLabelRoom1Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
         jPanelRoom1Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day05MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day05FirstName.setText("First Name");
@@ -1356,6 +1389,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom1Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day06MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day06FirstName.setText("First Name");
@@ -1365,9 +1405,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom1Day06LastName.setText("Last Name");
         jLabelRoom1Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel92.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel92.setText("BOOKED");
-        jLabel92.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day06Availability.setText("BOOKED");
+        jLabelRoom1Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day06Layout = new javax.swing.GroupLayout(jPanelRoom1Day06);
         jPanelRoom1Day06.setLayout(jPanelRoom1Day06Layout);
@@ -1377,7 +1417,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom1Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom1Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel92, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day06Layout.setVerticalGroup(
@@ -1388,13 +1428,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel92, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day07MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day07FirstName.setText("First Name");
@@ -1404,9 +1451,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom1Day07LastName.setText("Last Name");
         jLabelRoom1Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel95.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel95.setText("BOOKED");
-        jLabel95.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day07Availability.setText("BOOKED");
+        jLabelRoom1Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day07Layout = new javax.swing.GroupLayout(jPanelRoom1Day07);
         jPanelRoom1Day07.setLayout(jPanelRoom1Day07Layout);
@@ -1416,7 +1463,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom1Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom1Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel95, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day07Layout.setVerticalGroup(
@@ -1427,13 +1474,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day08MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day08FirstName.setText("First Name");
@@ -1443,9 +1497,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom1Day08LastName.setText("Last Name");
         jLabelRoom1Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel98.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel98.setText("BOOKED");
-        jLabel98.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day08Availability.setText("BOOKED");
+        jLabelRoom1Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day08Layout = new javax.swing.GroupLayout(jPanelRoom1Day08);
         jPanelRoom1Day08.setLayout(jPanelRoom1Day08Layout);
@@ -1455,7 +1509,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom1Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom1Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel98, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day08Layout.setVerticalGroup(
@@ -1466,13 +1520,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day09MousePressed(evt);
+            }
+        });
 
         jLabelRoom1Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day09FirstName.setText("First Name");
@@ -1482,9 +1543,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom1Day09LastName.setText("Last Name");
         jLabelRoom1Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel101.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel101.setText("BOOKED");
-        jLabel101.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day09Availability.setText("BOOKED");
+        jLabelRoom1Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day09Layout = new javax.swing.GroupLayout(jPanelRoom1Day09);
         jPanelRoom1Day09.setLayout(jPanelRoom1Day09Layout);
@@ -1494,7 +1555,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom1Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom1Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel101, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day09Layout.setVerticalGroup(
@@ -1505,25 +1566,32 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day10MousePressed(evt);
+            }
+        });
 
-        jLabel102.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel102.setText("First Name");
-        jLabel102.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day10FirstName.setText("First Name");
+        jLabelRoom1Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom1Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day10LastName.setText("Last Name");
         jLabelRoom1Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel104.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel104.setText("BOOKED");
-        jLabel104.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day10Availability.setText("BOOKED");
+        jLabelRoom1Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day10Layout = new javax.swing.GroupLayout(jPanelRoom1Day10);
         jPanelRoom1Day10.setLayout(jPanelRoom1Day10Layout);
@@ -1532,37 +1600,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom1Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom1Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel102, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel104, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom1Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day10Layout.setVerticalGroup(
             jPanelRoom1Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom1Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel104, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day11MousePressed(evt);
+            }
+        });
 
-        jLabel105.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel105.setText("First Name");
-        jLabel105.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day11FirstName.setText("First Name");
+        jLabelRoom1Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom1Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day11LastName.setText("Last Name");
         jLabelRoom1Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel107.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel107.setText("BOOKED");
-        jLabel107.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day11Availability.setText("BOOKED");
+        jLabelRoom1Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day11Layout = new javax.swing.GroupLayout(jPanelRoom1Day11);
         jPanelRoom1Day11.setLayout(jPanelRoom1Day11Layout);
@@ -1571,37 +1646,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom1Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom1Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel105, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel107, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom1Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day11Layout.setVerticalGroup(
             jPanelRoom1Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom1Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel105, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day12MousePressed(evt);
+            }
+        });
 
-        jLabel108.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel108.setText("First Name");
-        jLabel108.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day12FirstName.setText("First Name");
+        jLabelRoom1Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom1Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day12LastName.setText("Last Name");
         jLabelRoom1Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel110.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel110.setText("BOOKED");
-        jLabel110.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day12Availability.setText("BOOKED");
+        jLabelRoom1Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day12Layout = new javax.swing.GroupLayout(jPanelRoom1Day12);
         jPanelRoom1Day12.setLayout(jPanelRoom1Day12Layout);
@@ -1610,37 +1692,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom1Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom1Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel108, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel110, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom1Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day12Layout.setVerticalGroup(
             jPanelRoom1Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom1Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel108, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day13MousePressed(evt);
+            }
+        });
 
-        jLabel111.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel111.setText("First Name");
-        jLabel111.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day13FirstName.setText("First Name");
+        jLabelRoom1Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom1Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day13LastName.setText("Last Name");
         jLabelRoom1Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel113.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel113.setText("BOOKED");
-        jLabel113.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day13Availability.setText("BOOKED");
+        jLabelRoom1Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day13Layout = new javax.swing.GroupLayout(jPanelRoom1Day13);
         jPanelRoom1Day13.setLayout(jPanelRoom1Day13Layout);
@@ -1649,37 +1738,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom1Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom1Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel111, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel113, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom1Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day13Layout.setVerticalGroup(
             jPanelRoom1Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom1Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom1Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1Day14MousePressed(evt);
+            }
+        });
 
-        jLabel114.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel114.setText("First Name");
-        jLabel114.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day14FirstName.setText("First Name");
+        jLabelRoom1Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom1Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom1Day14LastName.setText("Last Name");
         jLabelRoom1Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel116.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel116.setText("BOOKED");
-        jLabel116.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom1Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom1Day14Availability.setText("BOOKED");
+        jLabelRoom1Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom1Day14Layout = new javax.swing.GroupLayout(jPanelRoom1Day14);
         jPanelRoom1Day14.setLayout(jPanelRoom1Day14Layout);
@@ -1688,19 +1784,19 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom1Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom1Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom1Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel114, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel116, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom1Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom1Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom1Day14Layout.setVerticalGroup(
             jPanelRoom1Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom1Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom1Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel116, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom1Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -1739,6 +1835,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom2Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day01MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day01FirstName.setText("First Name");
@@ -1748,9 +1851,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day01LastName.setText("Last Name");
         jLabelRoom2Day01LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel121.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel121.setText("BOOKED");
-        jLabel121.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day01Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day01Availability.setText("BOOKED");
+        jLabelRoom2Day01Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day01Layout = new javax.swing.GroupLayout(jPanelRoom2Day01);
         jPanelRoom2Day01.setLayout(jPanelRoom2Day01Layout);
@@ -1760,7 +1863,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day01LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel121, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day01Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day01Layout.setVerticalGroup(
@@ -1771,13 +1874,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day01LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel121, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day01Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day02MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day02FirstName.setText("First Name");
@@ -1787,9 +1897,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day02LastName.setText("Last Name");
         jLabelRoom2Day02LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel124.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel124.setText("BOOKED");
-        jLabel124.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day02Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day02Availability.setText("BOOKED");
+        jLabelRoom2Day02Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day02Layout = new javax.swing.GroupLayout(jPanelRoom2Day02);
         jPanelRoom2Day02.setLayout(jPanelRoom2Day02Layout);
@@ -1799,7 +1909,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel124, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day02Layout.setVerticalGroup(
@@ -1810,13 +1920,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day02LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel124, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day02Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day03MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day03FirstName.setText("First Name");
@@ -1826,9 +1943,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day03LastName.setText("Last Name");
         jLabelRoom2Day03LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel127.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel127.setText("BOOKED");
-        jLabel127.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day03Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day03Availability.setText("BOOKED");
+        jLabelRoom2Day03Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day03Layout = new javax.swing.GroupLayout(jPanelRoom2Day03);
         jPanelRoom2Day03.setLayout(jPanelRoom2Day03Layout);
@@ -1838,7 +1955,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel127, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day03Layout.setVerticalGroup(
@@ -1849,13 +1966,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day03LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel127, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day03Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day04.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day04MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day04FirstName.setText("First Name");
@@ -1865,9 +1989,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day04LastName.setText("Last Name");
         jLabelRoom2Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel130.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel130.setText("BOOKED");
-        jLabel130.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day04Availability.setText("BOOKED");
+        jLabelRoom2Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day04Layout = new javax.swing.GroupLayout(jPanelRoom2Day04);
         jPanelRoom2Day04.setLayout(jPanelRoom2Day04Layout);
@@ -1877,7 +2001,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel130, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day04Layout.setVerticalGroup(
@@ -1888,13 +2012,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel130, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day05MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day05FirstName.setText("First Name");
@@ -1904,9 +2035,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day05LastName.setText("Last Name");
         jLabelRoom2Day05LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel133.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel133.setText("BOOKED");
-        jLabel133.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day05Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day05Availability.setText("BOOKED");
+        jLabelRoom2Day05Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day05Layout = new javax.swing.GroupLayout(jPanelRoom2Day05);
         jPanelRoom2Day05.setLayout(jPanelRoom2Day05Layout);
@@ -1916,7 +2047,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day05LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel133, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day05Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day05Layout.setVerticalGroup(
@@ -1927,13 +2058,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day05LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel133, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day05Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day06MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day06FirstName.setText("First Name");
@@ -1943,9 +2081,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day06LastName.setText("Last Name");
         jLabelRoom2Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel136.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel136.setText("BOOKED");
-        jLabel136.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day06Availability.setText("BOOKED");
+        jLabelRoom2Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day06Layout = new javax.swing.GroupLayout(jPanelRoom2Day06);
         jPanelRoom2Day06.setLayout(jPanelRoom2Day06Layout);
@@ -1955,7 +2093,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel136, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day06Layout.setVerticalGroup(
@@ -1966,13 +2104,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel136, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day07MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day07FirstName.setText("First Name");
@@ -1982,9 +2127,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day07LastName.setText("Last Name");
         jLabelRoom2Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel139.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel139.setText("BOOKED");
-        jLabel139.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day07Availability.setText("BOOKED");
+        jLabelRoom2Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day07Layout = new javax.swing.GroupLayout(jPanelRoom2Day07);
         jPanelRoom2Day07.setLayout(jPanelRoom2Day07Layout);
@@ -1994,7 +2139,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel139, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day07Layout.setVerticalGroup(
@@ -2005,13 +2150,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel139, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day08MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day08FirstName.setText("First Name");
@@ -2021,9 +2173,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day08LastName.setText("Last Name");
         jLabelRoom2Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel142.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel142.setText("BOOKED");
-        jLabel142.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day08Availability.setText("BOOKED");
+        jLabelRoom2Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day08Layout = new javax.swing.GroupLayout(jPanelRoom2Day08);
         jPanelRoom2Day08.setLayout(jPanelRoom2Day08Layout);
@@ -2033,7 +2185,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel142, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day08Layout.setVerticalGroup(
@@ -2044,13 +2196,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel142, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day09MousePressed(evt);
+            }
+        });
 
         jLabelRoom2Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day09FirstName.setText("First Name");
@@ -2060,9 +2219,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom2Day09LastName.setText("Last Name");
         jLabelRoom2Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel145.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel145.setText("BOOKED");
-        jLabel145.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day09Availability.setText("BOOKED");
+        jLabelRoom2Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day09Layout = new javax.swing.GroupLayout(jPanelRoom2Day09);
         jPanelRoom2Day09.setLayout(jPanelRoom2Day09Layout);
@@ -2072,7 +2231,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom2Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel145, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day09Layout.setVerticalGroup(
@@ -2083,25 +2242,32 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel145, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day10MousePressed(evt);
+            }
+        });
 
-        jLabel146.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel146.setText("First Name");
-        jLabel146.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day10FirstName.setText("First Name");
+        jLabelRoom2Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom2Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day10LastName.setText("Last Name");
         jLabelRoom2Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel148.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel148.setText("BOOKED");
-        jLabel148.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day10Availability.setText("BOOKED");
+        jLabelRoom2Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day10Layout = new javax.swing.GroupLayout(jPanelRoom2Day10);
         jPanelRoom2Day10.setLayout(jPanelRoom2Day10Layout);
@@ -2110,37 +2276,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom2Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom2Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel146, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel148, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom2Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day10Layout.setVerticalGroup(
             jPanelRoom2Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom2Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel146, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel148, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day11MousePressed(evt);
+            }
+        });
 
-        jLabel149.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel149.setText("First Name");
-        jLabel149.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day11FirstName.setText("First Name");
+        jLabelRoom2Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom2Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day11LastName.setText("Last Name");
         jLabelRoom2Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel151.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel151.setText("BOOKED");
-        jLabel151.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day11Availability.setText("BOOKED");
+        jLabelRoom2Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day11Layout = new javax.swing.GroupLayout(jPanelRoom2Day11);
         jPanelRoom2Day11.setLayout(jPanelRoom2Day11Layout);
@@ -2149,37 +2322,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom2Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom2Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel149, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel151, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom2Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day11Layout.setVerticalGroup(
             jPanelRoom2Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom2Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel149, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel151, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day12MousePressed(evt);
+            }
+        });
 
-        jLabel152.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel152.setText("First Name");
-        jLabel152.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day12FirstName.setText("First Name");
+        jLabelRoom2Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom2Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day12LastName.setText("Last Name");
         jLabelRoom2Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel154.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel154.setText("BOOKED");
-        jLabel154.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day12Availability.setText("BOOKED");
+        jLabelRoom2Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day12Layout = new javax.swing.GroupLayout(jPanelRoom2Day12);
         jPanelRoom2Day12.setLayout(jPanelRoom2Day12Layout);
@@ -2188,37 +2368,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom2Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom2Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel152, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel154, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom2Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day12Layout.setVerticalGroup(
             jPanelRoom2Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom2Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel152, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel154, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day13MousePressed(evt);
+            }
+        });
 
-        jLabel155.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel155.setText("First Name");
-        jLabel155.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day13FirstName.setText("First Name");
+        jLabelRoom2Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom2Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day13LastName.setText("Last Name");
         jLabelRoom2Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel157.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel157.setText("BOOKED");
-        jLabel157.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day13Availability.setText("BOOKED");
+        jLabelRoom2Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day13Layout = new javax.swing.GroupLayout(jPanelRoom2Day13);
         jPanelRoom2Day13.setLayout(jPanelRoom2Day13Layout);
@@ -2227,37 +2414,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom2Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom2Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel155, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel157, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom2Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day13Layout.setVerticalGroup(
             jPanelRoom2Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom2Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel155, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel157, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom2Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom2Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom2Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2Day14MousePressed(evt);
+            }
+        });
 
-        jLabel158.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel158.setText("First Name");
-        jLabel158.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day14FirstName.setText("First Name");
+        jLabelRoom2Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom2Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom2Day14LastName.setText("Last Name");
         jLabelRoom2Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel160.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel160.setText("BOOKED");
-        jLabel160.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom2Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom2Day14Availability.setText("BOOKED");
+        jLabelRoom2Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Day14Layout = new javax.swing.GroupLayout(jPanelRoom2Day14);
         jPanelRoom2Day14.setLayout(jPanelRoom2Day14Layout);
@@ -2266,19 +2460,19 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom2Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom2Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom2Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel158, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel160, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom2Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom2Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom2Day14Layout.setVerticalGroup(
             jPanelRoom2Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom2Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel158, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom2Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel160, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom2Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -2317,6 +2511,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom3Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day01MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day01FirstName.setText("First Name");
@@ -2326,9 +2527,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day01LastName.setText("Last Name");
         jLabelRoom3Day01LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel171.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel171.setText("BOOKED");
-        jLabel171.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day01Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day01Availability.setText("BOOKED");
+        jLabelRoom3Day01Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day01Layout = new javax.swing.GroupLayout(jPanelRoom3Day01);
         jPanelRoom3Day01.setLayout(jPanelRoom3Day01Layout);
@@ -2338,7 +2539,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day01LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel171, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day01Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day01Layout.setVerticalGroup(
@@ -2349,13 +2550,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day01LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel171, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day01Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day02MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day02FirstName.setText("First Name");
@@ -2365,9 +2573,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day02LastName.setText("Last Name");
         jLabelRoom3Day02LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel174.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel174.setText("BOOKED");
-        jLabel174.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day02Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day02Availability.setText("BOOKED");
+        jLabelRoom3Day02Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day02Layout = new javax.swing.GroupLayout(jPanelRoom3Day02);
         jPanelRoom3Day02.setLayout(jPanelRoom3Day02Layout);
@@ -2377,7 +2585,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel174, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day02Layout.setVerticalGroup(
@@ -2388,13 +2596,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day02LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel174, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day02Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day03MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day03FirstName.setText("First Name");
@@ -2404,9 +2619,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day03LastName.setText("Last Name");
         jLabelRoom3Day03LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel177.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel177.setText("BOOKED");
-        jLabel177.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day03Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day03Availability.setText("BOOKED");
+        jLabelRoom3Day03Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day03Layout = new javax.swing.GroupLayout(jPanelRoom3Day03);
         jPanelRoom3Day03.setLayout(jPanelRoom3Day03Layout);
@@ -2416,7 +2631,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel177, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day03Layout.setVerticalGroup(
@@ -2427,13 +2642,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day03LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel177, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day03Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day04.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day04MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day04FirstName.setText("First Name");
@@ -2443,9 +2665,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day04LastName.setText("Last Name");
         jLabelRoom3Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel180.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel180.setText("BOOKED");
-        jLabel180.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day04Availability.setText("BOOKED");
+        jLabelRoom3Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day04Layout = new javax.swing.GroupLayout(jPanelRoom3Day04);
         jPanelRoom3Day04.setLayout(jPanelRoom3Day04Layout);
@@ -2455,7 +2677,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel180, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day04Layout.setVerticalGroup(
@@ -2466,13 +2688,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel180, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day05MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day05FirstName.setText("First Name");
@@ -2482,9 +2711,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day05LastName.setText("Last Name");
         jLabelRoom3Day05LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel183.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel183.setText("BOOKED");
-        jLabel183.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day05Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day05Availability.setText("BOOKED");
+        jLabelRoom3Day05Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day05Layout = new javax.swing.GroupLayout(jPanelRoom3Day05);
         jPanelRoom3Day05.setLayout(jPanelRoom3Day05Layout);
@@ -2494,7 +2723,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day05LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel183, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day05Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day05Layout.setVerticalGroup(
@@ -2505,13 +2734,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day05LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel183, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day05Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day06MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day06FirstName.setText("First Name");
@@ -2521,9 +2757,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day06LastName.setText("Last Name");
         jLabelRoom3Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel186.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel186.setText("BOOKED");
-        jLabel186.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day06Availability.setText("BOOKED");
+        jLabelRoom3Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day06Layout = new javax.swing.GroupLayout(jPanelRoom3Day06);
         jPanelRoom3Day06.setLayout(jPanelRoom3Day06Layout);
@@ -2533,7 +2769,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel186, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day06Layout.setVerticalGroup(
@@ -2544,13 +2780,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel186, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day07MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day07FirstName.setText("First Name");
@@ -2560,9 +2803,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day07LastName.setText("Last Name");
         jLabelRoom3Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel189.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel189.setText("BOOKED");
-        jLabel189.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day07Availability.setText("BOOKED");
+        jLabelRoom3Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day07Layout = new javax.swing.GroupLayout(jPanelRoom3Day07);
         jPanelRoom3Day07.setLayout(jPanelRoom3Day07Layout);
@@ -2572,7 +2815,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel189, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day07Layout.setVerticalGroup(
@@ -2583,25 +2826,32 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel189, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day10MousePressed(evt);
+            }
+        });
 
-        jLabel223.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel223.setText("First Name");
-        jLabel223.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day10FirstName.setText("First Name");
+        jLabelRoom3Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom3Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day10LastName.setText("Last Name");
         jLabelRoom3Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel225.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel225.setText("BOOKED");
-        jLabel225.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day10Availability.setText("BOOKED");
+        jLabelRoom3Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day10Layout = new javax.swing.GroupLayout(jPanelRoom3Day10);
         jPanelRoom3Day10.setLayout(jPanelRoom3Day10Layout);
@@ -2610,25 +2860,32 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom3Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom3Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel223, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel225, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom3Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day10Layout.setVerticalGroup(
             jPanelRoom3Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom3Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel223, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel225, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day08MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day08FirstName.setText("First Name");
@@ -2638,9 +2895,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day08LastName.setText("Last Name");
         jLabelRoom3Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel192.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel192.setText("BOOKED");
-        jLabel192.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day08Availability.setText("BOOKED");
+        jLabelRoom3Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day08Layout = new javax.swing.GroupLayout(jPanelRoom3Day08);
         jPanelRoom3Day08.setLayout(jPanelRoom3Day08Layout);
@@ -2650,7 +2907,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel192, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day08Layout.setVerticalGroup(
@@ -2661,13 +2918,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel192, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day09MousePressed(evt);
+            }
+        });
 
         jLabelRoom3Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day09FirstName.setText("First Name");
@@ -2677,9 +2941,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom3Day09LastName.setText("Last Name");
         jLabelRoom3Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel195.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel195.setText("BOOKED");
-        jLabel195.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day09Availability.setText("BOOKED");
+        jLabelRoom3Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day09Layout = new javax.swing.GroupLayout(jPanelRoom3Day09);
         jPanelRoom3Day09.setLayout(jPanelRoom3Day09Layout);
@@ -2689,7 +2953,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom3Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom3Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel195, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day09Layout.setVerticalGroup(
@@ -2700,25 +2964,32 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel195, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day11MousePressed(evt);
+            }
+        });
 
-        jLabel226.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel226.setText("First Name");
-        jLabel226.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day11FirstName.setText("First Name");
+        jLabelRoom3Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom3Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day11LastName.setText("Last Name");
         jLabelRoom3Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel228.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel228.setText("BOOKED");
-        jLabel228.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day11Availability.setText("BOOKED");
+        jLabelRoom3Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day11Layout = new javax.swing.GroupLayout(jPanelRoom3Day11);
         jPanelRoom3Day11.setLayout(jPanelRoom3Day11Layout);
@@ -2727,37 +2998,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom3Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom3Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel226, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel228, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom3Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day11Layout.setVerticalGroup(
             jPanelRoom3Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom3Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel226, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel228, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day12MousePressed(evt);
+            }
+        });
 
-        jLabel229.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel229.setText("First Name");
-        jLabel229.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day12FirstName.setText("First Name");
+        jLabelRoom3Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom3Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day12LastName.setText("Last Name");
         jLabelRoom3Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel231.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel231.setText("BOOKED");
-        jLabel231.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day12Availability.setText("BOOKED");
+        jLabelRoom3Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day12Layout = new javax.swing.GroupLayout(jPanelRoom3Day12);
         jPanelRoom3Day12.setLayout(jPanelRoom3Day12Layout);
@@ -2766,37 +3044,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom3Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom3Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel229, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel231, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom3Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day12Layout.setVerticalGroup(
             jPanelRoom3Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom3Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel229, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel231, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day13MousePressed(evt);
+            }
+        });
 
-        jLabel232.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel232.setText("First Name");
-        jLabel232.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day13FirstName.setText("First Name");
+        jLabelRoom3Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom3Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day13LastName.setText("Last Name");
         jLabelRoom3Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel234.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel234.setText("BOOKED");
-        jLabel234.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day13Availability.setText("BOOKED");
+        jLabelRoom3Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day13Layout = new javax.swing.GroupLayout(jPanelRoom3Day13);
         jPanelRoom3Day13.setLayout(jPanelRoom3Day13Layout);
@@ -2805,37 +3090,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom3Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom3Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel232, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel234, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom3Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day13Layout.setVerticalGroup(
             jPanelRoom3Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom3Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel232, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel234, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom3Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom3Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom3Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3Day14MousePressed(evt);
+            }
+        });
 
-        jLabel235.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel235.setText("First Name");
-        jLabel235.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day14FirstName.setText("First Name");
+        jLabelRoom3Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom3Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom3Day14LastName.setText("Last Name");
         jLabelRoom3Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel237.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel237.setText("BOOKED");
-        jLabel237.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom3Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom3Day14Availability.setText("BOOKED");
+        jLabelRoom3Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Day14Layout = new javax.swing.GroupLayout(jPanelRoom3Day14);
         jPanelRoom3Day14.setLayout(jPanelRoom3Day14Layout);
@@ -2844,19 +3136,19 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom3Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom3Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom3Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel235, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel237, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom3Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom3Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom3Day14Layout.setVerticalGroup(
             jPanelRoom3Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom3Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel235, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom3Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel237, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom3Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -2895,6 +3187,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom4Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day01MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day01FirstName.setText("First Name");
@@ -2904,9 +3203,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day01LastName.setText("Last Name");
         jLabelRoom4Day01LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel198.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel198.setText("BOOKED");
-        jLabel198.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day01Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day01Availability.setText("BOOKED");
+        jLabelRoom4Day01Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day01Layout = new javax.swing.GroupLayout(jPanelRoom4Day01);
         jPanelRoom4Day01.setLayout(jPanelRoom4Day01Layout);
@@ -2916,7 +3215,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day01LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel198, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day01Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day01Layout.setVerticalGroup(
@@ -2927,13 +3226,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day01LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel198, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day01Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day02MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day02FirstName.setText("First Name");
@@ -2943,9 +3249,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day02LastName.setText("Last Name");
         jLabelRoom4Day02LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel201.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel201.setText("BOOKED");
-        jLabel201.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day02Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day02Availability.setText("BOOKED");
+        jLabelRoom4Day02Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day02Layout = new javax.swing.GroupLayout(jPanelRoom4Day02);
         jPanelRoom4Day02.setLayout(jPanelRoom4Day02Layout);
@@ -2955,7 +3261,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel201, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day02Layout.setVerticalGroup(
@@ -2966,13 +3272,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day02LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel201, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day02Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day03MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day03FirstName.setText("First Name");
@@ -2982,9 +3295,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day03LastName.setText("Last Name");
         jLabelRoom4Day03LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel204.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel204.setText("BOOKED");
-        jLabel204.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day03Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day03Availability.setText("BOOKED");
+        jLabelRoom4Day03Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day03Layout = new javax.swing.GroupLayout(jPanelRoom4Day03);
         jPanelRoom4Day03.setLayout(jPanelRoom4Day03Layout);
@@ -2994,7 +3307,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel204, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day03Layout.setVerticalGroup(
@@ -3005,13 +3318,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day03LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel204, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day03Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day04.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day04MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day04FirstName.setText("First Name");
@@ -3021,9 +3341,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day04LastName.setText("Last Name");
         jLabelRoom4Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel207.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel207.setText("BOOKED");
-        jLabel207.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day04Availability.setText("BOOKED");
+        jLabelRoom4Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day04Layout = new javax.swing.GroupLayout(jPanelRoom4Day04);
         jPanelRoom4Day04.setLayout(jPanelRoom4Day04Layout);
@@ -3033,7 +3353,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel207, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day04Layout.setVerticalGroup(
@@ -3044,13 +3364,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel207, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day05MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day05FirstName.setText("First Name");
@@ -3060,9 +3387,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day05LastName.setText("Last Name");
         jLabelRoom4Day05LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel210.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel210.setText("BOOKED");
-        jLabel210.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day05Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day05Availability.setText("BOOKED");
+        jLabelRoom4Day05Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day05Layout = new javax.swing.GroupLayout(jPanelRoom4Day05);
         jPanelRoom4Day05.setLayout(jPanelRoom4Day05Layout);
@@ -3072,7 +3399,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day05LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel210, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day05Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day05Layout.setVerticalGroup(
@@ -3083,13 +3410,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day05LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel210, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day05Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day06MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day06FirstName.setText("First Name");
@@ -3099,9 +3433,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day06LastName.setText("Last Name");
         jLabelRoom4Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel213.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel213.setText("BOOKED");
-        jLabel213.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day06Availability.setText("BOOKED");
+        jLabelRoom4Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day06Layout = new javax.swing.GroupLayout(jPanelRoom4Day06);
         jPanelRoom4Day06.setLayout(jPanelRoom4Day06Layout);
@@ -3111,7 +3445,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel213, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day06Layout.setVerticalGroup(
@@ -3122,13 +3456,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel213, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day07MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day07FirstName.setText("First Name");
@@ -3138,9 +3479,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day07LastName.setText("Last Name");
         jLabelRoom4Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel216.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel216.setText("BOOKED");
-        jLabel216.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day07Availability.setText("BOOKED");
+        jLabelRoom4Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day07Layout = new javax.swing.GroupLayout(jPanelRoom4Day07);
         jPanelRoom4Day07.setLayout(jPanelRoom4Day07Layout);
@@ -3150,7 +3491,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel216, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day07Layout.setVerticalGroup(
@@ -3161,13 +3502,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel216, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day08MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day08FirstName.setText("First Name");
@@ -3177,9 +3525,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day08LastName.setText("Last Name");
         jLabelRoom4Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel219.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel219.setText("BOOKED");
-        jLabel219.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day08Availability.setText("BOOKED");
+        jLabelRoom4Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day08Layout = new javax.swing.GroupLayout(jPanelRoom4Day08);
         jPanelRoom4Day08.setLayout(jPanelRoom4Day08Layout);
@@ -3189,7 +3537,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel219, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day08Layout.setVerticalGroup(
@@ -3200,13 +3548,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel219, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day09MousePressed(evt);
+            }
+        });
 
         jLabelRoom4Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom4Day09FirstName.setText("First Name");
@@ -3216,9 +3571,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom4Day09LastName.setText("Last Name");
         jLabelRoom4Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel222.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel222.setText("BOOKED");
-        jLabel222.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day09Availability.setText("BOOKED");
+        jLabelRoom4Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day09Layout = new javax.swing.GroupLayout(jPanelRoom4Day09);
         jPanelRoom4Day09.setLayout(jPanelRoom4Day09Layout);
@@ -3228,7 +3583,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom4Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom4Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom4Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel222, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day09Layout.setVerticalGroup(
@@ -3239,25 +3594,32 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom4Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel222, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day14MousePressed(evt);
+            }
+        });
 
-        jLabel238.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel238.setText("First Name");
-        jLabel238.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day14FirstName.setText("First Name");
+        jLabelRoom4Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel239.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel239.setText("Last Name");
-        jLabel239.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day14LastName.setText("Last Name");
+        jLabelRoom4Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel240.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel240.setText("BOOKED");
-        jLabel240.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day14Availability.setText("BOOKED");
+        jLabelRoom4Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day14Layout = new javax.swing.GroupLayout(jPanelRoom4Day14);
         jPanelRoom4Day14.setLayout(jPanelRoom4Day14Layout);
@@ -3265,38 +3627,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom4Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom4Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel239, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel238, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel240, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day14Layout.setVerticalGroup(
             jPanelRoom4Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel238, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel239, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel240, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day13MousePressed(evt);
+            }
+        });
 
-        jLabel241.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel241.setText("First Name");
-        jLabel241.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day13FirstName.setText("First Name");
+        jLabelRoom4Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel242.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel242.setText("Last Name");
-        jLabel242.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day13LastName.setText("Last Name");
+        jLabelRoom4Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel243.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel243.setText("BOOKED");
-        jLabel243.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day13Availability.setText("BOOKED");
+        jLabelRoom4Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day13Layout = new javax.swing.GroupLayout(jPanelRoom4Day13);
         jPanelRoom4Day13.setLayout(jPanelRoom4Day13Layout);
@@ -3304,38 +3673,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom4Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom4Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel242, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel241, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel243, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day13Layout.setVerticalGroup(
             jPanelRoom4Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel241, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel242, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel243, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day12MousePressed(evt);
+            }
+        });
 
-        jLabel244.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel244.setText("First Name");
-        jLabel244.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day12FirstName.setText("First Name");
+        jLabelRoom4Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel245.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel245.setText("Last Name");
-        jLabel245.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day12LastName.setText("Last Name");
+        jLabelRoom4Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel246.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel246.setText("BOOKED");
-        jLabel246.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day12Availability.setText("BOOKED");
+        jLabelRoom4Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day12Layout = new javax.swing.GroupLayout(jPanelRoom4Day12);
         jPanelRoom4Day12.setLayout(jPanelRoom4Day12Layout);
@@ -3343,38 +3719,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom4Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom4Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel245, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel244, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel246, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day12Layout.setVerticalGroup(
             jPanelRoom4Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel244, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel245, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel246, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day11MousePressed(evt);
+            }
+        });
 
-        jLabel247.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel247.setText("First Name");
-        jLabel247.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day11FirstName.setText("First Name");
+        jLabelRoom4Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel248.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel248.setText("Last Name");
-        jLabel248.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day11LastName.setText("Last Name");
+        jLabelRoom4Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel249.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel249.setText("BOOKED");
-        jLabel249.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day11Availability.setText("BOOKED");
+        jLabelRoom4Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day11Layout = new javax.swing.GroupLayout(jPanelRoom4Day11);
         jPanelRoom4Day11.setLayout(jPanelRoom4Day11Layout);
@@ -3382,38 +3765,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom4Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom4Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel248, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel247, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel249, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day11Layout.setVerticalGroup(
             jPanelRoom4Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel247, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel248, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel249, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom4Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom4Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom4Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4Day10MousePressed(evt);
+            }
+        });
 
-        jLabel250.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel250.setText("First Name");
-        jLabel250.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day10FirstName.setText("First Name");
+        jLabelRoom4Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel251.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel251.setText("Last Name");
-        jLabel251.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day10LastName.setText("Last Name");
+        jLabelRoom4Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel252.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel252.setText("BOOKED");
-        jLabel252.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom4Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom4Day10Availability.setText("BOOKED");
+        jLabelRoom4Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Day10Layout = new javax.swing.GroupLayout(jPanelRoom4Day10);
         jPanelRoom4Day10.setLayout(jPanelRoom4Day10Layout);
@@ -3421,20 +3811,20 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom4Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom4Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel251, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel250, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel252, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom4Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom4Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom4Day10Layout.setVerticalGroup(
             jPanelRoom4Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom4Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel250, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel251, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel252, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom4Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -3473,6 +3863,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom5Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day01MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day01FirstName.setText("First Name");
@@ -3482,9 +3879,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day01LastName.setText("Last Name");
         jLabelRoom5Day01LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel261.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel261.setText("BOOKED");
-        jLabel261.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day01Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day01Availability.setText("BOOKED");
+        jLabelRoom5Day01Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day01Layout = new javax.swing.GroupLayout(jPanelRoom5Day01);
         jPanelRoom5Day01.setLayout(jPanelRoom5Day01Layout);
@@ -3494,7 +3891,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day01LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel261, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day01Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day01Layout.setVerticalGroup(
@@ -3505,13 +3902,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day01LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel261, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day01Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day02MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day02FirstName.setText("First Name");
@@ -3521,9 +3925,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day02LastName.setText("Last Name");
         jLabelRoom5Day02LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel312.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel312.setText("BOOKED");
-        jLabel312.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day02Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day02Availability.setText("BOOKED");
+        jLabelRoom5Day02Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day02Layout = new javax.swing.GroupLayout(jPanelRoom5Day02);
         jPanelRoom5Day02.setLayout(jPanelRoom5Day02Layout);
@@ -3533,7 +3937,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel312, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day02Layout.setVerticalGroup(
@@ -3544,13 +3948,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day02LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel312, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day02Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day03MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day03FirstName.setText("First Name");
@@ -3560,9 +3971,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day03LastName.setText("Last Name");
         jLabelRoom5Day03LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel315.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel315.setText("BOOKED");
-        jLabel315.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day03Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day03Availability.setText("BOOKED");
+        jLabelRoom5Day03Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day03Layout = new javax.swing.GroupLayout(jPanelRoom5Day03);
         jPanelRoom5Day03.setLayout(jPanelRoom5Day03Layout);
@@ -3572,7 +3983,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel315, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day03Layout.setVerticalGroup(
@@ -3583,13 +3994,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day03LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel315, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day03Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day04.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day04MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day04FirstName.setText("First Name");
@@ -3599,9 +4017,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day04LastName.setText("Last Name");
         jLabelRoom5Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel264.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel264.setText("BOOKED");
-        jLabel264.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day04Availability.setText("BOOKED");
+        jLabelRoom5Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day04Layout = new javax.swing.GroupLayout(jPanelRoom5Day04);
         jPanelRoom5Day04.setLayout(jPanelRoom5Day04Layout);
@@ -3611,7 +4029,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel264, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day04Layout.setVerticalGroup(
@@ -3622,13 +4040,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel264, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day05MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day05FirstName.setText("First Name");
@@ -3638,9 +4063,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day05LastName.setText("Last Name");
         jLabelRoom5Day05LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel306.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel306.setText("BOOKED");
-        jLabel306.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day05Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day05Availability.setText("BOOKED");
+        jLabelRoom5Day05Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day05Layout = new javax.swing.GroupLayout(jPanelRoom5Day05);
         jPanelRoom5Day05.setLayout(jPanelRoom5Day05Layout);
@@ -3650,7 +4075,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day05LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel306, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day05Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day05Layout.setVerticalGroup(
@@ -3661,13 +4086,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day05LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel306, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day05Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day06MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day06FirstName.setText("First Name");
@@ -3677,9 +4109,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day06LastName.setText("Last Name");
         jLabelRoom5Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel324.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel324.setText("BOOKED");
-        jLabel324.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day06Availability.setText("BOOKED");
+        jLabelRoom5Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day06Layout = new javax.swing.GroupLayout(jPanelRoom5Day06);
         jPanelRoom5Day06.setLayout(jPanelRoom5Day06Layout);
@@ -3689,7 +4121,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel324, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day06Layout.setVerticalGroup(
@@ -3700,13 +4132,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel324, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day07MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day07FirstName.setText("First Name");
@@ -3716,9 +4155,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day07LastName.setText("Last Name");
         jLabelRoom5Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel258.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel258.setText("BOOKED");
-        jLabel258.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day07Availability.setText("BOOKED");
+        jLabelRoom5Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day07Layout = new javax.swing.GroupLayout(jPanelRoom5Day07);
         jPanelRoom5Day07.setLayout(jPanelRoom5Day07Layout);
@@ -3728,7 +4167,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel258, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day07Layout.setVerticalGroup(
@@ -3739,13 +4178,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel258, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day08MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day08FirstName.setText("First Name");
@@ -3755,9 +4201,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day08LastName.setText("Last Name");
         jLabelRoom5Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel270.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel270.setText("BOOKED");
-        jLabel270.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day08Availability.setText("BOOKED");
+        jLabelRoom5Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day08Layout = new javax.swing.GroupLayout(jPanelRoom5Day08);
         jPanelRoom5Day08.setLayout(jPanelRoom5Day08Layout);
@@ -3767,7 +4213,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel270, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day08Layout.setVerticalGroup(
@@ -3778,13 +4224,20 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel270, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day09MousePressed(evt);
+            }
+        });
 
         jLabelRoom5Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom5Day09FirstName.setText("First Name");
@@ -3794,9 +4247,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom5Day09LastName.setText("Last Name");
         jLabelRoom5Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel342.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel342.setText("BOOKED");
-        jLabel342.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day09Availability.setText("BOOKED");
+        jLabelRoom5Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day09Layout = new javax.swing.GroupLayout(jPanelRoom5Day09);
         jPanelRoom5Day09.setLayout(jPanelRoom5Day09Layout);
@@ -3806,7 +4259,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelRoom5Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom5Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom5Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel342, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day09Layout.setVerticalGroup(
@@ -3817,25 +4270,32 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom5Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel342, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day10MousePressed(evt);
+            }
+        });
 
-        jLabel319.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel319.setText("First Name");
-        jLabel319.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day10FirstName.setText("First Name");
+        jLabelRoom5Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel320.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel320.setText("Last Name");
-        jLabel320.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day10LastName.setText("Last Name");
+        jLabelRoom5Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel321.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel321.setText("BOOKED");
-        jLabel321.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day10Availability.setText("BOOKED");
+        jLabelRoom5Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day10Layout = new javax.swing.GroupLayout(jPanelRoom5Day10);
         jPanelRoom5Day10.setLayout(jPanelRoom5Day10Layout);
@@ -3843,38 +4303,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel320, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel319, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel321, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day10Layout.setVerticalGroup(
             jPanelRoom5Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel319, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel320, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel321, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day11MousePressed(evt);
+            }
+        });
 
-        jLabel298.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel298.setText("First Name");
-        jLabel298.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day11FirstName.setText("First Name");
+        jLabelRoom5Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel299.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel299.setText("Last Name");
-        jLabel299.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day11LastName.setText("Last Name");
+        jLabelRoom5Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel300.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel300.setText("BOOKED");
-        jLabel300.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day11Availability.setText("BOOKED");
+        jLabelRoom5Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day11Layout = new javax.swing.GroupLayout(jPanelRoom5Day11);
         jPanelRoom5Day11.setLayout(jPanelRoom5Day11Layout);
@@ -3882,38 +4349,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel299, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel298, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel300, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day11Layout.setVerticalGroup(
             jPanelRoom5Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel298, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel299, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel300, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day12MousePressed(evt);
+            }
+        });
 
-        jLabel286.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel286.setText("First Name");
-        jLabel286.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day12FirstName.setText("First Name");
+        jLabelRoom5Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel287.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel287.setText("Last Name");
-        jLabel287.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day12LastName.setText("Last Name");
+        jLabelRoom5Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel288.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel288.setText("BOOKED");
-        jLabel288.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day12Availability.setText("BOOKED");
+        jLabelRoom5Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day12Layout = new javax.swing.GroupLayout(jPanelRoom5Day12);
         jPanelRoom5Day12.setLayout(jPanelRoom5Day12Layout);
@@ -3921,38 +4395,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel287, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel286, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel288, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day12Layout.setVerticalGroup(
             jPanelRoom5Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel286, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel287, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel288, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day13MousePressed(evt);
+            }
+        });
 
-        jLabel289.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel289.setText("First Name");
-        jLabel289.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day13FirstName.setText("First Name");
+        jLabelRoom5Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel290.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel290.setText("Last Name");
-        jLabel290.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day13LastName.setText("Last Name");
+        jLabelRoom5Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel291.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel291.setText("BOOKED");
-        jLabel291.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day13Availability.setText("BOOKED");
+        jLabelRoom5Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day13Layout = new javax.swing.GroupLayout(jPanelRoom5Day13);
         jPanelRoom5Day13.setLayout(jPanelRoom5Day13Layout);
@@ -3960,38 +4441,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel290, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel289, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel291, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day13Layout.setVerticalGroup(
             jPanelRoom5Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel289, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel290, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel291, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom5Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom5Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom5Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5Day14MousePressed(evt);
+            }
+        });
 
-        jLabel337.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel337.setText("First Name");
-        jLabel337.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day14FirstName.setText("First Name");
+        jLabelRoom5Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel338.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel338.setText("Last Name");
-        jLabel338.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day14LastName.setText("Last Name");
+        jLabelRoom5Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel339.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel339.setText("BOOKED");
-        jLabel339.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom5Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom5Day14Availability.setText("BOOKED");
+        jLabelRoom5Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Day14Layout = new javax.swing.GroupLayout(jPanelRoom5Day14);
         jPanelRoom5Day14.setLayout(jPanelRoom5Day14Layout);
@@ -3999,20 +4487,20 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom5Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom5Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel338, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel337, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel339, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom5Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom5Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom5Day14Layout.setVerticalGroup(
             jPanelRoom5Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom5Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel337, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel338, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel339, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom5Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -4051,18 +4539,25 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom6Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day01MousePressed(evt);
+            }
+        });
 
-        jLabel316.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel316.setText("First Name");
-        jLabel316.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day01FirstName.setText("First Name");
+        jLabelRoom6Day01FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day01LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day01LastName.setText("Last Name");
         jLabelRoom6Day01LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel318.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel318.setText("BOOKED");
-        jLabel318.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day01Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day01Availability.setText("BOOKED");
+        jLabelRoom6Day01Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day01Layout = new javax.swing.GroupLayout(jPanelRoom6Day01);
         jPanelRoom6Day01.setLayout(jPanelRoom6Day01Layout);
@@ -4071,37 +4566,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day01Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day01LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel316, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel318, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day01Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day01Layout.setVerticalGroup(
             jPanelRoom6Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day01Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel316, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day01FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day01LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel318, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day01Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day02MousePressed(evt);
+            }
+        });
 
-        jLabel334.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel334.setText("First Name");
-        jLabel334.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day02FirstName.setText("First Name");
+        jLabelRoom6Day02FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day02LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day02LastName.setText("Last Name");
         jLabelRoom6Day02LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel336.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel336.setText("BOOKED");
-        jLabel336.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day02Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day02Availability.setText("BOOKED");
+        jLabelRoom6Day02Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day02Layout = new javax.swing.GroupLayout(jPanelRoom6Day02);
         jPanelRoom6Day02.setLayout(jPanelRoom6Day02Layout);
@@ -4110,37 +4612,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day02Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel334, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel336, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day02Layout.setVerticalGroup(
             jPanelRoom6Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day02Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel334, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day02FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day02LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel336, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day02Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day03MousePressed(evt);
+            }
+        });
 
-        jLabel328.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel328.setText("First Name");
-        jLabel328.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day03FirstName.setText("First Name");
+        jLabelRoom6Day03FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day03LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day03LastName.setText("Last Name");
         jLabelRoom6Day03LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel330.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel330.setText("BOOKED");
-        jLabel330.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day03Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day03Availability.setText("BOOKED");
+        jLabelRoom6Day03Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day03Layout = new javax.swing.GroupLayout(jPanelRoom6Day03);
         jPanelRoom6Day03.setLayout(jPanelRoom6Day03Layout);
@@ -4149,37 +4658,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day03Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel328, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel330, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day03Layout.setVerticalGroup(
             jPanelRoom6Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day03Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel328, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day03FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day03LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel330, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day03Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day04.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day04MousePressed(evt);
+            }
+        });
 
-        jLabel301.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel301.setText("First Name");
-        jLabel301.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day04FirstName.setText("First Name");
+        jLabelRoom6Day04FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day04LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day04LastName.setText("Last Name");
         jLabelRoom6Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel303.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel303.setText("BOOKED");
-        jLabel303.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day04Availability.setText("BOOKED");
+        jLabelRoom6Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day04Layout = new javax.swing.GroupLayout(jPanelRoom6Day04);
         jPanelRoom6Day04.setLayout(jPanelRoom6Day04Layout);
@@ -4188,37 +4704,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day04Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel301, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel303, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day04Layout.setVerticalGroup(
             jPanelRoom6Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day04Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel301, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day04FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel303, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day05MousePressed(evt);
+            }
+        });
 
-        jLabel292.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel292.setText("First Name");
-        jLabel292.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day05FirstName.setText("First Name");
+        jLabelRoom6Day05FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day05LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day05LastName.setText("Last Name");
         jLabelRoom6Day05LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel294.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel294.setText("BOOKED");
-        jLabel294.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day05Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day05Availability.setText("BOOKED");
+        jLabelRoom6Day05Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day05Layout = new javax.swing.GroupLayout(jPanelRoom6Day05);
         jPanelRoom6Day05.setLayout(jPanelRoom6Day05Layout);
@@ -4227,37 +4750,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day05Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day05LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel292, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel294, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day05Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day05Layout.setVerticalGroup(
             jPanelRoom6Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day05Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel292, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day05FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day05LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel294, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day05Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day06MousePressed(evt);
+            }
+        });
 
-        jLabel280.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel280.setText("First Name");
-        jLabel280.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day06FirstName.setText("First Name");
+        jLabelRoom6Day06FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day06LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day06LastName.setText("Last Name");
         jLabelRoom6Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel282.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel282.setText("BOOKED");
-        jLabel282.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day06Availability.setText("BOOKED");
+        jLabelRoom6Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day06Layout = new javax.swing.GroupLayout(jPanelRoom6Day06);
         jPanelRoom6Day06.setLayout(jPanelRoom6Day06Layout);
@@ -4266,37 +4796,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day06Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel280, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel282, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day06Layout.setVerticalGroup(
             jPanelRoom6Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day06Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel280, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day06FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel282, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day07MousePressed(evt);
+            }
+        });
 
-        jLabel265.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel265.setText("First Name");
-        jLabel265.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day07FirstName.setText("First Name");
+        jLabelRoom6Day07FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day07LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day07LastName.setText("Last Name");
         jLabelRoom6Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel267.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel267.setText("BOOKED");
-        jLabel267.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day07Availability.setText("BOOKED");
+        jLabelRoom6Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day07Layout = new javax.swing.GroupLayout(jPanelRoom6Day07);
         jPanelRoom6Day07.setLayout(jPanelRoom6Day07Layout);
@@ -4305,37 +4842,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day07Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel265, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel267, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day07Layout.setVerticalGroup(
             jPanelRoom6Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day07Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel265, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day07FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel267, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day08MousePressed(evt);
+            }
+        });
 
-        jLabel271.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel271.setText("First Name");
-        jLabel271.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day08FirstName.setText("First Name");
+        jLabelRoom6Day08FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day08LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day08LastName.setText("Last Name");
         jLabelRoom6Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel273.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel273.setText("BOOKED");
-        jLabel273.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day08Availability.setText("BOOKED");
+        jLabelRoom6Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day08Layout = new javax.swing.GroupLayout(jPanelRoom6Day08);
         jPanelRoom6Day08.setLayout(jPanelRoom6Day08Layout);
@@ -4344,37 +4888,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day08Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel271, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel273, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day08Layout.setVerticalGroup(
             jPanelRoom6Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day08Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel271, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day08FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel273, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day09MousePressed(evt);
+            }
+        });
 
-        jLabel295.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel295.setText("First Name");
-        jLabel295.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day09FirstName.setText("First Name");
+        jLabelRoom6Day09FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom6Day09LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom6Day09LastName.setText("Last Name");
         jLabelRoom6Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel297.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel297.setText("BOOKED");
-        jLabel297.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day09Availability.setText("BOOKED");
+        jLabelRoom6Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day09Layout = new javax.swing.GroupLayout(jPanelRoom6Day09);
         jPanelRoom6Day09.setLayout(jPanelRoom6Day09Layout);
@@ -4383,37 +4934,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom6Day09Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom6Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel295, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel297, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day09Layout.setVerticalGroup(
             jPanelRoom6Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day09Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel295, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day09FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom6Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel297, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day10MousePressed(evt);
+            }
+        });
 
-        jLabel274.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel274.setText("First Name");
-        jLabel274.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day10FirstName.setText("First Name");
+        jLabelRoom6Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel275.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel275.setText("Last Name");
-        jLabel275.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day10LastName.setText("Last Name");
+        jLabelRoom6Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel276.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel276.setText("BOOKED");
-        jLabel276.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day10Availability.setText("BOOKED");
+        jLabelRoom6Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day10Layout = new javax.swing.GroupLayout(jPanelRoom6Day10);
         jPanelRoom6Day10.setLayout(jPanelRoom6Day10Layout);
@@ -4421,38 +4979,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom6Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel275, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel274, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel276, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day10Layout.setVerticalGroup(
             jPanelRoom6Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel274, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel275, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel276, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day11MousePressed(evt);
+            }
+        });
 
-        jLabel277.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel277.setText("First Name");
-        jLabel277.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day11FirstName.setText("First Name");
+        jLabelRoom6Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel278.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel278.setText("Last Name");
-        jLabel278.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day11LastName.setText("Last Name");
+        jLabelRoom6Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel279.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel279.setText("BOOKED");
-        jLabel279.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day11Availability.setText("BOOKED");
+        jLabelRoom6Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day11Layout = new javax.swing.GroupLayout(jPanelRoom6Day11);
         jPanelRoom6Day11.setLayout(jPanelRoom6Day11Layout);
@@ -4460,38 +5025,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom6Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel278, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel277, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel279, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day11Layout.setVerticalGroup(
             jPanelRoom6Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel277, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel278, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel279, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day12MousePressed(evt);
+            }
+        });
 
-        jLabel307.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel307.setText("First Name");
-        jLabel307.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day12FirstName.setText("First Name");
+        jLabelRoom6Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel308.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel308.setText("Last Name");
-        jLabel308.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day12LastName.setText("Last Name");
+        jLabelRoom6Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel309.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel309.setText("BOOKED");
-        jLabel309.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day12Availability.setText("BOOKED");
+        jLabelRoom6Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day12Layout = new javax.swing.GroupLayout(jPanelRoom6Day12);
         jPanelRoom6Day12.setLayout(jPanelRoom6Day12Layout);
@@ -4499,38 +5071,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom6Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel308, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel307, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel309, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day12Layout.setVerticalGroup(
             jPanelRoom6Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel308, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel309, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day13MousePressed(evt);
+            }
+        });
 
-        jLabel325.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel325.setText("First Name");
-        jLabel325.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day13FirstName.setText("First Name");
+        jLabelRoom6Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel326.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel326.setText("Last Name");
-        jLabel326.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day13LastName.setText("Last Name");
+        jLabelRoom6Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel327.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel327.setText("BOOKED");
-        jLabel327.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day13Availability.setText("BOOKED");
+        jLabelRoom6Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day13Layout = new javax.swing.GroupLayout(jPanelRoom6Day13);
         jPanelRoom6Day13.setLayout(jPanelRoom6Day13Layout);
@@ -4538,38 +5117,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom6Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel326, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel325, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel327, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day13Layout.setVerticalGroup(
             jPanelRoom6Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel325, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel326, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel327, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom6Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom6Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom6Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6Day14MousePressed(evt);
+            }
+        });
 
-        jLabel331.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel331.setText("First Name");
-        jLabel331.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day14FirstName.setText("First Name");
+        jLabelRoom6Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel332.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel332.setText("Last Name");
-        jLabel332.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day14LastName.setText("Last Name");
+        jLabelRoom6Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel333.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel333.setText("BOOKED");
-        jLabel333.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom6Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom6Day14Availability.setText("BOOKED");
+        jLabelRoom6Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Day14Layout = new javax.swing.GroupLayout(jPanelRoom6Day14);
         jPanelRoom6Day14.setLayout(jPanelRoom6Day14Layout);
@@ -4577,20 +5163,20 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom6Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom6Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel332, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel331, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel333, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom6Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom6Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom6Day14Layout.setVerticalGroup(
             jPanelRoom6Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom6Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel331, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel332, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel333, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom6Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -4629,18 +5215,25 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom7Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day01MousePressed(evt);
+            }
+        });
 
-        jLabel343.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel343.setText("First Name");
-        jLabel343.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day01FirstName.setText("First Name");
+        jLabelRoom7Day01FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day01LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day01LastName.setText("Last Name");
         jLabelRoom7Day01LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel345.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel345.setText("BOOKED");
-        jLabel345.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day01Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day01Availability.setText("BOOKED");
+        jLabelRoom7Day01Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day01Layout = new javax.swing.GroupLayout(jPanelRoom7Day01);
         jPanelRoom7Day01.setLayout(jPanelRoom7Day01Layout);
@@ -4649,37 +5242,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day01Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day01LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel343, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel345, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day01Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day01Layout.setVerticalGroup(
             jPanelRoom7Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day01Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel343, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day01FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day01LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel345, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day01Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day02MousePressed(evt);
+            }
+        });
 
-        jLabel352.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel352.setText("First Name");
-        jLabel352.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day02FirstName.setText("First Name");
+        jLabelRoom7Day02FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day02LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day02LastName.setText("Last Name");
         jLabelRoom7Day02LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel354.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel354.setText("BOOKED");
-        jLabel354.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day02Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day02Availability.setText("BOOKED");
+        jLabelRoom7Day02Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day02Layout = new javax.swing.GroupLayout(jPanelRoom7Day02);
         jPanelRoom7Day02.setLayout(jPanelRoom7Day02Layout);
@@ -4688,37 +5288,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day02Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel352, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel354, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day02Layout.setVerticalGroup(
             jPanelRoom7Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day02Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel352, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day02FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day02LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel354, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day02Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day03MousePressed(evt);
+            }
+        });
 
-        jLabel376.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel376.setText("First Name");
-        jLabel376.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day03FirstName.setText("First Name");
+        jLabelRoom7Day03FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day03LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day03LastName.setText("Last Name");
         jLabelRoom7Day03LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel378.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel378.setText("BOOKED");
-        jLabel378.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day03Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day03Availability.setText("BOOKED");
+        jLabelRoom7Day03Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day03Layout = new javax.swing.GroupLayout(jPanelRoom7Day03);
         jPanelRoom7Day03.setLayout(jPanelRoom7Day03Layout);
@@ -4727,37 +5334,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day03Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel376, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel378, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day03Layout.setVerticalGroup(
             jPanelRoom7Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day03Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel376, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day03FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day03LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel378, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day03Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day04.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day04MousePressed(evt);
+            }
+        });
 
-        jLabel415.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel415.setText("First Name");
-        jLabel415.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day04FirstName.setText("First Name");
+        jLabelRoom7Day04FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day04LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day04LastName.setText("Last Name");
         jLabelRoom7Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel417.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel417.setText("BOOKED");
-        jLabel417.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day04Availability.setText("BOOKED");
+        jLabelRoom7Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day04Layout = new javax.swing.GroupLayout(jPanelRoom7Day04);
         jPanelRoom7Day04.setLayout(jPanelRoom7Day04Layout);
@@ -4766,37 +5380,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day04Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel415, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel417, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day04Layout.setVerticalGroup(
             jPanelRoom7Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day04Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel415, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day04FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel417, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day05MousePressed(evt);
+            }
+        });
 
-        jLabel379.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel379.setText("First Name");
-        jLabel379.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day05FirstName.setText("First Name");
+        jLabelRoom7Day05FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day05LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day05LastName.setText("Last Name");
         jLabelRoom7Day05LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel381.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel381.setText("BOOKED");
-        jLabel381.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day05Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day05Availability.setText("BOOKED");
+        jLabelRoom7Day05Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day05Layout = new javax.swing.GroupLayout(jPanelRoom7Day05);
         jPanelRoom7Day05.setLayout(jPanelRoom7Day05Layout);
@@ -4805,37 +5426,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day05Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day05LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel379, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel381, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day05Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day05Layout.setVerticalGroup(
             jPanelRoom7Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day05Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel379, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day05FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day05LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel381, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day05Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day06MousePressed(evt);
+            }
+        });
 
-        jLabel355.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel355.setText("First Name");
-        jLabel355.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day06FirstName.setText("First Name");
+        jLabelRoom7Day06FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day06LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day06LastName.setText("Last Name");
         jLabelRoom7Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel357.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel357.setText("BOOKED");
-        jLabel357.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day06Availability.setText("BOOKED");
+        jLabelRoom7Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day06Layout = new javax.swing.GroupLayout(jPanelRoom7Day06);
         jPanelRoom7Day06.setLayout(jPanelRoom7Day06Layout);
@@ -4844,37 +5472,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day06Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel355, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel357, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day06Layout.setVerticalGroup(
             jPanelRoom7Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day06Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel355, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day06FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel357, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day07MousePressed(evt);
+            }
+        });
 
-        jLabel400.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel400.setText("First Name");
-        jLabel400.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day07FirstName.setText("First Name");
+        jLabelRoom7Day07FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day07LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day07LastName.setText("Last Name");
         jLabelRoom7Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel402.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel402.setText("BOOKED");
-        jLabel402.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day07Availability.setText("BOOKED");
+        jLabelRoom7Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day07Layout = new javax.swing.GroupLayout(jPanelRoom7Day07);
         jPanelRoom7Day07.setLayout(jPanelRoom7Day07Layout);
@@ -4883,37 +5518,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day07Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel400, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel402, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day07Layout.setVerticalGroup(
             jPanelRoom7Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day07Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel400, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day07FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel402, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day08MousePressed(evt);
+            }
+        });
 
-        jLabel427.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel427.setText("First Name");
-        jLabel427.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day08FirstName.setText("First Name");
+        jLabelRoom7Day08FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day08LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day08LastName.setText("Last Name");
         jLabelRoom7Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel429.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel429.setText("BOOKED");
-        jLabel429.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day08Availability.setText("BOOKED");
+        jLabelRoom7Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day08Layout = new javax.swing.GroupLayout(jPanelRoom7Day08);
         jPanelRoom7Day08.setLayout(jPanelRoom7Day08Layout);
@@ -4922,37 +5564,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day08Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel427, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel429, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day08Layout.setVerticalGroup(
             jPanelRoom7Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day08Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel427, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day08FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel429, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day09MousePressed(evt);
+            }
+        });
 
-        jLabel424.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel424.setText("First Name");
-        jLabel424.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day09FirstName.setText("First Name");
+        jLabelRoom7Day09FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom7Day09LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom7Day09LastName.setText("Last Name");
         jLabelRoom7Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel426.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel426.setText("BOOKED");
-        jLabel426.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day09Availability.setText("BOOKED");
+        jLabelRoom7Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day09Layout = new javax.swing.GroupLayout(jPanelRoom7Day09);
         jPanelRoom7Day09.setLayout(jPanelRoom7Day09Layout);
@@ -4961,37 +5610,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom7Day09Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom7Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel424, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel426, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day09Layout.setVerticalGroup(
             jPanelRoom7Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day09Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel424, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day09FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom7Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel426, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day10MousePressed(evt);
+            }
+        });
 
-        jLabel367.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel367.setText("First Name");
-        jLabel367.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day10FirstName.setText("First Name");
+        jLabelRoom7Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel368.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel368.setText("Last Name");
-        jLabel368.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day10LastName.setText("Last Name");
+        jLabelRoom7Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel369.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel369.setText("BOOKED");
-        jLabel369.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day10Availability.setText("BOOKED");
+        jLabelRoom7Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day10Layout = new javax.swing.GroupLayout(jPanelRoom7Day10);
         jPanelRoom7Day10.setLayout(jPanelRoom7Day10Layout);
@@ -4999,38 +5655,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom7Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel368, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel367, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel369, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day10Layout.setVerticalGroup(
             jPanelRoom7Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel367, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel368, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel369, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day11MousePressed(evt);
+            }
+        });
 
-        jLabel373.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel373.setText("First Name");
-        jLabel373.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day11FirstName.setText("First Name");
+        jLabelRoom7Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel374.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel374.setText("Last Name");
-        jLabel374.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day11LastName.setText("Last Name");
+        jLabelRoom7Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel375.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel375.setText("BOOKED");
-        jLabel375.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day11Availability.setText("BOOKED");
+        jLabelRoom7Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day11Layout = new javax.swing.GroupLayout(jPanelRoom7Day11);
         jPanelRoom7Day11.setLayout(jPanelRoom7Day11Layout);
@@ -5038,38 +5701,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom7Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel374, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel373, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel375, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day11Layout.setVerticalGroup(
             jPanelRoom7Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel373, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel374, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel375, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day12MousePressed(evt);
+            }
+        });
 
-        jLabel346.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel346.setText("First Name");
-        jLabel346.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day12FirstName.setText("First Name");
+        jLabelRoom7Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel347.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel347.setText("Last Name");
-        jLabel347.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day12LastName.setText("Last Name");
+        jLabelRoom7Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel348.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel348.setText("BOOKED");
-        jLabel348.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day12Availability.setText("BOOKED");
+        jLabelRoom7Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day12Layout = new javax.swing.GroupLayout(jPanelRoom7Day12);
         jPanelRoom7Day12.setLayout(jPanelRoom7Day12Layout);
@@ -5077,38 +5747,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom7Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel347, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel346, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel348, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day12Layout.setVerticalGroup(
             jPanelRoom7Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel346, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel347, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel348, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day13MousePressed(evt);
+            }
+        });
 
-        jLabel397.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel397.setText("First Name");
-        jLabel397.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day13FirstName.setText("First Name");
+        jLabelRoom7Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel398.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel398.setText("Last Name");
-        jLabel398.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day13LastName.setText("Last Name");
+        jLabelRoom7Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel399.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel399.setText("BOOKED");
-        jLabel399.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day13Availability.setText("BOOKED");
+        jLabelRoom7Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day13Layout = new javax.swing.GroupLayout(jPanelRoom7Day13);
         jPanelRoom7Day13.setLayout(jPanelRoom7Day13Layout);
@@ -5116,38 +5793,45 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom7Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel398, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel397, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel399, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day13Layout.setVerticalGroup(
             jPanelRoom7Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel397, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel398, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel399, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom7Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom7Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom7Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7Day14MousePressed(evt);
+            }
+        });
 
-        jLabel409.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel409.setText("First Name");
-        jLabel409.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day14FirstName.setText("First Name");
+        jLabelRoom7Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel410.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel410.setText("Last Name");
-        jLabel410.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day14LastName.setText("Last Name");
+        jLabelRoom7Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel411.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel411.setText("BOOKED");
-        jLabel411.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom7Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom7Day14Availability.setText("BOOKED");
+        jLabelRoom7Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Day14Layout = new javax.swing.GroupLayout(jPanelRoom7Day14);
         jPanelRoom7Day14.setLayout(jPanelRoom7Day14Layout);
@@ -5155,20 +5839,20 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelRoom7Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom7Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel410, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel409, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel411, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom7Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom7Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom7Day14Layout.setVerticalGroup(
             jPanelRoom7Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom7Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel409, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabel410, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel411, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom7Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -5207,18 +5891,25 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelRoom8Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day01.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day01.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day01MousePressed(evt);
+            }
+        });
 
-        jLabel421.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel421.setText("First Name");
-        jLabel421.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day01FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day01FirstName.setText("First Name");
+        jLabelRoom8Day01FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day01LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day01LastName.setText("Last Name");
         jLabelRoom8Day01LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel423.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel423.setText("BOOKED");
-        jLabel423.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day01Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day01Availability.setText("BOOKED");
+        jLabelRoom8Day01Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day01Layout = new javax.swing.GroupLayout(jPanelRoom8Day01);
         jPanelRoom8Day01.setLayout(jPanelRoom8Day01Layout);
@@ -5227,37 +5918,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day01Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day01LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel421, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel423, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day01FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day01Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day01Layout.setVerticalGroup(
             jPanelRoom8Day01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day01Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel421, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day01FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day01LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel423, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day01Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day02.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day02.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day02.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day02MousePressed(evt);
+            }
+        });
 
-        jLabel388.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel388.setText("First Name");
-        jLabel388.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day02FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day02FirstName.setText("First Name");
+        jLabelRoom8Day02FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day02LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day02LastName.setText("Last Name");
         jLabelRoom8Day02LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel390.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel390.setText("BOOKED");
-        jLabel390.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day02Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day02Availability.setText("BOOKED");
+        jLabelRoom8Day02Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day02Layout = new javax.swing.GroupLayout(jPanelRoom8Day02);
         jPanelRoom8Day02.setLayout(jPanelRoom8Day02Layout);
@@ -5266,37 +5964,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day02Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel388, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel390, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day02Layout.setVerticalGroup(
             jPanelRoom8Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day02Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel388, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day02FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day02LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel390, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day02Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day03.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day03.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day03.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day03MousePressed(evt);
+            }
+        });
 
-        jLabel358.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel358.setText("First Name");
-        jLabel358.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day03FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day03FirstName.setText("First Name");
+        jLabelRoom8Day03FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day03LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day03LastName.setText("Last Name");
         jLabelRoom8Day03LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel360.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel360.setText("BOOKED");
-        jLabel360.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day03Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day03Availability.setText("BOOKED");
+        jLabelRoom8Day03Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day03Layout = new javax.swing.GroupLayout(jPanelRoom8Day03);
         jPanelRoom8Day03.setLayout(jPanelRoom8Day03Layout);
@@ -5305,37 +6010,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day03Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel358, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel360, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day03Layout.setVerticalGroup(
             jPanelRoom8Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day03Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel358, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day03FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day03LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel360, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day03Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day04.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day04.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day04.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day04MousePressed(evt);
+            }
+        });
 
-        jLabel394.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel394.setText("First Name");
-        jLabel394.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day04FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day04FirstName.setText("First Name");
+        jLabelRoom8Day04FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day04LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day04LastName.setText("Last Name");
         jLabelRoom8Day04LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel396.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel396.setText("BOOKED");
-        jLabel396.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day04Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day04Availability.setText("BOOKED");
+        jLabelRoom8Day04Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day04Layout = new javax.swing.GroupLayout(jPanelRoom8Day04);
         jPanelRoom8Day04.setLayout(jPanelRoom8Day04Layout);
@@ -5344,37 +6056,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day04Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day04LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel394, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel396, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day04FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day04Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day04Layout.setVerticalGroup(
             jPanelRoom8Day04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day04Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel394, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day04FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day04LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel396, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day04Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day05.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day05.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day05.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day05MousePressed(evt);
+            }
+        });
 
-        jLabel403.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel403.setText("First Name");
-        jLabel403.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day05FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day05FirstName.setText("First Name");
+        jLabelRoom8Day05FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day05LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day05LastName.setText("Last Name");
         jLabelRoom8Day05LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel405.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel405.setText("BOOKED");
-        jLabel405.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day05Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day05Availability.setText("BOOKED");
+        jLabelRoom8Day05Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day05Layout = new javax.swing.GroupLayout(jPanelRoom8Day05);
         jPanelRoom8Day05.setLayout(jPanelRoom8Day05Layout);
@@ -5383,37 +6102,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day05Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day05LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel403, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel405, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day05FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day05Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day05Layout.setVerticalGroup(
             jPanelRoom8Day05Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day05Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel403, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day05FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day05LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel405, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day05Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day06.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day06.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day06.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day06MousePressed(evt);
+            }
+        });
 
-        jLabel349.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel349.setText("First Name");
-        jLabel349.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day06FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day06FirstName.setText("First Name");
+        jLabelRoom8Day06FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day06LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day06LastName.setText("Last Name");
         jLabelRoom8Day06LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel351.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel351.setText("BOOKED");
-        jLabel351.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day06Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day06Availability.setText("BOOKED");
+        jLabelRoom8Day06Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day06Layout = new javax.swing.GroupLayout(jPanelRoom8Day06);
         jPanelRoom8Day06.setLayout(jPanelRoom8Day06Layout);
@@ -5422,37 +6148,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day06Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day06LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel349, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel351, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day06FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day06Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day06Layout.setVerticalGroup(
             jPanelRoom8Day06Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day06Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel349, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day06FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day06LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel351, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day06Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day07.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day07.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day07.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day07MousePressed(evt);
+            }
+        });
 
-        jLabel406.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel406.setText("First Name");
-        jLabel406.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day07FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day07FirstName.setText("First Name");
+        jLabelRoom8Day07FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day07LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day07LastName.setText("Last Name");
         jLabelRoom8Day07LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel408.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel408.setText("BOOKED");
-        jLabel408.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day07Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day07Availability.setText("BOOKED");
+        jLabelRoom8Day07Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day07Layout = new javax.swing.GroupLayout(jPanelRoom8Day07);
         jPanelRoom8Day07.setLayout(jPanelRoom8Day07Layout);
@@ -5461,37 +6194,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day07Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day07LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel406, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel408, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day07FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day07Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day07Layout.setVerticalGroup(
             jPanelRoom8Day07Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day07Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel406, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day07FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day07LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel408, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day07Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day08.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day08.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day08.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day08MousePressed(evt);
+            }
+        });
 
-        jLabel364.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel364.setText("First Name");
-        jLabel364.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day08FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day08FirstName.setText("First Name");
+        jLabelRoom8Day08FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day08LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day08LastName.setText("Last Name");
         jLabelRoom8Day08LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel366.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel366.setText("BOOKED");
-        jLabel366.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day08Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day08Availability.setText("BOOKED");
+        jLabelRoom8Day08Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day08Layout = new javax.swing.GroupLayout(jPanelRoom8Day08);
         jPanelRoom8Day08.setLayout(jPanelRoom8Day08Layout);
@@ -5500,37 +6240,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day08Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day08LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel364, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel366, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day08FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day08Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day08Layout.setVerticalGroup(
             jPanelRoom8Day08Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day08Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel364, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day08FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day08LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel366, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day08Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day09.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day09.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day09.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day09MousePressed(evt);
+            }
+        });
 
-        jLabel430.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel430.setText("First Name");
-        jLabel430.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day09FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day09FirstName.setText("First Name");
+        jLabelRoom8Day09FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day09LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day09LastName.setText("Last Name");
         jLabelRoom8Day09LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel432.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel432.setText("BOOKED");
-        jLabel432.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day09Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day09Availability.setText("BOOKED");
+        jLabelRoom8Day09Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day09Layout = new javax.swing.GroupLayout(jPanelRoom8Day09);
         jPanelRoom8Day09.setLayout(jPanelRoom8Day09Layout);
@@ -5539,37 +6286,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day09Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day09LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel430, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel432, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day09FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day09Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day09Layout.setVerticalGroup(
             jPanelRoom8Day09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day09Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel430, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day09FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day09LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel432, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day09Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day10.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day10.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day10.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day10MousePressed(evt);
+            }
+        });
 
-        jLabel412.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel412.setText("First Name");
-        jLabel412.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day10FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day10FirstName.setText("First Name");
+        jLabelRoom8Day10FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day10LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day10LastName.setText("Last Name");
         jLabelRoom8Day10LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel414.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel414.setText("BOOKED");
-        jLabel414.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day10Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day10Availability.setText("BOOKED");
+        jLabelRoom8Day10Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day10Layout = new javax.swing.GroupLayout(jPanelRoom8Day10);
         jPanelRoom8Day10.setLayout(jPanelRoom8Day10Layout);
@@ -5578,37 +6332,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day10Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day10LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel412, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel414, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day10FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day10Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day10Layout.setVerticalGroup(
             jPanelRoom8Day10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day10Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel412, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day10FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day10LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel414, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day10Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day11.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day11.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day11.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day11MousePressed(evt);
+            }
+        });
 
-        jLabel418.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel418.setText("First Name");
-        jLabel418.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day11FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day11FirstName.setText("First Name");
+        jLabelRoom8Day11FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day11LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day11LastName.setText("Last Name");
         jLabelRoom8Day11LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel420.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel420.setText("BOOKED");
-        jLabel420.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day11Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day11Availability.setText("BOOKED");
+        jLabelRoom8Day11Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day11Layout = new javax.swing.GroupLayout(jPanelRoom8Day11);
         jPanelRoom8Day11.setLayout(jPanelRoom8Day11Layout);
@@ -5617,37 +6378,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day11Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day11LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel418, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel420, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day11FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day11Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day11Layout.setVerticalGroup(
             jPanelRoom8Day11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day11Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel418, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day11FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day11LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel420, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day11Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day12.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day12.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day12.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day12MousePressed(evt);
+            }
+        });
 
-        jLabel382.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel382.setText("First Name");
-        jLabel382.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day12FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day12FirstName.setText("First Name");
+        jLabelRoom8Day12FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day12LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day12LastName.setText("Last Name");
         jLabelRoom8Day12LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel384.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel384.setText("BOOKED");
-        jLabel384.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day12Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day12Availability.setText("BOOKED");
+        jLabelRoom8Day12Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day12Layout = new javax.swing.GroupLayout(jPanelRoom8Day12);
         jPanelRoom8Day12.setLayout(jPanelRoom8Day12Layout);
@@ -5656,37 +6424,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day12Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day12LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel382, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel384, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day12FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day12Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day12Layout.setVerticalGroup(
             jPanelRoom8Day12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day12Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel382, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day12FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day12LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel384, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day12Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day13.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day13.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day13.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day13MousePressed(evt);
+            }
+        });
 
-        jLabel370.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel370.setText("First Name");
-        jLabel370.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day13FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day13FirstName.setText("First Name");
+        jLabelRoom8Day13FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day13LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day13LastName.setText("Last Name");
         jLabelRoom8Day13LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel372.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel372.setText("BOOKED");
-        jLabel372.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day13Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day13Availability.setText("BOOKED");
+        jLabelRoom8Day13Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day13Layout = new javax.swing.GroupLayout(jPanelRoom8Day13);
         jPanelRoom8Day13.setLayout(jPanelRoom8Day13Layout);
@@ -5695,37 +6470,44 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day13Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day13LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel370, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel372, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day13FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day13Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day13Layout.setVerticalGroup(
             jPanelRoom8Day13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day13Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel370, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day13FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day13LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel372, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day13Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jPanelRoom8Day14.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom8Day14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom8Day14.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8Day14.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8Day14MousePressed(evt);
+            }
+        });
 
-        jLabel385.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel385.setText("First Name");
-        jLabel385.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day14FirstName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day14FirstName.setText("First Name");
+        jLabelRoom8Day14FirstName.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelRoom8Day14LastName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRoom8Day14LastName.setText("Last Name");
         jLabelRoom8Day14LastName.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabel387.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel387.setText("BOOKED");
-        jLabel387.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelRoom8Day14Availability.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRoom8Day14Availability.setText("BOOKED");
+        jLabelRoom8Day14Availability.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Day14Layout = new javax.swing.GroupLayout(jPanelRoom8Day14);
         jPanelRoom8Day14.setLayout(jPanelRoom8Day14Layout);
@@ -5734,19 +6516,19 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelRoom8Day14Layout.createSequentialGroup()
                 .addGroup(jPanelRoom8Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabelRoom8Day14LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel385, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel387, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRoom8Day14FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRoom8Day14Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28))
         );
         jPanelRoom8Day14Layout.setVerticalGroup(
             jPanelRoom8Day14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelRoom8Day14Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLabel385, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day14FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jLabelRoom8Day14LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addComponent(jLabel387, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelRoom8Day14Availability, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -6384,13 +7166,573 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonRoomArrowUpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomArrowUpActionPerformed
     {//GEN-HEADEREND:event_jButtonRoomArrowUpActionPerformed
-        //Show the 8 rooms below shown Room1. If below 0 (zero) show RoomID's 001-008.
+        //Show the 8 rooms below what is shown at Room1. If below 0 (zero) show RoomID's 001-008.
     }//GEN-LAST:event_jButtonRoomArrowUpActionPerformed
 
     private void jButtonRoomArrowDownActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomArrowDownActionPerformed
     {//GEN-HEADEREND:event_jButtonRoomArrowDownActionPerformed
-        //Show the next 8 rooms higher than shown Room8. If higher than maximum room (RoomID 104) then show RoomID's 097-104.
+        //Show the next 8 rooms higher than what is shown at Room8. If higher than maximum room (RoomID 104) then show RoomID's 097-104.
     }//GEN-LAST:event_jButtonRoomArrowDownActionPerformed
+
+    private void jPanelRoom1Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day01MousePressed
+        
+    }//GEN-LAST:event_jPanelRoom1Day01MousePressed
+
+    private void jPanelRoom1Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day02MousePressed
+
+    private void jPanelRoom1Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day03MousePressed
+
+    private void jPanelRoom1Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day04MousePressed
+
+    private void jPanelRoom1Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day05MousePressed
+
+    private void jPanelRoom1Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day06MousePressed
+
+    private void jPanelRoom1Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day07MousePressed
+
+    private void jPanelRoom1Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day08MousePressed
+
+    private void jPanelRoom1Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day09MousePressed
+
+    private void jPanelRoom1Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day10MousePressed
+
+    private void jPanelRoom1Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day11MousePressed
+
+    private void jPanelRoom1Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day12MousePressed
+
+    private void jPanelRoom1Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day13MousePressed
+
+    private void jPanelRoom1Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1Day14MousePressed
+
+    private void jPanelRoom2Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day01MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day01MousePressed
+
+    private void jPanelRoom2Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day02MousePressed
+
+    private void jPanelRoom2Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day03MousePressed
+
+    private void jPanelRoom2Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day04MousePressed
+
+    private void jPanelRoom2Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day05MousePressed
+
+    private void jPanelRoom2Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day06MousePressed
+
+    private void jPanelRoom2Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day07MousePressed
+
+    private void jPanelRoom2Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day08MousePressed
+
+    private void jPanelRoom2Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day09MousePressed
+
+    private void jPanelRoom2Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day10MousePressed
+
+    private void jPanelRoom2Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day11MousePressed
+
+    private void jPanelRoom2Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day12MousePressed
+
+    private void jPanelRoom2Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day13MousePressed
+
+    private void jPanelRoom2Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2Day14MousePressed
+
+    private void jPanelRoom3Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day01MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day01MousePressed
+
+    private void jPanelRoom3Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day02MousePressed
+
+    private void jPanelRoom3Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day03MousePressed
+
+    private void jPanelRoom3Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day04MousePressed
+
+    private void jPanelRoom3Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day05MousePressed
+
+    private void jPanelRoom3Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day06MousePressed
+
+    private void jPanelRoom3Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day07MousePressed
+
+    private void jPanelRoom3Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day08MousePressed
+
+    private void jPanelRoom3Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day09MousePressed
+
+    private void jPanelRoom3Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day10MousePressed
+
+    private void jPanelRoom3Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day11MousePressed
+
+    private void jPanelRoom3Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day12MousePressed
+
+    private void jPanelRoom3Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day13MousePressed
+
+    private void jPanelRoom3Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3Day14MousePressed
+
+    private void jPanelRoom4Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day01MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day01MousePressed
+
+    private void jPanelRoom4Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day02MousePressed
+
+    private void jPanelRoom4Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day03MousePressed
+
+    private void jPanelRoom4Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day04MousePressed
+
+    private void jPanelRoom4Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day05MousePressed
+
+    private void jPanelRoom4Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day06MousePressed
+
+    private void jPanelRoom4Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day07MousePressed
+
+    private void jPanelRoom4Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day08MousePressed
+
+    private void jPanelRoom4Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day09MousePressed
+
+    private void jPanelRoom4Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day10MousePressed
+
+    private void jPanelRoom4Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day11MousePressed
+
+    private void jPanelRoom4Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day12MousePressed
+
+    private void jPanelRoom4Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day13MousePressed
+
+    private void jPanelRoom4Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4Day14MousePressed
+
+    private void jPanelRoom5Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day01MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day01MousePressed
+
+    private void jPanelRoom5Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day02MousePressed
+
+    private void jPanelRoom5Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day03MousePressed
+
+    private void jPanelRoom5Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day04MousePressed
+
+    private void jPanelRoom5Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day05MousePressed
+
+    private void jPanelRoom5Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day06MousePressed
+
+    private void jPanelRoom5Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day07MousePressed
+
+    private void jPanelRoom5Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day08MousePressed
+
+    private void jPanelRoom5Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day09MousePressed
+
+    private void jPanelRoom5Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day10MousePressed
+
+    private void jPanelRoom5Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day11MousePressed
+
+    private void jPanelRoom5Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day12MousePressed
+
+    private void jPanelRoom5Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day13MousePressed
+
+    private void jPanelRoom5Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5Day14MousePressed
+
+    private void jPanelRoom6Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day01MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day01MousePressed
+
+    private void jPanelRoom6Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day02MousePressed
+
+    private void jPanelRoom6Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day03MousePressed
+
+    private void jPanelRoom6Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day04MousePressed
+
+    private void jPanelRoom6Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day05MousePressed
+
+    private void jPanelRoom6Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day06MousePressed
+
+    private void jPanelRoom6Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day07MousePressed
+
+    private void jPanelRoom6Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day08MousePressed
+
+    private void jPanelRoom6Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day09MousePressed
+
+    private void jPanelRoom6Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day10MousePressed
+
+    private void jPanelRoom6Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day11MousePressed
+
+    private void jPanelRoom6Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day12MousePressed
+
+    private void jPanelRoom6Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day13MousePressed
+
+    private void jPanelRoom6Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6Day14MousePressed
+
+    private void jPanelRoom7Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day01MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day01MousePressed
+
+    private void jPanelRoom7Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day02MousePressed
+
+    private void jPanelRoom7Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day03MousePressed
+
+    private void jPanelRoom7Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day04MousePressed
+
+    private void jPanelRoom7Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day05MousePressed
+
+    private void jPanelRoom7Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day06MousePressed
+
+    private void jPanelRoom7Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day07MousePressed
+
+    private void jPanelRoom7Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day08MousePressed
+
+    private void jPanelRoom7Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day09MousePressed
+
+    private void jPanelRoom7Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day10MousePressed
+
+    private void jPanelRoom7Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day11MousePressed
+
+    private void jPanelRoom7Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day12MousePressed
+
+    private void jPanelRoom7Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day13MousePressed
+
+    private void jPanelRoom7Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7Day14MousePressed
+
+    private void jPanelRoom8Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day01MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day01MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day01MousePressed
+
+    private void jPanelRoom8Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day02MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day02MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day02MousePressed
+
+    private void jPanelRoom8Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day03MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day03MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day03MousePressed
+
+    private void jPanelRoom8Day04MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day04MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day04MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day04MousePressed
+
+    private void jPanelRoom8Day05MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day05MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day05MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day05MousePressed
+
+    private void jPanelRoom8Day06MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day06MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day06MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day06MousePressed
+
+    private void jPanelRoom8Day07MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day07MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day07MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day07MousePressed
+
+    private void jPanelRoom8Day08MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day08MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day08MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day08MousePressed
+
+    private void jPanelRoom8Day09MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day09MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day09MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day09MousePressed
+
+    private void jPanelRoom8Day10MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day10MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day10MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day10MousePressed
+
+    private void jPanelRoom8Day11MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day11MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day11MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day11MousePressed
+
+    private void jPanelRoom8Day12MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day12MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day12MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day12MousePressed
+
+    private void jPanelRoom8Day13MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day13MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day13MousePressed
+
+    private void jPanelRoom8Day14MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8Day14MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8Day14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8Day14MousePressed
 
     /**
      * @param args the command line arguments
@@ -6450,200 +7792,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonRoomArrowDown;
     private javax.swing.JButton jButtonRoomArrowUp;
     private javax.swing.JButton jButtonSearch;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel104;
-    private javax.swing.JLabel jLabel105;
-    private javax.swing.JLabel jLabel107;
-    private javax.swing.JLabel jLabel108;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel113;
-    private javax.swing.JLabel jLabel114;
-    private javax.swing.JLabel jLabel116;
-    private javax.swing.JLabel jLabel121;
-    private javax.swing.JLabel jLabel124;
-    private javax.swing.JLabel jLabel127;
-    private javax.swing.JLabel jLabel130;
-    private javax.swing.JLabel jLabel133;
-    private javax.swing.JLabel jLabel136;
-    private javax.swing.JLabel jLabel139;
-    private javax.swing.JLabel jLabel142;
-    private javax.swing.JLabel jLabel145;
-    private javax.swing.JLabel jLabel146;
-    private javax.swing.JLabel jLabel148;
-    private javax.swing.JLabel jLabel149;
-    private javax.swing.JLabel jLabel151;
-    private javax.swing.JLabel jLabel152;
-    private javax.swing.JLabel jLabel154;
-    private javax.swing.JLabel jLabel155;
-    private javax.swing.JLabel jLabel157;
-    private javax.swing.JLabel jLabel158;
-    private javax.swing.JLabel jLabel160;
-    private javax.swing.JLabel jLabel171;
-    private javax.swing.JLabel jLabel174;
-    private javax.swing.JLabel jLabel177;
-    private javax.swing.JLabel jLabel180;
-    private javax.swing.JLabel jLabel183;
-    private javax.swing.JLabel jLabel186;
-    private javax.swing.JLabel jLabel189;
-    private javax.swing.JLabel jLabel192;
-    private javax.swing.JLabel jLabel195;
-    private javax.swing.JLabel jLabel198;
-    private javax.swing.JLabel jLabel201;
-    private javax.swing.JLabel jLabel204;
-    private javax.swing.JLabel jLabel207;
-    private javax.swing.JLabel jLabel210;
-    private javax.swing.JLabel jLabel213;
-    private javax.swing.JLabel jLabel216;
-    private javax.swing.JLabel jLabel219;
-    private javax.swing.JLabel jLabel222;
-    private javax.swing.JLabel jLabel223;
-    private javax.swing.JLabel jLabel225;
-    private javax.swing.JLabel jLabel226;
-    private javax.swing.JLabel jLabel228;
-    private javax.swing.JLabel jLabel229;
-    private javax.swing.JLabel jLabel231;
-    private javax.swing.JLabel jLabel232;
-    private javax.swing.JLabel jLabel234;
-    private javax.swing.JLabel jLabel235;
-    private javax.swing.JLabel jLabel237;
-    private javax.swing.JLabel jLabel238;
-    private javax.swing.JLabel jLabel239;
-    private javax.swing.JLabel jLabel240;
-    private javax.swing.JLabel jLabel241;
-    private javax.swing.JLabel jLabel242;
-    private javax.swing.JLabel jLabel243;
-    private javax.swing.JLabel jLabel244;
-    private javax.swing.JLabel jLabel245;
-    private javax.swing.JLabel jLabel246;
-    private javax.swing.JLabel jLabel247;
-    private javax.swing.JLabel jLabel248;
-    private javax.swing.JLabel jLabel249;
-    private javax.swing.JLabel jLabel250;
-    private javax.swing.JLabel jLabel251;
-    private javax.swing.JLabel jLabel252;
-    private javax.swing.JLabel jLabel258;
-    private javax.swing.JLabel jLabel261;
-    private javax.swing.JLabel jLabel264;
-    private javax.swing.JLabel jLabel265;
-    private javax.swing.JLabel jLabel267;
-    private javax.swing.JLabel jLabel270;
-    private javax.swing.JLabel jLabel271;
-    private javax.swing.JLabel jLabel273;
-    private javax.swing.JLabel jLabel274;
-    private javax.swing.JLabel jLabel275;
-    private javax.swing.JLabel jLabel276;
-    private javax.swing.JLabel jLabel277;
-    private javax.swing.JLabel jLabel278;
-    private javax.swing.JLabel jLabel279;
-    private javax.swing.JLabel jLabel280;
-    private javax.swing.JLabel jLabel282;
-    private javax.swing.JLabel jLabel286;
-    private javax.swing.JLabel jLabel287;
-    private javax.swing.JLabel jLabel288;
-    private javax.swing.JLabel jLabel289;
-    private javax.swing.JLabel jLabel290;
-    private javax.swing.JLabel jLabel291;
-    private javax.swing.JLabel jLabel292;
-    private javax.swing.JLabel jLabel294;
-    private javax.swing.JLabel jLabel295;
-    private javax.swing.JLabel jLabel297;
-    private javax.swing.JLabel jLabel298;
-    private javax.swing.JLabel jLabel299;
-    private javax.swing.JLabel jLabel300;
-    private javax.swing.JLabel jLabel301;
-    private javax.swing.JLabel jLabel303;
-    private javax.swing.JLabel jLabel306;
-    private javax.swing.JLabel jLabel307;
-    private javax.swing.JLabel jLabel308;
-    private javax.swing.JLabel jLabel309;
-    private javax.swing.JLabel jLabel312;
-    private javax.swing.JLabel jLabel315;
-    private javax.swing.JLabel jLabel316;
-    private javax.swing.JLabel jLabel318;
-    private javax.swing.JLabel jLabel319;
-    private javax.swing.JLabel jLabel320;
-    private javax.swing.JLabel jLabel321;
-    private javax.swing.JLabel jLabel324;
-    private javax.swing.JLabel jLabel325;
-    private javax.swing.JLabel jLabel326;
-    private javax.swing.JLabel jLabel327;
-    private javax.swing.JLabel jLabel328;
-    private javax.swing.JLabel jLabel330;
-    private javax.swing.JLabel jLabel331;
-    private javax.swing.JLabel jLabel332;
-    private javax.swing.JLabel jLabel333;
-    private javax.swing.JLabel jLabel334;
-    private javax.swing.JLabel jLabel336;
-    private javax.swing.JLabel jLabel337;
-    private javax.swing.JLabel jLabel338;
-    private javax.swing.JLabel jLabel339;
-    private javax.swing.JLabel jLabel342;
-    private javax.swing.JLabel jLabel343;
-    private javax.swing.JLabel jLabel345;
-    private javax.swing.JLabel jLabel346;
-    private javax.swing.JLabel jLabel347;
-    private javax.swing.JLabel jLabel348;
-    private javax.swing.JLabel jLabel349;
-    private javax.swing.JLabel jLabel351;
-    private javax.swing.JLabel jLabel352;
-    private javax.swing.JLabel jLabel354;
-    private javax.swing.JLabel jLabel355;
-    private javax.swing.JLabel jLabel357;
-    private javax.swing.JLabel jLabel358;
-    private javax.swing.JLabel jLabel360;
-    private javax.swing.JLabel jLabel364;
-    private javax.swing.JLabel jLabel366;
-    private javax.swing.JLabel jLabel367;
-    private javax.swing.JLabel jLabel368;
-    private javax.swing.JLabel jLabel369;
-    private javax.swing.JLabel jLabel370;
-    private javax.swing.JLabel jLabel372;
-    private javax.swing.JLabel jLabel373;
-    private javax.swing.JLabel jLabel374;
-    private javax.swing.JLabel jLabel375;
-    private javax.swing.JLabel jLabel376;
-    private javax.swing.JLabel jLabel378;
-    private javax.swing.JLabel jLabel379;
-    private javax.swing.JLabel jLabel381;
-    private javax.swing.JLabel jLabel382;
-    private javax.swing.JLabel jLabel384;
-    private javax.swing.JLabel jLabel385;
-    private javax.swing.JLabel jLabel387;
-    private javax.swing.JLabel jLabel388;
-    private javax.swing.JLabel jLabel390;
-    private javax.swing.JLabel jLabel394;
-    private javax.swing.JLabel jLabel396;
-    private javax.swing.JLabel jLabel397;
-    private javax.swing.JLabel jLabel398;
-    private javax.swing.JLabel jLabel399;
-    private javax.swing.JLabel jLabel400;
-    private javax.swing.JLabel jLabel402;
-    private javax.swing.JLabel jLabel403;
-    private javax.swing.JLabel jLabel405;
-    private javax.swing.JLabel jLabel406;
-    private javax.swing.JLabel jLabel408;
-    private javax.swing.JLabel jLabel409;
-    private javax.swing.JLabel jLabel410;
-    private javax.swing.JLabel jLabel411;
-    private javax.swing.JLabel jLabel412;
-    private javax.swing.JLabel jLabel414;
-    private javax.swing.JLabel jLabel415;
-    private javax.swing.JLabel jLabel417;
-    private javax.swing.JLabel jLabel418;
-    private javax.swing.JLabel jLabel420;
-    private javax.swing.JLabel jLabel421;
-    private javax.swing.JLabel jLabel423;
-    private javax.swing.JLabel jLabel424;
-    private javax.swing.JLabel jLabel426;
-    private javax.swing.JLabel jLabel427;
-    private javax.swing.JLabel jLabel429;
-    private javax.swing.JLabel jLabel430;
-    private javax.swing.JLabel jLabel432;
-    private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel95;
-    private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabelDate01;
     private javax.swing.JLabel jLabelDate01Day;
     private javax.swing.JLabel jLabelDate02;
@@ -6709,146 +7857,340 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelRoom1Day05Availability;
     private javax.swing.JLabel jLabelRoom1Day05FirstName;
     private javax.swing.JLabel jLabelRoom1Day05LastName;
+    private javax.swing.JLabel jLabelRoom1Day06Availability;
     private javax.swing.JLabel jLabelRoom1Day06FirstName;
     private javax.swing.JLabel jLabelRoom1Day06LastName;
+    private javax.swing.JLabel jLabelRoom1Day07Availability;
     private javax.swing.JLabel jLabelRoom1Day07FirstName;
     private javax.swing.JLabel jLabelRoom1Day07LastName;
+    private javax.swing.JLabel jLabelRoom1Day08Availability;
     private javax.swing.JLabel jLabelRoom1Day08FirstName;
     private javax.swing.JLabel jLabelRoom1Day08LastName;
+    private javax.swing.JLabel jLabelRoom1Day09Availability;
     private javax.swing.JLabel jLabelRoom1Day09FirstName;
     private javax.swing.JLabel jLabelRoom1Day09LastName;
+    private javax.swing.JLabel jLabelRoom1Day10Availability;
+    private javax.swing.JLabel jLabelRoom1Day10FirstName;
     private javax.swing.JLabel jLabelRoom1Day10LastName;
+    private javax.swing.JLabel jLabelRoom1Day11Availability;
+    private javax.swing.JLabel jLabelRoom1Day11FirstName;
     private javax.swing.JLabel jLabelRoom1Day11LastName;
+    private javax.swing.JLabel jLabelRoom1Day12Availability;
+    private javax.swing.JLabel jLabelRoom1Day12FirstName;
     private javax.swing.JLabel jLabelRoom1Day12LastName;
+    private javax.swing.JLabel jLabelRoom1Day13Availability;
+    private javax.swing.JLabel jLabelRoom1Day13FirstName;
     private javax.swing.JLabel jLabelRoom1Day13LastName;
+    private javax.swing.JLabel jLabelRoom1Day14Availability;
+    private javax.swing.JLabel jLabelRoom1Day14FirstName;
     private javax.swing.JLabel jLabelRoom1Day14LastName;
     private javax.swing.JLabel jLabelRoom1RoomID;
     private javax.swing.JLabel jLabelRoom1RoomSize;
+    private javax.swing.JLabel jLabelRoom2Day01Availability;
     private javax.swing.JLabel jLabelRoom2Day01FirstName;
     private javax.swing.JLabel jLabelRoom2Day01LastName;
+    private javax.swing.JLabel jLabelRoom2Day02Availability;
     private javax.swing.JLabel jLabelRoom2Day02FirstName;
     private javax.swing.JLabel jLabelRoom2Day02LastName;
+    private javax.swing.JLabel jLabelRoom2Day03Availability;
     private javax.swing.JLabel jLabelRoom2Day03FirstName;
     private javax.swing.JLabel jLabelRoom2Day03LastName;
+    private javax.swing.JLabel jLabelRoom2Day04Availability;
     private javax.swing.JLabel jLabelRoom2Day04FirstName;
     private javax.swing.JLabel jLabelRoom2Day04LastName;
+    private javax.swing.JLabel jLabelRoom2Day05Availability;
     private javax.swing.JLabel jLabelRoom2Day05FirstName;
     private javax.swing.JLabel jLabelRoom2Day05LastName;
+    private javax.swing.JLabel jLabelRoom2Day06Availability;
     private javax.swing.JLabel jLabelRoom2Day06FirstName;
     private javax.swing.JLabel jLabelRoom2Day06LastName;
+    private javax.swing.JLabel jLabelRoom2Day07Availability;
     private javax.swing.JLabel jLabelRoom2Day07FirstName;
     private javax.swing.JLabel jLabelRoom2Day07LastName;
+    private javax.swing.JLabel jLabelRoom2Day08Availability;
     private javax.swing.JLabel jLabelRoom2Day08FirstName;
     private javax.swing.JLabel jLabelRoom2Day08LastName;
+    private javax.swing.JLabel jLabelRoom2Day09Availability;
     private javax.swing.JLabel jLabelRoom2Day09FirstName;
     private javax.swing.JLabel jLabelRoom2Day09LastName;
+    private javax.swing.JLabel jLabelRoom2Day10Availability;
+    private javax.swing.JLabel jLabelRoom2Day10FirstName;
     private javax.swing.JLabel jLabelRoom2Day10LastName;
+    private javax.swing.JLabel jLabelRoom2Day11Availability;
+    private javax.swing.JLabel jLabelRoom2Day11FirstName;
     private javax.swing.JLabel jLabelRoom2Day11LastName;
+    private javax.swing.JLabel jLabelRoom2Day12Availability;
+    private javax.swing.JLabel jLabelRoom2Day12FirstName;
     private javax.swing.JLabel jLabelRoom2Day12LastName;
+    private javax.swing.JLabel jLabelRoom2Day13Availability;
+    private javax.swing.JLabel jLabelRoom2Day13FirstName;
     private javax.swing.JLabel jLabelRoom2Day13LastName;
+    private javax.swing.JLabel jLabelRoom2Day14Availability;
+    private javax.swing.JLabel jLabelRoom2Day14FirstName;
     private javax.swing.JLabel jLabelRoom2Day14LastName;
     private javax.swing.JLabel jLabelRoom2RoomID;
     private javax.swing.JLabel jLabelRoom2RoomSize;
+    private javax.swing.JLabel jLabelRoom3Day01Availability;
     private javax.swing.JLabel jLabelRoom3Day01FirstName;
     private javax.swing.JLabel jLabelRoom3Day01LastName;
+    private javax.swing.JLabel jLabelRoom3Day02Availability;
     private javax.swing.JLabel jLabelRoom3Day02FirstName;
     private javax.swing.JLabel jLabelRoom3Day02LastName;
+    private javax.swing.JLabel jLabelRoom3Day03Availability;
     private javax.swing.JLabel jLabelRoom3Day03FirstName;
     private javax.swing.JLabel jLabelRoom3Day03LastName;
+    private javax.swing.JLabel jLabelRoom3Day04Availability;
     private javax.swing.JLabel jLabelRoom3Day04FirstName;
     private javax.swing.JLabel jLabelRoom3Day04LastName;
+    private javax.swing.JLabel jLabelRoom3Day05Availability;
     private javax.swing.JLabel jLabelRoom3Day05FirstName;
     private javax.swing.JLabel jLabelRoom3Day05LastName;
+    private javax.swing.JLabel jLabelRoom3Day06Availability;
     private javax.swing.JLabel jLabelRoom3Day06FirstName;
     private javax.swing.JLabel jLabelRoom3Day06LastName;
+    private javax.swing.JLabel jLabelRoom3Day07Availability;
     private javax.swing.JLabel jLabelRoom3Day07FirstName;
     private javax.swing.JLabel jLabelRoom3Day07LastName;
+    private javax.swing.JLabel jLabelRoom3Day08Availability;
     private javax.swing.JLabel jLabelRoom3Day08FirstName;
     private javax.swing.JLabel jLabelRoom3Day08LastName;
+    private javax.swing.JLabel jLabelRoom3Day09Availability;
     private javax.swing.JLabel jLabelRoom3Day09FirstName;
     private javax.swing.JLabel jLabelRoom3Day09LastName;
+    private javax.swing.JLabel jLabelRoom3Day10Availability;
+    private javax.swing.JLabel jLabelRoom3Day10FirstName;
     private javax.swing.JLabel jLabelRoom3Day10LastName;
+    private javax.swing.JLabel jLabelRoom3Day11Availability;
+    private javax.swing.JLabel jLabelRoom3Day11FirstName;
     private javax.swing.JLabel jLabelRoom3Day11LastName;
+    private javax.swing.JLabel jLabelRoom3Day12Availability;
+    private javax.swing.JLabel jLabelRoom3Day12FirstName;
     private javax.swing.JLabel jLabelRoom3Day12LastName;
+    private javax.swing.JLabel jLabelRoom3Day13Availability;
+    private javax.swing.JLabel jLabelRoom3Day13FirstName;
     private javax.swing.JLabel jLabelRoom3Day13LastName;
+    private javax.swing.JLabel jLabelRoom3Day14Availability;
+    private javax.swing.JLabel jLabelRoom3Day14FirstName;
     private javax.swing.JLabel jLabelRoom3Day14LastName;
     private javax.swing.JLabel jLabelRoom3RoomID;
     private javax.swing.JLabel jLabelRoom3RoomSize;
+    private javax.swing.JLabel jLabelRoom4Day01Availability;
     private javax.swing.JLabel jLabelRoom4Day01FirstName;
     private javax.swing.JLabel jLabelRoom4Day01LastName;
+    private javax.swing.JLabel jLabelRoom4Day02Availability;
     private javax.swing.JLabel jLabelRoom4Day02FirstName;
     private javax.swing.JLabel jLabelRoom4Day02LastName;
+    private javax.swing.JLabel jLabelRoom4Day03Availability;
     private javax.swing.JLabel jLabelRoom4Day03FirstName;
     private javax.swing.JLabel jLabelRoom4Day03LastName;
+    private javax.swing.JLabel jLabelRoom4Day04Availability;
     private javax.swing.JLabel jLabelRoom4Day04FirstName;
     private javax.swing.JLabel jLabelRoom4Day04LastName;
+    private javax.swing.JLabel jLabelRoom4Day05Availability;
     private javax.swing.JLabel jLabelRoom4Day05FirstName;
     private javax.swing.JLabel jLabelRoom4Day05LastName;
+    private javax.swing.JLabel jLabelRoom4Day06Availability;
     private javax.swing.JLabel jLabelRoom4Day06FirstName;
     private javax.swing.JLabel jLabelRoom4Day06LastName;
+    private javax.swing.JLabel jLabelRoom4Day07Availability;
     private javax.swing.JLabel jLabelRoom4Day07FirstName;
     private javax.swing.JLabel jLabelRoom4Day07LastName;
+    private javax.swing.JLabel jLabelRoom4Day08Availability;
     private javax.swing.JLabel jLabelRoom4Day08FirstName;
     private javax.swing.JLabel jLabelRoom4Day08LastName;
+    private javax.swing.JLabel jLabelRoom4Day09Availability;
     private javax.swing.JLabel jLabelRoom4Day09FirstName;
     private javax.swing.JLabel jLabelRoom4Day09LastName;
+    private javax.swing.JLabel jLabelRoom4Day10Availability;
+    private javax.swing.JLabel jLabelRoom4Day10FirstName;
+    private javax.swing.JLabel jLabelRoom4Day10LastName;
+    private javax.swing.JLabel jLabelRoom4Day11Availability;
+    private javax.swing.JLabel jLabelRoom4Day11FirstName;
+    private javax.swing.JLabel jLabelRoom4Day11LastName;
+    private javax.swing.JLabel jLabelRoom4Day12Availability;
+    private javax.swing.JLabel jLabelRoom4Day12FirstName;
+    private javax.swing.JLabel jLabelRoom4Day12LastName;
+    private javax.swing.JLabel jLabelRoom4Day13Availability;
+    private javax.swing.JLabel jLabelRoom4Day13FirstName;
+    private javax.swing.JLabel jLabelRoom4Day13LastName;
+    private javax.swing.JLabel jLabelRoom4Day14Availability;
+    private javax.swing.JLabel jLabelRoom4Day14FirstName;
+    private javax.swing.JLabel jLabelRoom4Day14LastName;
     private javax.swing.JLabel jLabelRoom4RoomID;
     private javax.swing.JLabel jLabelRoom4RoomSize;
+    private javax.swing.JLabel jLabelRoom5Day01Availability;
     private javax.swing.JLabel jLabelRoom5Day01FirstName;
     private javax.swing.JLabel jLabelRoom5Day01LastName;
+    private javax.swing.JLabel jLabelRoom5Day02Availability;
     private javax.swing.JLabel jLabelRoom5Day02FirstName;
     private javax.swing.JLabel jLabelRoom5Day02LastName;
+    private javax.swing.JLabel jLabelRoom5Day03Availability;
     private javax.swing.JLabel jLabelRoom5Day03FirstName;
     private javax.swing.JLabel jLabelRoom5Day03LastName;
+    private javax.swing.JLabel jLabelRoom5Day04Availability;
     private javax.swing.JLabel jLabelRoom5Day04FirstName;
     private javax.swing.JLabel jLabelRoom5Day04LastName;
+    private javax.swing.JLabel jLabelRoom5Day05Availability;
     private javax.swing.JLabel jLabelRoom5Day05FirstName;
     private javax.swing.JLabel jLabelRoom5Day05LastName;
+    private javax.swing.JLabel jLabelRoom5Day06Availability;
     private javax.swing.JLabel jLabelRoom5Day06FirstName;
     private javax.swing.JLabel jLabelRoom5Day06LastName;
+    private javax.swing.JLabel jLabelRoom5Day07Availability;
     private javax.swing.JLabel jLabelRoom5Day07FirstName;
     private javax.swing.JLabel jLabelRoom5Day07LastName;
+    private javax.swing.JLabel jLabelRoom5Day08Availability;
     private javax.swing.JLabel jLabelRoom5Day08FirstName;
     private javax.swing.JLabel jLabelRoom5Day08LastName;
+    private javax.swing.JLabel jLabelRoom5Day09Availability;
     private javax.swing.JLabel jLabelRoom5Day09FirstName;
     private javax.swing.JLabel jLabelRoom5Day09LastName;
+    private javax.swing.JLabel jLabelRoom5Day10Availability;
+    private javax.swing.JLabel jLabelRoom5Day10FirstName;
+    private javax.swing.JLabel jLabelRoom5Day10LastName;
+    private javax.swing.JLabel jLabelRoom5Day11Availability;
+    private javax.swing.JLabel jLabelRoom5Day11FirstName;
+    private javax.swing.JLabel jLabelRoom5Day11LastName;
+    private javax.swing.JLabel jLabelRoom5Day12Availability;
+    private javax.swing.JLabel jLabelRoom5Day12FirstName;
+    private javax.swing.JLabel jLabelRoom5Day12LastName;
+    private javax.swing.JLabel jLabelRoom5Day13Availability;
+    private javax.swing.JLabel jLabelRoom5Day13FirstName;
+    private javax.swing.JLabel jLabelRoom5Day13LastName;
+    private javax.swing.JLabel jLabelRoom5Day14Availability;
+    private javax.swing.JLabel jLabelRoom5Day14FirstName;
+    private javax.swing.JLabel jLabelRoom5Day14LastName;
     private javax.swing.JLabel jLabelRoom5RoomID;
     private javax.swing.JLabel jLabelRoom5RoomSize;
+    private javax.swing.JLabel jLabelRoom6Day01Availability;
+    private javax.swing.JLabel jLabelRoom6Day01FirstName;
     private javax.swing.JLabel jLabelRoom6Day01LastName;
+    private javax.swing.JLabel jLabelRoom6Day02Availability;
+    private javax.swing.JLabel jLabelRoom6Day02FirstName;
     private javax.swing.JLabel jLabelRoom6Day02LastName;
+    private javax.swing.JLabel jLabelRoom6Day03Availability;
+    private javax.swing.JLabel jLabelRoom6Day03FirstName;
     private javax.swing.JLabel jLabelRoom6Day03LastName;
+    private javax.swing.JLabel jLabelRoom6Day04Availability;
+    private javax.swing.JLabel jLabelRoom6Day04FirstName;
     private javax.swing.JLabel jLabelRoom6Day04LastName;
+    private javax.swing.JLabel jLabelRoom6Day05Availability;
+    private javax.swing.JLabel jLabelRoom6Day05FirstName;
     private javax.swing.JLabel jLabelRoom6Day05LastName;
+    private javax.swing.JLabel jLabelRoom6Day06Availability;
+    private javax.swing.JLabel jLabelRoom6Day06FirstName;
     private javax.swing.JLabel jLabelRoom6Day06LastName;
+    private javax.swing.JLabel jLabelRoom6Day07Availability;
+    private javax.swing.JLabel jLabelRoom6Day07FirstName;
     private javax.swing.JLabel jLabelRoom6Day07LastName;
+    private javax.swing.JLabel jLabelRoom6Day08Availability;
+    private javax.swing.JLabel jLabelRoom6Day08FirstName;
     private javax.swing.JLabel jLabelRoom6Day08LastName;
+    private javax.swing.JLabel jLabelRoom6Day09Availability;
+    private javax.swing.JLabel jLabelRoom6Day09FirstName;
     private javax.swing.JLabel jLabelRoom6Day09LastName;
+    private javax.swing.JLabel jLabelRoom6Day10Availability;
+    private javax.swing.JLabel jLabelRoom6Day10FirstName;
+    private javax.swing.JLabel jLabelRoom6Day10LastName;
+    private javax.swing.JLabel jLabelRoom6Day11Availability;
+    private javax.swing.JLabel jLabelRoom6Day11FirstName;
+    private javax.swing.JLabel jLabelRoom6Day11LastName;
+    private javax.swing.JLabel jLabelRoom6Day12Availability;
+    private javax.swing.JLabel jLabelRoom6Day12FirstName;
+    private javax.swing.JLabel jLabelRoom6Day12LastName;
+    private javax.swing.JLabel jLabelRoom6Day13Availability;
+    private javax.swing.JLabel jLabelRoom6Day13FirstName;
+    private javax.swing.JLabel jLabelRoom6Day13LastName;
+    private javax.swing.JLabel jLabelRoom6Day14Availability;
+    private javax.swing.JLabel jLabelRoom6Day14FirstName;
+    private javax.swing.JLabel jLabelRoom6Day14LastName;
     private javax.swing.JLabel jLabelRoom6RoomID;
     private javax.swing.JLabel jLabelRoom6RoomSize;
+    private javax.swing.JLabel jLabelRoom7Day01Availability;
+    private javax.swing.JLabel jLabelRoom7Day01FirstName;
     private javax.swing.JLabel jLabelRoom7Day01LastName;
+    private javax.swing.JLabel jLabelRoom7Day02Availability;
+    private javax.swing.JLabel jLabelRoom7Day02FirstName;
     private javax.swing.JLabel jLabelRoom7Day02LastName;
+    private javax.swing.JLabel jLabelRoom7Day03Availability;
+    private javax.swing.JLabel jLabelRoom7Day03FirstName;
     private javax.swing.JLabel jLabelRoom7Day03LastName;
+    private javax.swing.JLabel jLabelRoom7Day04Availability;
+    private javax.swing.JLabel jLabelRoom7Day04FirstName;
     private javax.swing.JLabel jLabelRoom7Day04LastName;
+    private javax.swing.JLabel jLabelRoom7Day05Availability;
+    private javax.swing.JLabel jLabelRoom7Day05FirstName;
     private javax.swing.JLabel jLabelRoom7Day05LastName;
+    private javax.swing.JLabel jLabelRoom7Day06Availability;
+    private javax.swing.JLabel jLabelRoom7Day06FirstName;
     private javax.swing.JLabel jLabelRoom7Day06LastName;
+    private javax.swing.JLabel jLabelRoom7Day07Availability;
+    private javax.swing.JLabel jLabelRoom7Day07FirstName;
     private javax.swing.JLabel jLabelRoom7Day07LastName;
+    private javax.swing.JLabel jLabelRoom7Day08Availability;
+    private javax.swing.JLabel jLabelRoom7Day08FirstName;
     private javax.swing.JLabel jLabelRoom7Day08LastName;
+    private javax.swing.JLabel jLabelRoom7Day09Availability;
+    private javax.swing.JLabel jLabelRoom7Day09FirstName;
     private javax.swing.JLabel jLabelRoom7Day09LastName;
+    private javax.swing.JLabel jLabelRoom7Day10Availability;
+    private javax.swing.JLabel jLabelRoom7Day10FirstName;
+    private javax.swing.JLabel jLabelRoom7Day10LastName;
+    private javax.swing.JLabel jLabelRoom7Day11Availability;
+    private javax.swing.JLabel jLabelRoom7Day11FirstName;
+    private javax.swing.JLabel jLabelRoom7Day11LastName;
+    private javax.swing.JLabel jLabelRoom7Day12Availability;
+    private javax.swing.JLabel jLabelRoom7Day12FirstName;
+    private javax.swing.JLabel jLabelRoom7Day12LastName;
+    private javax.swing.JLabel jLabelRoom7Day13Availability;
+    private javax.swing.JLabel jLabelRoom7Day13FirstName;
+    private javax.swing.JLabel jLabelRoom7Day13LastName;
+    private javax.swing.JLabel jLabelRoom7Day14Availability;
+    private javax.swing.JLabel jLabelRoom7Day14FirstName;
+    private javax.swing.JLabel jLabelRoom7Day14LastName;
     private javax.swing.JLabel jLabelRoom7RoomID;
     private javax.swing.JLabel jLabelRoom7RoomSize;
+    private javax.swing.JLabel jLabelRoom8Day01Availability;
+    private javax.swing.JLabel jLabelRoom8Day01FirstName;
     private javax.swing.JLabel jLabelRoom8Day01LastName;
+    private javax.swing.JLabel jLabelRoom8Day02Availability;
+    private javax.swing.JLabel jLabelRoom8Day02FirstName;
     private javax.swing.JLabel jLabelRoom8Day02LastName;
+    private javax.swing.JLabel jLabelRoom8Day03Availability;
+    private javax.swing.JLabel jLabelRoom8Day03FirstName;
     private javax.swing.JLabel jLabelRoom8Day03LastName;
+    private javax.swing.JLabel jLabelRoom8Day04Availability;
+    private javax.swing.JLabel jLabelRoom8Day04FirstName;
     private javax.swing.JLabel jLabelRoom8Day04LastName;
+    private javax.swing.JLabel jLabelRoom8Day05Availability;
+    private javax.swing.JLabel jLabelRoom8Day05FirstName;
     private javax.swing.JLabel jLabelRoom8Day05LastName;
+    private javax.swing.JLabel jLabelRoom8Day06Availability;
+    private javax.swing.JLabel jLabelRoom8Day06FirstName;
     private javax.swing.JLabel jLabelRoom8Day06LastName;
+    private javax.swing.JLabel jLabelRoom8Day07Availability;
+    private javax.swing.JLabel jLabelRoom8Day07FirstName;
     private javax.swing.JLabel jLabelRoom8Day07LastName;
+    private javax.swing.JLabel jLabelRoom8Day08Availability;
+    private javax.swing.JLabel jLabelRoom8Day08FirstName;
     private javax.swing.JLabel jLabelRoom8Day08LastName;
+    private javax.swing.JLabel jLabelRoom8Day09Availability;
+    private javax.swing.JLabel jLabelRoom8Day09FirstName;
     private javax.swing.JLabel jLabelRoom8Day09LastName;
+    private javax.swing.JLabel jLabelRoom8Day10Availability;
+    private javax.swing.JLabel jLabelRoom8Day10FirstName;
     private javax.swing.JLabel jLabelRoom8Day10LastName;
+    private javax.swing.JLabel jLabelRoom8Day11Availability;
+    private javax.swing.JLabel jLabelRoom8Day11FirstName;
     private javax.swing.JLabel jLabelRoom8Day11LastName;
+    private javax.swing.JLabel jLabelRoom8Day12Availability;
+    private javax.swing.JLabel jLabelRoom8Day12FirstName;
     private javax.swing.JLabel jLabelRoom8Day12LastName;
+    private javax.swing.JLabel jLabelRoom8Day13Availability;
+    private javax.swing.JLabel jLabelRoom8Day13FirstName;
     private javax.swing.JLabel jLabelRoom8Day13LastName;
+    private javax.swing.JLabel jLabelRoom8Day14Availability;
+    private javax.swing.JLabel jLabelRoom8Day14FirstName;
     private javax.swing.JLabel jLabelRoom8Day14LastName;
     private javax.swing.JLabel jLabelRoom8RoomID;
     private javax.swing.JLabel jLabelRoom8RoomSize;
