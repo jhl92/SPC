@@ -8261,7 +8261,10 @@ public class CasablancaGUI extends javax.swing.JFrame
         
     }
     
-    
+    private void changeAvailabilityBackground()
+    {
+        
+    }
     
     
     
