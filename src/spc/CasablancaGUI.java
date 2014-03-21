@@ -8187,7 +8187,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonChangeBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonChangeBookingActionPerformed
-        // TODO add your handling code here:
+        //Open the Booking-window with the selected room-data also shown in Details-window.
     }//GEN-LAST:event_jButtonChangeBookingActionPerformed
 
     private void jButtonChangeDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
