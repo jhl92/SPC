@@ -40,13 +40,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelDetailsRoomID = new javax.swing.JLabel();
         jPanelDetailsAvailabilityMarker = new javax.swing.JPanel();
         jLabelDetailsAvailabilityMarkerText = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelDetailsRoomType = new javax.swing.JLabel();
+        jLabelNoChange10 = new javax.swing.JLabel();
         jLabelDetailsStartDate = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelNoChange11 = new javax.swing.JLabel();
         jLabelDetailsEndDate = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelNoChange12 = new javax.swing.JLabel();
+        jLabelDetailsBookingDate = new javax.swing.JLabel();
         jButtonChangeBooking = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabelDetailsNoChange2 = new javax.swing.JLabel();
@@ -59,12 +59,12 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelDetailsNoChange9 = new javax.swing.JLabel();
         jTextFieldDetailsFirstName = new javax.swing.JTextField();
         jTextFieldDetailsLastName = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        jTextFieldDetailsAddress = new javax.swing.JTextField();
+        jTextFieldDetailsCity = new javax.swing.JTextField();
+        jTextFieldDetailsPostalCode = new javax.swing.JTextField();
+        jTextFieldDetailsCountry = new javax.swing.JTextField();
+        jTextFieldDetailsPhoneNumber = new javax.swing.JTextField();
+        jTextFieldDetailsEmail = new javax.swing.JTextField();
         jButtonChangeDetails = new javax.swing.JButton();
         jButtonSaveDetails = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -650,28 +650,28 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel7.setText("(Double Room)");
+        jLabelDetailsRoomType.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelDetailsRoomType.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabelDetailsRoomType.setText("(Double Room)");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel2.setText("Start date:");
+        jLabelNoChange10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelNoChange10.setText("Start date:");
 
         jLabelDetailsStartDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelDetailsStartDate.setText("2014 - 04 - 02");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel4.setText("End date:");
+        jLabelNoChange11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelNoChange11.setText("End date:");
 
         jLabelDetailsEndDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelDetailsEndDate.setText("2014 - 04 - 16");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel1.setText("Date of booking:");
+        jLabelNoChange12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelNoChange12.setText("Date of booking:");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("2014 - 01 - 02");
-        jLabel3.setPreferredSize(new java.awt.Dimension(50, 20));
+        jLabelDetailsBookingDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelDetailsBookingDate.setText("2014 - 01 - 02");
+        jLabelDetailsBookingDate.setPreferredSize(new java.awt.Dimension(50, 20));
 
         jButtonChangeBooking.setText("Change Booking");
         jButtonChangeBooking.setPreferredSize(new java.awt.Dimension(120, 30));
@@ -690,20 +690,20 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelDetailsBookingDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelDetailsEndDate)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel1)
+                                .addComponent(jLabelNoChange10, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jLabelNoChange11)
+                            .addComponent(jLabelNoChange12)
                             .addComponent(jButtonChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -714,21 +714,21 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(10, 10, 10)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelNoChange10)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4)
+                .addComponent(jLabelNoChange11)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelDetailsEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addComponent(jLabelNoChange12)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsBookingDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -776,29 +776,29 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldDetailsLastName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextFieldDetailsLastName.setText("Sandler");
 
-        jTextField1.setEditable(false);
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextField1.setText("Purple Street 41");
+        jTextFieldDetailsAddress.setEditable(false);
+        jTextFieldDetailsAddress.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsAddress.setText("Purple Street 41");
 
-        jTextField2.setEditable(false);
-        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextField2.setText("Beverly Hills");
+        jTextFieldDetailsCity.setEditable(false);
+        jTextFieldDetailsCity.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsCity.setText("Beverly Hills");
 
-        jTextField3.setEditable(false);
-        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextField3.setText("90210");
+        jTextFieldDetailsPostalCode.setEditable(false);
+        jTextFieldDetailsPostalCode.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsPostalCode.setText("90210");
 
-        jTextField4.setEditable(false);
-        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextField4.setText("United States of America");
+        jTextFieldDetailsCountry.setEditable(false);
+        jTextFieldDetailsCountry.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsCountry.setText("United States of America");
 
-        jTextField5.setEditable(false);
-        jTextField5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextField5.setText("555-8474");
+        jTextFieldDetailsPhoneNumber.setEditable(false);
+        jTextFieldDetailsPhoneNumber.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsPhoneNumber.setText("555-8474");
 
-        jTextField6.setEditable(false);
-        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextField6.setText("SandlersBiatch@Hotmail.com");
+        jTextFieldDetailsEmail.setEditable(false);
+        jTextFieldDetailsEmail.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsEmail.setText("SandlersBiatch@Hotmail.com");
 
         jButtonChangeDetails.setText("Change Details");
         jButtonChangeDetails.setPreferredSize(new java.awt.Dimension(120, 30));
@@ -812,6 +812,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButtonSaveDetails.setText("Save Details");
         jButtonSaveDetails.setPreferredSize(new java.awt.Dimension(120, 30));
+        jButtonSaveDetails.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSaveDetailsActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -822,12 +829,12 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextFieldDetailsFirstName)
                     .addComponent(jTextFieldDetailsLastName)
-                    .addComponent(jTextField1)
-                    .addComponent(jTextField2)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField4)
-                    .addComponent(jTextField5)
-                    .addComponent(jTextField6)
+                    .addComponent(jTextFieldDetailsAddress)
+                    .addComponent(jTextFieldDetailsCity)
+                    .addComponent(jTextFieldDetailsPostalCode)
+                    .addComponent(jTextFieldDetailsCountry)
+                    .addComponent(jTextFieldDetailsPhoneNumber)
+                    .addComponent(jTextFieldDetailsEmail)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelDetailsNoChange2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -859,27 +866,27 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(10, 10, 10)
                 .addComponent(jLabelDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(4, 4, 4)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldDetailsAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jLabelDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldDetailsCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jLabelDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldDetailsPostalCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jLabelDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldDetailsCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jLabelDetailsNoChange8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldDetailsPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jLabelDetailsNoChange9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldDetailsEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButtonChangeDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -8185,18 +8192,74 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonChangeDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonChangeDetailsActionPerformed
-        // TODO add your handling code here:
+        jButtonSaveDetails.setVisible(true);
+        jButtonChangeDetails.setVisible(false);
+        
+        jTextFieldDetailsFirstName.setEditable(true);
+        jTextFieldDetailsLastName.setEditable(true);
+        jTextFieldDetailsAddress.setEditable(true);
+        jTextFieldDetailsCity.setEditable(true);
+        jTextFieldDetailsPostalCode.setEditable(true);
+        jTextFieldDetailsCountry.setEditable(true);
+        jTextFieldDetailsPhoneNumber.setEditable(true);
+        jTextFieldDetailsEmail.setEditable(true);
     }//GEN-LAST:event_jButtonChangeDetailsActionPerformed
 
     private void jButtonExitDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonExitDetailsActionPerformed
-        // TODO add your handling code here:
+        jDialogDetails.setVisible(false);
     }//GEN-LAST:event_jButtonExitDetailsActionPerformed
 
-    //
+    private void jButtonSaveDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSaveDetailsActionPerformed
+    {//GEN-HEADEREND:event_jButtonSaveDetailsActionPerformed
+        jTextFieldDetailsFirstName.getText();
+        jTextFieldDetailsLastName.getText();
+        jTextFieldDetailsAddress.getText();
+        jTextFieldDetailsCity.getText();
+        jTextFieldDetailsPostalCode.getText();
+        jTextFieldDetailsCountry.getText();
+        jTextFieldDetailsPhoneNumber.getText();
+        jTextFieldDetailsEmail.getText();
+        
+        jButtonSaveDetails.setVisible(false);
+        jButtonChangeDetails.setVisible(true);
+        
+        jTextFieldDetailsFirstName.setEditable(false);
+        jTextFieldDetailsLastName.setEditable(false);
+        jTextFieldDetailsAddress.setEditable(false);
+        jTextFieldDetailsCity.setEditable(false);
+        jTextFieldDetailsPostalCode.setEditable(false);
+        jTextFieldDetailsCountry.setEditable(false);
+        jTextFieldDetailsPhoneNumber.setEditable(false);
+        jTextFieldDetailsEmail.setEditable(false);
+    }//GEN-LAST:event_jButtonSaveDetailsActionPerformed
+
+    //Updates the info in the cells in Main-window
+    private void refreshMainScreen()
+    {
+        
+    }
     
+    //Opens Detail-window and show details from the selected (pressed) room/date.
+    private void showDetails()
+    {
+        jTextFieldDetailsFirstName.setText("");
+        jTextFieldDetailsLastName.setText("");
+        jTextFieldDetailsAddress.setText("");
+        jTextFieldDetailsCity.setText("");
+        jTextFieldDetailsPostalCode.setText("");
+        jTextFieldDetailsCountry.setText("");
+        jTextFieldDetailsPhoneNumber.setText("");
+        jTextFieldDetailsEmail.setText("");
+        jButtonSaveDetails.setVisible(false);
+        
+    }
     
-    
+    //Retrieves data from tables (Database)
+    private void getDetailsFromTable()
+    {
+        
+    }
     
     
     
@@ -8268,11 +8331,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonSaveDetails;
     private javax.swing.JButton jButtonSearch;
     private javax.swing.JDialog jDialogDetails;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabelDate01;
     private javax.swing.JLabel jLabelDate01Day;
     private javax.swing.JLabel jLabelDate02;
@@ -8316,6 +8374,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelDate14Year;
     private javax.swing.JLabel jLabelDateDay01Year;
     private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
+    private javax.swing.JLabel jLabelDetailsBookingDate;
     private javax.swing.JLabel jLabelDetailsEndDate;
     private javax.swing.JLabel jLabelDetailsNoChange2;
     private javax.swing.JLabel jLabelDetailsNoChange3;
@@ -8326,8 +8385,12 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelDetailsNoChange8;
     private javax.swing.JLabel jLabelDetailsNoChange9;
     private javax.swing.JLabel jLabelDetailsRoomID;
+    private javax.swing.JLabel jLabelDetailsRoomType;
     private javax.swing.JLabel jLabelDetailsStartDate;
     private javax.swing.JLabel jLabelNoChange1;
+    private javax.swing.JLabel jLabelNoChange10;
+    private javax.swing.JLabel jLabelNoChange11;
+    private javax.swing.JLabel jLabelNoChange12;
     private javax.swing.JLabel jLabelNoChange2;
     private javax.swing.JLabel jLabelNoChange3;
     private javax.swing.JLabel jLabelNoChange4;
@@ -8827,13 +8890,13 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelRoom8Day12;
     private javax.swing.JPanel jPanelRoom8Day13;
     private javax.swing.JPanel jPanelRoom8Day14;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextFieldDetailsAddress;
+    private javax.swing.JTextField jTextFieldDetailsCity;
+    private javax.swing.JTextField jTextFieldDetailsCountry;
+    private javax.swing.JTextField jTextFieldDetailsEmail;
     private javax.swing.JTextField jTextFieldDetailsFirstName;
     private javax.swing.JTextField jTextFieldDetailsLastName;
+    private javax.swing.JTextField jTextFieldDetailsPhoneNumber;
+    private javax.swing.JTextField jTextFieldDetailsPostalCode;
     // End of variables declaration//GEN-END:variables
 }
