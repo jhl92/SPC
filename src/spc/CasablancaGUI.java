@@ -35,6 +35,40 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void initComponents()
     {
 
+        jDialogDetails = new javax.swing.JDialog();
+        jPanel2 = new javax.swing.JPanel();
+        jLabelDetailsRoomID = new javax.swing.JLabel();
+        jPanelDetailsAvailabilityMarker = new javax.swing.JPanel();
+        jLabelDetailsAvailabilityMarkerText = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabelDetailsStartDate = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabelDetailsEndDate = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabelDetailsNoChange2 = new javax.swing.JLabel();
+        jLabelDetailsNoChange3 = new javax.swing.JLabel();
+        jLabelDetailsNoChange4 = new javax.swing.JLabel();
+        jLabelDetailsNoChange5 = new javax.swing.JLabel();
+        jLabelDetailsNoChange6 = new javax.swing.JLabel();
+        jLabelDetailsNoChange7 = new javax.swing.JLabel();
+        jLabelDetailsNoChange8 = new javax.swing.JLabel();
+        jLabelDetailsNoChange9 = new javax.swing.JLabel();
+        jTextFieldDetailsFirstName = new javax.swing.JTextField();
+        jTextFieldDetailsLastName = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jButtonChangeDetails = new javax.swing.JButton();
+        jButtonSaveDetails = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jButtonBooking = new javax.swing.JButton();
@@ -586,6 +620,320 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonNext14Days = new javax.swing.JButton();
         jButtonNext7Days = new javax.swing.JButton();
 
+        jDialogDetails.setTitle("Details");
+        jDialogDetails.setPreferredSize(new java.awt.Dimension(531, 495));
+        jDialogDetails.setResizable(false);
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel2.setPreferredSize(new java.awt.Dimension(250, 450));
+
+        jLabelDetailsRoomID.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabelDetailsRoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDetailsRoomID.setText("001");
+        jLabelDetailsRoomID.setPreferredSize(new java.awt.Dimension(30, 30));
+
+        jPanelDetailsAvailabilityMarker.setBackground(new java.awt.Color(255, 0, 0));
+
+        jLabelDetailsAvailabilityMarkerText.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelDetailsAvailabilityMarkerText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDetailsAvailabilityMarkerText.setText("BOOKED");
+        jLabelDetailsAvailabilityMarkerText.setPreferredSize(new java.awt.Dimension(50, 30));
+
+        javax.swing.GroupLayout jPanelDetailsAvailabilityMarkerLayout = new javax.swing.GroupLayout(jPanelDetailsAvailabilityMarker);
+        jPanelDetailsAvailabilityMarker.setLayout(jPanelDetailsAvailabilityMarkerLayout);
+        jPanelDetailsAvailabilityMarkerLayout.setHorizontalGroup(
+            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanelDetailsAvailabilityMarkerLayout.setVerticalGroup(
+            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel7.setText("(Double Room)");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel2.setText("Start date:");
+
+        jLabelDetailsStartDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelDetailsStartDate.setText("2014 - 04 - 02");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel4.setText("End date:");
+
+        jLabelDetailsEndDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelDetailsEndDate.setText("2014 - 04 - 16");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel1.setText("Date of booking:");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("2014 - 01 - 02");
+        jLabel3.setPreferredSize(new java.awt.Dimension(50, 20));
+
+        jButton1.setText("Change Booking");
+        jButton1.setPreferredSize(new java.awt.Dimension(120, 30));
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelDetailsEndDate)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel1)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(0, 0, 0)
+                .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4)
+                .addGap(0, 0, 0)
+                .addComponent(jLabelDetailsEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        jLabelDetailsNoChange2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange2.setText("First Name:");
+        jLabelDetailsNoChange2.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelDetailsNoChange3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange3.setText("Last Name:");
+        jLabelDetailsNoChange3.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelDetailsNoChange4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange4.setText("Address:");
+        jLabelDetailsNoChange4.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelDetailsNoChange5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange5.setText("City:");
+        jLabelDetailsNoChange5.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelDetailsNoChange6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange6.setText("Postal Code:");
+        jLabelDetailsNoChange6.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelDetailsNoChange7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange7.setText("Country:");
+        jLabelDetailsNoChange7.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelDetailsNoChange8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange8.setText("Phone-number:");
+        jLabelDetailsNoChange8.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelDetailsNoChange9.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelDetailsNoChange9.setText("E-mail address:");
+        jLabelDetailsNoChange9.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldDetailsFirstName.setEditable(false);
+        jTextFieldDetailsFirstName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsFirstName.setText("Adam Foster");
+
+        jTextFieldDetailsLastName.setEditable(false);
+        jTextFieldDetailsLastName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextFieldDetailsLastName.setText("Sandler");
+
+        jTextField1.setEditable(false);
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField1.setText("Purple Street 41");
+
+        jTextField2.setEditable(false);
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField2.setText("Beverly Hills");
+
+        jTextField3.setEditable(false);
+        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField3.setText("90210");
+
+        jTextField4.setEditable(false);
+        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField4.setText("United States of America");
+
+        jTextField5.setEditable(false);
+        jTextField5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField5.setText("555-8474");
+
+        jTextField6.setEditable(false);
+        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField6.setText("SandlersBiatch@Hotmail.com");
+
+        jButtonChangeDetails.setText("Change Details");
+        jButtonChangeDetails.setPreferredSize(new java.awt.Dimension(120, 30));
+        jButtonChangeDetails.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonChangeDetailsActionPerformed(evt);
+            }
+        });
+
+        jButtonSaveDetails.setText("Save Details");
+        jButtonSaveDetails.setPreferredSize(new java.awt.Dimension(120, 30));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextFieldDetailsFirstName)
+                    .addComponent(jTextFieldDetailsLastName)
+                    .addComponent(jTextField1)
+                    .addComponent(jTextField2)
+                    .addComponent(jTextField3)
+                    .addComponent(jTextField4)
+                    .addComponent(jTextField5)
+                    .addComponent(jTextField6)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelDetailsNoChange2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelDetailsNoChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelDetailsNoChange9, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jButtonChangeDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonSaveDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldDetailsFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldDetailsLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelDetailsNoChange9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonChangeDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonSaveDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jButton4.setText("Exit");
+        jButton4.setPreferredSize(new java.awt.Dimension(120, 30));
+        jButton4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap(403, Short.MAX_VALUE)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDialogDetailsLayout = new javax.swing.GroupLayout(jDialogDetails.getContentPane());
+        jDialogDetails.getContentPane().setLayout(jDialogDetailsLayout);
+        jDialogDetailsLayout.setHorizontalGroup(
+            jDialogDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogDetailsLayout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jDialogDetailsLayout.setVerticalGroup(
+            jDialogDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogDetailsLayout.createSequentialGroup()
+                .addGroup(jDialogDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
@@ -1128,6 +1476,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom1.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom1.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom1MousePressed(evt);
+            }
+        });
 
         jLabelNoChange1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange1.setText("Room");
@@ -1801,6 +2156,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom2.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom2.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom2MousePressed(evt);
+            }
+        });
 
         jLabelNoChange2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange2.setText("Room");
@@ -2477,6 +2839,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom3.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom3.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom3MousePressed(evt);
+            }
+        });
 
         jLabelNoChange3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange3.setText("Room");
@@ -3153,6 +3522,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom4.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom4.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom4MousePressed(evt);
+            }
+        });
 
         jLabelNoChange4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange4.setText("Room");
@@ -3829,6 +4205,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom5.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom5.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom5MousePressed(evt);
+            }
+        });
 
         jLabelNoChange5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange5.setText("Room");
@@ -4505,6 +4888,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom6.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom6.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom6MousePressed(evt);
+            }
+        });
 
         jLabelNoChange6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange6.setText("Room");
@@ -5181,6 +5571,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom7.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom7.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom7MousePressed(evt);
+            }
+        });
 
         jLabelNoChange7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange7.setText("Room");
@@ -5857,6 +6254,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelRoom8.setPreferredSize(new java.awt.Dimension(60, 60));
+        jPanelRoom8.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jPanelRoom8MousePressed(evt);
+            }
+        });
 
         jLabelNoChange8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelNoChange8.setText("Room");
@@ -6940,7 +7344,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jButtonDeleteBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonPrevious7Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -7734,6 +8138,73 @@ public class CasablancaGUI extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanelRoom8Day14MousePressed
 
+    private void jPanelRoom1MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom1MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom1MousePressed
+
+    private void jPanelRoom2MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom2MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom2MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom2MousePressed
+
+    private void jPanelRoom3MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom3MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom3MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom3MousePressed
+
+    private void jPanelRoom4MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom4MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom4MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom4MousePressed
+
+    private void jPanelRoom5MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom5MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom5MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom5MousePressed
+
+    private void jPanelRoom6MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom6MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom6MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom6MousePressed
+
+    private void jPanelRoom7MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom7MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom7MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom7MousePressed
+
+    private void jPanelRoom8MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom8MousePressed
+    {//GEN-HEADEREND:event_jPanelRoom8MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelRoom8MousePressed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButtonChangeDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
+    {//GEN-HEADEREND:event_jButtonChangeDetailsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonChangeDetailsActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton4ActionPerformed
+    {//GEN-HEADEREND:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    //
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -7780,8 +8251,11 @@ public class CasablancaGUI extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButtonBooking;
+    private javax.swing.JButton jButtonChangeDetails;
     private javax.swing.JButton jButtonDeleteBooking;
     private javax.swing.JButton jButtonEditBooking;
     private javax.swing.JButton jButtonFacilities;
@@ -7791,7 +8265,14 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonPrevious7Days;
     private javax.swing.JButton jButtonRoomArrowDown;
     private javax.swing.JButton jButtonRoomArrowUp;
+    private javax.swing.JButton jButtonSaveDetails;
     private javax.swing.JButton jButtonSearch;
+    private javax.swing.JDialog jDialogDetails;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabelDate01;
     private javax.swing.JLabel jLabelDate01Day;
     private javax.swing.JLabel jLabelDate02;
@@ -7834,6 +8315,18 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelDate14Day;
     private javax.swing.JLabel jLabelDate14Year;
     private javax.swing.JLabel jLabelDateDay01Year;
+    private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
+    private javax.swing.JLabel jLabelDetailsEndDate;
+    private javax.swing.JLabel jLabelDetailsNoChange2;
+    private javax.swing.JLabel jLabelDetailsNoChange3;
+    private javax.swing.JLabel jLabelDetailsNoChange4;
+    private javax.swing.JLabel jLabelDetailsNoChange5;
+    private javax.swing.JLabel jLabelDetailsNoChange6;
+    private javax.swing.JLabel jLabelDetailsNoChange7;
+    private javax.swing.JLabel jLabelDetailsNoChange8;
+    private javax.swing.JLabel jLabelDetailsNoChange9;
+    private javax.swing.JLabel jLabelDetailsRoomID;
+    private javax.swing.JLabel jLabelDetailsStartDate;
     private javax.swing.JLabel jLabelNoChange1;
     private javax.swing.JLabel jLabelNoChange2;
     private javax.swing.JLabel jLabelNoChange3;
@@ -8195,7 +8688,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelRoom8RoomID;
     private javax.swing.JLabel jLabelRoom8RoomSize;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanelDay01;
     private javax.swing.JPanel jPanelDay02;
     private javax.swing.JPanel jPanelDay03;
@@ -8210,6 +8706,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelDay12;
     private javax.swing.JPanel jPanelDay13;
     private javax.swing.JPanel jPanelDay14;
+    private javax.swing.JPanel jPanelDetailsAvailabilityMarker;
     private javax.swing.JPanel jPanelRoom1;
     private javax.swing.JPanel jPanelRoom1Day01;
     private javax.swing.JPanel jPanelRoom1Day02;
@@ -8330,5 +8827,13 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelRoom8Day12;
     private javax.swing.JPanel jPanelRoom8Day13;
     private javax.swing.JPanel jPanelRoom8Day14;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextFieldDetailsFirstName;
+    private javax.swing.JTextField jTextFieldDetailsLastName;
     // End of variables declaration//GEN-END:variables
 }
