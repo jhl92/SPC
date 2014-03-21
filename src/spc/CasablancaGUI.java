@@ -47,7 +47,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelDetailsEndDate = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jButtonChangeBooking = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabelDetailsNoChange2 = new javax.swing.JLabel();
         jLabelDetailsNoChange3 = new javax.swing.JLabel();
@@ -68,7 +68,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonChangeDetails = new javax.swing.JButton();
         jButtonSaveDetails = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
+        jButtonExitDetails = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jButtonBooking = new javax.swing.JButton();
@@ -673,13 +673,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabel3.setText("2014 - 01 - 02");
         jLabel3.setPreferredSize(new java.awt.Dimension(50, 20));
 
-        jButton1.setText("Change Booking");
-        jButton1.setPreferredSize(new java.awt.Dimension(120, 30));
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        jButtonChangeBooking.setText("Change Booking");
+        jButtonChangeBooking.setPreferredSize(new java.awt.Dimension(120, 30));
+        jButtonChangeBooking.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                jButtonChangeBookingActionPerformed(evt);
             }
         });
 
@@ -704,7 +704,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                                 .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING))
                             .addComponent(jLabel4)
                             .addComponent(jLabel1)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButtonChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -730,7 +730,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(0, 0, 0)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -887,13 +887,13 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton4.setText("Exit");
-        jButton4.setPreferredSize(new java.awt.Dimension(120, 30));
-        jButton4.addActionListener(new java.awt.event.ActionListener()
+        jButtonExitDetails.setText("Exit");
+        jButtonExitDetails.setPreferredSize(new java.awt.Dimension(120, 30));
+        jButtonExitDetails.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton4ActionPerformed(evt);
+                jButtonExitDetailsActionPerformed(evt);
             }
         });
 
@@ -902,15 +902,15 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap(403, Short.MAX_VALUE)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(401, Short.MAX_VALUE)
+                .addComponent(jButtonExitDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonExitDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -8178,20 +8178,20 @@ public class CasablancaGUI extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanelRoom8MousePressed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
+    private void jButtonChangeBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeBookingActionPerformed
+    {//GEN-HEADEREND:event_jButtonChangeBookingActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonChangeBookingActionPerformed
 
     private void jButtonChangeDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonChangeDetailsActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonChangeDetailsActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton4ActionPerformed
-    {//GEN-HEADEREND:event_jButton4ActionPerformed
+    private void jButtonExitDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
+    {//GEN-HEADEREND:event_jButtonExitDetailsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jButtonExitDetailsActionPerformed
 
     //
     
@@ -8251,13 +8251,13 @@ public class CasablancaGUI extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButtonBooking;
+    private javax.swing.JButton jButtonChangeBooking;
     private javax.swing.JButton jButtonChangeDetails;
     private javax.swing.JButton jButtonDeleteBooking;
     private javax.swing.JButton jButtonEditBooking;
+    private javax.swing.JButton jButtonExitDetails;
     private javax.swing.JButton jButtonFacilities;
     private javax.swing.JButton jButtonNext14Days;
     private javax.swing.JButton jButtonNext7Days;
