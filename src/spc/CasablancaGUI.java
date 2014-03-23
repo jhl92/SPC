@@ -15,7 +15,12 @@ import javax.swing.ImageIcon;
  */
 public class CasablancaGUI extends javax.swing.JFrame
 {
-    
+    private final ImageIcon ArrowUp = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"));
+    private final ImageIcon ArrowDown = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDown.png"));
+    private final ImageIcon ArrowLeft = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowLeft.png"));
+    private final ImageIcon ArrowRight = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowRight.png"));
+    private final ImageIcon ArrowLeftDouble = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleLeft.png"));
+    private final ImageIcon ArrowRightDouble = new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleRight.png"));
     
     
     
@@ -8269,7 +8274,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     
     
     
-    
+    private void fillRoomCells(int roomDay, String firstName, String lastName, boolean available)
+    {
+        
+    }
     
     /**
      * @param args the command line arguments
