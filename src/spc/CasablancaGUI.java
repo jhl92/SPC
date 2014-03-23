@@ -15,6 +15,8 @@ import javax.swing.ImageIcon;
 public class CasablancaGUI extends javax.swing.JFrame
 {
     
+    private final ImageIcon RoomChange = new javax.swing.ImageIcon(getClass().getResource("/pictures/RoomChange.png"));
+    
     
     
     /**
@@ -621,7 +623,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonNext7Days = new javax.swing.JButton();
 
         jDialogDetails.setTitle("Details");
-        jDialogDetails.setPreferredSize(new java.awt.Dimension(531, 495));
         jDialogDetails.setResizable(false);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
@@ -1521,7 +1522,6 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanelRoom1Day01.setBackground(new java.awt.Color(255, 0, 0));
         jPanelRoom1Day01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelRoom1Day01.setPreferredSize(new java.awt.Dimension(60, 60));
         jPanelRoom1Day01.addMouseListener(new java.awt.event.MouseAdapter()
@@ -1642,7 +1642,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jLabelRoom1Day03LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom1Day03FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom1Day03Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28))
+                .addGap(0, 0, 0))
         );
         jPanelRoom1Day03Layout.setVerticalGroup(
             jPanelRoom1Day03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2279,7 +2279,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jLabelRoom2Day02LastName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day02FirstName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelRoom2Day02Availability, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28))
+                .addGap(0, 0, 0))
         );
         jPanelRoom2Day02Layout.setVerticalGroup(
             jPanelRoom2Day02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -7587,12 +7587,12 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jPanelRoom1Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day01MousePressed
     {//GEN-HEADEREND:event_jPanelRoom1Day01MousePressed
-        
+        jPanelRoom1Day01.setBackground(neutral);
     }//GEN-LAST:event_jPanelRoom1Day01MousePressed
 
     private void jPanelRoom1Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day02MousePressed
     {//GEN-HEADEREND:event_jPanelRoom1Day02MousePressed
-        // TODO add your handling code here:
+        jPanelRoom1Day02.setBackground(null);
     }//GEN-LAST:event_jPanelRoom1Day02MousePressed
 
     private void jPanelRoom1Day03MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day03MousePressed
