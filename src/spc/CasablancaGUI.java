@@ -6,6 +6,7 @@
 
 package spc;
 
+import java.awt.Color;
 import javax.swing.ImageIcon;
 
 /**
@@ -15,7 +16,6 @@ import javax.swing.ImageIcon;
 public class CasablancaGUI extends javax.swing.JFrame
 {
     
-    private final ImageIcon RoomChange = new javax.swing.ImageIcon(getClass().getResource("/pictures/RoomChange.png"));
     
     
     
@@ -7587,7 +7587,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jPanelRoom1Day01MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day01MousePressed
     {//GEN-HEADEREND:event_jPanelRoom1Day01MousePressed
-        jPanelRoom1Day01.setBackground(neutral);
+        jPanelRoom1Day01.setBackground(Color.RED);
     }//GEN-LAST:event_jPanelRoom1Day01MousePressed
 
     private void jPanelRoom1Day02MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jPanelRoom1Day02MousePressed
