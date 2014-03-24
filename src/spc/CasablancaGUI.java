@@ -7,6 +7,7 @@
 package spc;
 
 import java.awt.Color;
+import java.util.Calendar;
 
 /**
  *
@@ -22,7 +23,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private int Room6 = 6;
     private int Room7 = 7;
     private int Room8 = 8;
-    
+    private Calendar Day01 = Calendar.getInstance();
     
     
     /**
@@ -77,6 +78,14 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonSaveDetails = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jButtonExitDetails = new javax.swing.JButton();
+        jDialogSearch = new javax.swing.JDialog();
+        jPanel6 = new javax.swing.JPanel();
+        jRadioButtonSearchRoom = new javax.swing.JRadioButton();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel7 = new javax.swing.JPanel();
+        jRadioButtonSearchCustomer = new javax.swing.JRadioButton();
+        buttonGroupSearchChoice = new javax.swing.ButtonGroup();
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jButtonBooking = new javax.swing.JButton();
@@ -84,7 +93,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelDay01 = new javax.swing.JPanel();
         jLabelDate01Day = new javax.swing.JLabel();
         jLabelDate01 = new javax.swing.JLabel();
-        jLabelDateDay01Year = new javax.swing.JLabel();
+        jLabelDate01Year = new javax.swing.JLabel();
         jPanelDay02 = new javax.swing.JPanel();
         jLabelDate02Day = new javax.swing.JLabel();
         jLabelDate02 = new javax.swing.JLabel();
@@ -619,7 +628,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelRoom8Day14Availability = new javax.swing.JLabel();
         jButtonEditBooking = new javax.swing.JButton();
         jButtonDeleteBooking = new javax.swing.JButton();
-        jButtonFacilities = new javax.swing.JButton();
+        jButton34 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButtonRoomArrowUp = new javax.swing.JButton();
         jButtonRoomArrowDown = new javax.swing.JButton();
@@ -628,7 +637,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonNext14Days = new javax.swing.JButton();
         jButtonNext7Days = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButtonFacilities = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         jDialogDetails.setTitle("Details");
@@ -951,7 +960,86 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        buttonGroupSearchChoice.add(jRadioButtonSearchRoom);
+        jRadioButtonSearchRoom.setSelected(true);
+        jRadioButtonSearchRoom.setText("Search for room details");
+
+        jLabel2.setText("Show specific room:");
+
+        jTextField1.setText("jTextField1");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jRadioButtonSearchRoom))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRadioButtonSearchRoom)
+                .addGap(34, 34, 34)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(150, Short.MAX_VALUE))
+        );
+
+        jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        buttonGroupSearchChoice.add(jRadioButtonSearchCustomer);
+        jRadioButtonSearchCustomer.setText("Search for customer details");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRadioButtonSearchCustomer)
+                .addContainerGap(182, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRadioButtonSearchCustomer)
+                .addContainerGap(215, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDialogSearchLayout = new javax.swing.GroupLayout(jDialogSearch.getContentPane());
+        jDialogSearch.getContentPane().setLayout(jDialogSearchLayout);
+        jDialogSearchLayout.setHorizontalGroup(
+            jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogSearchLayout.createSequentialGroup()
+                .addGroup(jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 242, Short.MAX_VALUE))
+        );
+        jDialogSearchLayout.setVerticalGroup(
+            jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogSearchLayout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Casablanca");
         setResizable(false);
 
         jButtonBooking.setText("New Booking");
@@ -964,7 +1052,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonSearch.setText("Search");
+        jButtonSearch.setText("Search & View");
         jButtonSearch.setPreferredSize(new java.awt.Dimension(120, 35));
         jButtonSearch.addActionListener(new java.awt.event.ActionListener()
         {
@@ -985,9 +1073,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelDate01.setText("24.March");
         jLabelDate01.setPreferredSize(new java.awt.Dimension(56, 14));
 
-        jLabelDateDay01Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDateDay01Year.setText("01");
-        jLabelDateDay01Year.setPreferredSize(new java.awt.Dimension(56, 14));
+        jLabelDate01Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDate01Year.setText("01");
+        jLabelDate01Year.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelDay01Layout = new javax.swing.GroupLayout(jPanelDay01);
         jPanelDay01.setLayout(jPanelDay01Layout);
@@ -997,7 +1085,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelDay01Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabelDate01Day, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelDate01, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelDateDay01Year, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelDate01Year, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30))
         );
         jPanelDay01Layout.setVerticalGroup(
@@ -1008,7 +1096,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(5, 5, 5)
                 .addComponent(jLabelDate01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
-                .addComponent(jLabelDateDay01Year, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabelDate01Year, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanelDay02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -2187,11 +2275,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom2RoomID.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         jLabelRoom2RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom2RoomID.setText("2");
         jLabelRoom2RoomID.setPreferredSize(new java.awt.Dimension(56, 25));
 
         jLabelRoom2RoomSize.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom2RoomSize.setText("(Single)");
         jLabelRoom2RoomSize.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Layout = new javax.swing.GroupLayout(jPanelRoom2);
@@ -2873,11 +2959,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom3RoomID.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         jLabelRoom3RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom3RoomID.setText("3");
         jLabelRoom3RoomID.setPreferredSize(new java.awt.Dimension(56, 25));
 
         jLabelRoom3RoomSize.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom3RoomSize.setText("(Single)");
         jLabelRoom3RoomSize.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Layout = new javax.swing.GroupLayout(jPanelRoom3);
@@ -3559,11 +3643,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom4RoomID.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         jLabelRoom4RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom4RoomID.setText("4");
         jLabelRoom4RoomID.setPreferredSize(new java.awt.Dimension(56, 25));
 
         jLabelRoom4RoomSize.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom4RoomSize.setText("(Single)");
         jLabelRoom4RoomSize.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Layout = new javax.swing.GroupLayout(jPanelRoom4);
@@ -6994,13 +7076,13 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonFacilities.setText("Facilities");
-        jButtonFacilities.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonFacilities.addActionListener(new java.awt.event.ActionListener()
+        jButton34.setText("Show Rooms");
+        jButton34.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButton34.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButtonFacilitiesActionPerformed(evt);
+                jButton34ActionPerformed(evt);
             }
         });
 
@@ -7072,13 +7154,13 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButton3.setText("jButton3");
-        jButton3.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButton3.addActionListener(new java.awt.event.ActionListener()
+        jButtonFacilities.setText("Facilities");
+        jButtonFacilities.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonFacilities.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton3ActionPerformed(evt);
+                jButtonFacilitiesActionPerformed(evt);
             }
         });
 
@@ -7094,7 +7176,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                             .addGap(10, 10, 10)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jPanelDay01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addComponent(jPanelRoom2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -7392,13 +7474,13 @@ public class CasablancaGUI extends javax.swing.JFrame
                         .addGap(10, 10, 10)
                         .addComponent(jButtonDeleteBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(59, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -7410,11 +7492,11 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jButtonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonDeleteBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(10, 10, 10)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
@@ -7623,7 +7705,9 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSearchActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchActionPerformed
         //Find/Search for different data in database.
+        jDialogSearch.setVisible(true);
         //Data to be searched for, could be: RoomID, Customer-names, Dates, Availabilities/booked/reserved, BookingID, etc.
+        
     }//GEN-LAST:event_jButtonSearchActionPerformed
 
     private void jButtonEditBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonEditBookingActionPerformed
@@ -7631,10 +7715,10 @@ public class CasablancaGUI extends javax.swing.JFrame
         //Change data like start/end dates, names or roomsize in an existing booking/reservation.
     }//GEN-LAST:event_jButtonEditBookingActionPerformed
 
-    private void jButtonFacilitiesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonFacilitiesActionPerformed
-    {//GEN-HEADEREND:event_jButtonFacilitiesActionPerformed
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton34ActionPerformed
+    {//GEN-HEADEREND:event_jButton34ActionPerformed
         //Opens facility window with the possibility of viewing all booked times in all facilities.
-    }//GEN-LAST:event_jButtonFacilitiesActionPerformed
+    }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
@@ -8305,14 +8389,15 @@ public class CasablancaGUI extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton3ActionPerformed
-    {//GEN-HEADEREND:event_jButton3ActionPerformed
+    private void jButtonFacilitiesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonFacilitiesActionPerformed
+    {//GEN-HEADEREND:event_jButtonFacilitiesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jButtonFacilitiesActionPerformed
 
     //Updates the info in the cells in Main-window
     private void refreshMainScreen()
     {
+        //One line/room at the time, this method updates the cell-information through the fillRoomCells() method.
         
     }
     
@@ -8337,93 +8422,128 @@ public class CasablancaGUI extends javax.swing.JFrame
         
     }
     
-    private void changeAvailabilityBackground()
+    private void fillDateCells(String weekday, int date, String month, int year)
     {
-        
+        //   Through the method variables, this method recieves the first date (To be posted in cell Day01) and 
+        //   automatically fills the rest of the 13 cells with the continueing dates.
+        jLabelDate01Day.setText(month);
     }
     
-    
-    private void fillRoomCells(int roomID, int room, int date)
+    private void fillRoomCells(int roomID, int room, Calendar date)
     {
-        String availability;
-        Color cellBackground;
-        String A = "getFromTable_RoomSize_atTheSpecified_DATE_AndSpecified_ROOMID";
-        String roomSize = "(" + A + ")";
-        switch (room)
+        if(roomID == 0)
         {
-            case 1:
-                fillRoom1Cells(roomID, roomSize, 100, null, null, null, null);
-                break;
-            case 2:
-                fillRoom2Cells(roomID, roomSize, 200, null, null, null, null);
-                break;
-            case 3:
-                fillRoom3Cells(roomID, roomSize, 300, null, null, null, null);
-                break;
-            case 4:
-                fillRoom4Cells(roomID, roomSize, 400, null, null, null, null);
-                break;
-            case 5:
-                fillRoom5Cells(roomID, roomSize, 500, null, null, null, null);
-                break;
-            case 6:
-                fillRoom6Cells(roomID, roomSize, 600, null, null, null, null);
-                break;
-            case 7:
-                fillRoom7Cells(roomID, roomSize, 700, null, null, null, null);
-                break;
-            case 8:
-                fillRoom8Cells(roomID, roomSize, 800, null, null, null, null);
-                break;
-        }
-        for (int a = 0; a < 14; a++)
-        {
-            //Get data from database/tables and add them to the variables below...
-            int day = 1 + a;
-            //Create a method that increases the date by one day, before retrieving data from database/table...
-            String firstName = "getStringFromTable_FirstName_atTheSpecifiedDate";
-            String lastName = "getStringFromTable_LastName_atTheSpecifiedDate";
-            boolean available = false; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
-            if (available == false)
-            {
-                availability = "BOOKED";
-                cellBackground = Color.RED;
-            } else
-            {
-                availability = "FREE";
-                cellBackground = Color.GREEN;
-            }
             switch (room)
             {
                 case 1:
-                    fillRoom1Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom1Cells(null, null, 100, null, null, null, null);
                     break;
                 case 2:
-                    fillRoom2Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom2Cells(roomID, roomSize, 200, null, null, null, null);
                     break;
                 case 3:
-                    fillRoom3Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom3Cells(roomID, roomSize, 300, null, null, null, null);
                     break;
                 case 4:
-                    fillRoom4Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom4Cells(roomID, roomSize, 400, null, null, null, null);
                     break;
                 case 5:
-                    fillRoom5Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom5Cells(roomID, roomSize, 500, null, null, null, null);
                     break;
                 case 6:
-                    fillRoom6Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom6Cells(roomID, roomSize, 600, null, null, null, null);
                     break;
                 case 7:
-                    fillRoom7Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom7Cells(roomID, roomSize, 700, null, null, null, null);
                     break;
                 case 8:
-                    fillRoom8Cells(roomID, null, day, firstName, lastName, availability, cellBackground);
+                    fillRoom8Cells(roomID, roomSize, 800, null, null, null, null);
                     break;
+            }
+        } else
+        {
+            String availability;
+            Color cellBackground;
+            String A = "getFromTable_RoomSize_atTheSpecified_ROOMID";
+            String roomSize = "(" + A + ")";
+            switch (room)
+            {
+                case 1:
+                    fillRoom1Cells(rID, roomSize, 100, null, null, null, null);
+                    break;
+                case 2:
+                    fillRoom2Cells(rID, roomSize, 200, null, null, null, null);
+                    break;
+                case 3:
+                    fillRoom3Cells(rID, roomSize, 300, null, null, null, null);
+                    break;
+                case 4:
+                    fillRoom4Cells(rID, roomSize, 400, null, null, null, null);
+                    break;
+                case 5:
+                    fillRoom5Cells(rID, roomSize, 500, null, null, null, null);
+                    break;
+                case 6:
+                    fillRoom6Cells(rID, roomSize, 600, null, null, null, null);
+                    break;
+                case 7:
+                    fillRoom7Cells(rID, roomSize, 700, null, null, null, null);
+                    break;
+                case 8:
+                    fillRoom8Cells(rID, roomSize, 800, null, null, null, null);
+                    break;
+            }
+            for (int a = 0; a < 14; a++)
+            {
+                //Get data from database/tables and add them to the variables below...
+                int day = 1 + a;
+            //------------------------------------------------------------------
+                //Create a method that increases the date by one day, before retrieving data from database/table...
+                //------------------------------------------------------------------
+                String firstName = "getStringFromTable_FirstName_atTheSpecifiedDate";
+                String lastName = "getStringFromTable_LastName_atTheSpecifiedDate";
+                boolean available = false; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
+                if (available == false)
+                {
+                    availability = "BOOKED";
+                    cellBackground = Color.RED;
+                } else
+                {
+                    availability = "FREE";
+                    cellBackground = Color.GREEN;
+                }
+                switch (room)
+                {
+                    case 1:
+                        fillRoom1Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                    case 2:
+                        fillRoom2Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                    case 3:
+                        fillRoom3Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                    case 4:
+                        fillRoom4Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                    case 5:
+                        fillRoom5Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                    case 6:
+                        fillRoom6Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                    case 7:
+                        fillRoom7Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                    case 8:
+                        fillRoom8Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        break;
+                }
             }
         }
     }
     
-    private void fillRoom1Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom1Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -8518,7 +8638,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    private void fillRoom2Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom2Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -8613,7 +8733,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    private void fillRoom3Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom3Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -8708,7 +8828,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    private void fillRoom4Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom4Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -8803,7 +8923,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    private void fillRoom5Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom5Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -8898,7 +9018,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    private void fillRoom6Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom6Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -8993,7 +9113,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    private void fillRoom7Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom7Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -9088,7 +9208,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    private void fillRoom8Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    private void fillRoom8Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
@@ -9183,7 +9303,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
-    
     /**
      * @param args the command line arguments
      */
@@ -9230,9 +9349,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroupSearchChoice;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton34;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonChangeBooking;
     private javax.swing.JButton jButtonChangeDetails;
@@ -9249,9 +9369,12 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonSaveDetails;
     private javax.swing.JButton jButtonSearch;
     private javax.swing.JDialog jDialogDetails;
+    private javax.swing.JDialog jDialogSearch;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelDate01;
     private javax.swing.JLabel jLabelDate01Day;
+    private javax.swing.JLabel jLabelDate01Year;
     private javax.swing.JLabel jLabelDate02;
     private javax.swing.JLabel jLabelDate02Day;
     private javax.swing.JLabel jLabelDate02Year;
@@ -9291,7 +9414,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelDate14;
     private javax.swing.JLabel jLabelDate14Day;
     private javax.swing.JLabel jLabelDate14Year;
-    private javax.swing.JLabel jLabelDateDay01Year;
     private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
     private javax.swing.JLabel jLabelDetailsBookingDate;
     private javax.swing.JLabel jLabelDetailsEndDate;
@@ -9674,6 +9796,8 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanelDay01;
     private javax.swing.JPanel jPanelDay02;
     private javax.swing.JPanel jPanelDay03;
@@ -9809,6 +9933,9 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelRoom8Day12;
     private javax.swing.JPanel jPanelRoom8Day13;
     private javax.swing.JPanel jPanelRoom8Day14;
+    private javax.swing.JRadioButton jRadioButtonSearchCustomer;
+    private javax.swing.JRadioButton jRadioButtonSearchRoom;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextFieldDetailsAddress;
     private javax.swing.JTextField jTextFieldDetailsCity;
     private javax.swing.JTextField jTextFieldDetailsCountry;
