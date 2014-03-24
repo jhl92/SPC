@@ -50,10 +50,10 @@ public class JDBCSelectQuery
                 String roomAvailability = rs.getString("roomAvailability");
 
                 //Display values
-                System.out.print("ID: " + roomID);
-                System.out.print(", Type: " + roomType);
-                System.out.print(", Price: " + roomPrice);
-                System.out.print(", Availability: " + roomAvailability);
+                System.out.println("ID: " + roomID);
+                System.out.println(", Type: " + roomType);
+                System.out.println(", Price: " + roomPrice);
+                System.out.println(", Availability: " + roomAvailability);
             }
             rs.close();
         } catch (SQLException se)
