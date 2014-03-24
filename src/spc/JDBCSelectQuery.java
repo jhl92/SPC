@@ -39,12 +39,13 @@ public class JDBCSelectQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability FROM ROOMS";
-            ResultSet rs = stmt.executeQuery(sql);
+//            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
+            ResultSet rs; 
+            rs = stmt.executeQuery("SELECT roomID, roomType, roomPrice, roomAvailability from Rooms" );
             //STEP 5: Extract data from result set
-            while (rs.next())
+            if (rs.next())
             {
-                int roomID = rs.getInt("roomID");
+                int roomID = rs.getInt("ROOMID");
                 String roomType = rs.getString("roomType");
                 float roomPrice = rs.getFloat("roomPrice");
                 String roomAvailability = rs.getString("roomAvailability");
@@ -55,6 +56,8 @@ public class JDBCSelectQuery
                 System.out.println(", Price: " + roomPrice);
                 System.out.println(", Availability: " + roomAvailability);
             }
+            else
+                System.out.println("pik");
             rs.close();
         } catch (SQLException se)
         {
