@@ -13,13 +13,14 @@ import java.sql.*;
 
 public class JDBCSelectQuery
 {
-    // JDBC driver name and database URL
+    // JDBC driver & database URL
 
     static final String driver = "oracle.jdbc.driver.OracleDriver";
     static final String url = "jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:dat";
-    //  Database credentials
-    static final String user = "cphjl161";
-    static final String pass = "cphjl161";
+    
+    //  Database login
+    static final String user = "cphjp154";
+    static final String pass = "cphjp154";
 
     public static void main(String[] args)
     {
@@ -27,48 +28,43 @@ public class JDBCSelectQuery
         Statement stmt = null;
         try
         {
-            //STEP 2: Register JDBC driver
+            //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
-            //STEP 3: Open a connection
+            //Åben forbindelsen
             System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
 
-            //STEP 4: Execute a query
+            //Query
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
 //            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
             ResultSet rs; 
             rs = stmt.executeQuery("SELECT * from Rooms" );
-            //STEP 5: Extract data from result set
+           
             while (rs.next())
-            {
-                System.out.println("lol");
+            {           
                 int roomID = rs.getInt("roomID");
                 String roomType = rs.getString("roomType");
                 float roomPrice = rs.getFloat("roomPrice");
                 String roomAvailability = rs.getString("roomAvailability");
-
 
                 System.out.println("ID: " + roomID);
                 System.out.println("Type: " + roomType);
                 System.out.println("Price: " + roomPrice);
                 System.out.println("Availability: " + roomAvailability);
             }
-            rs.close();
+            rs.close(); 
         } catch (SQLException se)
         {
-            //Handle errors for JDBC
             se.printStackTrace();
         } catch (Exception e)
         {
-            //Handle errors for Class.forName
             e.printStackTrace();
         } finally
         {
-            //finally block used to close resources
             try
             {
                 if (stmt != null)
@@ -77,7 +73,7 @@ public class JDBCSelectQuery
                 }
             } catch (SQLException se)
             {
-            }// do nothing
+            }
             try
             {
                 if (conn != null)
@@ -87,8 +83,8 @@ public class JDBCSelectQuery
             } catch (SQLException se)
             {
                 se.printStackTrace();
-            }//end finally try
-        }//end try
+            }
+        }
         System.out.println("Done.");
-    }//end main
-}//end JDBCExample
+    }
+}
