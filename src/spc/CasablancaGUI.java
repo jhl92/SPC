@@ -7,7 +7,6 @@
 package spc;
 
 import java.awt.Color;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -7055,9 +7054,23 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButton1.setText("jButton1");
         jButton1.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("jButton3");
         jButton3.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButton3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         jLabel1.setText("58 rooms found available in the specified period...");
@@ -8277,6 +8290,16 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldDetailsEmail.setEditable(false);
     }//GEN-LAST:event_jButtonSaveDetailsActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton3ActionPerformed
+    {//GEN-HEADEREND:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     //Updates the info in the cells in Main-window
     private void refreshMainScreen()
     {
@@ -8310,70 +8333,843 @@ public class CasablancaGUI extends javax.swing.JFrame
     }
     
     
+    private void fillRoomCells(int roomID, int room, int date)
+    {
+        String A = "getFromTable_RoomSize_atTheSpecified_DATE_AndSpecified_ROOMID";
+        String roomSize = "(" + A + ")";
+        switch (room)
+        {
+            case 1:
+                fillRoom1Cells(roomID, roomSize, 100, null, null, null, null);
+                break;
+            case 2:
+                fillRoom2Cells(roomID, roomSize, 200, null, null, null, null);
+                break;
+            case 3:
+                fillRoom3Cells(roomID, roomSize, 300, null, null, null, null);
+                break;
+            case 4:
+                fillRoom4Cells(roomID, roomSize, 400, null, null, null, null);
+                break;
+            case 5:
+                fillRoom5Cells(roomID, roomSize, 500, null, null, null, null);
+                break;
+            case 6:
+                fillRoom6Cells(roomID, roomSize, 600, null, null, null, null);
+                break;
+            case 7:
+                fillRoom7Cells(roomID, roomSize, 700, null, null, null, null);
+                break;
+            case 8:
+                fillRoom8Cells(roomID, roomSize, 800, null, null, null, null);
+                break;
+        }
+        for (int a = 0; a < 14; a++)
+        {
+            //Get data from database/tables and add them to the variables below...
+            int day = 1 + a;
+            String firstName = "getStringFromTable_FirstName_atTheSpecifiedDate";
+            String lastName = "getStringFromTable_LastName_atTheSpecifiedDate";
+            boolean available = true; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
+            if (available == false)
+            {
+                String availability = "BOOKED";
+                Color cellBackground = Color.RED;
+            } else
+            {
+                String availability = "FREE";
+                Color cellBackground = Color.GREEN;
+            }
+            switch (room)
+            {
+                case 1:
+                    fillRoom1Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+                case 2:
+                    fillRoom2Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+                case 3:
+                    fillRoom3Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+                case 4:
+                    fillRoom4Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+                case 5:
+                    fillRoom5Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+                case 6:
+                    fillRoom6Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+                case 7:
+                    fillRoom7Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+                case 8:
+                    fillRoom8Cells(null, null, day, firstName, lastName, availability, cellBackground);
+                    break;
+            }
+        }
+    }
     
-    
-    private void fillRoom1Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, boolean available)
+    private void fillRoom1Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
     {
         switch (roomDay)
         {
             case 100:
                 jLabelRoom1RoomID.setText("" + roomID);
-                jLabelRoom1RoomSize.setText("(" + roomSize + ")");
+                jLabelRoom1RoomSize.setText(roomSize);
                 break;
-            case 101:
+            case 1:
                 jLabelRoom1Day01FirstName.setText(firstName);
                 jLabelRoom1Day01LastName.setText(lastName);
-                if(available==false)
-                {
-                    jLabelRoom1Day01Availability.setText("BOOKED");
-                    jPanelRoom1Day01.setBackground(Color.RED);
-                } else
-                {
-                    jLabelRoom1Day01Availability.setText("FREE");
-                    jPanelRoom1Day01.setBackground(Color.GREEN);
-                }
+                jLabelRoom1Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
                 break;
-            case 102:
-                
+            case 2:
+                jLabelRoom1Day02FirstName.setText(firstName);
+                jLabelRoom1Day02LastName.setText(lastName);
+                jLabelRoom1Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
                 break;
-            case 103:
-                
+            case 3:
+                jLabelRoom1Day03FirstName.setText(firstName);
+                jLabelRoom1Day03LastName.setText(lastName);
+                jLabelRoom1Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
                 break;
-            case 104:
-                
+            case 4:
+                jLabelRoom1Day04FirstName.setText(firstName);
+                jLabelRoom1Day04LastName.setText(lastName);
+                jLabelRoom1Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
                 break;
-            case 105:
-                
+            case 5:
+                jLabelRoom1Day05FirstName.setText(firstName);
+                jLabelRoom1Day05LastName.setText(lastName);
+                jLabelRoom1Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
                 break;
-            case 106:
-                
+            case 6:
+                jLabelRoom1Day06FirstName.setText(firstName);
+                jLabelRoom1Day06LastName.setText(lastName);
+                jLabelRoom1Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
                 break;
-            case 107:
-                
+            case 7:
+                jLabelRoom1Day07FirstName.setText(firstName);
+                jLabelRoom1Day07LastName.setText(lastName);
+                jLabelRoom1Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
                 break;
-            case 108:
-                
+            case 8:
+                jLabelRoom1Day08FirstName.setText(firstName);
+                jLabelRoom1Day08LastName.setText(lastName);
+                jLabelRoom1Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
                 break;
-            case 109:
-                
+            case 9:
+                jLabelRoom1Day09FirstName.setText(firstName);
+                jLabelRoom1Day09LastName.setText(lastName);
+                jLabelRoom1Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
                 break;
-            case 110:
-                
+            case 10:
+                jLabelRoom1Day10FirstName.setText(firstName);
+                jLabelRoom1Day10LastName.setText(lastName);
+                jLabelRoom1Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
                 break;
-            case 111:
-                
+            case 11:
+                jLabelRoom1Day11FirstName.setText(firstName);
+                jLabelRoom1Day11LastName.setText(lastName);
+                jLabelRoom1Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
                 break;
-            case 112:
-                
+            case 12:
+                jLabelRoom1Day12FirstName.setText(firstName);
+                jLabelRoom1Day12LastName.setText(lastName);
+                jLabelRoom1Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
                 break;
-            case 113:
-                
+            case 13:
+                jLabelRoom1Day13FirstName.setText(firstName);
+                jLabelRoom1Day13LastName.setText(lastName);
+                jLabelRoom1Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
                 break;
-            case 114:
-                
+            case 14:
+                jLabelRoom1Day14FirstName.setText(firstName);
+                jLabelRoom1Day14LastName.setText(lastName);
+                jLabelRoom1Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
                 break;
         }
     }
+    
+    private void fillRoom2Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 200:
+                jLabelRoom2RoomID.setText("" + roomID);
+                jLabelRoom2RoomSize.setText(roomSize);
+                break;
+            case 1:
+                jLabelRoom2Day01FirstName.setText(firstName);
+                jLabelRoom2Day01LastName.setText(lastName);
+                jLabelRoom2Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
+                break;
+            case 2:
+                jLabelRoom2Day02FirstName.setText(firstName);
+                jLabelRoom2Day02LastName.setText(lastName);
+                jLabelRoom2Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
+                break;
+            case 3:
+                jLabelRoom2Day03FirstName.setText(firstName);
+                jLabelRoom2Day03LastName.setText(lastName);
+                jLabelRoom2Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
+                break;
+            case 4:
+                jLabelRoom2Day04FirstName.setText(firstName);
+                jLabelRoom2Day04LastName.setText(lastName);
+                jLabelRoom2Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
+                break;
+            case 5:
+                jLabelRoom2Day05FirstName.setText(firstName);
+                jLabelRoom2Day05LastName.setText(lastName);
+                jLabelRoom2Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
+                break;
+            case 6:
+                jLabelRoom2Day06FirstName.setText(firstName);
+                jLabelRoom2Day06LastName.setText(lastName);
+                jLabelRoom2Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
+                break;
+            case 7:
+                jLabelRoom2Day07FirstName.setText(firstName);
+                jLabelRoom2Day07LastName.setText(lastName);
+                jLabelRoom2Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
+                break;
+            case 8:
+                jLabelRoom2Day08FirstName.setText(firstName);
+                jLabelRoom2Day08LastName.setText(lastName);
+                jLabelRoom2Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
+                break;
+            case 9:
+                jLabelRoom2Day09FirstName.setText(firstName);
+                jLabelRoom2Day09LastName.setText(lastName);
+                jLabelRoom2Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
+                break;
+            case 10:
+                jLabelRoom2Day10FirstName.setText(firstName);
+                jLabelRoom2Day10LastName.setText(lastName);
+                jLabelRoom2Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
+                break;
+            case 11:
+                jLabelRoom2Day11FirstName.setText(firstName);
+                jLabelRoom2Day11LastName.setText(lastName);
+                jLabelRoom2Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
+                break;
+            case 12:
+                jLabelRoom2Day12FirstName.setText(firstName);
+                jLabelRoom2Day12LastName.setText(lastName);
+                jLabelRoom2Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
+                break;
+            case 13:
+                jLabelRoom2Day13FirstName.setText(firstName);
+                jLabelRoom2Day13LastName.setText(lastName);
+                jLabelRoom2Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
+                break;
+            case 14:
+                jLabelRoom2Day14FirstName.setText(firstName);
+                jLabelRoom2Day14LastName.setText(lastName);
+                jLabelRoom2Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
+                break;
+        }
+    }
+    
+    private void fillRoom3Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 300:
+                jLabelRoom3RoomID.setText("" + roomID);
+                jLabelRoom3RoomSize.setText(roomSize);
+                break;
+            case 1:
+                jLabelRoom3Day01FirstName.setText(firstName);
+                jLabelRoom3Day01LastName.setText(lastName);
+                jLabelRoom3Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
+                break;
+            case 2:
+                jLabelRoom3Day02FirstName.setText(firstName);
+                jLabelRoom3Day02LastName.setText(lastName);
+                jLabelRoom3Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
+                break;
+            case 3:
+                jLabelRoom3Day03FirstName.setText(firstName);
+                jLabelRoom3Day03LastName.setText(lastName);
+                jLabelRoom3Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
+                break;
+            case 4:
+                jLabelRoom3Day04FirstName.setText(firstName);
+                jLabelRoom3Day04LastName.setText(lastName);
+                jLabelRoom3Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
+                break;
+            case 5:
+                jLabelRoom3Day05FirstName.setText(firstName);
+                jLabelRoom3Day05LastName.setText(lastName);
+                jLabelRoom3Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
+                break;
+            case 6:
+                jLabelRoom3Day06FirstName.setText(firstName);
+                jLabelRoom3Day06LastName.setText(lastName);
+                jLabelRoom3Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
+                break;
+            case 7:
+                jLabelRoom3Day07FirstName.setText(firstName);
+                jLabelRoom3Day07LastName.setText(lastName);
+                jLabelRoom3Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
+                break;
+            case 8:
+                jLabelRoom3Day08FirstName.setText(firstName);
+                jLabelRoom3Day08LastName.setText(lastName);
+                jLabelRoom3Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
+                break;
+            case 9:
+                jLabelRoom3Day09FirstName.setText(firstName);
+                jLabelRoom3Day09LastName.setText(lastName);
+                jLabelRoom3Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
+                break;
+            case 10:
+                jLabelRoom3Day10FirstName.setText(firstName);
+                jLabelRoom3Day10LastName.setText(lastName);
+                jLabelRoom3Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
+                break;
+            case 11:
+                jLabelRoom3Day11FirstName.setText(firstName);
+                jLabelRoom3Day11LastName.setText(lastName);
+                jLabelRoom3Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
+                break;
+            case 12:
+                jLabelRoom3Day12FirstName.setText(firstName);
+                jLabelRoom3Day12LastName.setText(lastName);
+                jLabelRoom3Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
+                break;
+            case 13:
+                jLabelRoom3Day13FirstName.setText(firstName);
+                jLabelRoom3Day13LastName.setText(lastName);
+                jLabelRoom3Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
+                break;
+            case 14:
+                jLabelRoom3Day14FirstName.setText(firstName);
+                jLabelRoom3Day14LastName.setText(lastName);
+                jLabelRoom3Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
+                break;
+        }
+    }
+    
+    private void fillRoom4Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 400:
+                jLabelRoom4RoomID.setText("" + roomID);
+                jLabelRoom4RoomSize.setText(roomSize);
+                break;
+            case 1:
+                jLabelRoom4Day01FirstName.setText(firstName);
+                jLabelRoom4Day01LastName.setText(lastName);
+                jLabelRoom4Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
+                break;
+            case 2:
+                jLabelRoom4Day02FirstName.setText(firstName);
+                jLabelRoom4Day02LastName.setText(lastName);
+                jLabelRoom4Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
+                break;
+            case 3:
+                jLabelRoom4Day03FirstName.setText(firstName);
+                jLabelRoom4Day03LastName.setText(lastName);
+                jLabelRoom4Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
+                break;
+            case 4:
+                jLabelRoom4Day04FirstName.setText(firstName);
+                jLabelRoom4Day04LastName.setText(lastName);
+                jLabelRoom4Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
+                break;
+            case 5:
+                jLabelRoom4Day05FirstName.setText(firstName);
+                jLabelRoom4Day05LastName.setText(lastName);
+                jLabelRoom4Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
+                break;
+            case 6:
+                jLabelRoom4Day06FirstName.setText(firstName);
+                jLabelRoom4Day06LastName.setText(lastName);
+                jLabelRoom4Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
+                break;
+            case 7:
+                jLabelRoom4Day07FirstName.setText(firstName);
+                jLabelRoom4Day07LastName.setText(lastName);
+                jLabelRoom4Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
+                break;
+            case 8:
+                jLabelRoom4Day08FirstName.setText(firstName);
+                jLabelRoom4Day08LastName.setText(lastName);
+                jLabelRoom4Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
+                break;
+            case 9:
+                jLabelRoom4Day09FirstName.setText(firstName);
+                jLabelRoom4Day09LastName.setText(lastName);
+                jLabelRoom4Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
+                break;
+            case 10:
+                jLabelRoom4Day10FirstName.setText(firstName);
+                jLabelRoom4Day10LastName.setText(lastName);
+                jLabelRoom4Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
+                break;
+            case 11:
+                jLabelRoom4Day11FirstName.setText(firstName);
+                jLabelRoom4Day11LastName.setText(lastName);
+                jLabelRoom4Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
+                break;
+            case 12:
+                jLabelRoom4Day12FirstName.setText(firstName);
+                jLabelRoom4Day12LastName.setText(lastName);
+                jLabelRoom4Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
+                break;
+            case 13:
+                jLabelRoom4Day13FirstName.setText(firstName);
+                jLabelRoom4Day13LastName.setText(lastName);
+                jLabelRoom4Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
+                break;
+            case 14:
+                jLabelRoom4Day14FirstName.setText(firstName);
+                jLabelRoom4Day14LastName.setText(lastName);
+                jLabelRoom4Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
+                break;
+        }
+    }
+    
+    private void fillRoom5Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 500:
+                jLabelRoom5RoomID.setText("" + roomID);
+                jLabelRoom5RoomSize.setText(roomSize);
+                break;
+            case 1:
+                jLabelRoom5Day01FirstName.setText(firstName);
+                jLabelRoom5Day01LastName.setText(lastName);
+                jLabelRoom5Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
+                break;
+            case 2:
+                jLabelRoom5Day02FirstName.setText(firstName);
+                jLabelRoom5Day02LastName.setText(lastName);
+                jLabelRoom5Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
+                break;
+            case 3:
+                jLabelRoom5Day03FirstName.setText(firstName);
+                jLabelRoom5Day03LastName.setText(lastName);
+                jLabelRoom5Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
+                break;
+            case 4:
+                jLabelRoom5Day04FirstName.setText(firstName);
+                jLabelRoom5Day04LastName.setText(lastName);
+                jLabelRoom5Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
+                break;
+            case 5:
+                jLabelRoom5Day05FirstName.setText(firstName);
+                jLabelRoom5Day05LastName.setText(lastName);
+                jLabelRoom5Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
+                break;
+            case 6:
+                jLabelRoom5Day06FirstName.setText(firstName);
+                jLabelRoom5Day06LastName.setText(lastName);
+                jLabelRoom5Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
+                break;
+            case 7:
+                jLabelRoom5Day07FirstName.setText(firstName);
+                jLabelRoom5Day07LastName.setText(lastName);
+                jLabelRoom5Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
+                break;
+            case 8:
+                jLabelRoom5Day08FirstName.setText(firstName);
+                jLabelRoom5Day08LastName.setText(lastName);
+                jLabelRoom5Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
+                break;
+            case 9:
+                jLabelRoom5Day09FirstName.setText(firstName);
+                jLabelRoom5Day09LastName.setText(lastName);
+                jLabelRoom5Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
+                break;
+            case 10:
+                jLabelRoom5Day10FirstName.setText(firstName);
+                jLabelRoom5Day10LastName.setText(lastName);
+                jLabelRoom5Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
+                break;
+            case 11:
+                jLabelRoom5Day11FirstName.setText(firstName);
+                jLabelRoom5Day11LastName.setText(lastName);
+                jLabelRoom5Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
+                break;
+            case 12:
+                jLabelRoom5Day12FirstName.setText(firstName);
+                jLabelRoom5Day12LastName.setText(lastName);
+                jLabelRoom5Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
+                break;
+            case 13:
+                jLabelRoom5Day13FirstName.setText(firstName);
+                jLabelRoom5Day13LastName.setText(lastName);
+                jLabelRoom5Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
+                break;
+            case 14:
+                jLabelRoom5Day14FirstName.setText(firstName);
+                jLabelRoom5Day14LastName.setText(lastName);
+                jLabelRoom5Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
+                break;
+        }
+    }
+    
+    private void fillRoom6Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 600:
+                jLabelRoom6RoomID.setText("" + roomID);
+                jLabelRoom6RoomSize.setText(roomSize);
+                break;
+            case 1:
+                jLabelRoom6Day01FirstName.setText(firstName);
+                jLabelRoom6Day01LastName.setText(lastName);
+                jLabelRoom6Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
+                break;
+            case 2:
+                jLabelRoom6Day02FirstName.setText(firstName);
+                jLabelRoom6Day02LastName.setText(lastName);
+                jLabelRoom6Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
+                break;
+            case 3:
+                jLabelRoom6Day03FirstName.setText(firstName);
+                jLabelRoom6Day03LastName.setText(lastName);
+                jLabelRoom6Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
+                break;
+            case 4:
+                jLabelRoom6Day04FirstName.setText(firstName);
+                jLabelRoom6Day04LastName.setText(lastName);
+                jLabelRoom6Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
+                break;
+            case 5:
+                jLabelRoom6Day05FirstName.setText(firstName);
+                jLabelRoom6Day05LastName.setText(lastName);
+                jLabelRoom6Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
+                break;
+            case 6:
+                jLabelRoom6Day06FirstName.setText(firstName);
+                jLabelRoom6Day06LastName.setText(lastName);
+                jLabelRoom6Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
+                break;
+            case 7:
+                jLabelRoom6Day07FirstName.setText(firstName);
+                jLabelRoom6Day07LastName.setText(lastName);
+                jLabelRoom6Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
+                break;
+            case 8:
+                jLabelRoom6Day08FirstName.setText(firstName);
+                jLabelRoom6Day08LastName.setText(lastName);
+                jLabelRoom6Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
+                break;
+            case 9:
+                jLabelRoom6Day09FirstName.setText(firstName);
+                jLabelRoom6Day09LastName.setText(lastName);
+                jLabelRoom6Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
+                break;
+            case 10:
+                jLabelRoom6Day10FirstName.setText(firstName);
+                jLabelRoom6Day10LastName.setText(lastName);
+                jLabelRoom6Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
+                break;
+            case 11:
+                jLabelRoom6Day11FirstName.setText(firstName);
+                jLabelRoom6Day11LastName.setText(lastName);
+                jLabelRoom6Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
+                break;
+            case 12:
+                jLabelRoom6Day12FirstName.setText(firstName);
+                jLabelRoom6Day12LastName.setText(lastName);
+                jLabelRoom6Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
+                break;
+            case 13:
+                jLabelRoom6Day13FirstName.setText(firstName);
+                jLabelRoom6Day13LastName.setText(lastName);
+                jLabelRoom6Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
+                break;
+            case 14:
+                jLabelRoom6Day14FirstName.setText(firstName);
+                jLabelRoom6Day14LastName.setText(lastName);
+                jLabelRoom6Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
+                break;
+        }
+    }
+    
+    private void fillRoom7Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 700:
+                jLabelRoom7RoomID.setText("" + roomID);
+                jLabelRoom7RoomSize.setText(roomSize);
+                break;
+            case 1:
+                jLabelRoom7Day01FirstName.setText(firstName);
+                jLabelRoom7Day01LastName.setText(lastName);
+                jLabelRoom7Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
+                break;
+            case 2:
+                jLabelRoom7Day02FirstName.setText(firstName);
+                jLabelRoom7Day02LastName.setText(lastName);
+                jLabelRoom7Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
+                break;
+            case 3:
+                jLabelRoom7Day03FirstName.setText(firstName);
+                jLabelRoom7Day03LastName.setText(lastName);
+                jLabelRoom7Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
+                break;
+            case 4:
+                jLabelRoom7Day04FirstName.setText(firstName);
+                jLabelRoom7Day04LastName.setText(lastName);
+                jLabelRoom7Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
+                break;
+            case 5:
+                jLabelRoom7Day05FirstName.setText(firstName);
+                jLabelRoom7Day05LastName.setText(lastName);
+                jLabelRoom7Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
+                break;
+            case 6:
+                jLabelRoom7Day06FirstName.setText(firstName);
+                jLabelRoom7Day06LastName.setText(lastName);
+                jLabelRoom7Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
+                break;
+            case 7:
+                jLabelRoom7Day07FirstName.setText(firstName);
+                jLabelRoom7Day07LastName.setText(lastName);
+                jLabelRoom7Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
+                break;
+            case 8:
+                jLabelRoom7Day08FirstName.setText(firstName);
+                jLabelRoom7Day08LastName.setText(lastName);
+                jLabelRoom7Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
+                break;
+            case 9:
+                jLabelRoom7Day09FirstName.setText(firstName);
+                jLabelRoom7Day09LastName.setText(lastName);
+                jLabelRoom7Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
+                break;
+            case 10:
+                jLabelRoom7Day10FirstName.setText(firstName);
+                jLabelRoom7Day10LastName.setText(lastName);
+                jLabelRoom7Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
+                break;
+            case 11:
+                jLabelRoom7Day11FirstName.setText(firstName);
+                jLabelRoom7Day11LastName.setText(lastName);
+                jLabelRoom7Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
+                break;
+            case 12:
+                jLabelRoom7Day12FirstName.setText(firstName);
+                jLabelRoom7Day12LastName.setText(lastName);
+                jLabelRoom7Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
+                break;
+            case 13:
+                jLabelRoom7Day13FirstName.setText(firstName);
+                jLabelRoom7Day13LastName.setText(lastName);
+                jLabelRoom7Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
+                break;
+            case 14:
+                jLabelRoom7Day14FirstName.setText(firstName);
+                jLabelRoom7Day14LastName.setText(lastName);
+                jLabelRoom7Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
+                break;
+        }
+    }
+    
+    private void fillRoom8Cells(int roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 800:
+                jLabelRoom8RoomID.setText("" + roomID);
+                jLabelRoom8RoomSize.setText(roomSize);
+                break;
+            case 1:
+                jLabelRoom8Day01FirstName.setText(firstName);
+                jLabelRoom8Day01LastName.setText(lastName);
+                jLabelRoom8Day01Availability.setText(availability);
+                jPanelRoom1Day01.setBackground(background);
+                break;
+            case 2:
+                jLabelRoom8Day02FirstName.setText(firstName);
+                jLabelRoom8Day02LastName.setText(lastName);
+                jLabelRoom8Day02Availability.setText(availability);
+                jPanelRoom1Day02.setBackground(background);
+                break;
+            case 3:
+                jLabelRoom8Day03FirstName.setText(firstName);
+                jLabelRoom8Day03LastName.setText(lastName);
+                jLabelRoom8Day03Availability.setText(availability);
+                jPanelRoom1Day03.setBackground(background);
+                break;
+            case 4:
+                jLabelRoom8Day04FirstName.setText(firstName);
+                jLabelRoom8Day04LastName.setText(lastName);
+                jLabelRoom8Day04Availability.setText(availability);
+                jPanelRoom1Day04.setBackground(background);
+                break;
+            case 5:
+                jLabelRoom8Day05FirstName.setText(firstName);
+                jLabelRoom8Day05LastName.setText(lastName);
+                jLabelRoom8Day05Availability.setText(availability);
+                jPanelRoom1Day05.setBackground(background);
+                break;
+            case 6:
+                jLabelRoom8Day06FirstName.setText(firstName);
+                jLabelRoom8Day06LastName.setText(lastName);
+                jLabelRoom8Day06Availability.setText(availability);
+                jPanelRoom1Day06.setBackground(background);
+                break;
+            case 7:
+                jLabelRoom8Day07FirstName.setText(firstName);
+                jLabelRoom8Day07LastName.setText(lastName);
+                jLabelRoom8Day07Availability.setText(availability);
+                jPanelRoom1Day07.setBackground(background);
+                break;
+            case 8:
+                jLabelRoom8Day08FirstName.setText(firstName);
+                jLabelRoom8Day08LastName.setText(lastName);
+                jLabelRoom8Day08Availability.setText(availability);
+                jPanelRoom1Day08.setBackground(background);
+                break;
+            case 9:
+                jLabelRoom8Day09FirstName.setText(firstName);
+                jLabelRoom8Day09LastName.setText(lastName);
+                jLabelRoom8Day09Availability.setText(availability);
+                jPanelRoom1Day09.setBackground(background);
+                break;
+            case 10:
+                jLabelRoom8Day10FirstName.setText(firstName);
+                jLabelRoom8Day10LastName.setText(lastName);
+                jLabelRoom8Day10Availability.setText(availability);
+                jPanelRoom1Day10.setBackground(background);
+                break;
+            case 11:
+                jLabelRoom8Day11FirstName.setText(firstName);
+                jLabelRoom8Day11LastName.setText(lastName);
+                jLabelRoom8Day11Availability.setText(availability);
+                jPanelRoom1Day11.setBackground(background);
+                break;
+            case 12:
+                jLabelRoom8Day12FirstName.setText(firstName);
+                jLabelRoom8Day12LastName.setText(lastName);
+                jLabelRoom8Day12Availability.setText(availability);
+                jPanelRoom1Day12.setBackground(background);
+                break;
+            case 13:
+                jLabelRoom8Day13FirstName.setText(firstName);
+                jLabelRoom8Day13LastName.setText(lastName);
+                jLabelRoom8Day13Availability.setText(availability);
+                jPanelRoom1Day13.setBackground(background);
+                break;
+            case 14:
+                jLabelRoom8Day14FirstName.setText(firstName);
+                jLabelRoom8Day14LastName.setText(lastName);
+                jLabelRoom8Day14Availability.setText(availability);
+                jPanelRoom1Day14.setBackground(background);
+                break;
+        }
+    }
+    
     
     /**
      * @param args the command line arguments
