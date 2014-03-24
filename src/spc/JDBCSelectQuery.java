@@ -18,8 +18,8 @@ public class JDBCSelectQuery
     static final String driver = "oracle.jdbc.driver.OracleDriver";
     static final String url = "jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:dat";
     //  Database credentials
-    static final String user = "cphjp154";
-    static final String pass = "cphjp154";
+    static final String user = "cphjl161";
+    static final String pass = "cphjl161";
 
     public static void main(String[] args)
     {
@@ -41,23 +41,22 @@ public class JDBCSelectQuery
 
 //            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
             ResultSet rs; 
-            rs = stmt.executeQuery("SELECT roomID, roomType, roomPrice, roomAvailability from Rooms" );
+            rs = stmt.executeQuery("SELECT * from Rooms" );
             //STEP 5: Extract data from result set
-            if (rs.next())
+            while (rs.next())
             {
-                int roomID = rs.getInt("ROOMID");
+                System.out.println("lol");
+                int roomID = rs.getInt("roomID");
                 String roomType = rs.getString("roomType");
                 float roomPrice = rs.getFloat("roomPrice");
                 String roomAvailability = rs.getString("roomAvailability");
 
-                //Display values
+
                 System.out.println("ID: " + roomID);
-                System.out.println(", Type: " + roomType);
-                System.out.println(", Price: " + roomPrice);
-                System.out.println(", Availability: " + roomAvailability);
+                System.out.println("Type: " + roomType);
+                System.out.println("Price: " + roomPrice);
+                System.out.println("Availability: " + roomAvailability);
             }
-            else
-                System.out.println("pik");
             rs.close();
         } catch (SQLException se)
         {
