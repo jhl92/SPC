@@ -8335,7 +8335,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     
     private void fillRoomCells(int roomID, int room, int date)
     {
-        String A = getFromTable_RoomSize_atTheSpecified_DATE_AndSpecified_ROOMID;
+        String A = "getFromTable_RoomSize_atTheSpecified_DATE_AndSpecified_ROOMID";
         String roomSize = "(" + A + ")";
         switch (room)
         {
@@ -8368,43 +8368,43 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             //Get data from database/tables and add them to the variables below...
             int day = 1 + a;
-            String firstName = getStringFromTable_FirstName_atTheSpecifiedDate;
-            String lastName = getStringFromTable_LastName_atTheSpecifiedDate;
-            boolean available = getBooleanFromTable_Availability_atTheSpecifiedDate;
+            String firstName = "getStringFromTable_FirstName_atTheSpecifiedDate";
+            String lastName = "getStringFromTable_LastName_atTheSpecifiedDate";
+            boolean available = true; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
             if (available == false)
             {
                 String availability = "BOOKED";
-                Color background = Color.RED;
+                Color cellBackground = Color.RED;
             } else
             {
                 String availability = "FREE";
-                Color background = Color.GREEN;
+                Color cellBackground = Color.GREEN;
             }
             switch (room)
             {
                 case 1:
-                    fillRoom1Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom1Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
                 case 2:
-                    fillRoom2Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom2Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
                 case 3:
-                    fillRoom3Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom3Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
                 case 4:
-                    fillRoom4Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom4Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
                 case 5:
-                    fillRoom5Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom5Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
                 case 6:
-                    fillRoom6Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom6Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
                 case 7:
-                    fillRoom7Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom7Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
                 case 8:
-                    fillRoom8Cells(null, null, day, firstName, lastName, availability, background);
+                    fillRoom8Cells(null, null, day, firstName, lastName, availability, cellBackground);
                     break;
             }
         }
