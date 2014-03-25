@@ -51,9 +51,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1Badminton = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jCheckBoxBadmintonInstruct = new javax.swing.JCheckBox();
         jButtonBookFac = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -62,24 +59,27 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jComboBoxBadmintonInstrucHours = new javax.swing.JComboBox();
-        jLabelBadmintonInstructHourLabel = new javax.swing.JLabel();
-        jLabelBadmintonPriceLabel = new javax.swing.JLabel();
-        jLabelBadmintonInstructorPrice = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
         jComboBox3 = new javax.swing.JComboBox();
         jLabel27 = new javax.swing.JLabel();
         jComboBox4 = new javax.swing.JComboBox();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jCheckBoxBadmintonInstruct = new javax.swing.JCheckBox();
+        jLabelBadmintonInstructHourLabel = new javax.swing.JLabel();
+        jComboBoxBadmintonInstrucHours = new javax.swing.JComboBox();
+        jLabelBadmintonInstructorPrice = new javax.swing.JLabel();
+        jLabelBadmintonPriceLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel2Fitness = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
-        jLabel92 = new javax.swing.JLabel();
-        jComboBox16 = new javax.swing.JComboBox();
         jLabel93 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
@@ -89,18 +89,17 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButton5 = new javax.swing.JButton();
         jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel58 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
-        jCheckBoxGolfInstruct = new javax.swing.JCheckBox();
         jLabelGolfInstructHourLabel = new javax.swing.JLabel();
         jComboBoxGolfInstrucHours = new javax.swing.JComboBox();
-        jLabelGolfInstructorPrice = new javax.swing.JTextField();
         jLabelGolfPriceLabel = new javax.swing.JLabel();
-        jComboBox11 = new javax.swing.JComboBox();
-        jLabel74 = new javax.swing.JLabel();
-        jLabel75 = new javax.swing.JLabel();
-        jLabel76 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
+        jLabelGolfInstructorPrice = new javax.swing.JLabel();
+        jCheckBoxGolfInstruct = new javax.swing.JCheckBox();
         jPanel4MountainBike = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -123,13 +122,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jCheckBoxSwimmingInstruct = new javax.swing.JCheckBox();
         jLabelSwimmingInstructHourLabel = new javax.swing.JLabel();
         jComboBoxSwimmingInstrucHours = new javax.swing.JComboBox();
-        jLabelSwimmingInstructorPrice = new javax.swing.JTextField();
         jLabelSwimmingPriceLabel = new javax.swing.JLabel();
         jComboBox15 = new javax.swing.JComboBox();
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
+        jLabelSwimmingInstructorPrice = new javax.swing.JLabel();
         jPanel6TableTennis = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
@@ -166,26 +165,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jCheckBoxTennisInstruct = new javax.swing.JCheckBox();
         jLabelTennisInstructHourLabel = new javax.swing.JLabel();
         jComboBoxTennisInstrucHours = new javax.swing.JComboBox();
-        jLabelTennisInstructorPrice = new javax.swing.JTextField();
         jLabelTennisPriceLabel = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
         jComboBox12 = new javax.swing.JComboBox();
+        jLabelTennisInstructorPrice = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("BADMINTON");
-
-        jLabel2.setText("Do you wish to hire an instructor?");
-
-        jCheckBoxBadmintonInstruct.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jCheckBoxBadmintonInstructActionPerformed(evt);
-            }
-        });
 
         jButtonBookFac.setText("BOOK");
         jButtonBookFac.addActionListener(new java.awt.event.ActionListener()
@@ -210,16 +196,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel19.setText("<html>Badminton is a racquet sport usually played individually against each other <br>but can also be a 2v2 team sport. Bring your sweaty pants <br> and prepare for loads of fun and action in a game of strength, speed and <br> skills. Our highly experienced instructors are always available for hire</html>");
 
-        jComboBoxBadmintonInstrucHours.setVisible(false);
-        jComboBoxBadmintonInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
-        jComboBoxBadmintonInstrucHours.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxBadmintonInstrucHoursActionPerformed(evt);
-            }
-        });
-
         jComboBox2.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -238,91 +214,143 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel29.setText("from:");
 
+        jLabel2.setText("Do you wish to hire an instructor?");
+
+        jCheckBoxBadmintonInstruct.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jCheckBoxBadmintonInstructActionPerformed(evt);
+            }
+        });
+
+        jComboBoxBadmintonInstrucHours.setVisible(false);
+        jComboBoxBadmintonInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
+        jComboBoxBadmintonInstrucHours.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBadmintonInstrucHoursActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel1.setText("BADMINTON");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabelBadmintonPriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabelBadmintonInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel1)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addComponent(jLabel2)
+                            .addGap(8, 8, 8)
+                            .addComponent(jCheckBoxBadmintonInstruct, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jLabelBadmintonInstructHourLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(9, 9, 9)
+                            .addComponent(jComboBoxBadmintonInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(0, 36, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCheckBoxBadmintonInstruct, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBoxBadmintonInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabelBadmintonInstructHourLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(2, 2, 2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelBadmintonPriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelBadmintonInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1BadmintonLayout = new javax.swing.GroupLayout(jPanel1Badminton);
         jPanel1Badminton.setLayout(jPanel1BadmintonLayout);
         jPanel1BadmintonLayout.setHorizontalGroup(
             jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1BadmintonLayout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel15))
+                .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1BadmintonLayout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
+                                .addComponent(jLabel15))
                             .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36))
                             .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                .addComponent(jButtonBookFac, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(77, 77, 77))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1BadmintonLayout.createSequentialGroup()
+                        .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(13, 13, 13)
+                                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                .addGap(78, 78, 78)
+                                .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                        .addComponent(jLabel17)
+                                        .addGap(26, 26, 26)
+                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(36, 36, 36)
+                                        .addComponent(jLabel18))
+                                    .addComponent(jLabel16))
+                                .addGap(28, 28, 28)
                                 .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1BadmintonLayout.createSequentialGroup()
-                                        .addGap(270, 270, 270)
-                                        .addComponent(jLabel1))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1BadmintonLayout.createSequentialGroup()
-                                        .addGap(78, 78, 78)
-                                        .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                                                .addComponent(jLabel2)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jCheckBoxBadmintonInstruct)
-                                                .addGap(35, 35, 35)
-                                                .addComponent(jLabelBadmintonInstructHourLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jComboBoxBadmintonInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                                                .addComponent(jLabelBadmintonPriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(jLabelBadmintonInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                                                .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                                                        .addComponent(jLabel17)
-                                                        .addGap(26, 26, 26)
-                                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(36, 36, 36)
-                                                        .addComponent(jLabel18))
-                                                    .addComponent(jLabel16))
-                                                .addGap(28, 28, 28)
-                                                .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                                                        .addComponent(jLabel28)
-                                                        .addGap(3, 3, 3))
-                                                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                                                        .addComponent(jLabel29)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                                .addGap(95, 95, Short.MAX_VALUE)
-                                .addComponent(jLabel8)))
-                        .addGap(36, 36, 36)))
+                                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                        .addComponent(jLabel28)
+                                        .addGap(3, 3, 3))
+                                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                        .addComponent(jLabel29)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel8)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(30, 30, 30))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1BadmintonLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButtonBookFac, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107))
         );
         jPanel1BadmintonLayout.setVerticalGroup(
             jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
                 .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1)
-                        .addGap(38, 38, 38)
-                        .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jCheckBoxBadmintonInstruct)
-                            .addComponent(jComboBoxBadmintonInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelBadmintonInstructHourLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel8))
+                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
                         .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelBadmintonPriceLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelBadmintonInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(44, 44, 44)
+                            .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                .addGap(97, 97, 97)
+                                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(36, 36, 36)
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -332,17 +360,17 @@ public class Facilitet_GUI extends javax.swing.JFrame
                             .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel27)
                             .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel29))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel28))
+                            .addComponent(jLabel29))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel8)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(jButtonBookFac, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButtonBookFac, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1BadmintonLayout.createSequentialGroup()
+                        .addGap(107, 107, 107)
+                        .addComponent(jLabel28)))
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(jPanel1BadmintonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel15))
@@ -352,7 +380,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jTabbedPane1.addTab("Badminton", jPanel1Badminton);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel3.setText("FITNESS CENTER");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/Fitness CenterRESIZED.jpg"))); // NOI18N
@@ -362,18 +390,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel50.setText("The facilities are available between from 8am - 8pm every day");
 
         jButton8.setText("BOOK");
-
-        jLabel92.setText("How many hours do you wish to use the facility?");
-
-        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
-        jComboBox16.setToolTipText("");
-        jComboBox16.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBox16ActionPerformed(evt);
-            }
-        });
 
         jLabel93.setText("Select the hour/hours you wish to use the Fitness center.");
 
@@ -385,15 +401,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel2Fitness.setLayout(jPanel2FitnessLayout);
         jPanel2FitnessLayout.setHorizontalGroup(
             jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                        .addGap(323, 323, 323)
-                        .addComponent(jLabel3))
-                    .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel50)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2FitnessLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -406,35 +413,32 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2FitnessLayout.createSequentialGroup()
                 .addGap(72, 72, 72)
                 .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2FitnessLayout.createSequentialGroup()
-                        .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel92)
-                            .addComponent(jLabel93)
-                            .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                                .addComponent(jLabel95)
-                                .addGap(120, 120, 120)
-                                .addComponent(jLabel94)))
-                        .addGap(76, 76, 76))
-                    .addComponent(jComboBox16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                    .addComponent(jLabel93)
+                    .addGroup(jPanel2FitnessLayout.createSequentialGroup()
+                        .addComponent(jLabel95)
+                        .addGap(120, 120, 120)
+                        .addComponent(jLabel94)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(79, 79, 79))
+            .addGroup(jPanel2FitnessLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel50)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2FitnessLayout.setVerticalGroup(
             jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2FitnessLayout.createSequentialGroup()
                 .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel3)
-                        .addGap(34, 34, 34)
+                        .addGap(69, 69, 69)
                         .addComponent(jLabel4))
                     .addGroup(jPanel2FitnessLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3)
                         .addGap(81, 81, 81)
-                        .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel92)
-                            .addComponent(jComboBox16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(13, 13, 13)
                         .addComponent(jLabel93)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -461,19 +465,17 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel57.setText("The facilities are available between from 8am - 8pm every day");
 
+        jLabel96.setText("date");
+
+        jLabel97.setText("Select the hour/hours you wish to use the Fitness center.");
+
+        jLabel98.setText("time");
+
         jLabel58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel58.setText("GOLF");
 
         jLabel67.setText("Do you wish to hire an instructor?");
-
-        jCheckBoxGolfInstruct.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jCheckBoxGolfInstructActionPerformed(evt);
-            }
-        });
 
         jLabelGolfInstructHourLabel.setText("How many hours?");
 
@@ -487,81 +489,85 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabelGolfInstructorPrice.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jLabelGolfInstructorPriceActionPerformed(evt);
-            }
-        });
-
         jLabelGolfPriceLabel.setText("Price");
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
-        jComboBox11.setToolTipText("");
-        jComboBox11.addActionListener(new java.awt.event.ActionListener()
+        jLabelGolfInstructorPrice.setText("jLabel5");
+
+        jCheckBoxGolfInstruct.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jComboBox11ActionPerformed(evt);
+                jCheckBoxGolfInstructActionPerformed(evt);
             }
         });
 
-        jLabel74.setText("How many hours do you wish to book the facility?");
-
-        jLabel75.setText("Select the hour/hours you wish to play");
-
-        jLabel76.setText("time");
-
-        jLabel77.setText("date");
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel58)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabelGolfPriceLabel)
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabelGolfInstructorPrice))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel67)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jCheckBoxGolfInstruct)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabelGolfInstructHourLabel)
+                        .addGap(8, 8, 8)
+                        .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(128, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel58)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBoxGolfInstruct)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabelGolfInstructHourLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelGolfPriceLabel)
+                    .addComponent(jLabelGolfInstructorPrice))
+                .addContainerGap(44, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout jPanel3GolfLayout = new javax.swing.GroupLayout(jPanel3Golf);
         jPanel3Golf.setLayout(jPanel3GolfLayout);
         jPanel3GolfLayout.setHorizontalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3GolfLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(jLabel57)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 238, Short.MAX_VALUE)
                         .addComponent(jLabel56))
                     .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                        .addGap(0, 180, Short.MAX_VALUE)
                         .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3GolfLayout.createSequentialGroup()
-                                .addComponent(jLabel58)
-                                .addGap(226, 226, 226))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3GolfLayout.createSequentialGroup()
+                            .addGroup(jPanel3GolfLayout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3GolfLayout.createSequentialGroup()
-                                        .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel74)
-                                            .addComponent(jLabel75)
-                                            .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                                                .addComponent(jLabel77)
-                                                .addGap(120, 120, 120)
-                                                .addComponent(jLabel76)))
-                                        .addGap(79, 79, 79))
+                                    .addComponent(jLabel97)
                                     .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                                        .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3GolfLayout.createSequentialGroup()
-                                                .addComponent(jLabelGolfPriceLabel)
-                                                .addGap(12, 12, 12))
-                                            .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                                                .addComponent(jLabel67)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jCheckBoxGolfInstruct)
-                                                .addGap(35, 35, 35)
-                                                .addComponent(jLabelGolfInstructHourLabel)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                                        .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabelGolfInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3GolfLayout.createSequentialGroup()
-                                        .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(3, 3, 3)))
-                                .addGap(74, 74, 74)))
+                                        .addComponent(jLabel96)
+                                        .addGap(120, 120, 120)
+                                        .addComponent(jLabel98)))
+                                .addGap(195, 195, 195))
+                            .addGroup(jPanel3GolfLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
                             .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -574,31 +580,19 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel3GolfLayout.setVerticalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel58)
-                .addGap(30, 30, 30)
                 .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                        .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel67)
-                            .addComponent(jCheckBoxGolfInstruct)
-                            .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelGolfInstructHourLabel))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelGolfPriceLabel)
-                            .addComponent(jLabelGolfInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(65, 65, 65)
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel3GolfLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(114, 114, 114)
+                        .addComponent(jLabel97)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel74)
-                            .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(13, 13, 13)
-                        .addComponent(jLabel75)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel77)
-                            .addComponent(jLabel76)))
-                    .addComponent(jLabel9))
+                            .addComponent(jLabel96)
+                            .addComponent(jLabel98))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
@@ -617,7 +611,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel26.setText("<html>Ride our bikes to the heights you desire. the country provides <br> plenty of roads and mountainbike paths. Its free to use and no <br> booking required, just show up choose your own path. ");
 
         jLabel63.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel63.setText("Mountain Biking");
+        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel63.setText("MOUNTAIN BIKING");
 
         jComboBox10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
         jComboBox10.setToolTipText("");
@@ -668,13 +663,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(100, 100, 100))
             .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel4MountainBikeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addGap(341, 341, 341)
-                        .addComponent(jLabel63))
-                    .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel53)))
+                    .addComponent(jLabel53)
+                    .addComponent(jLabel63))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4MountainBikeLayout.setVerticalGroup(
@@ -682,12 +674,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
                 .addGroup(jPanel4MountainBikeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel63)
-                        .addGap(38, 38, 38)
+                        .addGap(73, 73, 73)
                         .addComponent(jLabel10))
                     .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addGap(156, 156, 156)
+                        .addContainerGap()
+                        .addComponent(jLabel63)
+                        .addGap(121, 121, 121)
                         .addGroup(jPanel4MountainBikeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel70)
                             .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -719,6 +711,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel41.setText("The facilities are available between from 8am - 8pm every day");
 
         jLabel59.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel59.setText("SWIMMING");
 
         jLabel85.setText("Do you wish to hire an instructor?");
@@ -743,14 +736,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabelSwimmingInstructorPrice.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jLabelSwimmingInstructorPriceActionPerformed(evt);
-            }
-        });
-
         jLabelSwimmingPriceLabel.setText("Price");
 
         jComboBox15.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
@@ -771,6 +756,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel91.setText("time");
 
+        jLabelSwimmingInstructorPrice.setText("jLabel5");
+
         javax.swing.GroupLayout jPanel5SwimmingLayout = new javax.swing.GroupLayout(jPanel5Swimming);
         jPanel5Swimming.setLayout(jPanel5SwimmingLayout);
         jPanel5SwimmingLayout.setHorizontalGroup(
@@ -788,29 +775,32 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
                         .addGap(99, 99, 99)
                         .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                                    .addComponent(jLabel90)
-                                    .addGap(116, 116, 116)
-                                    .addComponent(jLabel91))
-                                .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                                    .addComponent(jLabel88)
-                                    .addGap(78, 78, 78)
-                                    .addComponent(jComboBox15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel89))
+                            .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
+                                .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
+                                            .addComponent(jLabel90)
+                                            .addGap(116, 116, 116)
+                                            .addComponent(jLabel91))
+                                        .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
+                                            .addComponent(jLabel88)
+                                            .addGap(78, 78, 78)
+                                            .addComponent(jComboBox15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jLabel89))
+                                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
+                                        .addComponent(jLabel85)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jCheckBoxSwimmingInstruct)
+                                        .addGap(28, 28, 28)
+                                        .addComponent(jLabelSwimmingInstructHourLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jComboBoxSwimmingInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE))
                             .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
                                 .addComponent(jLabelSwimmingPriceLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabelSwimmingInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                                .addComponent(jLabel85)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBoxSwimmingInstruct)
-                                .addGap(28, 28, 28)
-                                .addComponent(jLabelSwimmingInstructHourLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBoxSwimmingInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
+                                .addComponent(jLabelSwimmingInstructorPrice)
+                                .addGap(122, 122, 122)))
                         .addComponent(jLabel11)))
                 .addGap(47, 47, 47))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5SwimmingLayout.createSequentialGroup()
@@ -818,7 +808,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(108, 108, 108))
             .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                .addGap(332, 332, 332)
+                .addContainerGap()
                 .addComponent(jLabel59)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -827,12 +817,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
                 .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel59)
-                        .addGap(4, 4, 4)
+                        .addGap(39, 39, 39)
                         .addComponent(jLabel11))
                     .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addGap(80, 80, 80)
+                        .addContainerGap()
+                        .addComponent(jLabel59)
+                        .addGap(45, 45, 45)
                         .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel85)
                             .addComponent(jCheckBoxSwimmingInstruct)
@@ -841,7 +831,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelSwimmingPriceLabel)
-                            .addComponent(jLabelSwimmingInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelSwimmingInstructorPrice))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel88)
@@ -870,6 +860,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel21.setText("<html>We have placed a tabletennis in the hall, where you can go and play without booking first. <br> A classic fun little activity for people at all ages.");
 
         jLabel60.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel60.setText("TABLE TENNIS");
 
         jComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
@@ -905,14 +896,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6TableTennisLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6TableTennisLayout.createSequentialGroup()
-                        .addComponent(jLabel60)
-                        .addGap(441, 441, 441))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6TableTennisLayout.createSequentialGroup()
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(220, 220, 220))))
+                .addContainerGap(666, Short.MAX_VALUE)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(220, 220, 220))
             .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -927,14 +913,18 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 233, Short.MAX_VALUE)
                 .addComponent(jLabel12)
                 .addGap(115, 115, 115))
+            .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel60)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6TableTennisLayout.setVerticalGroup(
             jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel60)
                 .addGroup(jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel60)
                         .addGap(93, 93, 93)
                         .addGroup(jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel55)
@@ -952,7 +942,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                             .addComponent(jLabel54)
                             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
+                        .addGap(68, 68, 68)
                         .addComponent(jLabel12)))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
@@ -968,7 +958,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel35.setText("The facilities are available between from 8am - 8pm every day");
 
         jLabel62.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel62.setText("Volleyball");
+        jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel62.setText("VOLEYBALL");
 
         jLabel81.setText("How many hours do you wish to book the facility?");
 
@@ -1018,24 +1009,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(115, 115, 115))))
                     .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                        .addComponent(jLabel35)
+                        .addGroup(jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel35)
+                            .addComponent(jLabel62))
                         .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                .addGap(365, 365, 365)
-                .addComponent(jLabel62)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel8VolleyballLayout.setVerticalGroup(
             jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel62)
                 .addGroup(jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                        .addContainerGap(107, Short.MAX_VALUE)
                         .addComponent(jLabel14)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel62)
                         .addGap(108, 108, 108)
                         .addGroup(jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel81)
@@ -1074,6 +1063,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel49.setText("The facilities are available between from 8am - 8pm every day");
 
         jLabel61.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel61.setText("TENNIS");
 
         jLabel6.setText("Do you wish to hire an instructor?");
@@ -1098,14 +1088,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabelTennisInstructorPrice.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jLabelTennisInstructorPriceActionPerformed(evt);
-            }
-        });
-
         jLabelTennisPriceLabel.setText("Price");
 
         jLabel80.setText("How many hours do you wish to book the facility?");
@@ -1119,6 +1101,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBox12ActionPerformed(evt);
             }
         });
+
+        jLabelTennisInstructorPrice.setText("jLabel5");
 
         javax.swing.GroupLayout jPanel7TennisLayout = new javax.swing.GroupLayout(jPanel7Tennis);
         jPanel7Tennis.setLayout(jPanel7TennisLayout);
@@ -1134,29 +1118,32 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     .addGroup(jPanel7TennisLayout.createSequentialGroup()
                         .addGap(45, 45, 45)
                         .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                                    .addComponent(jLabel46)
-                                    .addGap(116, 116, 116)
-                                    .addComponent(jLabel47))
-                                .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                                    .addComponent(jLabel80)
-                                    .addGap(78, 78, 78)
-                                    .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel45))
+                            .addGroup(jPanel7TennisLayout.createSequentialGroup()
+                                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel7TennisLayout.createSequentialGroup()
+                                            .addComponent(jLabel46)
+                                            .addGap(116, 116, 116)
+                                            .addComponent(jLabel47))
+                                        .addGroup(jPanel7TennisLayout.createSequentialGroup()
+                                            .addComponent(jLabel80)
+                                            .addGap(78, 78, 78)
+                                            .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jLabel45))
+                                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
+                                        .addComponent(jLabel6)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jCheckBoxTennisInstruct)
+                                        .addGap(28, 28, 28)
+                                        .addComponent(jLabelTennisInstructHourLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jComboBoxTennisInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE))
                             .addGroup(jPanel7TennisLayout.createSequentialGroup()
                                 .addComponent(jLabelTennisPriceLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabelTennisInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                                .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBoxTennisInstruct)
-                                .addGap(28, 28, 28)
-                                .addComponent(jLabelTennisInstructHourLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBoxTennisInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                                .addComponent(jLabelTennisInstructorPrice)
+                                .addGap(84, 84, 84)))
                         .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel13))))
@@ -1166,21 +1153,21 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(117, 117, 117))
             .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                .addGap(354, 354, 354)
+                .addContainerGap()
                 .addComponent(jLabel61)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7TennisLayout.setVerticalGroup(
             jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7TennisLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel61)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel13))
                     .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addGap(127, 127, 127)
+                        .addComponent(jLabel61)
+                        .addGap(92, 92, 92)
                         .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6)
                             .addComponent(jCheckBoxTennisInstruct)
@@ -1189,7 +1176,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelTennisPriceLabel)
-                            .addComponent(jLabelTennisInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelTennisInstructorPrice))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel80)
@@ -1200,7 +1187,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel46)
                             .addComponent(jLabel47))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 75, Short.MAX_VALUE)))
                 .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7TennisLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -1247,7 +1234,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jComboBoxBadmintonInstrucHours.setVisible(true);
             jComboBoxBadmintonInstrucHours.setSelectedIndex(0);
             jLabelBadmintonPriceLabel.setText("Price:");
-            jLabelBadmintonInstructorPrice.setText("$" + (jComboBoxBadmintonInstrucHours.getSelectedIndex() + 1) * 30);
         } else {
             jLabelBadmintonInstructHourLabel.setText("");
             jComboBoxBadmintonInstrucHours.setVisible(false);
@@ -1287,16 +1273,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jLabelGolfInstructorPrice.setText("$" + (jComboBoxGolfInstrucHours.getSelectedIndex() + 1) * 40);
     }//GEN-LAST:event_jComboBoxGolfInstrucHoursActionPerformed
 
-    private void jLabelGolfInstructorPriceActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jLabelGolfInstructorPriceActionPerformed
-    {//GEN-HEADEREND:event_jLabelGolfInstructorPriceActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelGolfInstructorPriceActionPerformed
-
-    private void jComboBox11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBox11ActionPerformed
-    {//GEN-HEADEREND:event_jComboBox11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox11ActionPerformed
-
     private void jCheckBoxTennisInstructActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jCheckBoxTennisInstructActionPerformed
     {//GEN-HEADEREND:event_jCheckBoxTennisInstructActionPerformed
         if(jCheckBoxTennisInstruct.isSelected())
@@ -1315,13 +1291,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jComboBoxTennisInstrucHoursActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxTennisInstrucHoursActionPerformed
     {//GEN-HEADEREND:event_jComboBoxTennisInstrucHoursActionPerformed
-        jLabelTennisInstructorPrice.setText("$" + (jComboBoxTennisInstrucHours.getSelectedIndex() + 1) * 40);
+        jLabelTennisInstructorPrice.setText("$" + (jComboBoxTennisInstrucHours.getSelectedIndex() + 1) * 30);
     }//GEN-LAST:event_jComboBoxTennisInstrucHoursActionPerformed
-
-    private void jLabelTennisInstructorPriceActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jLabelTennisInstructorPriceActionPerformed
-    {//GEN-HEADEREND:event_jLabelTennisInstructorPriceActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelTennisInstructorPriceActionPerformed
 
     private void jComboBox12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBox12ActionPerformed
     {//GEN-HEADEREND:event_jComboBox12ActionPerformed
@@ -1354,20 +1325,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelSwimmingInstructorPrice.setText("$" + (jComboBoxSwimmingInstrucHours.getSelectedIndex() + 1) * 40);
     }//GEN-LAST:event_jComboBoxSwimmingInstrucHoursActionPerformed
 
-    private void jLabelSwimmingInstructorPriceActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jLabelSwimmingInstructorPriceActionPerformed
-    {//GEN-HEADEREND:event_jLabelSwimmingInstructorPriceActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelSwimmingInstructorPriceActionPerformed
-
     private void jComboBox15ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBox15ActionPerformed
     {//GEN-HEADEREND:event_jComboBox15ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox15ActionPerformed
-
-    private void jComboBox16ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBox16ActionPerformed
-    {//GEN-HEADEREND:event_jComboBox16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox16ActionPerformed
 
     private void jButtonBookFacActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookFacActionPerformed
     {//GEN-HEADEREND:event_jButtonBookFacActionPerformed
@@ -1440,11 +1401,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JCheckBox jCheckBoxSwimmingInstruct;
     private javax.swing.JCheckBox jCheckBoxTennisInstruct;
     private javax.swing.JComboBox jComboBox10;
-    private javax.swing.JComboBox jComboBox11;
     private javax.swing.JComboBox jComboBox12;
     private javax.swing.JComboBox jComboBox13;
     private javax.swing.JComboBox jComboBox15;
-    private javax.swing.JComboBox jComboBox16;
     private javax.swing.JComboBox jComboBox2;
     private javax.swing.JComboBox jComboBox3;
     private javax.swing.JComboBox jComboBox4;
@@ -1507,10 +1466,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
@@ -1523,24 +1478,29 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
-    private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabelBadmintonInstructHourLabel;
     private javax.swing.JLabel jLabelBadmintonInstructorPrice;
     private javax.swing.JLabel jLabelBadmintonPriceLabel;
     private javax.swing.JLabel jLabelGolfInstructHourLabel;
-    private javax.swing.JTextField jLabelGolfInstructorPrice;
+    private javax.swing.JLabel jLabelGolfInstructorPrice;
     private javax.swing.JLabel jLabelGolfPriceLabel;
     private javax.swing.JLabel jLabelSwimmingInstructHourLabel;
-    private javax.swing.JTextField jLabelSwimmingInstructorPrice;
+    private javax.swing.JLabel jLabelSwimmingInstructorPrice;
     private javax.swing.JLabel jLabelSwimmingPriceLabel;
     private javax.swing.JLabel jLabelTennisInstructHourLabel;
-    private javax.swing.JTextField jLabelTennisInstructorPrice;
+    private javax.swing.JLabel jLabelTennisInstructorPrice;
     private javax.swing.JLabel jLabelTennisPriceLabel;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1Badminton;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel2Fitness;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel3Golf;
     private javax.swing.JPanel jPanel4MountainBike;
     private javax.swing.JPanel jPanel5Swimming;
