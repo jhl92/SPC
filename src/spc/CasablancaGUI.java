@@ -82,7 +82,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel6 = new javax.swing.JPanel();
         jRadioButtonSearchRoom = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jTextFieldSearchRoomNumber = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jRadioButtonSearchCustomer = new javax.swing.JRadioButton();
         buttonGroupSearchChoice = new javax.swing.ButtonGroup();
@@ -968,7 +969,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabel2.setText("Show specific room:");
 
-        jTextField1.setText("jTextField1");
+        jTextFieldSearchRoomNumber.setText("009");
+
+        jLabel3.setText("<html>Specify period. (Leave empty to<br>show period starting from today)</html>");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -982,9 +985,10 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel2)
+                            .addComponent(jTextFieldSearchRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(204, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -993,9 +997,11 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addComponent(jRadioButtonSearchRoom)
                 .addGap(34, 34, 34)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldSearchRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(125, Short.MAX_VALUE))
         );
 
         jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1010,14 +1016,14 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jRadioButtonSearchCustomer)
-                .addContainerGap(182, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jRadioButtonSearchCustomer)
-                .addContainerGap(215, Short.MAX_VALUE))
+                .addContainerGap(207, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jDialogSearchLayout = new javax.swing.GroupLayout(jDialogSearch.getContentPane());
@@ -1028,7 +1034,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 242, Short.MAX_VALUE))
+                .addGap(0, 205, Short.MAX_VALUE))
         );
         jDialogSearchLayout.setVerticalGroup(
             jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -8439,26 +8445,57 @@ public class CasablancaGUI extends javax.swing.JFrame
                     fillRoom1Cells(null, null, 100, null, null, null, null);
                     break;
                 case 2:
-                    fillRoom2Cells(roomID, roomSize, 200, null, null, null, null);
+                    fillRoom2Cells(null, null, 200, null, null, null, null);
                     break;
                 case 3:
-                    fillRoom3Cells(roomID, roomSize, 300, null, null, null, null);
+                    fillRoom3Cells(null, null, 300, null, null, null, null);
                     break;
                 case 4:
-                    fillRoom4Cells(roomID, roomSize, 400, null, null, null, null);
+                    fillRoom4Cells(null, null, 400, null, null, null, null);
                     break;
                 case 5:
-                    fillRoom5Cells(roomID, roomSize, 500, null, null, null, null);
+                    fillRoom5Cells(null, null, 500, null, null, null, null);
                     break;
                 case 6:
-                    fillRoom6Cells(roomID, roomSize, 600, null, null, null, null);
+                    fillRoom6Cells(null, null, 600, null, null, null, null);
                     break;
                 case 7:
-                    fillRoom7Cells(roomID, roomSize, 700, null, null, null, null);
+                    fillRoom7Cells(null, null, 700, null, null, null, null);
                     break;
                 case 8:
-                    fillRoom8Cells(roomID, roomSize, 800, null, null, null, null);
+                    fillRoom8Cells(null, null, 800, null, null, null, null);
                     break;
+            }
+            for (int a = 0; a < 14; a++)
+            {
+                int day = 1 + a;
+                switch (room)
+                {
+                    case 1:
+                        fillRoom1Cells(null, null, day, null, null, null, null);
+                        break;
+                    case 2:
+                        fillRoom2Cells(null, null, day, null, null, null, null);
+                        break;
+                    case 3:
+                        fillRoom3Cells(null, null, day, null, null, null, null);
+                        break;
+                    case 4:
+                        fillRoom4Cells(null, null, day, null, null, null, null);
+                        break;
+                    case 5:
+                        fillRoom5Cells(null, null, day, null, null, null, null);
+                        break;
+                    case 6:
+                        fillRoom6Cells(null, null, day, null, null, null, null);
+                        break;
+                    case 7:
+                        fillRoom7Cells(null, null, day, null, null, null, null);
+                        break;
+                    case 8:
+                        fillRoom8Cells(null, null, day, null, null, null, null);
+                        break;
+                }
             }
         } else
         {
@@ -8466,6 +8503,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             Color cellBackground;
             String A = "getFromTable_RoomSize_atTheSpecified_ROOMID";
             String roomSize = "(" + A + ")";
+            String rID = "" + roomID;
             switch (room)
             {
                 case 1:
@@ -9372,6 +9410,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JDialog jDialogSearch;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelDate01;
     private javax.swing.JLabel jLabelDate01Day;
     private javax.swing.JLabel jLabelDate01Year;
@@ -9935,7 +9974,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelRoom8Day14;
     private javax.swing.JRadioButton jRadioButtonSearchCustomer;
     private javax.swing.JRadioButton jRadioButtonSearchRoom;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextFieldDetailsAddress;
     private javax.swing.JTextField jTextFieldDetailsCity;
     private javax.swing.JTextField jTextFieldDetailsCountry;
@@ -9944,5 +9982,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldDetailsLastName;
     private javax.swing.JTextField jTextFieldDetailsPhoneNumber;
     private javax.swing.JTextField jTextFieldDetailsPostalCode;
+    private javax.swing.JTextField jTextFieldSearchRoomNumber;
     // End of variables declaration//GEN-END:variables
 }
