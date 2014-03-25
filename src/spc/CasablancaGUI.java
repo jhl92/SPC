@@ -80,12 +80,17 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonExitDetails = new javax.swing.JButton();
         jDialogSearch = new javax.swing.JDialog();
         jPanel6 = new javax.swing.JPanel();
-        jRadioButtonSearchRoom = new javax.swing.JRadioButton();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelSearchNoChange2 = new javax.swing.JLabel();
+        jComboBoxSearchDate = new javax.swing.JComboBox();
+        jComboBoxSearchMonth = new javax.swing.JComboBox();
+        jComboBoxSearchYear = new javax.swing.JComboBox();
+        jLabelSearchNoChange3 = new javax.swing.JLabel();
+        jLabelSearchSpecifiedEndDate = new javax.swing.JLabel();
+        jLabelSearchNoChange1 = new javax.swing.JLabel();
         jTextFieldSearchRoomNumber = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jCheckBoxSearchCheckIn = new javax.swing.JCheckBox();
+        jCheckBoxSearchCheckOut = new javax.swing.JCheckBox();
         jPanel7 = new javax.swing.JPanel();
-        jRadioButtonSearchCustomer = new javax.swing.JRadioButton();
         buttonGroupSearchChoice = new javax.swing.ButtonGroup();
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -961,69 +966,92 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jDialogSearch.setResizable(false);
+
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        buttonGroupSearchChoice.add(jRadioButtonSearchRoom);
-        jRadioButtonSearchRoom.setSelected(true);
-        jRadioButtonSearchRoom.setText("Search for room details");
+        jLabelSearchNoChange2.setText("Specify start date:");
 
-        jLabel2.setText("Show specific room:");
+        jComboBoxSearchDate.setMaximumRowCount(13);
+        jComboBoxSearchDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+
+        jComboBoxSearchMonth.setMaximumRowCount(13);
+        jComboBoxSearchMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "- Today -", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+
+        jComboBoxSearchYear.setMaximumRowCount(13);
+        jComboBoxSearchYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " -", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+
+        jLabelSearchNoChange3.setText("To:");
+
+        jLabelSearchSpecifiedEndDate.setPreferredSize(new java.awt.Dimension(178, 20));
+
+        jLabelSearchNoChange1.setText("Show specific room:");
 
         jTextFieldSearchRoomNumber.setText("009");
 
-        jLabel3.setText("<html>Specify period. (Leave empty to<br>show period starting from today)</html>");
+        jCheckBoxSearchCheckIn.setText("Show rooms that have check-in on the specified date.");
+
+        jCheckBoxSearchCheckOut.setText("Show rooms that have check-out on the specified date.");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jRadioButtonSearchRoom))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jTextFieldSearchRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(204, Short.MAX_VALUE))
+                    .addComponent(jCheckBoxSearchCheckOut)
+                    .addComponent(jCheckBoxSearchCheckIn)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addComponent(jComboBoxSearchMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jComboBoxSearchDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jComboBoxSearchYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabelSearchNoChange2)
+                        .addComponent(jLabelSearchNoChange3)
+                        .addComponent(jLabelSearchSpecifiedEndDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabelSearchNoChange1)
+                    .addComponent(jTextFieldSearchRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jRadioButtonSearchRoom)
-                .addGap(34, 34, 34)
-                .addComponent(jLabel2)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelSearchNoChange1)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldSearchRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addComponent(jTextFieldSearchRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jCheckBoxSearchCheckIn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBoxSearchCheckOut)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelSearchNoChange2)
+                .addGap(0, 0, 0)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxSearchDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxSearchMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxSearchYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelSearchNoChange3)
+                .addGap(0, 0, 0)
+                .addComponent(jLabelSearchSpecifiedEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(100, 100, 100))
         );
 
         jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        buttonGroupSearchChoice.add(jRadioButtonSearchCustomer);
-        jRadioButtonSearchCustomer.setText("Search for customer details");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jRadioButtonSearchCustomer)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 476, Short.MAX_VALUE)
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jRadioButtonSearchCustomer)
-                .addContainerGap(207, Short.MAX_VALUE))
+            .addGap(0, 142, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jDialogSearchLayout = new javax.swing.GroupLayout(jDialogSearch.getContentPane());
@@ -1031,10 +1059,10 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogSearchLayout.setHorizontalGroup(
             jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogSearchLayout.createSequentialGroup()
-                .addGroup(jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 205, Short.MAX_VALUE))
+                .addGroup(jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 118, Short.MAX_VALUE))
         );
         jDialogSearchLayout.setVerticalGroup(
             jDialogSearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -9406,11 +9434,14 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonRoomArrowUp;
     private javax.swing.JButton jButtonSaveDetails;
     private javax.swing.JButton jButtonSearch;
+    private javax.swing.JCheckBox jCheckBoxSearchCheckIn;
+    private javax.swing.JCheckBox jCheckBoxSearchCheckOut;
+    private javax.swing.JComboBox jComboBoxSearchDate;
+    private javax.swing.JComboBox jComboBoxSearchMonth;
+    private javax.swing.JComboBox jComboBoxSearchYear;
     private javax.swing.JDialog jDialogDetails;
     private javax.swing.JDialog jDialogSearch;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelDate01;
     private javax.swing.JLabel jLabelDate01Day;
     private javax.swing.JLabel jLabelDate01Year;
@@ -9830,6 +9861,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelRoom8Day14LastName;
     private javax.swing.JLabel jLabelRoom8RoomID;
     private javax.swing.JLabel jLabelRoom8RoomSize;
+    private javax.swing.JLabel jLabelSearchNoChange1;
+    private javax.swing.JLabel jLabelSearchNoChange2;
+    private javax.swing.JLabel jLabelSearchNoChange3;
+    private javax.swing.JLabel jLabelSearchSpecifiedEndDate;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -9972,8 +10007,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelRoom8Day12;
     private javax.swing.JPanel jPanelRoom8Day13;
     private javax.swing.JPanel jPanelRoom8Day14;
-    private javax.swing.JRadioButton jRadioButtonSearchCustomer;
-    private javax.swing.JRadioButton jRadioButtonSearchRoom;
     private javax.swing.JTextField jTextFieldDetailsAddress;
     private javax.swing.JTextField jTextFieldDetailsCity;
     private javax.swing.JTextField jTextFieldDetailsCountry;
