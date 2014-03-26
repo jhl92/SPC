@@ -82,6 +82,7 @@ public class PopUpGUI extends javax.swing.JPanel
         jTextFieldSearchCustomerPhoneNumber = new javax.swing.JTextField();
         jTextFieldSearchCustomerEmail = new javax.swing.JTextField();
         jLabelSearchCustomerNoChange5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabelSearchCustomerFirstName = new javax.swing.JLabel();
         jLabelSearchCustomerLastName = new javax.swing.JLabel();
@@ -480,6 +481,9 @@ public class PopUpGUI extends javax.swing.JPanel
 
         jLabelSearchCustomerNoChange5.setText("E-mail Address:");
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel1.setText("<html>Type in one or more information in the<br>boxes below:</html>");
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -502,12 +506,18 @@ public class PopUpGUI extends javax.swing.JPanel
                     .addComponent(jTextFieldSearchCustomerPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldSearchCustomerEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelSearchCustomerNoChange5))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabel1)
                 .addGap(10, 10, 10))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
                 .addComponent(jLabelSearchCustomerNoChange1)
                 .addGap(0, 0, 0)
                 .addComponent(jTextFieldSearchCustomerFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -537,7 +547,7 @@ public class PopUpGUI extends javax.swing.JPanel
                 .addComponent(jTextFieldSearchCustomerBookingID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(jButtonSearchCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jPanel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -614,39 +624,39 @@ public class PopUpGUI extends javax.swing.JPanel
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jButtonShowSelectedCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15)
+                .addComponent(jButtonShowSelectedCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelSearchCustomerNoChange8)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelSearchCustomerNoChange9)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelSearchCustomerNoChange10)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerNationality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelSearchCustomerNoChange11)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelSearchCustomerNoChange12)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelSearchCustomerNoChange13)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerGuestID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelSearchCustomerNoChange14)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerBookingID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(18, 18, 18)
                 .addComponent(jButtonEditSelectedCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jListSearchCustomerResult.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
@@ -667,11 +677,10 @@ public class PopUpGUI extends javax.swing.JPanel
         jDialogSearchCustomerLayout.setVerticalGroup(
             jDialogSearchCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogSearchCustomerLayout.createSequentialGroup()
-                .addGroup(jDialogSearchCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogSearchCustomerLayout.createSequentialGroup()
+            .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jDialogSearchCustomerLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jScrollPane1)
                 .addGap(10, 10, 10))
@@ -812,7 +821,7 @@ public class PopUpGUI extends javax.swing.JPanel
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(284, 284, 284))
+                .addGap(88, 88, 88))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -906,6 +915,7 @@ public class PopUpGUI extends javax.swing.JPanel
     private javax.swing.JDialog jDialogDetails;
     private javax.swing.JDialog jDialogSearchCustomer;
     private javax.swing.JDialog jDialogSearchRoom;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
     private javax.swing.JLabel jLabelDetailsBookingDate;
     private javax.swing.JLabel jLabelDetailsEndDate;
