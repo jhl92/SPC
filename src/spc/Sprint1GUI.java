@@ -384,6 +384,7 @@ public class Sprint1GUI extends javax.swing.JFrame
 
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
+        /*
         jTextFieldBookingFirstName.setText("");
         jTextFieldBookingLastName.setText("");
         jTextFieldBookingCountry.setText("");
@@ -399,6 +400,7 @@ public class Sprint1GUI extends javax.swing.JFrame
         jComboBoxBookingEndDate.setSelectedIndex(0);
         jComboBoxBookingStartYear.setSelectedIndex(0);
         jComboBoxBookingEndYear.setSelectedIndex(0);
+        */
         //First, check if selected room is available in specified period
         //If selected room is available then perform booking of room
         String firstName = jTextFieldBookingFirstName.getText();
@@ -419,9 +421,10 @@ public class Sprint1GUI extends javax.swing.JFrame
         String endDate = convertDate(ed);
         String startYear = (String) jComboBoxBookingStartYear.getSelectedItem();
         String endYear = (String) jComboBoxBookingEndYear.getSelectedItem();
-        String dateFrom = (startDate+startMonth+startYear);
-        String dateTo = (endDate+endMonth+endYear);
-        jdcbinsert.JDBCInsertRoom(guestID, roomID, "EmployeeID", dateFrom, dateTo, "1800");
+        String dateFrom = (startDate+"-"+startMonth+"-"+startYear);
+        String dateTo = (endDate+"-"+endMonth+"-"+endYear);
+        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), jTextFieldBookingRoomNumber.getText(), "EmployeeID", dateFrom, dateTo, "1800");
+        System.out.println(jTextFieldBookingGuestID.getText() + " + " + jTextFieldBookingRoomNumber.getText() + " + " + "EmployeeID" + " + " + dateFrom + " + " + dateTo + " + " + "1800");
         jLabelBookingUnavailableNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
