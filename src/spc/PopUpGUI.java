@@ -127,6 +127,35 @@ public class PopUpGUI extends javax.swing.JPanel
         jButtonSearchRoom = new javax.swing.JButton();
         jLabelSearchRoomResultNotifier = new javax.swing.JLabel();
         buttonGroupSearchRoomChoice = new javax.swing.ButtonGroup();
+        jDialogBooking = new javax.swing.JDialog();
+        jPanel3 = new javax.swing.JPanel();
+        jLabelBookingNoChange1 = new javax.swing.JLabel();
+        jTextFieldBookingFirstName = new javax.swing.JTextField();
+        jLabelBookingNoChange2 = new javax.swing.JLabel();
+        jTextFieldBookingLastName = new javax.swing.JTextField();
+        jLabelBookingNoChange3 = new javax.swing.JLabel();
+        jTextFieldBookingCountry = new javax.swing.JTextField();
+        jLabelBookingNoChange4 = new javax.swing.JLabel();
+        jTextFieldBookingPhoneNumber = new javax.swing.JTextField();
+        jLabelBookingNoChange5 = new javax.swing.JLabel();
+        jTextFieldBookingEmail = new javax.swing.JTextField();
+        jLabelBookingNoChange6 = new javax.swing.JLabel();
+        jTextFieldBookingGuestID = new javax.swing.JTextField();
+        jLabelBookingNoChange7 = new javax.swing.JLabel();
+        jTextFieldBookingBookingID = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
+        jLabelBookingNoChange8 = new javax.swing.JLabel();
+        jComboBoxBookingStartMonth = new javax.swing.JComboBox();
+        jComboBoxBookingStartDate = new javax.swing.JComboBox();
+        jComboBoxBookingStartYear = new javax.swing.JComboBox();
+        jLabelBookingNoChange9 = new javax.swing.JLabel();
+        jComboBoxBookingEndMonth = new javax.swing.JComboBox();
+        jComboBoxBookingEndDate = new javax.swing.JComboBox();
+        jComboBoxBookingEndYear = new javax.swing.JComboBox();
+        jButtonBookingBook = new javax.swing.JButton();
+        jTextFieldBookingRoomNumber = new javax.swing.JTextField();
+        jLabelBookingNoChange10 = new javax.swing.JLabel();
+        jLabelBookingUnavailableNotifier = new javax.swing.JLabel();
 
         jDialogDetails.setTitle("Details");
         jDialogDetails.setResizable(false);
@@ -501,26 +530,26 @@ public class PopUpGUI extends javax.swing.JPanel
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabelSearchCustomerNoChange7)
-                    .addComponent(jLabelSearchCustomerNoChange6)
-                    .addComponent(jLabelSearchCustomerNoChange2)
-                    .addComponent(jLabelSearchCustomerNoChange1)
-                    .addComponent(jTextFieldSearchCustomerLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldSearchCustomerGuestID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldSearchCustomerBookingID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonSearchCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldSearchCustomerFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelSearchCustomerNoChange3)
-                    .addComponent(jTextFieldSearchCustomerCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelSearchCustomerNoChange4)
-                    .addComponent(jTextFieldSearchCustomerPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldSearchCustomerEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelSearchCustomerNoChange5))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabelSearchCustomerNoChange7)
+                            .addComponent(jLabelSearchCustomerNoChange6)
+                            .addComponent(jLabelSearchCustomerNoChange2)
+                            .addComponent(jLabelSearchCustomerNoChange1)
+                            .addComponent(jTextFieldSearchCustomerLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldSearchCustomerGuestID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldSearchCustomerBookingID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonSearchCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldSearchCustomerFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelSearchCustomerNoChange3)
+                            .addComponent(jTextFieldSearchCustomerCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelSearchCustomerNoChange4)
+                            .addComponent(jTextFieldSearchCustomerPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldSearchCustomerEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelSearchCustomerNoChange5))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel1))
                 .addGap(10, 10, 10))
         );
         jPanel7Layout.setVerticalGroup(
@@ -742,16 +771,15 @@ public class PopUpGUI extends javax.swing.JPanel
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jRadioButtonSearchRoomAvailable)
-                                .addComponent(jRadioButtonSearchRoomCheckInOut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jRadioButtonSearchRoomOccupied)
-                                .addGroup(jPanel6Layout.createSequentialGroup()
-                                    .addComponent(jLabelSearchRoomNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jComboBoxSearchRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(jLabelSearchRoomTypePersonsNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jRadioButtonSearchRoomAvailable)
+                            .addComponent(jRadioButtonSearchRoomCheckInOut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jRadioButtonSearchRoomOccupied)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabelSearchRoomNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jComboBoxSearchRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabelSearchRoomTypePersonsNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(154, 154, 154)
@@ -910,15 +938,206 @@ public class PopUpGUI extends javax.swing.JPanel
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabelBookingNoChange1.setText("Enter First Name:");
+
+        jTextFieldBookingFirstName.setPreferredSize(new java.awt.Dimension(192, 20));
+
+        jLabelBookingNoChange2.setText("Enter Last Name:");
+
+        jTextFieldBookingLastName.setPreferredSize(new java.awt.Dimension(192, 20));
+
+        jLabelBookingNoChange3.setText("Enter Country:");
+
+        jTextFieldBookingCountry.setPreferredSize(new java.awt.Dimension(192, 20));
+
+        jLabelBookingNoChange4.setText("Enter Phone-Number:");
+
+        jTextFieldBookingPhoneNumber.setPreferredSize(new java.awt.Dimension(192, 20));
+
+        jLabelBookingNoChange5.setText("Enter E-mail Address:");
+
+        jTextFieldBookingEmail.setPreferredSize(new java.awt.Dimension(192, 20));
+
+        jLabelBookingNoChange6.setText("Enter Guest-ID");
+
+        jTextFieldBookingGuestID.setPreferredSize(new java.awt.Dimension(192, 20));
+
+        jLabelBookingNoChange7.setText("Enter Booking-ID");
+
+        jTextFieldBookingBookingID.setPreferredSize(new java.awt.Dimension(192, 20));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelBookingNoChange7)
+                    .addComponent(jLabelBookingNoChange6)
+                    .addComponent(jLabelBookingNoChange2)
+                    .addComponent(jLabelBookingNoChange1)
+                    .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldBookingGuestID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldBookingBookingID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelBookingNoChange3)
+                    .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelBookingNoChange4)
+                    .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelBookingNoChange5))
+                .addGap(20, 20, 20))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange1)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange2)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange3)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange4)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange5)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange6)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange7)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingBookingID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
+        );
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabelBookingNoChange8.setText("Specify start date:");
+
+        jComboBoxBookingStartMonth.setMaximumRowCount(13);
+        jComboBoxBookingStartMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " - Today -", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+
+        jComboBoxBookingStartDate.setMaximumRowCount(13);
+        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+
+        jComboBoxBookingStartYear.setMaximumRowCount(13);
+        jComboBoxBookingStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " ", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+
+        jLabelBookingNoChange9.setText("Specify end date:");
+
+        jComboBoxBookingEndMonth.setMaximumRowCount(12);
+        jComboBoxBookingEndMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+
+        jComboBoxBookingEndDate.setMaximumRowCount(12);
+        jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+
+        jComboBoxBookingEndYear.setMaximumRowCount(12);
+        jComboBoxBookingEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+
+        jButtonBookingBook.setText("Book Room");
+
+        jTextFieldBookingRoomNumber.setPreferredSize(new java.awt.Dimension(60, 20));
+
+        jLabelBookingNoChange10.setText("Enter Room Number:");
+
+        jLabelBookingUnavailableNotifier.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabelBookingUnavailableNotifier.setText("<html>Selected room is not available<br>in the specified period...</html>");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelBookingUnavailableNotifier)
+                    .addComponent(jLabelBookingNoChange10)
+                    .addComponent(jTextFieldBookingRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelBookingNoChange8)
+                    .addComponent(jLabelBookingNoChange9)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonBookingBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange8)
+                .addGap(0, 0, 0)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange9)
+                .addGap(0, 0, 0)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange10)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(111, 111, 111)
+                .addComponent(jLabelBookingUnavailableNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButtonBookingBook, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDialogBookingLayout = new javax.swing.GroupLayout(jDialogBooking.getContentPane());
+        jDialogBooking.getContentPane().setLayout(jDialogBookingLayout);
+        jDialogBookingLayout.setHorizontalGroup(
+            jDialogBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogBookingLayout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
+        );
+        jDialogBookingLayout.setVerticalGroup(
+            jDialogBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 427, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 337, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1018,6 +1237,7 @@ public class PopUpGUI extends javax.swing.JPanel
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
+    private javax.swing.JButton jButtonBookingBook;
     private javax.swing.JButton jButtonChangeBooking;
     private javax.swing.JButton jButtonChangeDetails;
     private javax.swing.JButton jButtonEditSelectedCustomerDetails;
@@ -1027,6 +1247,12 @@ public class PopUpGUI extends javax.swing.JPanel
     private javax.swing.JButton jButtonSearchRoom;
     private javax.swing.JButton jButtonShowSelectedCustomerDetails;
     private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox jComboBoxBookingEndDate;
+    private javax.swing.JComboBox jComboBoxBookingEndMonth;
+    private javax.swing.JComboBox jComboBoxBookingEndYear;
+    private javax.swing.JComboBox jComboBoxBookingStartDate;
+    private javax.swing.JComboBox jComboBoxBookingStartMonth;
+    private javax.swing.JComboBox jComboBoxBookingStartYear;
     private javax.swing.JComboBox jComboBoxSearchEndDate;
     private javax.swing.JComboBox jComboBoxSearchEndMonth;
     private javax.swing.JComboBox jComboBoxSearchEndYear;
@@ -1034,10 +1260,22 @@ public class PopUpGUI extends javax.swing.JPanel
     private javax.swing.JComboBox jComboBoxSearchStartDate;
     private javax.swing.JComboBox jComboBoxSearchStartMonth;
     private javax.swing.JComboBox jComboBoxSearchStartYear;
+    private javax.swing.JDialog jDialogBooking;
     private javax.swing.JDialog jDialogDetails;
     private javax.swing.JDialog jDialogSearchCustomer;
     private javax.swing.JDialog jDialogSearchRoom;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelBookingNoChange1;
+    private javax.swing.JLabel jLabelBookingNoChange10;
+    private javax.swing.JLabel jLabelBookingNoChange2;
+    private javax.swing.JLabel jLabelBookingNoChange3;
+    private javax.swing.JLabel jLabelBookingNoChange4;
+    private javax.swing.JLabel jLabelBookingNoChange5;
+    private javax.swing.JLabel jLabelBookingNoChange6;
+    private javax.swing.JLabel jLabelBookingNoChange7;
+    private javax.swing.JLabel jLabelBookingNoChange8;
+    private javax.swing.JLabel jLabelBookingNoChange9;
+    private javax.swing.JLabel jLabelBookingUnavailableNotifier;
     private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
     private javax.swing.JLabel jLabelDetailsBookingDate;
     private javax.swing.JLabel jLabelDetailsEndDate;
@@ -1085,6 +1323,8 @@ public class PopUpGUI extends javax.swing.JPanel
     private javax.swing.JList jListSearchCustomerResult;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -1098,6 +1338,14 @@ public class PopUpGUI extends javax.swing.JPanel
     private javax.swing.JRadioButton jRadioButtonSearchRoomOccupied;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextField jTextFieldBookingBookingID;
+    private javax.swing.JTextField jTextFieldBookingCountry;
+    private javax.swing.JTextField jTextFieldBookingEmail;
+    private javax.swing.JTextField jTextFieldBookingFirstName;
+    private javax.swing.JTextField jTextFieldBookingGuestID;
+    private javax.swing.JTextField jTextFieldBookingLastName;
+    private javax.swing.JTextField jTextFieldBookingPhoneNumber;
+    private javax.swing.JTextField jTextFieldBookingRoomNumber;
     private javax.swing.JTextField jTextFieldDetailsAddress;
     private javax.swing.JTextField jTextFieldDetailsCity;
     private javax.swing.JTextField jTextFieldDetailsCountry;
