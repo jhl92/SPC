@@ -1027,7 +1027,7 @@ public class PopUpGUI extends javax.swing.JPanel
 
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabelBookingNoChange8.setText("Specify start date:");
+        jLabelBookingNoChange8.setText("Start date:");
 
         jComboBoxBookingStartMonth.setMaximumRowCount(13);
         jComboBoxBookingStartMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " - Today -", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
@@ -1038,7 +1038,7 @@ public class PopUpGUI extends javax.swing.JPanel
         jComboBoxBookingStartYear.setMaximumRowCount(13);
         jComboBoxBookingStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " ", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
 
-        jLabelBookingNoChange9.setText("Specify end date:");
+        jLabelBookingNoChange9.setText("End date:");
 
         jComboBoxBookingEndMonth.setMaximumRowCount(12);
         jComboBoxBookingEndMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
@@ -1050,10 +1050,17 @@ public class PopUpGUI extends javax.swing.JPanel
         jComboBoxBookingEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
 
         jButtonBookingBook.setText("Book Room");
+        jButtonBookingBook.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookingBookActionPerformed(evt);
+            }
+        });
 
         jTextFieldBookingRoomNumber.setPreferredSize(new java.awt.Dimension(60, 20));
 
-        jLabelBookingNoChange10.setText("Enter Room Number:");
+        jLabelBookingNoChange10.setText("Room Number:");
 
         jLabelBookingUnavailableNotifier.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jLabelBookingUnavailableNotifier.setText("<html>Selected room is not available<br>in the specified period...</html>");
@@ -1220,6 +1227,12 @@ public class PopUpGUI extends javax.swing.JPanel
         }
     }//GEN-LAST:event_jComboBoxSearchRoomTypeActionPerformed
 
+    private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
+    {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
+        //First, check if selected room is available in specified period
+        //If selected room is available then perform booking of room
+    }//GEN-LAST:event_jButtonBookingBookActionPerformed
+
     public void resetDialogDetails()
     {
         
@@ -1231,6 +1244,11 @@ public class PopUpGUI extends javax.swing.JPanel
     }
     
     public void resetDialogSearchCustomer()
+    {
+        
+    }
+    
+    public void resetDialogBooking()
     {
         
     }

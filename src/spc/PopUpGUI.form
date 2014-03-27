@@ -1784,7 +1784,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabelBookingNoChange8">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Specify start date:"/>
+                <Property name="text" type="java.lang.String" value="Start date:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBoxBookingStartMonth">
@@ -1889,7 +1889,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelBookingNoChange9">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Specify end date:"/>
+                <Property name="text" type="java.lang.String" value="End date:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBoxBookingEndMonth">
@@ -1993,6 +1993,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Book Room"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBookingBookActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldBookingRoomNumber">
               <Properties>
@@ -2003,7 +2006,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelBookingNoChange10">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Enter Room Number:"/>
+                <Property name="text" type="java.lang.String" value="Room Number:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelBookingUnavailableNotifier">
