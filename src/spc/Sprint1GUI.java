@@ -403,28 +403,16 @@ public class Sprint1GUI extends javax.swing.JFrame
         */
         //First, check if selected room is available in specified period
         //If selected room is available then perform booking of room
+        /*
         String firstName = jTextFieldBookingFirstName.getText();
         String lastName = jTextFieldBookingLastName.getText();
         String country = jTextFieldBookingCountry.getText();
         String phoneNumber = jTextFieldBookingPhoneNumber.getText();
         String Email = jTextFieldBookingEmail.getText();
-        String guestID = jTextFieldBookingGuestID.getText();
-        String bookingID = jTextFieldBookingBookingID.getText();
-        String roomID = jTextFieldBookingRoomNumber.getText();
-        int sm = jComboBoxBookingStartMonth.getSelectedIndex();
-        String startMonth = convertMonth(sm);
-        int em = jComboBoxBookingEndMonth.getSelectedIndex();
-        String endMonth = convertMonth(em);
-        int sd = (jComboBoxBookingStartDate.getSelectedIndex()-1);
-        String startDate = convertDate(sd);
-        int ed = jComboBoxBookingEndDate.getSelectedIndex();
-        String endDate = convertDate(ed);
-        String startYear = (String) jComboBoxBookingStartYear.getSelectedItem();
-        String endYear = (String) jComboBoxBookingEndYear.getSelectedItem();
-        String dateFrom = (startDate+"-"+startMonth+"-"+startYear);
-        String dateTo = (endDate+"-"+endMonth+"-"+endYear);
+        */
+        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+"-"+(String) jComboBoxBookingStartMonth.getSelectedItem()+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
+        String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+"-"+(String) jComboBoxBookingEndMonth.getSelectedItem()+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
         jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), jTextFieldBookingRoomNumber.getText(), "EmployeeID", dateFrom, dateTo, "1800");
-        System.out.println(jTextFieldBookingGuestID.getText() + " + " + jTextFieldBookingRoomNumber.getText() + " + " + "EmployeeID" + " + " + dateFrom + " + " + dateTo + " + " + "1800");
         jLabelBookingUnavailableNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
@@ -443,106 +431,6 @@ public class Sprint1GUI extends javax.swing.JFrame
                 return list30days;
             default:
                 return list31days;
-        }
-    }
-    
-    private String convertDate(int selectedDate)
-    {
-        switch (selectedDate)
-        {
-            case 0:
-                return "01";
-            case 1:
-                return "02";
-            case 2:
-                return "03";
-            case 3:
-                return "04";
-            case 4:
-                return "05";
-            case 5:
-                return "06";
-            case 6:
-                return "07";
-            case 7:
-                return "08";
-            case 8:
-                return "09";
-            case 9:
-                return "10";
-            case 10:
-                return "11";
-            case 11:
-                return "12";
-            case 12:
-                return "13";
-            case 13:
-                return "14";
-            case 14:
-                return "15";
-            case 15:
-                return "16";
-            case 16:
-                return "17";
-            case 17:
-                return "18";
-            case 18:
-                return "19";
-            case 19:
-                return "20";
-            case 20:
-                return "21";
-            case 21:
-                return "22";
-            case 22:
-                return "23";
-            case 23:
-                return "24";
-            case 24:
-                return "25";
-            case 25:
-                return "26";
-            case 26:
-                return "27";
-            case 27:
-                return "28";
-            case 28:
-                return "29";
-            case 29:
-                return "30";
-            default:
-                return "31";
-        }
-    }
-    
-    private String convertMonth(int selectedMonth)
-    {
-        switch (selectedMonth)
-        {
-            case 0:
-                return "jan";
-            case 1:
-                return "feb";
-            case 2:
-                return "mar";
-            case 3:
-                return "apr";
-            case 4:
-                return "may";
-            case 5:
-                return "jun";
-            case 6:
-                return "jul";
-            case 7:
-                return "aug";
-            case 8:
-                return "sep";
-            case 9:
-                return "oct";
-            case 10:
-                return "nov";
-            default:
-                return "dec";
         }
     }
     
