@@ -17,11 +17,13 @@ public class JDBCInsertQuery {
    static final String url = "jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:dat";
 
    //  Database login
-   static final String user = "cphjg72";
-   static final String pass = "cphjg72";
+   static final String user = "cphjp154";
+   static final String pass = "cphjp154";
    
    public void JDBCInsertRoom(String guestID, String roomID, String empID, 
-            String dateFrom, String dateTo, String bookingPrice) {
+            String dateFrom, String dateTo, String bookingPrice, 
+            String guestFirstName, String guestLastName, String gCountry,
+            String gPhone, String gMail) {
    Connection conn = null;
    Statement stmt = null;
    try{
@@ -40,9 +42,10 @@ public class JDBCInsertQuery {
       String sql = "INSERT INTO BOOKROOM VALUES ('"+guestID+"','" 
               +roomID+"','"+empID+"','"+dateFrom+"','"+dateTo+"',"+bookingPrice+")";
       stmt.executeUpdate(sql);
-//      sql = "INSERT INTO";
-//      stmt.executeUpdate(sql);
-//   
+      sql = "INSERT INTO GUEST VALUEs ('"+guestID+"','"+guestFirstName+"','"
+              +guestLastName+"','"+gCountry+"','"+gPhone+"','"+gMail+"')";
+      stmt.executeUpdate(sql);
+   
       System.out.println("Inserted records into the table...");
 
    }catch(SQLException se){
