@@ -7224,6 +7224,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingActionPerformed
         //Open booking-jDialog-window to perform a booking.
+        popup.setVisible(true);
         //This button could be implemented somehow with the Find/Search-button.
     }//GEN-LAST:event_jButtonBookingActionPerformed
 
