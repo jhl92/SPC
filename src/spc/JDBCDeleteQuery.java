@@ -4,14 +4,18 @@
  */
 package spc;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import static spc.JDBCSelectQuery.url;
+
 /**
  *
  * @author Jonas
  */
-//STEP 1. Import required packages
-import java.sql.*;
-
-public class JDBCSelectQuery
+public class JDBCDeleteQuery
 {
     // JDBC driver & database URL
 
@@ -22,7 +26,7 @@ public class JDBCSelectQuery
     static final String user = "cphjp154";
     static final String pass = "cphjp154";
 
-    public void JDBCSelectRoom ()
+    public void JDBCDelete (String delete)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -42,20 +46,8 @@ public class JDBCSelectQuery
 
 //            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
             ResultSet rs; 
-            rs = stmt.executeQuery("SELECT * from Rooms Where " );
+            rs = stmt.executeQuery("DELETE FROM PERSONTEST WHERE name = '" + delete + "'" );
            
-            while (rs.next())
-            {           
-                int roomID = rs.getInt("roomID");
-                String roomType = rs.getString("roomType");
-                float roomPrice = rs.getFloat("roomPrice");
-                String roomAvailability = rs.getString("roomAvailability");
-
-                System.out.println("ID: " + roomID);
-                System.out.println("Type: " + roomType);
-                System.out.println("Price: " + roomPrice);
-                System.out.println("Availability: " + roomAvailability);
-            }
             rs.close(); 
         } catch (SQLException se)
         {
