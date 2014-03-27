@@ -6,13 +6,24 @@
 
 package spc;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import javax.swing.JComboBox;
+
 /**
  *
  * @author Zarkov
  */
 public class PopUpGUI extends javax.swing.JPanel
 {
-
+    JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
+    JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
+    Calendar cal = new GregorianCalendar();
+    private int currentYear = Calendar.YEAR;
+    Integer[] list28days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28};
+    Integer[] list29days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29};
+    Integer[] list30days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30};
+    Integer[] list31days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31};
     /**
      * Creates new form PopUpGUI
      */
@@ -1031,23 +1042,51 @@ public class PopUpGUI extends javax.swing.JPanel
 
         jComboBoxBookingStartMonth.setMaximumRowCount(13);
         jComboBoxBookingStartMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " - Today -", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+        jComboBoxBookingStartMonth.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBookingStartMonthActionPerformed(evt);
+            }
+        });
 
         jComboBoxBookingStartDate.setMaximumRowCount(13);
         jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
         jComboBoxBookingStartYear.setMaximumRowCount(13);
-        jComboBoxBookingStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " ", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+        jComboBoxBookingStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+        jComboBoxBookingStartYear.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBookingStartYearActionPerformed(evt);
+            }
+        });
 
         jLabelBookingNoChange9.setText("End date:");
 
         jComboBoxBookingEndMonth.setMaximumRowCount(12);
         jComboBoxBookingEndMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+        jComboBoxBookingEndMonth.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBookingEndMonthActionPerformed(evt);
+            }
+        });
 
         jComboBoxBookingEndDate.setMaximumRowCount(12);
         jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
         jComboBoxBookingEndYear.setMaximumRowCount(12);
         jComboBoxBookingEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+        jComboBoxBookingEndYear.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBookingEndYearActionPerformed(evt);
+            }
+        });
 
         jButtonBookingBook.setText("Book Room");
         jButtonBookingBook.addActionListener(new java.awt.event.ActionListener()
@@ -1230,9 +1269,70 @@ public class PopUpGUI extends javax.swing.JPanel
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
         //First, check if selected room is available in specified period
+        
         //If selected room is available then perform booking of room
+        String firstName = jTextFieldBookingFirstName.getText();
+        String lastName = jTextFieldBookingLastName.getText();
+        String country = jTextFieldBookingCountry.getText();
+        String phoneNumber = jTextFieldBookingPhoneNumber.getText();
+        String Email = jTextFieldBookingEmail.getText();
+        String guestID = jTextFieldBookingGuestID.getText();
+        String bookingID = jTextFieldBookingBookingID.getText();
+        
+        
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
+    private void jComboBoxBookingStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartMonthActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxBookingStartMonthActionPerformed
+        int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
+        int month = jComboBoxBookingStartMonth.getSelectedIndex();
+        Integer[] dim = getDaysInMonth(month, year);
+        jComboBoxBookingStartDate = new JComboBox(dim);
+    }//GEN-LAST:event_jComboBoxBookingStartMonthActionPerformed
+
+    private void jComboBoxBookingEndMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndMonthActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxBookingEndMonthActionPerformed
+        int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
+        int month = jComboBoxBookingEndMonth.getSelectedIndex();
+        Integer[] dim = getDaysInMonth(month, year);
+        jComboBoxBookingEndDate = new JComboBox(dim);
+    }//GEN-LAST:event_jComboBoxBookingEndMonthActionPerformed
+
+    private void jComboBoxBookingStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartYearActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxBookingStartYearActionPerformed
+        int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
+        int month = jComboBoxBookingStartMonth.getSelectedIndex();
+        Integer[] dim = getDaysInMonth(month, year);
+        jComboBoxBookingStartDate = new JComboBox(dim);
+    }//GEN-LAST:event_jComboBoxBookingStartYearActionPerformed
+
+    private void jComboBoxBookingEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndYearActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxBookingEndYearActionPerformed
+        int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
+        int month = jComboBoxBookingEndMonth.getSelectedIndex();
+        Integer[] dim = getDaysInMonth(month, year);
+        jComboBoxBookingEndDate = new JComboBox(dim);
+    }//GEN-LAST:event_jComboBoxBookingEndYearActionPerformed
+
+    private Integer[] getDaysInMonth(int month, int year)
+    {
+        //Search Calender for how many days the specified month/year contains, and return the right list.
+        cal.set(year, month, 1);
+        int daysInMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+        switch (daysInMonth)
+        {
+            case 28:
+                return list28days;
+            case 29:
+                return list29days;
+            case 30:
+                return list30days;
+            default:
+                return list31days;
+        }
+    }
+    
+    
     public void resetDialogDetails()
     {
         
