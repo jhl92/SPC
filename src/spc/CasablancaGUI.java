@@ -113,7 +113,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jComboBoxSearchEndMonth = new javax.swing.JComboBox();
         jComboBoxSearchEndDate = new javax.swing.JComboBox();
         jComboBoxSearchEndYear = new javax.swing.JComboBox();
-        jButtonSearchRoom1 = new javax.swing.JButton();
+        jButtonRoomSearch = new javax.swing.JButton();
         jLabelSearchRoomResultNotifier = new javax.swing.JLabel();
         buttonGroupSearchRoomChoice = new javax.swing.ButtonGroup();
         jDialogBooking = new javax.swing.JDialog();
@@ -532,13 +532,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jComboBoxSearchEndYear.setMaximumRowCount(12);
         jComboBoxSearchEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
 
-        jButtonSearchRoom1.setText("Search Rooms");
-        jButtonSearchRoom1.setPreferredSize(new java.awt.Dimension(270, 25));
-        jButtonSearchRoom1.addActionListener(new java.awt.event.ActionListener()
+        jButtonRoomSearch.setText("Search Rooms");
+        jButtonRoomSearch.setPreferredSize(new java.awt.Dimension(270, 25));
+        jButtonRoomSearch.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButtonSearchRoom1ActionPerformed(evt);
+                jButtonRoomSearchActionPerformed(evt);
             }
         });
 
@@ -567,7 +567,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         .addComponent(jComboBoxSearchEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBoxSearchEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButtonSearchRoom1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jButtonRoomSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jLabelSearchRoomResultNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20))
         );
@@ -591,7 +591,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addGap(102, 102, 102)
                 .addComponent(jLabelSearchRoomResultNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
-                .addComponent(jButtonSearchRoom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonRoomSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
         );
 
@@ -848,7 +848,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Overview");
-        setResizable(false);
+        setMinimumSize(new java.awt.Dimension(967, 662));
 
         jButtonBooking.setText("New Booking");
         jButtonBooking.setPreferredSize(new java.awt.Dimension(120, 35));
@@ -1133,45 +1133,121 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }//GEN-LAST:event_jComboBoxSearchRoomTypeActionPerformed
 
-    private void jButtonSearchRoom1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoom1ActionPerformed
-    {//GEN-HEADEREND:event_jButtonSearchRoom1ActionPerformed
-
-    }//GEN-LAST:event_jButtonSearchRoom1ActionPerformed
+    private void jButtonRoomSearchActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomSearchActionPerformed
+    {//GEN-HEADEREND:event_jButtonRoomSearchActionPerformed
+        //Perform search of rooms from the entered details...
+    }//GEN-LAST:event_jButtonRoomSearchActionPerformed
 
     private void jComboBoxBookingStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartMonthActionPerformed
         int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingStartMonth.getSelectedIndex();
-        Integer[] dim = getDaysInMonth(month, year);
-        jComboBoxBookingStartDate = new JComboBox(dim);
+        int dim = getDaysInMonth(month, year);
+        switch (dim)
+        {
+            case 28:
+                jComboBoxBookingEndDate = new JComboBox(list28days);
+                break;
+            case 29:
+                jComboBoxBookingEndDate = new JComboBox(list29days);
+                break;
+            case 30:
+                jComboBoxBookingEndDate = new JComboBox(list30days);
+                break;
+            default:
+                jComboBoxBookingEndDate = new JComboBox(list31days);
+                break;
+        }
     }//GEN-LAST:event_jComboBoxBookingStartMonthActionPerformed
 
     private void jComboBoxBookingStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartYearActionPerformed
         int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingStartMonth.getSelectedIndex();
-        Integer[] dim = getDaysInMonth(month, year);
-        jComboBoxBookingStartDate = new JComboBox(dim);
+        int dim = getDaysInMonth(month, year);
+        switch (dim)
+        {
+            case 28:
+                jComboBoxBookingEndDate = new JComboBox(list28days);
+                break;
+            case 29:
+                jComboBoxBookingEndDate = new JComboBox(list29days);
+                break;
+            case 30:
+                jComboBoxBookingEndDate = new JComboBox(list30days);
+                break;
+            default:
+                jComboBoxBookingEndDate = new JComboBox(list31days);
+                break;
+        }
     }//GEN-LAST:event_jComboBoxBookingStartYearActionPerformed
 
     private void jComboBoxBookingEndMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndMonthActionPerformed
         int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingEndMonth.getSelectedIndex();
-        Integer[] dim = getDaysInMonth(month, year);
-        jComboBoxBookingEndDate = new JComboBox(dim);
+        int dim = getDaysInMonth(month, year);
+        switch (dim)
+        {
+            case 28:
+                jComboBoxBookingEndDate = new JComboBox(list28days);
+                break;
+            case 29:
+                jComboBoxBookingEndDate = new JComboBox(list29days);
+                break;
+            case 30:
+                jComboBoxBookingEndDate = new JComboBox(list30days);
+                break;
+            default:
+                jComboBoxBookingEndDate = new JComboBox(list31days);
+                break;
+        }
     }//GEN-LAST:event_jComboBoxBookingEndMonthActionPerformed
 
     private void jComboBoxBookingEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndYearActionPerformed
         int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingEndMonth.getSelectedIndex();
-        Integer[] dim = getDaysInMonth(month, year);
-        jComboBoxBookingEndDate = new JComboBox(dim);
+        int dim = getDaysInMonth(month, year);
+        switch (dim)
+        {
+            case 28:
+                jComboBoxBookingEndDate = new JComboBox(list28days);
+                break;
+            case 29:
+                jComboBoxBookingEndDate = new JComboBox(list29days);
+                break;
+            case 30:
+                jComboBoxBookingEndDate = new JComboBox(list30days);
+                break;
+            default:
+                jComboBoxBookingEndDate = new JComboBox(list31days);
+                break;
+        }
+        
     }//GEN-LAST:event_jComboBoxBookingEndYearActionPerformed
 
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
+        resetDialogBooking();
+        //First, check if selected room is available in specified period
+        //If selected room is available then perform booking of room
+        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+(String) jComboBoxBookingStartYear.getSelectedItem());
+        String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+jComboBoxBookingEndMonth.getSelectedIndex()+(String) jComboBoxBookingEndYear.getSelectedItem());
+        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), jTextFieldBookingRoomNumber.getText(), "EmployeeID", dateFrom, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
+        jLabelBookingUnavailableNotifier.setText("Room has been booked...");
+    }//GEN-LAST:event_jButtonBookingBookActionPerformed
+
+    private int getDaysInMonth(int month, int year)
+    {
+        //Search Calender for how many days the specified month/year contains, and return the right list.
+        cal.set(year, month, 1);
+        int daysInMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+        return daysInMonth;
+    }
+    
+    private void resetDialogBooking()
+    {
         jTextFieldBookingFirstName.setText("");
         jTextFieldBookingLastName.setText("");
         jTextFieldBookingCountry.setText("");
@@ -1187,148 +1263,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jComboBoxBookingEndDate.setSelectedIndex(0);
         jComboBoxBookingStartYear.setSelectedIndex(0);
         jComboBoxBookingEndYear.setSelectedIndex(0);
-        //First, check if selected room is available in specified period
-        //If selected room is available then perform booking of room
-        String firstName = jTextFieldBookingFirstName.getText();
-        String lastName = jTextFieldBookingLastName.getText();
-        String country = jTextFieldBookingCountry.getText();
-        String phoneNumber = jTextFieldBookingPhoneNumber.getText();
-        String Email = jTextFieldBookingEmail.getText();
-        String guestID = jTextFieldBookingGuestID.getText();
-        String bookingID = jTextFieldBookingBookingID.getText();
-        String roomID = jTextFieldBookingRoomNumber.getText();
-        int sm = jComboBoxBookingStartMonth.getSelectedIndex();
-        String startMonth = convertMonth(sm);
-        int em = jComboBoxBookingEndMonth.getSelectedIndex();
-        String endMonth = convertMonth(em);
-        int sd = (jComboBoxBookingStartDate.getSelectedIndex()-1);
-        String startDate = convertDate(sd);
-        int ed = jComboBoxBookingEndDate.getSelectedIndex();
-        String endDate = convertDate(ed);
-        String startYear = (String) jComboBoxBookingStartYear.getSelectedItem();
-        String endYear = (String) jComboBoxBookingEndYear.getSelectedItem();
-        String dateFrom = (startDate+startMonth+startYear);
-        String dateTo = (endDate+endMonth+endYear);
-        jdcbinsert.JDBCInsertRoom(guestID, roomID, "EmployeeID", dateFrom, dateTo, "BookingPrice");
-        jLabelBookingUnavailableNotifier.setText("Room has been booked...");
-    }//GEN-LAST:event_jButtonBookingBookActionPerformed
-
-    private Integer[] getDaysInMonth(int month, int year)
-    {
-        //Search Calender for how many days the specified month/year contains, and return the right list.
-        cal.set(year, month, 1);
-        int daysInMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
-        switch (daysInMonth)
-        {
-            case 28:
-                return list28days;
-            case 29:
-                return list29days;
-            case 30:
-                return list30days;
-            default:
-                return list31days;
-        }
-    }
-    
-    private String convertDate(int selectedDate)
-    {
-        switch (selectedDate)
-        {
-            case 0:
-                return "01";
-            case 1:
-                return "02";
-            case 2:
-                return "03";
-            case 3:
-                return "04";
-            case 4:
-                return "05";
-            case 5:
-                return "06";
-            case 6:
-                return "07";
-            case 7:
-                return "08";
-            case 8:
-                return "09";
-            case 9:
-                return "10";
-            case 10:
-                return "11";
-            case 11:
-                return "12";
-            case 12:
-                return "13";
-            case 13:
-                return "14";
-            case 14:
-                return "15";
-            case 15:
-                return "16";
-            case 16:
-                return "17";
-            case 17:
-                return "18";
-            case 18:
-                return "19";
-            case 19:
-                return "20";
-            case 20:
-                return "21";
-            case 21:
-                return "22";
-            case 22:
-                return "23";
-            case 23:
-                return "24";
-            case 24:
-                return "25";
-            case 25:
-                return "26";
-            case 26:
-                return "27";
-            case 27:
-                return "28";
-            case 28:
-                return "29";
-            case 29:
-                return "30";
-            default:
-                return "31";
-        }
-    }
-    
-    private String convertMonth(int selectedMonth)
-    {
-        switch (selectedMonth)
-        {
-            case 0:
-                return "jan";
-            case 1:
-                return "feb";
-            case 2:
-                return "mar";
-            case 3:
-                return "apr";
-            case 4:
-                return "may";
-            case 5:
-                return "jun";
-            case 6:
-                return "jul";
-            case 7:
-                return "aug";
-            case 8:
-                return "sep";
-            case 9:
-                return "oct";
-            case 10:
-                return "nov";
-            default:
-                return "dec";
-        }
     }
     
     public void resetDialogDetails()
@@ -1345,12 +1279,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {
         
     }
-    
-    public void resetDialogBooking()
-    {
-        
-    }
-
     
     /**
      * @param args the command line arguments
@@ -1412,10 +1340,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonPrevious7Days;
     private javax.swing.JButton jButtonRoomArrowDown;
     private javax.swing.JButton jButtonRoomArrowUp;
+    private javax.swing.JButton jButtonRoomSearch;
     private javax.swing.JButton jButtonSearchCustomer;
     private javax.swing.JButton jButtonSearchCustomerDetails;
     private javax.swing.JButton jButtonSearchRoom;
-    private javax.swing.JButton jButtonSearchRoom1;
     private javax.swing.JButton jButtonShowSelectedCustomerDetails;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBoxBookingEndDate;
