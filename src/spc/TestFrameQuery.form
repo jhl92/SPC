@@ -38,21 +38,48 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextFieldprice" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="jTextFielddatefrom" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jTextFielddateto" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                          <Component id="jButtonSubmit" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jTextFieldempID" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldRoomID" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextFieldguestid" min="-2" pref="87" max="-2" attributes="0"/>
-                      <Component id="jButtonSubmit" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jTextFieldRoomID" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jTextFieldfacType" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jTextFieldprice" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jTextFielddatefrom" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jTextFielddateto" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
+                                              <Component id="jTextFieldTimeEnd" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="17" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jTextFieldempID" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="217" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldTimeStart" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
+                          <Component id="jTextFieldguestid" min="-2" pref="87" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace pref="162" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -62,13 +89,20 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTextFieldguestid" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextFieldRoomID" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jTextFieldRoomID" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFieldfacType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextFieldempID" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jTextFieldempID" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFieldTimeStart" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jTextFielddatefrom" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextFielddateto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFieldTimeEnd" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jTextFieldprice" min="-2" max="-2" attributes="0"/>
@@ -119,6 +153,21 @@
         <Component class="javax.swing.JTextField" name="jTextFieldprice">
           <Properties>
             <Property name="text" type="java.lang.String" value="price"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldfacType">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="facType"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldTimeStart">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="timeStart"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldTimeEnd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="timeEnd"/>
           </Properties>
         </Component>
       </SubComponents>
