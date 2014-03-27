@@ -17,8 +17,8 @@ public class JDBCInsertQuery {
    static final String url = "jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:dat";
 
    //  Database login
-   static final String user = "cphjp154";
-   static final String pass = "cphjp154";
+   static final String user = "cphjg72";
+   static final String pass = "cphjg72";
    
    public void JDBCInsertRoom(String guestID, String roomID, String empID, 
             String dateFrom, String dateTo, String bookingPrice) {

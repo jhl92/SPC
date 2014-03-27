@@ -6,6 +6,7 @@
 
 package spc;
 
+import java.awt.event.ActionEvent;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import javax.swing.JComboBox;
@@ -1187,12 +1188,12 @@ public class PopUpGUI extends javax.swing.JPanel
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonChangeBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeBookingActionPerformed
+    private void jButtonChangeBookingActionPerformed(ActionEvent evt)//GEN-FIRST:event_jButtonChangeBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonChangeBookingActionPerformed
         //Open the Booking-window with the selected room-data also shown in Details-window.
     }//GEN-LAST:event_jButtonChangeBookingActionPerformed
 
-    private void jButtonChangeDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
+    private void jButtonChangeDetailsActionPerformed(ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonChangeDetailsActionPerformed
         jButtonSaveDetails.setVisible(true);
         jButtonChangeDetails.setVisible(false);
@@ -1207,7 +1208,7 @@ public class PopUpGUI extends javax.swing.JPanel
         jTextFieldDetailsEmail.setEditable(true);
     }//GEN-LAST:event_jButtonChangeDetailsActionPerformed
 
-    private void jButtonSaveDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSaveDetailsActionPerformed
+    private void jButtonSaveDetailsActionPerformed(ActionEvent evt)//GEN-FIRST:event_jButtonSaveDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSaveDetailsActionPerformed
         jTextFieldDetailsFirstName.getText();
         jTextFieldDetailsLastName.getText();
@@ -1231,22 +1232,22 @@ public class PopUpGUI extends javax.swing.JPanel
         jTextFieldDetailsEmail.setEditable(false);
     }//GEN-LAST:event_jButtonSaveDetailsActionPerformed
 
-    private void jButtonExitDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
+    private void jButtonExitDetailsActionPerformed(ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonExitDetailsActionPerformed
         jDialogDetails.setVisible(false);
     }//GEN-LAST:event_jButtonExitDetailsActionPerformed
 
-    private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
+    private void jButtonSearchCustomerDetailsActionPerformed(ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerDetailsActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonSearchCustomerDetailsActionPerformed
 
-    private void jButtonSearchRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomActionPerformed
+    private void jButtonSearchRoomActionPerformed(ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchRoomActionPerformed
         
     }//GEN-LAST:event_jButtonSearchRoomActionPerformed
 
-    private void jComboBoxSearchRoomTypeActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchRoomTypeActionPerformed
+    private void jComboBoxSearchRoomTypeActionPerformed(ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchRoomTypeActionPerformed
     {//GEN-HEADEREND:event_jComboBoxSearchRoomTypeActionPerformed
         int SearchRoomType = jComboBoxSearchRoomType.getSelectedIndex();
         switch (SearchRoomType)
@@ -1266,8 +1267,23 @@ public class PopUpGUI extends javax.swing.JPanel
         }
     }//GEN-LAST:event_jComboBoxSearchRoomTypeActionPerformed
 
-    private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
+    private void jButtonBookingBookActionPerformed(ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
+        jTextFieldBookingFirstName.setText("");
+        jTextFieldBookingLastName.setText("");
+        jTextFieldBookingCountry.setText("");
+        jTextFieldBookingPhoneNumber.setText("");
+        jTextFieldBookingPhoneNumber.setText("");
+        jTextFieldBookingEmail.setText("");
+        jTextFieldBookingGuestID.setText("");
+        jTextFieldBookingBookingID.setText("");
+        jTextFieldBookingRoomNumber.setText("");
+        jComboBoxBookingStartMonth.setSelectedIndex(0);
+        jComboBoxBookingEndMonth.setSelectedIndex(0);
+        jComboBoxBookingStartDate.setSelectedIndex(0);
+        jComboBoxBookingEndDate.setSelectedIndex(0);
+        jComboBoxBookingStartYear.setSelectedIndex(0);
+        jComboBoxBookingEndYear.setSelectedIndex(0);
         //First, check if selected room is available in specified period
         //If selected room is available then perform booking of room
         String firstName = jTextFieldBookingFirstName.getText();
@@ -1291,9 +1307,10 @@ public class PopUpGUI extends javax.swing.JPanel
         String dateFrom = (startDate+startMonth+startYear);
         String dateTo = (endDate+endMonth+endYear);
         jdcbinsert.JDBCInsertRoom(guestID, roomID, "EmployeeID", dateFrom, dateTo, "BookingPrice");
+        jLabelBookingUnavailableNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
-    private void jComboBoxBookingStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartMonthActionPerformed
+    private void jComboBoxBookingStartMonthActionPerformed(ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartMonthActionPerformed
         int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingStartMonth.getSelectedIndex();
@@ -1301,7 +1318,7 @@ public class PopUpGUI extends javax.swing.JPanel
         jComboBoxBookingStartDate = new JComboBox(dim);
     }//GEN-LAST:event_jComboBoxBookingStartMonthActionPerformed
 
-    private void jComboBoxBookingEndMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndMonthActionPerformed
+    private void jComboBoxBookingEndMonthActionPerformed(ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndMonthActionPerformed
         int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingEndMonth.getSelectedIndex();
@@ -1309,7 +1326,7 @@ public class PopUpGUI extends javax.swing.JPanel
         jComboBoxBookingEndDate = new JComboBox(dim);
     }//GEN-LAST:event_jComboBoxBookingEndMonthActionPerformed
 
-    private void jComboBoxBookingStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartYearActionPerformed
+    private void jComboBoxBookingStartYearActionPerformed(ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartYearActionPerformed
         int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingStartMonth.getSelectedIndex();
@@ -1317,7 +1334,7 @@ public class PopUpGUI extends javax.swing.JPanel
         jComboBoxBookingStartDate = new JComboBox(dim);
     }//GEN-LAST:event_jComboBoxBookingStartYearActionPerformed
 
-    private void jComboBoxBookingEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndYearActionPerformed
+    private void jComboBoxBookingEndYearActionPerformed(ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndYearActionPerformed
         int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
         int month = jComboBoxBookingEndMonth.getSelectedIndex();
@@ -1464,130 +1481,130 @@ public class PopUpGUI extends javax.swing.JPanel
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
-    private javax.swing.JButton jButtonBookingBook;
-    private javax.swing.JButton jButtonChangeBooking;
-    private javax.swing.JButton jButtonChangeDetails;
-    private javax.swing.JButton jButtonEditSelectedCustomerDetails;
-    private javax.swing.JButton jButtonExitDetails;
-    private javax.swing.JButton jButtonSaveDetails;
-    private javax.swing.JButton jButtonSearchCustomerDetails;
-    private javax.swing.JButton jButtonSearchRoom;
-    private javax.swing.JButton jButtonShowSelectedCustomerDetails;
-    private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JComboBox jComboBoxBookingEndDate;
-    private javax.swing.JComboBox jComboBoxBookingEndMonth;
-    private javax.swing.JComboBox jComboBoxBookingEndYear;
-    private javax.swing.JComboBox jComboBoxBookingStartDate;
-    private javax.swing.JComboBox jComboBoxBookingStartMonth;
-    private javax.swing.JComboBox jComboBoxBookingStartYear;
-    private javax.swing.JComboBox jComboBoxSearchEndDate;
-    private javax.swing.JComboBox jComboBoxSearchEndMonth;
-    private javax.swing.JComboBox jComboBoxSearchEndYear;
-    private javax.swing.JComboBox jComboBoxSearchRoomType;
-    private javax.swing.JComboBox jComboBoxSearchStartDate;
-    private javax.swing.JComboBox jComboBoxSearchStartMonth;
-    private javax.swing.JComboBox jComboBoxSearchStartYear;
-    private javax.swing.JDialog jDialogBooking;
-    private javax.swing.JDialog jDialogDetails;
-    private javax.swing.JDialog jDialogSearchCustomer;
-    private javax.swing.JDialog jDialogSearchRoom;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelBookingNoChange1;
-    private javax.swing.JLabel jLabelBookingNoChange10;
-    private javax.swing.JLabel jLabelBookingNoChange2;
-    private javax.swing.JLabel jLabelBookingNoChange3;
-    private javax.swing.JLabel jLabelBookingNoChange4;
-    private javax.swing.JLabel jLabelBookingNoChange5;
-    private javax.swing.JLabel jLabelBookingNoChange6;
-    private javax.swing.JLabel jLabelBookingNoChange7;
-    private javax.swing.JLabel jLabelBookingNoChange8;
-    private javax.swing.JLabel jLabelBookingNoChange9;
-    private javax.swing.JLabel jLabelBookingUnavailableNotifier;
-    private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
-    private javax.swing.JLabel jLabelDetailsBookingDate;
-    private javax.swing.JLabel jLabelDetailsEndDate;
-    private javax.swing.JLabel jLabelDetailsNoChange2;
-    private javax.swing.JLabel jLabelDetailsNoChange3;
-    private javax.swing.JLabel jLabelDetailsNoChange4;
-    private javax.swing.JLabel jLabelDetailsNoChange5;
-    private javax.swing.JLabel jLabelDetailsNoChange6;
-    private javax.swing.JLabel jLabelDetailsNoChange7;
-    private javax.swing.JLabel jLabelDetailsNoChange8;
-    private javax.swing.JLabel jLabelDetailsNoChange9;
-    private javax.swing.JLabel jLabelDetailsRoomID;
-    private javax.swing.JLabel jLabelDetailsRoomType;
-    private javax.swing.JLabel jLabelDetailsStartDate;
-    private javax.swing.JLabel jLabelNoChange10;
-    private javax.swing.JLabel jLabelNoChange11;
-    private javax.swing.JLabel jLabelNoChange12;
-    private javax.swing.JLabel jLabelSearchCustomerBookingID;
-    private javax.swing.JLabel jLabelSearchCustomerEmail;
-    private javax.swing.JLabel jLabelSearchCustomerFirstName;
-    private javax.swing.JLabel jLabelSearchCustomerGuestID;
-    private javax.swing.JLabel jLabelSearchCustomerLastName;
-    private javax.swing.JLabel jLabelSearchCustomerNationality;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange1;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange10;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange11;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange12;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange13;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange14;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange2;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange3;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange4;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange5;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange6;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange7;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange8;
-    private javax.swing.JLabel jLabelSearchCustomerNoChange9;
-    private javax.swing.JLabel jLabelSearchCustomerPhone;
-    private javax.swing.JLabel jLabelSearchNoChange2;
-    private javax.swing.JLabel jLabelSearchNoChange4;
-    private javax.swing.JLabel jLabelSearchRoomNoChange1;
-    private javax.swing.JLabel jLabelSearchRoomResultNotifier;
-    private javax.swing.JLabel jLabelSearchRoomTypePersonsNotifier;
-    private javax.swing.JList jList1;
-    private javax.swing.JList jListSearchCustomerResult;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanelDetailsAvailabilityMarker;
-    private javax.swing.JPanel jPanelDetailsCustomer;
-    private javax.swing.JPanel jPanelDetailsExit;
-    private javax.swing.JPanel jPanelDetailsRoom;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButtonSearchRoomAvailable;
-    private javax.swing.JRadioButton jRadioButtonSearchRoomCheckInOut;
-    private javax.swing.JRadioButton jRadioButtonSearchRoomOccupied;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField jTextFieldBookingBookingID;
-    private javax.swing.JTextField jTextFieldBookingCountry;
-    private javax.swing.JTextField jTextFieldBookingEmail;
-    private javax.swing.JTextField jTextFieldBookingFirstName;
-    private javax.swing.JTextField jTextFieldBookingGuestID;
-    private javax.swing.JTextField jTextFieldBookingLastName;
-    private javax.swing.JTextField jTextFieldBookingPhoneNumber;
-    private javax.swing.JTextField jTextFieldBookingRoomNumber;
-    private javax.swing.JTextField jTextFieldDetailsAddress;
-    private javax.swing.JTextField jTextFieldDetailsCity;
-    private javax.swing.JTextField jTextFieldDetailsCountry;
-    private javax.swing.JTextField jTextFieldDetailsEmail;
-    private javax.swing.JTextField jTextFieldDetailsFirstName;
-    private javax.swing.JTextField jTextFieldDetailsLastName;
-    private javax.swing.JTextField jTextFieldDetailsPhoneNumber;
-    private javax.swing.JTextField jTextFieldDetailsPostalCode;
-    private javax.swing.JTextField jTextFieldSearchCustomerBookingID;
-    private javax.swing.JTextField jTextFieldSearchCustomerCountry;
-    private javax.swing.JTextField jTextFieldSearchCustomerEmail;
-    private javax.swing.JTextField jTextFieldSearchCustomerFirstName;
-    private javax.swing.JTextField jTextFieldSearchCustomerGuestID;
-    private javax.swing.JTextField jTextFieldSearchCustomerLastName;
-    private javax.swing.JTextField jTextFieldSearchCustomerPhoneNumber;
+    javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
+    javax.swing.JButton jButtonBookingBook;
+    javax.swing.JButton jButtonChangeBooking;
+    javax.swing.JButton jButtonChangeDetails;
+    javax.swing.JButton jButtonEditSelectedCustomerDetails;
+    javax.swing.JButton jButtonExitDetails;
+    javax.swing.JButton jButtonSaveDetails;
+    javax.swing.JButton jButtonSearchCustomerDetails;
+    javax.swing.JButton jButtonSearchRoom;
+    javax.swing.JButton jButtonShowSelectedCustomerDetails;
+    javax.swing.JComboBox jComboBox1;
+    javax.swing.JComboBox jComboBoxBookingEndDate;
+    javax.swing.JComboBox jComboBoxBookingEndMonth;
+    javax.swing.JComboBox jComboBoxBookingEndYear;
+    javax.swing.JComboBox jComboBoxBookingStartDate;
+    javax.swing.JComboBox jComboBoxBookingStartMonth;
+    javax.swing.JComboBox jComboBoxBookingStartYear;
+    javax.swing.JComboBox jComboBoxSearchEndDate;
+    javax.swing.JComboBox jComboBoxSearchEndMonth;
+    javax.swing.JComboBox jComboBoxSearchEndYear;
+    javax.swing.JComboBox jComboBoxSearchRoomType;
+    javax.swing.JComboBox jComboBoxSearchStartDate;
+    javax.swing.JComboBox jComboBoxSearchStartMonth;
+    javax.swing.JComboBox jComboBoxSearchStartYear;
+    javax.swing.JDialog jDialogBooking;
+    javax.swing.JDialog jDialogDetails;
+    javax.swing.JDialog jDialogSearchCustomer;
+    javax.swing.JDialog jDialogSearchRoom;
+    javax.swing.JLabel jLabel1;
+    javax.swing.JLabel jLabelBookingNoChange1;
+    javax.swing.JLabel jLabelBookingNoChange10;
+    javax.swing.JLabel jLabelBookingNoChange2;
+    javax.swing.JLabel jLabelBookingNoChange3;
+    javax.swing.JLabel jLabelBookingNoChange4;
+    javax.swing.JLabel jLabelBookingNoChange5;
+    javax.swing.JLabel jLabelBookingNoChange6;
+    javax.swing.JLabel jLabelBookingNoChange7;
+    javax.swing.JLabel jLabelBookingNoChange8;
+    javax.swing.JLabel jLabelBookingNoChange9;
+    javax.swing.JLabel jLabelBookingUnavailableNotifier;
+    javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
+    javax.swing.JLabel jLabelDetailsBookingDate;
+    javax.swing.JLabel jLabelDetailsEndDate;
+    javax.swing.JLabel jLabelDetailsNoChange2;
+    javax.swing.JLabel jLabelDetailsNoChange3;
+    javax.swing.JLabel jLabelDetailsNoChange4;
+    javax.swing.JLabel jLabelDetailsNoChange5;
+    javax.swing.JLabel jLabelDetailsNoChange6;
+    javax.swing.JLabel jLabelDetailsNoChange7;
+    javax.swing.JLabel jLabelDetailsNoChange8;
+    javax.swing.JLabel jLabelDetailsNoChange9;
+    javax.swing.JLabel jLabelDetailsRoomID;
+    javax.swing.JLabel jLabelDetailsRoomType;
+    javax.swing.JLabel jLabelDetailsStartDate;
+    javax.swing.JLabel jLabelNoChange10;
+    javax.swing.JLabel jLabelNoChange11;
+    javax.swing.JLabel jLabelNoChange12;
+    javax.swing.JLabel jLabelSearchCustomerBookingID;
+    javax.swing.JLabel jLabelSearchCustomerEmail;
+    javax.swing.JLabel jLabelSearchCustomerFirstName;
+    javax.swing.JLabel jLabelSearchCustomerGuestID;
+    javax.swing.JLabel jLabelSearchCustomerLastName;
+    javax.swing.JLabel jLabelSearchCustomerNationality;
+    javax.swing.JLabel jLabelSearchCustomerNoChange1;
+    javax.swing.JLabel jLabelSearchCustomerNoChange10;
+    javax.swing.JLabel jLabelSearchCustomerNoChange11;
+    javax.swing.JLabel jLabelSearchCustomerNoChange12;
+    javax.swing.JLabel jLabelSearchCustomerNoChange13;
+    javax.swing.JLabel jLabelSearchCustomerNoChange14;
+    javax.swing.JLabel jLabelSearchCustomerNoChange2;
+    javax.swing.JLabel jLabelSearchCustomerNoChange3;
+    javax.swing.JLabel jLabelSearchCustomerNoChange4;
+    javax.swing.JLabel jLabelSearchCustomerNoChange5;
+    javax.swing.JLabel jLabelSearchCustomerNoChange6;
+    javax.swing.JLabel jLabelSearchCustomerNoChange7;
+    javax.swing.JLabel jLabelSearchCustomerNoChange8;
+    javax.swing.JLabel jLabelSearchCustomerNoChange9;
+    javax.swing.JLabel jLabelSearchCustomerPhone;
+    javax.swing.JLabel jLabelSearchNoChange2;
+    javax.swing.JLabel jLabelSearchNoChange4;
+    javax.swing.JLabel jLabelSearchRoomNoChange1;
+    javax.swing.JLabel jLabelSearchRoomResultNotifier;
+    javax.swing.JLabel jLabelSearchRoomTypePersonsNotifier;
+    javax.swing.JList jList1;
+    javax.swing.JList jListSearchCustomerResult;
+    javax.swing.JPanel jPanel1;
+    javax.swing.JPanel jPanel2;
+    javax.swing.JPanel jPanel3;
+    javax.swing.JPanel jPanel4;
+    javax.swing.JPanel jPanel6;
+    javax.swing.JPanel jPanel7;
+    javax.swing.JPanel jPanel8;
+    javax.swing.JPanel jPanelDetailsAvailabilityMarker;
+    javax.swing.JPanel jPanelDetailsCustomer;
+    javax.swing.JPanel jPanelDetailsExit;
+    javax.swing.JPanel jPanelDetailsRoom;
+    javax.swing.JRadioButton jRadioButton1;
+    javax.swing.JRadioButton jRadioButtonSearchRoomAvailable;
+    javax.swing.JRadioButton jRadioButtonSearchRoomCheckInOut;
+    javax.swing.JRadioButton jRadioButtonSearchRoomOccupied;
+    javax.swing.JScrollPane jScrollPane1;
+    javax.swing.JScrollPane jScrollPane2;
+    javax.swing.JTextField jTextFieldBookingBookingID;
+    javax.swing.JTextField jTextFieldBookingCountry;
+    javax.swing.JTextField jTextFieldBookingEmail;
+    javax.swing.JTextField jTextFieldBookingFirstName;
+    javax.swing.JTextField jTextFieldBookingGuestID;
+    javax.swing.JTextField jTextFieldBookingLastName;
+    javax.swing.JTextField jTextFieldBookingPhoneNumber;
+    javax.swing.JTextField jTextFieldBookingRoomNumber;
+    javax.swing.JTextField jTextFieldDetailsAddress;
+    javax.swing.JTextField jTextFieldDetailsCity;
+    javax.swing.JTextField jTextFieldDetailsCountry;
+    javax.swing.JTextField jTextFieldDetailsEmail;
+    javax.swing.JTextField jTextFieldDetailsFirstName;
+    javax.swing.JTextField jTextFieldDetailsLastName;
+    javax.swing.JTextField jTextFieldDetailsPhoneNumber;
+    javax.swing.JTextField jTextFieldDetailsPostalCode;
+    javax.swing.JTextField jTextFieldSearchCustomerBookingID;
+    javax.swing.JTextField jTextFieldSearchCustomerCountry;
+    javax.swing.JTextField jTextFieldSearchCustomerEmail;
+    javax.swing.JTextField jTextFieldSearchCustomerFirstName;
+    javax.swing.JTextField jTextFieldSearchCustomerGuestID;
+    javax.swing.JTextField jTextFieldSearchCustomerLastName;
+    javax.swing.JTextField jTextFieldSearchCustomerPhoneNumber;
     // End of variables declaration//GEN-END:variables
 }
