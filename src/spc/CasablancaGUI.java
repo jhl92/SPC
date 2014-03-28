@@ -1236,8 +1236,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         resetDialogBooking();
         //First, check if selected room is available in specified period
         //If selected room is available then perform booking of room
-        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+(String) jComboBoxBookingStartYear.getSelectedItem());
-        String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+jComboBoxBookingEndMonth.getSelectedIndex()+(String) jComboBoxBookingEndYear.getSelectedItem());
+        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
+        String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+"-"+jComboBoxBookingEndMonth.getSelectedIndex()+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
         jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), jTextFieldBookingRoomNumber.getText(), "EmployeeID", dateFrom, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
         jLabelBookingUnavailableNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
