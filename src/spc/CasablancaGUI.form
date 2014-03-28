@@ -1025,14 +1025,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabelBookingNoChange7" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabelBookingNoChange6" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabelBookingNoChange2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabelBookingNoChange1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextFieldBookingLastName" alignment="0" max="-2" attributes="0"/>
-                          <Component id="jTextFieldBookingGuestID" alignment="0" max="-2" attributes="0"/>
-                          <Component id="jTextFieldBookingBookingID" alignment="0" max="-2" attributes="0"/>
                           <Component id="jTextFieldBookingFirstName" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabelBookingNoChange3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextFieldBookingCountry" alignment="0" max="-2" attributes="0"/>
@@ -1040,6 +1037,11 @@
                           <Component id="jTextFieldBookingPhoneNumber" alignment="0" max="-2" attributes="0"/>
                           <Component id="jTextFieldBookingEmail" alignment="0" max="-2" attributes="0"/>
                           <Component id="jLabelBookingNoChange5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTextFieldBookingGuestID" min="-2" pref="91" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -1071,12 +1073,11 @@
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jLabelBookingNoChange6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Component id="jTextFieldBookingGuestID" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="jLabelBookingNoChange7" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Component id="jTextFieldBookingBookingID" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jTextFieldBookingGuestID" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1154,15 +1155,11 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabelBookingNoChange7">
+            <Component class="javax.swing.JButton" name="jButton3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Enter Booking-ID"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldBookingBookingID">
-              <Properties>
+                <Property name="text" type="java.lang.String" value="Create ID"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[192, 20]"/>
+                  <Dimension value="[91, 20]"/>
                 </Property>
               </Properties>
             </Component>
@@ -1184,8 +1181,6 @@
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabelBookingUnavailableNotifier" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jLabelBookingNoChange10" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldBookingRoomNumber" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jComboBoxBookingStartMonth" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1203,6 +1198,10 @@
                               <Component id="jComboBoxBookingEndYear" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jButtonBookingBook" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jTextFieldBookingRoomNumber" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabelBookingNoChange10" alignment="0" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -1231,9 +1230,9 @@
                       <Component id="jLabelBookingNoChange10" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jTextFieldBookingRoomNumber" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jLabelBookingUnavailableNotifier" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jButtonBookingBook" min="-2" pref="50" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -1265,6 +1264,9 @@
                     <StringItem index="11" value="November"/>
                     <StringItem index="12" value="December"/>
                   </StringArray>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[78, 20]"/>
                 </Property>
               </Properties>
               <Events>
@@ -1310,6 +1312,9 @@
                     <StringItem index="31" value="31"/>
                   </StringArray>
                 </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[38, 20]"/>
+                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBoxBookingStartYear">
@@ -1346,6 +1351,9 @@
                     <StringItem index="26" value="2040"/>
                   </StringArray>
                 </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[50, 20]"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBookingStartYearActionPerformed"/>
@@ -1374,6 +1382,9 @@
                     <StringItem index="10" value="November"/>
                     <StringItem index="11" value="December"/>
                   </StringArray>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[78, 20]"/>
                 </Property>
               </Properties>
               <Events>
@@ -1418,6 +1429,9 @@
                     <StringItem index="30" value="31"/>
                   </StringArray>
                 </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[38, 20]"/>
+                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBoxBookingEndYear">
@@ -1453,6 +1467,9 @@
                     <StringItem index="25" value="2039"/>
                     <StringItem index="26" value="2040"/>
                   </StringArray>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[50, 20]"/>
                 </Property>
               </Properties>
               <Events>
