@@ -18,6 +18,7 @@ import javax.swing.JComboBox;
  */
 public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 {
+    OverviewCells ovc = new OverviewCells();
     private int Room1 = 1;
     private int Room2 = 2;
     private int Room3 = 3;
@@ -156,8 +157,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jButtonNext14Days = new javax.swing.JButton();
         jButtonNext7Days = new javax.swing.JButton();
         jButtonFacilities = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonSetupOverview = new javax.swing.JButton();
+        jButtonResetOveriew = new javax.swing.JButton();
         overviewCells1 = new spc.OverviewCells();
 
         jDialogSearchCustomer.setTitle("Search Customer Details");
@@ -952,21 +953,21 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButton1.setText("Setup Overview");
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        jButtonSetupOverview.setText("Setup Overview");
+        jButtonSetupOverview.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                jButtonSetupOverviewActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Normal View");
-        jButton2.addActionListener(new java.awt.event.ActionListener()
+        jButtonResetOveriew.setText("Normal View");
+        jButtonResetOveriew.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton2ActionPerformed(evt);
+                jButtonResetOveriewActionPerformed(evt);
             }
         });
 
@@ -988,8 +989,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanelOverviewLayout.createSequentialGroup()
                                 .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jButtonSetupOverview, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+                                    .addComponent(jButtonResetOveriew, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                                 .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
@@ -1022,9 +1023,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelOverviewLayout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(jButtonSetupOverview)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)))
+                        .addComponent(jButtonResetOveriew)))
                 .addGap(23, 23, 23)
                 .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1102,15 +1103,15 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonFacilitiesActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
+    {//GEN-HEADEREND:event_jButtonSetupOverviewActionPerformed
+        ovc.setupjDialogSetupOverview(Room1, Room2, Room3, Room4, Room5, Room6, Room7, Room8, null);
+    }//GEN-LAST:event_jButtonSetupOverviewActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
-    {//GEN-HEADEREND:event_jButton2ActionPerformed
+    private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
+    {//GEN-HEADEREND:event_jButtonResetOveriewActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonResetOveriewActionPerformed
 
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerDetailsActionPerformed
@@ -1330,8 +1331,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
@@ -1342,12 +1341,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonNext7Days;
     private javax.swing.JButton jButtonPrevious14Days;
     private javax.swing.JButton jButtonPrevious7Days;
+    private javax.swing.JButton jButtonResetOveriew;
     private javax.swing.JButton jButtonRoomArrowDown;
     private javax.swing.JButton jButtonRoomArrowUp;
     private javax.swing.JButton jButtonRoomSearch;
     private javax.swing.JButton jButtonSearchCustomer;
     private javax.swing.JButton jButtonSearchCustomerDetails;
     private javax.swing.JButton jButtonSearchRoom;
+    private javax.swing.JButton jButtonSetupOverview;
     private javax.swing.JButton jButtonShowSelectedCustomerDetails;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBoxBookingEndDate;
