@@ -971,6 +971,7 @@ public class OverviewCells extends javax.swing.JPanel
         );
 
         jDialogSetupOverview.setTitle("Setup Overview");
+        jDialogSetupOverview.setMinimumSize(new java.awt.Dimension(450, 450));
         jDialogSetupOverview.setResizable(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -986,6 +987,13 @@ public class OverviewCells extends javax.swing.JPanel
         jTextFieldRow1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow1.setText("1");
         jTextFieldRow1.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow1.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow1MouseClicked(evt);
+            }
+        });
         jTextFieldRow1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -1020,6 +1028,13 @@ public class OverviewCells extends javax.swing.JPanel
         jTextFieldRow2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow2.setText("2");
         jTextFieldRow2.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow2.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow2MouseClicked(evt);
+            }
+        });
         jTextFieldRow2.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -1033,6 +1048,13 @@ public class OverviewCells extends javax.swing.JPanel
         jTextFieldRow3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow3.setText("3");
         jTextFieldRow3.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow3.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow3MouseClicked(evt);
+            }
+        });
         jTextFieldRow3.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -8428,23 +8450,17 @@ public class OverviewCells extends javax.swing.JPanel
 
     private void jTextFieldRow1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow1ActionPerformed
     {//GEN-HEADEREND:event_jTextFieldRow1ActionPerformed
-        jTextFieldRow1.setText("");
-        jTextFieldRow1.setFont(fontNormal);
-        jTextFieldRow1.setForeground(Color.BLACK);
+
     }//GEN-LAST:event_jTextFieldRow1ActionPerformed
 
     private void jTextFieldRow2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow2ActionPerformed
     {//GEN-HEADEREND:event_jTextFieldRow2ActionPerformed
-        jTextFieldRow2.setText("");
-        jTextFieldRow2.setFont(fontNormal);
-        jTextFieldRow2.setForeground(Color.BLACK);
+
     }//GEN-LAST:event_jTextFieldRow2ActionPerformed
 
     private void jTextFieldRow3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow3ActionPerformed
     {//GEN-HEADEREND:event_jTextFieldRow3ActionPerformed
-        jTextFieldRow3.setText("");
-        jTextFieldRow3.setFont(fontNormal);
-        jTextFieldRow3.setForeground(Color.BLACK);
+
     }//GEN-LAST:event_jTextFieldRow3ActionPerformed
 
     private void jTextFieldRow4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow4ActionPerformed
@@ -8501,6 +8517,27 @@ public class OverviewCells extends javax.swing.JPanel
     {//GEN-HEADEREND:event_jComboBoxSetupOverviewStartYearActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxSetupOverviewStartYearActionPerformed
+
+    private void jTextFieldRow1MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow1MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow1MouseClicked
+        jTextFieldRow1.setText("");
+        jTextFieldRow1.setFont(fontNormal);
+        jTextFieldRow1.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow1MouseClicked
+
+    private void jTextFieldRow2MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow2MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow2MouseClicked
+        jTextFieldRow2.setText("");
+        jTextFieldRow2.setFont(fontNormal);
+        jTextFieldRow2.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow2MouseClicked
+
+    private void jTextFieldRow3MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow3MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow3MouseClicked
+        jTextFieldRow3.setText("");
+        jTextFieldRow3.setFont(fontNormal);
+        jTextFieldRow3.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow3MouseClicked
 
     public void setupjDialogDetails(int room, String date)
     {
