@@ -145,10 +145,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelOverviewMainButtons = new javax.swing.JPanel();
         jButtonBooking = new javax.swing.JButton();
         jButtonEditBooking = new javax.swing.JButton();
-        jButtonSearchRoom = new javax.swing.JButton();
-        jButtonSearchCustomer = new javax.swing.JButton();
-        jButtonFacilities = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jPanel14 = new javax.swing.JPanel();
         jPanelOverviewCellsButtons = new javax.swing.JPanel();
         jButtonSetupOverview = new javax.swing.JButton();
@@ -157,6 +153,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jButtonPrevious14Days = new javax.swing.JButton();
         jButtonNext7Days = new javax.swing.JButton();
         jButtonNext14Days = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jButtonFacilities = new javax.swing.JButton();
+        jPanel9 = new javax.swing.JPanel();
+        jButtonSearchCustomer = new javax.swing.JButton();
+        jButtonSearchRoom = new javax.swing.JButton();
+        jPanel10 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         jDialogSearchCustomer.setTitle("Search Customer Details");
         jDialogSearchCustomer.setMinimumSize(new java.awt.Dimension(733, 509));
@@ -900,6 +904,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addGap(10, 10, 10))
         );
 
+        jPanelOverviewMainButtons.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
         jButtonBooking.setText("New Booking");
         jButtonBooking.setPreferredSize(new java.awt.Dimension(120, 35));
         jButtonBooking.addActionListener(new java.awt.event.ActionListener()
@@ -920,88 +926,42 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonSearchRoom.setText("Search Room");
-        jButtonSearchRoom.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonSearchRoom.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonSearchRoomActionPerformed(evt);
-            }
-        });
-
-        jButtonSearchCustomer.setText("Search Customer");
-        jButtonSearchCustomer.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonSearchCustomer.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonSearchCustomerActionPerformed(evt);
-            }
-        });
-
-        jButtonFacilities.setText("Facilities");
-        jButtonFacilities.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonFacilities.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonFacilitiesActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Check - In/Out");
-        jButton1.setPreferredSize(new java.awt.Dimension(120, 35));
-
         javax.swing.GroupLayout jPanelOverviewMainButtonsLayout = new javax.swing.GroupLayout(jPanelOverviewMainButtons);
         jPanelOverviewMainButtons.setLayout(jPanelOverviewMainButtonsLayout);
         jPanelOverviewMainButtonsLayout.setHorizontalGroup(
             jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelOverviewMainButtonsLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
+                .addGap(10, 10, 10)
                 .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(10, 10, 10))
         );
         jPanelOverviewMainButtonsLayout.setVerticalGroup(
             jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelOverviewMainButtonsLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addGroup(jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
         );
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 980, Short.MAX_VALUE)
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 50, Short.MAX_VALUE)
         );
 
-        jPanelOverviewCellsButtons.setPreferredSize(new java.awt.Dimension(841, 23));
+        jPanelOverviewCellsButtons.setPreferredSize(new java.awt.Dimension(841, 24));
 
         jButtonSetupOverview.setText("Setup Overview");
-        jButtonSetupOverview.setPreferredSize(new java.awt.Dimension(115, 20));
+        jButtonSetupOverview.setPreferredSize(new java.awt.Dimension(115, 22));
         jButtonSetupOverview.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -1011,7 +971,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         });
 
         jButtonResetOveriew.setText("Normal View");
-        jButtonResetOveriew.setPreferredSize(new java.awt.Dimension(115, 20));
+        jButtonResetOveriew.setPreferredSize(new java.awt.Dimension(115, 22));
         jButtonResetOveriew.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -1022,9 +982,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonPrevious7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowLeft.png"))); // NOI18N
         jButtonPrevious7Days.setText("Previous 7 days");
-        jButtonPrevious7Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButtonPrevious7Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButtonPrevious7Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonPrevious7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
+        jButtonPrevious7Days.setPreferredSize(new java.awt.Dimension(115, 22));
         jButtonPrevious7Days.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseEntered(java.awt.event.MouseEvent evt)
@@ -1046,9 +1006,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonPrevious14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleLeft.png"))); // NOI18N
         jButtonPrevious14Days.setText("Previous 14 days");
-        jButtonPrevious14Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButtonPrevious14Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButtonPrevious14Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonPrevious14Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
+        jButtonPrevious14Days.setPreferredSize(new java.awt.Dimension(115, 22));
         jButtonPrevious14Days.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseEntered(java.awt.event.MouseEvent evt)
@@ -1070,10 +1030,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonNext7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowRight.png"))); // NOI18N
         jButtonNext7Days.setText("Next 7 days");
-        jButtonNext7Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButtonNext7Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext7Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jButtonNext7Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonNext7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
+        jButtonNext7Days.setPreferredSize(new java.awt.Dimension(115, 22));
         jButtonNext7Days.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseEntered(java.awt.event.MouseEvent evt)
@@ -1095,13 +1055,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonNext14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleRight.png"))); // NOI18N
         jButtonNext14Days.setText("Next 14 days");
-        jButtonNext14Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButtonNext14Days.setBorderPainted(false);
         jButtonNext14Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext14Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jButtonNext14Days.setIconTextGap(0);
-        jButtonNext14Days.setMargin(new java.awt.Insets(4, 14, 2, 14));
-        jButtonNext14Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonNext14Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
+        jButtonNext14Days.setPreferredSize(new java.awt.Dimension(115, 22));
         jButtonNext14Days.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseEntered(java.awt.event.MouseEvent evt)
@@ -1126,23 +1084,23 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelOverviewCellsButtonsLayout.setHorizontalGroup(
             jPanelOverviewCellsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelOverviewCellsButtonsLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonPrevious7Days, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84)
+                .addGap(1, 1, 1)
+                .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(jButtonPrevious7Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
                 .addComponent(jButtonSetupOverview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
                 .addComponent(jButtonResetOveriew, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
-                .addComponent(jButtonNext7Days, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addComponent(jButtonNext7Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanelOverviewCellsButtonsLayout.setVerticalGroup(
             jPanelOverviewCellsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelOverviewCellsButtonsLayout.createSequentialGroup()
-                .addGap(0, 2, Short.MAX_VALUE)
+                .addGap(0, 1, Short.MAX_VALUE)
                 .addGroup(jPanelOverviewCellsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonSetupOverview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonResetOveriew, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1152,23 +1110,139 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                     .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jButtonFacilities.setText("Facilities");
+        jButtonFacilities.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonFacilities.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonFacilitiesActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
+
+        jPanel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jButtonSearchCustomer.setText("Search Customer");
+        jButtonSearchCustomer.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonSearchCustomer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSearchCustomerActionPerformed(evt);
+            }
+        });
+
+        jButtonSearchRoom.setText("Search Room");
+        jButtonSearchRoom.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonSearchRoom.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSearchRoomActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
+        );
+
+        jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jButton1.setText("Check - Out");
+        jButton1.setPreferredSize(new java.awt.Dimension(120, 35));
+
+        jButton2.setText("Check - In");
+        jButton2.setPreferredSize(new java.awt.Dimension(120, 35));
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanelOverviewCellsButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanelOverviewMainButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanelOverviewCells1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jPanelOverviewCellsButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanelOverviewMainButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanelOverviewMainButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanelOverviewMainButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(0, 0, 0)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -1393,32 +1467,32 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonNext7DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext7DaysMouseEntered
     {//GEN-HEADEREND:event_jButtonNext7DaysMouseEntered
-        // TODO add your handling code here:
+        jButtonNext7Days.setBorder(BorderFactory.createCompoundBorder(null, null));
     }//GEN-LAST:event_jButtonNext7DaysMouseEntered
 
     private void jButtonNext7DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext7DaysMouseExited
     {//GEN-HEADEREND:event_jButtonNext7DaysMouseExited
-        // TODO add your handling code here:
+        jButtonNext7Days.setBorder(BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_jButtonNext7DaysMouseExited
 
     private void jButtonPrevious14DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysMouseEntered
     {//GEN-HEADEREND:event_jButtonPrevious14DaysMouseEntered
-        // TODO add your handling code here:
+        jButtonPrevious14Days.setBorder(BorderFactory.createCompoundBorder(null, null));
     }//GEN-LAST:event_jButtonPrevious14DaysMouseEntered
 
     private void jButtonPrevious14DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysMouseExited
     {//GEN-HEADEREND:event_jButtonPrevious14DaysMouseExited
-        // TODO add your handling code here:
+        jButtonPrevious14Days.setBorder(BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_jButtonPrevious14DaysMouseExited
 
     private void jButtonPrevious7DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysMouseEntered
     {//GEN-HEADEREND:event_jButtonPrevious7DaysMouseEntered
-        // TODO add your handling code here:
+        jButtonPrevious7Days.setBorder(BorderFactory.createCompoundBorder(null, null));
     }//GEN-LAST:event_jButtonPrevious7DaysMouseEntered
 
     private void jButtonPrevious7DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysMouseExited
     {//GEN-HEADEREND:event_jButtonPrevious7DaysMouseExited
-        // TODO add your handling code here:
+        jButtonPrevious7Days.setBorder(BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_jButtonPrevious7DaysMouseExited
 
     private int getDaysInMonth(int month, int year)
@@ -1511,6 +1585,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private spc.OverviewCells OverviewCells2;
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
@@ -1588,7 +1663,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JList jListSearchCustomerResult;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
