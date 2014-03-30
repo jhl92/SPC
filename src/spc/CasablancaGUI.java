@@ -8,9 +8,9 @@ package spc;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import javax.swing.BorderFactory;
 import javax.swing.JComboBox;
 
 /**
@@ -23,6 +23,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private Calendar Day01 = Calendar.getInstance();
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
+    ArrayList<Integer> tempList = new ArrayList<>();
+    ArrayList<Integer> roomList = new ArrayList<>();
     Calendar cal = new GregorianCalendar();
     private int currentYear = Calendar.YEAR;
     Integer[] list28days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28};
@@ -951,7 +953,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 980, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -982,6 +984,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonPrevious7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowLeft.png"))); // NOI18N
         jButtonPrevious7Days.setText("Previous 7 days");
+        jButtonPrevious7Days.setBorderPainted(false);
         jButtonPrevious7Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButtonPrevious7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
         jButtonPrevious7Days.setPreferredSize(new java.awt.Dimension(115, 22));
@@ -1006,6 +1009,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonPrevious14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleLeft.png"))); // NOI18N
         jButtonPrevious14Days.setText("Previous 14 days");
+        jButtonPrevious14Days.setBorderPainted(false);
         jButtonPrevious14Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButtonPrevious14Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
         jButtonPrevious14Days.setPreferredSize(new java.awt.Dimension(115, 22));
@@ -1030,6 +1034,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonNext7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowRight.png"))); // NOI18N
         jButtonNext7Days.setText("Next 7 days");
+        jButtonNext7Days.setBorderPainted(false);
         jButtonNext7Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext7Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jButtonNext7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
@@ -1055,6 +1060,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonNext14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleRight.png"))); // NOI18N
         jButtonNext14Days.setText("Next 14 days");
+        jButtonNext14Days.setBorderPainted(false);
         jButtonNext14Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext14Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jButtonNext14Days.setIconTextGap(0);
@@ -1217,7 +1223,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanelOverviewCells1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(110, 110, 110)
                         .addComponent(jPanelOverviewCellsButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1229,7 +1235,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1, 1, 1)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
@@ -1457,42 +1463,42 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonNext14DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext14DaysMouseEntered
     {//GEN-HEADEREND:event_jButtonNext14DaysMouseEntered
-        jButtonNext14Days.setBorder(BorderFactory.createCompoundBorder(null, null));
+        jButtonNext14Days.setBorderPainted(true);
     }//GEN-LAST:event_jButtonNext14DaysMouseEntered
 
     private void jButtonNext14DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext14DaysMouseExited
     {//GEN-HEADEREND:event_jButtonNext14DaysMouseExited
-        jButtonNext14Days.setBorder(BorderFactory.createEmptyBorder());
+        jButtonNext14Days.setBorderPainted(false);
     }//GEN-LAST:event_jButtonNext14DaysMouseExited
 
     private void jButtonNext7DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext7DaysMouseEntered
     {//GEN-HEADEREND:event_jButtonNext7DaysMouseEntered
-        jButtonNext7Days.setBorder(BorderFactory.createCompoundBorder(null, null));
+        jButtonNext7Days.setBorderPainted(true);
     }//GEN-LAST:event_jButtonNext7DaysMouseEntered
 
     private void jButtonNext7DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext7DaysMouseExited
     {//GEN-HEADEREND:event_jButtonNext7DaysMouseExited
-        jButtonNext7Days.setBorder(BorderFactory.createEmptyBorder());
+        jButtonNext7Days.setBorderPainted(false);
     }//GEN-LAST:event_jButtonNext7DaysMouseExited
 
     private void jButtonPrevious14DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysMouseEntered
     {//GEN-HEADEREND:event_jButtonPrevious14DaysMouseEntered
-        jButtonPrevious14Days.setBorder(BorderFactory.createCompoundBorder(null, null));
+        jButtonPrevious14Days.setBorderPainted(true);
     }//GEN-LAST:event_jButtonPrevious14DaysMouseEntered
 
     private void jButtonPrevious14DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysMouseExited
     {//GEN-HEADEREND:event_jButtonPrevious14DaysMouseExited
-        jButtonPrevious14Days.setBorder(BorderFactory.createEmptyBorder());
+        jButtonPrevious14Days.setBorderPainted(false);
     }//GEN-LAST:event_jButtonPrevious14DaysMouseExited
 
     private void jButtonPrevious7DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysMouseEntered
     {//GEN-HEADEREND:event_jButtonPrevious7DaysMouseEntered
-        jButtonPrevious7Days.setBorder(BorderFactory.createCompoundBorder(null, null));
+        jButtonPrevious7Days.setBorderPainted(true);
     }//GEN-LAST:event_jButtonPrevious7DaysMouseEntered
 
     private void jButtonPrevious7DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysMouseExited
     {//GEN-HEADEREND:event_jButtonPrevious7DaysMouseExited
-        jButtonPrevious7Days.setBorder(BorderFactory.createEmptyBorder());
+        jButtonPrevious7Days.setBorderPainted(false);
     }//GEN-LAST:event_jButtonPrevious7DaysMouseExited
 
     private int getDaysInMonth(int month, int year)

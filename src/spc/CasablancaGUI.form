@@ -1534,7 +1534,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jPanelOverviewCells1" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                       <Component id="jPanelOverviewCellsButtons" min="-2" max="-2" attributes="0"/>
@@ -1548,7 +1548,7 @@
                       <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jPanel14" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPanel14" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
           </Group>
@@ -1718,7 +1718,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="980" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -1799,6 +1799,7 @@
               <Image iconType="3" name="/pictures/ArrowLeft.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Previous 7 days"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[3, 0, 2, 0]"/>
@@ -1819,6 +1820,7 @@
               <Image iconType="3" name="/pictures/ArrowDoubleLeft.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Previous 14 days"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[3, 0, 2, 0]"/>
@@ -1839,6 +1841,7 @@
               <Image iconType="3" name="/pictures/ArrowRight.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Next 7 days"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
@@ -1860,6 +1863,7 @@
               <Image iconType="3" name="/pictures/ArrowDoubleRight.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Next 14 days"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
             <Property name="iconTextGap" type="int" value="0"/>
