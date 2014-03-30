@@ -16,6 +16,14 @@ import java.util.Calendar;
  */
 public class OverviewCells extends javax.swing.JPanel
 {
+    private int Room1 = 1;
+    private int Room2 = 2;
+    private int Room3 = 3;
+    private int Room4 = 4;
+    private int Room5 = 5;
+    private int Room6 = 6;
+    private int Room7 = 7;
+    private int Room8 = 8;
     Font fontSystem = new Font("Tahoma", Font.ITALIC, 11);
     Font fontNormal = new Font("Tahoma", Font.PLAIN, 11);
     /**
@@ -8501,34 +8509,39 @@ public class OverviewCells extends javax.swing.JPanel
         jDialogDetails.setVisible(true);
     }
     
-    public void setupjDialogSetupOverview(int room1, int room2, int room3, int room4, int room5, int room6, int room7, int room8, DateVar date1)
+    public void setupjDialogSetupOverview(int r1, int r2, int r3, int r4, int r5, int r6, int r7, int r8, DateVar d1)
     {
-        jTextFieldRow1.setText("" + room1);
-        jTextFieldRow1.setFont(fontNormal);
+        jTextFieldRow1.setText("" + r1);
+        jTextFieldRow1.setFont(fontSystem);
         jTextFieldRow1.setForeground(Color.DARK_GRAY);
-        jTextFieldRow2.setText("" + room2);
-        jTextFieldRow2.setFont(null);
+        jTextFieldRow2.setText("" + r2);
+        jTextFieldRow2.setFont(fontSystem);
         jTextFieldRow2.setForeground(Color.DARK_GRAY);
-        jTextFieldRow3.setText("" + room3);
-        jTextFieldRow3.setFont(null);
+        jTextFieldRow3.setText("" + r3);
+        jTextFieldRow3.setFont(fontSystem);
         jTextFieldRow3.setForeground(Color.DARK_GRAY);
-        jTextFieldRow4.setText("" + room4);
-        jTextFieldRow4.setFont(null);
+        jTextFieldRow4.setText("" + r4);
+        jTextFieldRow4.setFont(fontSystem);
         jTextFieldRow4.setForeground(Color.DARK_GRAY);
-        jTextFieldRow5.setText("" + room5);
-        jTextFieldRow5.setFont(null);
+        jTextFieldRow5.setText("" + r5);
+        jTextFieldRow5.setFont(fontSystem);
         jTextFieldRow5.setForeground(Color.DARK_GRAY);
-        jTextFieldRow6.setText("" + room6);
-        jTextFieldRow6.setFont(null);
+        jTextFieldRow6.setText("" + r6);
+        jTextFieldRow6.setFont(fontSystem);
         jTextFieldRow6.setForeground(Color.DARK_GRAY);
-        jTextFieldRow7.setText("" + room7);
-        jTextFieldRow7.setFont(null);
+        jTextFieldRow7.setText("" + r7);
+        jTextFieldRow7.setFont(fontSystem);
         jTextFieldRow7.setForeground(Color.DARK_GRAY);
-        jTextFieldRow8.setText("" + room8);
-        jTextFieldRow8.setFont(null);
+        jTextFieldRow8.setText("" + r8);
+        jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
-        
         //Setup the StartDate using the recieved date-variable in the method.
+        jDialogSetupOverview.setVisible(true);
+    }
+    
+    public void setupOverviewWithCurrentRooms()
+    {
+        setupjDialogSetupOverview(Room1, Room2, Room3, Room4, Room5, Room6, Room7, Room8, null);
     }
     
     private void fillDateCells(String weekday, int date, String month, int year)

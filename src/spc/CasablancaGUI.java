@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javax.swing.BorderFactory;
 import javax.swing.JComboBox;
 
 /**
@@ -19,14 +20,6 @@ import javax.swing.JComboBox;
 public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 {
     OverviewCells ovc = new OverviewCells();
-    private int Room1 = 1;
-    private int Room2 = 2;
-    private int Room3 = 3;
-    private int Room4 = 4;
-    private int Room5 = 5;
-    private int Room6 = 6;
-    private int Room7 = 7;
-    private int Room8 = 8;
     private Calendar Day01 = Calendar.getInstance();
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
@@ -145,21 +138,25 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldBookingRoomNumber = new javax.swing.JTextField();
         jLabelBookingNoChange10 = new javax.swing.JLabel();
         jLabelBookingUnavailableNotifier = new javax.swing.JLabel();
-        jPanelOverview = new javax.swing.JPanel();
-        jButtonBooking = new javax.swing.JButton();
-        jButtonSearchCustomer = new javax.swing.JButton();
-        jButtonEditBooking = new javax.swing.JButton();
-        jButtonSearchRoom = new javax.swing.JButton();
+        jPanelOverviewCells1 = new javax.swing.JPanel();
         jButtonRoomArrowUp = new javax.swing.JButton();
         jButtonRoomArrowDown = new javax.swing.JButton();
-        jButtonPrevious14Days = new javax.swing.JButton();
-        jButtonPrevious7Days = new javax.swing.JButton();
-        jButtonNext14Days = new javax.swing.JButton();
-        jButtonNext7Days = new javax.swing.JButton();
+        OverviewCells2 = new spc.OverviewCells();
+        jPanelOverviewMainButtons = new javax.swing.JPanel();
+        jButtonBooking = new javax.swing.JButton();
+        jButtonEditBooking = new javax.swing.JButton();
+        jButtonSearchRoom = new javax.swing.JButton();
+        jButtonSearchCustomer = new javax.swing.JButton();
         jButtonFacilities = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jPanel14 = new javax.swing.JPanel();
+        jPanelOverviewCellsButtons = new javax.swing.JPanel();
         jButtonSetupOverview = new javax.swing.JButton();
         jButtonResetOveriew = new javax.swing.JButton();
-        overviewCells1 = new spc.OverviewCells();
+        jButtonPrevious7Days = new javax.swing.JButton();
+        jButtonPrevious14Days = new javax.swing.JButton();
+        jButtonNext7Days = new javax.swing.JButton();
+        jButtonNext14Days = new javax.swing.JButton();
 
         jDialogSearchCustomer.setTitle("Search Customer Details");
         jDialogSearchCustomer.setMinimumSize(new java.awt.Dimension(733, 509));
@@ -709,8 +706,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jLabelBookingNoChange8.setText("Start date:");
 
-        jComboBoxBookingStartMonth.setMaximumRowCount(13);
-        jComboBoxBookingStartMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " - Today -", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+        jComboBoxBookingStartMonth.setMaximumRowCount(12);
+        jComboBoxBookingStartMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
         jComboBoxBookingStartMonth.setPreferredSize(new java.awt.Dimension(78, 20));
         jComboBoxBookingStartMonth.addActionListener(new java.awt.event.ActionListener()
         {
@@ -720,11 +717,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jComboBoxBookingStartDate.setMaximumRowCount(13);
-        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        jComboBoxBookingStartDate.setMaximumRowCount(12);
+        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         jComboBoxBookingStartDate.setPreferredSize(new java.awt.Dimension(38, 20));
 
-        jComboBoxBookingStartYear.setMaximumRowCount(13);
+        jComboBoxBookingStartYear.setMaximumRowCount(12);
         jComboBoxBookingStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
         jComboBoxBookingStartYear.setPreferredSize(new java.awt.Dimension(50, 20));
         jComboBoxBookingStartYear.addActionListener(new java.awt.event.ActionListener()
@@ -802,9 +799,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jButtonBookingBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextFieldBookingRoomNumber, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabelBookingNoChange10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jTextFieldBookingRoomNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelBookingNoChange10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(20, 20, 20))
         );
         jPanel5Layout.setVerticalGroup(
@@ -854,46 +850,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Overview");
         setMinimumSize(new java.awt.Dimension(967, 662));
-
-        jButtonBooking.setText("New Booking");
-        jButtonBooking.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonBooking.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonBookingActionPerformed(evt);
-            }
-        });
-
-        jButtonSearchCustomer.setText("Search Customer");
-        jButtonSearchCustomer.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonSearchCustomer.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonSearchCustomerActionPerformed(evt);
-            }
-        });
-
-        jButtonEditBooking.setText("Edit Booking");
-        jButtonEditBooking.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonEditBooking.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonEditBookingActionPerformed(evt);
-            }
-        });
-
-        jButtonSearchRoom.setText("Search Room");
-        jButtonSearchRoom.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonSearchRoom.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonSearchRoomActionPerformed(evt);
-            }
-        });
+        setResizable(false);
 
         jButtonRoomArrowUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"))); // NOI18N
         jButtonRoomArrowUp.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -917,31 +874,71 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonPrevious14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleLeft.png"))); // NOI18N
-        jButtonPrevious14Days.setText("Previous 14 days");
-        jButtonPrevious14Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButtonPrevious14Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButtonPrevious14Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        javax.swing.GroupLayout jPanelOverviewCells1Layout = new javax.swing.GroupLayout(jPanelOverviewCells1);
+        jPanelOverviewCells1.setLayout(jPanelOverviewCells1Layout);
+        jPanelOverviewCells1Layout.setHorizontalGroup(
+            jPanelOverviewCells1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewCells1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanelOverviewCells1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jButtonRoomArrowDown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonRoomArrowUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addComponent(OverviewCells2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
+        jPanelOverviewCells1Layout.setVerticalGroup(
+            jPanelOverviewCells1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewCells1Layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addGroup(jPanelOverviewCells1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanelOverviewCells1Layout.createSequentialGroup()
+                        .addComponent(jButtonRoomArrowUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(428, 428, 428)
+                        .addComponent(jButtonRoomArrowDown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(OverviewCells2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
+        );
 
-        jButtonPrevious7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowLeft.png"))); // NOI18N
-        jButtonPrevious7Days.setText("Previous 7 days");
-        jButtonPrevious7Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButtonPrevious7Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButtonPrevious7Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonBooking.setText("New Booking");
+        jButtonBooking.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonBooking.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookingActionPerformed(evt);
+            }
+        });
 
-        jButtonNext14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleRight.png"))); // NOI18N
-        jButtonNext14Days.setText("Next 14 days");
-        jButtonNext14Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButtonNext14Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButtonNext14Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jButtonNext14Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonEditBooking.setText("Edit Booking");
+        jButtonEditBooking.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonEditBooking.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonEditBookingActionPerformed(evt);
+            }
+        });
 
-        jButtonNext7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowRight.png"))); // NOI18N
-        jButtonNext7Days.setText("Next 7 days");
-        jButtonNext7Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButtonNext7Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButtonNext7Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jButtonNext7Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonSearchRoom.setText("Search Room");
+        jButtonSearchRoom.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonSearchRoom.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSearchRoomActionPerformed(evt);
+            }
+        });
+
+        jButtonSearchCustomer.setText("Search Customer");
+        jButtonSearchCustomer.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonSearchCustomer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSearchCustomerActionPerformed(evt);
+            }
+        });
 
         jButtonFacilities.setText("Facilities");
         jButtonFacilities.setPreferredSize(new java.awt.Dimension(120, 35));
@@ -953,7 +950,58 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
+        jButton1.setText("Check - In/Out");
+        jButton1.setPreferredSize(new java.awt.Dimension(120, 35));
+
+        javax.swing.GroupLayout jPanelOverviewMainButtonsLayout = new javax.swing.GroupLayout(jPanelOverviewMainButtons);
+        jPanelOverviewMainButtons.setLayout(jPanelOverviewMainButtonsLayout);
+        jPanelOverviewMainButtonsLayout.setHorizontalGroup(
+            jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewMainButtonsLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanelOverviewMainButtonsLayout.setVerticalGroup(
+            jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewMainButtonsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanelOverviewMainButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+
+        jPanelOverviewCellsButtons.setPreferredSize(new java.awt.Dimension(841, 23));
+
         jButtonSetupOverview.setText("Setup Overview");
+        jButtonSetupOverview.setPreferredSize(new java.awt.Dimension(115, 20));
         jButtonSetupOverview.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -963,6 +1011,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         });
 
         jButtonResetOveriew.setText("Normal View");
+        jButtonResetOveriew.setPreferredSize(new java.awt.Dimension(115, 20));
         jButtonResetOveriew.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -971,75 +1020,136 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        javax.swing.GroupLayout jPanelOverviewLayout = new javax.swing.GroupLayout(jPanelOverview);
-        jPanelOverview.setLayout(jPanelOverviewLayout);
-        jPanelOverviewLayout.setHorizontalGroup(
-            jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelOverviewLayout.createSequentialGroup()
-                .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelOverviewLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jButtonRoomArrowDown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonRoomArrowUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(overviewCells1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelOverviewLayout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanelOverviewLayout.createSequentialGroup()
-                                .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButtonSetupOverview, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                                    .addComponent(jButtonResetOveriew, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                                .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanelOverviewLayout.createSequentialGroup()
-                                .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButtonPrevious7Days, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonNext7Days, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(10, 10, 10))
-        );
-        jPanelOverviewLayout.setVerticalGroup(
-            jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelOverviewLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelOverviewLayout.createSequentialGroup()
-                        .addComponent(jButtonSetupOverview)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonResetOveriew)))
-                .addGap(23, 23, 23)
-                .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonPrevious7Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonNext7Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        jButtonPrevious7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowLeft.png"))); // NOI18N
+        jButtonPrevious7Days.setText("Previous 7 days");
+        jButtonPrevious7Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButtonPrevious7Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButtonPrevious7Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonPrevious7Days.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
+                jButtonPrevious7DaysMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                jButtonPrevious7DaysMouseExited(evt);
+            }
+        });
+        jButtonPrevious7Days.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonPrevious7DaysActionPerformed(evt);
+            }
+        });
+
+        jButtonPrevious14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleLeft.png"))); // NOI18N
+        jButtonPrevious14Days.setText("Previous 14 days");
+        jButtonPrevious14Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButtonPrevious14Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButtonPrevious14Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonPrevious14Days.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
+                jButtonPrevious14DaysMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                jButtonPrevious14DaysMouseExited(evt);
+            }
+        });
+        jButtonPrevious14Days.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonPrevious14DaysActionPerformed(evt);
+            }
+        });
+
+        jButtonNext7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowRight.png"))); // NOI18N
+        jButtonNext7Days.setText("Next 7 days");
+        jButtonNext7Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButtonNext7Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jButtonNext7Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jButtonNext7Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonNext7Days.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
+                jButtonNext7DaysMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                jButtonNext7DaysMouseExited(evt);
+            }
+        });
+        jButtonNext7Days.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonNext7DaysActionPerformed(evt);
+            }
+        });
+
+        jButtonNext14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleRight.png"))); // NOI18N
+        jButtonNext14Days.setText("Next 14 days");
+        jButtonNext14Days.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButtonNext14Days.setBorderPainted(false);
+        jButtonNext14Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jButtonNext14Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jButtonNext14Days.setIconTextGap(0);
+        jButtonNext14Days.setMargin(new java.awt.Insets(4, 14, 2, 14));
+        jButtonNext14Days.setPreferredSize(new java.awt.Dimension(75, 20));
+        jButtonNext14Days.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
+                jButtonNext14DaysMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                jButtonNext14DaysMouseExited(evt);
+            }
+        });
+        jButtonNext14Days.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonNext14DaysActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelOverviewCellsButtonsLayout = new javax.swing.GroupLayout(jPanelOverviewCellsButtons);
+        jPanelOverviewCellsButtons.setLayout(jPanelOverviewCellsButtonsLayout);
+        jPanelOverviewCellsButtonsLayout.setHorizontalGroup(
+            jPanelOverviewCellsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewCellsButtonsLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanelOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanelOverviewLayout.createSequentialGroup()
-                        .addComponent(jButtonRoomArrowUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(428, 428, 428)
-                        .addComponent(jButtonRoomArrowDown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(overviewCells1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButtonPrevious7Days, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(84, 84, 84)
+                .addComponent(jButtonSetupOverview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addComponent(jButtonResetOveriew, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addComponent(jButtonNext7Days, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanelOverviewCellsButtonsLayout.setVerticalGroup(
+            jPanelOverviewCellsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelOverviewCellsButtonsLayout.createSequentialGroup()
+                .addGap(0, 2, Short.MAX_VALUE)
+                .addGroup(jPanelOverviewCellsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonSetupOverview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonResetOveriew, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonPrevious7Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonPrevious14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonNext7Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1047,16 +1157,24 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jPanelOverview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addGap(110, 110, 110)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelOverviewCellsButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanelOverviewMainButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanelOverviewCells1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanelOverviewMainButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanelOverview, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanelOverviewCellsButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelOverviewCells1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -1105,12 +1223,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonSetupOverviewActionPerformed
-        ovc.setupjDialogSetupOverview(Room1, Room2, Room3, Room4, Room5, Room6, Room7, Room8, null);
+        ovc.setupOverviewWithCurrentRooms();
     }//GEN-LAST:event_jButtonSetupOverviewActionPerformed
 
     private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
     {//GEN-HEADEREND:event_jButtonResetOveriewActionPerformed
-        // TODO add your handling code here:
+        ovc.setupjDialogSetupOverview(1, 2, 3, 4, 5, 6, 7, 8, null);
     }//GEN-LAST:event_jButtonResetOveriewActionPerformed
 
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
@@ -1243,6 +1361,66 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabelBookingUnavailableNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
+    private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
+    {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
+
+    private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
+    {//GEN-HEADEREND:event_jButtonPrevious7DaysActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPrevious7DaysActionPerformed
+
+    private void jButtonNext7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext7DaysActionPerformed
+    {//GEN-HEADEREND:event_jButtonNext7DaysActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonNext7DaysActionPerformed
+
+    private void jButtonNext14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext14DaysActionPerformed
+    {//GEN-HEADEREND:event_jButtonNext14DaysActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonNext14DaysActionPerformed
+
+    private void jButtonNext14DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext14DaysMouseEntered
+    {//GEN-HEADEREND:event_jButtonNext14DaysMouseEntered
+        jButtonNext14Days.setBorder(BorderFactory.createCompoundBorder(null, null));
+    }//GEN-LAST:event_jButtonNext14DaysMouseEntered
+
+    private void jButtonNext14DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext14DaysMouseExited
+    {//GEN-HEADEREND:event_jButtonNext14DaysMouseExited
+        jButtonNext14Days.setBorder(BorderFactory.createEmptyBorder());
+    }//GEN-LAST:event_jButtonNext14DaysMouseExited
+
+    private void jButtonNext7DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext7DaysMouseEntered
+    {//GEN-HEADEREND:event_jButtonNext7DaysMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonNext7DaysMouseEntered
+
+    private void jButtonNext7DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext7DaysMouseExited
+    {//GEN-HEADEREND:event_jButtonNext7DaysMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonNext7DaysMouseExited
+
+    private void jButtonPrevious14DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysMouseEntered
+    {//GEN-HEADEREND:event_jButtonPrevious14DaysMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPrevious14DaysMouseEntered
+
+    private void jButtonPrevious14DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysMouseExited
+    {//GEN-HEADEREND:event_jButtonPrevious14DaysMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPrevious14DaysMouseExited
+
+    private void jButtonPrevious7DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysMouseEntered
+    {//GEN-HEADEREND:event_jButtonPrevious7DaysMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPrevious7DaysMouseEntered
+
+    private void jButtonPrevious7DaysMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysMouseExited
+    {//GEN-HEADEREND:event_jButtonPrevious7DaysMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPrevious7DaysMouseExited
+
     private int getDaysInMonth(int month, int year)
     {
         //Search Calender for how many days the specified month/year contains, and return the right list.
@@ -1330,7 +1508,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private spc.OverviewCells OverviewCells2;
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
@@ -1406,6 +1586,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JLabel jLabelSearchRoomTypePersonsNotifier;
     private javax.swing.JList jList1;
     private javax.swing.JList jListSearchCustomerResult;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1413,7 +1597,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanelOverview;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel jPanelOverviewCells1;
+    private javax.swing.JPanel jPanelOverviewCellsButtons;
+    private javax.swing.JPanel jPanelOverviewMainButtons;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButtonSearchRoomAvailable;
     private javax.swing.JRadioButton jRadioButtonSearchRoomCheckInOut;
@@ -1434,7 +1621,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JTextField jTextFieldSearchCustomerGuestID;
     private javax.swing.JTextField jTextFieldSearchCustomerLastName;
     private javax.swing.JTextField jTextFieldSearchCustomerPhoneNumber;
-    private spc.OverviewCells overviewCells1;
     // End of variables declaration//GEN-END:variables
 
     @Override
