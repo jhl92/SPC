@@ -45,7 +45,7 @@ public class JDBCSelectQuery
 
             rs = stmt.executeQuery("SELECT GUEST.GUESTID, GUEST.GUESTLASTNAME, GUEST.GUESTFIRSTNAME from GUEST INNER JOIN BOOKROOM ON BOOKROOM.GUESTID=GUEST.GUESTID Where BOOKROOM.DATEFROM = '" + tomorrowDate + "' ORDER BY GUEST.GUESTLASTNAME");
             System.out.println("Statement acceptet");
-            String guestList = "ListofGuestsFor_" + tomorrowDate + ".txt";
+            String guestList = tomorrowDate+" - List of Check-ins.txt";
           
             try (PrintWriter writer = new PrintWriter(guestList))
             {
