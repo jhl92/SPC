@@ -19,8 +19,8 @@ public class JDBCSelectQuery
     static final String url = "jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:dat";
     
     //  Database login
-    static final String user = "cphjp154";
-    static final String pass = "cphjp154";
+    static final String user = "SEM2_TEST_GR13";
+    static final String pass = "SEM2_TEST_GR13";
 
     public void JDBCSelectRoom ()
     {
