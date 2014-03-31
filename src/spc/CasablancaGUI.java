@@ -8,11 +8,11 @@ package spc;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Random;
-import javax.swing.JComboBox;
 
 /**
  *
@@ -22,17 +22,24 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 {
     Random r = new Random();
     OverviewCells ovc = new OverviewCells();
+    
+    Calendar cal = new GregorianCalendar();
     private Calendar Day01 = Calendar.getInstance();
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
     ArrayList<Integer> tempList = new ArrayList<>();
     ArrayList<Integer> roomList = new ArrayList<>();
-    Calendar cal = new GregorianCalendar();
-    private int currentYear = Calendar.YEAR;
-    Integer[] list28days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28};
-    Integer[] list29days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29};
-    Integer[] list30days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30};
-    Integer[] list31days = new Integer[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31};
+    private String currentWeekDay;
+    private int currentDate;
+    private int currentMonth;
+    private int currentYear;
+    private SimpleDateFormat cDate = new SimpleDateFormat("d");
+    private SimpleDateFormat cMonth = new SimpleDateFormat("m");
+    private SimpleDateFormat cYear = new SimpleDateFormat("yy");
+    String[] list28days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28"};
+    String[] list29days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"};
+    String[] list30days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"};
+    String[] list31days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
     
     /**
      * Creates new form CasablancaGUI
@@ -197,8 +204,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jButtonSearchCustomer = new javax.swing.JButton();
         jButtonSearchRoom = new javax.swing.JButton();
         jPanelMainCheckInOutButtons = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonCheckOut = new javax.swing.JButton();
+        jButtonCheckIn = new javax.swing.JButton();
 
         jDialogSearchCustomer.setTitle("Search Customer Details");
         jDialogSearchCustomer.setMinimumSize(new java.awt.Dimension(733, 509));
@@ -1588,23 +1595,23 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jPanelMainCheckInOutButtons.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setText("Check - Out");
-        jButton1.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        jButtonCheckOut.setText("Check - Out");
+        jButtonCheckOut.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonCheckOut.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                jButtonCheckOutActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Check - In");
-        jButton2.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButton2.addActionListener(new java.awt.event.ActionListener()
+        jButtonCheckIn.setText("Check - In");
+        jButtonCheckIn.setPreferredSize(new java.awt.Dimension(120, 35));
+        jButtonCheckIn.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton2ActionPerformed(evt);
+                jButtonCheckInActionPerformed(evt);
             }
         });
 
@@ -1614,9 +1621,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             jPanelMainCheckInOutButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMainCheckInOutButtonsLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonCheckIn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonCheckOut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
         jPanelMainCheckInOutButtonsLayout.setVerticalGroup(
@@ -1624,8 +1631,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             .addGroup(jPanelMainCheckInOutButtonsLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanelMainCheckInOutButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonCheckIn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonCheckOut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
@@ -1754,91 +1761,38 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jComboBoxBookingStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartMonthActionPerformed
-        int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
+        int year = (jComboBoxBookingStartYear.getSelectedIndex()+2014);
         int month = jComboBoxBookingStartMonth.getSelectedIndex();
         int dim = getDaysInMonth(month, year);
-        switch (dim)
-        {
-            case 28:
-                jComboBoxBookingEndDate = new JComboBox(list28days);
-                break;
-            case 29:
-                jComboBoxBookingEndDate = new JComboBox(list29days);
-                break;
-            case 30:
-                jComboBoxBookingEndDate = new JComboBox(list30days);
-                break;
-            default:
-                jComboBoxBookingEndDate = new JComboBox(list31days);
-                break;
-        }
+        String[] list = getComboBoxList(dim);
+        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxBookingStartMonthActionPerformed
 
     private void jComboBoxBookingStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartYearActionPerformed
-        int year = (jComboBoxBookingStartYear.getSelectedIndex()+currentYear);
+        int year = (jComboBoxBookingStartYear.getSelectedIndex()+2014);
         int month = jComboBoxBookingStartMonth.getSelectedIndex();
         int dim = getDaysInMonth(month, year);
-        switch (dim)
-        {
-            case 28:
-                jComboBoxBookingEndDate = new JComboBox(list28days);
-                break;
-            case 29:
-                jComboBoxBookingEndDate = new JComboBox(list29days);
-                break;
-            case 30:
-                jComboBoxBookingEndDate = new JComboBox(list30days);
-                break;
-            default:
-                jComboBoxBookingEndDate = new JComboBox(list31days);
-                break;
-        }
+        String[] list = getComboBoxList(dim);
+        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxBookingStartYearActionPerformed
 
     private void jComboBoxBookingEndMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndMonthActionPerformed
-        int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
+        int year = (jComboBoxBookingEndYear.getSelectedIndex()+2014);
         int month = jComboBoxBookingEndMonth.getSelectedIndex();
         int dim = getDaysInMonth(month, year);
-        switch (dim)
-        {
-            case 28:
-                jComboBoxBookingEndDate = new JComboBox(list28days);
-                break;
-            case 29:
-                jComboBoxBookingEndDate = new JComboBox(list29days);
-                break;
-            case 30:
-                jComboBoxBookingEndDate = new JComboBox(list30days);
-                break;
-            default:
-                jComboBoxBookingEndDate = new JComboBox(list31days);
-                break;
-        }
+        String[] list = getComboBoxList(dim);
+        jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxBookingEndMonthActionPerformed
 
     private void jComboBoxBookingEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndYearActionPerformed
-        int year = (jComboBoxBookingEndYear.getSelectedIndex()+currentYear);
+        int year = (jComboBoxBookingEndYear.getSelectedIndex()+2014);
         int month = jComboBoxBookingEndMonth.getSelectedIndex();
         int dim = getDaysInMonth(month, year);
-        switch (dim)
-        {
-            case 28:
-                jComboBoxBookingEndDate = new JComboBox(list28days);
-                break;
-            case 29:
-                jComboBoxBookingEndDate = new JComboBox(list29days);
-                break;
-            case 30:
-                jComboBoxBookingEndDate = new JComboBox(list30days);
-                break;
-            default:
-                jComboBoxBookingEndDate = new JComboBox(list31days);
-                break;
-        }
-        
+        String[] list = getComboBoxList(dim);
+        jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxBookingEndYearActionPerformed
 
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
@@ -1948,16 +1902,23 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxCheckOutYearActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
-    {//GEN-HEADEREND:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void jButtonCheckInActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckInActionPerformed
+        resetDialogCheckIn();
+    }//GEN-LAST:event_jButtonCheckInActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButtonCheckOutActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckOutActionPerformed
+        resetDialogCheckOut();
+    }//GEN-LAST:event_jButtonCheckOutActionPerformed
 
+    private void setCurrentDate()
+    {
+        currentDate = Integer.valueOf(cDate.format(cal.getTime()));
+        currentMonth = Integer.valueOf(cMonth.format(cal.getTime()));
+        currentYear = Integer.valueOf(cYear.format(cal.getTime()));
+    }
+    
     private int getDaysInMonth(int month, int year)
     {
         //Search Calender for how many days the specified month/year contains, and return the right list.
@@ -1976,12 +1937,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldBookingEmail.setText("");
         jTextFieldBookingGuestID.setText("");
         jTextFieldBookingRoomNumber.setText("");
-        jComboBoxBookingStartMonth.setSelectedIndex(0);
-        jComboBoxBookingEndMonth.setSelectedIndex(0);
-        jComboBoxBookingStartDate.setSelectedIndex(0);
-        jComboBoxBookingEndDate.setSelectedIndex(0);
-        jComboBoxBookingStartYear.setSelectedIndex(0);
-        jComboBoxBookingEndYear.setSelectedIndex(0);
+        
+        jDialogBooking.setVisible(true);
     }
     
     public void resetDialogDetails()
@@ -2007,6 +1964,21 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     public void resetDialogCheckOut()
     {
         jDialogCheckOut.setVisible(true);
+    }
+    
+    private String[] getComboBoxList(int daysInMonth)
+    {
+        switch (daysInMonth)
+        {
+            case 28:
+                return list28days;
+            case 29:
+                return list29days;
+            case 30:
+                return list30days;
+            default:
+                return list31days;
+        }
     }
     
     /**
@@ -2057,16 +2029,16 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private spc.OverviewCells OverviewCells2;
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
     private javax.swing.JButton jButtonBookingCreateID;
+    private javax.swing.JButton jButtonCheckIn;
     private javax.swing.JButton jButtonCheckInCheckIn;
     private javax.swing.JButton jButtonCheckInExit;
     private javax.swing.JButton jButtonCheckInLoad;
     private javax.swing.JButton jButtonCheckInPrint;
     private javax.swing.JButton jButtonCheckInSearchCustomer;
+    private javax.swing.JButton jButtonCheckOut;
     private javax.swing.JButton jButtonCheckOutCheckOut;
     private javax.swing.JButton jButtonCheckOutExit;
     private javax.swing.JButton jButtonCheckOutLoad;
