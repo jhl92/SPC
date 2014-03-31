@@ -1914,9 +1914,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void setCurrentDate()
     {
-        currentDate = Integer.valueOf(cDate.format(cal.getTime()));
-        currentMonth = Integer.valueOf(cMonth.format(cal.getTime()));
-        currentYear = Integer.valueOf(cYear.format(cal.getTime()));
+        currentDate = Integer.parseInt(cDate.format(cal.getTime()));
+        currentMonth = Integer.parseInt(cMonth.format(cal.getTime()));
+        currentYear = Integer.parseInt(cYear.format(cal.getTime()));
     }
     
     private int getDaysInMonth(int month, int year)
