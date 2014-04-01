@@ -43,7 +43,11 @@ public class JDBCSelectQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-            rs = stmt.executeQuery("SELECT GUEST.GUESTID, GUEST.GUESTLASTNAME, GUEST.GUESTFIRSTNAME, GUEST.RETURNINGGUEST from GUEST INNER JOIN BOOKROOM ON BOOKROOM.GUESTID=GUEST.GUESTID Where BOOKROOM.DATEFROM = '" + tomorrowDate + "' ORDER BY GUEST.GUESTLASTNAME");
+            rs = stmt.executeQuery("SELECT GUEST.GUESTID, GUEST.GUESTLASTNAME, "
+                    + "GUEST.GUESTFIRSTNAME, GUEST.RETURNINGGUEST from "
+                    + "GUEST INNER JOIN BOOKROOM ON BOOKROOM.GUESTID=GUEST.GUESTID "
+                    + "Where BOOKROOM.DATEFROM = '" + tomorrowDate 
+                    + "' ORDER BY GUEST.GUESTLASTNAME");
             System.out.println("Statement acceptet");
             String guestList = tomorrowDate+" - List of Check-ins.txt";
           
