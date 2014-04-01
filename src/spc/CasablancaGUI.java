@@ -27,6 +27,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private Calendar Day01 = Calendar.getInstance();
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
+    JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
     ArrayList<Integer> tempList = new ArrayList<>();
     ArrayList<Integer> roomList = new ArrayList<>();
     private String currentWeekDay;
@@ -738,6 +739,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabelBookingNoChange1.setText("Enter First Name:");
 
         jTextFieldBookingFirstName.setPreferredSize(new java.awt.Dimension(192, 20));
+        jTextFieldBookingFirstName.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jTextFieldBookingFirstNameActionPerformed(evt);
+            }
+        });
 
         jLabelBookingNoChange2.setText("Enter Last Name:");
 
@@ -1912,7 +1920,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         //If selected room is available then perform booking of room
         String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
         String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+"-"+jComboBoxBookingEndMonth.getSelectedIndex()+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
-        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), jTextFieldBookingRoomNumber.getText(), "EmployeeID", dateFrom, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
+        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
         jLabelBookingUnavailableNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
@@ -2042,6 +2050,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }//GEN-LAST:event_jComboBoxBookingRoomTypeActionPerformed
 
+    private void jTextFieldBookingFirstNameActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldBookingFirstNameActionPerformed
+    {//GEN-HEADEREND:event_jTextFieldBookingFirstNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldBookingFirstNameActionPerformed
+
     private void setCurrentDate()
     {
         currentDate = Integer.parseInt(cDate.format(cal.getTime()));
@@ -2066,7 +2079,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldBookingPhoneNumber.setText("");
         jTextFieldBookingEmail.setText("");
         jTextFieldBookingGuestID.setText("");
-        jTextFieldBookingRoomNumber.setText("");
         
         jDialogBooking.setVisible(true);
     }

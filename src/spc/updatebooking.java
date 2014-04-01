@@ -4,8 +4,6 @@
  */
 package spc;
 
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -83,16 +81,16 @@ public class updatebooking
     public infoobject getInfo(String guestID){
         Connection conn = null;
         Statement stmt = null;
-        String rsLastName;
-        String rsFirstName;
-        String rsCountry;
-        String rsContactPhone;
-        String rsEmail;
-        String rsReturning;
-        String rsRoomId;
-        String rsDateFrom;
-        String rsDateTo;
-        String rsPrice;
+//        String rsLastName;
+//        String rsFirstName;
+//        String rsCountry;
+//        String rsContactPhone;
+//        String rsEmail;
+//        String rsReturning;
+//        String rsRoomId;
+//        String rsDateFrom;
+//        String rsDateTo;
+//        String rsPrice;
         try
         {
             //Registrer JDBC driver
@@ -109,21 +107,18 @@ public class updatebooking
  
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on bookroom.guestid = guest.guestid where guest.guestid ='" + guestID);
            
-            while(rs.next()) {
-               rsLastName = rs.getString("GuestLastName");
-               rsFirstName = rs.getString("GuestFirstname");
-               rsCountry = rs.getString("GuestCountry");
-               rsContactPhone = rs.getString("GuestContactPhone");
-               rsEmail = rs.getString("GuestEmail");
-               rsReturning = rs.getString("ReturningGuest");
-               rsRoomId = rs.getString("roomID");
-               rsDateFrom = rs.getString("dateFrom");
-               rsDateTo = rs.getString("dateTo");
-               rsPrice = rs.getString("BookingPrice");
-            }
-            infoobject info1 = (rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
+            String rsLastName = rs.getString("GuestLastName");
+            String rsFirstName = rs.getString("GuestFirstname");
+            String rsCountry = rs.getString("GuestCountry");
+            String rsContactPhone = rs.getString("GuestContactPhone");
+            String rsEmail = rs.getString("GuestEmail");
+            String rsReturning = rs.getString("ReturningGuest");
+            String rsRoomId = rs.getString("roomID");
+            String rsDateFrom = rs.getString("dateFrom");
+            String rsDateTo = rs.getString("dateTo");
+            String rsPrice = rs.getString("BookingPrice");
+            infoobject info1 = new infoobject(rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
             return info1;
-          
         } catch (SQLException se)
         {
             se.printStackTrace();
@@ -153,7 +148,7 @@ public class updatebooking
             }
         }
         System.out.println("Done.");
-     return lastName;
+     return null;
     }
     
 }
