@@ -59,6 +59,8 @@ public class frameforsprint extends javax.swing.JFrame
         jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jTextFieldReturningGuest = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -150,6 +152,8 @@ public class frameforsprint extends javax.swing.JFrame
             }
         });
 
+        jLabel15.setText("Returning Guest (Y/N):");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -176,19 +180,21 @@ public class frameforsprint extends javax.swing.JFrame
                                             .addComponent(jLabel11)
                                             .addComponent(jLabel12)
                                             .addComponent(jLabel13)
-                                            .addComponent(jLabel14))
+                                            .addComponent(jLabel14)
+                                            .addComponent(jLabel15))
                                         .addGap(15, 15, 15)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jTextFieldFirstName)
                                     .addComponent(jTextFieldGuestID)
                                     .addComponent(jTextFieldLastName)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jTextFieldCountry, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextFieldPhone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextFieldMail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(jTextFieldCountry, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
+                                            .addComponent(jTextFieldPhone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
+                                            .addComponent(jTextFieldMail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
+                                            .addComponent(jTextFieldReturningGuest, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(1, 1, 1)))))
-                        .addContainerGap(67, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jTextField1)
                         .addGap(18, 18, 18)
@@ -224,6 +230,10 @@ public class frameforsprint extends javax.swing.JFrame
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(jTextFieldMail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldReturningGuest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -324,7 +334,7 @@ public class frameforsprint extends javax.swing.JFrame
                 jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), jTextFieldDateTo.getText(),
                 jTextFieldPriceprNight.getText(), jTextFieldFirstName.getText(), 
                 jTextFieldLastName.getText(), jTextFieldCountry.getText(), 
-                jTextFieldPhone.getText(), jTextFieldMail.getText());
+                jTextFieldPhone.getText(), jTextFieldMail.getText(), jTextFieldReturningGuest.getText());
     }//GEN-LAST:event_jButtonBookITActionPerformed
 
     private void jTextFieldLastNameActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldLastNameActionPerformed
@@ -396,6 +406,7 @@ public class frameforsprint extends javax.swing.JFrame
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -416,6 +427,7 @@ public class frameforsprint extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldMail;
     private javax.swing.JTextField jTextFieldPhone;
     private javax.swing.JTextField jTextFieldPriceprNight;
+    private javax.swing.JTextField jTextFieldReturningGuest;
     private javax.swing.JTextField jTextFieldRoomID;
     // End of variables declaration//GEN-END:variables
 }
