@@ -76,7 +76,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldSearchCustomerPhoneNumber = new javax.swing.JTextField();
         jTextFieldSearchCustomerEmail = new javax.swing.JTextField();
         jLabelSearchCustomerNoChange5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelSearchCustomerNoChange17 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabelSearchCustomerFirstName = new javax.swing.JLabel();
         jLabelSearchCustomerLastName = new javax.swing.JLabel();
@@ -94,8 +94,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabelSearchCustomerBookingID = new javax.swing.JLabel();
         jLabelSearchCustomerNoChange14 = new javax.swing.JLabel();
         jButtonEditSelectedCustomerDetails = new javax.swing.JButton();
+        jPanel9 = new javax.swing.JPanel();
+        jLabelSearchCustomerNoChange15 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jListSearchCustomerResult = new javax.swing.JList();
+        jPanel10 = new javax.swing.JPanel();
+        jLabelSearchCustomerNoChange16 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jListSelectedCustomerAllBookings = new javax.swing.JList();
         jDialogSearchRoom = new javax.swing.JDialog();
         jPanel6 = new javax.swing.JPanel();
         jRadioButtonSearchRoomAvailable = new javax.swing.JRadioButton();
@@ -208,7 +214,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jButtonCheckIn = new javax.swing.JButton();
 
         jDialogSearchCustomer.setTitle("Search Customer Details");
-        jDialogSearchCustomer.setMinimumSize(new java.awt.Dimension(733, 509));
+        jDialogSearchCustomer.setMinimumSize(new java.awt.Dimension(733, 450));
         jDialogSearchCustomer.setResizable(false);
 
         jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -252,8 +258,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jLabelSearchCustomerNoChange5.setText("E-mail Address:");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabel1.setText("<html>Type in one or more information in the<br>boxes below:</html>");
+        jLabelSearchCustomerNoChange17.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabelSearchCustomerNoChange17.setText("<html>Type in one or more information in the<br>boxes below:</html>");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -280,14 +286,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                             .addComponent(jTextFieldSearchCustomerEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabelSearchCustomerNoChange5))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jLabel1))
+                    .addComponent(jLabelSearchCustomerNoChange17))
                 .addGap(10, 10, 10))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelSearchCustomerNoChange17, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15)
                 .addComponent(jLabelSearchCustomerNoChange1)
                 .addGap(0, 0, 0)
@@ -316,9 +322,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addComponent(jLabelSearchCustomerNoChange7)
                 .addGap(0, 0, 0)
                 .addComponent(jTextFieldSearchCustomerBookingID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonSearchCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(10, 10, 10))
         );
 
         jPanel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -425,13 +431,68 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addComponent(jLabelSearchCustomerNoChange14)
                 .addGap(0, 0, 0)
                 .addComponent(jLabelSearchCustomerBookingID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(jButtonEditSelectedCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
+
+        jPanel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabelSearchCustomerNoChange15.setText("Persons found with the entered information:");
 
         jListSearchCustomerResult.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(jListSearchCustomerResult);
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
+                    .addComponent(jLabelSearchCustomerNoChange15))
+                .addGap(10, 10, 10))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabelSearchCustomerNoChange15)
+                .addGap(0, 0, 0)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabelSearchCustomerNoChange16.setText("Previous and current bookings:");
+
+        jListSelectedCustomerAllBookings.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane4.setViewportView(jListSelectedCustomerAllBookings);
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(jLabelSearchCustomerNoChange16)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabelSearchCustomerNoChange16)
+                .addGap(0, 0, 0)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGap(10, 10, 10))
+        );
 
         javax.swing.GroupLayout jDialogSearchCustomerLayout = new javax.swing.GroupLayout(jDialogSearchCustomer.getContentPane());
         jDialogSearchCustomer.getContentPane().setLayout(jDialogSearchCustomerLayout);
@@ -439,20 +500,25 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             jDialogSearchCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogSearchCustomerLayout.createSequentialGroup()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addGap(1, 1, 1)
+                .addGroup(jDialogSearchCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(1, 1, 1)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
         jDialogSearchCustomerLayout.setVerticalGroup(
             jDialogSearchCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jDialogSearchCustomerLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jScrollPane1)
-                .addGap(10, 10, 10))
-            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)
+                .addGroup(jDialogSearchCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogSearchCustomerLayout.createSequentialGroup()
+                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         jDialogSearchRoom.setTitle("Search Room Details");
@@ -2087,7 +2153,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JDialog jDialogCheckOutAccountDetails;
     private javax.swing.JDialog jDialogSearchCustomer;
     private javax.swing.JDialog jDialogSearchRoom;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelBookingNoChange1;
     private javax.swing.JLabel jLabelBookingNoChange10;
     private javax.swing.JLabel jLabelBookingNoChange2;
@@ -2115,6 +2180,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JLabel jLabelSearchCustomerNoChange12;
     private javax.swing.JLabel jLabelSearchCustomerNoChange13;
     private javax.swing.JLabel jLabelSearchCustomerNoChange14;
+    private javax.swing.JLabel jLabelSearchCustomerNoChange15;
+    private javax.swing.JLabel jLabelSearchCustomerNoChange16;
+    private javax.swing.JLabel jLabelSearchCustomerNoChange17;
     private javax.swing.JLabel jLabelSearchCustomerNoChange2;
     private javax.swing.JLabel jLabelSearchCustomerNoChange3;
     private javax.swing.JLabel jLabelSearchCustomerNoChange4;
@@ -2133,7 +2201,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JList jListCheckIn;
     private javax.swing.JList jListCheckOut;
     private javax.swing.JList jListSearchCustomerResult;
+    private javax.swing.JList jListSelectedCustomerAllBookings;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -2141,6 +2211,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JPanel jPanelCheckInButtons;
     private javax.swing.JPanel jPanelCheckInList;
     private javax.swing.JPanel jPanelCheckOutButtons;
@@ -2159,6 +2230,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTextField jTextFieldBookingCountry;
     private javax.swing.JTextField jTextFieldBookingEmail;
