@@ -8,12 +8,12 @@ package spc;
  *
  * @author Junheng Li
  */
-class infoobject
+class InfoObjectConstructor
 {
-    private String roomID, roomType, Price, country, dateFrom,
+    private String roomID, Price, country, dateFrom,
             dateTo, lastName, firstName, contactPhone, email, returning;
 
-    public infoobject(String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, String dateTo, String Price)
+    public InfoObjectConstructor(String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, String dateTo, String Price)
     {
         this.roomID = roomID;
         this.Price = Price;
@@ -24,6 +24,56 @@ class infoobject
         this.firstName = firstName;
         this.contactPhone = contactPhone;
         this.email = email;
+        this.returning = returning;
+    }
+
+    public void setRoomID(String roomID)
+    {
+        this.roomID = roomID;
+    }
+
+    public void setPrice(String Price)
+    {
+        this.Price = Price;
+    }
+
+    public void setCountry(String country)
+    {
+        this.country = country;
+    }
+
+    public void setDateFrom(String dateFrom)
+    {
+        this.dateFrom = dateFrom;
+    }
+
+    public void setDateTo(String dateTo)
+    {
+        this.dateTo = dateTo;
+    }
+
+    public void setLastName(String lastName)
+    {
+        this.lastName = lastName;
+    }
+
+    public void setFirstName(String firstName)
+    {
+        this.firstName = firstName;
+    }
+
+    public void setContactPhone(String contactPhone)
+    {
+        this.contactPhone = contactPhone;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
+
+    public void setReturning(String returning)
+    {
         this.returning = returning;
     }
 

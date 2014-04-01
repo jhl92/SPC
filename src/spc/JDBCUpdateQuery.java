@@ -14,7 +14,7 @@ import java.sql.Statement;
  *
  * @author Junheng Li
  */
-public class updatebooking
+public class JDBCUpdateQuery
 {
         // JDBC driver & database URL
 
@@ -25,7 +25,9 @@ public class updatebooking
     static final String pass = "SEM2_TEST_GR13";
     ResultSet rs;
 
-    public void updateBooking(String newroomID, String newroomType, String newPrice, String newroomAvailability, String newdateFrom, String newdateTo, String newlastName, String newfirstName)
+    public void updateBooking(String newroomID, String newroomType, String newPrice, 
+            String newroomAvailability, String newdateFrom, String newdateTo, 
+            String newlastName, String newfirstName)
     {
      
         Connection conn = null;
@@ -78,7 +80,7 @@ public class updatebooking
         System.out.println("Done.");
     }
     
-    public infoobject getInfo(String guestID){
+    public InfoObjectConstructor getInfo(String guestID){
         Connection conn = null;
         Statement stmt = null;
 //        String rsLastName;
@@ -105,8 +107,9 @@ public class updatebooking
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
  
-            rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on bookroom.guestid = guest.guestid where guest.guestid ='" + guestID);
+            rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on bookroom.guestid = guest.guestid where guest.guestid ='" + guestID + "'");
            
+            if(rs.next()) {
             String rsLastName = rs.getString("GuestLastName");
             String rsFirstName = rs.getString("GuestFirstname");
             String rsCountry = rs.getString("GuestCountry");
@@ -117,8 +120,9 @@ public class updatebooking
             String rsDateFrom = rs.getString("dateFrom");
             String rsDateTo = rs.getString("dateTo");
             String rsPrice = rs.getString("BookingPrice");
-            infoobject info1 = new infoobject(rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
-            return info1;
+            InfoObjectConstructor info1 = new InfoObjectConstructor(rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
+            return info1; 
+            }
         } catch (SQLException se)
         {
             se.printStackTrace();
