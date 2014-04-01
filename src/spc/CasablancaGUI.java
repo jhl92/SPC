@@ -30,10 +30,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
     ArrayList<Integer> tempList = new ArrayList<>();
     ArrayList<Integer> roomList = new ArrayList<>();
-    private String currentWeekDay;
+    private int currentWeekDay;
     private int currentDate;
     private int currentMonth;
     private int currentYear;
+    private SimpleDateFormat cWeekDay = new SimpleDateFormat("u");
     private SimpleDateFormat cDate = new SimpleDateFormat("d");
     private SimpleDateFormat cMonth = new SimpleDateFormat("m");
     private SimpleDateFormat cYear = new SimpleDateFormat("yy");
@@ -141,6 +142,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldBookingGuestID = new javax.swing.JTextField();
         jButtonBookingCreateID = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
+        jButtonBookingBook = new javax.swing.JButton();
+        jPanel11 = new javax.swing.JPanel();
+        jLabelBookingNoChange7 = new javax.swing.JLabel();
+        jComboBoxBookingRoomType = new javax.swing.JComboBox();
+        jLabelBookingRoomTypePersonsNotifier = new javax.swing.JLabel();
         jLabelBookingNoChange8 = new javax.swing.JLabel();
         jComboBoxBookingStartMonth = new javax.swing.JComboBox();
         jComboBoxBookingStartDate = new javax.swing.JComboBox();
@@ -149,13 +155,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jComboBoxBookingEndMonth = new javax.swing.JComboBox();
         jComboBoxBookingEndDate = new javax.swing.JComboBox();
         jComboBoxBookingEndYear = new javax.swing.JComboBox();
-        jButtonBookingBook = new javax.swing.JButton();
-        jLabelBookingOptionalRoomNumber = new javax.swing.JLabel();
-        jLabelBookingUnavailableNotifier = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
-        jLabelBookingNoChange7 = new javax.swing.JLabel();
-        jComboBoxBookingRoomType = new javax.swing.JComboBox();
-        jLabelBookingRoomTypePersonsNotifier = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabelBookingRoomNotifier = new javax.swing.JLabel();
         jDialogCheckIn = new javax.swing.JDialog();
         jPanelCheckInList = new javax.swing.JPanel();
         jLabelCheckInNoChange1 = new javax.swing.JLabel();
@@ -331,6 +332,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonShowSelectedCustomerDetails.setText("Show details for selected customer");
         jButtonShowSelectedCustomerDetails.setPreferredSize(new java.awt.Dimension(163, 25));
+        jButtonShowSelectedCustomerDetails.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonShowSelectedCustomerDetailsActionPerformed(evt);
+            }
+        });
 
         jLabelSearchCustomerNationality.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabelSearchCustomerNationality.setPreferredSize(new java.awt.Dimension(230, 20));
@@ -358,6 +366,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonEditSelectedCustomerDetails.setText("Edit selected customer");
         jButtonEditSelectedCustomerDetails.setPreferredSize(new java.awt.Dimension(75, 25));
+        jButtonEditSelectedCustomerDetails.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonEditSelectedCustomerDetailsActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -627,23 +642,51 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jComboBoxSearchStartMonth.setMaximumRowCount(13);
         jComboBoxSearchStartMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+        jComboBoxSearchStartMonth.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxSearchStartMonthActionPerformed(evt);
+            }
+        });
 
         jComboBoxSearchStartDate.setMaximumRowCount(13);
         jComboBoxSearchStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
         jComboBoxSearchStartYear.setMaximumRowCount(13);
         jComboBoxSearchStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+        jComboBoxSearchStartYear.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxSearchStartYearActionPerformed(evt);
+            }
+        });
 
         jLabelSearchNoChange4.setText("Specify end date:");
 
         jComboBoxSearchEndMonth.setMaximumRowCount(12);
         jComboBoxSearchEndMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+        jComboBoxSearchEndMonth.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxSearchEndMonthActionPerformed(evt);
+            }
+        });
 
         jComboBoxSearchEndDate.setMaximumRowCount(12);
         jComboBoxSearchEndDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
         jComboBoxSearchEndYear.setMaximumRowCount(12);
         jComboBoxSearchEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+        jComboBoxSearchEndYear.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxSearchEndYearActionPerformed(evt);
+            }
+        });
 
         jButtonRoomSearch.setText("Search Rooms");
         jButtonRoomSearch.setPreferredSize(new java.awt.Dimension(270, 25));
@@ -731,7 +774,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jDialogBooking.setMinimumSize(new java.awt.Dimension(467, 431));
+        jDialogBooking.setMinimumSize(new java.awt.Dimension(467, 396));
         jDialogBooking.setResizable(false);
 
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -757,8 +800,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jLabelBookingNoChange4.setText("Enter Phone-Number:");
 
-        jTextFieldBookingPhoneNumber.setPreferredSize(new java.awt.Dimension(192, 20));
-
         jLabelBookingNoChange5.setText("Enter E-mail Address:");
 
         jTextFieldBookingEmail.setPreferredSize(new java.awt.Dimension(192, 20));
@@ -783,22 +824,22 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabelBookingNoChange6)
                     .addComponent(jLabelBookingNoChange2)
                     .addComponent(jLabelBookingNoChange1)
-                    .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabelBookingNoChange3)
-                    .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabelBookingNoChange4)
-                    .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabelBookingNoChange5)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jTextFieldBookingGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
-                        .addComponent(jButtonBookingCreateID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButtonBookingCreateID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldBookingPhoneNumber))
                 .addGap(20, 20, 20))
         );
         jPanel4Layout.setVerticalGroup(
@@ -824,7 +865,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addComponent(jLabelBookingNoChange3)
                 .addGap(0, 0, 0)
                 .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(101, 101, 101)
+                .addGap(20, 20, 20)
                 .addComponent(jLabelBookingNoChange6)
                 .addGap(0, 0, 0)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -834,6 +875,49 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jButtonBookingBook.setText("Book Room");
+        jButtonBookingBook.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookingBookActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jButtonBookingBook, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jButtonBookingBook, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
+        );
+
+        jPanel11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabelBookingNoChange7.setText("Search among room type:");
+
+        jComboBoxBookingRoomType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All rooms", "Single room", "Double room", "Family room" }));
+        jComboBoxBookingRoomType.setPreferredSize(new java.awt.Dimension(86, 20));
+        jComboBoxBookingRoomType.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBookingRoomTypeActionPerformed(evt);
+            }
+        });
+
+        jLabelBookingRoomTypePersonsNotifier.setText("(5 persons)");
+        jLabelBookingRoomTypePersonsNotifier.setPreferredSize(new java.awt.Dimension(70, 22));
 
         jLabelBookingNoChange8.setText("Start date:");
 
@@ -891,89 +975,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonBookingBook.setText("Book Room");
-        jButtonBookingBook.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonBookingBookActionPerformed(evt);
-            }
-        });
+        jButton1.setText("Search for available room");
+        jButton1.setPreferredSize(new java.awt.Dimension(178, 35));
 
-        jLabelBookingOptionalRoomNumber.setText("Room Number:     28");
-        jLabelBookingOptionalRoomNumber.setPreferredSize(new java.awt.Dimension(150, 20));
-
-        jLabelBookingUnavailableNotifier.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jLabelBookingUnavailableNotifier.setText("<html>Selected room is not available<br>in the specified period...</html>");
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabelBookingUnavailableNotifier)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabelBookingNoChange8)
-                    .addComponent(jLabelBookingNoChange9)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButtonBookingBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabelBookingOptionalRoomNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(20, 20, 20))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabelBookingNoChange8)
-                .addGap(0, 0, 0)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addComponent(jLabelBookingNoChange9)
-                .addGap(0, 0, 0)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addComponent(jLabelBookingOptionalRoomNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(jLabelBookingUnavailableNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jButtonBookingBook, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabelBookingNoChange7.setText("Search among room type:");
-
-        jComboBoxBookingRoomType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All rooms", "Single room", "Double room", "Family room" }));
-        jComboBoxBookingRoomType.setPreferredSize(new java.awt.Dimension(86, 20));
-        jComboBoxBookingRoomType.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxBookingRoomTypeActionPerformed(evt);
-            }
-        });
-
-        jLabelBookingRoomTypePersonsNotifier.setText("(5 persons)");
-        jLabelBookingRoomTypePersonsNotifier.setPreferredSize(new java.awt.Dimension(70, 22));
+        jLabelBookingRoomNotifier.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabelBookingRoomNotifier.setText("<html>Selected room is not available<br>in the specified period...</html>");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -981,12 +987,31 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelBookingNoChange8)
+                    .addComponent(jLabelBookingNoChange9)
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabelBookingNoChange7)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(jComboBoxBookingRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
-                        .addComponent(jLabelBookingRoomTypePersonsNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabelBookingRoomTypePersonsNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelBookingRoomNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -998,6 +1023,24 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelBookingRoomTypePersonsNotifier, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxBookingRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange8)
+                .addGap(0, 0, 0)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addComponent(jLabelBookingNoChange9)
+                .addGap(0, 0, 0)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingRoomNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
         );
 
@@ -1016,14 +1059,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
         jDialogBookingLayout.setVerticalGroup(
             jDialogBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialogBookingLayout.createSequentialGroup()
-                .addGroup(jDialogBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jDialogBookingLayout.createSequentialGroup()
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(108, Short.MAX_VALUE))
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogBookingLayout.createSequentialGroup()
+                .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(1, 1, 1)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jDialogCheckIn.setTitle("Check-In");
@@ -1921,7 +1961,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
         String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+"-"+jComboBoxBookingEndMonth.getSelectedIndex()+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
         jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
-        jLabelBookingUnavailableNotifier.setText("Room has been booked...");
+        jLabelBookingRoomNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
@@ -2002,22 +2042,38 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jComboBoxCheckInMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxCheckInMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxCheckInMonthActionPerformed
-        // TODO add your handling code here:
+        int year = (jComboBoxCheckInYear.getSelectedIndex()+2014);
+        int month = jComboBoxCheckInMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxCheckInDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxCheckInMonthActionPerformed
 
     private void jComboBoxCheckInYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxCheckInYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxCheckInYearActionPerformed
-        // TODO add your handling code here:
+        int year = (jComboBoxCheckInYear.getSelectedIndex()+2014);
+        int month = jComboBoxCheckInMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxCheckInDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxCheckInYearActionPerformed
 
     private void jComboBoxCheckOutMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxCheckOutMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxCheckOutMonthActionPerformed
-        // TODO add your handling code here:
+        int year = (jComboBoxCheckOutYear.getSelectedIndex()+2014);
+        int month = jComboBoxCheckOutMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxCheckOutDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxCheckOutMonthActionPerformed
 
     private void jComboBoxCheckOutYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxCheckOutYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxCheckOutYearActionPerformed
-        // TODO add your handling code here:
+        int year = (jComboBoxCheckOutYear.getSelectedIndex()+2014);
+        int month = jComboBoxCheckOutMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxCheckOutDate.setModel(new javax.swing.DefaultComboBoxModel(list));
     }//GEN-LAST:event_jComboBoxCheckOutYearActionPerformed
 
     private void jButtonCheckInActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInActionPerformed
@@ -2055,11 +2111,58 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldBookingFirstNameActionPerformed
 
+    private void jComboBoxSearchStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchStartMonthActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxSearchStartMonthActionPerformed
+        int year = (jComboBoxSearchStartYear.getSelectedIndex()+2014);
+        int month = jComboBoxSearchStartMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxSearchStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+    }//GEN-LAST:event_jComboBoxSearchStartMonthActionPerformed
+
+    private void jComboBoxSearchStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchStartYearActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxSearchStartYearActionPerformed
+        int year = (jComboBoxSearchStartYear.getSelectedIndex()+2014);
+        int month = jComboBoxSearchStartMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxSearchStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+    }//GEN-LAST:event_jComboBoxSearchStartYearActionPerformed
+
+    private void jComboBoxSearchEndMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchEndMonthActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxSearchEndMonthActionPerformed
+        int year = (jComboBoxSearchEndYear.getSelectedIndex()+2014);
+        int month = jComboBoxSearchEndMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxSearchEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+    }//GEN-LAST:event_jComboBoxSearchEndMonthActionPerformed
+
+    private void jComboBoxSearchEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchEndYearActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxSearchEndYearActionPerformed
+        int year = (jComboBoxSearchEndYear.getSelectedIndex()+2014);
+        int month = jComboBoxSearchEndMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxSearchEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+    }//GEN-LAST:event_jComboBoxSearchEndYearActionPerformed
+
+    private void jButtonShowSelectedCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonShowSelectedCustomerDetailsActionPerformed
+    {//GEN-HEADEREND:event_jButtonShowSelectedCustomerDetailsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonShowSelectedCustomerDetailsActionPerformed
+
+    private void jButtonEditSelectedCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonEditSelectedCustomerDetailsActionPerformed
+    {//GEN-HEADEREND:event_jButtonEditSelectedCustomerDetailsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonEditSelectedCustomerDetailsActionPerformed
+
     private void setCurrentDate()
     {
         currentDate = Integer.parseInt(cDate.format(cal.getTime()));
         currentMonth = Integer.parseInt(cMonth.format(cal.getTime()));
         currentYear = Integer.parseInt(cYear.format(cal.getTime()));
+        currentWeekDay = Integer.parseInt(cWeekDay.format(cal.getTime()));
     }
     
     private int getDaysInMonth(int month, int year)
@@ -2171,6 +2274,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private spc.OverviewCells OverviewCells2;
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
     private javax.swing.JButton jButtonBookingCreateID;
@@ -2239,9 +2343,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JLabel jLabelBookingNoChange7;
     private javax.swing.JLabel jLabelBookingNoChange8;
     private javax.swing.JLabel jLabelBookingNoChange9;
-    private javax.swing.JLabel jLabelBookingOptionalRoomNumber;
+    private javax.swing.JLabel jLabelBookingRoomNotifier;
     private javax.swing.JLabel jLabelBookingRoomTypePersonsNotifier;
-    private javax.swing.JLabel jLabelBookingUnavailableNotifier;
     private javax.swing.JLabel jLabelCheckInNoChange1;
     private javax.swing.JLabel jLabelCheckInNoChange2;
     private javax.swing.JLabel jLabelCheckInNotifier;
