@@ -977,6 +977,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButton1.setText("Search for available room");
         jButton1.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabelBookingRoomNotifier.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jLabelBookingRoomNotifier.setText("<html>Selected room is not available<br>in the specified period...</html>");
@@ -1838,6 +1845,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private void jButtonBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingActionPerformed
         //Open booking-jDialog-window to perform a booking.
+        resetDialogBooking();
         jDialogBooking.setVisible(true);
         //This button could be implemented somehow with the Find/Search-button.
     }//GEN-LAST:event_jButtonBookingActionPerformed
@@ -1889,7 +1897,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerDetailsActionPerformed
-        // TODO add your handling code here:
+        String searchFirstName = jTextFieldSearchCustomerFirstName.getText();
+        String searchLastName = jTextFieldSearchCustomerLastName.getText();
+        String searchCountry = jTextFieldSearchCustomerCountry.getText();
+        String searchPhoneNumber = jTextFieldSearchCustomerPhoneNumber.getText();
+        String searchEmail = jTextFieldSearchCustomerEmail.getText();
+        String searchGuestID = jTextFieldSearchCustomerGuestID.getText();
+        
     }//GEN-LAST:event_jButtonSearchCustomerDetailsActionPerformed
 
     private void jComboBoxSearchRoomTypeActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchRoomTypeActionPerformed
@@ -1956,8 +1970,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
         resetDialogBooking();
-        //First, check if selected room is available in specified period
-        //If selected room is available then perform booking of room
+        //If available room has been found
         String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
         String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+"-"+jComboBoxBookingEndMonth.getSelectedIndex()+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
         jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
@@ -2157,6 +2170,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonEditSelectedCustomerDetailsActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     private void setCurrentDate()
     {
         currentDate = Integer.parseInt(cDate.format(cal.getTime()));
@@ -2179,9 +2197,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldBookingLastName.setText("");
         jTextFieldBookingCountry.setText("");
         jTextFieldBookingPhoneNumber.setText("");
-        jTextFieldBookingPhoneNumber.setText("");
         jTextFieldBookingEmail.setText("");
         jTextFieldBookingGuestID.setText("");
+        jButtonBookingBook.setVisible(false);
+        jComboBoxBookingRoomType.setSelectedIndex(0);
         
         jDialogBooking.setVisible(true);
     }
