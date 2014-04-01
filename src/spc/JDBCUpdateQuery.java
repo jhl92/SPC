@@ -14,7 +14,7 @@ import java.sql.Statement;
  *
  * @author Junheng Li
  */
-public class updatebooking
+public class JDBCUpdateQuery
 {
         // JDBC driver & database URL
 
@@ -25,7 +25,9 @@ public class updatebooking
     static final String pass = "SEM2_TEST_GR13";
     ResultSet rs;
 
-    public void updateBooking(String newroomID, String newroomType, String newPrice, String newroomAvailability, String newdateFrom, String newdateTo, String newlastName, String newfirstName)
+    public void updateBooking(String newroomID, String newroomType, String newPrice, 
+            String newroomAvailability, String newdateFrom, String newdateTo, 
+            String newlastName, String newfirstName)
     {
      
         Connection conn = null;

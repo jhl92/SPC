@@ -14,7 +14,7 @@ public class frameforsprint extends javax.swing.JFrame
     JDBCInsertQuery insert = new JDBCInsertQuery();
     JDBCSelectQuery select = new JDBCSelectQuery();
     JDBCDeleteQuery delete = new JDBCDeleteQuery();
-    updatebooking update = new updatebooking();
+    JDBCUpdateQuery update = new JDBCUpdateQuery();
     private infoobject info2;
     
     public frameforsprint()
