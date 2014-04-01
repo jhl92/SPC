@@ -8,12 +8,12 @@ package spc;
  *
  * @author Junheng Li
  */
-class infoobject
+class InfoObjectConstructor
 {
-    private String roomID, roomType, Price, country, dateFrom,
+    private String roomID, Price, country, dateFrom,
             dateTo, lastName, firstName, contactPhone, email, returning;
 
-    public infoobject(String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, String dateTo, String Price)
+    public InfoObjectConstructor(String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, String dateTo, String Price)
     {
         this.roomID = roomID;
         this.Price = Price;
@@ -30,11 +30,6 @@ class infoobject
     public void setRoomID(String roomID)
     {
         this.roomID = roomID;
-    }
-
-    public void setRoomType(String roomType)
-    {
-        this.roomType = roomType;
     }
 
     public void setPrice(String Price)

@@ -14,8 +14,8 @@ public class frameforsprint extends javax.swing.JFrame
     JDBCInsertQuery insert = new JDBCInsertQuery();
     JDBCSelectQuery select = new JDBCSelectQuery();
     JDBCDeleteQuery delete = new JDBCDeleteQuery();
-    updatebooking update = new updatebooking();
-    private infoobject info2;
+    JDBCUpdateQuery update = new JDBCUpdateQuery();
+    private InfoObjectConstructor info2;
     
     public frameforsprint()
     {
@@ -363,11 +363,12 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButtonBookITActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookITActionPerformed
     {//GEN-HEADEREND:event_jButtonBookITActionPerformed
-        insert.JDBCInsertRoom(jTextFieldGuestID.getText(), jTextFieldRoomID.getText(), 
-                jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), jTextFieldDateTo.getText(),
-                jTextFieldPriceprNight.getText(), jTextFieldFirstName.getText(), 
+        insert.JDBCInsertRoom(jTextFieldGuestID.getText(), jTextFieldRoomID.getText(),
+                jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), 
+                jTextFieldDateTo.getText(), "N", jTextFieldFirstName.getText(), 
                 jTextFieldLastName.getText(), jTextFieldCountry.getText(), 
-                jTextFieldPhone.getText(), jTextFieldMail.getText(), jTextFieldReturningGuest.getText());
+                jTextFieldPhone.getText(), jTextFieldMail.getText(), 
+                jTextFieldReturningGuest.getText());
     }//GEN-LAST:event_jButtonBookITActionPerformed
 
     private void jTextFieldLastNameActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldLastNameActionPerformed
@@ -393,7 +394,9 @@ public class frameforsprint extends javax.swing.JFrame
     private void jButtonSearchActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchActionPerformed
         info2 = update.getInfo(jTextFieldSearchLastName.getText());
-        jTextFieldSearchLastName.setText(info2.);
+        jTextFieldFirstName.setText(info2.getFirstName());
+        jTextFieldLastName.setText(info2.getLastName());
+        jTextFieldCountry.setText(info2.getCountry());
     }//GEN-LAST:event_jButtonSearchActionPerformed
 
 
