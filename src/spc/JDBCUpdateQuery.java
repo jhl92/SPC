@@ -80,7 +80,7 @@ public class JDBCUpdateQuery
         System.out.println("Done.");
     }
     
-    public infoobject getInfo(String guestID){
+    public InfoObjectConstructor getInfo(String guestID){
         Connection conn = null;
         Statement stmt = null;
 //        String rsLastName;
@@ -120,7 +120,7 @@ public class JDBCUpdateQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsDateTo = rs.getString("dateTo");
             String rsPrice = rs.getString("BookingPrice");
-            infoobject info1 = new infoobject(rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
+            InfoObjectConstructor info1 = new InfoObjectConstructor(rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
             return info1; 
             }
         } catch (SQLException se)
