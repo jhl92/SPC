@@ -111,7 +111,6 @@ public class JDBCInsertQuery
             stmt.executeUpdate(sql);
 //      sql = "INSERT INTO";
 //      stmt.executeUpdate(sql);
-//   
             System.out.println("Inserted records into the table...");
 
         } catch (SQLException se)
