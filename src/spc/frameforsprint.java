@@ -15,6 +15,7 @@ public class frameforsprint extends javax.swing.JFrame
     JDBCSelectQuery select = new JDBCSelectQuery();
     JDBCDeleteQuery delete = new JDBCDeleteQuery();
     updatebooking update = new updatebooking();
+    private infoobject info2;
     
     public frameforsprint()
     {
@@ -391,8 +392,8 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButtonSearchActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchActionPerformed
-        update.getInfo(jTextFieldSearchLastName.getText());
-        jTextFieldSearchLastName.setText(update.);
+        info2 = update.getInfo(jTextFieldSearchLastName.getText());
+        jTextFieldSearchLastName.setText(info2.);
     }//GEN-LAST:event_jButtonSearchActionPerformed
 
 
