@@ -43,7 +43,11 @@ public class JDBCSelectQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-            rs = stmt.executeQuery("SELECT GUEST.GUESTID, GUEST.GUESTLASTNAME, GUEST.GUESTFIRSTNAME from GUEST INNER JOIN BOOKROOM ON BOOKROOM.GUESTID=GUEST.GUESTID Where BOOKROOM.DATEFROM = '" + tomorrowDate + "' ORDER BY GUEST.GUESTLASTNAME");
+            rs = stmt.executeQuery("SELECT GUEST.GUESTID, GUEST.GUESTLASTNAME, "
+                    + "GUEST.GUESTFIRSTNAME, GUEST.RETURNINGGUEST from "
+                    + "GUEST INNER JOIN BOOKROOM ON BOOKROOM.GUESTID=GUEST.GUESTID "
+                    + "Where BOOKROOM.DATEFROM = '" + tomorrowDate 
+                    + "' ORDER BY GUEST.GUESTLASTNAME");
             System.out.println("Statement acceptet");
             String guestList = tomorrowDate+" - List of Check-ins.txt";
           
@@ -54,8 +58,11 @@ public class JDBCSelectQuery
                 String lastName = rs.getString("GUESTLASTNAME");
                 String firstName = rs.getString("GUESTFIRSTNAME");
                 String guestID = rs.getString("GUESTID");
-                writer.println(lastName+", "+firstName+" - Guest ID: "+guestID);
-                } 
+                String returningGuest = rs.getString("RETURNINGGUEST");
+                    if(returningGuest.equals("Y")) {
+                        writer.println(lastName+", "+firstName+" - Guest ID: "+guestID+" (This person is a returning guest)");
+                    } else { writer.println(lastName+", "+firstName+" - Guest ID: "+guestID); }
+                }
                 writer.close();
             } catch (FileNotFoundException e)
             {

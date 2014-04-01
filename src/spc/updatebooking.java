@@ -4,27 +4,32 @@
  */
 package spc;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  *
- * @author Jonas
+ * @author Junheng Li
  */
-import java.sql.*;
-
-public class JDBCInsertQuery
+public class updatebooking
 {
-    // JDBC driver & database URL
+        // JDBC driver & database URL
 
     static final String driver = "oracle.jdbc.driver.OracleDriver";
     static final String url = "jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:dat";
     //  Database login
     static final String user = "SEM2_TEST_GR13";
     static final String pass = "SEM2_TEST_GR13";
+    ResultSet rs;
 
-    public void JDBCInsertRoom(String guestID, String roomID, String empID,
-            String dateFrom, String dateTo, String bookingPrice,
-            String guestFirstName, String guestLastName, String gCountry,
-            String gPhone, String gMail, String returnGuest)
+    public void updateBooking(String newroomID, String newroomType, String newPrice, String newroomAvailability, String newdateFrom, String newdateTo, String newlastName, String newfirstName)
     {
+     
         Connection conn = null;
         Statement stmt = null;
         try
@@ -38,31 +43,20 @@ public class JDBCInsertQuery
             System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Inserting records into the table...");
+            System.out.println("Creating statement...");
             stmt = conn.createStatement();
-
-            String sql = "INSERT INTO BOOKROOM VALUES ('" + guestID + "','"
-                    + roomID + "','" + empID + "','" + dateFrom + "','" + dateTo 
-                    + "'," + bookingPrice + ")";
-            stmt.executeUpdate(sql);
-            sql = "INSERT INTO GUEST VALUEs ('" + guestID + "','" + guestFirstName 
-                    + "','" + guestLastName + "','" + gCountry + "','" 
-                    + gPhone + "','" + gMail + "','" + returnGuest + "')";
-      stmt.executeUpdate(sql);
-
-            System.out.println("Inserted records into the table...");
-
+ 
+            rs = stmt.executeQuery("Select ");
+           
+            rs.close(); 
         } catch (SQLException se)
         {
-            //Håndterer JDBC relaterede fejl
             se.printStackTrace();
         } catch (Exception e)
         {
-            //Håndterer Class relaterede fejl
             e.printStackTrace();
         } finally
         {
-            //Luk forbindelsen
             try
             {
                 if (stmt != null)
@@ -85,12 +79,20 @@ public class JDBCInsertQuery
         }
         System.out.println("Done.");
     }
-
-    public void JDBCInsertFacility(String guestID, String facType, String timeStart,
-            String timeEnd)
-    {
+    
+    public infoobject getInfo(String guestID){
         Connection conn = null;
         Statement stmt = null;
+        String rsLastName;
+        String rsFirstName;
+        String rsCountry;
+        String rsContactPhone;
+        String rsEmail;
+        String rsReturning;
+        String rsRoomId;
+        String rsDateFrom;
+        String rsDateTo;
+        String rsPrice;
         try
         {
             //Registrer JDBC driver
@@ -102,28 +104,34 @@ public class JDBCInsertQuery
             System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Inserting records into the table...");
+            System.out.println("Creating statement...");
             stmt = conn.createStatement();
-
-            String sql = "INSERT INTO BOOKFACI VALUES ('" + guestID + "','"
-                    + facType + "','" + timeStart + "','" + timeEnd + "')";
-            stmt.executeUpdate(sql);
-//      sql = "INSERT INTO";
-//      stmt.executeUpdate(sql);
-//   
-            System.out.println("Inserted records into the table...");
-
+ 
+            rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on bookroom.guestid = guest.guestid where guest.guestid ='" + guestID);
+           
+            while(rs.next()) {
+               rsLastName = rs.getString("GuestLastName");
+               rsFirstName = rs.getString("GuestFirstname");
+               rsCountry = rs.getString("GuestCountry");
+               rsContactPhone = rs.getString("GuestContactPhone");
+               rsEmail = rs.getString("GuestEmail");
+               rsReturning = rs.getString("ReturningGuest");
+               rsRoomId = rs.getString("roomID");
+               rsDateFrom = rs.getString("dateFrom");
+               rsDateTo = rs.getString("dateTo");
+               rsPrice = rs.getString("BookingPrice");
+            }
+            infoobject info1 = (rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
+            return info1;
+          
         } catch (SQLException se)
         {
-            //Håndterer JDBC relaterede fejl
             se.printStackTrace();
         } catch (Exception e)
         {
-            //Håndterer Class relaterede fejl
             e.printStackTrace();
         } finally
         {
-            //Luk forbindelsen
             try
             {
                 if (stmt != null)
@@ -145,5 +153,7 @@ public class JDBCInsertQuery
             }
         }
         System.out.println("Done.");
+     return lastName;
     }
+    
 }
