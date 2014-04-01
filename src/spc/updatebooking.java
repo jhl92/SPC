@@ -105,8 +105,9 @@ public class updatebooking
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
  
-            rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on bookroom.guestid = guest.guestid where guest.guestid ='" + guestID);
+            rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on bookroom.guestid = guest.guestid where guest.guestid ='" + guestID + "'");
            
+            if(rs.next()) {
             String rsLastName = rs.getString("GuestLastName");
             String rsFirstName = rs.getString("GuestFirstname");
             String rsCountry = rs.getString("GuestCountry");
@@ -118,7 +119,8 @@ public class updatebooking
             String rsDateTo = rs.getString("dateTo");
             String rsPrice = rs.getString("BookingPrice");
             infoobject info1 = new infoobject(rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
-            return info1;
+            return info1; 
+            }
         } catch (SQLException se)
         {
             se.printStackTrace();

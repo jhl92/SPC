@@ -393,7 +393,9 @@ public class frameforsprint extends javax.swing.JFrame
     private void jButtonSearchActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchActionPerformed
         info2 = update.getInfo(jTextFieldSearchLastName.getText());
-        jTextFieldSearchLastName.setText(info2.);
+        jTextFieldFirstName.setText(info2.getFirstName());
+        jTextFieldLastName.setText(info2.getLastName());
+        jTextFieldCountry.setText(info2.getCountry());
     }//GEN-LAST:event_jButtonSearchActionPerformed
 
 
