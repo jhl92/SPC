@@ -363,11 +363,12 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButtonBookITActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookITActionPerformed
     {//GEN-HEADEREND:event_jButtonBookITActionPerformed
-        insert.JDBCInsertRoom(jTextFieldGuestID.getText(), jTextFieldRoomID.getText(), 
-                jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), jTextFieldDateTo.getText(),
-                jTextFieldPriceprNight.getText(), jTextFieldFirstName.getText(), 
+        insert.JDBCInsertRoom(jTextFieldGuestID.getText(), jTextFieldRoomID.getText(),
+                jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), 
+                jTextFieldDateTo.getText(), "N", jTextFieldFirstName.getText(), 
                 jTextFieldLastName.getText(), jTextFieldCountry.getText(), 
-                jTextFieldPhone.getText(), jTextFieldMail.getText(), jTextFieldReturningGuest.getText());
+                jTextFieldPhone.getText(), jTextFieldMail.getText(), 
+                jTextFieldReturningGuest.getText());
     }//GEN-LAST:event_jButtonBookITActionPerformed
 
     private void jTextFieldLastNameActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldLastNameActionPerformed

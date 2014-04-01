@@ -21,7 +21,7 @@ public class JDBCInsertQuery
     static final String pass = "SEM2_TEST_GR13";
 
     public void JDBCInsertRoom(String guestID, String roomID, String empID,
-            String dateFrom, String dateTo, String bookingPrice,
+            String dateFrom, String dateTo, String roomAvailability,
             String guestFirstName, String guestLastName, String gCountry,
             String gPhone, String gMail, String returnGuest)
     {
@@ -41,14 +41,15 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO BOOKROOM VALUES ('" + guestID + "','"
-                    + roomID + "','" + empID + "','" + dateFrom + "','" + dateTo 
-                    + "'," + bookingPrice + ")";
-            stmt.executeUpdate(sql);
-            sql = "INSERT INTO GUEST VALUEs ('" + guestID + "','" + guestFirstName 
+            String sql = "INSERT INTO GUEST VALUEs ('" + guestID + "','" + guestFirstName 
                     + "','" + guestLastName + "','" + gCountry + "','" 
                     + gPhone + "','" + gMail + "','" + returnGuest + "')";
-      stmt.executeUpdate(sql);
+            stmt.executeUpdate(sql);
+            sql = "INSERT INTO BOOKROOM VALUES ('" + guestID + "','"
+                    + roomID + "','" + empID + "','" + dateFrom + "','" + dateTo 
+                    + "','" + roomAvailability + "')";
+            
+            stmt.executeUpdate(sql);
 
             System.out.println("Inserted records into the table...");
 
