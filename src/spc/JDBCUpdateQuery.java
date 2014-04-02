@@ -23,9 +23,9 @@ public class JDBCUpdateQuery
     static final String pass = "SEM2_TEST_GR13";
     ResultSet rs;
 
-    public void updateBooking(String newroomID, String newroomType, String newPrice, 
-            String newroomAvailability, String newdateFrom, String newdateTo, 
-            String newlastName, String newfirstName)
+    public void updateGuest(String guestID, String guestFirstName, 
+            String guestLastName, String guestCountry, String phone, 
+            String mail)
     {
      
         Connection conn = null;
@@ -44,7 +44,10 @@ public class JDBCUpdateQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
  
-            rs = stmt.executeQuery("Select ");
+            rs = stmt.executeQuery("UPDATE GUEST SET GUESTFIRSTNAME ='"+guestFirstName
+                    +"', GUESTLASTNAME ='"+guestLastName+"', GUESTCOUNTRY ='"+guestCountry+"', "
+                    + "GUESTCONTACTPHONE ="+phone+", GUESTEMAIL ='"+mail
+                    +"' WHERE GUESTID ='"+guestID+"'");
            
             rs.close(); 
         } catch (SQLException se)
