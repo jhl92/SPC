@@ -117,35 +117,20 @@ public class JDBCUpdateQuery
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
-        {
-            se.printStackTrace();
-        } catch (Exception e)
-        {
+        { se.printStackTrace(); } 
+        catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
-                    conn.close();
-                }
-            } catch (SQLException se)
-            {
-            }
-            try
-            {
-                if (conn != null)
-                {
-                    conn.close();
-                }
-            } catch (SQLException se)
-            {
-                se.printStackTrace();
-            }
-        }
-        System.out.println("Done.");
-        return null;
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();}
+            } catch (SQLException se){}
+            try { if (conn != null) {
+                    conn.close(); }
+            } catch (SQLException se) {
+                se.printStackTrace(); }
+        } System.out.println("Done.");
+            return null;
     }
     
 }
