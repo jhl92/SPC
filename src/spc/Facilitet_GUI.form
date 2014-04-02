@@ -321,7 +321,7 @@
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="387" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
@@ -350,10 +350,10 @@
                                               <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace pref="107" max="32767" attributes="0"/>
                                               <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jComboBox2" min="-2" pref="169" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxBadmintonSelectDate" min="-2" pref="169" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                               <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                                           </Group>
@@ -362,18 +362,19 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxBadmintonTimeFrom" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                               <Component id="jLabel27" min="-2" pref="20" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jComboBox4" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxBadmintonTimeTo" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <Component id="jLabel92" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="88" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="44" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -404,17 +405,19 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxBadmintonSelectDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxBadmintonTimeFrom" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxBadmintonTimeTo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel92" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
                       <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Component id="jButtonBookFac" min="-2" pref="43" max="-2" attributes="0"/>
@@ -469,20 +472,48 @@
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;Badminton is a racquet sport usually played individually against each other &lt;br&gt;but can also be a 2v2 team sport. Bring your sweaty pants &lt;br&gt; and prepare for loads of fun and action in a game of strength, speed and &lt;br&gt; skills. Our highly experienced instructors are always available for hire&lt;/html&gt;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox2">
+            <Component class="javax.swing.JComboBox" name="jComboBoxBadmintonSelectDate">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBadmintonSelectDateActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox3">
+            <Component class="javax.swing.JComboBox" name="jComboBoxBadmintonTimeFrom">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
+                  <StringArray count="12">
+                    <StringItem index="0" value="8 am"/>
+                    <StringItem index="1" value="9 am"/>
+                    <StringItem index="2" value="10 am"/>
+                    <StringItem index="3" value="11 am"/>
+                    <StringItem index="4" value="12 am"/>
+                    <StringItem index="5" value="1 pm"/>
+                    <StringItem index="6" value="2 pm"/>
+                    <StringItem index="7" value="3 pm"/>
+                    <StringItem index="8" value="4 pm"/>
+                    <StringItem index="9" value="5 pm"/>
+                    <StringItem index="10" value="6 pm"/>
+                    <StringItem index="11" value="7 pm"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBadmintonTimeFromActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel27">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="To"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxBadmintonTimeTo">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="12">
                     <StringItem index="0" value="9 am"/>
                     <StringItem index="1" value="10 am"/>
                     <StringItem index="2" value="11 am"/>
@@ -494,33 +525,13 @@
                     <StringItem index="8" value="5 pm"/>
                     <StringItem index="9" value="6 pm"/>
                     <StringItem index="10" value="7 pm"/>
+                    <StringItem index="11" value="8 pm"/>
                   </StringArray>
                 </Property>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel27">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="To"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox4">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
-                    <StringItem index="0" value="10 am"/>
-                    <StringItem index="1" value="11 am"/>
-                    <StringItem index="2" value="12 am"/>
-                    <StringItem index="3" value="1 pm"/>
-                    <StringItem index="4" value="2 pm"/>
-                    <StringItem index="5" value="3 pm"/>
-                    <StringItem index="6" value="4 pm"/>
-                    <StringItem index="7" value="5 pm"/>
-                    <StringItem index="8" value="6 pm"/>
-                    <StringItem index="9" value="7 pm"/>
-                    <StringItem index="10" value="8 pm"/>
-                  </StringArray>
-                </Property>
-              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBadmintonTimeToActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel28">
               <Properties>
@@ -638,6 +649,11 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Component class="javax.swing.JLabel" name="jLabel92">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="must be between 1 and 4 hours"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel2Fitness">
@@ -660,18 +676,18 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jComboBox6" min="-2" pref="146" max="-2" attributes="0"/>
+                              <Component id="jComboBoxFitnessSelectDate" min="-2" pref="146" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
-                                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jComboBoxFitnessTimeFrom" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                                       <Component id="jLabel34" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jComboBox5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jComboBoxFitnessTimeTo" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -724,20 +740,20 @@
                                   <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxFitnessTimeFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxFitnessTimeTo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxFitnessSelectDate" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace pref="27" max="32767" attributes="0"/>
                       <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton8" min="-2" pref="41" max="-2" attributes="0"/>
-                      <EmptySpace pref="72" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                       <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -796,10 +812,33 @@
                 <Property name="text" type="java.lang.String" value="To"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox1">
+            <Component class="javax.swing.JComboBox" name="jComboBoxFitnessTimeFrom">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
+                  <StringArray count="12">
+                    <StringItem index="0" value="8 am"/>
+                    <StringItem index="1" value="9 am"/>
+                    <StringItem index="2" value="10 am"/>
+                    <StringItem index="3" value="11 am"/>
+                    <StringItem index="4" value="12 am"/>
+                    <StringItem index="5" value="1 pm"/>
+                    <StringItem index="6" value="2 pm"/>
+                    <StringItem index="7" value="3 pm"/>
+                    <StringItem index="8" value="4 pm"/>
+                    <StringItem index="9" value="5 pm"/>
+                    <StringItem index="10" value="6 pm"/>
+                    <StringItem index="11" value="7 pm"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxFitnessTimeFromActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxFitnessTimeTo">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="12">
                     <StringItem index="0" value="9 am"/>
                     <StringItem index="1" value="10 am"/>
                     <StringItem index="2" value="11 am"/>
@@ -811,40 +850,19 @@
                     <StringItem index="8" value="5 pm"/>
                     <StringItem index="9" value="6 pm"/>
                     <StringItem index="10" value="7 pm"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox5">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
-                    <StringItem index="0" value="10 am"/>
-                    <StringItem index="1" value="11 am"/>
-                    <StringItem index="2" value="12 am"/>
-                    <StringItem index="3" value="1 pm"/>
-                    <StringItem index="4" value="2 pm"/>
-                    <StringItem index="5" value="3 pm"/>
-                    <StringItem index="6" value="4 pm"/>
-                    <StringItem index="7" value="5 pm"/>
-                    <StringItem index="8" value="6 pm"/>
-                    <StringItem index="9" value="7 pm"/>
-                    <StringItem index="10" value="8 pm"/>
+                    <StringItem index="11" value="8 pm"/>
                   </StringArray>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox6">
+            <Component class="javax.swing.JComboBox" name="jComboBoxFitnessSelectDate">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox6ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxFitnessSelectDateActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel32">
@@ -1108,17 +1126,17 @@
                                               <EmptySpace min="0" pref="43" max="32767" attributes="0"/>
                                               <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jComboBox8" min="-2" pref="154" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxHandballSelectDate" min="-2" pref="154" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                               <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jComboBox12" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxGolfTimeFrom" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                               <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jComboBox13" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jComboBoxHandballTimeTo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1166,9 +1184,9 @@
                               <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jComboBox8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxHandballSelectDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxGolfTimeFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxHandballTimeTo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel46" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1208,17 +1226,37 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox8">
+            <Component class="javax.swing.JComboBox" name="jComboBoxHandballSelectDate">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="0"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox12">
+            <Component class="javax.swing.JComboBox" name="jComboBoxGolfTimeFrom">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
+                  <StringArray count="12">
+                    <StringItem index="0" value="8 am"/>
+                    <StringItem index="1" value="9 am"/>
+                    <StringItem index="2" value="10 am"/>
+                    <StringItem index="3" value="11 am"/>
+                    <StringItem index="4" value="12 am"/>
+                    <StringItem index="5" value="1 pm"/>
+                    <StringItem index="6" value="2 pm"/>
+                    <StringItem index="7" value="3 pm"/>
+                    <StringItem index="8" value="4 pm"/>
+                    <StringItem index="9" value="5 pm"/>
+                    <StringItem index="10" value="6 pm"/>
+                    <StringItem index="11" value="7 pm"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxHandballTimeTo">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="12">
                     <StringItem index="0" value="9 am"/>
                     <StringItem index="1" value="10 am"/>
                     <StringItem index="2" value="11 am"/>
@@ -1230,25 +1268,7 @@
                     <StringItem index="8" value="5 pm"/>
                     <StringItem index="9" value="6 pm"/>
                     <StringItem index="10" value="7 pm"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox13">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
-                    <StringItem index="0" value="10 am"/>
-                    <StringItem index="1" value="11 am"/>
-                    <StringItem index="2" value="12 am"/>
-                    <StringItem index="3" value="1 pm"/>
-                    <StringItem index="4" value="2 pm"/>
-                    <StringItem index="5" value="3 pm"/>
-                    <StringItem index="6" value="4 pm"/>
-                    <StringItem index="7" value="5 pm"/>
-                    <StringItem index="8" value="6 pm"/>
-                    <StringItem index="9" value="7 pm"/>
-                    <StringItem index="10" value="8 pm"/>
+                    <StringItem index="11" value="8 pm"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -1538,18 +1558,18 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel75" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jComboBox21" min="-2" pref="170" max="-2" attributes="0"/>
+                                      <Component id="jComboBoxVolleyballSelectDate" min="-2" pref="170" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jLabel76" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="jComboBox22" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxVolleyballTimeFrom" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                               <Component id="jLabel77" min="-2" pref="20" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jComboBox23" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxVolleyballTimeTo" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -1591,9 +1611,9 @@
                                   <Component id="jLabel75" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel76" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel77" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox22" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox23" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxVolleyballTimeFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxVolleyballTimeTo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxVolleyballSelectDate" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
@@ -1652,14 +1672,14 @@
                 <Property name="text" type="java.lang.String" value="Date:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox21">
+            <Component class="javax.swing.JComboBox" name="jComboBoxVolleyballSelectDate">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox21ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxVolleyballSelectDateActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel76">
@@ -1667,10 +1687,35 @@
                 <Property name="text" type="java.lang.String" value="From:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox22">
+            <Component class="javax.swing.JComboBox" name="jComboBoxVolleyballTimeFrom">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
+                  <StringArray count="12">
+                    <StringItem index="0" value="8 am"/>
+                    <StringItem index="1" value="9 am"/>
+                    <StringItem index="2" value="10 am"/>
+                    <StringItem index="3" value="11 am"/>
+                    <StringItem index="4" value="12 am"/>
+                    <StringItem index="5" value="1 pm"/>
+                    <StringItem index="6" value="2 pm"/>
+                    <StringItem index="7" value="3 pm"/>
+                    <StringItem index="8" value="4 pm"/>
+                    <StringItem index="9" value="5 pm"/>
+                    <StringItem index="10" value="6 pm"/>
+                    <StringItem index="11" value="7 pm"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel77">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="To"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxVolleyballTimeTo">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="12">
                     <StringItem index="0" value="9 am"/>
                     <StringItem index="1" value="10 am"/>
                     <StringItem index="2" value="11 am"/>
@@ -1682,30 +1727,7 @@
                     <StringItem index="8" value="5 pm"/>
                     <StringItem index="9" value="6 pm"/>
                     <StringItem index="10" value="7 pm"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel77">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="To"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox23">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
-                    <StringItem index="0" value="10 am"/>
-                    <StringItem index="1" value="11 am"/>
-                    <StringItem index="2" value="12 am"/>
-                    <StringItem index="3" value="1 pm"/>
-                    <StringItem index="4" value="2 pm"/>
-                    <StringItem index="5" value="3 pm"/>
-                    <StringItem index="6" value="4 pm"/>
-                    <StringItem index="7" value="5 pm"/>
-                    <StringItem index="8" value="6 pm"/>
-                    <StringItem index="9" value="7 pm"/>
-                    <StringItem index="10" value="8 pm"/>
+                    <StringItem index="11" value="8 pm"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -1778,18 +1800,18 @@
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                               <Component id="jLabel79" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jComboBox24" min="-2" pref="176" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxTennisSelectDate" min="-2" pref="176" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                                               <Component id="jLabel86" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
                                                   <Group type="102" attributes="0">
-                                                      <Component id="jComboBox25" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jComboBoxTennisTimeFrom" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Component id="jLabel87" min="-2" pref="20" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jComboBox26" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jComboBoxTennisTimeTo" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
@@ -1845,9 +1867,9 @@
                                   <Component id="jLabel79" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel86" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel87" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox25" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox26" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox24" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxTennisTimeFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxTennisTimeTo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBoxTennisSelectDate" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
@@ -1968,14 +1990,14 @@
                 <Property name="text" type="java.lang.String" value="Date:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox24">
+            <Component class="javax.swing.JComboBox" name="jComboBoxTennisSelectDate">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox24ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxTennisSelectDateActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel86">
@@ -1983,10 +2005,35 @@
                 <Property name="text" type="java.lang.String" value="From:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox25">
+            <Component class="javax.swing.JComboBox" name="jComboBoxTennisTimeFrom">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
+                  <StringArray count="12">
+                    <StringItem index="0" value="8 am"/>
+                    <StringItem index="1" value="9 am"/>
+                    <StringItem index="2" value="10 am"/>
+                    <StringItem index="3" value="11 am"/>
+                    <StringItem index="4" value="12 am"/>
+                    <StringItem index="5" value="1 pm"/>
+                    <StringItem index="6" value="2 pm"/>
+                    <StringItem index="7" value="3 pm"/>
+                    <StringItem index="8" value="4 pm"/>
+                    <StringItem index="9" value="5 pm"/>
+                    <StringItem index="10" value="6 pm"/>
+                    <StringItem index="11" value="7 pm"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel87">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="To"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxTennisTimeTo">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="12">
                     <StringItem index="0" value="9 am"/>
                     <StringItem index="1" value="10 am"/>
                     <StringItem index="2" value="11 am"/>
@@ -1998,30 +2045,7 @@
                     <StringItem index="8" value="5 pm"/>
                     <StringItem index="9" value="6 pm"/>
                     <StringItem index="10" value="7 pm"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel87">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="To"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox26">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="11">
-                    <StringItem index="0" value="10 am"/>
-                    <StringItem index="1" value="11 am"/>
-                    <StringItem index="2" value="12 am"/>
-                    <StringItem index="3" value="1 pm"/>
-                    <StringItem index="4" value="2 pm"/>
-                    <StringItem index="5" value="3 pm"/>
-                    <StringItem index="6" value="4 pm"/>
-                    <StringItem index="7" value="5 pm"/>
-                    <StringItem index="8" value="6 pm"/>
-                    <StringItem index="9" value="7 pm"/>
-                    <StringItem index="10" value="8 pm"/>
+                    <StringItem index="11" value="8 pm"/>
                   </StringArray>
                 </Property>
               </Properties>
