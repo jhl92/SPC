@@ -1248,7 +1248,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jListCheckOut.setModel(new javax.swing.AbstractListModel()
         {
-            String[] strings = { "54D7G     Gjøe, Janus Kayser     40942510     ZarkovZZZ@Hotmail.com", "786LK     Borg, Jonas     12345678     Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com" };
+            String[] strings = { "54D7G     Gjøe, Janus Kayser     40942510     ZarkovZZZ@Hotmail.com", "786LK     Borg, Jonas     12345678     Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK, Borg, Jonas, 12345678, Email@Email.dk", "W51Q5, Pedersen, Michael, 555-8791, Email@Email.com", "54D7G - Gjøe - Janus Kayser - 40942510 - ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5 - Pedersen, Michael - 555-8791 - Email@Email.com" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
@@ -2039,6 +2039,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonBookingCreateIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingCreateIDActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingCreateIDActionPerformed
+        boolean IDcreated = false;
+        String IDtemp = "";
+        while(IDcreated == false)
+        {
         String characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         int i1 = r.nextInt(36);
         int i2 = r.nextInt(36);
@@ -2050,7 +2054,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         String s3 = characters.substring(i3, (i3+1));
         String s4 = characters.substring(i4, (i4+1));
         String s5 = characters.substring(i5, (i5+1));
-        jTextFieldBookingGuestID.setText(s1 + s2 + s3 + s4 + s5);
+        IDtemp = s1 + s2 + s3 + s4 + s5;
+        ArrayList GuestIDtemp;
+        //Search through ArrayList from database to see if created ID already exists.
+        //If ID exists, then boolean will remain false and create a new ID, etc...
+        }
+        jTextFieldBookingGuestID.setText(IDtemp);
     }//GEN-LAST:event_jButtonBookingCreateIDActionPerformed
 
     private void jComboBoxCheckInMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxCheckInMonthActionPerformed
