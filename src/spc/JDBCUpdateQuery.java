@@ -9,11 +9,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
-/**
- *
- * @author Junheng Li
- */
+
 public class JDBCUpdateQuery
 {
         // JDBC driver & database URL
@@ -80,19 +78,10 @@ public class JDBCUpdateQuery
         System.out.println("Done.");
     }
     
-    public InfoObjectConstructor getInfo(String guestID){
+    public ArrayList<InfoObjectConstructor> getInfo(String guestID){
         Connection conn = null;
         Statement stmt = null;
-//        String rsLastName;
-//        String rsFirstName;
-//        String rsCountry;
-//        String rsContactPhone;
-//        String rsEmail;
-//        String rsReturning;
-//        String rsRoomId;
-//        String rsDateFrom;
-//        String rsDateTo;
-//        String rsPrice;
+        ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
         try
         {
             //Registrer JDBC driver
@@ -107,9 +96,11 @@ public class JDBCUpdateQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
  
-            rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on bookroom.guestid = guest.guestid where guest.guestid ='" + guestID + "'");
+            rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
+                    + "bookroom.guestid = guest.guestid where guest.guestid ='" 
+                    + guestID + "'");
            
-            if(rs.next()) {
+            while(rs.next()) {
             String rsLastName = rs.getString("GuestLastName");
             String rsFirstName = rs.getString("GuestFirstname");
             String rsCountry = rs.getString("GuestCountry");
@@ -119,10 +110,12 @@ public class JDBCUpdateQuery
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsDateTo = rs.getString("dateTo");
-            String rsPrice = rs.getString("BookingPrice");
-            InfoObjectConstructor info1 = new InfoObjectConstructor(rsLastName, rsFirstName, rsCountry, rsContactPhone, rsEmail, rsReturning, rsRoomId, rsDateFrom, rsDateTo, rsPrice);
-            return info1; 
-            }
+//            String rsPrice = rs.getString("BookingPrice");
+            InfoObjectConstructor info1 = new InfoObjectConstructor(rsLastName, 
+                    rsFirstName, rsCountry, rsContactPhone, rsEmail, 
+                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+            guestIDHistory.add(info1); 
+            } return guestIDHistory;
         } catch (SQLException se)
         {
             se.printStackTrace();
@@ -152,7 +145,7 @@ public class JDBCUpdateQuery
             }
         }
         System.out.println("Done.");
-     return null;
+        return null;
     }
     
 }
