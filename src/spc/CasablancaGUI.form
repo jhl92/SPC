@@ -2163,11 +2163,11 @@
                         <StringItem index="1" value="786LK     Borg, Jonas     12345678     Email@Email.dk"/>
                         <StringItem index="2" value="W51Q5     Pedersen, Michael     555-8791     Email@Email.com"/>
                         <StringItem index="3" value="54D7G, Gj&#xf8;e, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com"/>
-                        <StringItem index="4" value="786LK - Borg - Jonas - 12345678 - Email@Email.dk"/>
-                        <StringItem index="5" value="W51Q5     Pedersen, Michael     555-8791     Email@Email.com"/>
-                        <StringItem index="6" value="54D7G, Gj&#xf8;e, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com"/>
+                        <StringItem index="4" value="786LK, Borg, Jonas, 12345678, Email@Email.dk"/>
+                        <StringItem index="5" value="W51Q5, Pedersen, Michael, 555-8791, Email@Email.com"/>
+                        <StringItem index="6" value="54D7G - Gj&#xf8;e - Janus Kayser - 40942510 - ZarkovZZZ@Hotmail.com"/>
                         <StringItem index="7" value="786LK - Borg - Jonas - 12345678 - Email@Email.dk"/>
-                        <StringItem index="8" value="W51Q5     Pedersen, Michael     555-8791     Email@Email.com"/>
+                        <StringItem index="8" value="W51Q5 - Pedersen, Michael - 555-8791 - Email@Email.com"/>
                       </StringArray>
                     </Property>
                     <Property name="selectionMode" type="int" value="0"/>
