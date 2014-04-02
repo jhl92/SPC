@@ -2041,23 +2041,25 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {//GEN-HEADEREND:event_jButtonBookingCreateIDActionPerformed
         boolean IDcreated = false;
         String IDtemp = "";
-        while(IDcreated == false)
+        while (IDcreated == false)
         {
-        String characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        int i1 = r.nextInt(36);
-        int i2 = r.nextInt(36);
-        int i3 = r.nextInt(36);
-        int i4 = r.nextInt(36);
-        int i5 = r.nextInt(36);
-        String s1 = characters.substring(i1, (i1+1));
-        String s2 = characters.substring(i2, (i2+1));
-        String s3 = characters.substring(i3, (i3+1));
-        String s4 = characters.substring(i4, (i4+1));
-        String s5 = characters.substring(i5, (i5+1));
-        IDtemp = s1 + s2 + s3 + s4 + s5;
-        ArrayList GuestIDtemp;
-        //Search through ArrayList from database to see if created ID already exists.
-        //If ID exists, then boolean will remain false and create a new ID, etc...
+            String characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            int i1 = r.nextInt(36);
+            int i2 = r.nextInt(36);
+            int i3 = r.nextInt(36);
+            int i4 = r.nextInt(36);
+            int i5 = r.nextInt(36);
+            String s1 = characters.substring(i1, (i1 + 1));
+            String s2 = characters.substring(i2, (i2 + 1));
+            String s3 = characters.substring(i3, (i3 + 1));
+            String s4 = characters.substring(i4, (i4 + 1));
+            String s5 = characters.substring(i5, (i5 + 1));
+            IDtemp = s1 + s2 + s3 + s4 + s5;
+            ArrayList GuestIDtemp = jdcbselect.checkIdAva();
+            if (GuestIDtemp.contains(IDtemp))
+            {
+                IDcreated = true;
+            }
         }
         jTextFieldBookingGuestID.setText(IDtemp);
     }//GEN-LAST:event_jButtonBookingCreateIDActionPerformed
