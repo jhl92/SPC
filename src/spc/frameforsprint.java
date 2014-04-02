@@ -60,15 +60,24 @@ public class frameforsprint extends javax.swing.JFrame
         jTextFieldMail = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
         jTextFieldReturningGuest = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         jButtonSearch = new javax.swing.JButton();
         jTextFieldSearchLastName = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        jTextFieldUpdateGuestID = new javax.swing.JTextField();
+        jTextFieldUpdateFirstName = new javax.swing.JTextField();
+        jTextFieldUpdateLastName = new javax.swing.JTextField();
+        jTextFieldUpdateCountry = new javax.swing.JTextField();
+        jTextFieldUpdatePhone = new javax.swing.JTextField();
+        jTextFieldUpdateMail = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setText("Room ID:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
         jTextFieldRoomID.addActionListener(new java.awt.event.ActionListener()
         {
@@ -77,14 +86,22 @@ public class frameforsprint extends javax.swing.JFrame
                 jTextFieldRoomIDActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextFieldRoomID, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 10, 79, -1));
 
         jLabel3.setText("Employee ID: ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 39, -1, -1));
+        getContentPane().add(jTextFieldEmpID, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 39, 79, -1));
 
         jLabel4.setText("Date From:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 82, -1, -1));
 
         jLabel5.setText("Date To:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 82, -1, -1));
+        getContentPane().add(jTextFieldDateFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 119, 65, -1));
+        getContentPane().add(jTextFieldDateTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 119, 65, -1));
 
         jLabel6.setText("Price per. Night:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 151, -1, -1));
 
         jTextFieldPriceprNight.addActionListener(new java.awt.event.ActionListener()
         {
@@ -93,6 +110,7 @@ public class frameforsprint extends javax.swing.JFrame
                 jTextFieldPriceprNightActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextFieldPriceprNight, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 189, 93, -1));
 
         jButtonBookIT.setText("Book!");
         jButtonBookIT.addActionListener(new java.awt.event.ActionListener()
@@ -102,12 +120,15 @@ public class frameforsprint extends javax.swing.JFrame
                 jButtonBookITActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonBookIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 111, 45));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jLabel7.setText("ex. 1500.00");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 169, 100, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jLabel8.setText("ex. 20-dec-14, 20-december-14 or 20-12-14");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 99, 240, -1));
 
         jLabel9.setText("Guest:");
 
@@ -148,24 +169,25 @@ public class frameforsprint extends javax.swing.JFrame
             }
         });
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener()
+        jLabel15.setText("Returning Guest (Y/N):");
+
+        jButton2.setText("jButton2");
+        jButton2.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jTextField1ActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
-
-        jLabel15.setText("Returning Guest (Y/N):");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
@@ -197,13 +219,14 @@ public class frameforsprint extends javax.swing.JFrame
                                             .addComponent(jTextFieldPhone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
                                             .addComponent(jTextFieldMail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
                                             .addComponent(jTextFieldReturningGuest, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(1, 1, 1)))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGap(1, 1, 1))))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1)
-                        .addGap(40, 40, 40))))
+                        .addGap(30, 30, 30)
+                        .addComponent(jButton1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,12 +261,14 @@ public class frameforsprint extends javax.swing.JFrame
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldReturningGuest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGap(27, 27, 27)
+                .addComponent(jButton1)
+                .addGap(153, 153, 153)
+                .addComponent(jButton2)
+                .addContainerGap(255, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 0, -1, 724));
 
         jButtonSearch.setText("search");
         jButtonSearch.addActionListener(new java.awt.event.ActionListener()
@@ -253,100 +278,44 @@ public class frameforsprint extends javax.swing.JFrame
                 jButtonSearchActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
 
         jTextFieldSearchLastName.setText("Guest ID");
+        getContentPane().add(jTextFieldSearchLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 218, 138, 493));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextFieldSearchLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonSearch)
-                        .addGap(34, 34, 34))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel4)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(jLabel5))
-                                            .addComponent(jLabel6)))
-                                    .addComponent(jTextFieldPriceprNight, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonBookIT, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextFieldDateFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(25, 25, 25)
-                                        .addComponent(jTextFieldDateTo, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel2)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jTextFieldRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel3)
-                                        .addGap(5, 5, 5)
-                                        .addComponent(jTextFieldEmpID, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel2))
-                    .addComponent(jTextFieldRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(7, 7, 7)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextFieldEmpID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addGap(1, 1, 1)
-                .addComponent(jLabel8)
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextFieldDateFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldDateTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(2, 2, 2)
-                        .addComponent(jLabel7)
-                        .addGap(6, 6, 6)
-                        .addComponent(jTextFieldPriceprNight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButtonBookIT, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonSearch)
-                        .addGap(25, 25, 25))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextFieldSearchLastName)
-                        .addContainerGap())))
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jTextField1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 84, -1));
+
+        jTextFieldUpdateGuestID.setText("guestID");
+        getContentPane().add(jTextFieldUpdateGuestID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
+
+        jTextFieldUpdateFirstName.setText("first name");
+        getContentPane().add(jTextFieldUpdateFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
+
+        jTextFieldUpdateLastName.setText("last name");
+        getContentPane().add(jTextFieldUpdateLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
+
+        jTextFieldUpdateCountry.setText("country");
+        getContentPane().add(jTextFieldUpdateCountry, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
+
+        jTextFieldUpdatePhone.setText("phone");
+        jTextFieldUpdatePhone.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jTextFieldUpdatePhoneActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldUpdatePhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, -1, -1));
+
+        jTextFieldUpdateMail.setText("mail");
+        getContentPane().add(jTextFieldUpdateMail, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -393,11 +362,23 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButtonSearchActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchActionPerformed
-        info2 = update.getInfo(jTextFieldSearchLastName.getText());
-        jTextFieldFirstName.setText(info2.getFirstName());
-        jTextFieldLastName.setText(info2.getLastName());
-        jTextFieldCountry.setText(info2.getCountry());
+//        info2 = update.getInfo(jTextFieldSearchLastName.getText());
+//        jTextFieldFirstName.setText(info2.getFirstName());
+//        jTextFieldLastName.setText(info2.getLastName());
+//        jTextFieldCountry.setText(info2.getCountry());
     }//GEN-LAST:event_jButtonSearchActionPerformed
+
+    private void jTextFieldUpdatePhoneActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldUpdatePhoneActionPerformed
+    {//GEN-HEADEREND:event_jTextFieldUpdatePhoneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldUpdatePhoneActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
+    {//GEN-HEADEREND:event_jButton2ActionPerformed
+        update.updateGuest(jTextFieldUpdateGuestID.getText(), jTextFieldUpdateFirstName.getText(),
+                jTextFieldUpdateLastName.getText(), jTextFieldUpdateCountry.getText(),
+                jTextFieldUpdatePhone.getText(), jTextFieldUpdateMail.getText());
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     public static void main(String args[])
@@ -441,6 +422,7 @@ public class frameforsprint extends javax.swing.JFrame
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonBookIT;
     private javax.swing.JButton jButtonSearch;
     private javax.swing.JLabel jLabel1;
@@ -473,5 +455,11 @@ public class frameforsprint extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldReturningGuest;
     private javax.swing.JTextField jTextFieldRoomID;
     private javax.swing.JTextField jTextFieldSearchLastName;
+    private javax.swing.JTextField jTextFieldUpdateCountry;
+    private javax.swing.JTextField jTextFieldUpdateFirstName;
+    private javax.swing.JTextField jTextFieldUpdateGuestID;
+    private javax.swing.JTextField jTextFieldUpdateLastName;
+    private javax.swing.JTextField jTextFieldUpdateMail;
+    private javax.swing.JTextField jTextFieldUpdatePhone;
     // End of variables declaration//GEN-END:variables
 }
