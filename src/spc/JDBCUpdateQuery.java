@@ -22,6 +22,53 @@ public class JDBCUpdateQuery
     static final String user = "SEM2_TEST_GR13";
     static final String pass = "SEM2_TEST_GR13";
     ResultSet rs;
+    
+    public void updateBookRoom(String guestID, String roomID, String dateFrom,
+            String dateTo) 
+    {
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+ 
+            rs = stmt.executeQuery("UPDATE BOOKROOM SET ROOMID ='"+roomID
+                    +"', DATEFROM ='"+dateFrom+"', DATETO ='"+dateTo+"' "
+                    + "WHERE GUESTID ='"+guestID+"' OR ROOMID = '"+roomID+"'");
+           
+            rs.close(); 
+        } catch (SQLException se){
+            se.printStackTrace();
+        } catch (Exception e){
+            e.printStackTrace();
+        } finally{
+            try
+            {
+                if (stmt != null){
+                    conn.close();
+                }
+            } catch (SQLException se){}
+            try
+            {
+                if (conn != null){
+                    conn.close();
+                }
+            } catch (SQLException se){
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+    }
 
     public void updateGuest(String guestID, String guestFirstName, 
             String guestLastName, String guestCountry, String phone, 
@@ -50,25 +97,19 @@ public class JDBCUpdateQuery
                     +"' WHERE GUESTID ='"+guestID+"'");
            
             rs.close(); 
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
+        } finally{
+            try{
                 if (stmt != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
+            try{
                 if (conn != null)
                 {
                     conn.close();
