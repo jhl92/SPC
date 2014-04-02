@@ -12,6 +12,7 @@ package spc;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class JDBCSelectQuery
 {
@@ -23,7 +24,75 @@ public class JDBCSelectQuery
     static final String user = "SEM2_TEST_GR13";
     static final String pass = "SEM2_TEST_GR13";
     ResultSet rs;
+    ArrayList<String> guestIDArray = new ArrayList<>();
 
+    public ArrayList checkIdAva()
+    {
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+
+            rs = stmt.executeQuery("SELECT GUESTID from "
+                    + "GUEST");
+            System.out.println("Statement acceptet");
+          
+            try
+            {
+                
+                while(rs.next()) {
+                String guestID = rs.getString("GUESTID");
+                guestIDArray.add(guestID);
+                }
+                return guestIDArray;
+            } catch (Exception e)
+            {
+                System.err.println(e);
+            }
+
+            rs.close();
+        } catch (SQLException se)
+        {
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        } finally
+        {
+            try
+            {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+            }
+            try
+            {
+                if (conn != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+        return null;
+    }
     public void printWriter(String tomorrowDate)
     {
         Connection conn = null;
