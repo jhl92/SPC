@@ -36,7 +36,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private int currentYear;
     private SimpleDateFormat cWeekDay = new SimpleDateFormat("u");
     private SimpleDateFormat cDate = new SimpleDateFormat("d");
-    private SimpleDateFormat cMonth = new SimpleDateFormat("m");
+    private SimpleDateFormat cMonth = new SimpleDateFormat("M");
     private SimpleDateFormat cYear = new SimpleDateFormat("yy");
     String[] list28days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28"};
     String[] list29days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"};
@@ -774,6 +774,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jDialogBooking.setTitle("New Booking");
         jDialogBooking.setMinimumSize(new java.awt.Dimension(467, 396));
         jDialogBooking.setResizable(false);
 
@@ -2212,13 +2213,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldBookingGuestID.setText("");
         jButtonBookingBook.setVisible(false);
         jComboBoxBookingRoomType.setSelectedIndex(0);
-        
+        setCurrentDate();
+        jComboBoxBookingStartMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
+        jComboBoxBookingStartDate.setSelectedIndex(currentDate-1);
+        jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
+        jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
         jDialogBooking.setVisible(true);
-    }
-    
-    public void resetDialogDetails()
-    {
-        
     }
     
     public void resetDialogSearchRoom()

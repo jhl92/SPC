@@ -1127,6 +1127,7 @@
     </Component>
     <Container class="javax.swing.JDialog" name="jDialogBooking">
       <Properties>
+        <Property name="title" type="java.lang.String" value="New Booking"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[467, 396]"/>
         </Property>
