@@ -60,8 +60,10 @@ public class JDBCSelectQuery
                 String guestID = rs.getString("GUESTID");
                 String returningGuest = rs.getString("RETURNINGGUEST");
                     if(returningGuest.equals("Y")) {
-                        writer.println(lastName+", "+firstName+" - Guest ID: "+guestID+" (This person is a returning guest)");
-                    } else { writer.println(lastName+", "+firstName+" - Guest ID: "+guestID); }
+                        writer.println(lastName+", "+firstName+" - Guest ID: "
+                                +guestID+" (This person is a returning guest)");
+                    } else { writer.println(lastName+", "+firstName+" - Guest ID: "
+                            +guestID); }
                 }
                 writer.close();
             } catch (FileNotFoundException e)
