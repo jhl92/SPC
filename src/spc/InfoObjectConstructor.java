@@ -13,7 +13,7 @@ class InfoObjectConstructor
     private String roomID, Price, country, dateFrom,
             dateTo, lastName, firstName, contactPhone, email, returning;
 
-    public InfoObjectConstructor(String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, String dateTo, String Price)
+    public InfoObjectConstructor(String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, String dateTo)
     {
         this.roomID = roomID;
         this.Price = Price;
