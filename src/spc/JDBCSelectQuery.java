@@ -615,6 +615,55 @@ public class JDBCSelectQuery
         System.out.println("Done.");
 
     }
+    
+    public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(){
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<RoomAvaBookConstructor> RoomAvailability = new ArrayList<>();
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+ 
+            rs = stmt.executeQuery("SELECT ROOMS.ROOMID, ROOMS.ROOMTYPE, " +
+                    "ROOMS.ROOMPRICE, BOOKROOM.DATEFROM, BOOKROOM.DATETO" +
+                    "FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = ROOMS.ROOMID;");
+           
+            while(rs.next()) {
+            String rsDateFrom = rs.getString("dateFrom");
+            String rsDateTo = rs.getString("dateTo");
+            String rsRoomID = rs.getString("RoomID");
+            String rsRoomType = rs.getString("RoomType");
+//            String rsPrice = rs.getString("BookingPrice");
+            RoomAvaBookConstructor avaRoom = new RoomAvaBookConstructor(rsDateFrom, 
+                    rsDateTo, rsRoomID, rsRoomType);
+            RoomAvailability.add(avaRoom); 
+            } return RoomAvailability;
+        } catch (SQLException se)
+        { se.printStackTrace(); } 
+        catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();}
+            } catch (SQLException se){}
+            try { if (conn != null) {
+                    conn.close(); }
+            } catch (SQLException se) {
+                se.printStackTrace(); }
+        } System.out.println("Done.");
+            return null;
+    }
 //    public void JDBCSelectRoom ()
 //    {
 //        Connection conn = null;
