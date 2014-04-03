@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class JDBCUpdateQuery
 {
-        // JDBC driver & database URL
+    // JDBC driver & database URL
 
     static final String driver = "oracle.jdbc.driver.OracleDriver";
     static final String url = "jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:dat";
