@@ -638,16 +638,16 @@ public class JDBCSelectQuery
                     "ROOMS.ROOMPRICE, BOOKROOM.DATEFROM, BOOKROOM.DATETO" +
                     "FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = ROOMS.ROOMID;");
            
-            while(rs.next()) {
-            String rsDateFrom = rs.getString("dateFrom");
-            String rsDateTo = rs.getString("dateTo");
-            String rsRoomID = rs.getString("RoomID");
-            String rsRoomType = rs.getString("RoomType");
-//            String rsPrice = rs.getString("BookingPrice");
-            RoomAvaBookConstructor avaRoom = new RoomAvaBookConstructor(rsDateFrom, 
-                    rsDateTo, rsRoomID, rsRoomType);
-            RoomAvailability.add(avaRoom); 
-            } return RoomAvailability;
+            while (rs.next()) {
+                String rsRoomID = rs.getString("RoomID");
+                String rsRoomType = rs.getString("RoomType");
+                String rsDateFrom = rs.getString("dateFrom");
+                String rsDateTo = rs.getString("dateTo");
+                RoomAvaBookConstructor avaRoom = new RoomAvaBookConstructor(rsDateFrom,
+                        rsDateTo, rsRoomID, rsRoomType);
+                RoomAvailability.add(avaRoom);
+            }
+            return RoomAvailability;
         } catch (SQLException se)
         { se.printStackTrace(); } 
         catch (Exception e){
