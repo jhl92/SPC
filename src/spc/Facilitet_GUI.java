@@ -100,6 +100,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxTennisSelectDate.addItem(sdf.format(cal.getTime()));
         cal.roll(Calendar.DAY_OF_YEAR, true);
         jComboBoxTennisSelectDate.addItem(sdf.format(cal.getTime()));
+        
+        // jComboBoxOverviewEditBooking
+        cal.roll(Calendar.DAY_OF_YEAR, -6);
+        jComboBoxOverviewEditBookingDate1.addItem(sdf.format(cal.getTime()));
+        cal.roll(Calendar.DAY_OF_YEAR, true);
+        jComboBoxOverviewEditBookingDate1.addItem(sdf.format(cal.getTime()));
+        cal.roll(Calendar.DAY_OF_YEAR, true);
+        jComboBoxOverviewEditBookingDate1.addItem(sdf.format(cal.getTime()));
+        cal.roll(Calendar.DAY_OF_YEAR, true);
+        jComboBoxOverviewEditBookingDate1.addItem(sdf.format(cal.getTime()));
+        cal.roll(Calendar.DAY_OF_YEAR, true);
+        jComboBoxOverviewEditBookingDate1.addItem(sdf.format(cal.getTime()));
+        cal.roll(Calendar.DAY_OF_YEAR, true);
+        jComboBoxOverviewEditBookingDate1.addItem(sdf.format(cal.getTime()));
+        cal.roll(Calendar.DAY_OF_YEAR, true);
+        jComboBoxOverviewEditBookingDate1.addItem(sdf.format(cal.getTime()));
     }
     
 
@@ -114,11 +130,33 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {
 
         jDialog2 = new javax.swing.JDialog();
-        jPanel8 = new javax.swing.JPanel();
+        jPanelFacilityHelp = new javax.swing.JPanel();
         jLabel96 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
+        jDialog1 = new javax.swing.JDialog();
+        jPanelOverviewHelp = new javax.swing.JPanel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jDialog3 = new javax.swing.JDialog();
+        jPanelOverviewEditBooking = new javax.swing.JPanel();
+        jLabel98 = new javax.swing.JLabel();
+        jComboBoxOverviewEditBookingDate1 = new javax.swing.JComboBox();
+        jLabel99 = new javax.swing.JLabel();
+        jComboBoxOverviewEditBookingTimeFrom1 = new javax.swing.JComboBox();
+        jComboBoxOverviewEditBookingTimeTo1 = new javax.swing.JComboBox();
+        jLabel100 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
+        jButtonOverviewEditBookingSaveChanges1 = new javax.swing.JButton();
+        jDialogOverviewDelete = new javax.swing.JDialog();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel104 = new javax.swing.JLabel();
+        jButtonOverviewDeleteYes1 = new javax.swing.JButton();
+        jButtonOverviewDeleteNo1 = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
@@ -128,19 +166,20 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel81 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
+        jButtonOverviewEditBooking1 = new javax.swing.JButton();
+        jButtonOverviewEditBooking2 = new javax.swing.JButton();
+        jButtonOverviewDeleteBooking1 = new javax.swing.JButton();
+        jButtonOverviewDeleteBooking2 = new javax.swing.JButton();
+        jButtonOverviewEditBooking3 = new javax.swing.JButton();
+        jButtonOverviewDeleteBooking3 = new javax.swing.JButton();
+        jButtonOverviewEditBooking4 = new javax.swing.JButton();
+        jButtonOverviewDeleteBooking4 = new javax.swing.JButton();
         jLabel84 = new javax.swing.JLabel();
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
+        jButtonOverviewHelp = new javax.swing.JButton();
         jPanel1Badminton = new javax.swing.JPanel();
         jButtonBookFac = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -280,7 +319,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jDialog2.setMinimumSize(new java.awt.Dimension(435, 145));
 
-        jPanel8.setMinimumSize(new java.awt.Dimension(400, 140));
+        jPanelFacilityHelp.setMinimumSize(new java.awt.Dimension(400, 140));
 
         jLabel96.setText("You can book up to 4 facilities, as long as you dont exceed 4 hours per day");
 
@@ -291,22 +330,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel95.setText("You can book between 1 and 4 hours. (max 4 hours per day)");
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelFacilityHelpLayout = new javax.swing.GroupLayout(jPanelFacilityHelp);
+        jPanelFacilityHelp.setLayout(jPanelFacilityHelpLayout);
+        jPanelFacilityHelpLayout.setHorizontalGroup(
+            jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFacilityHelpLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel95)
                     .addComponent(jLabel72)
                     .addComponent(jLabel93)
                     .addComponent(jLabel96))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        jPanelFacilityHelpLayout.setVerticalGroup(
+            jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFacilityHelpLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel72)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -315,18 +354,196 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jLabel95)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel96)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jDialog2Layout = new javax.swing.GroupLayout(jDialog2.getContentPane());
         jDialog2.getContentPane().setLayout(jDialog2Layout);
         jDialog2Layout.setHorizontalGroup(
             jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelFacilityHelp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jDialog2Layout.setVerticalGroup(
             jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanelFacilityHelp, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jDialog1.setMinimumSize(new java.awt.Dimension(435, 145));
+        jDialog1.setPreferredSize(new java.awt.Dimension(435, 140));
+
+        jPanelOverviewHelp.setMinimumSize(new java.awt.Dimension(400, 140));
+        jPanelOverviewHelp.setPreferredSize(new java.awt.Dimension(400, 140));
+
+        jLabel92.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel92.setText("Help");
+
+        jLabel94.setText("<html>Delete booking: Delete your booking; You can always rebook a facility <br> as long as it is available.");
+
+        jLabel97.setText("<html>Edit booking: change the date and the time interval as long <br>  as it is available.");
+
+        javax.swing.GroupLayout jPanelOverviewHelpLayout = new javax.swing.GroupLayout(jPanelOverviewHelp);
+        jPanelOverviewHelp.setLayout(jPanelOverviewHelpLayout);
+        jPanelOverviewHelpLayout.setHorizontalGroup(
+            jPanelOverviewHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewHelpLayout.createSequentialGroup()
+                .addGroup(jPanelOverviewHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel92)
+                    .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 66, Short.MAX_VALUE))
+        );
+        jPanelOverviewHelpLayout.setVerticalGroup(
+            jPanelOverviewHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewHelpLayout.createSequentialGroup()
+                .addComponent(jLabel92)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 50, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelOverviewHelp, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jDialog3.setMinimumSize(new java.awt.Dimension(534, 200));
+
+        jLabel98.setText("Edit Booking");
+
+        jComboBoxOverviewEditBookingDate1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxOverviewEditBookingDate1ActionPerformed(evt);
+            }
+        });
+
+        jLabel99.setText("Date:");
+
+        jComboBoxOverviewEditBookingTimeFrom1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "8 am", "9 am", "10 am", "11 am", "12 am", "1 pm", "2 pm", "3 pm", "4 pm", "5 pm", "6 pm", "7 pm" }));
+
+        jComboBoxOverviewEditBookingTimeTo1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "9 am", "10 am", "11 am", "12 am", "1 pm", "2 pm", "3 pm", "4 pm", "5 pm", "6 pm", "7 pm", "8 pm" }));
+
+        jLabel100.setText("From:");
+
+        jLabel101.setText("To:");
+
+        jLabel102.setText("Current booking:");
+
+        jLabel103.setText("Change your booking to following date and time:");
+
+        jButtonOverviewEditBookingSaveChanges1.setText("Save changes");
+
+        javax.swing.GroupLayout jPanelOverviewEditBookingLayout = new javax.swing.GroupLayout(jPanelOverviewEditBooking);
+        jPanelOverviewEditBooking.setLayout(jPanelOverviewEditBookingLayout);
+        jPanelOverviewEditBookingLayout.setHorizontalGroup(
+            jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
+                .addGroup(jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel98)
+                    .addComponent(jLabel102)
+                    .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
+                        .addComponent(jLabel99)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxOverviewEditBookingDate1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel100)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxOverviewEditBookingTimeFrom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel101)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxOverviewEditBookingTimeTo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel103))
+                .addGap(0, 126, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelOverviewEditBookingLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonOverviewEditBookingSaveChanges1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39))
+        );
+        jPanelOverviewEditBookingLayout.setVerticalGroup(
+            jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
+                .addComponent(jLabel98)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel102)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addComponent(jLabel103)
+                .addGap(18, 18, 18)
+                .addGroup(jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxOverviewEditBookingDate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel99)
+                    .addComponent(jComboBoxOverviewEditBookingTimeFrom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxOverviewEditBookingTimeTo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel100)
+                    .addComponent(jLabel101))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonOverviewEditBookingSaveChanges1)
+                .addGap(8, 8, 8))
+        );
+
+        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
+        jDialog3.getContentPane().setLayout(jDialog3Layout);
+        jDialog3Layout.setHorizontalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelOverviewEditBooking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jDialog3Layout.setVerticalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelOverviewEditBooking, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jDialogOverviewDelete.setLocationByPlatform(true);
+        jDialogOverviewDelete.setMinimumSize(new java.awt.Dimension(290, 90));
+
+        jLabel104.setText("Are you sure you want to delete this booking");
+
+        jButtonOverviewDeleteYes1.setText("Yes");
+
+        jButtonOverviewDeleteNo1.setText("No");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel104)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jButtonOverviewDeleteYes1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonOverviewDeleteNo1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addComponent(jLabel104)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonOverviewDeleteYes1)
+                    .addComponent(jButtonOverviewDeleteNo1)))
+        );
+
+        javax.swing.GroupLayout jDialogOverviewDeleteLayout = new javax.swing.GroupLayout(jDialogOverviewDelete.getContentPane());
+        jDialogOverviewDelete.getContentPane().setLayout(jDialogOverviewDeleteLayout);
+        jDialogOverviewDeleteLayout.setHorizontalGroup(
+            jDialogOverviewDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jDialogOverviewDeleteLayout.setVerticalGroup(
+            jDialogOverviewDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -346,43 +563,43 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel83.setText("Booking4:");
 
-        jButton6.setText("Edit Booking");
-        jButton6.setActionCommand("jButton9");
-        jButton6.addActionListener(new java.awt.event.ActionListener()
+        jButtonOverviewEditBooking1.setText("Edit Booking");
+        jButtonOverviewEditBooking1.setActionCommand("jButton9");
+        jButtonOverviewEditBooking1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton6ActionPerformed(evt);
+                jButtonOverviewEditBooking1ActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Edit Booking");
+        jButtonOverviewEditBooking2.setText("Edit Booking");
 
-        jButton9.setText("Delete Booking");
-        jButton9.addActionListener(new java.awt.event.ActionListener()
+        jButtonOverviewDeleteBooking1.setText("Delete Booking");
+        jButtonOverviewDeleteBooking1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton9ActionPerformed(evt);
+                jButtonOverviewDeleteBooking1ActionPerformed(evt);
             }
         });
 
-        jButton10.setText("Delete Booking");
-        jButton10.addActionListener(new java.awt.event.ActionListener()
+        jButtonOverviewDeleteBooking2.setText("Delete Booking");
+        jButtonOverviewDeleteBooking2.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton10ActionPerformed(evt);
+                jButtonOverviewDeleteBooking2ActionPerformed(evt);
             }
         });
 
-        jButton11.setText("Edit Booking");
+        jButtonOverviewEditBooking3.setText("Edit Booking");
 
-        jButton12.setText("Delete Booking");
+        jButtonOverviewDeleteBooking3.setText("Delete Booking");
 
-        jButton13.setText("Edit Booking");
+        jButtonOverviewEditBooking4.setText("Edit Booking");
 
-        jButton14.setText("Delete Booking");
+        jButtonOverviewDeleteBooking4.setText("Delete Booking");
 
         jLabel84.setText("jLabel84");
 
@@ -394,6 +611,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel91.setText("jLabel91");
 
+        jButtonOverviewHelp.setText("Help");
+        jButtonOverviewHelp.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonOverviewHelpActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -402,50 +628,56 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGap(36, 36, 36)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel91)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel69)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel71)
-                            .addComponent(jLabel70)
-                            .addComponent(jLabel69)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel91)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel71)
+                                    .addComponent(jLabel70)
                                     .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jLabel73)
-                                        .addGap(63, 63, 63)
-                                        .addComponent(jLabel84))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jLabel82)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel89))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jLabel81)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel88))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jLabel83)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel90)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 529, Short.MAX_VALUE)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jButton13)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton14))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jButton11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton12))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jButton7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton10))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jButton6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton9)))))
-                        .addGap(72, 72, 72))))
+                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jLabel73)
+                                                .addGap(63, 63, 63)
+                                                .addComponent(jLabel84))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jLabel82)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jLabel89))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jLabel81)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jLabel88))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jLabel83)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jLabel90)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 519, Short.MAX_VALUE)
+                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jButtonOverviewEditBooking4)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButtonOverviewDeleteBooking4))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jButtonOverviewEditBooking3)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButtonOverviewDeleteBooking3))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jButtonOverviewEditBooking2)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButtonOverviewDeleteBooking2))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(jButtonOverviewEditBooking1)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButtonOverviewDeleteBooking1)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -458,26 +690,27 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jLabel69)
                 .addGap(15, 15, 15)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton9)
-                    .addComponent(jButton6)
+                    .addComponent(jButtonOverviewDeleteBooking1)
+                    .addComponent(jButtonOverviewEditBooking1)
                     .addComponent(jLabel73)
-                    .addComponent(jLabel84))
+                    .addComponent(jLabel84)
+                    .addComponent(jButtonOverviewHelp))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton10)
-                    .addComponent(jButton7)
+                    .addComponent(jButtonOverviewDeleteBooking2)
+                    .addComponent(jButtonOverviewEditBooking2)
                     .addComponent(jLabel81)
                     .addComponent(jLabel88))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton12)
-                    .addComponent(jButton11)
+                    .addComponent(jButtonOverviewDeleteBooking3)
+                    .addComponent(jButtonOverviewEditBooking3)
                     .addComponent(jLabel82)
                     .addComponent(jLabel89))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton14)
-                    .addComponent(jButton13)
+                    .addComponent(jButtonOverviewDeleteBooking4)
+                    .addComponent(jButtonOverviewEditBooking4)
                     .addComponent(jLabel83)
                     .addComponent(jLabel90))
                 .addGap(29, 29, 29)
@@ -1779,20 +2012,20 @@ public class Facilitet_GUI extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxFitnessTimeFromActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton10ActionPerformed
-    {//GEN-HEADEREND:event_jButton10ActionPerformed
+    private void jButtonOverviewDeleteBooking2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewDeleteBooking2ActionPerformed
+    {//GEN-HEADEREND:event_jButtonOverviewDeleteBooking2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_jButtonOverviewDeleteBooking2ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton9ActionPerformed
-    {//GEN-HEADEREND:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    private void jButtonOverviewDeleteBooking1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewDeleteBooking1ActionPerformed
+    {//GEN-HEADEREND:event_jButtonOverviewDeleteBooking1ActionPerformed
+        jDialogOverviewDelete.setVisible(true);
+    }//GEN-LAST:event_jButtonOverviewDeleteBooking1ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton6ActionPerformed
-    {//GEN-HEADEREND:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void jButtonOverviewEditBooking1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewEditBooking1ActionPerformed
+    {//GEN-HEADEREND:event_jButtonOverviewEditBooking1ActionPerformed
+        jDialog3.setVisible(true);
+    }//GEN-LAST:event_jButtonOverviewEditBooking1ActionPerformed
 
     private void jButtonBadmintonHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBadmintonHelpActionPerformed
     {//GEN-HEADEREND:event_jButtonBadmintonHelpActionPerformed
@@ -1876,6 +2109,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jDialog2.setVisible(true);
     }//GEN-LAST:event_jButtonTennisHelpActionPerformed
 
+    private void jButtonOverviewHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewHelpActionPerformed
+    {//GEN-HEADEREND:event_jButtonOverviewHelpActionPerformed
+         jDialog1.setVisible(true);
+    }//GEN-LAST:event_jButtonOverviewHelpActionPerformed
+
+    private void jComboBoxOverviewEditBookingDate1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxOverviewEditBookingDate1ActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxOverviewEditBookingDate1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxOverviewEditBookingDate1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1923,23 +2166,27 @@ public class Facilitet_GUI extends javax.swing.JFrame
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JButton jButtonBadmintonHelp;
     private javax.swing.JButton jButtonBookFac;
     private javax.swing.JButton jButtonFitnessHelp;
     private javax.swing.JButton jButtonHandBallHelp;
+    private javax.swing.JButton jButtonOverviewDeleteBooking1;
+    private javax.swing.JButton jButtonOverviewDeleteBooking2;
+    private javax.swing.JButton jButtonOverviewDeleteBooking3;
+    private javax.swing.JButton jButtonOverviewDeleteBooking4;
+    private javax.swing.JButton jButtonOverviewDeleteNo1;
+    private javax.swing.JButton jButtonOverviewDeleteYes1;
+    private javax.swing.JButton jButtonOverviewEditBooking1;
+    private javax.swing.JButton jButtonOverviewEditBooking2;
+    private javax.swing.JButton jButtonOverviewEditBooking3;
+    private javax.swing.JButton jButtonOverviewEditBooking4;
+    private javax.swing.JButton jButtonOverviewEditBookingSaveChanges1;
+    private javax.swing.JButton jButtonOverviewHelp;
     private javax.swing.JButton jButtonTennisHelp;
     private javax.swing.JButton jButtonVolleybalHelp;
     private javax.swing.JCheckBox jCheckBoxBadmintonInstruct;
@@ -1957,6 +2204,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JComboBox jComboBoxGolfTimeFrom;
     private javax.swing.JComboBox jComboBoxHandballSelectDate;
     private javax.swing.JComboBox jComboBoxHandballTimeTo;
+    private javax.swing.JComboBox jComboBoxOverviewEditBookingDate1;
+    private javax.swing.JComboBox jComboBoxOverviewEditBookingTimeFrom1;
+    private javax.swing.JComboBox jComboBoxOverviewEditBookingTimeTo1;
     private javax.swing.JComboBox jComboBoxSwimmingInstrucHours;
     private javax.swing.JComboBox jComboBoxTennisInstrucHours;
     private javax.swing.JComboBox jComboBoxTennisSelectDate;
@@ -1965,9 +2215,17 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JComboBox jComboBoxVolleyballSelectDate;
     private javax.swing.JComboBox jComboBoxVolleyballTimeFrom;
     private javax.swing.JComboBox jComboBoxVolleyballTimeTo;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
+    private javax.swing.JDialog jDialog3;
+    private javax.swing.JDialog jDialogOverviewDelete;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -2057,9 +2315,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JLabel jLabelBadmintonInstructHourLabel;
     private javax.swing.JLabel jLabelBadmintonInstructorPrice;
     private javax.swing.JLabel jLabelBadmintonPriceLabel;
@@ -2082,9 +2345,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel5Swimming;
     private javax.swing.JPanel jPanel6TableTennis;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel7Tennis;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel8Volleyball;
+    private javax.swing.JPanel jPanelFacilityHelp;
+    private javax.swing.JPanel jPanelOverviewEditBooking;
+    private javax.swing.JPanel jPanelOverviewHelp;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }
