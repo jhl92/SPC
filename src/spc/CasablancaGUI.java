@@ -2685,7 +2685,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         return daysInMonth;
     }
     
-    private void resetDialogBooking()
+    public void resetDialogBooking()
     {
         jTextFieldBookingFirstName.setText("");
         jTextFieldBookingLastName.setText("");
@@ -2705,7 +2705,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogBooking.setVisible(true);
     }
     
-    public void resetDialogSearchCustomer()
+    public void setupEditBooking(String guestID)
+    {
+        
+    }
+    
+    private void resetDialogSearchCustomer()
     {
         jTextFieldSearchCustomerFirstName.setText("");
         jTextFieldSearchCustomerLastName.setText("");
@@ -2724,7 +2729,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogSearchCustomer.setVisible(true);
     }
     
-    public void resetDialogSearchRoom()
+    private void resetDialogSearchRoom()
     {
         jListSearchRoomResult.setModel(null);
         
@@ -2743,12 +2748,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogSearchRoom.setVisible(true);
     }
     
-    public void resetDialogCheckIn()
+    private void resetDialogCheckIn()
     {
         jDialogCheckIn.setVisible(true);
     }
     
-    public void resetDialogCheckOut()
+    private void resetDialogCheckOut()
     {
         jDialogCheckOut.setVisible(true);
     }
