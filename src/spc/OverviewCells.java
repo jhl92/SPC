@@ -47,37 +47,35 @@ public class OverviewCells extends javax.swing.JPanel
         jDialogDetails = new javax.swing.JDialog();
         jPanelDetailsRoom = new javax.swing.JPanel();
         jLabelDetailsRoomID = new javax.swing.JLabel();
-        jPanelDetailsAvailabilityMarker = new javax.swing.JPanel();
-        jLabelDetailsAvailabilityMarkerText = new javax.swing.JLabel();
         jLabelDetailsRoomType = new javax.swing.JLabel();
-        jLabelNoChange10 = new javax.swing.JLabel();
         jLabelDetailsStartDate = new javax.swing.JLabel();
-        jLabelNoChange11 = new javax.swing.JLabel();
-        jLabelDetailsEndDate = new javax.swing.JLabel();
         jLabelNoChange12 = new javax.swing.JLabel();
         jLabelDetailsBookingDate = new javax.swing.JLabel();
-        jButtonChangeBooking = new javax.swing.JButton();
+        jLabelDetailsEndDate = new javax.swing.JLabel();
+        jLabelNoChange10 = new javax.swing.JLabel();
+        jLabelNoChange11 = new javax.swing.JLabel();
         jPanelDetailsCustomer = new javax.swing.JPanel();
-        jLabelDetailsNoChange2 = new javax.swing.JLabel();
-        jLabelDetailsNoChange3 = new javax.swing.JLabel();
-        jLabelDetailsNoChange4 = new javax.swing.JLabel();
-        jLabelDetailsNoChange5 = new javax.swing.JLabel();
-        jLabelDetailsNoChange6 = new javax.swing.JLabel();
-        jLabelDetailsNoChange7 = new javax.swing.JLabel();
-        jLabelDetailsNoChange8 = new javax.swing.JLabel();
-        jLabelDetailsNoChange9 = new javax.swing.JLabel();
-        jTextFieldDetailsFirstName = new javax.swing.JTextField();
-        jTextFieldDetailsLastName = new javax.swing.JTextField();
-        jTextFieldDetailsAddress = new javax.swing.JTextField();
-        jTextFieldDetailsCity = new javax.swing.JTextField();
-        jTextFieldDetailsPostalCode = new javax.swing.JTextField();
-        jTextFieldDetailsCountry = new javax.swing.JTextField();
-        jTextFieldDetailsPhoneNumber = new javax.swing.JTextField();
-        jTextFieldDetailsEmail = new javax.swing.JTextField();
-        jButtonChangeDetails = new javax.swing.JButton();
-        jButtonSaveDetails = new javax.swing.JButton();
-        jPanelDetailsExit = new javax.swing.JPanel();
+        jLabelEditDetailsNoChange1 = new javax.swing.JLabel();
+        jLabelDetailsFirstName = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange2 = new javax.swing.JLabel();
+        jLabelDetailsLastName = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange3 = new javax.swing.JLabel();
+        jLabelDetailsAddress = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange4 = new javax.swing.JLabel();
+        jLabelDetailsCity = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange5 = new javax.swing.JLabel();
+        jLabelDetailsPostalCode = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange6 = new javax.swing.JLabel();
+        jLabelDetailsCountry = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange7 = new javax.swing.JLabel();
+        jLabelDetailsPhone = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange8 = new javax.swing.JLabel();
+        jLabelDetailsEmail = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange17 = new javax.swing.JLabel();
+        jLabelDetailsGuestID = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
         jButtonExitDetails = new javax.swing.JButton();
+        jButtonChangeDetails = new javax.swing.JButton();
         jDialogSetupOverview = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
         jLabelSetupOverviewNoChange1 = new javax.swing.JLabel();
@@ -650,67 +648,42 @@ public class OverviewCells extends javax.swing.JPanel
         jLabelRoom4Day14Availability = new javax.swing.JLabel();
 
         jDialogDetails.setTitle("Details");
-        jDialogDetails.setMinimumSize(new java.awt.Dimension(537, 498));
+        jDialogDetails.setMinimumSize(new java.awt.Dimension(414, 467));
         jDialogDetails.setResizable(false);
 
         jPanelDetailsRoom.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jPanelDetailsRoom.setPreferredSize(new java.awt.Dimension(250, 450));
 
-        jLabelDetailsRoomID.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabelDetailsRoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDetailsRoomID.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabelDetailsRoomID.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabelDetailsRoomID.setText("001");
-        jLabelDetailsRoomID.setPreferredSize(new java.awt.Dimension(30, 30));
-
-        jPanelDetailsAvailabilityMarker.setBackground(new java.awt.Color(255, 0, 0));
-
-        jLabelDetailsAvailabilityMarkerText.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelDetailsAvailabilityMarkerText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDetailsAvailabilityMarkerText.setText("BOOKED");
-        jLabelDetailsAvailabilityMarkerText.setPreferredSize(new java.awt.Dimension(50, 30));
-
-        javax.swing.GroupLayout jPanelDetailsAvailabilityMarkerLayout = new javax.swing.GroupLayout(jPanelDetailsAvailabilityMarker);
-        jPanelDetailsAvailabilityMarker.setLayout(jPanelDetailsAvailabilityMarkerLayout);
-        jPanelDetailsAvailabilityMarkerLayout.setHorizontalGroup(
-            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanelDetailsAvailabilityMarkerLayout.setVerticalGroup(
-            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        jLabelDetailsRoomID.setPreferredSize(new java.awt.Dimension(50, 30));
 
         jLabelDetailsRoomType.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelDetailsRoomType.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabelDetailsRoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDetailsRoomType.setText("(Double Room)");
-
-        jLabelNoChange10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelNoChange10.setText("Start date:");
+        jLabelDetailsRoomType.setPreferredSize(new java.awt.Dimension(100, 30));
 
         jLabelDetailsStartDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabelDetailsStartDate.setText("2014 - 04 - 02");
-
-        jLabelNoChange11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelNoChange11.setText("End date:");
-
-        jLabelDetailsEndDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabelDetailsEndDate.setText("2014 - 04 - 16");
+        jLabelDetailsStartDate.setText("January 5th - 2014");
+        jLabelDetailsStartDate.setPreferredSize(new java.awt.Dimension(160, 20));
 
         jLabelNoChange12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelNoChange12.setText("Date of booking:");
 
         jLabelDetailsBookingDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelDetailsBookingDate.setText("2014 - 01 - 02");
-        jLabelDetailsBookingDate.setPreferredSize(new java.awt.Dimension(50, 20));
+        jLabelDetailsBookingDate.setPreferredSize(new java.awt.Dimension(160, 20));
 
-        jButtonChangeBooking.setText("Change Booking");
-        jButtonChangeBooking.setPreferredSize(new java.awt.Dimension(120, 30));
-        jButtonChangeBooking.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonChangeBookingActionPerformed(evt);
-            }
-        });
+        jLabelDetailsEndDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelDetailsEndDate.setText("2014 - 04 - 16");
+        jLabelDetailsEndDate.setPreferredSize(new java.awt.Dimension(160, 20));
+
+        jLabelNoChange10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelNoChange10.setText("Start date:");
+
+        jLabelNoChange11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelNoChange11.setText("End date:");
 
         javax.swing.GroupLayout jPanelDetailsRoomLayout = new javax.swing.GroupLayout(jPanelDetailsRoom);
         jPanelDetailsRoom.setLayout(jPanelDetailsRoomLayout);
@@ -718,213 +691,187 @@ public class OverviewCells extends javax.swing.JPanel
             jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelDetailsRoomLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelDetailsBookingDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanelDetailsRoomLayout.createSequentialGroup()
-                        .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanelDetailsRoomLayout.createSequentialGroup()
-                        .addGroup(jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelDetailsEndDate)
-                            .addGroup(jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabelNoChange10, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addComponent(jLabelNoChange11)
-                            .addComponent(jLabelNoChange12)
-                            .addComponent(jButtonChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                .addGroup(jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelDetailsBookingDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanelDetailsRoomLayout.createSequentialGroup()
+                            .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabelNoChange10)
+                        .addComponent(jLabelNoChange11)
+                        .addComponent(jLabelNoChange12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelDetailsRoomLayout.setVerticalGroup(
             jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelDetailsRoomLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGroup(jPanelDetailsRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
                 .addComponent(jLabelNoChange10)
                 .addGap(0, 0, 0)
-                .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelNoChange11)
                 .addGap(0, 0, 0)
-                .addComponent(jLabelDetailsEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelNoChange12)
                 .addGap(0, 0, 0)
-                .addComponent(jLabelDetailsBookingDate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jLabelDetailsBookingDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanelDetailsCustomer.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jLabelDetailsNoChange2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange2.setText("First Name:");
-        jLabelDetailsNoChange2.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelEditDetailsNoChange1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange1.setText("First Name:");
+        jLabelEditDetailsNoChange1.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jLabelDetailsNoChange3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange3.setText("Last Name:");
-        jLabelDetailsNoChange3.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelDetailsFirstName.setText("Sylvester");
+        jLabelDetailsFirstName.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsFirstName.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jLabelDetailsNoChange4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange4.setText("Address:");
-        jLabelDetailsNoChange4.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelEditDetailsNoChange2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange2.setText("Last Name:");
+        jLabelEditDetailsNoChange2.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jLabelDetailsNoChange5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange5.setText("City:");
-        jLabelDetailsNoChange5.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelDetailsLastName.setText("Stallone");
+        jLabelDetailsLastName.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsLastName.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jLabelDetailsNoChange6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange6.setText("Postal Code:");
-        jLabelDetailsNoChange6.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelEditDetailsNoChange3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange3.setText("Address:");
+        jLabelEditDetailsNoChange3.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jLabelDetailsNoChange7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange7.setText("Country:");
-        jLabelDetailsNoChange7.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelDetailsAddress.setText("Hollywood Bouleward 1001");
+        jLabelDetailsAddress.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsAddress.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jLabelDetailsNoChange8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange8.setText("Phone-number:");
-        jLabelDetailsNoChange8.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelEditDetailsNoChange4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange4.setText("City:");
+        jLabelEditDetailsNoChange4.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jLabelDetailsNoChange9.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabelDetailsNoChange9.setText("E-mail address:");
-        jLabelDetailsNoChange9.setPreferredSize(new java.awt.Dimension(44, 13));
+        jLabelDetailsCity.setText("Hollywood");
+        jLabelDetailsCity.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsCity.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jTextFieldDetailsFirstName.setEditable(false);
-        jTextFieldDetailsFirstName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsFirstName.setText("Adam Foster");
+        jLabelEditDetailsNoChange5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange5.setText("Postal Code:");
+        jLabelEditDetailsNoChange5.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jTextFieldDetailsLastName.setEditable(false);
-        jTextFieldDetailsLastName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsLastName.setText("Sandler");
+        jLabelDetailsPostalCode.setText("90210");
+        jLabelDetailsPostalCode.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsPostalCode.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jTextFieldDetailsAddress.setEditable(false);
-        jTextFieldDetailsAddress.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsAddress.setText("Purple Street 41");
+        jLabelEditDetailsNoChange6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange6.setText("Country:");
+        jLabelEditDetailsNoChange6.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jTextFieldDetailsCity.setEditable(false);
-        jTextFieldDetailsCity.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsCity.setText("Beverly Hills");
+        jLabelDetailsCountry.setText("United States");
+        jLabelDetailsCountry.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsCountry.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jTextFieldDetailsPostalCode.setEditable(false);
-        jTextFieldDetailsPostalCode.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsPostalCode.setText("90210");
+        jLabelEditDetailsNoChange7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange7.setText("Phone-number:");
+        jLabelEditDetailsNoChange7.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jTextFieldDetailsCountry.setEditable(false);
-        jTextFieldDetailsCountry.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsCountry.setText("United States of America");
+        jLabelDetailsPhone.setText("555 - 9431");
+        jLabelDetailsPhone.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsPhone.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jTextFieldDetailsPhoneNumber.setEditable(false);
-        jTextFieldDetailsPhoneNumber.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsPhoneNumber.setText("555-8474");
+        jLabelEditDetailsNoChange8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange8.setText("E-mail address:");
+        jLabelEditDetailsNoChange8.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jTextFieldDetailsEmail.setEditable(false);
-        jTextFieldDetailsEmail.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jTextFieldDetailsEmail.setText("SandlersBiatch@Hotmail.com");
+        jLabelDetailsEmail.setText("ItalianStallion@ActorsMails.net");
+        jLabelDetailsEmail.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsEmail.setPreferredSize(new java.awt.Dimension(200, 20));
 
-        jButtonChangeDetails.setText("Change Details");
-        jButtonChangeDetails.setPreferredSize(new java.awt.Dimension(120, 30));
-        jButtonChangeDetails.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonChangeDetailsActionPerformed(evt);
-            }
-        });
+        jLabelEditDetailsNoChange17.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange17.setText("Guest ID:");
+        jLabelEditDetailsNoChange17.setPreferredSize(new java.awt.Dimension(44, 13));
 
-        jButtonSaveDetails.setText("Save Details");
-        jButtonSaveDetails.setPreferredSize(new java.awt.Dimension(120, 30));
-        jButtonSaveDetails.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonSaveDetailsActionPerformed(evt);
-            }
-        });
+        jLabelDetailsGuestID.setText("R4MB0");
+        jLabelDetailsGuestID.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabelDetailsGuestID.setPreferredSize(new java.awt.Dimension(200, 20));
 
         javax.swing.GroupLayout jPanelDetailsCustomerLayout = new javax.swing.GroupLayout(jPanelDetailsCustomer);
         jPanelDetailsCustomer.setLayout(jPanelDetailsCustomerLayout);
         jPanelDetailsCustomerLayout.setHorizontalGroup(
             jPanelDetailsCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelDetailsCustomerLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addGroup(jPanelDetailsCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextFieldDetailsFirstName)
-                    .addComponent(jTextFieldDetailsLastName)
-                    .addComponent(jTextFieldDetailsAddress)
-                    .addComponent(jTextFieldDetailsCity)
-                    .addComponent(jTextFieldDetailsPostalCode)
-                    .addComponent(jTextFieldDetailsCountry)
-                    .addComponent(jTextFieldDetailsPhoneNumber)
-                    .addComponent(jTextFieldDetailsEmail)
-                    .addGroup(jPanelDetailsCustomerLayout.createSequentialGroup()
-                        .addGroup(jPanelDetailsCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelDetailsNoChange2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelDetailsNoChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelDetailsNoChange9, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanelDetailsCustomerLayout.createSequentialGroup()
-                        .addComponent(jButtonChangeDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonSaveDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(jLabelDetailsFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsPostalCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange17, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
         );
         jPanelDetailsCustomerLayout.setVerticalGroup(
             jPanelDetailsCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelDetailsCustomerLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelEditDetailsNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldDetailsFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldDetailsLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(4, 4, 4)
-                .addComponent(jTextFieldDetailsAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldDetailsCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldDetailsPostalCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldDetailsCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsPostalCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldDetailsPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabelDetailsNoChange9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelDetailsCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTextFieldDetailsEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanelDetailsCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonChangeDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonSaveDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabelDetailsPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabelDetailsEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jLabelDetailsGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
         );
 
         jButtonExitDetails.setText("Exit");
-        jButtonExitDetails.setPreferredSize(new java.awt.Dimension(120, 30));
+        jButtonExitDetails.setPreferredSize(new java.awt.Dimension(164, 35));
         jButtonExitDetails.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -933,21 +880,35 @@ public class OverviewCells extends javax.swing.JPanel
             }
         });
 
-        javax.swing.GroupLayout jPanelDetailsExitLayout = new javax.swing.GroupLayout(jPanelDetailsExit);
-        jPanelDetailsExit.setLayout(jPanelDetailsExitLayout);
-        jPanelDetailsExitLayout.setHorizontalGroup(
-            jPanelDetailsExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelDetailsExitLayout.createSequentialGroup()
-                .addContainerGap(399, Short.MAX_VALUE)
-                .addComponent(jButtonExitDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12))
-        );
-        jPanelDetailsExitLayout.setVerticalGroup(
-            jPanelDetailsExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelDetailsExitLayout.createSequentialGroup()
+        jButtonChangeDetails.setText("Change Details");
+        jButtonChangeDetails.setPreferredSize(new java.awt.Dimension(164, 35));
+        jButtonChangeDetails.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonChangeDetailsActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonExitDetails, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonChangeDetails, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonChangeDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
                 .addComponent(jButtonExitDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jDialogDetailsLayout = new javax.swing.GroupLayout(jDialogDetails.getContentPane());
@@ -955,19 +916,23 @@ public class OverviewCells extends javax.swing.JPanel
         jDialogDetailsLayout.setHorizontalGroup(
             jDialogDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogDetailsLayout.createSequentialGroup()
-                .addComponent(jPanelDetailsRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelDetailsCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jPanelDetailsCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanelDetailsExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jDialogDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelDetailsRoom, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
         jDialogDetailsLayout.setVerticalGroup(
             jDialogDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogDetailsLayout.createSequentialGroup()
                 .addGroup(jDialogDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanelDetailsCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanelDetailsRoom, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE))
-                .addGap(0, 0, 0)
-                .addComponent(jPanelDetailsExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanelDetailsCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDialogDetailsLayout.createSequentialGroup()
+                        .addComponent(jPanelDetailsRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(0, 0, 0))
         );
 
         jDialogSetupOverview.setTitle("Setup Overview");
@@ -8399,49 +8364,10 @@ public class OverviewCells extends javax.swing.JPanel
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanelRoom4Day14MousePressed
 
-    private void jButtonChangeBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeBookingActionPerformed
-    {//GEN-HEADEREND:event_jButtonChangeBookingActionPerformed
-        //Open the Booking-window with the selected room-data also shown in Details-window.
-    }//GEN-LAST:event_jButtonChangeBookingActionPerformed
-
     private void jButtonChangeDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonChangeDetailsActionPerformed
-        jButtonSaveDetails.setVisible(true);
-        jButtonChangeDetails.setVisible(false);
-
-        jTextFieldDetailsFirstName.setEditable(true);
-        jTextFieldDetailsLastName.setEditable(true);
-        jTextFieldDetailsAddress.setEditable(true);
-        jTextFieldDetailsCity.setEditable(true);
-        jTextFieldDetailsPostalCode.setEditable(true);
-        jTextFieldDetailsCountry.setEditable(true);
-        jTextFieldDetailsPhoneNumber.setEditable(true);
-        jTextFieldDetailsEmail.setEditable(true);
+        
     }//GEN-LAST:event_jButtonChangeDetailsActionPerformed
-
-    private void jButtonSaveDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSaveDetailsActionPerformed
-    {//GEN-HEADEREND:event_jButtonSaveDetailsActionPerformed
-        jTextFieldDetailsFirstName.getText();
-        jTextFieldDetailsLastName.getText();
-        jTextFieldDetailsAddress.getText();
-        jTextFieldDetailsCity.getText();
-        jTextFieldDetailsPostalCode.getText();
-        jTextFieldDetailsCountry.getText();
-        jTextFieldDetailsPhoneNumber.getText();
-        jTextFieldDetailsEmail.getText();
-
-        jButtonSaveDetails.setVisible(false);
-        jButtonChangeDetails.setVisible(true);
-
-        jTextFieldDetailsFirstName.setEditable(false);
-        jTextFieldDetailsLastName.setEditable(false);
-        jTextFieldDetailsAddress.setEditable(false);
-        jTextFieldDetailsCity.setEditable(false);
-        jTextFieldDetailsPostalCode.setEditable(false);
-        jTextFieldDetailsCountry.setEditable(false);
-        jTextFieldDetailsPhoneNumber.setEditable(false);
-        jTextFieldDetailsEmail.setEditable(false);
-    }//GEN-LAST:event_jButtonSaveDetailsActionPerformed
 
     private void jButtonExitDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonExitDetailsActionPerformed
@@ -8450,17 +8376,23 @@ public class OverviewCells extends javax.swing.JPanel
 
     private void jTextFieldRow1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow1ActionPerformed
     {//GEN-HEADEREND:event_jTextFieldRow1ActionPerformed
-
+        jTextFieldRow1.setText("");
+        jTextFieldRow1.setFont(fontNormal);
+        jTextFieldRow1.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow1ActionPerformed
 
     private void jTextFieldRow2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow2ActionPerformed
     {//GEN-HEADEREND:event_jTextFieldRow2ActionPerformed
-
+        jTextFieldRow2.setText("");
+        jTextFieldRow2.setFont(fontNormal);
+        jTextFieldRow2.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow2ActionPerformed
 
     private void jTextFieldRow3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow3ActionPerformed
     {//GEN-HEADEREND:event_jTextFieldRow3ActionPerformed
-
+        jTextFieldRow3.setText("");
+        jTextFieldRow3.setFont(fontNormal);
+        jTextFieldRow3.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow3ActionPerformed
 
     private void jTextFieldRow4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow4ActionPerformed
@@ -9524,10 +9456,8 @@ public class OverviewCells extends javax.swing.JPanel
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonChangeBooking;
     private javax.swing.JButton jButtonChangeDetails;
     private javax.swing.JButton jButtonExitDetails;
-    private javax.swing.JButton jButtonSaveDetails;
     private javax.swing.JButton jButtonSetupOverviewExit;
     private javax.swing.JButton jButtonSetupOverviewShowRooms;
     private javax.swing.JComboBox jComboBoxSetupOverviewStartDate;
@@ -9578,20 +9508,29 @@ public class OverviewCells extends javax.swing.JPanel
     private javax.swing.JLabel jLabelDate14;
     private javax.swing.JLabel jLabelDate14Day;
     private javax.swing.JLabel jLabelDate14Year;
-    private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
+    private javax.swing.JLabel jLabelDetailsAddress;
     private javax.swing.JLabel jLabelDetailsBookingDate;
+    private javax.swing.JLabel jLabelDetailsCity;
+    private javax.swing.JLabel jLabelDetailsCountry;
+    private javax.swing.JLabel jLabelDetailsEmail;
     private javax.swing.JLabel jLabelDetailsEndDate;
-    private javax.swing.JLabel jLabelDetailsNoChange2;
-    private javax.swing.JLabel jLabelDetailsNoChange3;
-    private javax.swing.JLabel jLabelDetailsNoChange4;
-    private javax.swing.JLabel jLabelDetailsNoChange5;
-    private javax.swing.JLabel jLabelDetailsNoChange6;
-    private javax.swing.JLabel jLabelDetailsNoChange7;
-    private javax.swing.JLabel jLabelDetailsNoChange8;
-    private javax.swing.JLabel jLabelDetailsNoChange9;
+    private javax.swing.JLabel jLabelDetailsFirstName;
+    private javax.swing.JLabel jLabelDetailsGuestID;
+    private javax.swing.JLabel jLabelDetailsLastName;
+    private javax.swing.JLabel jLabelDetailsPhone;
+    private javax.swing.JLabel jLabelDetailsPostalCode;
     private javax.swing.JLabel jLabelDetailsRoomID;
     private javax.swing.JLabel jLabelDetailsRoomType;
     private javax.swing.JLabel jLabelDetailsStartDate;
+    private javax.swing.JLabel jLabelEditDetailsNoChange1;
+    private javax.swing.JLabel jLabelEditDetailsNoChange17;
+    private javax.swing.JLabel jLabelEditDetailsNoChange2;
+    private javax.swing.JLabel jLabelEditDetailsNoChange3;
+    private javax.swing.JLabel jLabelEditDetailsNoChange4;
+    private javax.swing.JLabel jLabelEditDetailsNoChange5;
+    private javax.swing.JLabel jLabelEditDetailsNoChange6;
+    private javax.swing.JLabel jLabelEditDetailsNoChange7;
+    private javax.swing.JLabel jLabelEditDetailsNoChange8;
     private javax.swing.JLabel jLabelNoChange1;
     private javax.swing.JLabel jLabelNoChange10;
     private javax.swing.JLabel jLabelNoChange11;
@@ -9970,6 +9909,7 @@ public class OverviewCells extends javax.swing.JPanel
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanelDay01;
     private javax.swing.JPanel jPanelDay02;
     private javax.swing.JPanel jPanelDay03;
@@ -9984,9 +9924,7 @@ public class OverviewCells extends javax.swing.JPanel
     private javax.swing.JPanel jPanelDay12;
     private javax.swing.JPanel jPanelDay13;
     private javax.swing.JPanel jPanelDay14;
-    private javax.swing.JPanel jPanelDetailsAvailabilityMarker;
     private javax.swing.JPanel jPanelDetailsCustomer;
-    private javax.swing.JPanel jPanelDetailsExit;
     private javax.swing.JPanel jPanelDetailsRoom;
     private javax.swing.JPanel jPanelOverview;
     private javax.swing.JPanel jPanelRoom1;
@@ -10112,14 +10050,6 @@ public class OverviewCells extends javax.swing.JPanel
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField9;
-    private javax.swing.JTextField jTextFieldDetailsAddress;
-    private javax.swing.JTextField jTextFieldDetailsCity;
-    private javax.swing.JTextField jTextFieldDetailsCountry;
-    private javax.swing.JTextField jTextFieldDetailsEmail;
-    private javax.swing.JTextField jTextFieldDetailsFirstName;
-    private javax.swing.JTextField jTextFieldDetailsLastName;
-    private javax.swing.JTextField jTextFieldDetailsPhoneNumber;
-    private javax.swing.JTextField jTextFieldDetailsPostalCode;
     private javax.swing.JTextField jTextFieldRow1;
     private javax.swing.JTextField jTextFieldRow2;
     private javax.swing.JTextField jTextFieldRow3;

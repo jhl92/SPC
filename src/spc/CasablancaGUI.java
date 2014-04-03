@@ -111,11 +111,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabelSearchRoomNoChange1 = new javax.swing.JLabel();
         jComboBoxSearchRoomType = new javax.swing.JComboBox();
         jLabelSearchRoomTypePersonsNotifier = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
+        jComboBoxConsecutiveDays = new javax.swing.JComboBox();
         jRadioButtonSearchRoomCheckOut = new javax.swing.JRadioButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList();
+        jListSearchRoomResult = new javax.swing.JList();
         jPanel3 = new javax.swing.JPanel();
         jLabelSearchNoChange2 = new javax.swing.JLabel();
         jComboBoxSearchStartMonth = new javax.swing.JComboBox();
@@ -193,6 +193,52 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jButtonCheckOutLoad = new javax.swing.JButton();
         jDialogCheckOutAccountDetails = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
+        jDialogEditDetails = new javax.swing.JDialog();
+        jPanelEditBookingRoom = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jPanelDetailsAvailabilityMarker = new javax.swing.JPanel();
+        jLabelDetailsAvailabilityMarkerText = new javax.swing.JLabel();
+        jLabelDetailsRoomType = new javax.swing.JLabel();
+        jLabelDetailsRoomID = new javax.swing.JLabel();
+        jPanelEditBookingCustomer = new javax.swing.JPanel();
+        jLabelEditDetailsNoChange1 = new javax.swing.JLabel();
+        jTextFieldEditDetailsFirstName = new javax.swing.JTextField();
+        jLabelEditDetailsNoChange2 = new javax.swing.JLabel();
+        jTextFieldEditDetailsLastName = new javax.swing.JTextField();
+        jLabelEditDetailsNoChange3 = new javax.swing.JLabel();
+        jTextFieldEditDetailsAddress = new javax.swing.JTextField();
+        jLabelEditDetailsNoChange4 = new javax.swing.JLabel();
+        jTextFieldEditDetailsCity = new javax.swing.JTextField();
+        jLabelEditDetailsNoChange5 = new javax.swing.JLabel();
+        jTextFieldEditDetailsPostalCode = new javax.swing.JTextField();
+        jLabelEditDetailsNoChange6 = new javax.swing.JLabel();
+        jTextFieldEditDetailsCountry = new javax.swing.JTextField();
+        jLabelEditDetailsNoChange7 = new javax.swing.JLabel();
+        jTextFieldEditDetailsPhoneNumber = new javax.swing.JTextField();
+        jLabelEditDetailsNoChange8 = new javax.swing.JLabel();
+        jTextFieldEditDetailsEmail = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange9 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange10 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange11 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange12 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange13 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange14 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange15 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange16 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabelEditDetailsNoChange17 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
         jPanelOverviewCells1 = new javax.swing.JPanel();
         jButtonRoomArrowUp = new javax.swing.JButton();
         jButtonRoomArrowDown = new javax.swing.JButton();
@@ -581,8 +627,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabelSearchRoomTypePersonsNotifier.setText("(5 persons)");
         jLabelSearchRoomTypePersonsNotifier.setPreferredSize(new java.awt.Dimension(70, 22));
 
-        jComboBox1.setMaximumRowCount(14);
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 day", "2 days", "3 days", "4 days", "5 days", "6 days", "7 days", "8 days", "9 days", "10 days", "11 days", "12 days", "13 days", "14 days", "15 days", "16 days", "17 days", "18 days", "19 days", "20 days", "21 days", "22 days", "23 days", "24 days", "25 days", "26 days", "27 days", "28 days" }));
+        jComboBoxConsecutiveDays.setMaximumRowCount(14);
+        jComboBoxConsecutiveDays.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 day", "2 days", "3 days", "4 days", "5 days", "6 days", "7 days", "8 days", "9 days", "10 days", "11 days", "12 days", "13 days", "14 days", "15 days", "16 days", "17 days", "18 days", "19 days", "20 days", "21 days", "22 days", "23 days", "24 days", "25 days", "26 days", "27 days", "28 days" }));
 
         buttonGroupSearchRoomChoice.add(jRadioButtonSearchRoomCheckOut);
         jRadioButtonSearchRoomCheckOut.setText("<html>Search for rooms with check-out on the specified<br>start date.</html>");
@@ -609,7 +655,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                             .addComponent(jRadioButtonSearchRoomCheckOut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(154, 154, 154)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jComboBoxConsecutiveDays, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(20, 20, 20))
         );
         jPanel6Layout.setVerticalGroup(
@@ -626,7 +672,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addGap(20, 20, 20)
                 .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jComboBoxConsecutiveDays, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(jRadioButtonSearchRoomOccupied)
                 .addGap(20, 20, 20)
@@ -638,14 +684,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jList1.setModel(new javax.swing.AbstractListModel()
+        jListSearchRoomResult.setModel(new javax.swing.AbstractListModel()
         {
             String[] strings = { "Room 28 - Single", "Room 29 - Single", "Room 30 - Single", "Room 31 - Single", "Room 32 - Single", "Room 33 - Single", "Room 67 - Double", "Room 72 - Double", "Room 73 - Double", "Room 76 - Double", "Room 88 - Family", "Room 94 - Family", "Room 96 - Family", "Room 103 - Family" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jList1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jScrollPane2.setViewportView(jList1);
+        jListSearchRoomResult.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane2.setViewportView(jListSearchRoomResult);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1452,6 +1498,414 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jDialogEditDetails.setTitle("Edit Details");
+        jDialogEditDetails.setMinimumSize(new java.awt.Dimension(757, 542));
+        jDialogEditDetails.setResizable(false);
+
+        jPanelEditBookingRoom.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelEditBookingRoom.setPreferredSize(new java.awt.Dimension(300, 457));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel12.setText("Room Details");
+
+        jPanelDetailsAvailabilityMarker.setBackground(new java.awt.Color(255, 0, 0));
+        jPanelDetailsAvailabilityMarker.setPreferredSize(new java.awt.Dimension(150, 30));
+
+        jLabelDetailsAvailabilityMarkerText.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelDetailsAvailabilityMarkerText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDetailsAvailabilityMarkerText.setText("BOOKED");
+        jLabelDetailsAvailabilityMarkerText.setMaximumSize(new java.awt.Dimension(50, 20));
+        jLabelDetailsAvailabilityMarkerText.setMinimumSize(new java.awt.Dimension(50, 20));
+        jLabelDetailsAvailabilityMarkerText.setPreferredSize(new java.awt.Dimension(50, 20));
+
+        javax.swing.GroupLayout jPanelDetailsAvailabilityMarkerLayout = new javax.swing.GroupLayout(jPanelDetailsAvailabilityMarker);
+        jPanelDetailsAvailabilityMarker.setLayout(jPanelDetailsAvailabilityMarkerLayout);
+        jPanelDetailsAvailabilityMarkerLayout.setHorizontalGroup(
+            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelDetailsAvailabilityMarkerLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(50, Short.MAX_VALUE))
+        );
+        jPanelDetailsAvailabilityMarkerLayout.setVerticalGroup(
+            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelDetailsAvailabilityMarkerLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabelDetailsRoomType.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelDetailsRoomType.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabelDetailsRoomType.setText("(Double Room)");
+        jLabelDetailsRoomType.setPreferredSize(new java.awt.Dimension(120, 30));
+
+        jLabelDetailsRoomID.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabelDetailsRoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDetailsRoomID.setText("001");
+        jLabelDetailsRoomID.setPreferredSize(new java.awt.Dimension(60, 30));
+
+        javax.swing.GroupLayout jPanelEditBookingRoomLayout = new javax.swing.GroupLayout(jPanelEditBookingRoom);
+        jPanelEditBookingRoom.setLayout(jPanelEditBookingRoomLayout);
+        jPanelEditBookingRoomLayout.setHorizontalGroup(
+            jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addContainerGap(196, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEditBookingRoomLayout.createSequentialGroup()
+                        .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
+                                .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(61, 61, 61))))
+        );
+        jPanelEditBookingRoomLayout.setVerticalGroup(
+            jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12)
+                .addGap(31, 31, 31)
+                .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(76, Short.MAX_VALUE))
+        );
+
+        jPanelEditBookingCustomer.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabelEditDetailsNoChange1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange1.setText("First Name:");
+        jLabelEditDetailsNoChange1.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsFirstName.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange2.setText("Last Name:");
+        jLabelEditDetailsNoChange2.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsLastName.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange3.setText("Address:");
+        jLabelEditDetailsNoChange3.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsAddress.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange4.setText("City:");
+        jLabelEditDetailsNoChange4.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsCity.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange5.setText("Postal Code:");
+        jLabelEditDetailsNoChange5.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsPostalCode.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange6.setText("Country:");
+        jLabelEditDetailsNoChange6.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsCountry.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange7.setText("Phone-number:");
+        jLabelEditDetailsNoChange7.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsPhoneNumber.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange8.setText("E-mail address:");
+        jLabelEditDetailsNoChange8.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jTextFieldEditDetailsEmail.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel1.setText("ItalianStallion@ActorsMails.net");
+        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel1.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel2.setText("555 - 9431");
+        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel2.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel3.setText("United States");
+        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel3.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel4.setText("90210");
+        jLabel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel4.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel5.setText("Hollywood");
+        jLabel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel5.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel6.setText("Hollywood Bouleward 1001");
+        jLabel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel6.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel7.setText("Stallone");
+        jLabel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel7.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabel8.setText("Sylvester");
+        jLabel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel8.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange9.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange9.setText("First Name:");
+        jLabelEditDetailsNoChange9.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelEditDetailsNoChange10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange10.setText("Last Name:");
+        jLabelEditDetailsNoChange10.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelEditDetailsNoChange11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange11.setText("Address:");
+        jLabelEditDetailsNoChange11.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelEditDetailsNoChange12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange12.setText("City:");
+        jLabelEditDetailsNoChange12.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelEditDetailsNoChange13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange13.setText("Postal Code:");
+        jLabelEditDetailsNoChange13.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelEditDetailsNoChange14.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange14.setText("Country:");
+        jLabelEditDetailsNoChange14.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelEditDetailsNoChange15.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange15.setText("Phone-number:");
+        jLabelEditDetailsNoChange15.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabelEditDetailsNoChange16.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange16.setText("E-mail address:");
+        jLabelEditDetailsNoChange16.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabel9.setText("R4MB0");
+        jLabel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jLabel9.setPreferredSize(new java.awt.Dimension(200, 20));
+
+        jLabelEditDetailsNoChange17.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabelEditDetailsNoChange17.setText("Guest ID:");
+        jLabelEditDetailsNoChange17.setPreferredSize(new java.awt.Dimension(44, 13));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setText("Customer Details");
+
+        jLabel11.setText("<html>Change a specific customer-detail by typing the desired data in the fields to the right.<br>Leave a cell blank to keep the original detail of the specific data.</html>");
+
+        javax.swing.GroupLayout jPanelEditBookingCustomerLayout = new javax.swing.GroupLayout(jPanelEditBookingCustomer);
+        jPanelEditBookingCustomer.setLayout(jPanelEditBookingCustomerLayout);
+        jPanelEditBookingCustomerLayout.setHorizontalGroup(
+            jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelEditDetailsNoChange9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEditDetailsFirstName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextFieldEditDetailsLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange10, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelEditDetailsNoChange11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEditDetailsAddress, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelEditDetailsNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEditDetailsCity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelEditDetailsNoChange13, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEditDetailsPostalCode, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelEditDetailsNoChange14, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEditDetailsCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelEditDetailsNoChange15, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEditDetailsPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelEditDetailsNoChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelEditDetailsNoChange16, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEditDetailsEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel10))
+                    .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelEditDetailsNoChange17, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(10, 10, 10))
+        );
+        jPanelEditBookingCustomerLayout.setVerticalGroup(
+            jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabel10)
+                .addGap(15, 15, 15)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsPostalCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelEditDetailsNoChange16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEditDetailsEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addComponent(jLabelEditDetailsNoChange17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
+
+        jButton2.setText("Save Details");
+        jButton2.setPreferredSize(new java.awt.Dimension(200, 33));
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12))
+        );
+
+        javax.swing.GroupLayout jDialogEditDetailsLayout = new javax.swing.GroupLayout(jDialogEditDetails.getContentPane());
+        jDialogEditDetails.getContentPane().setLayout(jDialogEditDetailsLayout);
+        jDialogEditDetailsLayout.setHorizontalGroup(
+            jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
+        );
+        jDialogEditDetailsLayout.setVerticalGroup(
+            jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
+                .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
+                        .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(0, 0, 0))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Overview");
         setMinimumSize(new java.awt.Dimension(967, 662));
@@ -1517,7 +1971,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonEditBooking.setText("Edit Booking");
+        jButtonEditBooking.setText("Edit Details");
         jButtonEditBooking.setPreferredSize(new java.awt.Dimension(120, 35));
         jButtonEditBooking.addActionListener(new java.awt.event.ActionListener()
         {
@@ -2231,7 +2685,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         return daysInMonth;
     }
     
-    private void resetDialogBooking()
+    public void resetDialogBooking()
     {
         jTextFieldBookingFirstName.setText("");
         jTextFieldBookingLastName.setText("");
@@ -2251,7 +2705,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogBooking.setVisible(true);
     }
     
-    public void resetDialogSearchCustomer()
+    public void setupEditBooking(String guestID)
+    {
+        
+    }
+    
+    private void resetDialogSearchCustomer()
     {
         jTextFieldSearchCustomerFirstName.setText("");
         jTextFieldSearchCustomerLastName.setText("");
@@ -2270,25 +2729,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogSearchCustomer.setVisible(true);
     }
     
-    public void resetDialogSearchRoom()
+    private void resetDialogSearchRoom()
     {
-        jTextFieldSearchCustomerFirstName.setText("");
-        jTextFieldSearchCustomerLastName.setText("");
-        jTextFieldSearchCustomerCountry.setText("");
-        jTextFieldSearchCustomerPhoneNumber.setText("");
-        jTextFieldSearchCustomerEmail.setText("");
-        jTextFieldSearchCustomerGuestID.setText("");
-        jLabelSearchCustomerFirstName.setText("");
-        jLabelSearchCustomerLastName.setText("");
-        jLabelSearchCustomerCountry.setText("");
-        jLabelSearchCustomerPhone.setText("");
-        jLabelSearchCustomerEmail.setText("");
-        jLabelSearchCustomerGuestID.setText("");
-        jListSearchCustomerResult.setModel(null);
-        jListSearchCustomerBookingsHistory.setModel(null);
+        jListSearchRoomResult.setModel(null);
         
         jComboBoxSearchRoomType.setSelectedIndex(0);
         jLabelSearchRoomTypePersonsNotifier.setText("");
+        jLabelSearchRoomResultNotifier.setText("");
         jRadioButtonSearchRoomAvailable.setSelected(true);
         
         jComboBoxSearchStartMonth.setSelectedIndex(currentMonth-1);
@@ -2301,12 +2748,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogSearchRoom.setVisible(true);
     }
     
-    public void resetDialogCheckIn()
+    private void resetDialogCheckIn()
     {
         jDialogCheckIn.setVisible(true);
     }
     
-    public void resetDialogCheckOut()
+    private void resetDialogCheckOut()
     {
         jDialogCheckOut.setVisible(true);
     }
@@ -2375,6 +2822,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private spc.OverviewCells OverviewCells2;
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
     private javax.swing.JButton jButtonBookingCreateID;
@@ -2408,7 +2856,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonSearchRoom;
     private javax.swing.JButton jButtonSetupOverview;
     private javax.swing.JButton jButtonShowSelectedCustomerDetails;
-    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBoxBookingEndDate;
     private javax.swing.JComboBox jComboBoxBookingEndMonth;
     private javax.swing.JComboBox jComboBoxBookingEndYear;
@@ -2422,6 +2869,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JComboBox jComboBoxCheckOutDate;
     private javax.swing.JComboBox jComboBoxCheckOutMonth;
     private javax.swing.JComboBox jComboBoxCheckOutYear;
+    private javax.swing.JComboBox jComboBoxConsecutiveDays;
     private javax.swing.JComboBox jComboBoxSearchEndDate;
     private javax.swing.JComboBox jComboBoxSearchEndMonth;
     private javax.swing.JComboBox jComboBoxSearchEndYear;
@@ -2433,8 +2881,21 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JDialog jDialogCheckIn;
     private javax.swing.JDialog jDialogCheckOut;
     private javax.swing.JDialog jDialogCheckOutAccountDetails;
+    private javax.swing.JDialog jDialogEditDetails;
     private javax.swing.JDialog jDialogSearchCustomer;
     private javax.swing.JDialog jDialogSearchRoom;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelBookingNoChange1;
     private javax.swing.JLabel jLabelBookingNoChange2;
     private javax.swing.JLabel jLabelBookingNoChange3;
@@ -2451,6 +2912,26 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JLabel jLabelCheckInNotifier;
     private javax.swing.JLabel jLabelCheckOutNoChange1;
     private javax.swing.JLabel jLabelCheckOutNoChange2;
+    private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
+    private javax.swing.JLabel jLabelDetailsRoomID;
+    private javax.swing.JLabel jLabelDetailsRoomType;
+    private javax.swing.JLabel jLabelEditDetailsNoChange1;
+    private javax.swing.JLabel jLabelEditDetailsNoChange10;
+    private javax.swing.JLabel jLabelEditDetailsNoChange11;
+    private javax.swing.JLabel jLabelEditDetailsNoChange12;
+    private javax.swing.JLabel jLabelEditDetailsNoChange13;
+    private javax.swing.JLabel jLabelEditDetailsNoChange14;
+    private javax.swing.JLabel jLabelEditDetailsNoChange15;
+    private javax.swing.JLabel jLabelEditDetailsNoChange16;
+    private javax.swing.JLabel jLabelEditDetailsNoChange17;
+    private javax.swing.JLabel jLabelEditDetailsNoChange2;
+    private javax.swing.JLabel jLabelEditDetailsNoChange3;
+    private javax.swing.JLabel jLabelEditDetailsNoChange4;
+    private javax.swing.JLabel jLabelEditDetailsNoChange5;
+    private javax.swing.JLabel jLabelEditDetailsNoChange6;
+    private javax.swing.JLabel jLabelEditDetailsNoChange7;
+    private javax.swing.JLabel jLabelEditDetailsNoChange8;
+    private javax.swing.JLabel jLabelEditDetailsNoChange9;
     private javax.swing.JLabel jLabelSearchCustomerCountry;
     private javax.swing.JLabel jLabelSearchCustomerEmail;
     private javax.swing.JLabel jLabelSearchCustomerFirstName;
@@ -2477,15 +2958,16 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JLabel jLabelSearchRoomNoChange1;
     private javax.swing.JLabel jLabelSearchRoomResultNotifier;
     private javax.swing.JLabel jLabelSearchRoomTypePersonsNotifier;
-    private javax.swing.JList jList1;
     private javax.swing.JList jListCheckIn;
     private javax.swing.JList jListCheckOut;
     private javax.swing.JList jListSearchCustomerBookingsHistory;
     private javax.swing.JList jListSearchCustomerResult;
+    private javax.swing.JList jListSearchRoomResult;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -2498,6 +2980,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JPanel jPanelCheckInList;
     private javax.swing.JPanel jPanelCheckOutButtons;
     private javax.swing.JPanel jPanelCheckOutList;
+    private javax.swing.JPanel jPanelDetailsAvailabilityMarker;
+    private javax.swing.JPanel jPanelEditBookingCustomer;
+    private javax.swing.JPanel jPanelEditBookingRoom;
     private javax.swing.JPanel jPanelMainBookingButtons;
     private javax.swing.JPanel jPanelMainCheckInOutButtons;
     private javax.swing.JPanel jPanelMainFacilityButton;
@@ -2521,6 +3006,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JTextField jTextFieldBookingGuestID;
     private javax.swing.JTextField jTextFieldBookingLastName;
     private javax.swing.JTextField jTextFieldBookingPhoneNumber;
+    private javax.swing.JTextField jTextFieldEditDetailsAddress;
+    private javax.swing.JTextField jTextFieldEditDetailsCity;
+    private javax.swing.JTextField jTextFieldEditDetailsCountry;
+    private javax.swing.JTextField jTextFieldEditDetailsEmail;
+    private javax.swing.JTextField jTextFieldEditDetailsFirstName;
+    private javax.swing.JTextField jTextFieldEditDetailsLastName;
+    private javax.swing.JTextField jTextFieldEditDetailsPhoneNumber;
+    private javax.swing.JTextField jTextFieldEditDetailsPostalCode;
     private javax.swing.JTextField jTextFieldSearchCustomerCountry;
     private javax.swing.JTextField jTextFieldSearchCustomerEmail;
     private javax.swing.JTextField jTextFieldSearchCustomerFirstName;
