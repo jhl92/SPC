@@ -90,7 +90,7 @@ public class JDBCUpdateQuery
             //Query
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
- 
+
             rs = stmt.executeQuery("UPDATE GUEST SET GUESTFIRSTNAME ='"+guestFirstName
                     +"', GUESTLASTNAME ='"+guestLastName+"', GUESTCOUNTRY ='"+guestCountry+"', "
                     + "GUESTCONTACTPHONE ="+phone+", GUESTEMAIL ='"+mail
