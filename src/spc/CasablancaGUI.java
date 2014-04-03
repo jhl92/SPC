@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Random;
+import javax.swing.DefaultListModel;
 
 /**
  *
@@ -28,6 +29,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
     JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
+    DefaultListModel writeList = new DefaultListModel();
     ArrayList<InfoObjectConstructor> stringList = new ArrayList<>();
     ArrayList<Integer> tempList = new ArrayList<>();
     ArrayList<Integer> roomList = new ArrayList<>();
@@ -5993,7 +5995,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addComponent(jPanelDay13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelDay14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))))
+                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -6048,7 +6050,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -6123,7 +6125,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         {
                             if(jTextFieldSearchCustomerEmail.getText().equals(""))
                             {
-                                
+                                writeList.addElement("Missing search parameter...");
+                                jListSearchCustomerResult.setModel(writeList);
                             } else
                             {
                                 stringList = jdcbselect.getInfoFromMail(jTextFieldSearchCustomerEmail.getText());
@@ -6149,31 +6152,24 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             stringList = jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText());
         }
         
-        for(int i = 0; i<stringList.size(); ++i)
+        if(stringList.size()>0)
         {
-            String searchFirstName = stringList.get(i).getFirstName();
-            String searchLastName = stringList.get(i).getLastName();
-            String searchCountry = stringList.get(i).getCountry();
-            String searchPhoneNumber = stringList.get(i).getContactPhone();
-            String searchEmail = stringList.get(i).getEmail();
-            String searchGuestID = stringList.get(i).getDateFrom();
-            
-            
-            
-            
-            
+        for (int i = 0; i < stringList.size(); ++i)
+            {
+                String searchFirstName = stringList.get(i).getFirstName();
+                String searchLastName = stringList.get(i).getLastName();
+                String searchCountry = stringList.get(i).getCountry();
+                String searchPhoneNumber = stringList.get(i).getContactPhone();
+                String searchEmail = stringList.get(i).getEmail();
+                String searchGuestID = stringList.get(i).getGuestID();
+                writeList.addElement(searchGuestID + " - " + searchLastName + ", " + searchFirstName + " - " + searchCountry + " - " + searchPhoneNumber + " - " + searchEmail);
+            }
+            jListSearchCustomerResult.setModel(writeList);
+        } else
+        {
+            writeList.addElement("No results found...");
+            jListSearchCustomerResult.setModel(writeList);
         }
-        
-        ArrayList<String>
-        
-        
-        
-
-        
-        
-        
-        
-        
     }//GEN-LAST:event_jButtonSearchCustomerDetailsActionPerformed
 
     private void jComboBoxSearchRoomTypeActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchRoomTypeActionPerformed
