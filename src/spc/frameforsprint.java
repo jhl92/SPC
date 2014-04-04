@@ -72,6 +72,7 @@ public class frameforsprint extends javax.swing.JFrame
         jTextFieldUpdateCountry = new javax.swing.JTextField();
         jTextFieldUpdatePhone = new javax.swing.JTextField();
         jTextFieldUpdateMail = new javax.swing.JTextField();
+        jTextFieldnoofights = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -317,6 +318,9 @@ public class frameforsprint extends javax.swing.JFrame
         jTextFieldUpdateMail.setText("mail");
         getContentPane().add(jTextFieldUpdateMail, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, -1, -1));
 
+        jTextFieldnoofights.setText("noofights");
+        getContentPane().add(jTextFieldnoofights, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -333,7 +337,7 @@ public class frameforsprint extends javax.swing.JFrame
     private void jButtonBookITActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookITActionPerformed
     {//GEN-HEADEREND:event_jButtonBookITActionPerformed
         insert.JDBCInsertRoom(jTextFieldGuestID.getText(), jTextFieldRoomID.getText(),
-                jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), 
+                jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), jTextFieldnoofights.getText(),
                 jTextFieldDateTo.getText(), "N", jTextFieldFirstName.getText(), 
                 jTextFieldLastName.getText(), jTextFieldCountry.getText(), 
                 jTextFieldPhone.getText(), jTextFieldMail.getText(), 
@@ -461,5 +465,6 @@ public class frameforsprint extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldUpdateLastName;
     private javax.swing.JTextField jTextFieldUpdateMail;
     private javax.swing.JTextField jTextFieldUpdatePhone;
+    private javax.swing.JTextField jTextFieldnoofights;
     // End of variables declaration//GEN-END:variables
 }
