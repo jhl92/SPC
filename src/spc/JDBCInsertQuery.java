@@ -47,7 +47,7 @@ public class JDBCInsertQuery
             stmt.executeUpdate(sql);
             sql = "INSERT INTO BOOKROOM VALUES ('" + guestID + "','"
                     + roomID + "','" + empID + "','" + dateFrom + "',"
-                    +noOfNights + ",'"+ dateTo + "','" + roomAvailability + "')";
+                    +noOfNights+",'"+ dateTo + "','" + roomAvailability + "')";
             
             stmt.executeUpdate(sql);
 
