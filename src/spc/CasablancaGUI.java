@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Random;
+import javax.swing.DefaultListModel;
 
 /**
  *
@@ -28,6 +29,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
     JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
+    DefaultListModel writeList = new DefaultListModel();
     ArrayList<InfoObjectConstructor> stringList = new ArrayList<>();
     ArrayList<Integer> tempList = new ArrayList<>();
     ArrayList<Integer> roomList = new ArrayList<>();
@@ -310,7 +312,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jButtonRoomArrowDown = new javax.swing.JButton();
         jPanelMainBookingButtons = new javax.swing.JPanel();
         jButtonBooking = new javax.swing.JButton();
-        jButtonEditBooking = new javax.swing.JButton();
         jPanelMainShowRoomsNotifier = new javax.swing.JPanel();
         jPanelOverviewCellsButtons1 = new javax.swing.JPanel();
         jButtonSetupOverview = new javax.swing.JButton();
@@ -409,12 +410,19 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabelRoom8RoomSize = new javax.swing.JLabel();
         jPanelOverviewCells = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel20 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel21 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel22 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel23 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         jPanel24 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         jPanel25 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
         jPanel26 = new javax.swing.JPanel();
         jPanel27 = new javax.swing.JPanel();
         jPanel28 = new javax.swing.JPanel();
@@ -2847,16 +2855,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonEditBooking.setText("Edit Details");
-        jButtonEditBooking.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonEditBooking.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonEditBookingActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanelMainBookingButtonsLayout = new javax.swing.GroupLayout(jPanelMainBookingButtons);
         jPanelMainBookingButtons.setLayout(jPanelMainBookingButtonsLayout);
         jPanelMainBookingButtonsLayout.setHorizontalGroup(
@@ -2864,17 +2862,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             .addGroup(jPanelMainBookingButtonsLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelMainBookingButtonsLayout.setVerticalGroup(
             jPanelMainBookingButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelMainBookingButtonsLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanelMainBookingButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonEditBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
 
@@ -3996,99 +3990,117 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel19.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel19.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
 
         jPanel20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel20.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free-CheckIn.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
 
         jPanel21.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel21.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
 
         jPanel22.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel22.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-CheckIn.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
         jPanel22Layout.setHorizontalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
 
         jPanel23.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel23.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
         jPanel23Layout.setHorizontalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
 
         jPanel24.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel24.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);
         jPanel24Layout.setHorizontalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
 
         jPanel25.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel25.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-Free.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
         jPanel25.setLayout(jPanel25Layout);
         jPanel25Layout.setHorizontalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
         jPanel25Layout.setVerticalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
         jPanel26.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -5941,14 +5953,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addGap(110, 110, 110)
+                            .addGap(120, 120, 120)
                             .addComponent(jPanelOverviewCellsButtons1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jPanelMainBookingButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(1, 1, 1)
-                            .addComponent(jPanelMainCheckInOutButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(1, 1, 1)
                             .addComponent(jPanelMainSearchButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(1, 1, 1)
+                            .addComponent(jPanelMainCheckInOutButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(1, 1, 1)
                             .addComponent(jPanelMainFacilityButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jPanelMainShowRoomsNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -5968,6 +5980,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jPanelDay01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
                                 .addComponent(jPanelDay02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelDay03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5993,7 +6006,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addComponent(jPanelDay13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelDay14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))))
+                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.PREFERRED_SIZE, 840, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -6048,7 +6061,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -6070,12 +6083,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         //Data to be searched for, could be: RoomID, Customer-names, Dates, Availabilities/booked/reserved, BookingID, etc.
         jDialogSearchCustomer.setVisible(true);
     }//GEN-LAST:event_jButtonSearchCustomerActionPerformed
-
-    private void jButtonEditBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonEditBookingActionPerformed
-    {//GEN-HEADEREND:event_jButtonEditBookingActionPerformed
-        //Change data like start/end dates, names or roomsize in an existing booking/reservation.
-        
-    }//GEN-LAST:event_jButtonEditBookingActionPerformed
 
     private void jButtonSearchRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchRoomActionPerformed
@@ -6111,6 +6118,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerDetailsActionPerformed
         stringList.clear();
+        boolean booleanList = true;
         if(jTextFieldSearchCustomerGuestID.getText().equals(""))
         {
             if(jTextFieldSearchCustomerFirstName.getText().equals(""))
@@ -6123,7 +6131,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         {
                             if(jTextFieldSearchCustomerEmail.getText().equals(""))
                             {
-                                
+                                booleanList = false;
+                                writeList.addElement("Missing search parameter...");
+                                jListSearchCustomerResult.setModel(writeList);
                             } else
                             {
                                 stringList = jdcbselect.getInfoFromMail(jTextFieldSearchCustomerEmail.getText());
@@ -6149,31 +6159,27 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             stringList = jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText());
         }
         
-        for(int i = 0; i<stringList.size(); ++i)
+        if(booleanList == true)
         {
-            String searchFirstName = stringList.get(i).getFirstName();
-            String searchLastName = stringList.get(i).getLastName();
-            String searchCountry = stringList.get(i).getCountry();
-            String searchPhoneNumber = stringList.get(i).getContactPhone();
-            String searchEmail = stringList.get(i).getEmail();
-            String searchGuestID = stringList.get(i).getDateFrom();
-            
-            
-            
-            
-            
+            if(stringList.size() > 0)
+            {
+                for (int i = 0; i < stringList.size(); ++i)
+                {
+                    String searchFirstName = stringList.get(i).getFirstName();
+                    String searchLastName = stringList.get(i).getLastName();
+                    String searchCountry = stringList.get(i).getCountry();
+                    String searchPhoneNumber = stringList.get(i).getContactPhone();
+                    String searchEmail = stringList.get(i).getEmail();
+                    String searchGuestID = stringList.get(i).getGuestID();
+                    writeList.addElement(searchGuestID + " - " + searchLastName + ", " + searchFirstName + " - " + searchCountry + " - " + searchPhoneNumber + " - " + searchEmail);
+                }
+                jListSearchCustomerResult.setModel(writeList);
+            } else
+            {
+                writeList.addElement("No results found...");
+                jListSearchCustomerResult.setModel(writeList);
+            }
         }
-        
-        ArrayList<String>
-        
-        
-        
-
-        
-        
-        
-        
-        
     }//GEN-LAST:event_jButtonSearchCustomerDetailsActionPerformed
 
     private void jComboBoxSearchRoomTypeActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchRoomTypeActionPerformed
@@ -6239,32 +6245,35 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
-        resetDialogBooking();
+        //
+        
         //If available room has been found
         String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
         String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+"-"+jComboBoxBookingEndMonth.getSelectedIndex()+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
-        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
+        
+        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, numberNights, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
+        resetDialogBooking();
         jLabelBookingRoomNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
-        // TODO add your handling code here:
+        // Show the selected rooms, but 14 days previous the current period
     }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
 
     private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious7DaysActionPerformed
-        // TODO add your handling code here:
+        // Show the selected rooms, but 7 days previous the current period
     }//GEN-LAST:event_jButtonPrevious7DaysActionPerformed
 
     private void jButtonNext7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext7DaysActionPerformed
-        // TODO add your handling code here:
+        // Show the selected rooms, but 7 days after the current period
     }//GEN-LAST:event_jButtonNext7DaysActionPerformed
 
     private void jButtonNext14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext14DaysActionPerformed
-        // TODO add your handling code here:
+        // Show the selected rooms, but 14 days after the current period
     }//GEN-LAST:event_jButtonNext14DaysActionPerformed
 
     private void jButtonNext14DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext14DaysMouseEntered
@@ -7097,7 +7106,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonCheckOutPrint;
     private javax.swing.JButton jButtonCheckOutSearchCustomer;
     private javax.swing.JButton jButtonCheckOutShowAllCustomers;
-    private javax.swing.JButton jButtonEditBooking;
     private javax.swing.JButton jButtonEditSelectedCustomerDetails;
     private javax.swing.JButton jButtonExitDetails;
     private javax.swing.JButton jButtonFacilities;
@@ -7151,7 +7159,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JDialog jDialogSearchCustomer;
     private javax.swing.JDialog jDialogSearchRoom;
     private javax.swing.JDialog jDialogSetupOverview;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelBookingNoChange1;
     private javax.swing.JLabel jLabelBookingNoChange2;
