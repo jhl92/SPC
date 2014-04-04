@@ -6113,6 +6113,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerDetailsActionPerformed
         stringList.clear();
+        
         if(jTextFieldSearchCustomerGuestID.getText().equals(""))
         {
             if(jTextFieldSearchCustomerFirstName.getText().equals(""))
@@ -6125,6 +6126,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         {
                             if(jTextFieldSearchCustomerEmail.getText().equals(""))
                             {
+                                wlist = false;
                                 writeList.addElement("Missing search parameter...");
                                 jListSearchCustomerResult.setModel(writeList);
                             } else
