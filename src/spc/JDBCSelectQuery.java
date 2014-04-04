@@ -128,11 +128,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -184,11 +185,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -240,11 +242,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -296,11 +299,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -352,11 +356,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -408,11 +413,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -464,11 +470,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -520,11 +527,12 @@ public class JDBCSelectQuery
             String rsReturning = rs.getString("ReturningGuest");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
+            String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
 //            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsDateTo);
+                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -650,9 +658,10 @@ public class JDBCSelectQuery
                 String rsRoomID = rs.getString("RoomID");
                 String rsRoomType = rs.getString("RoomType");
                 String rsDateFrom = rs.getString("dateFrom");
+                String rsNoOfNights = rs.getString("noOfNights");
                 String rsDateTo = rs.getString("dateTo");
                 RoomAvaBookConstructor avaRoom = new RoomAvaBookConstructor(rsDateFrom,
-                        rsDateTo, rsRoomID, rsRoomType);
+                        rsNoOfNights, rsDateTo, rsRoomID, rsRoomType);
                 RoomAvailability.add(avaRoom);
             }
             return RoomAvailability;

@@ -10,7 +10,7 @@ package spc;
  */
 class InfoObjectConstructor
 {
-    private String guestID, roomID, Price, country, dateFrom,
+    private String guestID, roomID, Price, country, dateFrom, noOfNights,
             dateTo, lastName, firstName, contactPhone, email, returning;
 
     public void setGuestID(String guestID)
@@ -18,18 +18,30 @@ class InfoObjectConstructor
         this.guestID = guestID;
     }
 
+    public void setNoOfNights(String noOfNights)
+    {
+        this.noOfNights = noOfNights;
+    }
+
+    public String getNoOfNights()
+    {
+        return noOfNights;
+    }
+
     public String getGuestID()
     {
         return guestID;
     }
 
-    public InfoObjectConstructor(String guestID, String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, String dateTo)
+    public InfoObjectConstructor(String guestID, String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, 
+            String noOfNights, String dateTo)
     {
         this.guestID = guestID;
         this.roomID = roomID;
         this.Price = Price;
         this.country = country;
         this.dateFrom = dateFrom;
+        this.noOfNights = noOfNights;
         this.dateTo = dateTo;
         this.lastName = lastName;
         this.firstName = firstName;

@@ -24,7 +24,7 @@ public class JDBCUpdateQuery
     ResultSet rs;
     
     public void updateBookRoom(String guestID, String roomID, String dateFrom,
-            String dateTo) 
+            String noOfNights, String dateTo) 
     {
         Connection conn = null;
         Statement stmt = null;
@@ -43,7 +43,8 @@ public class JDBCUpdateQuery
             stmt = conn.createStatement();
  
             rs = stmt.executeQuery("UPDATE BOOKROOM SET ROOMID ='"+roomID
-                    +"', DATEFROM ='"+dateFrom+"', DATETO ='"+dateTo+"' "
+                    +"', DATEFROM ='"+dateFrom+"', NOOFNIGHTS ='"+noOfNights+"', "
+                    + "DATETO ='"+dateTo+"' "
                     + "WHERE GUESTID ='"+guestID+"' OR ROOMID = '"+roomID+"'");
            
             rs.close(); 
