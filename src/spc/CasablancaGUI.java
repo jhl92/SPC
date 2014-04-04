@@ -6113,7 +6113,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerDetailsActionPerformed
         stringList.clear();
-        
+        boolean wlist = true;
         if(jTextFieldSearchCustomerGuestID.getText().equals(""))
         {
             if(jTextFieldSearchCustomerFirstName.getText().equals(""))
@@ -6154,23 +6154,26 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             stringList = jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText());
         }
         
-        if(stringList.size()>0)
+        if(wlist == true)
         {
-        for (int i = 0; i < stringList.size(); ++i)
+            if(stringList.size() > 0)
             {
-                String searchFirstName = stringList.get(i).getFirstName();
-                String searchLastName = stringList.get(i).getLastName();
-                String searchCountry = stringList.get(i).getCountry();
-                String searchPhoneNumber = stringList.get(i).getContactPhone();
-                String searchEmail = stringList.get(i).getEmail();
-                String searchGuestID = stringList.get(i).getGuestID();
-                writeList.addElement(searchGuestID + " - " + searchLastName + ", " + searchFirstName + " - " + searchCountry + " - " + searchPhoneNumber + " - " + searchEmail);
+                for (int i = 0; i < stringList.size(); ++i)
+                {
+                    String searchFirstName = stringList.get(i).getFirstName();
+                    String searchLastName = stringList.get(i).getLastName();
+                    String searchCountry = stringList.get(i).getCountry();
+                    String searchPhoneNumber = stringList.get(i).getContactPhone();
+                    String searchEmail = stringList.get(i).getEmail();
+                    String searchGuestID = stringList.get(i).getGuestID();
+                    writeList.addElement(searchGuestID + " - " + searchLastName + ", " + searchFirstName + " - " + searchCountry + " - " + searchPhoneNumber + " - " + searchEmail);
+                }
+                jListSearchCustomerResult.setModel(writeList);
+            } else
+            {
+                writeList.addElement("No results found...");
+                jListSearchCustomerResult.setModel(writeList);
             }
-            jListSearchCustomerResult.setModel(writeList);
-        } else
-        {
-            writeList.addElement("No results found...");
-            jListSearchCustomerResult.setModel(writeList);
         }
     }//GEN-LAST:event_jButtonSearchCustomerDetailsActionPerformed
 
