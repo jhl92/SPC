@@ -241,33 +241,43 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jLabelSearchCustomerNoChange8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerNoChange9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerNoChange10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerNoChange11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerNoChange12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerEmail" alignment="0" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerPhone" alignment="0" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerCountry" alignment="0" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerLastName" alignment="0" max="-2" attributes="0"/>
+                                          <Component id="jLabelSearchCustomerFirstName" alignment="0" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jButtonEditSelectedCustomerDetails" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabelSearchCustomerNoChange8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerNoChange9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerNoChange10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerNoChange11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerNoChange12" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabelSearchCustomerNoChange13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerEmail" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerPhone" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerCountry" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerLastName" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabelSearchCustomerFirstName" alignment="0" max="-2" attributes="0"/>
                                   <Component id="jLabelSearchCustomerGuestID" alignment="0" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButtonEditSelectedCustomerDetails" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
-                          </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -276,6 +286,10 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jLabelSearchCustomerNoChange13" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="jLabelSearchCustomerGuestID" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jLabelSearchCustomerNoChange8" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -296,10 +310,6 @@
                       <Component id="jLabelSearchCustomerNoChange12" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jLabelSearchCustomerEmail" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="jLabelSearchCustomerNoChange13" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Component id="jLabelSearchCustomerGuestID" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jButtonEditSelectedCustomerDetails" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -3038,7 +3048,7 @@
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelEditGuestIDOriginal" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabelEditDetailsNoChange17" alignment="0" min="-2" pref="86" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -3057,7 +3067,7 @@
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Component id="jLabelEditDetailsNoChange17" max="-2" attributes="0"/>
                       <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelEditGuestIDOriginal" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabelEditDetailsNoChange1" min="-2" max="-2" attributes="0"/>
@@ -3319,7 +3329,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel9">
+            <Component class="javax.swing.JLabel" name="jLabelEditGuestIDOriginal">
               <Properties>
                 <Property name="text" type="java.lang.String" value="R4MB0"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
