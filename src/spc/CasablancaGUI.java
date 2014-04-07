@@ -7075,7 +7075,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             Return that this rooms availability is FALSE.
         if(booking start-date comes after the specified end date)
             Skip this booking and move to next booking.
-        if(No false-statements have been returned)
+        if(no false-statements have been returned)
             Return that this rooms availability is TRUE.
         */
         
