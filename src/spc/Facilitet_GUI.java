@@ -15,6 +15,10 @@ import java.util.Calendar;
  **/
 public class Facilitet_GUI extends javax.swing.JFrame
 {
+        JDBCInsertQuery insert = new JDBCInsertQuery();
+        JDBCSelectQuery select = new JDBCSelectQuery();
+        JDBCDeleteQuery delete = new JDBCDeleteQuery();
+        JDBCUpdateQuery update = new JDBCUpdateQuery();
     
     public Facilitet_GUI()
     {
@@ -379,7 +383,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         );
 
         jDialogOverviewHelp.setMinimumSize(new java.awt.Dimension(435, 145));
-        jDialogOverviewHelp.setPreferredSize(new java.awt.Dimension(435, 140));
 
         jPanelOverviewHelp.setMinimumSize(new java.awt.Dimension(400, 140));
         jPanelOverviewHelp.setPreferredSize(new java.awt.Dimension(400, 140));
@@ -618,7 +621,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel90.setText("jLabel90");
 
-        jLabel91.setText("jLabel91");
+        jLabel91.setText("venteliste");
 
         jButtonOverviewHelp.setText("Help");
         jButtonOverviewHelp.addActionListener(new java.awt.event.ActionListener()
@@ -1282,7 +1285,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabel106.setText("<html>Useful info: <br> There are a total of 2 Handball courts, each with 15 players max/court. <br> The handballs will of cause be given to you.");
+        jLabel106.setText("<html>Useful info: <br> There are a total of 2 Handball courts, each with 12 players max/court. <br> The handballs will of cause be given to you.");
 
         jLabel107.setText("<html>please note that if too few people have <br> booked within the given time, the facility will be cancelled.");
 
@@ -1560,7 +1563,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         });
 
         jLabel111.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel111.setText("<html> Useful info: <br>  There are a total of 2 volleyball courts, each with 15 players max/court. <br> The equipment will be given to you.");
+        jLabel111.setText("<html> Useful info: <br>  There are a total of 2 volleyball courts, each with 12 players max/court. <br> The equipment will be given to you.");
 
         javax.swing.GroupLayout jPanel8VolleyballLayout = new javax.swing.GroupLayout(jPanel8Volleyball);
         jPanel8Volleyball.setLayout(jPanel8VolleyballLayout);
@@ -2152,7 +2155,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookFacActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookFacActionPerformed
     {//GEN-HEADEREND:event_jButtonBookFacActionPerformed
-
+insert.JDBCInsertFacility("12345", "02", jComboBoxBadmintonSelectDate.getSelectedItem(), jComboBoxBadmintonTimeFrom.getSelectedItem(), jComboBoxBadmintonTimeTo.getSelectedItem(), "09098");
     }//GEN-LAST:event_jButtonBookFacActionPerformed
 
     private void jButtonVolleybalHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVolleybalHelpActionPerformed

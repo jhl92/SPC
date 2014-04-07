@@ -93,9 +93,6 @@
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[435, 145]"/>
         </Property>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[435, 140]"/>
-        </Property>
       </Properties>
 
       <Layout>
@@ -697,7 +694,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel91">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel91"/>
+                <Property name="text" type="java.lang.String" value="venteliste"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonOverviewHelp">
@@ -1796,7 +1793,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel106">
               <Properties>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;Useful info: &lt;br&gt; There are a total of 2 Handball courts, each with 15 players max/court. &lt;br&gt; The handballs will of cause be given to you."/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;Useful info: &lt;br&gt; There are a total of 2 Handball courts, each with 12 players max/court. &lt;br&gt; The handballs will of cause be given to you."/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel107">
@@ -2255,7 +2252,7 @@
             <Component class="javax.swing.JLabel" name="jLabel111">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt; Useful info: &lt;br&gt;  There are a total of 2 volleyball courts, each with 15 players max/court. &lt;br&gt; The equipment will be given to you."/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt; Useful info: &lt;br&gt;  There are a total of 2 volleyball courts, each with 12 players max/court. &lt;br&gt; The equipment will be given to you."/>
               </Properties>
             </Component>
           </SubComponents>
