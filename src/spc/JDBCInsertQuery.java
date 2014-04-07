@@ -87,8 +87,8 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
 
-    public void JDBCInsertFacility(String guestID, String facType, String timeStart,
-            String timeEnd)
+    public void JDBCInsertFacility(String guestID, String facID, String facDate, 
+            String timeStart, String timeEnd, String insID)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -106,8 +106,7 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO BOOKFACI VALUES ('" + guestID + "','"
-                    + facType + "','" + timeStart + "','" + timeEnd + "')";
+            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','N','"+insID+"')";
             stmt.executeUpdate(sql);
 //      sql = "INSERT INTO";
 //      stmt.executeUpdate(sql);
