@@ -59,15 +59,58 @@ public class JDBCDeleteQuery
                 if (stmt != null) {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
             try {
                 if (conn != null) {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+    }
+    
+    public void JDBCDeleteRoomBooking (String guestID)
+    {
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+
+//            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
+            ResultSet rs; 
+            rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID='"+guestID+"'");
+           
+            rs.close(); 
+        } catch (SQLException se) {
+            se.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();
+                }
+            } catch (SQLException se){
+            }
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
