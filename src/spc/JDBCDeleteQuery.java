@@ -26,7 +26,7 @@ public class JDBCDeleteQuery
     static final String user = "SEM2_TEST_GR13";
     static final String pass = "SEM2_TEST_GR13";
 
-    public void JDBCDelete (String delete)
+    public void JDBCDeleteFacBooking (String guestID, String facID, String timeStart)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -46,30 +46,24 @@ public class JDBCDeleteQuery
 
 //            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
             ResultSet rs; 
-            rs = stmt.executeQuery("DELETE FROM GUEST WHERE name = '" + delete + "'" );
+            rs = stmt.executeQuery("DELETE FROM FACBOOK WHERE GUESTID='"+guestID
+                    +"' AND FACID='"+facID+"' AND TIMESTART='"+timeStart+"'");
            
             rs.close(); 
-        } catch (SQLException se)
-        {
+        } catch (SQLException se) {
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally {
+            try {
+                if (stmt != null) {
                     conn.close();
                 }
             } catch (SQLException se)
             {
             }
-            try
-            {
-                if (conn != null)
-                {
+            try {
+                if (conn != null) {
                     conn.close();
                 }
             } catch (SQLException se)
