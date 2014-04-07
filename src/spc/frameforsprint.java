@@ -66,9 +66,9 @@ public class frameforsprint extends javax.swing.JFrame
         jButtonSearch = new javax.swing.JButton();
         jTextFieldSearchLastName = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
-        FACGuestID = new javax.swing.JTextField();
-        FACID = new javax.swing.JTextField();
-        FACDATE = new javax.swing.JTextField();
+        DELETEGUEST = new javax.swing.JTextField();
+        DELETEFACID = new javax.swing.JTextField();
+        DELETETIMESTART = new javax.swing.JTextField();
         FACTIMESTART = new javax.swing.JTextField();
         FACTIMEEND = new javax.swing.JTextField();
         INSID = new javax.swing.JTextField();
@@ -293,21 +293,21 @@ public class frameforsprint extends javax.swing.JFrame
         });
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 84, -1));
 
-        FACGuestID.setText("guestID");
-        getContentPane().add(FACGuestID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
+        DELETEGUEST.setText("guestID");
+        getContentPane().add(DELETEGUEST, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
 
-        FACID.setText("FAC");
-        FACID.addActionListener(new java.awt.event.ActionListener()
+        DELETEFACID.setText("FAC");
+        DELETEFACID.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                FACIDActionPerformed(evt);
+                DELETEFACIDActionPerformed(evt);
             }
         });
-        getContentPane().add(FACID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
+        getContentPane().add(DELETEFACID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
 
-        FACDATE.setText("FACDATE");
-        getContentPane().add(FACDATE, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
+        DELETETIMESTART.setText("FACDATE");
+        getContentPane().add(DELETETIMESTART, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
 
         FACTIMESTART.setText("TIMESTART");
         FACTIMESTART.addActionListener(new java.awt.event.ActionListener()
@@ -393,14 +393,14 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        insert.JDBCInsertFacility(FACGuestID.getText(), FACID.getText(), FACDATE.getText(),
-                FACTIMESTART.getText(), FACTIMEEND.getText(), INSID.getText());
+        delete.JDBCDeleteFacBooking(DELETEGUEST.getText(), DELETEFACID.getText(),
+                DELETETIMESTART.getText());
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void FACIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_FACIDActionPerformed
-    {//GEN-HEADEREND:event_FACIDActionPerformed
+    private void DELETEFACIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_DELETEFACIDActionPerformed
+    {//GEN-HEADEREND:event_DELETEFACIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_FACIDActionPerformed
+    }//GEN-LAST:event_DELETEFACIDActionPerformed
 
     private void FACTIMESTARTActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_FACTIMESTARTActionPerformed
     {//GEN-HEADEREND:event_FACTIMESTARTActionPerformed
@@ -448,9 +448,9 @@ public class frameforsprint extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField FACDATE;
-    private javax.swing.JTextField FACGuestID;
-    private javax.swing.JTextField FACID;
+    private javax.swing.JTextField DELETEFACID;
+    private javax.swing.JTextField DELETEGUEST;
+    private javax.swing.JTextField DELETETIMESTART;
     private javax.swing.JTextField FACTIMEEND;
     private javax.swing.JTextField FACTIMESTART;
     private javax.swing.JTextField INSID;

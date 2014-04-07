@@ -388,7 +388,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="FACGuestID">
+    <Component class="javax.swing.JTextField" name="DELETEGUEST">
       <Properties>
         <Property name="text" type="java.lang.String" value="guestID"/>
       </Properties>
@@ -398,12 +398,12 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="FACID">
+    <Component class="javax.swing.JTextField" name="DELETEFACID">
       <Properties>
         <Property name="text" type="java.lang.String" value="FAC"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FACIDActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DELETEFACIDActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -411,7 +411,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="FACDATE">
+    <Component class="javax.swing.JTextField" name="DELETETIMESTART">
       <Properties>
         <Property name="text" type="java.lang.String" value="FACDATE"/>
       </Properties>
