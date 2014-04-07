@@ -130,7 +130,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
@@ -187,7 +186,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
@@ -244,7 +242,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
@@ -301,7 +298,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
@@ -358,7 +354,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
@@ -404,7 +399,7 @@ public class JDBCSelectQuery
                     + mail + "'");
            
             while(rs.next()) {
-                String rsGuestID = rs.getString("GuestID");
+            String rsGuestID = rs.getString("GuestID");
             String rsLastName = rs.getString("GuestLastName");
             String rsFirstName = rs.getString("GuestFirstname");
             String rsCountry = rs.getString("GuestCountry");
@@ -415,7 +410,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
@@ -472,7 +466,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
@@ -529,7 +522,6 @@ public class JDBCSelectQuery
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
                     rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);

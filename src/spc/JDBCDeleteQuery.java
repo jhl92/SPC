@@ -44,7 +44,6 @@ public class JDBCDeleteQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-//            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
             ResultSet rs; 
             rs = stmt.executeQuery("DELETE FROM FACBOOK WHERE GUESTID='"+guestID
                     +"' AND FACID='"+facID+"' AND TIMESTART='"+timeStart+"'");
@@ -90,7 +89,6 @@ public class JDBCDeleteQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-//            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
             ResultSet rs; 
             rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID='"+guestID+"'");
            
