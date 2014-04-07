@@ -66,12 +66,12 @@ public class frameforsprint extends javax.swing.JFrame
         jButtonSearch = new javax.swing.JButton();
         jTextFieldSearchLastName = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
-        jTextFieldUpdateGuestID = new javax.swing.JTextField();
-        jTextFieldUpdateFirstName = new javax.swing.JTextField();
-        jTextFieldUpdateLastName = new javax.swing.JTextField();
-        jTextFieldUpdateCountry = new javax.swing.JTextField();
-        jTextFieldUpdatePhone = new javax.swing.JTextField();
-        jTextFieldUpdateMail = new javax.swing.JTextField();
+        FACGuestID = new javax.swing.JTextField();
+        FACID = new javax.swing.JTextField();
+        FACDATE = new javax.swing.JTextField();
+        FACTIMESTART = new javax.swing.JTextField();
+        FACTIMEEND = new javax.swing.JTextField();
+        INSID = new javax.swing.JTextField();
         jTextFieldnoofights = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -293,30 +293,44 @@ public class frameforsprint extends javax.swing.JFrame
         });
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 84, -1));
 
-        jTextFieldUpdateGuestID.setText("guestID");
-        getContentPane().add(jTextFieldUpdateGuestID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
+        FACGuestID.setText("guestID");
+        getContentPane().add(FACGuestID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
 
-        jTextFieldUpdateFirstName.setText("first name");
-        getContentPane().add(jTextFieldUpdateFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
-
-        jTextFieldUpdateLastName.setText("last name");
-        getContentPane().add(jTextFieldUpdateLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
-
-        jTextFieldUpdateCountry.setText("country");
-        getContentPane().add(jTextFieldUpdateCountry, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
-
-        jTextFieldUpdatePhone.setText("phone");
-        jTextFieldUpdatePhone.addActionListener(new java.awt.event.ActionListener()
+        FACID.setText("FAC");
+        FACID.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jTextFieldUpdatePhoneActionPerformed(evt);
+                FACIDActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextFieldUpdatePhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, -1, -1));
+        getContentPane().add(FACID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
 
-        jTextFieldUpdateMail.setText("mail");
-        getContentPane().add(jTextFieldUpdateMail, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, -1, -1));
+        FACDATE.setText("FACDATE");
+        getContentPane().add(FACDATE, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
+
+        FACTIMESTART.setText("TIMESTART");
+        FACTIMESTART.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                FACTIMESTARTActionPerformed(evt);
+            }
+        });
+        getContentPane().add(FACTIMESTART, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
+
+        FACTIMEEND.setText("TIMEEND");
+        FACTIMEEND.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                FACTIMEENDActionPerformed(evt);
+            }
+        });
+        getContentPane().add(FACTIMEEND, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, -1, -1));
+
+        INSID.setText("INSID");
+        getContentPane().add(INSID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, -1, -1));
 
         jTextFieldnoofights.setText("noofights");
         getContentPane().add(jTextFieldnoofights, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, -1));
@@ -372,17 +386,26 @@ public class frameforsprint extends javax.swing.JFrame
 //        jTextFieldCountry.setText(info2.getCountry());
     }//GEN-LAST:event_jButtonSearchActionPerformed
 
-    private void jTextFieldUpdatePhoneActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldUpdatePhoneActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldUpdatePhoneActionPerformed
+    private void FACTIMEENDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_FACTIMEENDActionPerformed
+    {//GEN-HEADEREND:event_FACTIMEENDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldUpdatePhoneActionPerformed
+    }//GEN-LAST:event_FACTIMEENDActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        update.updateGuest(jTextFieldUpdateGuestID.getText(), jTextFieldUpdateFirstName.getText(),
-                jTextFieldUpdateLastName.getText(), jTextFieldUpdateCountry.getText(),
-                jTextFieldUpdatePhone.getText(), jTextFieldUpdateMail.getText());
+        insert.JDBCInsertFacility(FACGuestID.getText(), FACID.getText(), FACDATE.getText(),
+                FACTIMESTART.getText(), FACTIMEEND.getText(), INSID.getText());
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void FACIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_FACIDActionPerformed
+    {//GEN-HEADEREND:event_FACIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FACIDActionPerformed
+
+    private void FACTIMESTARTActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_FACTIMESTARTActionPerformed
+    {//GEN-HEADEREND:event_FACTIMESTARTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FACTIMESTARTActionPerformed
 
 
     public static void main(String args[])
@@ -425,6 +448,12 @@ public class frameforsprint extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField FACDATE;
+    private javax.swing.JTextField FACGuestID;
+    private javax.swing.JTextField FACID;
+    private javax.swing.JTextField FACTIMEEND;
+    private javax.swing.JTextField FACTIMESTART;
+    private javax.swing.JTextField INSID;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonBookIT;
@@ -459,12 +488,6 @@ public class frameforsprint extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldReturningGuest;
     private javax.swing.JTextField jTextFieldRoomID;
     private javax.swing.JTextField jTextFieldSearchLastName;
-    private javax.swing.JTextField jTextFieldUpdateCountry;
-    private javax.swing.JTextField jTextFieldUpdateFirstName;
-    private javax.swing.JTextField jTextFieldUpdateGuestID;
-    private javax.swing.JTextField jTextFieldUpdateLastName;
-    private javax.swing.JTextField jTextFieldUpdateMail;
-    private javax.swing.JTextField jTextFieldUpdatePhone;
     private javax.swing.JTextField jTextFieldnoofights;
     // End of variables declaration//GEN-END:variables
 }
