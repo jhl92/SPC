@@ -681,69 +681,55 @@ public class JDBCSelectQuery
         } System.out.println("Done.");
             return null;
     }
-//    public void JDBCSelectRoom ()
-//    {
-//        Connection conn = null;
-//        Statement stmt = null;
-//        try
-//        {
-//            //Registrer JDBC driver
-//            Class.forName("oracle.jdbc.driver.OracleDriver");
-//
-//            //Åben forbindelsen
-//            System.out.println("Connecting to a selected database...");
-//            conn = DriverManager.getConnection(url, user, pass);
-//            System.out.println("Connected database successfully...");
-//
-//            //Query
-//            System.out.println("Creating statement...");
-//            stmt = conn.createStatement();
-//
-////            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
-//            ResultSet rs; 
-//            rs = stmt.executeQuery("SELECT * from Rooms Where " );
-//           
-//            while (rs.next())
-//            {           
-//                int roomID = rs.getInt("roomID");
-//                String roomType = rs.getString("roomType");
-//                float roomPrice = rs.getFloat("roomPrice");
-//                String roomAvailability = rs.getString("roomAvailability");
-//
-//                System.out.println("ID: " + roomID);
-//                System.out.println("Type: " + roomType);
-//                System.out.println("Price: " + roomPrice);
-//                System.out.println("Availability: " + roomAvailability);
-//            }
-//            rs.close(); 
-//        } catch (SQLException se)
-//        {
-//            se.printStackTrace();
-//        } catch (Exception e)
-//        {
-//            e.printStackTrace();
-//        } finally
-//        {
-//            try
-//            {
-//                if (stmt != null)
-//                {
-//                    conn.close();
-//                }
-//            } catch (SQLException se)
-//            {
-//            }
-//            try
-//            {
-//                if (conn != null)
-//                {
-//                    conn.close();
-//                }
-//            } catch (SQLException se)
-//            {
-//                se.printStackTrace();
-//            }
-//        }
-//        System.out.println("Done.");
-//    }
+    
+    public ArrayList<BookedOverviewConstructor> getBookedOverview(String guestID){
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<BookedOverviewConstructor> bookOverviewForGuest = new ArrayList<>();
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+ 
+            rs = stmt.executeQuery("SELECT FACBOOK.GUESTID, FACBOOK.FACID, " +
+                    "FACILITY.FACTYPE, FACBOOK.FACDATE, FACBOOK.TIMESTART, FACBOOK.TIMEEND " 
+                    +"FROM FACBOOK INNER JOIN FACILITY ON FACBOOK.FACID = FACILITY.FACID "
+                    +"WHERE FACBOOK.GUESTID='"+guestID+"'");
+           
+            while (rs.next()) {
+                String rsGuestID = rs.getString("GuestID");
+                String rsFacID = rs.getString("FacID");
+                String rsFacType = rs.getString("FacType");
+                String rsFacDate = rs.getString("FacDate");
+                String rsTimeStart = rs.getString("TimeStart");
+                String rsTimeEnd = rs.getString("TimeEnd");
+                BookedOverviewConstructor bookOverview = new BookedOverviewConstructor(rsGuestID, rsFacID, rsFacType, rsFacDate, rsTimeStart, rsTimeEnd);
+                bookOverviewForGuest.add(bookOverview);
+            }
+            return bookOverviewForGuest;
+        } catch (SQLException se)
+        { se.printStackTrace(); } 
+        catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();}
+            } catch (SQLException se){}
+            try { if (conn != null) {
+                    conn.close(); }
+            } catch (SQLException se) {
+                se.printStackTrace(); }
+        } System.out.println("Done.");
+            return null;
+    }
 }
