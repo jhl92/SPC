@@ -548,6 +548,72 @@ public class JDBCSelectQuery
         } System.out.println("Done.");
             return null;
     }
+    public void printBill(String guestID){
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            
+            //Åben forbindelsen
+            conn = DriverManager.getConnection(url, user, pass);
+
+            //Query
+            stmt = conn.createStatement();
+
+            rs = stmt.executeQuery("SELECT GUESTLASTNAME,GUESTFIRSTNAME,INSTRUCTORBILL"
+                    + " FROM GUEST WHERE GUESTID='"+guestID+"'");
+            String guestList = guestID+" - Instructor Bill.txt";
+          
+            try (PrintWriter writer = new PrintWriter(guestList))
+            {
+                
+                while(rs.next()) {
+                String lastName = rs.getString("GUESTLASTNAME");
+                String firstName = rs.getString("GUESTFIRSTNAME");
+                String cost = rs.getString("INSTRUCTORBILL");
+                
+                writer.println("Guest ID: "+guestID+"\r\n"+"Name: "
+                                +lastName+", "+firstName+"\r\n"+"The current cost for"
+                        + " instructions hours: "+cost);  
+                }
+                writer.close();
+            } catch (FileNotFoundException e)
+            {
+                System.err.println(e);
+            }
+
+            rs.close();
+        } catch (SQLException se)
+        {
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        } finally
+        {
+            try
+            {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+            }
+            try
+            {
+                if (conn != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+                se.printStackTrace();
+            }
+        }
+    }
     
     public void printWriter(String tomorrowDate)
     {
