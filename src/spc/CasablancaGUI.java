@@ -6637,10 +6637,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
         //Check if there is an available room of the selected type in the specified period
+        //This method will be the same method as the one checking availability for Dialog-searchRoom
         
         //If available room has been found
-        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()-1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()-1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
-        String dateTo = (jComboBoxBookingEndDate.getSelectedIndex()+"-"+jComboBoxBookingEndMonth.getSelectedIndex()+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
+        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()+1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
+        String dateTo = ((jComboBoxBookingEndDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingEndMonth.getSelectedIndex()+1)+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
         
         jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, /*Int specifying number of nights*/null, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
         setupDialogBooking();
@@ -6714,11 +6715,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         while (IDcreated == false)
         {
             String characters = "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            int i1 = r.nextInt(36);
-            int i2 = r.nextInt(36);
-            int i3 = r.nextInt(36);
-            int i4 = r.nextInt(36);
-            int i5 = r.nextInt(36);
+            int i1 = r.nextInt(35);
+            int i2 = r.nextInt(35);
+            int i3 = r.nextInt(35);
+            int i4 = r.nextInt(35);
+            int i5 = r.nextInt(35);
             String s1 = characters.substring(i1, (i1 + 1));
             String s2 = characters.substring(i2, (i2 + 1));
             String s3 = characters.substring(i3, (i3 + 1));
@@ -7161,17 +7162,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         switch (SearchRoomType)
         {
             case 0:
-            jLabelSearchRoomTypePersonsNotifier.setText("");
-            break;
+                jLabelSearchRoomTypePersonsNotifier.setText("");
+                break;
             case 1:
-            jLabelSearchRoomTypePersonsNotifier.setText("(1 person)");
-            break;
+                jLabelSearchRoomTypePersonsNotifier.setText("(1 person)");
+                break;
             case 2:
-            jLabelSearchRoomTypePersonsNotifier.setText("(2 persons)");
-            break;
+                jLabelSearchRoomTypePersonsNotifier.setText("(2 persons)");
+                break;
             case 3:
-            jLabelSearchRoomTypePersonsNotifier.setText("(5 persons)");
-            break;
+                jLabelSearchRoomTypePersonsNotifier.setText("(5 persons)");
+                break;
         }
     }//GEN-LAST:event_jComboBoxSearchRoomTypeActionPerformed
 
@@ -7182,7 +7183,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         currentYear = Integer.parseInt(cYear.format(cal.getTime()));
         currentWeekDay = Integer.parseInt(cWeekDay.format(cal.getTime()));
     }
-    
     private int getDaysInMonth(int month, int year)
     {
         //Search Calender for how many days the specified month/year contains, and return the right list.
