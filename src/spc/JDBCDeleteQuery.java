@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package spc;
 
 import java.sql.Connection;
@@ -26,7 +23,7 @@ public class JDBCDeleteQuery
     static final String user = "SEM2_TEST_GR13";
     static final String pass = "SEM2_TEST_GR13";
 
-    public void JDBCDelete (String delete)
+    public void JDBCDeleteFacBooking (String guestID, String facID, String timeStart)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -44,36 +41,71 @@ public class JDBCDeleteQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-//            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
             ResultSet rs; 
-            rs = stmt.executeQuery("DELETE FROM GUEST WHERE name = '" + delete + "'" );
+            rs = stmt.executeQuery("DELETE FROM FACBOOK WHERE GUESTID='"+guestID
+                    +"' AND FACID='"+facID+"' AND TIMESTART='"+timeStart+"'");
            
             rs.close(); 
-        } catch (SQLException se)
-        {
+        } catch (SQLException se) {
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally {
+            try {
+                if (stmt != null) {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try {
+                if (conn != null) {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+    }
+    
+    public void JDBCDeleteRoomBooking (String guestID)
+    {
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+
+            ResultSet rs; 
+            rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID='"+guestID+"'");
+           
+            rs.close(); 
+        } catch (SQLException se) {
+            se.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();
+                }
+            } catch (SQLException se){
+            }
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }

@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package spc;
 
 /**
@@ -43,7 +40,7 @@ public class JDBCInsertQuery
 
             String sql = "INSERT INTO GUEST VALUEs ('" + guestID + "','" + guestFirstName 
                     + "','" + guestLastName + "','" + gCountry + "','" 
-                    + gPhone + "','" + gMail + "','" + returnGuest + "')";
+                    + gPhone + "','" + gMail + "','" + returnGuest + "',0)";
             stmt.executeUpdate(sql);
             sql = "INSERT INTO BOOKROOM VALUES ('" + guestID + "','"
                     + roomID + "','" + empID + "','" + dateFrom + "','"
@@ -110,6 +107,80 @@ public class JDBCInsertQuery
             stmt.executeUpdate(sql);
 //      sql = "INSERT INTO";
 //      stmt.executeUpdate(sql);
+            System.out.println("Inserted records into the table...");
+
+        } catch (SQLException se)
+        {
+            //Håndterer JDBC relaterede fejl
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            //Håndterer Class relaterede fejl
+            e.printStackTrace();
+        } finally
+        {
+            //Luk forbindelsen
+            try
+            {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+            }
+            try
+            {
+                if (conn != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+    }
+    
+    public void JDBCInsertInstructorCost(String guestID, String facID) {
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Inserting records into the table...");
+            stmt = conn.createStatement();
+            
+            if(facID.equals("01")) {
+                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
+                        + " WHERE GUESTID = '"+guestID+"'";
+                stmt.executeUpdate(sql);
+            }
+            if(facID.equals("02")) {
+                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
+                        + "WHERE GUESTID='"+guestID+"'";
+                stmt.executeUpdate(sql);
+            }
+            if(facID.equals("05")) {
+                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
+                        + "WHERE GUESTID='"+guestID+"'";
+                stmt.executeUpdate(sql);
+            }
+            if(facID.equals("06")) {
+                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
+                        + "WHERE GUESTID='"+guestID+"'";
+                stmt.executeUpdate(sql);
+            }
+            
             System.out.println("Inserted records into the table...");
 
         } catch (SQLException se)

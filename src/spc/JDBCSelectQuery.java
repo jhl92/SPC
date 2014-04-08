@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package spc;
 
 /**
@@ -126,14 +123,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -183,14 +180,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -240,14 +237,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -297,14 +294,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -354,14 +351,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -404,21 +401,21 @@ public class JDBCSelectQuery
                     + mail + "'");
            
             while(rs.next()) {
-                String rsGuestID = rs.getString("GuestID");
+            String rsGuestID = rs.getString("GuestID");
             String rsLastName = rs.getString("GuestLastName");
             String rsFirstName = rs.getString("GuestFirstname");
             String rsCountry = rs.getString("GuestCountry");
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -468,14 +465,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -525,14 +522,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
-//            String rsPrice = rs.getString("BookingPrice");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -550,6 +547,72 @@ public class JDBCSelectQuery
                 se.printStackTrace(); }
         } System.out.println("Done.");
             return null;
+    }
+    public void printBill(String guestID){
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            
+            //Åben forbindelsen
+            conn = DriverManager.getConnection(url, user, pass);
+
+            //Query
+            stmt = conn.createStatement();
+
+            rs = stmt.executeQuery("SELECT GUESTLASTNAME,GUESTFIRSTNAME,INSTRUCTORBILL"
+                    + " FROM GUEST WHERE GUESTID='"+guestID+"'");
+            String guestList = guestID+" - Instructor Bill.txt";
+          
+            try (PrintWriter writer = new PrintWriter(guestList))
+            {
+                
+                while(rs.next()) {
+                String lastName = rs.getString("GUESTLASTNAME");
+                String firstName = rs.getString("GUESTFIRSTNAME");
+                String cost = rs.getString("INSTRUCTORBILL");
+                
+                writer.println("Guest ID: "+guestID+"\r\n"+"Name: "
+                                +lastName+", "+firstName+"\r\n"+"The current cost for"
+                        + " instructions hours: "+cost);  
+                }
+                writer.close();
+            } catch (FileNotFoundException e)
+            {
+                System.err.println(e);
+            }
+
+            rs.close();
+        } catch (SQLException se)
+        {
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        } finally
+        {
+            try
+            {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+            }
+            try
+            {
+                if (conn != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+                se.printStackTrace();
+            }
+        }
     }
     
     public void printWriter(String tomorrowDate)
@@ -681,69 +744,55 @@ public class JDBCSelectQuery
         } System.out.println("Done.");
             return null;
     }
-//    public void JDBCSelectRoom ()
-//    {
-//        Connection conn = null;
-//        Statement stmt = null;
-//        try
-//        {
-//            //Registrer JDBC driver
-//            Class.forName("oracle.jdbc.driver.OracleDriver");
-//
-//            //Åben forbindelsen
-//            System.out.println("Connecting to a selected database...");
-//            conn = DriverManager.getConnection(url, user, pass);
-//            System.out.println("Connected database successfully...");
-//
-//            //Query
-//            System.out.println("Creating statement...");
-//            stmt = conn.createStatement();
-//
-////            String sql = "SELECT roomID, roomType, roomPrice, roomAvailability from Rooms";
-//            ResultSet rs; 
-//            rs = stmt.executeQuery("SELECT * from Rooms Where " );
-//           
-//            while (rs.next())
-//            {           
-//                int roomID = rs.getInt("roomID");
-//                String roomType = rs.getString("roomType");
-//                float roomPrice = rs.getFloat("roomPrice");
-//                String roomAvailability = rs.getString("roomAvailability");
-//
-//                System.out.println("ID: " + roomID);
-//                System.out.println("Type: " + roomType);
-//                System.out.println("Price: " + roomPrice);
-//                System.out.println("Availability: " + roomAvailability);
-//            }
-//            rs.close(); 
-//        } catch (SQLException se)
-//        {
-//            se.printStackTrace();
-//        } catch (Exception e)
-//        {
-//            e.printStackTrace();
-//        } finally
-//        {
-//            try
-//            {
-//                if (stmt != null)
-//                {
-//                    conn.close();
-//                }
-//            } catch (SQLException se)
-//            {
-//            }
-//            try
-//            {
-//                if (conn != null)
-//                {
-//                    conn.close();
-//                }
-//            } catch (SQLException se)
-//            {
-//                se.printStackTrace();
-//            }
-//        }
-//        System.out.println("Done.");
-//    }
+    
+    public ArrayList<BookedOverviewConstructor> getBookedOverview(String guestID){
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<BookedOverviewConstructor> bookOverviewForGuest = new ArrayList<>();
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+ 
+            rs = stmt.executeQuery("SELECT FACBOOK.GUESTID, FACBOOK.FACID, " +
+                    "FACILITY.FACTYPE, FACBOOK.FACDATE, FACBOOK.TIMESTART, FACBOOK.TIMEEND " 
+                    +"FROM FACBOOK INNER JOIN FACILITY ON FACBOOK.FACID = FACILITY.FACID "
+                    +"WHERE FACBOOK.GUESTID='"+guestID+"'");
+           
+            while (rs.next()) {
+                String rsGuestID = rs.getString("GuestID");
+                String rsFacID = rs.getString("FacID");
+                String rsFacType = rs.getString("FacType");
+                String rsFacDate = rs.getString("FacDate");
+                String rsTimeStart = rs.getString("TimeStart");
+                String rsTimeEnd = rs.getString("TimeEnd");
+                BookedOverviewConstructor bookOverview = new BookedOverviewConstructor(rsGuestID, rsFacID, rsFacType, rsFacDate, rsTimeStart, rsTimeEnd);
+                bookOverviewForGuest.add(bookOverview);
+            }
+            return bookOverviewForGuest;
+        } catch (SQLException se)
+        { se.printStackTrace(); } 
+        catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();}
+            } catch (SQLException se){}
+            try { if (conn != null) {
+                    conn.close(); }
+            } catch (SQLException se) {
+                se.printStackTrace(); }
+        } System.out.println("Done.");
+            return null;
+    }
 }

@@ -10,54 +10,22 @@ package spc;
  */
 class InfoObjectConstructor
 {
-    private String guestID, roomID, Price, country, dateFrom, noOfNights,
-            dateTo, lastName, firstName, contactPhone, email, returning;
+    private String guestID, guestLastName, guestFirstname, country, contanctPhone, email,
+            returning, instructorBill, roomID, dateFrom, noOfNights, dateTo;
 
     public void setGuestID(String guestID)
     {
         this.guestID = guestID;
     }
 
-    public void setNoOfNights(String noOfNights)
+    public void setGuestLastName(String guestLastName)
     {
-        this.noOfNights = noOfNights;
+        this.guestLastName = guestLastName;
     }
 
-    public String getNoOfNights()
+    public void setGuestFirstname(String guestFirstname)
     {
-        return noOfNights;
-    }
-
-    public String getGuestID()
-    {
-        return guestID;
-    }
-
-    public InfoObjectConstructor(String guestID, String lastName, String firstName, String country, String contactPhone, String email, String returning, String roomID, String dateFrom, 
-            String noOfNights, String dateTo)
-    {
-        this.guestID = guestID;
-        this.roomID = roomID;
-        this.Price = Price;
-        this.country = country;
-        this.dateFrom = dateFrom;
-        this.noOfNights = noOfNights;
-        this.dateTo = dateTo;
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.contactPhone = contactPhone;
-        this.email = email;
-        this.returning = returning;
-    }
-
-    public void setRoomID(String roomID)
-    {
-        this.roomID = roomID;
-    }
-
-    public void setPrice(String Price)
-    {
-        this.Price = Price;
+        this.guestFirstname = guestFirstname;
     }
 
     public void setCountry(String country)
@@ -65,29 +33,9 @@ class InfoObjectConstructor
         this.country = country;
     }
 
-    public void setDateFrom(String dateFrom)
+    public void setContanctPhone(String contanctPhone)
     {
-        this.dateFrom = dateFrom;
-    }
-
-    public void setDateTo(String dateTo)
-    {
-        this.dateTo = dateTo;
-    }
-
-    public void setLastName(String lastName)
-    {
-        this.lastName = lastName;
-    }
-
-    public void setFirstName(String firstName)
-    {
-        this.firstName = firstName;
-    }
-
-    public void setContactPhone(String contactPhone)
-    {
-        this.contactPhone = contactPhone;
+        this.contanctPhone = contanctPhone;
     }
 
     public void setEmail(String email)
@@ -100,44 +48,54 @@ class InfoObjectConstructor
         this.returning = returning;
     }
 
-    public String getRoomID()
+    public void setInstructorBill(String instructorBill)
     {
-        return roomID;
+        this.instructorBill = instructorBill;
     }
 
-    public String getPrice()
+    public void setRoomID(String roomID)
     {
-        return Price;
+        this.roomID = roomID;
     }
 
-    public String getDateFrom()
+    public void setDateFrom(String dateFrom)
     {
-        return dateFrom;
+        this.dateFrom = dateFrom;
     }
 
-    public String getDateTo()
+    public void setNoOfNights(String noOfNights)
     {
-        return dateTo;
+        this.noOfNights = noOfNights;
     }
 
-    public String getLastName()
+    public void setDateTo(String dateTo)
     {
-        return lastName;
+        this.dateTo = dateTo;
     }
 
-    public String getFirstName()
+    public String getGuestID()
     {
-        return firstName;
+        return guestID;
     }
-    
+
+    public String getGuestLastName()
+    {
+        return guestLastName;
+    }
+
+    public String getGuestFirstname()
+    {
+        return guestFirstname;
+    }
+
     public String getCountry()
     {
         return country;
     }
 
-    public String getContactPhone()
+    public String getContanctPhone()
     {
-        return contactPhone;
+        return contanctPhone;
     }
 
     public String getEmail()
@@ -149,4 +107,46 @@ class InfoObjectConstructor
     {
         return returning;
     }
+
+    public String getInstructorBill()
+    {
+        return instructorBill;
+    }
+
+    public String getRoomID()
+    {
+        return roomID;
+    }
+
+    public String getDateFrom()
+    {
+        return dateFrom;
+    }
+
+    public String getNoOfNights()
+    {
+        return noOfNights;
+    }
+
+    public String getDateTo()
+    {
+        return dateTo;
+    }
+
+    public InfoObjectConstructor(String guestID, String guestLastName, String guestFirstname, String country, String contanctPhone, String email, String returning, String instructorBill, String roomID, String dateFrom, String noOfNights, String dateTo)
+    {
+        this.guestID = guestID;
+        this.guestLastName = guestLastName;
+        this.guestFirstname = guestFirstname;
+        this.country = country;
+        this.contanctPhone = contanctPhone;
+        this.email = email;
+        this.returning = returning;
+        this.instructorBill = instructorBill;
+        this.roomID = roomID;
+        this.dateFrom = dateFrom;
+        this.noOfNights = noOfNights;
+        this.dateTo = dateTo;
+    }
+
 }

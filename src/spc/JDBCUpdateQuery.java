@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package spc;
 
 import java.sql.Connection;
@@ -96,6 +93,57 @@ public class JDBCUpdateQuery
                     +"', GUESTLASTNAME ='"+guestLastName+"', GUESTCOUNTRY ='"+guestCountry+"', "
                     + "GUESTCONTACTPHONE ="+phone+", GUESTEMAIL ='"+mail
                     +"' WHERE GUESTID ='"+guestID+"'");
+           
+            rs.close(); 
+        } catch (SQLException se){
+            se.printStackTrace();
+        } catch (Exception e){
+            e.printStackTrace();
+        } finally{
+            try{
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se){
+            }
+            try{
+                if (conn != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+    }
+    
+    public void updateFacBook(String guestID, String facDate, String NEWtimeStart, 
+               String NEWtimeEnd, String CURRtimeStart)
+    {
+     
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+
+            rs = stmt.executeQuery("UPDATE FACBOOK SET TIMESTART ='"
+                    +NEWtimeStart+"', TIMEEND ='"+NEWtimeEnd+"' "
+                    +"WHERE GUESTID ='"+guestID+"' AND TIMESTART='"
+                    +CURRtimeStart+"'");
            
             rs.close(); 
         } catch (SQLException se){
