@@ -2458,7 +2458,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jComboBoxMatchOverviewActionPerformed
         //String GuestID = (String)jLabelOverviewGuestID.getText();
 
-        jComboBoxMatchOverview.addItem(update.updateFacBook(null, null, null, null, null));
     }//GEN-LAST:event_jComboBoxMatchOverviewActionPerformed
 
     /**
@@ -2466,7 +2465,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
      */
     public static void main(String args[])
     {
-        
+        jComboBoxMatchOverview.addItem(select.getBookedOverview(null));
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
