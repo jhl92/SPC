@@ -123,13 +123,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -179,13 +180,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -235,13 +237,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -291,13 +294,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -347,13 +351,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -403,13 +408,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -459,13 +465,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
@@ -515,13 +522,14 @@ public class JDBCSelectQuery
             String rsContactPhone = rs.getString("GuestContactPhone");
             String rsEmail = rs.getString("GuestEmail");
             String rsReturning = rs.getString("ReturningGuest");
+            String rsInstructorBill = rs.getString("InstructorBill");
             String rsRoomId = rs.getString("roomID");
             String rsDateFrom = rs.getString("dateFrom");
             String rsNoOfNights = rs.getString("noOfNights");
             String rsDateTo = rs.getString("dateTo");
             InfoObjectConstructor info1 = new InfoObjectConstructor(rsGuestID, rsLastName, 
                     rsFirstName, rsCountry, rsContactPhone, rsEmail, 
-                    rsReturning, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
+                    rsReturning, rsInstructorBill, rsRoomId, rsDateFrom, rsNoOfNights, rsDateTo);
             guestIDHistory.add(info1); 
             } return guestIDHistory;
         } catch (SQLException se)
