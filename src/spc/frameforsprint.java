@@ -393,8 +393,7 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        delete.JDBCDeleteFacBooking(DELETEGUEST.getText(), DELETEFACID.getText(),
-                DELETETIMESTART.getText());
+        insert.JDBCInsertInstructorCost("12345", "01");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void DELETEFACIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_DELETEFACIDActionPerformed
