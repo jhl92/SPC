@@ -25,7 +25,7 @@ public class JDBCSelectQuery
     ArrayList<String> guestIDArray = new ArrayList<>();
 
 
-    public ArrayList checkIdAva()
+    public ArrayList checkIdAva() //Tjekker om et ID allerede er brugt -- Bruges af ID generatoren
     {
         Connection conn = null;
         Statement stmt = null;
@@ -93,7 +93,7 @@ public class JDBCSelectQuery
         return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromGuestID(String guestID){
+    public ArrayList<InfoObjectConstructor> getInfoFromGuestID(String guestID){ //Sender information om gæsten og deres booking fra gæstID
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -150,7 +150,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromFirstName(String firstName){
+    public ArrayList<InfoObjectConstructor> getInfoFromFirstName(String firstName){ //Sender information om gæsten og deres booking fra fornavn
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -207,7 +207,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromLastName(String lastName){
+    public ArrayList<InfoObjectConstructor> getInfoFromLastName(String lastName){ //Sender information om gæsten og deres booking fra efternavn
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -264,7 +264,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromCountry(String country){
+    public ArrayList<InfoObjectConstructor> getInfoFromCountry(String country){ //Sender information om gæsten og deres booking fra land/sprog
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -321,7 +321,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromPhone(String phone){
+    public ArrayList<InfoObjectConstructor> getInfoFromPhone(String phone){ //Sender information om gæsten og deres booking fra telefonnummer
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -378,7 +378,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromMail(String mail){
+    public ArrayList<InfoObjectConstructor> getInfoFromMail(String mail){ //Sender information om gæsten og deres booking fra email
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -435,7 +435,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromDateFrom(String dateFrom){
+    public ArrayList<InfoObjectConstructor> getInfoFromDateFrom(String dateFrom){ //Sender information om gæsten og deres booking fra start dato af booking
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -492,7 +492,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<InfoObjectConstructor> getInfoFromDateTo(String dateTo){
+    public ArrayList<InfoObjectConstructor> getInfoFromDateTo(String dateTo){ //Sender information om gæsten og deres booking fra slut dato på booking
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
@@ -548,7 +548,7 @@ public class JDBCSelectQuery
         } System.out.println("Done.");
             return null;
     }
-    public void printBill(String guestID){
+    public void printBill(String guestID){ //laver regningen fra instrukionsomkostningerne på en fil
         Connection conn = null;
         Statement stmt = null;
         try
@@ -615,7 +615,7 @@ public class JDBCSelectQuery
         }
     }
     
-    public void printWriter(String tomorrowDate)
+    public void printWriter(String tomorrowDate) //laver en liste over check-ins
     {
         Connection conn = null;
         Statement stmt = null;
@@ -695,7 +695,7 @@ public class JDBCSelectQuery
 
     }
     
-    public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(String roomID){
+    public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(String roomID){ //tjekker værelsesledighed
         Connection conn = null;
         Statement stmt = null;
         ArrayList<RoomAvaBookConstructor> RoomAvailability = new ArrayList<>();
@@ -745,7 +745,7 @@ public class JDBCSelectQuery
             return null;
     }
     
-    public ArrayList<String> getCheckAvaRoomFromType(String roomType){
+    public ArrayList<String> getRoomsFromType(String roomType){ //sender RoomID'er tilbage afhængig af type
         Connection conn = null;
         Statement stmt = null;
         ArrayList<String> RoomIDFromRoomType = new ArrayList<>();
@@ -787,7 +787,7 @@ public class JDBCSelectQuery
         } System.out.println("Done.");
             return null;
     }
-    public ArrayList<BookedOverviewConstructor> getBookedOverview(String guestID){
+    public ArrayList<BookedOverviewConstructor> getBookedOverview(String guestID){ //returnerer gæstens facilitetsbookinger
         Connection conn = null;
         Statement stmt = null;
         ArrayList<BookedOverviewConstructor> bookOverviewForGuest = new ArrayList<>();
