@@ -4,6 +4,7 @@
  */
 package spc;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -23,13 +24,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
     JDBCDeleteQuery delete = new JDBCDeleteQuery();
     JDBCUpdateQuery update = new JDBCUpdateQuery();
     DefaultListModel bookedOverview = new DefaultListModel();
+    SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
     
     public Facilitet_GUI()
     {
         initComponents();
         Calendar cal = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
-        
+               
         // jComboBoxBadmintonSelectDate
         jComboBoxBadmintonSelectDate.addItem(sdf.format(cal.getTime()));
         cal.roll(Calendar.DAY_OF_YEAR, true);
@@ -158,6 +159,20 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxSwimmingInstructorDate.addItem(sdf.format(cal.getTime()));
     }
     
+    private void bookedOverview() throws ParseException {
+        ArrayList<BookedOverviewConstructor> tempBookOverview = new ArrayList<>();
+        tempBookOverview = select.getBookedOverview("12345");
+        for(int i = 0;  i<tempBookOverview.size(); ++i) {
+            //String GuestID = tempBookOverview.get(i).getGuestID();
+            String FacType = tempBookOverview.get(i).getFacType();
+            String FacDate = FacDate.setTime(sdf.parse(tempBookOverview.get(i).getFacDate()));
+            String TimeStart = tempBookOverview.get(i).getTimeStart();
+            String TimeEnd = tempBookOverview.get(i).getTimeEnd();
+            
+            bookedOverview.addElement("Facility: "+FacType+", Date: "+FacDate+", From: "+TimeStart+", To: "+TimeEnd);
+        }
+        jListBookedOverview.setModel(bookedOverview);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -2437,12 +2452,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonLoadBookingsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonLoadBookingsActionPerformed
     {//GEN-HEADEREND:event_jButtonLoadBookingsActionPerformed
-        ArrayList<BookedOverviewConstructor> tempBookOverview = new ArrayList<>();
-        tempBookOverview = select.getBookedOverview("12345");
-        for(int i = 0;  i<tempBookOverview.size(); ++i) {
-            bookedOverview.addElement(tempBookOverview.get(i));
-        }
-        jListBookedOverview.setModel(bookedOverview);
+      
     }//GEN-LAST:event_jButtonLoadBookingsActionPerformed
 
     /**
