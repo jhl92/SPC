@@ -808,7 +808,7 @@ public class JDBCSelectQuery
             rs = stmt.executeQuery("SELECT FACBOOK.GUESTID, FACBOOK.FACID, " +
                     "FACILITY.FACTYPE, FACBOOK.FACDATE, FACBOOK.TIMESTART, FACBOOK.TIMEEND " 
                     +"FROM FACBOOK INNER JOIN FACILITY ON FACBOOK.FACID = FACILITY.FACID "
-                    +"WHERE FACBOOK.GUESTID='"+guestID+"'");
+                    +"WHERE FACBOOK.GUESTID='"+guestID+"' ORDER BY FACBOOK.FACDATE");
            
             while (rs.next()) {
                 String rsGuestID = rs.getString("GuestID");
