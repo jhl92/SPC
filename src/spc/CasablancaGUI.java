@@ -6644,8 +6644,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         //This method will be the same method as the one checking availability for Dialog-searchRoom
         
         //If available room has been found
-        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex()+1)+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
-        String dateTo = ((jComboBoxBookingEndDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingEndMonth.getSelectedIndex()+1)+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
+        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
+        String dateTo = ((jComboBoxBookingEndDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingEndMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
         
         jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, /*Int specifying number of nights*/null, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
         setupDialogBooking();
@@ -6716,6 +6716,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {//GEN-HEADEREND:event_jButtonBookingCreateIDActionPerformed
         boolean IDcreated = false;
         String IDtemp = "";
+        ArrayList GuestIDtemp = jdcbselect.checkIdAva();
         while (IDcreated == false)
         {
             String characters = "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -6730,7 +6731,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             String s4 = characters.substring(i4, (i4 + 1));
             String s5 = characters.substring(i5, (i5 + 1));
             IDtemp = s1 + s2 + s3 + s4 + s5;
-            ArrayList GuestIDtemp = jdcbselect.checkIdAva();
             if (GuestIDtemp.contains(IDtemp))
             {
                 IDcreated = true;
@@ -7412,7 +7412,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }
     
-    private void checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate) throws ParseException
+    private String checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate) throws ParseException
     {
         int a = 0;
         while(a<listOfRooms.size())
@@ -7426,23 +7426,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 listOfRooms.remove(a);
             }
         }
+        if(listOfRooms.size()>0
+        {
+            if()
+        }
     }
     
     private boolean checkRoom(String rID, Calendar sDate, Calendar eDate) throws ParseException
     {
-        //Following is a short idea of how searching for room availability might work
-        /*
-        if(booking end-date comes before the specified start date)
-            Skip this booking and move to next booking.
-        if(booking start-date comes before specified start date and booking end-date comes after)
-            Return that this rooms availability is FALSE.
-        if(booking start-date comes before specified end date and booking end-date comes after)
-            Return that this rooms availability is FALSE.
-        if(booking start-date comes after the specified end date)
-            Skip this booking and move to next booking.
-        if(no false-statements have been returned)
-            Return that this rooms availability is TRUE.
-        */
         ArrayList<RoomAvaBookConstructor> tempRoomBookings = jdcbselect.getCheckAvaRoom(rID);
         for (int b = 0; b < tempRoomBookings.size(); b++)
         {
@@ -7456,11 +7447,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 {
                     return false;
                 }
-            } else
-            {
-
             }
         }
+        return true;
     }
     
     private void fillDateCells(String weekday, int date, String month, int year)
