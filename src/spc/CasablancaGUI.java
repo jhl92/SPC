@@ -6822,7 +6822,16 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             jLabelSearchCustomerEmail.setText(guestList.get(selectedCustomer).getEmail());
             
             //Search Database for all bookings attached to the selected guests GuestID and prints them to "jListSearchCustomerBookingsHistory"
-            xxx
+            ArrayList<InfoObjectConstructor> guestInfo = jdcbselect.getInfoFromGuestID(guestList.get(selectedCustomer).getGuestID());
+            for(int a = 0; a<guestInfo.size(); a++)
+            {
+                String rType = guestInfo.get(a).getRoomID();
+                String rID = guestInfo.get(a).getRoomID();
+                String dFrom = guestInfo.get(a).getRoomID();
+                String dTo = guestInfo.get(a).getRoomID();
+                writeList.addElement(dFrom + "  to  " + dTo + ",  " + rType + " Room");
+            }
+            jListSearchCustomerBookingsHistory.setModel(writeList);
         }
     }//GEN-LAST:event_jButtonShowSelectedCustomerDetailsActionPerformed
 
@@ -7011,13 +7020,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         {
             
         }
-        
-        
-        
-        
-        
-        
-        
     }//GEN-LAST:event_jButtonSaveCustomerDetailsActionPerformed
 
     private void jButtonSearchCustomerExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerExitActionPerformed
@@ -7045,7 +7047,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             if (srt == 0)
             {
                 //Get a list of ALL rooms
-                xxx
             } else if (srt == 1)
             {
                 //Get a list of SINGLE rooms
