@@ -695,7 +695,7 @@ public class JDBCSelectQuery
 
     }
     
-    public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(){
+    public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(String roomID){
         Connection conn = null;
         Statement stmt = null;
         ArrayList<RoomAvaBookConstructor> RoomAvailability = new ArrayList<>();
@@ -715,7 +715,7 @@ public class JDBCSelectQuery
  
             rs = stmt.executeQuery("SELECT ROOMS.ROOMID, ROOMS.ROOMTYPE, " +
                     "ROOMS.ROOMPRICE, BOOKROOM.DATEFROM, BOOKROOM.DATETO" +
-                    "FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = ROOMS.ROOMID;");
+                    "FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = '"+roomID+"'");
            
             while (rs.next()) {
                 String rsRoomID = rs.getString("RoomID");
@@ -745,6 +745,48 @@ public class JDBCSelectQuery
             return null;
     }
     
+    public ArrayList<String> getCheckAvaRoomFromType(String roomType){
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<String> RoomIDFromRoomType = new ArrayList<>();
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+ 
+            rs = stmt.executeQuery("SELECT ROOMID FROM ROOMS " 
+                    + "WHERE UPPER (ROOMTYPE) = UPPER ('"+roomType+"')");
+           
+            while (rs.next()) {
+                String rsRoomID = rs.getString("RoomID");
+                RoomIDFromRoomType.add(rsRoomID);
+            } 
+            return RoomIDFromRoomType;
+        } catch (SQLException se)
+        { se.printStackTrace(); } 
+        catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();}
+            } catch (SQLException se){}
+            try { if (conn != null) {
+                    conn.close(); }
+            } catch (SQLException se) {
+                se.printStackTrace(); }
+        } System.out.println("Done.");
+            return null;
+    }
     public ArrayList<BookedOverviewConstructor> getBookedOverview(String guestID){
         Connection conn = null;
         Statement stmt = null;
