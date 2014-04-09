@@ -54,13 +54,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private int Room8 = 8;
     private int roomsShowing;
     private String detailsGuestID = "";
+    private String bookingDateFrom;
+    private String bookingDateTo;
+    private String bookingNumberNights;
+    private String bookingRoomID;
     Font fontSystem = new Font("Tahoma", Font.ITALIC, 11);
     Font fontNormal = new Font("Tahoma", Font.BOLD, 11);
     private int currentWeekDay;
     private int currentDate;
     private int currentMonth;
     private int currentYear;
-    private SimpleDateFormat format = new SimpleDateFormat("MM-dd-yy");
+    private SimpleDateFormat format = new SimpleDateFormat("dd-MM-yy");
     private SimpleDateFormat cWeekDay = new SimpleDateFormat("u");
     private SimpleDateFormat cDate = new SimpleDateFormat("d");
     private SimpleDateFormat cMonth = new SimpleDateFormat("M");
@@ -189,7 +193,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jComboBoxBookingEndMonth = new javax.swing.JComboBox();
         jComboBoxBookingEndDate = new javax.swing.JComboBox();
         jComboBoxBookingEndYear = new javax.swing.JComboBox();
-        jButton1 = new javax.swing.JButton();
+        jButtonSearchForAvailableRoom = new javax.swing.JButton();
         jLabelBookingRoomNotifier = new javax.swing.JLabel();
         jLabelBookingNumberNights = new javax.swing.JLabel();
         jDialogCheckIn = new javax.swing.JDialog();
@@ -1487,13 +1491,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButton1.setText("Search for available room");
-        jButton1.setPreferredSize(new java.awt.Dimension(178, 35));
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        jButtonSearchForAvailableRoom.setText("Search for available room");
+        jButtonSearchForAvailableRoom.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonSearchForAvailableRoom.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                jButtonSearchForAvailableRoomActionPerformed(evt);
             }
         });
 
@@ -1531,7 +1535,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         .addGap(10, 10, 10)
                         .addComponent(jLabelBookingRoomTypePersonsNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabelBookingRoomNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonSearchForAvailableRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
@@ -1566,7 +1570,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabelBookingRoomNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonSearchForAvailableRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
 
@@ -6641,12 +6645,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
         //Check if there is an available room of the selected type in the specified period
         //This method will be the same method as the one checking availability for Dialog-searchRoom
+        String returnGuest;
+        ArrayList guestListBooking = jdcbselect.checkIdAva();
+        if(guestListBooking.contains(jTextFieldBookingGuestID.getText()))
+        {
+            returnGuest = "Y";
+        } else
+        {
+            returnGuest = "N";
+        }
         
-        //If available room has been found
-        String dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
-        String dateTo = ((jComboBoxBookingEndDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingEndMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
-        
-        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), null, null, "EmployeeID", dateFrom, /*Int specifying number of nights*/null, dateTo, "BookingPrice", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText());
+        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), bookingRoomID, "E05", bookingDateFrom, bookingNumberNights, bookingDateTo, "RoomAvailability", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText(), returnGuest);
         setupDialogBooking();
         jLabelBookingRoomNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
@@ -6842,10 +6851,15 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         setupDialogEditCustomer(gID);
     }//GEN-LAST:event_jButtonEditSelectedCustomerDetailsActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButtonSearchForAvailableRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchForAvailableRoomActionPerformed
+    {//GEN-HEADEREND:event_jButtonSearchForAvailableRoomActionPerformed
+        dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
+        dateTo = ((jComboBoxBookingEndDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingEndMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
+        
+        
+        
+        checkRoomAvailability(showRoomsList, endDate, endDate);
+    }//GEN-LAST:event_jButtonSearchForAvailableRoomActionPerformed
 
     private void jButtonExitDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonExitDetailsActionPerformed
@@ -7769,7 +7783,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
@@ -7806,6 +7819,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonSearchCustomer;
     private javax.swing.JButton jButtonSearchCustomerDetails;
     private javax.swing.JButton jButtonSearchCustomerExit;
+    private javax.swing.JButton jButtonSearchForAvailableRoom;
     private javax.swing.JButton jButtonSearchRoom;
     private javax.swing.JButton jButtonSearchRoomBook;
     private javax.swing.JButton jButtonSearchRoomExit;

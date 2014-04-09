@@ -1562,7 +1562,7 @@
                               <Component id="jLabelBookingRoomTypePersonsNotifier" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jLabelBookingRoomNotifier" pref="0" max="32767" attributes="0"/>
-                          <Component id="jButton1" alignment="0" max="-2" attributes="0"/>
+                          <Component id="jButtonSearchForAvailableRoom" alignment="0" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="10" max="32767" attributes="0"/>
                   </Group>
@@ -1604,7 +1604,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabelBookingRoomNotifier" min="-2" pref="49" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonSearchForAvailableRoom" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -1875,7 +1875,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBookingEndYearActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="jButtonSearchForAvailableRoom">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Search for available room"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -1883,7 +1883,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSearchForAvailableRoomActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelBookingRoomNotifier">

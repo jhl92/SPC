@@ -329,6 +329,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxHandballTimeTo = new javax.swing.JComboBox();
         jButtonHandBallHelp = new javax.swing.JButton();
         jLabel51 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel4MountainBike = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -1059,7 +1060,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addGap(1, 1, 1)
                         .addComponent(jComboBoxFitnessTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jButtonFitnessHelp))
-                .addGap(javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel44)
                 .addGap(11, 11, 11)
@@ -1137,13 +1137,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel58)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(452, 452, 452)
-                .addComponent(jLabelGolfPriceLabel)
-                .addGap(12, 12, 12)
-                .addComponent(jLabelGolfInstructorPrice)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel58)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(452, 452, 452)
+                        .addComponent(jLabelGolfPriceLabel)
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabelGolfInstructorPrice)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -1219,7 +1219,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addGap(28, 28, 28)
                         .addComponent(jLabelGolfInstructHourLabel)
                         .addGap(32, 32, 32)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabelGolfInstructorDate)
@@ -1343,8 +1342,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel5.setText("<html>Handball is a teamsport usually 6 players on each team. <br> Test your accuracy and have fun with your teammates. ");
         jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/HandballRESIZED.jpg"))); // NOI18N
-
         jButtonBookHandball.setText("BOOK");
         jButtonBookHandball.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1432,6 +1429,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
+        jLabel32.setPreferredSize(new java.awt.Dimension(320, 200));
+
         javax.swing.GroupLayout jPanel1HandballLayout = new javax.swing.GroupLayout(jPanel1Handball);
         jPanel1Handball.setLayout(jPanel1HandballLayout);
         jPanel1HandballLayout.setHorizontalGroup(
@@ -1450,7 +1449,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 .addGap(124, 124, 124)))
                         .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel18)
-                            .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(143, 143, 143))
             .addGroup(jPanel1HandballLayout.createSequentialGroup()
                 .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1469,6 +1469,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1HandballLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel43)
+                .addGap(4, 4, 4)
+                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1HandballLayout.createSequentialGroup()
@@ -2661,6 +2663,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
