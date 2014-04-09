@@ -7227,9 +7227,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     
     private void setupDialogBookingWithRoom(String roomID, Calendar sDate, Calendar eDate)
     {
-        ArrayList<RoomAvaBookConstructor> tempRoomList = jdcbselect.getCheckAvaRoom();
+        ArrayList<RoomAvaBookConstructor> tempRoomList = jdcbselect.getCheckAvaRoom(roomID);
         int i = tempRoomList.indexOf(roomID);
-        String rType = tempRoomList.get(i).getRoomAva();
+        String rType = tempRoomList.get(0).getRoomAva();
         switch (rType)
         {
             case "1":
@@ -7414,6 +7414,22 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     
     private void checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate) throws ParseException
     {
+        int a = 0;
+        while(a<listOfRooms.size())
+        {
+            String rID = listOfRooms.get(a);
+            if(checkRoom(rID, sDate, eDate)==true)
+            {
+                a++;
+            } else
+            {
+                listOfRooms.remove(a);
+            }
+        }
+    }
+    
+    private boolean checkRoom(String rID, Calendar sDate, Calendar eDate) throws ParseException
+    {
         //Following is a short idea of how searching for room availability might work
         /*
         if(booking end-date comes before the specified start date)
@@ -7427,27 +7443,24 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         if(no false-statements have been returned)
             Return that this rooms availability is TRUE.
         */
-        for(int a = 0; a<listOfRooms.size(); a++)
+        ArrayList<RoomAvaBookConstructor> tempRoomBookings = jdcbselect.getCheckAvaRoom(rID);
+        for (int b = 0; b < tempRoomBookings.size(); b++)
         {
-            String rID = listOfRooms.get(a);
-            ArrayList<RoomAvaBookConstructor> tempRoomBookings = jdcbselect.getCheckAvaRoom(rID);
-            for (int b = 0; b < tempRoomBookings.size(); b++)
+            Calendar sBookDate = Calendar.getInstance();
+            Calendar eBookDate = Calendar.getInstance();
+            sBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateFrom()));
+            eBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateTo()));
+            if (eBookDate.after(sDate))
             {
-                Calendar sBookDate = Calendar.getInstance();
-                Calendar eBookDate = Calendar.getInstance();
-                sBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateFrom()));
-                eBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateTo()));
-                if (eBookDate.after(sDate))
+                if(sBookDate.before(eDate))
                 {
-                    ;
-                } else
-                {
-                    ;
+                    return false;
                 }
+            } else
+            {
+
             }
         }
-        
-        
     }
     
     private void fillDateCells(String weekday, int date, String month, int year)
