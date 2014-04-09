@@ -61,7 +61,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private int currentDate;
     private int currentMonth;
     private int currentYear;
-    private SimpleDateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+    private SimpleDateFormat format = new SimpleDateFormat("MM-dd-yy");
     private SimpleDateFormat cWeekDay = new SimpleDateFormat("u");
     private SimpleDateFormat cDate = new SimpleDateFormat("d");
     private SimpleDateFormat cMonth = new SimpleDateFormat("M");
@@ -7412,7 +7412,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }
     
-    private void checkRoomAvailability(ArrayList<RoomAvaBookConstructor> listOfRooms, Calendar sDate, Calendar eDate) throws ParseException
+    private void checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate) throws ParseException
     {
         //Following is a short idea of how searching for room availability might work
         /*
@@ -7429,15 +7429,21 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         */
         for(int a = 0; a<listOfRooms.size(); a++)
         {
-            ArrayList<RoomAvaBookConstructor> tempRoomBookings = jdcbselect.getCheckAvaRoom();
-            for(int b = 0; b<tempRoomBookings.size(); b++)
+            String rID = listOfRooms.get(a);
+            ArrayList<RoomAvaBookConstructor> tempRoomBookings = jdcbselect.getCheckAvaRoom(rID);
+            for (int b = 0; b < tempRoomBookings.size(); b++)
             {
-            Date sBookDate = format.parse(listOfRooms.get(b).getDateFrom());
-            Date eBookDate = format.parse(listOfRooms.get(b).getDateTo());
-            if()
-            {
-                
-            }
+                Calendar sBookDate = Calendar.getInstance();
+                Calendar eBookDate = Calendar.getInstance();
+                sBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateFrom()));
+                eBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateTo()));
+                if (eBookDate.after(sDate))
+                {
+                    ;
+                } else
+                {
+                    ;
+                }
             }
         }
         
