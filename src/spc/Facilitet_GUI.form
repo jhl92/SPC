@@ -398,10 +398,6 @@
         </Container>
       </SubComponents>
     </Container>
-    <Component class="spc.JDBCUpdateQuery" name="jDBCUpdateQuery1">
-    </Component>
-    <Component class="spc.JDBCUpdateQuery" name="jDBCUpdateQuery2">
-    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>

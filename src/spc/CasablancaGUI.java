@@ -41,7 +41,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     DefaultListModel writeList1 = new DefaultListModel();
     ArrayList<InfoObjectConstructor> guestList = new ArrayList<>();
     ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
-    private DateVar specifiedDate;
     private boolean SearchCustomerResult = false;
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
