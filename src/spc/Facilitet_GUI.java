@@ -170,11 +170,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         int currentYear = Integer.parseInt(cYear.format(presentDate.getTime()));
         presentDate.set(currentDate, (currentMonth - 1), currentYear);
         String[] listOfDates = null;
-        listOfDates[0] = sdf.format(presentDate.getTime());
+        listOfDates[0] = (String) sdf.format(presentDate.getTime());
         for(int i = 1; i<8; i++)
         {
-            presentDate.add(Calendar.DAY_OF_MONTH, i);
-            listOfDates[i] = sdf.format(presentDate.getTime());
+            presentDate.add(Calendar.DAY_OF_MONTH, 1);
+            listOfDates[i] = (String)sdf.format(presentDate.getTime());
         }
         return listOfDates;
     }
