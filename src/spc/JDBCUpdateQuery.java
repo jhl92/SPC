@@ -120,8 +120,8 @@ public class JDBCUpdateQuery
         System.out.println("Done.");
     }
     
-    public void updateFacBook(String guestID, String facDate, String NEWtimeStart, 
-               String NEWtimeEnd, String CURRtimeStart)
+    public void updateFacBook(String guestID, String NEWfacDate, String NEWtimeStart, 
+               String NEWtimeEnd, String CURRtimeStart, String CURRfacDate)
     {
      
         Connection conn = null;
@@ -143,7 +143,7 @@ public class JDBCUpdateQuery
             rs = stmt.executeQuery("UPDATE FACBOOK SET TIMESTART ='"
                     +NEWtimeStart+"', TIMEEND ='"+NEWtimeEnd+"' "
                     +"WHERE GUESTID ='"+guestID+"' AND TIMESTART='"
-                    +CURRtimeStart+"'");
+                    +CURRtimeStart+"' AND FACDATE ='"+CURRfacDate+"'");
            
             rs.close(); 
         } catch (SQLException se){
