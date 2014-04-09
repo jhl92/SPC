@@ -695,7 +695,7 @@ public class JDBCSelectQuery
 
     }
     
-    public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(){
+    public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(String roomID){
         Connection conn = null;
         Statement stmt = null;
         ArrayList<RoomAvaBookConstructor> RoomAvailability = new ArrayList<>();
@@ -715,7 +715,7 @@ public class JDBCSelectQuery
  
             rs = stmt.executeQuery("SELECT ROOMS.ROOMID, ROOMS.ROOMTYPE, " +
                     "ROOMS.ROOMPRICE, BOOKROOM.DATEFROM, BOOKROOM.DATETO" +
-                    "FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = ROOMS.ROOMID;");
+                    "FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = '"+roomID+"'");
            
             while (rs.next()) {
                 String rsRoomID = rs.getString("RoomID");
