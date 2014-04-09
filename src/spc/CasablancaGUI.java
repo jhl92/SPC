@@ -7219,6 +7219,15 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         return daysInMonth;
     }
     
+    private int getNumberOfNights(String dFrom, String dTo) throws ParseException
+    {
+        Date sDate = format.parse(dFrom);
+        Date eDate = format.parse(dTo);
+        startDateTemp.setTime(sDate);
+        endDateTemp.setTime(eDate);
+        int days = Calendar.
+    }
+    
     public void setupDialogBooking()
     {
         jTextFieldBookingFirstName.setText("");
