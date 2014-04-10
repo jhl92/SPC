@@ -398,6 +398,8 @@
         </Container>
       </SubComponents>
     </Container>
+    <Component class="spc.JDBCSelectQuery" name="jDBCSelectQuery1">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
