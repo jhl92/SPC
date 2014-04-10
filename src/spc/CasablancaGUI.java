@@ -882,7 +882,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jLabelSearchCustomerNoChange16.setText("Booking history for selected customer:");
 
-        jListSearchCustomerBookingsHistory.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jListSearchCustomerBookingsHistory.setEnabled(false);
         jScrollPane4.setViewportView(jListSearchCustomerBookingsHistory);
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
@@ -6360,7 +6360,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addComponent(jPanelDay13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelDay14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.PREFERRED_SIZE, 840, Short.MAX_VALUE))))
+                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE))))
                 .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
@@ -6416,7 +6416,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
