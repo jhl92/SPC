@@ -105,8 +105,8 @@ public class JDBCInsertQuery
 
             String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','N','"+insID+"')";
             stmt.executeUpdate(sql);
-            sql = "INSERT INTO GUEST VALUES";
-            stmt.executeUpdate(sql);
+//            sql = "INSERT INTO GUEST VALUES";
+//            stmt.executeUpdate(sql);
             System.out.println("Inserted records into the table...");
 
         } catch (SQLException se)
@@ -166,9 +166,11 @@ public class JDBCInsertQuery
                 stmt.executeUpdate(sql);
             }
             if(facID.equals("02")) {
+
                 String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
                         + "WHERE GUESTID='"+guestID+"'";
                 stmt.executeUpdate(sql);
+                System.out.println("Wupdidu");
             }
             if(facID.equals("05")) {
                 String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
