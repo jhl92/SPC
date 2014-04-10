@@ -6928,7 +6928,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonChangeDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonChangeDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonChangeDetailsActionPerformed
-        setupDialogEditBooking(detailsGuestID);
+        setupDialogEditDetails(detailsGuestID);
     }//GEN-LAST:event_jButtonChangeDetailsActionPerformed
 
     private void jTextFieldRow1MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow1MouseClicked
