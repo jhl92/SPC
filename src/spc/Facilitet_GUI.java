@@ -2438,7 +2438,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonPrintInstrucCostActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrintInstrucCostActionPerformed
     {//GEN-HEADEREND:event_jButtonPrintInstrucCostActionPerformed
-        //select.printBill(guestid);
+        select.printBill("12345");
     }//GEN-LAST:event_jButtonPrintInstrucCostActionPerformed
 
     private void jButtonLoadBookingsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonLoadBookingsActionPerformed
