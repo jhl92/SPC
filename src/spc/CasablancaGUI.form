@@ -818,10 +818,10 @@
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                              <Component id="jButtonBookingShowRooms" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButtonBookingRemoveFromList" alignment="1" max="-2" attributes="0"/>
+                              <Component id="jButtonSearchRoomShowRooms" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonSearchRoomRemoveFromList" alignment="1" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jButtonSearchRoomBook" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonSearchRoomBookRoom" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jButtonSearchRoomExit" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -835,11 +835,11 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                              <Component id="jButtonBookingShowRooms" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonSearchRoomShowRooms" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                              <Component id="jButtonBookingRemoveFromList" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonSearchRoomRemoveFromList" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                              <Component id="jButtonSearchRoomBook" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonSearchRoomBookRoom" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jButtonSearchRoomExit" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -896,7 +896,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="jButtonBookingShowRooms">
+            <Component class="javax.swing.JButton" name="jButtonSearchRoomShowRooms">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Show Rooms in Overview"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -904,7 +904,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBookingShowRoomsActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSearchRoomShowRoomsActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel61">
@@ -912,7 +912,7 @@
                 <Property name="text" type="java.lang.String" value="Search result:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonBookingRemoveFromList">
+            <Component class="javax.swing.JButton" name="jButtonSearchRoomRemoveFromList">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Remove from List"/>
                 <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
@@ -923,10 +923,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBookingRemoveFromListActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSearchRoomRemoveFromListActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonSearchRoomBook">
+            <Component class="javax.swing.JButton" name="jButtonSearchRoomBookRoom">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Book Selected Room"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -934,7 +934,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSearchRoomBookActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSearchRoomBookRoomActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonSearchRoomExit">
@@ -1452,11 +1452,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelBookingNoChange6">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Enter Guest-ID"/>
+                <Property name="text" type="java.lang.String" value="Guest-ID"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldBookingGuestID">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[84, 20]"/>
                 </Property>

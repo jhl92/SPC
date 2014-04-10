@@ -17,6 +17,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 
 /**
@@ -32,6 +34,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private Calendar endDate = Calendar.getInstance();
     private Calendar startDateTemp = Calendar.getInstance();
     private Calendar endDateTemp = Calendar.getInstance();
+    private Calendar SearchRoomSpecifiedDate = Calendar.getInstance();
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
     JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
@@ -44,14 +47,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private boolean SearchCustomerResult = false;
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
-    private int Room1 = 1;
-    private int Room2 = 2;
-    private int Room3 = 3;
-    private int Room4 = 4;
-    private int Room5 = 5;
-    private int Room6 = 6;
-    private int Room7 = 7;
-    private int Room8 = 8;
+    private String Room1 = 1;
+    private String Room2 = 2;
+    private String Room3 = 3;
+    private String Room4 = 4;
+    private String Room5 = 5;
+    private String Room6 = 6;
+    private String Room7 = 7;
+    private String Room8 = 8;
     private int roomsShowing;
     private String detailsGuestID = "";
     private String bookingDateFrom;
@@ -145,10 +148,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jListSearchRoomResult = new javax.swing.JList();
-        jButtonBookingShowRooms = new javax.swing.JButton();
+        jButtonSearchRoomShowRooms = new javax.swing.JButton();
         jLabel61 = new javax.swing.JLabel();
-        jButtonBookingRemoveFromList = new javax.swing.JButton();
-        jButtonSearchRoomBook = new javax.swing.JButton();
+        jButtonSearchRoomRemoveFromList = new javax.swing.JButton();
+        jButtonSearchRoomBookRoom = new javax.swing.JButton();
         jButtonSearchRoomExit = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabelSearchNoChange2 = new javax.swing.JLabel();
@@ -1051,36 +1054,36 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         });
         jScrollPane2.setViewportView(jListSearchRoomResult);
 
-        jButtonBookingShowRooms.setText("Show Rooms in Overview");
-        jButtonBookingShowRooms.setPreferredSize(new java.awt.Dimension(178, 30));
-        jButtonBookingShowRooms.addActionListener(new java.awt.event.ActionListener()
+        jButtonSearchRoomShowRooms.setText("Show Rooms in Overview");
+        jButtonSearchRoomShowRooms.setPreferredSize(new java.awt.Dimension(178, 30));
+        jButtonSearchRoomShowRooms.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButtonBookingShowRoomsActionPerformed(evt);
+                jButtonSearchRoomShowRoomsActionPerformed(evt);
             }
         });
 
         jLabel61.setText("Search result:");
 
-        jButtonBookingRemoveFromList.setText("Remove from List");
-        jButtonBookingRemoveFromList.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButtonBookingRemoveFromList.setPreferredSize(new java.awt.Dimension(178, 30));
-        jButtonBookingRemoveFromList.addActionListener(new java.awt.event.ActionListener()
+        jButtonSearchRoomRemoveFromList.setText("Remove from List");
+        jButtonSearchRoomRemoveFromList.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        jButtonSearchRoomRemoveFromList.setPreferredSize(new java.awt.Dimension(178, 30));
+        jButtonSearchRoomRemoveFromList.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButtonBookingRemoveFromListActionPerformed(evt);
+                jButtonSearchRoomRemoveFromListActionPerformed(evt);
             }
         });
 
-        jButtonSearchRoomBook.setText("Book Selected Room");
-        jButtonSearchRoomBook.setPreferredSize(new java.awt.Dimension(178, 30));
-        jButtonSearchRoomBook.addActionListener(new java.awt.event.ActionListener()
+        jButtonSearchRoomBookRoom.setText("Book Selected Room");
+        jButtonSearchRoomBookRoom.setPreferredSize(new java.awt.Dimension(178, 30));
+        jButtonSearchRoomBookRoom.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButtonSearchRoomBookActionPerformed(evt);
+                jButtonSearchRoomBookRoomActionPerformed(evt);
             }
         });
 
@@ -1106,9 +1109,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addGap(12, 12, 12)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButtonBookingShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonBookingRemoveFromList, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButtonSearchRoomBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSearchRoomShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSearchRoomRemoveFromList, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonSearchRoomBookRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonSearchRoomExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
@@ -1119,11 +1122,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jButtonBookingShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSearchRoomShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jButtonBookingRemoveFromList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSearchRoomRemoveFromList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jButtonSearchRoomBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSearchRoomBookRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButtonSearchRoomExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -1314,8 +1317,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jTextFieldBookingEmail.setPreferredSize(new java.awt.Dimension(178, 20));
 
-        jLabelBookingNoChange6.setText("Enter Guest-ID");
+        jLabelBookingNoChange6.setText("Guest-ID");
 
+        jTextFieldBookingGuestID.setEditable(false);
         jTextFieldBookingGuestID.setPreferredSize(new java.awt.Dimension(84, 20));
 
         jButtonBookingCreateID.setText("Create ID");
@@ -6451,7 +6455,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
     {//GEN-HEADEREND:event_jButtonResetOveriewActionPerformed
-        setupDialogSetupOverview(1, 2, 3, 4, 5, 6, 7, 8);
+        setupDialogSetupOverview("001", "002", "003", "004", "005", "006", "007", "008");
     }//GEN-LAST:event_jButtonResetOveriewActionPerformed
 
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
@@ -6727,19 +6731,21 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         ArrayList GuestIDtemp = jdcbselect.checkIdAva();
         while (IDcreated == false)
         {
-            String characters = "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            int i1 = r.nextInt(35);
-            int i2 = r.nextInt(35);
-            int i3 = r.nextInt(35);
-            int i4 = r.nextInt(35);
-            int i5 = r.nextInt(35);
+            String characters = "123456789ABCDEFGHIJKLMNPQRSTUVWXYZ";
+            int i1 = r.nextInt(34);
+            int i2 = r.nextInt(34);
+            int i3 = r.nextInt(34);
+            int i4 = r.nextInt(34);
+            int i5 = r.nextInt(34);
             String s1 = characters.substring(i1, (i1 + 1));
             String s2 = characters.substring(i2, (i2 + 1));
             String s3 = characters.substring(i3, (i3 + 1));
             String s4 = characters.substring(i4, (i4 + 1));
             String s5 = characters.substring(i5, (i5 + 1));
-            IDtemp = s1 + s2 + s3 + s4 + s5;
+            IDtemp = (s1 + s2 + s3 + s4 + s5).toString();
             if (GuestIDtemp.contains(IDtemp))
+            {
+            } else
             {
                 IDcreated = true;
             }
@@ -6853,12 +6859,34 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonSearchForAvailableRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchForAvailableRoomActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchForAvailableRoomActionPerformed
-        dateFrom = ((jComboBoxBookingStartDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingStartMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingStartYear.getSelectedItem());
-        dateTo = ((jComboBoxBookingEndDate.getSelectedIndex()+1)+"-"+(jComboBoxBookingEndMonth.getSelectedIndex())+"-"+(String) jComboBoxBookingEndYear.getSelectedItem());
+        Calendar dFrom = Calendar.getInstance();
+        Calendar dTo = Calendar.getInstance();
+        dFrom.set((jComboBoxBookingStartYear.getSelectedIndex()+2014), jComboBoxBookingStartMonth.getSelectedIndex(), (jComboBoxBookingStartDate.getSelectedIndex()+1));
+        dTo.set((jComboBoxBookingEndYear.getSelectedIndex()+2014), jComboBoxBookingEndMonth.getSelectedIndex(), (jComboBoxBookingEndDate.getSelectedIndex()+1));
+        
+        if(dTo.after(dFrom))
+        {
+            //Searches Database for all rooms of the selected room type.
+            int srt = jComboBoxBookingRoomType.getSelectedIndex();
+            if (srt == 0)
+            {
+                //Get a list of SINGLE rooms
+                roomsList = jdcbselect.getRoomsFromType("Single");
+            } else if (srt == 1)
+            {
+                //Get a list of DOUBLE rooms
+                roomsList = jdcbselect.getRoomsFromType("Double");
+            } else if (srt == 2)
+            {
+                //Get a list of FAMILY rooms
+                roomsList = jdcbselect.getRoomsFromType("Family");
+            }
+        }
         
         
         
-        checkRoomAvailability(showRoomsList, endDate, endDate);
+        
+        checkRoomAvailability(showRoomsList, dFrom, dTo);xxx
     }//GEN-LAST:event_jButtonSearchForAvailableRoomActionPerformed
 
     private void jButtonExitDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
@@ -7052,6 +7080,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         int ey = jComboBoxSearchEndYear.getSelectedIndex()+2014;
         startDate.set(sy, sm, sd);
         endDate.set(ey, em, ed);
+        SearchRoomSpecifiedDate.set(sy, sm, sd);
+        ArrayList<String> roomsList = new ArrayList<>();
         
         //Checking if specified endDate is after specified startDate
         if(endDate.after(startDate))
@@ -7061,27 +7091,29 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             if (srt == 0)
             {
                 //Get a list of ALL rooms
+                
             } else if (srt == 1)
             {
                 //Get a list of SINGLE rooms
-                xxx
+                roomsList = jdcbselect.getRoomsFromType("Single");
             } else if (srt == 2)
             {
                 //Get a list of DOUBLE rooms
-                xxx
+                roomsList = jdcbselect.getRoomsFromType("Double");
             } else if (srt == 3)
             {
                 //Get a list of FAMILY rooms
-                xxx
+                roomsList = jdcbselect.getRoomsFromType("Family");
             }
             
             //Searches for rooms after the selected parameter
             if (jRadioButtonSearchRoom1.isSelected())
             {
                 //Runs a method that searches every room (of selected type) one by one, to see if it is available from start-date to end-date.
-                //Same method will be used by jDialog-Booking as it also checks for room-availability.
+                String roomToBook = checkRoomAvailability(roomsList, startDate, endDate);
+                
                 //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
-                xxx
+                
             } else if (jRadioButtonSearchRoom2.isSelected())
             {
                 //Searches Database for all rooms of selected type, that have check-in on the specified start-date.
@@ -7148,36 +7180,37 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogSearchRoom.setVisible(false);
     }//GEN-LAST:event_jButtonSearchRoomExitActionPerformed
 
-    private void jButtonSearchRoomBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomBookActionPerformed
-    {//GEN-HEADEREND:event_jButtonSearchRoomBookActionPerformed
+    private void jButtonSearchRoomBookRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomBookRoomActionPerformed
+    {//GEN-HEADEREND:event_jButtonSearchRoomBookRoomActionPerformed
         int book = jListSearchRoomResult.getSelectedIndex();
         String rID = roomList.get(book).getRoomID();
         jDialogSearchRoom.setVisible(false);
         setupDialogBookingWithRoom(rID, startDate, endDate);
-    }//GEN-LAST:event_jButtonSearchRoomBookActionPerformed
+    }//GEN-LAST:event_jButtonSearchRoomBookRoomActionPerformed
 
-    private void jButtonBookingRemoveFromListActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingRemoveFromListActionPerformed
-    {//GEN-HEADEREND:event_jButtonBookingRemoveFromListActionPerformed
+    private void jButtonSearchRoomRemoveFromListActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomRemoveFromListActionPerformed
+    {//GEN-HEADEREND:event_jButtonSearchRoomRemoveFromListActionPerformed
         int delete = jListSearchRoomResult.getSelectedIndex();
         roomList.remove(delete);
         for (int i = 0; i < roomList.size(); i++)
         {
             String roomID = roomList.get(i).getRoomID();
-            String roomType = roomList.get(i).getRoomID(); //This line should get RoomType, not RoomID. RoomType needs to be added to Room Constructor
-            writeList.addElement("Room  " + roomID + "  -  " + roomType);
+            String roomType = roomList.get(i).(); //This line should get RoomType, not RoomID. RoomType needs to be added to Room Constructor
+            writeList.addElement("Room " + roomID + "  -  " + roomType);
         }
-    }//GEN-LAST:event_jButtonBookingRemoveFromListActionPerformed
+    }//GEN-LAST:event_jButtonSearchRoomRemoveFromListActionPerformed
 
-    private void jButtonBookingShowRoomsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingShowRoomsActionPerformed
-    {//GEN-HEADEREND:event_jButtonBookingShowRoomsActionPerformed
+    private void jButtonSearchRoomShowRoomsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomShowRoomsActionPerformed
+    {//GEN-HEADEREND:event_jButtonSearchRoomShowRoomsActionPerformed
+        showRoomsList.clear();
         for(int i = 0; i < roomList.size(); i++)
         {
             String roomID = roomList.get(i).getRoomID();
             showRoomsList.add(roomID);
         }
         jDialogSearchRoom.setVisible(false);
-        setupOverviewList(showRoomsList, specifiedDate);
-    }//GEN-LAST:event_jButtonBookingShowRoomsActionPerformed
+        setupOverviewList(showRoomsList, SearchRoomSpecifiedDate);
+    }//GEN-LAST:event_jButtonSearchRoomShowRoomsActionPerformed
 
     private void jListSearchRoomResultMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jListSearchRoomResultMousePressed
     {//GEN-HEADEREND:event_jListSearchRoomResultMousePressed
@@ -7219,13 +7252,30 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         return daysInMonth;
     }
     
-    private int getNumberOfNights(String dFrom, String dTo) throws ParseException
+    private int getNumberOfNights(String dFrom, String dTo)
     {
-        Date sDate = format.parse(dFrom);
-        Date eDate = format.parse(dTo);
-        startDateTemp.setTime(sDate);
-        endDateTemp.setTime(eDate);
-        int days = Calendar.
+        Date sDate = null;
+        Date eDate = null;
+        Calendar startDtemp = Calendar.getInstance();
+        Calendar endDtemp = Calendar.getInstance();
+        
+        try
+        {
+            sDate = format.parse(dFrom);
+            eDate = format.parse(dTo);
+        } catch (ParseException ex)
+        {
+            Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        startDtemp.setTime(sDate);
+        endDtemp.setTime(eDate);
+        
+        int daysBetween = 0;
+        while (startDtemp.before(endDtemp)) {
+            startDtemp.add(Calendar.DAY_OF_MONTH, 1);
+            daysBetween++;
+        }
+        return daysBetween;
     }
     
     public void setupDialogBooking()
@@ -7255,18 +7305,18 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         String rType = tempRoomList.get(0).getRoomAva();
         switch (rType)
         {
-            case "1":
+            case "Single":
                 jComboBoxBookingRoomType.setSelectedIndex(0);
                 break;
-            case "2":
+            case "Double":
                 jComboBoxBookingRoomType.setSelectedIndex(1);
                 break;
-            case "3":
+            case "Family":
                 jComboBoxBookingRoomType.setSelectedIndex(2);
                 break;
         }
         
-        sDate
+        sDate;
         
         jTextFieldBookingFirstName.setText("");
         jTextFieldBookingLastName.setText("");
@@ -7356,30 +7406,30 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogCheckOut.setVisible(true);
     }
     
-    public void setupDialogSetupOverview(int r1, int r2, int r3, int r4, int r5, int r6, int r7, int r8)
+    public void setupDialogSetupOverview(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8)
     {
-        jTextFieldRow1.setText("" + r1);
+        jTextFieldRow1.setText(r1);
         jTextFieldRow1.setFont(fontSystem);
         jTextFieldRow1.setForeground(Color.DARK_GRAY);
-        jTextFieldRow2.setText("" + r2);
+        jTextFieldRow2.setText(r2);
         jTextFieldRow2.setFont(fontSystem);
         jTextFieldRow2.setForeground(Color.DARK_GRAY);
-        jTextFieldRow3.setText("" + r3);
+        jTextFieldRow3.setText(r3);
         jTextFieldRow3.setFont(fontSystem);
         jTextFieldRow3.setForeground(Color.DARK_GRAY);
-        jTextFieldRow4.setText("" + r4);
+        jTextFieldRow4.setText(r4);
         jTextFieldRow4.setFont(fontSystem);
         jTextFieldRow4.setForeground(Color.DARK_GRAY);
-        jTextFieldRow5.setText("" + r5);
+        jTextFieldRow5.setText(r5);
         jTextFieldRow5.setFont(fontSystem);
         jTextFieldRow5.setForeground(Color.DARK_GRAY);
-        jTextFieldRow6.setText("" + r6);
+        jTextFieldRow6.setText(r6);
         jTextFieldRow6.setFont(fontSystem);
         jTextFieldRow6.setForeground(Color.DARK_GRAY);
-        jTextFieldRow7.setText("" + r7);
+        jTextFieldRow7.setText(r7);
         jTextFieldRow7.setFont(fontSystem);
         jTextFieldRow7.setForeground(Color.DARK_GRAY);
-        jTextFieldRow8.setText("" + r8);
+        jTextFieldRow8.setText(r8);
         jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
         //Setup the StartDate using the recieved date-variable in the method.
@@ -7391,51 +7441,51 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogSetupOverview.setVisible(true);
     }
     
-    private void setupOverviewList(ArrayList<Integer> listShowRooms, DateVar startDate)
+    private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
     {
-        if(listShowRooms.get(0).intValue() > 0)
+        if(listShowRooms.get(0).equals(""))
         {
-            Room1 = listShowRooms.get(0).intValue();
+            Room1 = listShowRooms.get(0);
             roomsShowing = 1;
         }
-        if(listShowRooms.get(1).intValue() > 0)
+        if(listShowRooms.get(1).equals(""))
         {
-            Room2 = listShowRooms.get(1).intValue();
+            Room2 = listShowRooms.get(1);
             roomsShowing = 2;
         }
-        if(listShowRooms.get(2).intValue() > 0)
+        if(listShowRooms.get(2).equals(""))
         {
-            Room3 = listShowRooms.get(2).intValue();
+            Room3 = listShowRooms.get(2);
             roomsShowing = 3;
         }
-        if(listShowRooms.get(3).intValue() > 0)
+        if(listShowRooms.get(3).equals(""))
         {
-            Room4 = listShowRooms.get(3).intValue();
+            Room4 = listShowRooms.get(3);
             roomsShowing = 4;
         }
-        if(listShowRooms.get(4).intValue() > 0)
+        if(listShowRooms.get(4).equals(""))
         {
-            Room5 = listShowRooms.get(4).intValue();
+            Room5 = listShowRooms.get(4);
             roomsShowing = 5;
         }
-        if(listShowRooms.get(5).intValue() > 0)
+        if(listShowRooms.get(5).equals(""))
         {
-            Room6 = listShowRooms.get(5).intValue();
+            Room6 = listShowRooms.get(5);
             roomsShowing = 6;
         }
-        if(listShowRooms.get(6).intValue() > 0)
+        if(listShowRooms.get(6).equals(""))
         {
-            Room7 = listShowRooms.get(6).intValue();
+            Room7 = listShowRooms.get(6);
             roomsShowing = 7;
         }
-        if(listShowRooms.get(7).intValue() > 0)
+        if(listShowRooms.get(7).equals(""))
         {
-            Room8 = listShowRooms.get(7).intValue();
+            Room8 = listShowRooms.get(7);
             roomsShowing = 8;
         }
     }
     
-    private String checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate) throws ParseException
+    private String checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate)
     {
         int a = 0;
         while(a<listOfRooms.size())
@@ -7455,15 +7505,22 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }
     
-    private boolean checkRoom(String rID, Calendar sDate, Calendar eDate) throws ParseException
+    private boolean checkRoom(String rID, Calendar sDate, Calendar eDate)
     {
         ArrayList<RoomAvaBookConstructor> tempRoomBookings = jdcbselect.getCheckAvaRoom(rID);
         for (int b = 0; b < tempRoomBookings.size(); b++)
         {
             Calendar sBookDate = Calendar.getInstance();
             Calendar eBookDate = Calendar.getInstance();
-            sBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateFrom()));
-            eBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateTo()));
+            try
+            {
+                sBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateFrom()));
+                eBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateTo()));
+            } catch (ParseException ex)
+            {
+                Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
             if (eBookDate.after(sDate))
             {
                 if(sBookDate.before(eDate))
@@ -7797,8 +7854,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonBookingBook;
     private javax.swing.JButton jButtonBookingCreateID;
     private javax.swing.JButton jButtonBookingExit;
-    private javax.swing.JButton jButtonBookingRemoveFromList;
-    private javax.swing.JButton jButtonBookingShowRooms;
     private javax.swing.JButton jButtonChangeDetails;
     private javax.swing.JButton jButtonCheckIn;
     private javax.swing.JButton jButtonCheckInCheckIn;
@@ -7830,8 +7885,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonSearchCustomerExit;
     private javax.swing.JButton jButtonSearchForAvailableRoom;
     private javax.swing.JButton jButtonSearchRoom;
-    private javax.swing.JButton jButtonSearchRoomBook;
+    private javax.swing.JButton jButtonSearchRoomBookRoom;
     private javax.swing.JButton jButtonSearchRoomExit;
+    private javax.swing.JButton jButtonSearchRoomRemoveFromList;
+    private javax.swing.JButton jButtonSearchRoomShowRooms;
     private javax.swing.JButton jButtonSetupOverview;
     private javax.swing.JButton jButtonSetupOverviewExit;
     private javax.swing.JButton jButtonSetupOverviewShowRooms;
