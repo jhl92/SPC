@@ -6544,46 +6544,56 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         {
                             if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName))
                             {
-                                stringListTemp.add(guestList.get(i));
+                                if(stringListTemp.contains(guestList.get(i))==false)
+                                {
+                                    stringListTemp.add(guestList.get(i));
+                                }
                             }
                         }
-                        guestList = new ArrayList<>(stringListTemp);
                     case 2:
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName))
                             {
-                                stringListTemp.add(guestList.get(i));
+                                if(stringListTemp.contains(guestList.get(i))==false)
+                                {
+                                    stringListTemp.add(guestList.get(i));
+                                }
                             }
                         }
-                        guestList = new ArrayList<>(stringListTemp);
                     case 3:
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getCountry().toLowerCase().contains(scCountry))
                             {
-                                stringListTemp.add(guestList.get(i));
+                                if(stringListTemp.contains(guestList.get(i))==false)
+                                {
+                                    stringListTemp.add(guestList.get(i));
+                                }
                             }
                         }
-                        guestList = new ArrayList<>(stringListTemp);
                     case 4:
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone))
                             {
-                                stringListTemp.add(guestList.get(i));
+                                if(stringListTemp.contains(guestList.get(i))==false)
+                                {
+                                    stringListTemp.add(guestList.get(i));
+                                }
                             }
                         }
-                        guestList = new ArrayList<>(stringListTemp);
                     case 5:
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getEmail().toLowerCase().contains(scEmail))
                             {
-                                stringListTemp.add(guestList.get(i));
+                                if(stringListTemp.contains(guestList.get(i))==false)
+                                {
+                                    stringListTemp.add(guestList.get(i));
+                                }
                             }
                         }
-                        guestList = new ArrayList<>(stringListTemp);
                     case 6:
                         break;
                     default:
@@ -6591,14 +6601,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 }
                 
                 //Copies the remaining list with search-results from the entered data to a defaultlist and writes the list in GUI.
-                for (int i = 0; i < guestList.size(); ++i)
+                for (int i = 0; i < stringListTemp.size(); ++i)
                 {
-                    String searchFirstName = guestList.get(i).getGuestFirstname();
-                    String searchLastName = guestList.get(i).getGuestLastName();
-                    String searchCountry = guestList.get(i).getCountry();
-                    String searchPhoneNumber = guestList.get(i).getContanctPhone();
-                    String searchEmail = guestList.get(i).getEmail();
-                    String searchGuestID = guestList.get(i).getGuestID();
+                    String searchFirstName = stringListTemp.get(i).getGuestFirstname();
+                    String searchLastName = stringListTemp.get(i).getGuestLastName();
+                    String searchCountry = stringListTemp.get(i).getCountry();
+                    String searchPhoneNumber = stringListTemp.get(i).getContanctPhone();
+                    String searchEmail = stringListTemp.get(i).getEmail();
+                    String searchGuestID = stringListTemp.get(i).getGuestID();
                     writeList.addElement(searchGuestID + " - " + searchLastName + ", " + searchFirstName + " - " + searchCountry + " - " + searchPhoneNumber + " - " + searchEmail);
                 }
                 jListSearchCustomerResult.setModel(writeList);
