@@ -137,6 +137,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jListSearchCustomerBookingsHistory = new javax.swing.JList();
         jPanel12 = new javax.swing.JPanel();
         jButtonSearchCustomerExit = new javax.swing.JButton();
+        jButtonSearchCustomerReturnToBooking = new javax.swing.JButton();
         jDialogSearchRoom = new javax.swing.JDialog();
         jPanel6 = new javax.swing.JPanel();
         jRadioButtonSearchRoom1 = new javax.swing.JRadioButton();
@@ -918,12 +919,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
+        jButtonSearchCustomerReturnToBooking.setText("Return to Booking with selected customer");
+        jButtonSearchCustomerReturnToBooking.setPreferredSize(new java.awt.Dimension(237, 35));
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonSearchCustomerReturnToBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
                 .addComponent(jButtonSearchCustomerExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12))
         );
@@ -931,7 +937,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jButtonSearchCustomerExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonSearchCustomerReturnToBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonSearchCustomerExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -7701,6 +7709,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private javax.swing.JButton jButtonSearchCustomer;
     private javax.swing.JButton jButtonSearchCustomerDetails;
     private javax.swing.JButton jButtonSearchCustomerExit;
+    private javax.swing.JButton jButtonSearchCustomerReturnToBooking;
     private javax.swing.JButton jButtonSearchForAvailableRoom;
     private javax.swing.JButton jButtonSearchRoom;
     private javax.swing.JButton jButtonSearchRoomBookRoom;
@@ -8240,8 +8249,29 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jDialogBooking.setVisible(true);
     }
     
-    public void setupDialogEditBooking(String guestID)
+    public void setupDialogEditDetails(String guestID)
     {
+        ArrayList<InfoObjectConstructor> editDetailsList = new ArrayList<>();
+        editDetailsList = jdcbselect.getInfoFromGuestID(guestID);
+        
+        jLabelEditGuestIDOriginal.setText(guestID);
+        jLabelEditFirstNameOriginal.setText(editDetailsList.get(0).getGuestFirstname());
+        jLabelEditLastNameOriginal.setText(editDetailsList.get(0).getGuestLastName());
+        jLabelEditCountryOriginal.setText(editDetailsList.get(0).getCountry());
+        jLabelEditPhoneOriginal.setText(editDetailsList.get(0).getContanctPhone());
+        jLabelEditEmailOriginal.setText(editDetailsList.get(0).getEmail());
+        
+        jTextFieldEditFirstNameNew.setText("");
+        jTextFieldEditLastNameNew.setText("");
+        jTextFieldEditCountryNew.setText("");
+        jTextFieldEditPhoneNew.setText("");
+        jTextFieldEditEmailNew.setText("");
+        
+        
+        
+        
+        
+        
         
     }
     
@@ -8261,6 +8291,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabelSearchCustomerGuestID.setText("");
         jListSearchCustomerResult.setModel(null);
         jListSearchCustomerBookingsHistory.setModel(null);
+        jButtonSearchCustomerReturnToBooking.setVisible(false);
         jDialogSearchCustomer.setVisible(true);
     }
     
