@@ -6453,7 +6453,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
     private void jButtonFacilitiesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonFacilitiesActionPerformed
     {//GEN-HEADEREND:event_jButtonFacilitiesActionPerformed
-        // TODO add your handling code here:
+        //Opens a Facility-window where employees can view and edit informations about facilities...
     }//GEN-LAST:event_jButtonFacilitiesActionPerformed
 
     private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
@@ -6532,8 +6532,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             guestList = jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText());
         }
         
-        System.out.println(guestList.size());
-        
         //Handles the saved list with the search-results from database, to remove any non-matches from any other entered data.
         if(booleanList == true)
         {
@@ -6591,8 +6589,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                     default:
                         break;
                 }
-                
-                System.out.println(stringListTemp.size());
                 
                 //Copies the remaining list with search-results from the entered data to a defaultlist and writes the list in GUI.
                 for (int i = 0; i < guestList.size(); ++i)
