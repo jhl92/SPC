@@ -548,7 +548,7 @@ public class JDBCSelectQuery
         } System.out.println("Done.");
             return null;
     }
-    public void printBill(String guestID){ //laver regningen fra instrukionsomkostningerne på en fil
+    public void printBill(String guestID){ //skriver regningen fra instrukionsomkostningerne på en fil
         Connection conn = null;
         Statement stmt = null;
         try
@@ -611,7 +611,7 @@ public class JDBCSelectQuery
             } catch (SQLException se)
             {
                 se.printStackTrace();
-            }
+            } System.out.println("done");
         }
     }
     
