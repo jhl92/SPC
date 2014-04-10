@@ -47,14 +47,14 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private boolean SearchCustomerResult = false;
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
-    private String Room1 = 1;
-    private String Room2 = 2;
-    private String Room3 = 3;
-    private String Room4 = 4;
-    private String Room5 = 5;
-    private String Room6 = 6;
-    private String Room7 = 7;
-    private String Room8 = 8;
+    private String Room1 = "001";
+    private String Room2 = "002";
+    private String Room3 = "003";
+    private String Room4 = "004";
+    private String Room5 = "005";
+    private String Room6 = "006";
+    private String Room7 = "007";
+    private String Room8 = "008";
     private int roomsShowing;
     private String detailsGuestID = "";
     private String bookingDateFrom;
@@ -6863,6 +6863,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         Calendar dTo = Calendar.getInstance();
         dFrom.set((jComboBoxBookingStartYear.getSelectedIndex()+2014), jComboBoxBookingStartMonth.getSelectedIndex(), (jComboBoxBookingStartDate.getSelectedIndex()+1));
         dTo.set((jComboBoxBookingEndYear.getSelectedIndex()+2014), jComboBoxBookingEndMonth.getSelectedIndex(), (jComboBoxBookingEndDate.getSelectedIndex()+1));
+        ArrayList<String> tempRoomsList = new ArrayList<>();
+        
         
         if(dTo.after(dFrom))
         {
@@ -6871,22 +6873,28 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             if (srt == 0)
             {
                 //Get a list of SINGLE rooms
-                roomsList = jdcbselect.getRoomsFromType("Single");
+                tempRoomsList = jdcbselect.getRoomsFromType("Single");
             } else if (srt == 1)
             {
                 //Get a list of DOUBLE rooms
-                roomsList = jdcbselect.getRoomsFromType("Double");
+                tempRoomsList = jdcbselect.getRoomsFromType("Double");
             } else if (srt == 2)
             {
                 //Get a list of FAMILY rooms
-                roomsList = jdcbselect.getRoomsFromType("Family");
+                tempRoomsList = jdcbselect.getRoomsFromType("Family");
             }
         }
         
-        
-        
-        
-        checkRoomAvailability(showRoomsList, dFrom, dTo);xxx
+        String roomToBeBooked = checkRoomAvailability(tempRoomsList, dFrom, dTo);
+        if(roomToBeBooked.equals(""))
+        {
+            jLabelBookingRoomNotifier.setText("<html>There are no available rooms of the selected type in the specified period...</html>");
+            jButtonBookingBook.setVisible(false);
+        } else
+        {
+            jLabelBookingRoomNotifier.setText("<html>Found room: </html>" + roomToBeBooked);
+            jButtonBookingBook.setVisible(true);
+        }
     }//GEN-LAST:event_jButtonSearchForAvailableRoomActionPerformed
 
     private void jButtonExitDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonExitDetailsActionPerformed
@@ -7118,12 +7126,10 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             {
                 //Searches Database for all rooms of selected type, that have check-in on the specified start-date.
                 //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
-                xxx
             } else if (jRadioButtonSearchRoom3.isSelected())
             {
                 //Searches Database for all rooms of selected type, that have check-out on the specified start-date.
                 //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
-                xxx
             }
             
             //
@@ -7195,7 +7201,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         for (int i = 0; i < roomList.size(); i++)
         {
             String roomID = roomList.get(i).getRoomID();
-            String roomType = roomList.get(i).(); //This line should get RoomType, not RoomID. RoomType needs to be added to Room Constructor
+            String roomType = roomList.get(i).getRoomAva(); //This line should get RoomType, not RoomID. RoomType needs to be added to Room Constructor
             writeList.addElement("Room " + roomID + "  -  " + roomType);
         }
     }//GEN-LAST:event_jButtonSearchRoomRemoveFromListActionPerformed
@@ -7278,213 +7284,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         return daysBetween;
     }
     
-    public void setupDialogBooking()
-    {
-        jTextFieldBookingFirstName.setText("");
-        jTextFieldBookingLastName.setText("");
-        jTextFieldBookingCountry.setText("");
-        jTextFieldBookingPhoneNumber.setText("");
-        jTextFieldBookingEmail.setText("");
-        jTextFieldBookingGuestID.setText("");
-        jButtonBookingBook.setVisible(false);
-        jComboBoxBookingRoomType.setSelectedIndex(0);
-        setCurrentDate();
-        jComboBoxBookingStartMonth.setSelectedIndex(currentMonth-1);
-        jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
-        jComboBoxBookingStartDate.setSelectedIndex(currentDate-1);
-        jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
-        jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
-        jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
-        jDialogBooking.setVisible(true);
-    }
-    
-    private void setupDialogBookingWithRoom(String roomID, Calendar sDate, Calendar eDate)
-    {
-        ArrayList<RoomAvaBookConstructor> tempRoomList = jdcbselect.getCheckAvaRoom(roomID);
-        int i = tempRoomList.indexOf(roomID);
-        String rType = tempRoomList.get(0).getRoomAva();
-        switch (rType)
-        {
-            case "Single":
-                jComboBoxBookingRoomType.setSelectedIndex(0);
-                break;
-            case "Double":
-                jComboBoxBookingRoomType.setSelectedIndex(1);
-                break;
-            case "Family":
-                jComboBoxBookingRoomType.setSelectedIndex(2);
-                break;
-        }
-        
-        sDate;
-        
-        jTextFieldBookingFirstName.setText("");
-        jTextFieldBookingLastName.setText("");
-        jTextFieldBookingCountry.setText("");
-        jTextFieldBookingPhoneNumber.setText("");
-        jTextFieldBookingEmail.setText("");
-        jTextFieldBookingGuestID.setText("");
-        jButtonBookingBook.setVisible(false);
-        jComboBoxBookingRoomType.setSelectedIndex(0);
-        setCurrentDate();
-        jComboBoxBookingStartMonth.setSelectedIndex(currentMonth-1);
-        jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
-        jComboBoxBookingStartDate.setSelectedIndex(currentDate-1);
-        jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
-        jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
-        jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
-        jDialogBooking.setVisible(true);
-    }
-    
-    public void setupDialogEditBooking(String guestID)
-    {
-        
-    }
-    
-    private void setupDialogSearchCustomer()
-    {
-        jTextFieldSearchCustomerFirstName.setText("");
-        jTextFieldSearchCustomerLastName.setText("");
-        jTextFieldSearchCustomerCountry.setText("");
-        jTextFieldSearchCustomerPhoneNumber.setText("");
-        jTextFieldSearchCustomerEmail.setText("");
-        jTextFieldSearchCustomerGuestID.setText("");
-        jLabelSearchCustomerFirstName.setText("");
-        jLabelSearchCustomerLastName.setText("");
-        jLabelSearchCustomerCountry.setText("");
-        jLabelSearchCustomerPhone.setText("");
-        jLabelSearchCustomerEmail.setText("");
-        jLabelSearchCustomerGuestID.setText("");
-        jListSearchCustomerResult.setModel(null);
-        jListSearchCustomerBookingsHistory.setModel(null);
-        jDialogSearchCustomer.setVisible(true);
-    }
-    
-    private void setupDialogSearchRoom()
-    {
-        jListSearchRoomResult.setModel(null);
-        
-        jComboBoxSearchRoomType.setSelectedIndex(0);
-        jLabelSearchRoomTypePersonsNotifier.setText("");
-        jLabelSearchRoomResultNotifier.setText("");
-        jRadioButtonSearchRoom1.setSelected(true);
-        setCurrentDate();
-        jComboBoxSearchStartMonth.setSelectedIndex(currentMonth-1);
-        jComboBoxSearchStartYear.setSelectedIndex(currentYear-14);
-        jComboBoxSearchStartDate.setSelectedIndex(currentDate-1);
-        jComboBoxSearchEndMonth.setSelectedIndex(currentMonth-1);
-        jComboBoxSearchEndYear.setSelectedIndex(currentYear-14);
-        jComboBoxSearchEndDate.setSelectedIndex(currentDate-1);
-        
-        jDialogSearchRoom.setVisible(true);
-    }
-    
-    private void setupDialogEditCustomer(String guestID)
-    {
-        jTextFieldEditFirstNameNew.setText("");
-        jTextFieldEditLastNameNew.setText("");
-        jTextFieldEditCountryNew.setText("");
-        jTextFieldEditPhoneNew.setText("");
-        jTextFieldEditEmailNew.setText("");
-        guestList.clear();
-        guestList = jdcbselect.getInfoFromGuestID(guestID);
-        jLabelEditGuestIDOriginal.setText(guestList.get(0).getGuestID());
-        jLabelEditFirstNameOriginal.setText(guestList.get(0).getGuestFirstname());
-        jLabelEditLastNameOriginal.setText(guestList.get(0).getGuestLastName());
-        jLabelEditCountryOriginal.setText(guestList.get(0).getCountry());
-        jLabelEditPhoneOriginal.setText(guestList.get(0).getContanctPhone());
-        jLabelEditEmailOriginal.setText(guestList.get(0).getEmail());
-    }
-    
-    private void setupDialogCheckIn()
-    {
-        jDialogCheckIn.setVisible(true);
-    }
-    
-    private void setupDialogCheckOut()
-    {
-        jDialogCheckOut.setVisible(true);
-    }
-    
-    public void setupDialogSetupOverview(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8)
-    {
-        jTextFieldRow1.setText(r1);
-        jTextFieldRow1.setFont(fontSystem);
-        jTextFieldRow1.setForeground(Color.DARK_GRAY);
-        jTextFieldRow2.setText(r2);
-        jTextFieldRow2.setFont(fontSystem);
-        jTextFieldRow2.setForeground(Color.DARK_GRAY);
-        jTextFieldRow3.setText(r3);
-        jTextFieldRow3.setFont(fontSystem);
-        jTextFieldRow3.setForeground(Color.DARK_GRAY);
-        jTextFieldRow4.setText(r4);
-        jTextFieldRow4.setFont(fontSystem);
-        jTextFieldRow4.setForeground(Color.DARK_GRAY);
-        jTextFieldRow5.setText(r5);
-        jTextFieldRow5.setFont(fontSystem);
-        jTextFieldRow5.setForeground(Color.DARK_GRAY);
-        jTextFieldRow6.setText(r6);
-        jTextFieldRow6.setFont(fontSystem);
-        jTextFieldRow6.setForeground(Color.DARK_GRAY);
-        jTextFieldRow7.setText(r7);
-        jTextFieldRow7.setFont(fontSystem);
-        jTextFieldRow7.setForeground(Color.DARK_GRAY);
-        jTextFieldRow8.setText(r8);
-        jTextFieldRow8.setFont(fontSystem);
-        jTextFieldRow8.setForeground(Color.DARK_GRAY);
-        //Setup the StartDate using the recieved date-variable in the method.
-        int year = (jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014);
-        int month = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
-        int dim = getDaysInMonth(month, year);
-        String[] list = getComboBoxList(dim);
-        jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
-        jDialogSetupOverview.setVisible(true);
-    }
-    
-    private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
-    {
-        if(listShowRooms.get(0).equals(""))
-        {
-            Room1 = listShowRooms.get(0);
-            roomsShowing = 1;
-        }
-        if(listShowRooms.get(1).equals(""))
-        {
-            Room2 = listShowRooms.get(1);
-            roomsShowing = 2;
-        }
-        if(listShowRooms.get(2).equals(""))
-        {
-            Room3 = listShowRooms.get(2);
-            roomsShowing = 3;
-        }
-        if(listShowRooms.get(3).equals(""))
-        {
-            Room4 = listShowRooms.get(3);
-            roomsShowing = 4;
-        }
-        if(listShowRooms.get(4).equals(""))
-        {
-            Room5 = listShowRooms.get(4);
-            roomsShowing = 5;
-        }
-        if(listShowRooms.get(5).equals(""))
-        {
-            Room6 = listShowRooms.get(5);
-            roomsShowing = 6;
-        }
-        if(listShowRooms.get(6).equals(""))
-        {
-            Room7 = listShowRooms.get(6);
-            roomsShowing = 7;
-        }
-        if(listShowRooms.get(7).equals(""))
-        {
-            Room8 = listShowRooms.get(7);
-            roomsShowing = 8;
-        }
-    }
-    
     private String checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate)
     {
         int a = 0;
@@ -7499,9 +7298,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 listOfRooms.remove(a);
             }
         }
-        if(listOfRooms.size()>0
+        if(listOfRooms.size()>0)
         {
-            if()
+            return listOfRooms.get(0);
+        } else
+        {
+            return "";
         }
     }
     
@@ -7560,7 +7362,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 return list31days;
         }
     }
-    
+    /*
     private void fillRoomCells(int roomID, int room, Calendar date)
     {
         if(roomID == 0)
@@ -7801,7 +7603,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 break;
         }
     }
-    
+    */
     /**
      * @param args the command line arguments
      */
@@ -8363,5 +8165,211 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     public void actionPerformed(ActionEvent ae)
     {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public void setupDialogBooking()
+    {
+        jTextFieldBookingFirstName.setText("");
+        jTextFieldBookingLastName.setText("");
+        jTextFieldBookingCountry.setText("");
+        jTextFieldBookingPhoneNumber.setText("");
+        jTextFieldBookingEmail.setText("");
+        jTextFieldBookingGuestID.setText("");
+        jButtonBookingBook.setVisible(false);
+        jComboBoxBookingRoomType.setSelectedIndex(0);
+        setCurrentDate();
+        jComboBoxBookingStartMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
+        jComboBoxBookingStartDate.setSelectedIndex(currentDate-1);
+        jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
+        jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
+        jDialogBooking.setVisible(true);
+    }
+    
+    private void setupDialogBookingWithRoom(String roomID, Calendar sDate, Calendar eDate)
+    {
+        ArrayList<RoomAvaBookConstructor> tempRoomList = jdcbselect.getCheckAvaRoom(roomID);
+        int i = tempRoomList.indexOf(roomID);
+        String rType = tempRoomList.get(0).getRoomAva();
+        switch (rType)
+        {
+            case "Single":
+                jComboBoxBookingRoomType.setSelectedIndex(0);
+                break;
+            case "Double":
+                jComboBoxBookingRoomType.setSelectedIndex(1);
+                break;
+            case "Family":
+                jComboBoxBookingRoomType.setSelectedIndex(2);
+                break;
+        }
+        
+        
+        jTextFieldBookingFirstName.setText("");
+        jTextFieldBookingLastName.setText("");
+        jTextFieldBookingCountry.setText("");
+        jTextFieldBookingPhoneNumber.setText("");
+        jTextFieldBookingEmail.setText("");
+        jTextFieldBookingGuestID.setText("");
+        jButtonBookingBook.setVisible(false);
+        jComboBoxBookingRoomType.setSelectedIndex(0);
+        setCurrentDate();
+        jComboBoxBookingStartMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
+        jComboBoxBookingStartDate.setSelectedIndex(currentDate-1);
+        jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
+        jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
+        jDialogBooking.setVisible(true);
+    }
+    
+    public void setupDialogEditBooking(String guestID)
+    {
+        
+    }
+    
+    private void setupDialogSearchCustomer()
+    {
+        jTextFieldSearchCustomerFirstName.setText("");
+        jTextFieldSearchCustomerLastName.setText("");
+        jTextFieldSearchCustomerCountry.setText("");
+        jTextFieldSearchCustomerPhoneNumber.setText("");
+        jTextFieldSearchCustomerEmail.setText("");
+        jTextFieldSearchCustomerGuestID.setText("");
+        jLabelSearchCustomerFirstName.setText("");
+        jLabelSearchCustomerLastName.setText("");
+        jLabelSearchCustomerCountry.setText("");
+        jLabelSearchCustomerPhone.setText("");
+        jLabelSearchCustomerEmail.setText("");
+        jLabelSearchCustomerGuestID.setText("");
+        jListSearchCustomerResult.setModel(null);
+        jListSearchCustomerBookingsHistory.setModel(null);
+        jDialogSearchCustomer.setVisible(true);
+    }
+    
+    private void setupDialogSearchRoom()
+    {
+        jListSearchRoomResult.setModel(null);
+        
+        jComboBoxSearchRoomType.setSelectedIndex(0);
+        jLabelSearchRoomTypePersonsNotifier.setText("");
+        jLabelSearchRoomResultNotifier.setText("");
+        jRadioButtonSearchRoom1.setSelected(true);
+        setCurrentDate();
+        jComboBoxSearchStartMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxSearchStartYear.setSelectedIndex(currentYear-14);
+        jComboBoxSearchStartDate.setSelectedIndex(currentDate-1);
+        jComboBoxSearchEndMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxSearchEndYear.setSelectedIndex(currentYear-14);
+        jComboBoxSearchEndDate.setSelectedIndex(currentDate-1);
+        
+        jDialogSearchRoom.setVisible(true);
+    }
+    
+    private void setupDialogEditCustomer(String guestID)
+    {
+        jTextFieldEditFirstNameNew.setText("");
+        jTextFieldEditLastNameNew.setText("");
+        jTextFieldEditCountryNew.setText("");
+        jTextFieldEditPhoneNew.setText("");
+        jTextFieldEditEmailNew.setText("");
+        guestList.clear();
+        guestList = jdcbselect.getInfoFromGuestID(guestID);
+        jLabelEditGuestIDOriginal.setText(guestList.get(0).getGuestID());
+        jLabelEditFirstNameOriginal.setText(guestList.get(0).getGuestFirstname());
+        jLabelEditLastNameOriginal.setText(guestList.get(0).getGuestLastName());
+        jLabelEditCountryOriginal.setText(guestList.get(0).getCountry());
+        jLabelEditPhoneOriginal.setText(guestList.get(0).getContanctPhone());
+        jLabelEditEmailOriginal.setText(guestList.get(0).getEmail());
+    }
+    
+    private void setupDialogCheckIn()
+    {
+        jDialogCheckIn.setVisible(true);
+    }
+    
+    private void setupDialogCheckOut()
+    {
+        jDialogCheckOut.setVisible(true);
+    }
+    
+    public void setupDialogSetupOverview(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8)
+    {
+        jTextFieldRow1.setText(r1);
+        jTextFieldRow1.setFont(fontSystem);
+        jTextFieldRow1.setForeground(Color.DARK_GRAY);
+        jTextFieldRow2.setText(r2);
+        jTextFieldRow2.setFont(fontSystem);
+        jTextFieldRow2.setForeground(Color.DARK_GRAY);
+        jTextFieldRow3.setText(r3);
+        jTextFieldRow3.setFont(fontSystem);
+        jTextFieldRow3.setForeground(Color.DARK_GRAY);
+        jTextFieldRow4.setText(r4);
+        jTextFieldRow4.setFont(fontSystem);
+        jTextFieldRow4.setForeground(Color.DARK_GRAY);
+        jTextFieldRow5.setText(r5);
+        jTextFieldRow5.setFont(fontSystem);
+        jTextFieldRow5.setForeground(Color.DARK_GRAY);
+        jTextFieldRow6.setText(r6);
+        jTextFieldRow6.setFont(fontSystem);
+        jTextFieldRow6.setForeground(Color.DARK_GRAY);
+        jTextFieldRow7.setText(r7);
+        jTextFieldRow7.setFont(fontSystem);
+        jTextFieldRow7.setForeground(Color.DARK_GRAY);
+        jTextFieldRow8.setText(r8);
+        jTextFieldRow8.setFont(fontSystem);
+        jTextFieldRow8.setForeground(Color.DARK_GRAY);
+        //Setup the StartDate using the recieved date-variable in the method.
+        int year = (jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014);
+        int month = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        jDialogSetupOverview.setVisible(true);
+    }
+    
+    private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
+    {
+        if(listShowRooms.get(0).equals(""))
+        {
+            Room1 = listShowRooms.get(0);
+            roomsShowing = 1;
+        }
+        if(listShowRooms.get(1).equals(""))
+        {
+            Room2 = listShowRooms.get(1);
+            roomsShowing = 2;
+        }
+        if(listShowRooms.get(2).equals(""))
+        {
+            Room3 = listShowRooms.get(2);
+            roomsShowing = 3;
+        }
+        if(listShowRooms.get(3).equals(""))
+        {
+            Room4 = listShowRooms.get(3);
+            roomsShowing = 4;
+        }
+        if(listShowRooms.get(4).equals(""))
+        {
+            Room5 = listShowRooms.get(4);
+            roomsShowing = 5;
+        }
+        if(listShowRooms.get(5).equals(""))
+        {
+            Room6 = listShowRooms.get(5);
+            roomsShowing = 6;
+        }
+        if(listShowRooms.get(6).equals(""))
+        {
+            Room7 = listShowRooms.get(6);
+            roomsShowing = 7;
+        }
+        if(listShowRooms.get(7).equals(""))
+        {
+            Room8 = listShowRooms.get(7);
+            roomsShowing = 8;
+        }
     }
 }
