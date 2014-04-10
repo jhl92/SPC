@@ -105,8 +105,8 @@ public class JDBCInsertQuery
 
             String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','N','"+insID+"')";
             stmt.executeUpdate(sql);
-//      sql = "INSERT INTO";
-//      stmt.executeUpdate(sql);
+            sql = "INSERT INTO GUEST VALUES";
+            stmt.executeUpdate(sql);
             System.out.println("Inserted records into the table...");
 
         } catch (SQLException se)
