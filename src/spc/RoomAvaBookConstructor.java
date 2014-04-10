@@ -10,7 +10,7 @@ package spc;
  */
 public class RoomAvaBookConstructor
 {
-    private String roomID, dateFrom, noOfNights, dateTo, roomAva;
+    private String roomID, dateFrom, noOfNights, dateTo, roomType;
 
     public String getNoOfNights()
     {
@@ -37,9 +37,9 @@ public class RoomAvaBookConstructor
         return dateTo;
     }
 
-    public String getRoomAva()
+    public String getRoomType()
     {
-        return roomAva;
+        return roomType;
     }
 
     public void setRoomID(String roomID)
@@ -57,18 +57,18 @@ public class RoomAvaBookConstructor
         this.dateTo = dateTo;
     }
 
-    public void setRoomAva(String roomAva)
+    public void setRoomType(String roomType)
     {
-        this.roomAva = roomAva;
+        this.roomType = roomType;
     }
 
-    public RoomAvaBookConstructor(String roomID, String dateFrom, String noOfNights, String dateTo, String roomAva)
+    public RoomAvaBookConstructor(String roomID, String dateFrom, String noOfNights, String dateTo, String roomType)
     {
         this.roomID = roomID;
         this.dateFrom = dateFrom;
         this.noOfNights = noOfNights;
         this.dateTo = dateTo;
-        this.roomAva = roomAva;
+        this.roomType = roomType;
     }
     
 }
