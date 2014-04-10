@@ -1674,6 +1674,13 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonCheckInPrint.setText("Print Next Days Check-In");
         jButtonCheckInPrint.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckInPrint.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckInPrintActionPerformed(evt);
+            }
+        });
 
         jButtonCheckInCheckIn.setText("Check-In Selected Customer");
         jButtonCheckInCheckIn.setPreferredSize(new java.awt.Dimension(178, 35));
@@ -6341,7 +6348,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addComponent(jPanelDay13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelDay14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.PREFERRED_SIZE, 840, Short.MAX_VALUE))))
+                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE))))
                 .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
@@ -6397,7 +6404,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -6461,6 +6468,9 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         String scPhone = jTextFieldSearchCustomerPhoneNumber.getText().toLowerCase();
         String scEmail = jTextFieldSearchCustomerEmail.getText().toLowerCase();
         writeList.clear();
+        guestList.clear();
+        
+        System.out.println(scGuestID + " " + scFirstName + " " + scLastName + " " + scCountry + " " + scPhone + " " + scEmail);
         
         //Finds one of the entered data and searches database for customers that matches fully or partially the entered.
         //(Searches database for only one of the entered data in following priority: GuestID, FirstName, LastName, Country, Phone, Email)
@@ -6510,6 +6520,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             searchParameter = 1;
             guestList = jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText());
         }
+        
+        System.out.println(guestList.size());
         
         //Handles the saved list with the search-results from database, to remove any non-matches from any other entered data.
         if(booleanList == true)
@@ -6568,6 +6580,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                     default:
                         break;
                 }
+                
+                System.out.println(stringListTemp.size());
                 
                 //Copies the remaining list with search-results from the entered data to a defaultlist and writes the list in GUI.
                 for (int i = 0; i < guestList.size(); ++i)
@@ -7227,6 +7241,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 break;
         }
     }//GEN-LAST:event_jComboBoxSearchRoomTypeActionPerformed
+
+    private void jButtonCheckInPrintActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInPrintActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckInPrintActionPerformed
+        
+        jdcbselect.printWriter("02-03-10");
+    }//GEN-LAST:event_jButtonCheckInPrintActionPerformed
 
     private void setCurrentDate()
     {
