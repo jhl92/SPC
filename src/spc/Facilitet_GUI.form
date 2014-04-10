@@ -732,18 +732,18 @@
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="12">
-                    <StringItem index="0" value="8 am"/>
-                    <StringItem index="1" value="9 am"/>
-                    <StringItem index="2" value="10 am"/>
-                    <StringItem index="3" value="11 am"/>
-                    <StringItem index="4" value="12 am"/>
-                    <StringItem index="5" value="1 pm"/>
-                    <StringItem index="6" value="2 pm"/>
-                    <StringItem index="7" value="3 pm"/>
-                    <StringItem index="8" value="4 pm"/>
-                    <StringItem index="9" value="5 pm"/>
-                    <StringItem index="10" value="6 pm"/>
-                    <StringItem index="11" value="7 pm"/>
+                    <StringItem index="0" value="08.00"/>
+                    <StringItem index="1" value="09.00"/>
+                    <StringItem index="2" value="10.00"/>
+                    <StringItem index="3" value="11.00"/>
+                    <StringItem index="4" value="12.00"/>
+                    <StringItem index="5" value="13.00"/>
+                    <StringItem index="6" value="14.00"/>
+                    <StringItem index="7" value="15.00"/>
+                    <StringItem index="8" value="16.00"/>
+                    <StringItem index="9" value="17.00"/>
+                    <StringItem index="10" value="18.00"/>
+                    <StringItem index="11" value="19.00"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -2037,7 +2037,7 @@
                       <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
                       <Component id="jLabel110" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="149" max="32767" attributes="0"/>
+                      <EmptySpace pref="133" max="32767" attributes="0"/>
                       <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
