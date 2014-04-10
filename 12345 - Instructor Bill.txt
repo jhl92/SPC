@@ -1,0 +1,3 @@
+Guest ID: 12345
+Name: Li, Jun
+The current cost for instructions hours: 0
