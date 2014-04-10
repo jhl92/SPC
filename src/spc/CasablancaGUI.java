@@ -606,6 +606,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jLabel63 = new javax.swing.JLabel();
 
         jDialogSearchCustomer.setTitle("Search Customer Details");
+        jDialogSearchCustomer.setAlwaysOnTop(true);
         jDialogSearchCustomer.setMinimumSize(new java.awt.Dimension(700, 520));
         jDialogSearchCustomer.setResizable(false);
 
@@ -965,6 +966,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogSearchRoom.setTitle("Search Room Details");
+        jDialogSearchRoom.setAlwaysOnTop(true);
         jDialogSearchRoom.setMinimumSize(new java.awt.Dimension(532, 463));
         jDialogSearchRoom.setResizable(false);
 
@@ -1285,6 +1287,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogBooking.setTitle("New Booking");
+        jDialogBooking.setAlwaysOnTop(true);
         jDialogBooking.setMinimumSize(new java.awt.Dimension(410, 410));
         jDialogBooking.setResizable(false);
 
@@ -1604,6 +1607,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogCheckIn.setTitle("Check-In");
+        jDialogCheckIn.setAlwaysOnTop(true);
         jDialogCheckIn.setMinimumSize(new java.awt.Dimension(483, 400));
         jDialogCheckIn.setResizable(false);
 
@@ -1674,13 +1678,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jButtonCheckInPrint.setText("Print Next Days Check-In");
         jButtonCheckInPrint.setPreferredSize(new java.awt.Dimension(178, 35));
-        jButtonCheckInPrint.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonCheckInPrintActionPerformed(evt);
-            }
-        });
 
         jButtonCheckInCheckIn.setText("Check-In Selected Customer");
         jButtonCheckInCheckIn.setPreferredSize(new java.awt.Dimension(178, 35));
@@ -1777,6 +1774,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogCheckOut.setTitle("Check-Out");
+        jDialogCheckOut.setAlwaysOnTop(true);
         jDialogCheckOut.setMinimumSize(new java.awt.Dimension(483, 402));
 
         jPanelCheckOutList.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1937,6 +1935,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogCheckOutAccountDetails.setTitle("Account Details");
+        jDialogCheckOutAccountDetails.setAlwaysOnTop(true);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1961,6 +1960,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogEditDetails.setTitle("Edit Details");
+        jDialogEditDetails.setAlwaysOnTop(true);
         jDialogEditDetails.setMinimumSize(new java.awt.Dimension(757, 542));
         jDialogEditDetails.setResizable(false);
 
@@ -2288,6 +2288,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogDetails.setTitle("Details");
+        jDialogDetails.setAlwaysOnTop(true);
         jDialogDetails.setMinimumSize(new java.awt.Dimension(414, 467));
         jDialogDetails.setResizable(false);
 
@@ -2576,6 +2577,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         );
 
         jDialogSetupOverview.setTitle("Setup Overview");
+        jDialogSetupOverview.setAlwaysOnTop(true);
         jDialogSetupOverview.setMinimumSize(new java.awt.Dimension(420, 450));
         jDialogSetupOverview.setResizable(false);
 
@@ -2968,7 +2970,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         setMinimumSize(new java.awt.Dimension(967, 662));
         setResizable(false);
 
-        jButtonRoomArrowUp.setText("UP");
+        jButtonRoomArrowUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"))); // NOI18N
         jButtonRoomArrowUp.setBorderPainted(false);
         jButtonRoomArrowUp.setPreferredSize(new java.awt.Dimension(51, 36));
         jButtonRoomArrowUp.addMouseListener(new java.awt.event.MouseAdapter()
@@ -2990,9 +2992,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonRoomArrowDown.setText("DOWN");
+        jButtonRoomArrowDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDown.png"))); // NOI18N
         jButtonRoomArrowDown.setBorderPainted(false);
-        jButtonRoomArrowDown.setMargin(new java.awt.Insets(2, 2, 2, 2));
         jButtonRoomArrowDown.setPreferredSize(new java.awt.Dimension(51, 36));
         jButtonRoomArrowDown.addMouseListener(new java.awt.event.MouseAdapter()
         {
@@ -3096,7 +3097,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonPrevious7Days.setText("<< Previous 7 days");
+        jButtonPrevious7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowLeft.png"))); // NOI18N
+        jButtonPrevious7Days.setText("Previous 7 days");
         jButtonPrevious7Days.setBorderPainted(false);
         jButtonPrevious7Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButtonPrevious7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
@@ -3120,7 +3122,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonPrevious14Days.setText("<< Previous 14 days");
+        jButtonPrevious14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleLeft.png"))); // NOI18N
+        jButtonPrevious14Days.setText("Previous 14 days");
         jButtonPrevious14Days.setBorderPainted(false);
         jButtonPrevious14Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButtonPrevious14Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
@@ -3144,7 +3147,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonNext7Days.setText("Next 7 days >>");
+        jButtonNext7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowRight.png"))); // NOI18N
+        jButtonNext7Days.setText("Next 7 days");
         jButtonNext7Days.setBorderPainted(false);
         jButtonNext7Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext7Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -3169,7 +3173,8 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
         });
 
-        jButtonNext14Days.setText("Next 14 days >>");
+        jButtonNext14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDoubleRight.png"))); // NOI18N
+        jButtonNext14Days.setText("Next 14 days");
         jButtonNext14Days.setBorderPainted(false);
         jButtonNext14Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext14Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -4187,6 +4192,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel19.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel19.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(56, 56));
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -4203,6 +4209,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel20.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free-CheckIn.png"))); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(56, 56));
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
@@ -4219,6 +4226,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel21.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel21.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"))); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(56, 56));
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
@@ -4235,6 +4243,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel22.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel22.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-CheckIn.png"))); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(56, 56));
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
@@ -4251,6 +4260,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel23.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel23.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"))); // NOI18N
         jLabel5.setPreferredSize(new java.awt.Dimension(56, 56));
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
@@ -4267,6 +4277,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel24.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel24.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"))); // NOI18N
         jLabel6.setPreferredSize(new java.awt.Dimension(56, 56));
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
@@ -4283,6 +4294,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanel25.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel25.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-Free.png"))); // NOI18N
         jLabel7.setPreferredSize(new java.awt.Dimension(56, 56));
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
@@ -6348,7 +6360,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addComponent(jPanelDay13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelDay14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE))))
+                            .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.PREFERRED_SIZE, 840, Short.MAX_VALUE))))
                 .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
@@ -6404,7 +6416,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -6414,7 +6426,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private void jButtonBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingActionPerformed
         setupDialogBooking();
-        jDialogBooking.setVisible(true);
     }//GEN-LAST:event_jButtonBookingActionPerformed
 
     private void jButtonSearchCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerActionPerformed
@@ -7241,12 +7252,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 break;
         }
     }//GEN-LAST:event_jComboBoxSearchRoomTypeActionPerformed
-
-    private void jButtonCheckInPrintActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInPrintActionPerformed
-    {//GEN-HEADEREND:event_jButtonCheckInPrintActionPerformed
-        
-        jdcbselect.printWriter("02-03-10");
-    }//GEN-LAST:event_jButtonCheckInPrintActionPerformed
 
     private void setCurrentDate()
     {
@@ -8336,42 +8341,42 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     
     private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
     {
-        if(listShowRooms.get(0).equals(""))
+        if(listShowRooms.get(0).equals("")==false)
         {
             Room1 = listShowRooms.get(0);
             roomsShowing = 1;
         }
-        if(listShowRooms.get(1).equals(""))
+        if(listShowRooms.get(1).equals("")==false)
         {
             Room2 = listShowRooms.get(1);
             roomsShowing = 2;
         }
-        if(listShowRooms.get(2).equals(""))
+        if(listShowRooms.get(2).equals("")==false)
         {
             Room3 = listShowRooms.get(2);
             roomsShowing = 3;
         }
-        if(listShowRooms.get(3).equals(""))
+        if(listShowRooms.get(3).equals("")==false)
         {
             Room4 = listShowRooms.get(3);
             roomsShowing = 4;
         }
-        if(listShowRooms.get(4).equals(""))
+        if(listShowRooms.get(4).equals("")==false)
         {
             Room5 = listShowRooms.get(4);
             roomsShowing = 5;
         }
-        if(listShowRooms.get(5).equals(""))
+        if(listShowRooms.get(5).equals("")==false)
         {
             Room6 = listShowRooms.get(5);
             roomsShowing = 6;
         }
-        if(listShowRooms.get(6).equals(""))
+        if(listShowRooms.get(6).equals("")==false)
         {
             Room7 = listShowRooms.get(6);
             roomsShowing = 7;
         }
-        if(listShowRooms.get(7).equals(""))
+        if(listShowRooms.get(7).equals("")==false)
         {
             Room8 = listShowRooms.get(7);
             roomsShowing = 8;

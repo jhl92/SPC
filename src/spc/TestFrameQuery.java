@@ -164,8 +164,8 @@ public class TestFrameQuery extends javax.swing.JFrame
 //        insert.JDBCInsertRoom(jTextFieldguestid.getText(), jTextFieldRoomID.getText(), 
 //                jTextFieldempID.getText(), jTextFielddatefrom.getText(), jTextFielddateto.getText()
 //                , jTextFieldprice.getText());
-        insert.JDBCInsertFacility(jTextFieldguestid.getText(), jTextFieldfacType.getText(),
-                jTextFieldTimeStart.getText(), jTextFieldTimeEnd.getText());
+//        insert.JDBCInsertFacility(jTextFieldguestid.getText(), jTextFieldfacType.getText(),
+//                jTextFieldTimeStart.getText(), jTextFieldTimeEnd.getText());
         
     }//GEN-LAST:event_jButtonSubmitActionPerformed
 
