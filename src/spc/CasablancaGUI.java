@@ -6519,7 +6519,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 switch (searchParameter)
                 {
                     case 1:
-                        stringListTemp.clear();
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName))
@@ -6529,7 +6528,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         }
                         guestList = new ArrayList<>(stringListTemp);
                     case 2:
-                        stringListTemp.clear();
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName))
@@ -6539,7 +6537,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         }
                         guestList = new ArrayList<>(stringListTemp);
                     case 3:
-                        stringListTemp.clear();
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getCountry().toLowerCase().contains(scCountry))
@@ -6549,7 +6546,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         }
                         guestList = new ArrayList<>(stringListTemp);
                     case 4:
-                        stringListTemp.clear();
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone))
@@ -6559,7 +6555,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                         }
                         guestList = new ArrayList<>(stringListTemp);
                     case 5:
-                        stringListTemp.clear();
                         for (int i = 0; i < guestList.size(); i++)
                         {
                             if (guestList.get(i).getEmail().toLowerCase().contains(scEmail))
