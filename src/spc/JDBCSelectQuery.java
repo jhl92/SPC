@@ -715,7 +715,7 @@ public class JDBCSelectQuery
  
             rs = stmt.executeQuery("SELECT ROOMS.ROOMID, ROOMS.ROOMTYPE, " +
                     "ROOMS.ROOMPRICE, BOOKROOM.DATEFROM, BOOKROOM.DATETO" +
-                    "FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = '"+roomID+"'");
+                    " FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = '"+roomID+"'");
            
             while (rs.next()) {
                 String rsRoomID = rs.getString("RoomID");
