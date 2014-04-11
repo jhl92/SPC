@@ -143,10 +143,13 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
     
-    public void JDBCInsertInstructorCost(String guestID, int facID) {
+    public void JDBCInsertInstructorCost(String guestID, String noOfHours, int facID) {
         Connection conn = null;
         Statement stmt = null;
         String sql = "";
+        int cost30 = (Integer.parseInt(noOfHours)*30);
+        int cost40 = (Integer.parseInt(noOfHours)*40);
+        
         try
         {
             //Registrer JDBC driver
@@ -163,27 +166,29 @@ public class JDBCInsertQuery
             switch(facID) {
                 
                 case 01:  
-                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
-                        + "WHERE GUESTID = '"+guestID+"'";
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
+                        + " WHERE GUESTID = '"+guestID+"'";
                 stmt.executeUpdate(sql);
                 break;    
             
                 case 02: 
-                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
-                        + "WHERE GUESTID='"+guestID+"'";
-                System.out.println(sql);
-                stmt.executeUpdate(sql);                    
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
+                        + " WHERE GUESTID='"+guestID+"'";
+                    System.out.println(sql);
+                stmt.executeUpdate(sql);      
+                break;
             
                 case 05: 
-                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
-                        + "WHERE GUESTID='"+guestID+"'";
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost40
+                        + " WHERE GUESTID='"+guestID+"'";
                 stmt.executeUpdate(sql);
-            
+                break;
+                    
                 case 06: 
-                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
-                        + "WHERE GUESTID='"+guestID+"'";
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost40
+                        + " WHERE GUESTID='"+guestID+"'";
                 stmt.executeUpdate(sql);
-            
+                break;
             }
             System.out.println("Inserted records into the table...");
 
