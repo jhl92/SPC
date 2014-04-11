@@ -2072,9 +2072,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     insert.JDBCInsertInstructorCost("12345", noHours, 02);
             }
     } else {
-            jLabelBadmintonErrorMessageBook.setVisible(true); } 
-        
-      
+            jLabelBadmintonErrorMessageBook.setVisible(true); }       
     }//GEN-LAST:event_jButtonBookBadmintonActionPerformed
 
     private void jButtonVolleybalHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVolleybalHelpActionPerformed
