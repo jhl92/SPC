@@ -6295,93 +6295,93 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {
         if (roomID.equals("000"))
         {
-            switch (roomRow)
-            {
-                case 1:
-                    fillRoom1Cells(null, null, 100, null, null, null, null);
-                    break;
-                case 2:
-                    fillRoom2Cells(null, null, 200, null, null, null, null);
-                    break;
-                case 3:
-                    fillRoom3Cells(null, null, 300, null, null, null, null);
-                    break;
-                case 4:
-                    fillRoom4Cells(null, null, 400, null, null, null, null);
-                    break;
-                case 5:
-                    fillRoom5Cells(null, null, 500, null, null, null, null);
-                    break;
-                case 6:
-                    fillRoom6Cells(null, null, 600, null, null, null, null);
-                    break;
-                case 7:
-                    fillRoom7Cells(null, null, 700, null, null, null, null);
-                    break;
-                case 8:
-                    fillRoom8Cells(null, null, 800, null, null, null, null);
-                    break;
-            }
-            for (int a = 0; a < 14; a++)
-            {
-                int day = 1 + a;
-                switch (roomRow)
-                {
-                    case 1:
-                        fillRoom1Cells(null, null, day, null, null, null, null);
-                        break;
-                    case 2:
-                        fillRoom2Cells(null, null, day, null, null, null, null);
-                        break;
-                    case 3:
-                        fillRoom3Cells(null, null, day, null, null, null, null);
-                        break;
-                    case 4:
-                        fillRoom4Cells(null, null, day, null, null, null, null);
-                        break;
-                    case 5:
-                        fillRoom5Cells(null, null, day, null, null, null, null);
-                        break;
-                    case 6:
-                        fillRoom6Cells(null, null, day, null, null, null, null);
-                        break;
-                    case 7:
-                        fillRoom7Cells(null, null, day, null, null, null, null);
-                        break;
-                    case 8:
-                        fillRoom8Cells(null, null, day, null, null, null, null);
-                        break;
-                }
-            }
+//            switch (roomRow)
+//            {
+//                case 1:
+//                    fillRoom1Cells(null, null, 100, null, null, null, null);
+//                    break;
+//                case 2:
+//                    fillRoom2Cells(null, null, 200, null, null, null, null);
+//                    break;
+//                case 3:
+//                    fillRoom3Cells(null, null, 300, null, null, null, null);
+//                    break;
+//                case 4:
+//                    fillRoom4Cells(null, null, 400, null, null, null, null);
+//                    break;
+//                case 5:
+//                    fillRoom5Cells(null, null, 500, null, null, null, null);
+//                    break;
+//                case 6:
+//                    fillRoom6Cells(null, null, 600, null, null, null, null);
+//                    break;
+//                case 7:
+//                    fillRoom7Cells(null, null, 700, null, null, null, null);
+//                    break;
+//                case 8:
+//                    fillRoom8Cells(null, null, 800, null, null, null, null);
+//                    break;
+//            }
+//            for (int a = 0; a < 14; a++)
+//            {
+//                int day = 1 + a;
+//                switch (roomRow)
+//                {
+//                    case 1:
+//                        fillRoom1Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 2:
+//                        fillRoom2Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 3:
+//                        fillRoom3Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 4:
+//                        fillRoom4Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 5:
+//                        fillRoom5Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 6:
+//                        fillRoom6Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 7:
+//                        fillRoom7Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 8:
+//                        fillRoom8Cells(null, null, day, null, null, null, null);
+//                        break;
+//                }
+//            }
         } else
         {
-        switch (roomCell)
-        {
-            case 1:
-                fillRoom1Cells(rID, roomSize, 100, null, null, null, null);
-                break;
-            case 2:
-                fillRoom2Cells(rID, roomSize, 200, null, null, null, null);
-                break;
-            case 3:
-                fillRoom3Cells(rID, roomSize, 300, null, null, null, null);
-                break;
-            case 4:
-                fillRoom4Cells(rID, roomSize, 400, null, null, null, null);
-                break;
-            case 5:
-                fillRoom5Cells(rID, roomSize, 500, null, null, null, null);
-                break;
-            case 6:
-                fillRoom6Cells(rID, roomSize, 600, null, null, null, null);
-                break;
-            case 7:
-                fillRoom7Cells(rID, roomSize, 700, null, null, null, null);
-                break;
-            case 8:
-                fillRoom8Cells(rID, roomSize, 800, null, null, null, null);
-                break;
-        }
+//        switch (roomRow)
+//        {
+//            case 1:
+//                fillRoom1Cells(rID, roomSize, 100, null, null, null, null);
+//                break;
+//            case 2:
+//                fillRoom2Cells(rID, roomSize, 200, null, null, null, null);
+//                break;
+//            case 3:
+//                fillRoom3Cells(rID, roomSize, 300, null, null, null, null);
+//                break;
+//            case 4:
+//                fillRoom4Cells(rID, roomSize, 400, null, null, null, null);
+//                break;
+//            case 5:
+//                fillRoom5Cells(rID, roomSize, 500, null, null, null, null);
+//                break;
+//            case 6:
+//                fillRoom6Cells(rID, roomSize, 600, null, null, null, null);
+//                break;
+//            case 7:
+//                fillRoom7Cells(rID, roomSize, 700, null, null, null, null);
+//                break;
+//            case 8:
+//                fillRoom8Cells(rID, roomSize, 800, null, null, null, null);
+//                break;
+//        }
         for (int a = 0; a < 14; a++)
         {
             //Get data from database/tables and add them to the variables below...
@@ -6391,42 +6391,33 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             //------------------------------------------------------------------
             
             boolean available = false; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
-            if (available == false)
-            {
-                availability = "BOOKED";
-                cellBackground = Color.RED;
-            } else
-            {
-                availability = "FREE";
-                cellBackground = Color.GREEN;
-            }
-            switch (room)
-            {
-                case 1:
-                    fillRoom1Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-                case 2:
-                    fillRoom2Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-                case 3:
-                    fillRoom3Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-                case 4:
-                    fillRoom4Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-                case 5:
-                    fillRoom5Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-                case 6:
-                    fillRoom6Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-                case 7:
-                    fillRoom7Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-                case 8:
-                    fillRoom8Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-                    break;
-            }
+//            switch (roomRow)
+//            {
+//                case 1:
+//                    fillRoom1Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 2:
+//                    fillRoom2Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 3:
+//                    fillRoom3Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 4:
+//                    fillRoom4Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 5:
+//                    fillRoom5Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 6:
+//                    fillRoom6Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 7:
+//                    fillRoom7Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 8:
+//                    fillRoom8Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//            }
         }
     }
     }
@@ -6440,88 +6431,32 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 jLabelRoom1RoomSize.setText(roomSize);
                 break;
             case 1:
-                jLabelRoom1Day01FirstName.setText(firstName);
-                jLabelRoom1Day01LastName.setText(lastName);
-                jLabelRoom1Day01Availability.setText(availability);
-                jPanelRoom1Day01.setBackground(background);
                 break;
             case 2:
-                jLabelRoom1Day02FirstName.setText(firstName);
-                jLabelRoom1Day02LastName.setText(lastName);
-                jLabelRoom1Day02Availability.setText(availability);
-                jPanelRoom1Day02.setBackground(background);
                 break;
             case 3:
-                jLabelRoom1Day03FirstName.setText(firstName);
-                jLabelRoom1Day03LastName.setText(lastName);
-                jLabelRoom1Day03Availability.setText(availability);
-                jPanelRoom1Day03.setBackground(background);
                 break;
             case 4:
-                jLabelRoom1Day04FirstName.setText(firstName);
-                jLabelRoom1Day04LastName.setText(lastName);
-                jLabelRoom1Day04Availability.setText(availability);
-                jPanelRoom1Day04.setBackground(background);
                 break;
             case 5:
-                jLabelRoom1Day05FirstName.setText(firstName);
-                jLabelRoom1Day05LastName.setText(lastName);
-                jLabelRoom1Day05Availability.setText(availability);
-                jPanelRoom1Day05.setBackground(background);
                 break;
             case 6:
-                jLabelRoom1Day06FirstName.setText(firstName);
-                jLabelRoom1Day06LastName.setText(lastName);
-                jLabelRoom1Day06Availability.setText(availability);
-                jPanelRoom1Day06.setBackground(background);
                 break;
             case 7:
-                jLabelRoom1Day07FirstName.setText(firstName);
-                jLabelRoom1Day07LastName.setText(lastName);
-                jLabelRoom1Day07Availability.setText(availability);
-                jPanelRoom1Day07.setBackground(background);
                 break;
             case 8:
-                jLabelRoom1Day08FirstName.setText(firstName);
-                jLabelRoom1Day08LastName.setText(lastName);
-                jLabelRoom1Day08Availability.setText(availability);
-                jPanelRoom1Day08.setBackground(background);
                 break;
             case 9:
-                jLabelRoom1Day09FirstName.setText(firstName);
-                jLabelRoom1Day09LastName.setText(lastName);
-                jLabelRoom1Day09Availability.setText(availability);
-                jPanelRoom1Day09.setBackground(background);
                 break;
             case 10:
-                jLabelRoom1Day10FirstName.setText(firstName);
-                jLabelRoom1Day10LastName.setText(lastName);
-                jLabelRoom1Day10Availability.setText(availability);
-                jPanelRoom1Day10.setBackground(background);
                 break;
             case 11:
-                jLabelRoom1Day11FirstName.setText(firstName);
-                jLabelRoom1Day11LastName.setText(lastName);
-                jLabelRoom1Day11Availability.setText(availability);
-                jPanelRoom1Day11.setBackground(background);
                 break;
             case 12:
-                jLabelRoom1Day12FirstName.setText(firstName);
-                jLabelRoom1Day12LastName.setText(lastName);
-                jLabelRoom1Day12Availability.setText(availability);
-                jPanelRoom1Day12.setBackground(background);
                 break;
             case 13:
-                jLabelRoom1Day13FirstName.setText(firstName);
-                jLabelRoom1Day13LastName.setText(lastName);
-                jLabelRoom1Day13Availability.setText(availability);
-                jPanelRoom1Day13.setBackground(background);
                 break;
             case 14:
-                jLabelRoom1Day14FirstName.setText(firstName);
-                jLabelRoom1Day14LastName.setText(lastName);
-                jLabelRoom1Day14Availability.setText(availability);
-                jPanelRoom1Day14.setBackground(background);
                 break;
         }
     }
