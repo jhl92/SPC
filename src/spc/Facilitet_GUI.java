@@ -250,7 +250,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel1Badminton = new javax.swing.JPanel();
         jButtonBookBadminton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        jLabelBadmintonCostText = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -270,30 +270,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelBadmintonInstructHourLabel = new javax.swing.JLabel();
         jLabelBadmintonInstructorPrice = new javax.swing.JLabel();
         jLabelBadmintonErrorMessageNoHours = new javax.swing.JLabel();
-        jPanel2Fitness = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel113 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jComboBoxFitnessSelectDate = new javax.swing.JComboBox();
-        jLabel33 = new javax.swing.JLabel();
-        jComboBoxFitnessTimeFrom = new javax.swing.JComboBox();
-        jLabel34 = new javax.swing.JLabel();
-        jComboBoxFitnessTimeTo = new javax.swing.JComboBox();
-        jButtonFitnessHelp = new javax.swing.JButton();
-        jLabel44 = new javax.swing.JLabel();
-        jButtonBookFitness = new javax.swing.JButton();
-        jLabel50 = new javax.swing.JLabel();
+        jLabelBadmintonErrorMessageBook = new javax.swing.JLabel();
         jPanel3Golf = new javax.swing.JPanel();
-        jLabel56 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel58 = new javax.swing.JLabel();
-        jLabelGolfPriceLabel = new javax.swing.JLabel();
-        jLabelGolfInstructorPrice = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabelGolfInstructorDate = new javax.swing.JLabel();
         jComboBoxGolfInstructorDate = new javax.swing.JComboBox();
@@ -306,19 +284,18 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jCheckBoxGolfInstruct = new javax.swing.JCheckBox();
         jLabelGolfInstructHourLabel = new javax.swing.JLabel();
         jComboBoxGolfInstrucHours = new javax.swing.JComboBox();
-        jPanel6 = new javax.swing.JPanel();
+        jButtonBookGolf = new javax.swing.JButton();
+        jLabelGolfCostText = new javax.swing.JLabel();
+        jLabelGolfErrorMessageBook = new javax.swing.JLabel();
+        jLabelGolfErrorMessageNoHours = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel108 = new javax.swing.JLabel();
-        jButtonBookGolf = new javax.swing.JButton();
-        jLabelGolfErrorMessageNoHours = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabelGolfInstructorPrice = new javax.swing.JLabel();
         jPanel1Handball = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jButtonBookHandball = new javax.swing.JButton();
         jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel106 = new javax.swing.JLabel();
-        jLabel107 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
@@ -329,6 +306,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxHandballTimeTo = new javax.swing.JComboBox();
         jButtonHandBallHelp = new javax.swing.JButton();
         jLabel51 = new javax.swing.JLabel();
+        jButtonBookHandball = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        jLabelHandballErrorMessageBook = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jPanel4MountainBike = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -358,13 +342,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonVolleybalHelp = new javax.swing.JButton();
         jLabel52 = new javax.swing.JLabel();
         jButtonBookVolley = new javax.swing.JButton();
+        jLabelVolleyballErrorMessageBook = new javax.swing.JLabel();
         jPanel7Tennis = new javax.swing.JPanel();
         jButtonBookTennis = new javax.swing.JButton();
-        jLabel48 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
+        jLabelTennisCostText = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
-        jLabelTennisPriceLabel = new javax.swing.JLabel();
-        jLabelTennisInstructorPrice = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel78 = new javax.swing.JLabel();
         jLabel79 = new javax.swing.JLabel();
@@ -378,13 +360,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel11 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jCheckBoxTennisInstruct = new javax.swing.JCheckBox();
-        jComboBoxTennisInstrucHours = new javax.swing.JComboBox();
-        jLabelTennisInstructHourLabel = new javax.swing.JLabel();
         jLabel112 = new javax.swing.JLabel();
         jLabelGUIISBULLSHIT = new javax.swing.JLabel();
         jLabelTennisErrorMessageNoHours = new javax.swing.JLabel();
+        jLabelTennisErrorMessageBook = new javax.swing.JLabel();
+        jLabelTennisInstructorPrice = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jCheckBoxTennisInstruct = new javax.swing.JCheckBox();
+        jLabelTennisInstructHourLabel = new javax.swing.JLabel();
+        jComboBoxTennisInstrucHours = new javax.swing.JComboBox();
         jPanel5Swimming = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
@@ -407,6 +391,24 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel40 = new javax.swing.JLabel();
         jButtonBookSwimming = new javax.swing.JButton();
         jLabelSwimmingErrorMessageNoHours1 = new javax.swing.JLabel();
+        jLabelSwimmingErrorMessageBook = new javax.swing.JLabel();
+        jPanel2Fitness = new javax.swing.JPanel();
+        jPanelGolf = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jComboBoxFitnessSelectDate = new javax.swing.JComboBox();
+        jLabel33 = new javax.swing.JLabel();
+        jComboBoxFitnessTimeFrom = new javax.swing.JComboBox();
+        jLabel34 = new javax.swing.JLabel();
+        jComboBoxFitnessTimeTo = new javax.swing.JComboBox();
+        jButtonFitnessHelp = new javax.swing.JButton();
+        jLabel44 = new javax.swing.JLabel();
+        jButtonBookFitness = new javax.swing.JButton();
+        jLabelFitnessErrorMessageBook1 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel113 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         jDialogFacilityHelp.setMinimumSize(new java.awt.Dimension(435, 145));
 
@@ -807,10 +809,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel7.setText("The facilities are available between 8am - 8pm every day");
-        jPanel1Badminton.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, -1, -1));
+        jPanel1Badminton.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 330, -1));
 
-        jLabel15.setText("The following amount has been added to your bill:");
-        jPanel1Badminton.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, 290, -1));
+        jLabelBadmintonCostText.setText("The following amount has been added to your bill:");
+        jLabelBadmintonCostText.setVisible(false);
+        jPanel1Badminton.add(jLabelBadmintonCostText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, 290, -1));
 
         jLabel16.setText("Select the date and hour/hours you wish to play");
         jPanel1Badminton.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, -1, -1));
@@ -928,235 +931,20 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelBadmintonErrorMessageNoHours.setVisible(false);
         jLabelBadmintonErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelBadmintonErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
-        jPanel1Badminton.add(jLabelBadmintonErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 440, 360, -1));
+        jPanel1Badminton.add(jLabelBadmintonErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 440, 410, -1));
+
+        jLabelBadmintonErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelBadmintonErrorMessageBook.setVisible(false);
+        jLabelBadmintonErrorMessageBook.setText("The hours you have selected are not eligible");
+        jPanel1Badminton.add(jLabelBadmintonErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, -1, -1));
 
         jTabbedPane1.addTab("Badminton", jPanel1Badminton);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel3.setText("FITNESS CENTER");
-
-        jLabel113.setText("<html>Useful info: <br> The Fitness room limits 20 people. <br> The equipment be given to you.");
-
-        jLabel24.setText("<html>Our Fitness room allows you to train your body exactly how you want it.<br> The fitness center has all kinds of equipment so there is something for everyone.");
-        jLabel24.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(44, Short.MAX_VALUE)
-                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31))
-        );
-
-        jLabel30.setText("Select the date and hour/hours you wish use the Fitness center.");
-
-        jLabel31.setText("Date:");
-
-        jComboBoxFitnessSelectDate.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxFitnessSelectDateActionPerformed(evt);
-            }
-        });
-
-        jLabel33.setText("From:");
-
-        jComboBoxFitnessTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
-        jComboBoxFitnessTimeFrom.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxFitnessTimeFromActionPerformed(evt);
-            }
-        });
-
-        jLabel34.setText("To");
-
-        jComboBoxFitnessTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
-
-        jButtonFitnessHelp.setText("Help");
-        jButtonFitnessHelp.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonFitnessHelpActionPerformed(evt);
-            }
-        });
-
-        jLabel44.setText("(max 4 hours allowed per guest/day)");
-
-        jButtonBookFitness.setText("BOOK");
-        jButtonBookFitness.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonBookFitnessActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel30)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel31)
-                        .addGap(5, 5, 5)
-                        .addComponent(jComboBoxFitnessSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel33)
-                        .addGap(7, 7, 7)
-                        .addComponent(jComboBoxFitnessTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(jComboBoxFitnessTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(jButtonFitnessHelp)))
-                .addGap(0, 42, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButtonBookFitness, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(158, 158, 158)
-                .addComponent(jLabel44)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel30)
-                .addGap(19, 19, 19)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addComponent(jLabel31))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jComboBoxFitnessSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addComponent(jLabel33))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jComboBoxFitnessTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addComponent(jLabel34))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jComboBoxFitnessTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButtonFitnessHelp))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel44)
-                .addGap(11, 11, 11)
-                .addComponent(jButtonBookFitness, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
-
-        jLabel50.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
-        jLabel50.setText("The facilities are available between 8am - 8pm every day");
-
-        javax.swing.GroupLayout jPanel2FitnessLayout = new javax.swing.GroupLayout(jPanel2Fitness);
-        jPanel2Fitness.setLayout(jPanel2FitnessLayout);
-        jPanel2FitnessLayout.setHorizontalGroup(
-            jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2FitnessLayout.createSequentialGroup()
-                            .addComponent(jLabel50)
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(36, 36, 36))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2FitnessLayout.createSequentialGroup()
-                                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(2, 2, 2)))
-                            .addGap(42, 42, 42)
-                            .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(159, 159, 159))
-        );
-        jPanel2FitnessLayout.setVerticalGroup(
-            jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel3)
-                .addGroup(jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                        .addGap(294, 294, 294)
-                        .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2FitnessLayout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(137, 137, 137)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel50)
-                .addContainerGap())
-        );
-
-        jTabbedPane1.addTab("Fitness", jPanel2Fitness);
-
-        jLabel56.setText("The cost for the instructor has been added to your bill ");
-
-        jLabel57.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
-        jLabel57.setText("The facilities are available between 8am - 8pm every day");
-
-        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel58.setText("GOLF");
-
-        jLabelGolfPriceLabel.setText("       ");
-
-        jLabelGolfInstructorPrice.setText("          ");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel58)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(452, 452, 452)
-                        .addComponent(jLabelGolfPriceLabel)
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabelGolfInstructorPrice)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel58)
-                .addGap(45, 45, 45)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelGolfPriceLabel)
-                    .addComponent(jLabelGolfInstructorPrice)))
-        );
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelGolfInstructorDate.setText("Date:");
         jLabelGolfInstructorDate.setVisible(false);
+        jPanel5.add(jLabelGolfInstructorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, 30));
 
         jComboBoxGolfInstructorDate.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1166,22 +954,30 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
         jComboBoxGolfInstructorDate.setVisible(false);
+        jPanel5.add(jComboBoxGolfInstructorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 168, -1));
 
         jLabelGolfInstructorTimeFrom.setText("From:");
         jLabelGolfInstructorTimeFrom.setVisible(false);
+        jPanel5.add(jLabelGolfInstructorTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 370, -1, 20));
 
         jComboBoxGolfInstructorTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
         jComboBoxGolfInstructorTimeFrom.setVisible(false);
+        jPanel5.add(jComboBoxGolfInstructorTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 370, -1, -1));
 
         jLabelGolfInstructorTimeTo.setText("To:");
         jLabelGolfInstructorTimeTo.setVisible(false);
+        jPanel5.add(jLabelGolfInstructorTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 26, 20));
 
         jComboBoxGolfInstructorTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
         jComboBoxGolfInstructorTimeTo.setVisible(false);
+        jPanel5.add(jComboBoxGolfInstructorTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, -1, -1));
 
         jLabelGolfInstructorDateTimeInfo.setText("On which date and time:");
+        jPanel5.add(jLabelGolfInstructorDateTimeInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
+        jLabelGolfInstructorDateTimeInfo.setVisible(false);
 
         jLabel67.setText("Do you wish to hire an instructor?");
+        jPanel5.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, 25));
 
         jCheckBoxGolfInstruct.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1190,11 +986,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jCheckBoxGolfInstructActionPerformed(evt);
             }
         });
+        jPanel5.add(jCheckBoxGolfInstruct, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, -1, -1));
 
-        jLabelGolfInstructHourLabel.setText("                       ");
+        jLabelGolfInstructHourLabel.setVisible(false);
+        jLabelGolfInstructHourLabel.setText("...for how many hours?");
+        jPanel5.add(jLabelGolfInstructHourLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, -1, 22));
 
         jComboBoxGolfInstrucHours.setVisible(false);
-        jComboBoxGolfInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
+        jComboBoxGolfInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4" }));
         jComboBoxGolfInstrucHours.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -1202,180 +1001,90 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxGolfInstrucHoursActionPerformed(evt);
             }
         });
+        jPanel5.add(jComboBoxGolfInstrucHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, -1, -1));
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelGolfInstructorDateTimeInfo)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel67)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jCheckBoxGolfInstruct)
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabelGolfInstructHourLabel)
-                        .addGap(32, 32, 32)
-                        .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabelGolfInstructorDate)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBoxGolfInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabelGolfInstructorTimeFrom)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxGolfInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabelGolfInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxGolfInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(162, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBoxGolfInstruct)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabelGolfInstructHourLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabelGolfInstructorDateTimeInfo)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxGolfInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelGolfInstructorTimeFrom)
-                    .addComponent(jComboBoxGolfInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelGolfInstructorDate)
-                    .addComponent(jLabelGolfInstructorTimeTo)
-                    .addComponent(jComboBoxGolfInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        jButtonBookGolf.setText("BOOK");
+        jButtonBookGolf.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookGolfActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButtonBookGolf, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 400, 101, 43));
 
-        jLabelGolfInstructorDateTimeInfo.setVisible(false);
+        jLabelGolfCostText.setVisible(false);
+        jLabelGolfCostText.setText("The following amount has been added to your bill:");
+        jPanel5.add(jLabelGolfCostText, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, -1, -1));
+
+        jLabelGolfErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelGolfErrorMessageBook.setVisible(false);
+        jLabelGolfErrorMessageBook.setText("The hours you have selected are not eligible");
+        jPanel5.add(jLabelGolfErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 410, -1, -1));
+
+        jLabelGolfErrorMessageNoHours.setVisible(false);
+        jLabelGolfErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelGolfErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
+        jPanel5.add(jLabelGolfErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 450, 418, -1));
+
+        jLabel57.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        jLabel57.setText("The facilities are available between 8am - 8pm every day");
+        jPanel5.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
 
         jLabel25.setText("<html> Outdoor golf in a huge area in an exotic environment. <br> You dont have to book time just show up and swing your club.");
         jLabel25.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(45, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jPanel5.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
 
         jLabel108.setText("<html>Useful info: <br> There are no player limits on this facility.<br> The equipment will be given to you.");
+        jPanel5.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 280, -1, -1));
 
-        jButtonBookGolf.setText("BOOK");
+        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel58.setText("GOLF");
+        jPanel5.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
-        jLabelBadmintonErrorMessageNoHours.setVisible(false);
-        jLabelGolfErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabelGolfErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
+        jLabelGolfInstructorPrice.setVisible(false);
+        jLabelGolfInstructorPrice.setText("*cost*");
+        jPanel5.add(jLabelGolfInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 420, 48, 16));
 
         javax.swing.GroupLayout jPanel3GolfLayout = new javax.swing.GroupLayout(jPanel3Golf);
         jPanel3Golf.setLayout(jPanel3GolfLayout);
         jPanel3GolfLayout.setHorizontalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addComponent(jLabel56))
-                    .addComponent(jLabel57))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3GolfLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabelGolfErrorMessageNoHours, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(206, 206, 206))
-            .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButtonBookGolf, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                            .addGap(28, 28, 28)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3GolfLayout.createSequentialGroup()
-                                .addGap(102, 102, 102)
-                                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel108, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(122, 122, 122))
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
         );
         jPanel3GolfLayout.setVerticalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(76, 76, 76)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                        .addComponent(jLabel56)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonBookGolf, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(jPanel3GolfLayout.createSequentialGroup()
-                        .addGap(310, 310, 310)
-                        .addComponent(jLabel108, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jLabelGolfErrorMessageNoHours)
-                .addGap(13, 13, 13)
-                .addComponent(jLabel57))
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Golf", jPanel3Golf);
 
-        jLabel5.setText("<html>Handball is a teamsport usually 6 players on each team. <br> Test your accuracy and have fun with your teammates. ");
-        jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jButtonBookHandball.setText("BOOK");
-        jButtonBookHandball.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonBookHandballActionPerformed(evt);
-            }
-        });
-
         jLabel42.setText("The facilities are available between 8am - 8pm every day");
 
-        jLabel43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel43.setText("Handball");
-
-        jLabel106.setText("<html>Useful info: <br> There are a total of 2 Handball courts, each with 12 players max/court. <br> The handballs will of cause be given to you.");
-
-        jLabel107.setText("<html>please note that if too few people have <br> booked within the given time, the facility will be cancelled.");
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel45.setText("Select the date and hour/hours you wish to play");
+        jPanel8.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 259, -1, -1));
 
         jLabel46.setText("Date");
+        jPanel8.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 302, -1, -1));
+
+        jPanel8.add(jComboBoxHandballSelectDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 299, 154, -1));
 
         jLabel47.setText("From:");
+        jPanel8.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 302, -1, -1));
 
         jComboBoxHandballTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
+        jPanel8.add(jComboBoxHandballTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 299, -1, -1));
 
         jLabel55.setText("To:");
+        jPanel8.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 302, -1, -1));
 
         jComboBoxHandballTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
+        jPanel8.add(jComboBoxHandballTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(381, 299, -1, -1));
 
         jButtonHandBallHelp.setText("Help");
         jButtonHandBallHelp.addActionListener(new java.awt.event.ActionListener()
@@ -1385,54 +1094,43 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonHandBallHelpActionPerformed(evt);
             }
         });
+        jPanel8.add(jButtonHandBallHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 298, -1, -1));
 
         jLabel51.setText("(max 4 facilities allowed per guest/day)");
+        jPanel8.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 330, -1, -1));
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel45)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(298, 298, 298)
-                        .addComponent(jLabel51))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jLabel46)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBoxHandballSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel47)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBoxHandballTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel55)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxHandballTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addComponent(jButtonHandBallHelp)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel45)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxHandballSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxHandballTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxHandballTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel46)
-                    .addComponent(jLabel47)
-                    .addComponent(jLabel55)
-                    .addComponent(jButtonHandBallHelp))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel51)
-                .addContainerGap(17, Short.MAX_VALUE))
-        );
+        jButtonBookHandball.setText("BOOK");
+        jButtonBookHandball.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookHandballActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButtonBookHandball, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 112, 48));
+
+        jLabel5.setText("<html>Handball is a teamsport usually 6 players on each team. <br> Test your accuracy and have fun with your teammates. ");
+        jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel8.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 49, -1, -1));
+
+        jLabel106.setText("<html>Useful info: <br> There are a total of 2 Handball courts, each with 12 players max/court. <br> The handballs will of cause be given to you.");
+        jPanel8.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(624, 272, 320, 78));
+
+        jLabel107.setText("<html>please note that if too few people have <br> booked within the given time, the facility will be cancelled.");
+        jPanel8.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(624, 357, -1, -1));
+
+        jLabelHandballErrorMessageBook.setVisible(false);
+        jLabelHandballErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelHandballErrorMessageBook.setText("The hours you have selected are not eligible");
+        jPanel8.add(jLabelHandballErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 430, -1, -1));
+
+        jLabel43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel43.setText("Handball");
+        jPanel8.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel64.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        jLabel64.setText("The facilities are available between 8am - 8pm every day");
+        jPanel8.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
 
         jLabel32.setPreferredSize(new java.awt.Dimension(320, 200));
 
@@ -1442,182 +1140,97 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1HandballLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel42)
-                    .addGroup(jPanel1HandballLayout.createSequentialGroup()
-                        .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1HandballLayout.createSequentialGroup()
-                                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1HandballLayout.createSequentialGroup()
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(124, 124, 124)))
-                        .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(143, 143, 143))
+                .addComponent(jLabel42))
             .addGroup(jPanel1HandballLayout.createSequentialGroup()
-                .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1HandballLayout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(62, 62, 62)
-                        .addComponent(jButtonBookHandball, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1HandballLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel43)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel18)
+                .addGap(332, 332, 332))
+            .addGroup(jPanel1HandballLayout.createSequentialGroup()
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 986, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1HandballLayout.setVerticalGroup(
             jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1HandballLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel43)
-                .addGap(4, 4, 4)
-                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1HandballLayout.createSequentialGroup()
+                .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1HandballLayout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1HandballLayout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(81, 81, 81)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1HandballLayout.createSequentialGroup()
-                        .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)))
-                .addGap(16, 16, 16)
-                .addGroup(jPanel1HandballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonBookHandball, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(83, 83, 83)
+                .addComponent(jLabel18)
+                .addGap(243, 243, 243)
                 .addComponent(jLabel42)
                 .addGap(32, 32, 32))
         );
 
         jTabbedPane1.addTab("Handball", jPanel1Handball);
 
+        jPanel4MountainBike.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel26.setText("<html>Ride our bikes to the heights you desire. the country provides <br> plenty of roads and mountainbike paths. Its free to use and no <br> booking required, just show up choose your own path. ");
         jLabel26.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel4MountainBike.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 194, -1, -1));
 
         jLabel63.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel63.setText("MOUNTAIN BIKING");
+        jPanel4MountainBike.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
         jLabel53.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel53.setText("The facilities are available between 8am - 8pm every day");
+        jPanel4MountainBike.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 483, 322, -1));
 
         jLabel66.setText("This facility does not require Time-booking, it is free to use for any guest at our resort.");
+        jPanel4MountainBike.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 42, -1, -1));
 
         jLabel109.setText("<html>Useful info: <br>There are no player limits on this facility. <br> The equipment will be given to you.");
-
-        javax.swing.GroupLayout jPanel4MountainBikeLayout = new javax.swing.GroupLayout(jPanel4MountainBike);
-        jPanel4MountainBike.setLayout(jPanel4MountainBikeLayout);
-        jPanel4MountainBikeLayout.setHorizontalGroup(
-            jPanel4MountainBikeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                .addComponent(jLabel53)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4MountainBikeLayout.createSequentialGroup()
-                .addGroup(jPanel4MountainBikeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel63))
-                    .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
-                .addComponent(jLabel109, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(194, 194, 194))
-            .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel66)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel4MountainBikeLayout.setVerticalGroup(
-            jPanel4MountainBikeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                .addGroup(jPanel4MountainBikeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel63)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel66))
-                    .addGroup(jPanel4MountainBikeLayout.createSequentialGroup()
-                        .addGap(166, 166, 166)
-                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(104, 104, 104)
-                .addComponent(jLabel109, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
-                .addComponent(jLabel53))
-        );
+        jPanel4MountainBike.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(629, 372, -1, -1));
 
         jTabbedPane1.addTab("Mountain Biking", jPanel4MountainBike);
 
+        jPanel6TableTennis.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel21.setText("<html>We have placed a tabletennis in the hall, where you can go and play without booking first. <br> A classic fun little activity for people at all ages.");
         jLabel21.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel6TableTennis.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 179, 316, -1));
 
         jLabel60.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel60.setText("TABLE TENNIS");
+        jPanel6TableTennis.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
         jLabel54.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel54.setText("The facilities are available between 8am - 8pm every day");
+        jPanel6TableTennis.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 483, 320, -1));
 
         jLabel65.setText("This facility does not require Time-booking, it is free to use for any guest at our resort.");
+        jPanel6TableTennis.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 42, -1, -1));
 
         jLabel110.setText("<html> Useful info: <br> The equipment will be given to you.");
-
-        javax.swing.GroupLayout jPanel6TableTennisLayout = new javax.swing.GroupLayout(jPanel6TableTennis);
-        jPanel6TableTennis.setLayout(jPanel6TableTennisLayout);
-        jPanel6TableTennisLayout.setHorizontalGroup(
-            jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel60)
-                    .addComponent(jLabel65))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6TableTennisLayout.createSequentialGroup()
-                .addGroup(jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel54)
-                    .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
-                        .addGap(100, 100, 100)
-                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
-                .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(231, 231, 231))
-        );
-        jPanel6TableTennisLayout.setVerticalGroup(
-            jPanel6TableTennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6TableTennisLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel60)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel65)
-                .addGap(99, 99, 99)
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(108, 108, 108)
-                .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
-                .addComponent(jLabel54))
-        );
+        jPanel6TableTennis.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
 
         jTabbedPane1.addTab("Table Tennis", jPanel6TableTennis);
 
+        jPanel8Volleyball.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel23.setText("<html>Playing volleyball is a great way to meet the other guests at the resort.<br> Sign-up at your preferred time and you will join a team consisting of other<br> guests and compete and have fun.");
         jLabel23.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel8Volleyball.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 126, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel35.setText("The facilities are available between 8am - 8pm every day");
+        jPanel8Volleyball.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 483, 324, -1));
 
         jLabel62.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel62.setText("VOLLEYBALL");
+        jPanel8Volleyball.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
         jLabel111.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel111.setText("<html> Useful info: <br>  There are a total of 2 volleyball courts, each with 12 players max/court. <br> The equipment will be given to you.");
+        jPanel8Volleyball.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 284, -1));
 
         jLabel74.setText("Select the date and hour/hours you wish to play");
 
@@ -1705,52 +1318,20 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     .addComponent(jButtonVolleybalHelp))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel52)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                 .addComponent(jButtonBookVolley, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout jPanel8VolleyballLayout = new javax.swing.GroupLayout(jPanel8Volleyball);
-        jPanel8Volleyball.setLayout(jPanel8VolleyballLayout);
-        jPanel8VolleyballLayout.setHorizontalGroup(
-            jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                .addGroup(jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel62))
-                    .addComponent(jLabel35))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                .addGroup(jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8VolleyballLayout.createSequentialGroup()
-                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(83, 83, 83)))
-                .addComponent(jLabel111, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(98, Short.MAX_VALUE))
-        );
-        jPanel8VolleyballLayout.setVerticalGroup(
-            jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel62)
-                .addGroup(jPanel8VolleyballLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                        .addGap(275, 275, 275)
-                        .addComponent(jLabel111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel8VolleyballLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
-                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(63, 63, 63)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(61, 61, 61)))
-                .addComponent(jLabel35))
-        );
+        jPanel8Volleyball.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 241, -1, 210));
+
+        jLabelVolleyballErrorMessageBook.setVisible(false);
+        jLabelVolleyballErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelVolleyballErrorMessageBook.setText("The hours you have selected are not eligible");
+        jPanel8Volleyball.add(jLabelVolleyballErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, -1, -1));
 
         jTabbedPane1.addTab("Volleyball", jPanel8Volleyball);
+
+        jPanel7Tennis.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButtonBookTennis.setText("BOOK");
         jButtonBookTennis.addActionListener(new java.awt.event.ActionListener()
@@ -1760,18 +1341,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonBookTennisActionPerformed(evt);
             }
         });
+        jPanel7Tennis.add(jButtonBookTennis, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 101, 43));
 
-        jLabel48.setText("The cost for the instructor has been added to your bill ");
-
-        jLabel49.setText("The facilities are available between 8am - 8pm every day");
+        jLabelTennisCostText.setText("The following amount has been added to your bill:");
+        jLabelTennisCostText.setVisible(false);
+        jPanel7Tennis.add(jLabelTennisCostText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, -1));
 
         jLabel61.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel61.setText("TENNIS");
-
-        jLabelTennisPriceLabel.setText("       ");
-
-        jLabelTennisInstructorPrice.setText("          ");
+        jPanel7Tennis.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
         jLabel78.setText("Select the date and hour/hours you wish to play");
 
@@ -1836,21 +1415,23 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addGap(26, 26, 26)
                 .addComponent(jLabel78)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel79)
-                    .addComponent(jLabel86)
                     .addComponent(jLabel87)
                     .addComponent(jComboBoxTennisTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxTennisTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxTennisSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonTennisHelp))
+                    .addComponent(jButtonTennisHelp)
+                    .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel68)
                 .addContainerGap())
         );
+
+        jPanel7Tennis.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, -1, -1));
 
         jLabel20.setText("<html> At Casablanca we have 6 state-of- the-art tennis courts. <br> You have the choice to book one of our highly experienced instructors, <br> who can make your game even better, or play with whoever you want.<html>");
         jLabel20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1860,9 +1441,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(21, 21, 21)
                 .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1872,7 +1453,44 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGap(25, 25, 25))
         );
 
+        jPanel7Tennis.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, 80));
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 528, Short.MAX_VALUE)
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 58, Short.MAX_VALUE)
+        );
+
+        jPanel7Tennis.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
+
+        jLabel112.setText("<html>Useful info: <br> There are a total of 6 tennis courts, each with 4 players max/court. <br> The equipment will be given to you.");
+        jPanel7Tennis.add(jLabel112, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 300, 312, -1));
+
+        jLabelGUIISBULLSHIT.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        jLabelGUIISBULLSHIT.setText("The facilities are available between 8am - 8pm every day");
+        jPanel7Tennis.add(jLabelGUIISBULLSHIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
+
+        jLabelBadmintonErrorMessageNoHours.setVisible(false);
+        jLabelTennisErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTennisErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
+        jPanel7Tennis.add(jLabelTennisErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 460, 360, -1));
+
+        jLabelTennisErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelTennisErrorMessageBook.setVisible(false);
+        jLabelTennisErrorMessageBook.setText("The hours you have selected are not eligible");
+        jPanel7Tennis.add(jLabelTennisErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, -1, -1));
+
+        jLabelTennisInstructorPrice.setVisible(false);
+        jLabelTennisInstructorPrice.setText("*cost*");
+        jPanel7Tennis.add(jLabelTennisInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 48, 16));
+
         jLabel6.setText("Do you wish to hire an instructor?");
+        jPanel7Tennis.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
 
         jCheckBoxTennisInstruct.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1881,9 +1499,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jCheckBoxTennisInstructActionPerformed(evt);
             }
         });
+        jPanel7Tennis.add(jCheckBoxTennisInstruct, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, -1, -1));
+
+        jLabelTennisInstructHourLabel.setVisible(false);
+        jLabelTennisInstructHourLabel.setText("...for how many hours?");
+        jPanel7Tennis.add(jLabelTennisInstructHourLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, -1, 20));
 
         jComboBoxTennisInstrucHours.setVisible(false);
-        jComboBoxTennisInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
+        jComboBoxTennisInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4" }));
         jComboBoxTennisInstrucHours.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -1891,130 +1514,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxTennisInstrucHoursActionPerformed(evt);
             }
         });
-
-        jLabelTennisInstructHourLabel.setText("                         ");
-
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6)
-                .addGap(18, 18, 18)
-                .addComponent(jCheckBoxTennisInstruct)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelTennisInstructHourLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jComboBoxTennisInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(94, Short.MAX_VALUE))
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jComboBoxTennisInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabelTennisInstructHourLabel))
-                    .addComponent(jCheckBoxTennisInstruct)
-                    .addComponent(jLabel6))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jLabel112.setText("<html>Useful info: <br> There are a total of 6 tennis courts, each with 4 players max/court. <br> The equipment will be given to you.");
-
-        jLabelGUIISBULLSHIT.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
-        jLabelGUIISBULLSHIT.setText("The facilities are available between 8am - 8pm every day");
-
-        jLabelBadmintonErrorMessageNoHours.setVisible(false);
-        jLabelTennisErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabelTennisErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
-
-        javax.swing.GroupLayout jPanel7TennisLayout = new javax.swing.GroupLayout(jPanel7Tennis);
-        jPanel7Tennis.setLayout(jPanel7TennisLayout);
-        jPanel7TennisLayout.setHorizontalGroup(
-            jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                                .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(68, 68, 68))
-                            .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                                .addGap(11, 11, 11)
-                                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(jLabelTennisPriceLabel)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabelTennisInstructorPrice))
-                                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(55, 55, 55))
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(jLabel48)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel61))
-                    .addComponent(jLabel49)
-                    .addComponent(jLabelGUIISBULLSHIT))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7TennisLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7TennisLayout.createSequentialGroup()
-                        .addComponent(jButtonBookTennis, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(454, 454, 454))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7TennisLayout.createSequentialGroup()
-                        .addComponent(jLabelTennisErrorMessageNoHours, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(319, 319, 319))))
-        );
-        jPanel7TennisLayout.setVerticalGroup(
-            jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel61)
-                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addGap(255, 255, 255)
-                        .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17)
-                        .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelTennisPriceLabel)
-                            .addComponent(jLabelTennisInstructorPrice))
-                        .addGap(17, 17, 17)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonBookTennis, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelTennisErrorMessageNoHours)
-                .addGroup(jPanel7TennisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(jLabel48)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel7TennisLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabelGUIISBULLSHIT)
-                        .addGap(72, 72, 72)))
-                .addComponent(jLabel49))
-        );
+        jPanel7Tennis.add(jComboBoxTennisInstrucHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, -1, -1));
 
         jTabbedPane1.addTab("Tennis", jPanel7Tennis);
 
@@ -2047,7 +1547,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelSwimmingInstructHourLabel.setText("                         ");
 
         jComboBoxSwimmingInstrucHours.setVisible(false);
-        jComboBoxSwimmingInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4" }));
+        jComboBoxSwimmingInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4" }));
         jComboBoxSwimmingInstrucHours.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -2150,6 +1650,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelSwimmingErrorMessageNoHours1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelSwimmingErrorMessageNoHours1.setText("You have to specify the number of hours you wish to hire an instructor");
 
+        jLabelSwimmingErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelSwimmingErrorMessageBook.setVisible(false);
+        jLabelSwimmingErrorMessageBook.setText("The hours you have selected are not eligible");
+
         javax.swing.GroupLayout jPanel5SwimmingLayout = new javax.swing.GroupLayout(jPanel5Swimming);
         jPanel5Swimming.setLayout(jPanel5SwimmingLayout);
         jPanel5SwimmingLayout.setHorizontalGroup(
@@ -2166,8 +1670,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
                         .addGap(36, 36, 36)
                         .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
+                        .addGap(0, 59, Short.MAX_VALUE)
+                        .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelSwimmingErrorMessageBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(131, 131, 131))
             .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
                 .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2185,10 +1693,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
                 .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addGap(297, 297, 297)
-                        .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel59)
                         .addGap(80, 80, 80)
@@ -2196,15 +1700,182 @@ public class Facilitet_GUI extends javax.swing.JFrame
                             .addComponent(jLabelSwimmingPriceLabel)
                             .addComponent(jLabelSwimmingInstructorPrice)
                             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
+                        .addGap(297, 297, 297)
+                        .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabelSwimmingErrorMessageBook)
+                        .addGap(33, 33, 33)))
                 .addComponent(jLabelSwimmingErrorMessageNoHours1)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel41))
         );
 
         jTabbedPane1.addTab("Swimming", jPanel5Swimming);
+
+        jLabel30.setText("Select the date and hour/hours you wish use the Fitness center.");
+
+        jLabel31.setText("Date:");
+
+        jComboBoxFitnessSelectDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxFitnessSelectDateActionPerformed(evt);
+            }
+        });
+
+        jLabel33.setText("From:");
+
+        jComboBoxFitnessTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
+        jComboBoxFitnessTimeFrom.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxFitnessTimeFromActionPerformed(evt);
+            }
+        });
+
+        jLabel34.setText("To");
+
+        jComboBoxFitnessTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
+
+        jButtonFitnessHelp.setText("Help");
+        jButtonFitnessHelp.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonFitnessHelpActionPerformed(evt);
+            }
+        });
+
+        jLabel44.setText("(max 4 hours allowed per guest/day)");
+
+        jButtonBookFitness.setText("BOOK");
+        jButtonBookFitness.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookFitnessActionPerformed(evt);
+            }
+        });
+
+        jLabelFitnessErrorMessageBook1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelFitnessErrorMessageBook1.setVisible(false);
+        jLabelFitnessErrorMessageBook1.setText("The hours you have selected are not eligible");
+
+        jLabel24.setText("<html>Our Fitness room allows you to train your body exactly how you want it.<br> The fitness center has all kinds of equipment so there is something for everyone.");
+        jLabel24.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel113.setText("<html>Useful info: <br> The Fitness room limits 20 people. <br> The equipment be given to you.");
+
+        jLabel50.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        jLabel50.setText("The facilities are available between 8am - 8pm every day");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel3.setText("FITNESS CENTER");
+
+        javax.swing.GroupLayout jPanelGolfLayout = new javax.swing.GroupLayout(jPanelGolf);
+        jPanelGolf.setLayout(jPanelGolfLayout);
+        jPanelGolfLayout.setHorizontalGroup(
+            jPanelGolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelGolfLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(114, 114, 114))
+            .addGroup(jPanelGolfLayout.createSequentialGroup()
+                .addGroup(jPanelGolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel50)
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel31)
+                        .addGap(5, 5, 5)
+                        .addComponent(jComboBoxFitnessSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel33)
+                        .addGap(7, 7, 7)
+                        .addComponent(jComboBoxFitnessTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(5, 5, 5)
+                        .addComponent(jComboBoxFitnessTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addGroup(jPanelGolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelGolfLayout.createSequentialGroup()
+                                .addComponent(jButtonBookFitness, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabelFitnessErrorMessageBook1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButtonFitnessHelp)))
+                    .addComponent(jLabel30)
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(158, 158, 158)
+                        .addComponent(jLabel44))
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(157, Short.MAX_VALUE))
+        );
+        jPanelGolfLayout.setVerticalGroup(
+            jPanelGolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelGolfLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addGap(111, 111, 111)
+                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel30)
+                .addGap(19, 19, 19)
+                .addGroup(jPanelGolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel31))
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxFitnessSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel33))
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxFitnessTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel34))
+                    .addGroup(jPanelGolfLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxFitnessTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonFitnessHelp))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelGolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonBookFitness, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelFitnessErrorMessageBook1))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel50))
+        );
+
+        javax.swing.GroupLayout jPanel2FitnessLayout = new javax.swing.GroupLayout(jPanel2Fitness);
+        jPanel2Fitness.setLayout(jPanel2FitnessLayout);
+        jPanel2FitnessLayout.setHorizontalGroup(
+            jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelGolf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel2FitnessLayout.setVerticalGroup(
+            jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelGolf, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Fitness", jPanel2Fitness);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -2219,10 +1890,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(1028, 583));
+        setSize(new java.awt.Dimension(1028, 588));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -2276,16 +1947,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jCheckBoxTennisInstructActionPerformed
         if(jCheckBoxTennisInstruct.isSelected())
         {
-            jLabelTennisInstructHourLabel.setText("...for how many hours?");
+            jLabelTennisInstructorPrice.setVisible(true);
+            jLabelTennisCostText.setVisible(true);
+            jLabelTennisInstructHourLabel.setVisible(true);
             jComboBoxTennisInstrucHours.setVisible(true);
             jComboBoxTennisInstrucHours.setSelectedIndex(0);
-            jLabelTennisPriceLabel.setText("Price:");
         } else
         {
-            jLabelTennisInstructHourLabel.setText("");
+            jLabelTennisInstructHourLabel.setVisible(false);
             jComboBoxTennisInstrucHours.setVisible(false);
-            jLabelTennisPriceLabel.setText("");
-            jLabelTennisInstructorPrice.setText("");
+            jLabelTennisInstructorPrice.setVisible(false);
         }
     }//GEN-LAST:event_jCheckBoxTennisInstructActionPerformed
 
@@ -2296,20 +1967,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookHandballActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookHandballActionPerformed
     {//GEN-HEADEREND:event_jButtonBookHandballActionPerformed
-        String handballDate = (String)jComboBoxHandballSelectDate.getSelectedItem();
-        String handballTimeFrom = (String)jComboBoxHandballTimeFrom.getSelectedItem();
-        String handballTimeTo = (String)jComboBoxHandballTimeTo.getSelectedItem();
-        insert.JDBCInsertFacility("12345", "02", handballDate, handballTimeFrom, handballTimeTo, "09098");
+        if(jComboBoxHandballTimeFrom.getSelectedIndex() <= jComboBoxHandballTimeTo.getSelectedIndex()) {
+            String handballDate = (String)jComboBoxHandballSelectDate.getSelectedItem();
+            String handballTimeFrom = (String)jComboBoxHandballTimeFrom.getSelectedItem();
+            String handballTimeTo = (String)jComboBoxHandballTimeTo.getSelectedItem();
+            //insert.JDBCInsertFacility("12345", "02", handballDate, handballTimeFrom, handballTimeTo, "09098");
+        } else {jLabelHandballErrorMessageBook.setVisible(true);}
     }//GEN-LAST:event_jButtonBookHandballActionPerformed
 
     private void jCheckBoxGolfInstructActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jCheckBoxGolfInstructActionPerformed
     {//GEN-HEADEREND:event_jCheckBoxGolfInstructActionPerformed
         if(jCheckBoxGolfInstruct.isSelected())
         {
-            jLabelGolfInstructHourLabel.setText("...for how many hours?");
+            jLabelGolfCostText.setVisible(true);
+            jLabelGolfInstructHourLabel.setVisible(true);
             jComboBoxGolfInstrucHours.setVisible(true);
             jComboBoxGolfInstrucHours.setSelectedIndex(0);
-            jLabelGolfPriceLabel.setText("Price:");
             jLabelGolfInstructorDateTimeInfo.setVisible(true);
             jLabelGolfInstructorDate.setVisible(true);
             jLabelGolfInstructorTimeFrom.setVisible(true);
@@ -2319,10 +1992,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jComboBoxGolfInstructorTimeTo.setVisible(true);
         } else
         {
-            jLabelGolfInstructHourLabel.setText("");
+            jLabelGolfCostText.setVisible(false);
+            jLabelGolfInstructHourLabel.setVisible(false);
             jComboBoxGolfInstrucHours.setVisible(false);
-            jLabelGolfPriceLabel.setText("");
-            jLabelGolfInstructorPrice.setText("");
+            jLabelGolfInstructorPrice.setVisible(false);
             jLabelGolfInstructorDateTimeInfo.setVisible(false);
             jLabelGolfInstructorDate.setVisible(false);
             jLabelGolfInstructorTimeFrom.setVisible(false);
@@ -2387,8 +2060,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jComboBoxBadmintonInstrucHours.setVisible(true);
             jComboBoxBadmintonInstrucHours.setSelectedIndex(0);
             jLabelBadmintonInstructorPrice.setVisible(true);
+            jLabelBadmintonCostText.setVisible(true);
         } else
         {
+            jLabelBadmintonCostText.setVisible(false);
             jLabelBadmintonInstructHourLabel.setVisible(false);
             jComboBoxBadmintonInstrucHours.setVisible(false);
             jLabelBadmintonInstructorPrice.setVisible(false);
@@ -2435,11 +2110,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
     //            String badmintonTimeFrom = (String)jComboBoxBadmintonTimeFrom.getSelectedItem();
     //            String badmintonTimeTo = (String)jComboBoxBadmintonTimeTo.getSelectedItem();
     //            insert.JDBCInsertFacility("12345", "02", badmintonDate, badmintonTimeFrom, badmintonTimeTo, "09098");
-            insert.JDBCInsertInstructorCost("12345", 02);
+    //            insert.JDBCInsertInstructorCost("12345", 02);
             jLabelBadmintonErrorMessageNoHours.setVisible(false);   
         }
     } else {
-            System.out.println("NOPE!"); } 
+            jLabelBadmintonErrorMessageBook.setVisible(true); } 
         
       
     }//GEN-LAST:event_jButtonBookBadmintonActionPerformed
@@ -2477,22 +2152,32 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookFitnessActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookFitnessActionPerformed
     {//GEN-HEADEREND:event_jButtonBookFitnessActionPerformed
-        String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
-        String fitnessTimeFrom = (String)jComboBoxFitnessTimeFrom.getSelectedItem();
-        String fitnessTimeTo = (String)jComboBoxFitnessTimeTo.getSelectedItem();
-        insert.JDBCInsertFacility("12345", "02", fitnessDate, fitnessTimeFrom, fitnessTimeTo, "09098");
+       
+        if(jComboBoxFitnessTimeFrom.getSelectedIndex() <= jComboBoxFitnessTimeTo.getSelectedIndex()) {
+            
+                String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
+                String fitnessTimeFrom = (String)jComboBoxFitnessTimeFrom.getSelectedItem();
+                String fitnessTimeTo = (String)jComboBoxFitnessTimeTo.getSelectedItem();
+                //insert.JDBCInsertFacility("12345", "02", fitnessDate, fitnessTimeFrom, fitnessTimeTo, "09098");
+ 
+            jLabelFitnessErrorMessageBook1.setVisible(false);   
+        } else {
+            jLabelFitnessErrorMessageBook1.setVisible(true); } 
     }//GEN-LAST:event_jButtonBookFitnessActionPerformed
 
     private void jButtonBookVolleyActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookVolleyActionPerformed
     {//GEN-HEADEREND:event_jButtonBookVolleyActionPerformed
-        String volleyballDate = (String)jComboBoxVolleyballSelectDate.getSelectedItem();
-        String volleyTimeFrom = (String)jComboBoxVolleyballTimeFrom.getSelectedItem();
-        String volleyTimeTo = (String)jComboBoxVolleyballTimeTo.getSelectedItem();
-        insert.JDBCInsertFacility("12345", "02", volleyballDate, volleyTimeFrom, volleyTimeTo, "09098");
+        if(jComboBoxVolleyballTimeFrom.getSelectedIndex() <= jComboBoxVolleyballTimeTo.getSelectedIndex()) {
+            String volleyballDate = (String)jComboBoxVolleyballSelectDate.getSelectedItem();
+            String volleyTimeFrom = (String)jComboBoxVolleyballTimeFrom.getSelectedItem();
+            String volleyTimeTo = (String)jComboBoxVolleyballTimeTo.getSelectedItem();
+            //insert.JDBCInsertFacility("12345", "02", volleyballDate, volleyTimeFrom, volleyTimeTo, "09098");
+        }else{jLabelVolleyballErrorMessageBook.setVisible(true);}
     }//GEN-LAST:event_jButtonBookVolleyActionPerformed
 
     private void jButtonBookTennisActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookTennisActionPerformed
     {//GEN-HEADEREND:event_jButtonBookTennisActionPerformed
+        
         String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem();
         String tennisTimeFrom = (String)jComboBoxTennisTimeFrom.getSelectedItem();
         String tennisTimeTo = (String)jComboBoxTennisTimeTo.getSelectedItem();
@@ -2540,6 +2225,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jComboBoxOverviewEditBookingTimeFrom1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxOverviewEditBookingTimeFrom1ActionPerformed
+
+    private void jButtonBookGolfActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookGolfActionPerformed
+    {//GEN-HEADEREND:event_jButtonBookGolfActionPerformed
+        if(jComboBoxGolfInstructorTimeFrom.getSelectedIndex() <= jComboBoxGolfInstructorTimeTo.getSelectedIndex()) {
+            if(jComboBoxGolfInstrucHours.getSelectedIndex()==0){ jLabelGolfErrorMessageNoHours.setVisible(true); }
+                else {
+                    jLabelGolfErrorMessageNoHours.setVisible(false);  
+                    String golfDate = (String)jComboBoxGolfInstructorDate.getSelectedItem();
+                    String golfTimeFrom = (String)jComboBoxGolfInstructorTimeFrom.getSelectedItem();
+                    String golfTimeTo = (String)jComboBoxGolfInstructorTimeTo.getSelectedItem();
+                    //insert.JDBCInsertFacility("12345", "05", golfDate, golfTimeFrom, golfTimeTo, "09098");
+                    jLabelGolfErrorMessageBook.setVisible(false);   
+                {
+                jLabelGolfErrorMessageBook.setVisible(true); } }
+            }else{jLabelGolfErrorMessageNoHours.setVisible(true);}
+    }//GEN-LAST:event_jButtonBookGolfActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2659,7 +2360,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
     private javax.swing.JLabel jLabel116;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -2690,8 +2390,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
@@ -2699,7 +2397,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
@@ -2708,6 +2405,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
@@ -2736,10 +2434,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
     private javax.swing.JLabel jLabelAlreadyBooked;
+    private javax.swing.JLabel jLabelBadmintonCostText;
+    private javax.swing.JLabel jLabelBadmintonErrorMessageBook;
     private javax.swing.JLabel jLabelBadmintonErrorMessageNoHours;
     private javax.swing.JLabel jLabelBadmintonInstructHourLabel;
     private javax.swing.JLabel jLabelBadmintonInstructorPrice;
+    private javax.swing.JLabel jLabelFitnessErrorMessageBook1;
     private javax.swing.JLabel jLabelGUIISBULLSHIT;
+    private javax.swing.JLabel jLabelGolfCostText;
+    private javax.swing.JLabel jLabelGolfErrorMessageBook;
     private javax.swing.JLabel jLabelGolfErrorMessageNoHours;
     private javax.swing.JLabel jLabelGolfInstructHourLabel;
     private javax.swing.JLabel jLabelGolfInstructorDate;
@@ -2747,8 +2450,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelGolfInstructorPrice;
     private javax.swing.JLabel jLabelGolfInstructorTimeFrom;
     private javax.swing.JLabel jLabelGolfInstructorTimeTo;
-    private javax.swing.JLabel jLabelGolfPriceLabel;
+    private javax.swing.JLabel jLabelHandballErrorMessageBook;
     private javax.swing.JLabel jLabelOverviewGuestID;
+    private javax.swing.JLabel jLabelSwimmingErrorMessageBook;
     private javax.swing.JLabel jLabelSwimmingErrorMessageNoHours1;
     private javax.swing.JLabel jLabelSwimmingInstructHourLabel;
     private javax.swing.JLabel jLabelSwimmingInstructorDate;
@@ -2757,12 +2461,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelSwimmingInstructorTimeFrom;
     private javax.swing.JLabel jLabelSwimmingInstructorTimeTo;
     private javax.swing.JLabel jLabelSwimmingPriceLabel;
+    private javax.swing.JLabel jLabelTennisCostText;
+    private javax.swing.JLabel jLabelTennisErrorMessageBook;
     private javax.swing.JLabel jLabelTennisErrorMessageNoHours;
     private javax.swing.JLabel jLabelTennisInstructHourLabel;
     private javax.swing.JLabel jLabelTennisInstructorPrice;
-    private javax.swing.JLabel jLabelTennisPriceLabel;
+    private javax.swing.JLabel jLabelVolleyballErrorMessageBook;
     private javax.swing.JList jListBookedOverview;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -2771,14 +2476,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanel1Handball;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel2Fitness;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel3Golf;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel4MountainBike;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel5Overview;
     private javax.swing.JPanel jPanel5Swimming;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel6TableTennis;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel7Tennis;
@@ -2786,6 +2488,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanel8Volleyball;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JPanel jPanelFacilityHelp;
+    private javax.swing.JPanel jPanelGolf;
     private javax.swing.JPanel jPanelOverviewEditBooking;
     private javax.swing.JPanel jPanelOverviewHelp;
     private javax.swing.JScrollPane jScrollPane1;

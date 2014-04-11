@@ -156,7 +156,7 @@ public class JDBCInsertQuery
             System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
-
+            
             //Query
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
