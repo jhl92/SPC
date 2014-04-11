@@ -168,12 +168,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
         int currentMonth = Integer.parseInt(cMonth.format(presentDate.getTime()));
         int currentYear = Integer.parseInt(cYear.format(presentDate.getTime()));
         presentDate.set(currentYear, currentMonth, currentDate);
-        String[] listOfDates = null;
-        listOfDates[0] = (String) sdf.format(presentDate.getTime());
-        for(int i = 1; i<7; i++)
+        String[] listOfDates = new String[7];
+        for(int i = 0; i<7; i++)
         {
+            String ld = sdf.format(presentDate.getTime());
+            listOfDates[i] = ld;
             presentDate.add(Calendar.DAY_OF_MONTH, 1);
-            listOfDates[i] = (String)sdf.format(presentDate.getTime());
         }
         return listOfDates;
     }
@@ -229,8 +229,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel104 = new javax.swing.JLabel();
         jButtonOverviewDeleteYes1 = new javax.swing.JButton();
         jButtonOverviewDeleteNo1 = new javax.swing.JButton();
-        jDBCSelectQuery1 = new spc.JDBCSelectQuery();
-        jDBCInsertQuery1 = new spc.JDBCInsertQuery();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5Overview = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
@@ -2328,8 +2326,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JComboBox jComboBoxVolleyballSelectDate;
     private javax.swing.JComboBox jComboBoxVolleyballTimeFrom;
     private javax.swing.JComboBox jComboBoxVolleyballTimeTo;
-    private spc.JDBCInsertQuery jDBCInsertQuery1;
-    private spc.JDBCSelectQuery jDBCSelectQuery1;
     private javax.swing.JDialog jDialogFacilityHelp;
     private javax.swing.JDialog jDialogOverviewDelete;
     private javax.swing.JDialog jDialogOverviewEditBooking;
