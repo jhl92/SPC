@@ -105,8 +105,8 @@ public class JDBCInsertQuery
 
             String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','N','"+insID+"')";
             stmt.executeUpdate(sql);
-            sql = "INSERT INTO GUEST VALUES";
-            stmt.executeUpdate(sql);
+//            sql = "INSERT INTO GUEST VALUES";
+//            stmt.executeUpdate(sql);
             System.out.println("Inserted records into the table...");
 
         } catch (SQLException se)
@@ -143,9 +143,10 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
     
-    public void JDBCInsertInstructorCost(String guestID, String facID) {
+    public void JDBCInsertInstructorCost(String guestID, int facID) {
         Connection conn = null;
         Statement stmt = null;
+        String sql = "";
         try
         {
             //Registrer JDBC driver
@@ -155,32 +156,35 @@ public class JDBCInsertQuery
             System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
-
+            
             //Query
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
+            switch(facID) {
+                
+                case 01:  
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
+                        + "WHERE GUESTID = '"+guestID+"'";
+                stmt.executeUpdate(sql);
+                break;    
             
-            if(facID.equals("01")) {
-                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
-                        + " WHERE GUESTID = '"+guestID+"'";
-                stmt.executeUpdate(sql);
-            }
-            if(facID.equals("02")) {
-                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
+                case 02: 
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 30 "
                         + "WHERE GUESTID='"+guestID+"'";
-                stmt.executeUpdate(sql);
-            }
-            if(facID.equals("05")) {
-                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
-                        + "WHERE GUESTID='"+guestID+"'";
-                stmt.executeUpdate(sql);
-            }
-            if(facID.equals("06")) {
-                String sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
-                        + "WHERE GUESTID='"+guestID+"'";
-                stmt.executeUpdate(sql);
-            }
+                System.out.println(sql);
+                stmt.executeUpdate(sql);                    
             
+                case 05: 
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
+                        + "WHERE GUESTID='"+guestID+"'";
+                stmt.executeUpdate(sql);
+            
+                case 06: 
+                sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + 40 "
+                        + "WHERE GUESTID='"+guestID+"'";
+                stmt.executeUpdate(sql);
+            
+            }
             System.out.println("Inserted records into the table...");
 
         } catch (SQLException se)
