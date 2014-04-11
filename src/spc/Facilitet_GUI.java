@@ -4,7 +4,6 @@
  */
 package spc;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -168,10 +167,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
         int currentDate = Integer.parseInt(cDate.format(presentDate.getTime()));
         int currentMonth = Integer.parseInt(cMonth.format(presentDate.getTime()));
         int currentYear = Integer.parseInt(cYear.format(presentDate.getTime()));
-        presentDate.set(currentDate, (currentMonth - 1), currentYear);
+        presentDate.set(currentYear, currentMonth, currentDate);
         String[] listOfDates = null;
         listOfDates[0] = (String) sdf.format(presentDate.getTime());
-        for(int i = 1; i<8; i++)
+        for(int i = 1; i<7; i++)
         {
             presentDate.add(Calendar.DAY_OF_MONTH, 1);
             listOfDates[i] = (String)sdf.format(presentDate.getTime());
