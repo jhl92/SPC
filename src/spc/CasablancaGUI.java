@@ -14,8 +14,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -73,11 +73,16 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private int currentDate;
     private int currentMonth;
     private int currentYear;
-    private SimpleDateFormat format = new SimpleDateFormat("dd-MM-yy");
+    private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
     private SimpleDateFormat cWeekDay = new SimpleDateFormat("u");
     private SimpleDateFormat cDate = new SimpleDateFormat("d");
     private SimpleDateFormat cMonth = new SimpleDateFormat("M");
     private SimpleDateFormat cYear = new SimpleDateFormat("yy");
+    private SimpleDateFormat ocFormat = new SimpleDateFormat("dd-MM-yy");
+    private SimpleDateFormat ocWeekDay = new SimpleDateFormat("u");
+    private SimpleDateFormat ocDate = new SimpleDateFormat("d");
+    private SimpleDateFormat ocMonth = new SimpleDateFormat("MMM");
+    private SimpleDateFormat ocYear = new SimpleDateFormat("yyyy");
     String[] list28days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28"};
     String[] list29days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"};
     String[] list30days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"};
@@ -3327,14 +3332,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay01.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay01.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate01Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate01Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate01Day.setText("Monday");
+        jLabelDate01Day.setText("Saturday");
         jLabelDate01Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate01.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate01.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate01.setText("24.March");
         jLabelDate01.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate01Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate01Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate01Year.setText("01");
         jLabelDate01Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3364,14 +3372,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay02.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay02.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate02Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate02Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate02Day.setText("Monday");
+        jLabelDate02Day.setText("Wednesday");
         jLabelDate02Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate02.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate02.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate02.setText("24.March");
         jLabelDate02.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate02Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate02Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate02Year.setText("02");
         jLabelDate02Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3401,14 +3412,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay03.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay03.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate03Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate03Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate03Day.setText("Monday");
         jLabelDate03Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate03.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate03.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate03.setText("24.March");
         jLabelDate03.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate03Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate03Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate03Year.setText("03");
         jLabelDate03Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3438,14 +3452,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay04.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay04.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate04Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate04Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate04Day.setText("Monday");
         jLabelDate04Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate04.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate04.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate04.setText("24.March");
         jLabelDate04.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate04Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate04Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate04Year.setText("04");
         jLabelDate04Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3475,14 +3492,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay05.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay05.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate05Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate05Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate05Day.setText("Monday");
         jLabelDate05Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate05.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate05.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate05.setText("24.March");
         jLabelDate05.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate05Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate05Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate05Year.setText("05");
         jLabelDate05Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3512,14 +3532,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay06.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay06.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate06Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate06Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate06Day.setText("Monday");
         jLabelDate06Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate06.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate06.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate06.setText("24.March");
         jLabelDate06.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate06Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate06Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate06Year.setText("06");
         jLabelDate06Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3549,14 +3572,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay07.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay07.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate07Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate07Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate07Day.setText("Monday");
         jLabelDate07Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate07.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate07.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate07.setText("24.March");
         jLabelDate07.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate07Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate07Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate07Year.setText("07");
         jLabelDate07Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3586,14 +3612,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay08.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay08.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate08Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate08Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate08Day.setText("Monday");
         jLabelDate08Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate08.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate08.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate08.setText("24.March");
         jLabelDate08.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate08Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate08Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate08Year.setText("08");
         jLabelDate08Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3623,14 +3652,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay09.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay09.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate09Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate09Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate09Day.setText("Monday");
         jLabelDate09Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate09.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate09.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate09.setText("24.March");
         jLabelDate09.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate09Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate09Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate09Year.setText("09");
         jLabelDate09Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3660,14 +3692,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay10.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate10Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate10Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate10Day.setText("Monday");
         jLabelDate10Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate10.setText("24.March");
         jLabelDate10.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate10Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate10Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate10Year.setText("10");
         jLabelDate10Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3697,14 +3732,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay11.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate11Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate11Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate11Day.setText("Monday");
         jLabelDate11Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate11.setText("24.March");
         jLabelDate11.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate11Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate11Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate11Year.setText("11");
         jLabelDate11Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3734,14 +3772,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay12.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate12Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate12Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate12Day.setText("Monday");
         jLabelDate12Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate12.setText("24.March");
         jLabelDate12.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate12Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate12Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate12Year.setText("12");
         jLabelDate12Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3771,14 +3812,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay13.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate13Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate13Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate13Day.setText("Monday");
         jLabelDate13Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate13.setText("24.March");
         jLabelDate13.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate13Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate13Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate13Year.setText("13");
         jLabelDate13Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -3808,14 +3852,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jPanelDay14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelDay14.setPreferredSize(new java.awt.Dimension(60, 60));
 
+        jLabelDate14Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate14Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate14Day.setText("Monday");
         jLabelDate14Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate14.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate14.setText("24.March");
         jLabelDate14.setPreferredSize(new java.awt.Dimension(56, 14));
 
+        jLabelDate14Year.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate14Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDate14Year.setText("14");
         jLabelDate14Year.setPreferredSize(new java.awt.Dimension(56, 14));
@@ -4719,87 +4766,283 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jLabelOC501.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC501.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC501.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC501MousePressed(evt);
+            }
+        });
 
         jLabelOC502.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC502.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC502.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC502MousePressed(evt);
+            }
+        });
 
         jLabelOC503.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC503.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC503.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC503MousePressed(evt);
+            }
+        });
 
         jLabelOC504.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC504.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC504.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC504MousePressed(evt);
+            }
+        });
 
         jLabelOC505.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC505.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC505.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC505MousePressed(evt);
+            }
+        });
 
         jLabelOC506.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC506.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC506.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC506MousePressed(evt);
+            }
+        });
 
         jLabelOC507.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC507.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC507.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC507MousePressed(evt);
+            }
+        });
 
         jLabelOC508.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC508.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC508.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC508MousePressed(evt);
+            }
+        });
 
         jLabelOC509.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC509.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC509.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC509MousePressed(evt);
+            }
+        });
 
         jLabelOC510.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC510.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC510.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC510MousePressed(evt);
+            }
+        });
 
         jLabelOC511.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC511.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC511.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC511MousePressed(evt);
+            }
+        });
 
         jLabelOC512.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC512.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC512.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC512MousePressed(evt);
+            }
+        });
 
         jLabelOC513.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC513.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC513.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC513MousePressed(evt);
+            }
+        });
 
         jLabelOC514.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC514.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC514.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC514MousePressed(evt);
+            }
+        });
 
         jLabelOC601.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC601.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC601.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC601MousePressed(evt);
+            }
+        });
 
         jLabelOC602.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC602.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC602.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC602MousePressed(evt);
+            }
+        });
 
         jLabelOC603.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC603.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC603.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC603MousePressed(evt);
+            }
+        });
 
         jLabelOC604.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC604.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC604.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC604MousePressed(evt);
+            }
+        });
 
         jLabelOC605.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC605.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC605.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC605MousePressed(evt);
+            }
+        });
 
         jLabelOC606.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC606.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC606.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC606MousePressed(evt);
+            }
+        });
 
         jLabelOC607.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC607.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC607.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC607MousePressed(evt);
+            }
+        });
 
         jLabelOC608.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC608.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC608.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC608MousePressed(evt);
+            }
+        });
 
         jLabelOC609.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC609.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC609.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC609MousePressed(evt);
+            }
+        });
 
         jLabelOC610.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC610.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC610.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC610MousePressed(evt);
+            }
+        });
 
         jLabelOC611.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC611.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC611.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC611MousePressed(evt);
+            }
+        });
 
         jLabelOC612.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC612.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC612.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC612MousePressed(evt);
+            }
+        });
 
         jLabelOC613.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC613.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC613.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC613MousePressed(evt);
+            }
+        });
 
         jLabelOC614.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC614.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC614.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC614MousePressed(evt);
+            }
+        });
 
         jLabelOC701.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC701.setPreferredSize(new java.awt.Dimension(60, 60));
@@ -6489,21 +6732,165 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabelOC414MousePressed
 
+    private void jLabelOC501MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC501MousePressed
+    {//GEN-HEADEREND:event_jLabelOC501MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC501MousePressed
+
+    private void jLabelOC502MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC502MousePressed
+    {//GEN-HEADEREND:event_jLabelOC502MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC502MousePressed
+
+    private void jLabelOC503MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC503MousePressed
+    {//GEN-HEADEREND:event_jLabelOC503MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC503MousePressed
+
+    private void jLabelOC504MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC504MousePressed
+    {//GEN-HEADEREND:event_jLabelOC504MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC504MousePressed
+
+    private void jLabelOC505MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC505MousePressed
+    {//GEN-HEADEREND:event_jLabelOC505MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC505MousePressed
+
+    private void jLabelOC506MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC506MousePressed
+    {//GEN-HEADEREND:event_jLabelOC506MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC506MousePressed
+
+    private void jLabelOC507MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC507MousePressed
+    {//GEN-HEADEREND:event_jLabelOC507MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC507MousePressed
+
+    private void jLabelOC508MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC508MousePressed
+    {//GEN-HEADEREND:event_jLabelOC508MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC508MousePressed
+
+    private void jLabelOC509MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC509MousePressed
+    {//GEN-HEADEREND:event_jLabelOC509MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC509MousePressed
+
+    private void jLabelOC510MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC510MousePressed
+    {//GEN-HEADEREND:event_jLabelOC510MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC510MousePressed
+
+    private void jLabelOC511MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC511MousePressed
+    {//GEN-HEADEREND:event_jLabelOC511MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC511MousePressed
+
+    private void jLabelOC512MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC512MousePressed
+    {//GEN-HEADEREND:event_jLabelOC512MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC512MousePressed
+
+    private void jLabelOC513MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC513MousePressed
+    {//GEN-HEADEREND:event_jLabelOC513MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC513MousePressed
+
+    private void jLabelOC514MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC514MousePressed
+    {//GEN-HEADEREND:event_jLabelOC514MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC514MousePressed
+
+    private void jLabelOC601MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC601MousePressed
+    {//GEN-HEADEREND:event_jLabelOC601MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC601MousePressed
+
+    private void jLabelOC602MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC602MousePressed
+    {//GEN-HEADEREND:event_jLabelOC602MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC602MousePressed
+
+    private void jLabelOC603MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC603MousePressed
+    {//GEN-HEADEREND:event_jLabelOC603MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC603MousePressed
+
+    private void jLabelOC604MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC604MousePressed
+    {//GEN-HEADEREND:event_jLabelOC604MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC604MousePressed
+
+    private void jLabelOC605MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC605MousePressed
+    {//GEN-HEADEREND:event_jLabelOC605MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC605MousePressed
+
+    private void jLabelOC606MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC606MousePressed
+    {//GEN-HEADEREND:event_jLabelOC606MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC606MousePressed
+
+    private void jLabelOC607MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC607MousePressed
+    {//GEN-HEADEREND:event_jLabelOC607MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC607MousePressed
+
+    private void jLabelOC608MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC608MousePressed
+    {//GEN-HEADEREND:event_jLabelOC608MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC608MousePressed
+
+    private void jLabelOC609MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC609MousePressed
+    {//GEN-HEADEREND:event_jLabelOC609MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC609MousePressed
+
+    private void jLabelOC610MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC610MousePressed
+    {//GEN-HEADEREND:event_jLabelOC610MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC610MousePressed
+
+    private void jLabelOC611MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC611MousePressed
+    {//GEN-HEADEREND:event_jLabelOC611MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC611MousePressed
+
+    private void jLabelOC612MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC612MousePressed
+    {//GEN-HEADEREND:event_jLabelOC612MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC612MousePressed
+
+    private void jLabelOC613MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC613MousePressed
+    {//GEN-HEADEREND:event_jLabelOC613MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC613MousePressed
+
+    private void jLabelOC614MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC614MousePressed
+    {//GEN-HEADEREND:event_jLabelOC614MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC614MousePressed
+
+    //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
     {
+        cal = Calendar.getInstance();
         currentDate = Integer.parseInt(cDate.format(cal.getTime()));
         currentMonth = Integer.parseInt(cMonth.format(cal.getTime()));
         currentYear = Integer.parseInt(cYear.format(cal.getTime()));
         currentWeekDay = Integer.parseInt(cWeekDay.format(cal.getTime()));
     }
+    
+    //Search Calender for how many days the specified month & year contains, and returns the amount of days.
     private int getDaysInMonth(int month, int year)
     {
-        //Search Calender for how many days the specified month/year contains, and return the right list.
         cal.set(year, month, 1);
         int daysInMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
         return daysInMonth;
     }
     
+    //Counts and returns the number of days between the given dates. Returns 0 if start-date does not come before end-date.
     private int getNumberOfNights(Calendar dFrom, Calendar dTo)
     {
         int daysBetween = 0;
@@ -6515,6 +6902,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         return daysBetween;
     }
     
+    //Gets a list of rooms and checks the availability of each room one by one, using the "checkRoom" method.
     private String checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate)
     {
         int a = 0;
@@ -6538,38 +6926,31 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }
     
+    //Checks if a given room is free or occupied between the given dates and returns the answer.
     private boolean checkRoom(String rID, Calendar sDate, Calendar eDate)
     {
         ArrayList<RoomAvaBookConstructor> tempRoomBookings = jdcbselect.getCheckAvaRoom(rID);
-        for (int b = 0; b < tempRoomBookings.size(); b++)
+        for (int a = 0; a < tempRoomBookings.size(); a++)
         {
             Calendar sBookDate = Calendar.getInstance();
             Calendar eBookDate = Calendar.getInstance();
             try
             {
-                sBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateFrom()));
-                eBookDate.setTime(format.parse(tempRoomBookings.get(b).getDateTo()));
+                sBookDate.setTime(sdf.parse(tempRoomBookings.get(a).getDateFrom()));
+                eBookDate.setTime(sdf.parse(tempRoomBookings.get(a).getDateTo()));
             } catch (ParseException ex)
             {
                 Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
             if (eBookDate.after(sDate))
             {
-                if(sBookDate.before(eDate))
+                if (sBookDate.before(eDate))
                 {
                     return false;
                 }
             }
         }
         return true;
-    }
-    
-    private void fillDateCells(String weekday, int date, String month, int year)
-    {
-        //   Through the method variables, this method recieves the first date (To be posted in cell Day01) and 
-        //   automatically fills the rest of the 13 cells with the continueing dates.
-        jLabelDate01Day.setText(month);
     }
     
     private void refreshMainScreen()
@@ -6596,11 +6977,16 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     
     private void findRoomStatus(String[] listOfRooms, Calendar OverviewStartDate)
     {
-        // 1. Start by retrieving a list of all bookings from database on the selected roomID
-        // 2. Remove all bookings from list with endDate before OverviewStartDate
-        // 3. Loop
-        
-        
+        // 1. Loop through all roomID's in listOfRooms to check one room at the time
+        // 2. Start by retrieving a list of all bookings from database on the current roomID
+        // 3. Remove all bookings from list with endDate before OverviewStartDate
+        // 4. Loop through all remaining bookings to see if any booking overlap OverviewStartDate
+            // If any booking overlap OverviewStartDate then return Occupied
+        // 5. If no booking overlap, then check if any bookings have check-out that day
+            // If room have check-out that day, then check if room have check-in same day
+                // Depending on the outcome, return CheckOut-Free or CheckOut-CheckIn
+        // 6. If no booking overlap and there is no check-out, then check if any bookings have check-in that day
+            // Depending on the outcome, return Free-CheckIn or Free
         
         for(int a = 0; a < listOfRooms.length; a++)
         {
@@ -6609,176 +6995,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             
             
             
-        }
-    }
-    
-    private void fillRoomCells(String roomID, int roomRow, Calendar firstDate)
-    {
-        if (roomID.equals("000"))
-        {
-//            switch (roomRow)
-//            {
-//                case 1:
-//                    fillRoom1Cells(null, null, 100, null, null, null, null);
-//                    break;
-//                case 2:
-//                    fillRoom2Cells(null, null, 200, null, null, null, null);
-//                    break;
-//                case 3:
-//                    fillRoom3Cells(null, null, 300, null, null, null, null);
-//                    break;
-//                case 4:
-//                    fillRoom4Cells(null, null, 400, null, null, null, null);
-//                    break;
-//                case 5:
-//                    fillRoom5Cells(null, null, 500, null, null, null, null);
-//                    break;
-//                case 6:
-//                    fillRoom6Cells(null, null, 600, null, null, null, null);
-//                    break;
-//                case 7:
-//                    fillRoom7Cells(null, null, 700, null, null, null, null);
-//                    break;
-//                case 8:
-//                    fillRoom8Cells(null, null, 800, null, null, null, null);
-//                    break;
-//            }
-//            for (int a = 0; a < 14; a++)
-//            {
-//                int day = 1 + a;
-//                switch (roomRow)
-//                {
-//                    case 1:
-//                        fillRoom1Cells(null, null, day, null, null, null, null);
-//                        break;
-//                    case 2:
-//                        fillRoom2Cells(null, null, day, null, null, null, null);
-//                        break;
-//                    case 3:
-//                        fillRoom3Cells(null, null, day, null, null, null, null);
-//                        break;
-//                    case 4:
-//                        fillRoom4Cells(null, null, day, null, null, null, null);
-//                        break;
-//                    case 5:
-//                        fillRoom5Cells(null, null, day, null, null, null, null);
-//                        break;
-//                    case 6:
-//                        fillRoom6Cells(null, null, day, null, null, null, null);
-//                        break;
-//                    case 7:
-//                        fillRoom7Cells(null, null, day, null, null, null, null);
-//                        break;
-//                    case 8:
-//                        fillRoom8Cells(null, null, day, null, null, null, null);
-//                        break;
-//                }
-//            }
-        } else
-        {
-//        switch (roomRow)
-//        {
-//            case 1:
-//                fillRoom1Cells(rID, roomSize, 100, null, null, null, null);
-//                break;
-//            case 2:
-//                fillRoom2Cells(rID, roomSize, 200, null, null, null, null);
-//                break;
-//            case 3:
-//                fillRoom3Cells(rID, roomSize, 300, null, null, null, null);
-//                break;
-//            case 4:
-//                fillRoom4Cells(rID, roomSize, 400, null, null, null, null);
-//                break;
-//            case 5:
-//                fillRoom5Cells(rID, roomSize, 500, null, null, null, null);
-//                break;
-//            case 6:
-//                fillRoom6Cells(rID, roomSize, 600, null, null, null, null);
-//                break;
-//            case 7:
-//                fillRoom7Cells(rID, roomSize, 700, null, null, null, null);
-//                break;
-//            case 8:
-//                fillRoom8Cells(rID, roomSize, 800, null, null, null, null);
-//                break;
-//        }
-        for (int a = 0; a < 14; a++)
-        {
-            //Get data from database/tables and add them to the variables below...
-            int day = 1 + a;
-            //------------------------------------------------------------------
-            //Create a method that increases the date by one day, before retrieving data from database/table...
-            //------------------------------------------------------------------
-            
-            boolean available = false; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
-//            switch (roomRow)
-//            {
-//                case 1:
-//                    fillRoom1Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//                case 2:
-//                    fillRoom2Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//                case 3:
-//                    fillRoom3Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//                case 4:
-//                    fillRoom4Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//                case 5:
-//                    fillRoom5Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//                case 6:
-//                    fillRoom6Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//                case 7:
-//                    fillRoom7Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//                case 8:
-//                    fillRoom8Cells(rID, null, day, firstName, lastName, availability, cellBackground);
-//                    break;
-//            }
-        }
-    }
-    }
-    
-    private void fillRoom1Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
-    {
-        switch (roomDay)
-        {
-            case 100:
-                jLabelRoom1RoomID.setText("" + roomID);
-                jLabelRoom1RoomSize.setText(roomSize);
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-            case 8:
-                break;
-            case 9:
-                break;
-            case 10:
-                break;
-            case 11:
-                break;
-            case 12:
-                break;
-            case 13:
-                break;
-            case 14:
-                break;
         }
     }
     
@@ -7314,7 +7530,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {
         ArrayList<RoomAvaBookConstructor> tempRoomList = jdcbselect.getCheckAvaRoom(roomID);
         int i = tempRoomList.indexOf(roomID);
-        String rType = tempRoomList.get(0).getRoomID();
+        String rType = tempRoomList.get(0).getRoomType();
         switch (rType)
         {
             case "Single":
@@ -7328,7 +7544,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 break;
         }
         
-        
         jTextFieldBookingFirstName.setText("");
         jTextFieldBookingLastName.setText("");
         jTextFieldBookingCountry.setText("");
@@ -7337,14 +7552,18 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         jTextFieldBookingGuestID.setText("");
         jButtonBookingBook.setVisible(false);
         jComboBoxBookingRoomType.setSelectedIndex(0);
-        setCurrentDate();
-        jComboBoxBookingStartMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxBookingStartMonth.setSelectedIndex();
         jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
         jComboBoxBookingStartDate.setSelectedIndex(currentDate-1);
         jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
         jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
         jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
         jDialogBooking.setVisible(true);
+    }
+    
+    private DateVar getDateSettings(Calendar dateIn)
+    {
+        
     }
     
     public void setupDialogEditDetails(String guestID)
@@ -7515,6 +7734,199 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         {
             Room8 = listShowRooms.get(7);
             roomsShowing = 8;
+        }
+    }
+    
+    //Fills the top cells in Overview-window with the dates and weekdays of each column.
+    private void fillDateCells(String weekday, Calendar sDate)
+    {
+    private SimpleDateFormat cWeekDay = new SimpleDateFormat("EEEEE", Locale.ENGLISH);
+    private SimpleDateFormat cDate = new SimpleDateFormat("d");
+    private SimpleDateFormat cMonth = new SimpleDateFormat("M");
+    private SimpleDateFormat cMonth1 = new SimpleDateFormat("MMMM", Locale.ENGLISH);
+    private SimpleDateFormat cYear = new SimpleDateFormat("yyyy");
+        
+        int ocD = 0;
+        int ocM = 0;
+        int ocY = 0;
+        int ocW = 0;
+        
+        
+        ocD = Integer.parseInt(ocDate.format(sDate.getTime()));
+        ocM = Integer.parseInt(ocMonth.format(sDate.getTime()));
+        ocY = Integer.parseInt(ocYear.format(sDate.getTime()));
+        ocW = Integer.parseInt(ocWeekDay.format(sDate.getTime()));
+        
+    }
+    
+    
+    private void fillRoomCells(String roomID, int roomRow, Calendar firstDate)
+    {
+        if (roomID.equals("000"))
+        {
+//            switch (roomRow)
+//            {
+//                case 1:
+//                    fillRoom1Cells(null, null, 100, null, null, null, null);
+//                    break;
+//                case 2:
+//                    fillRoom2Cells(null, null, 200, null, null, null, null);
+//                    break;
+//                case 3:
+//                    fillRoom3Cells(null, null, 300, null, null, null, null);
+//                    break;
+//                case 4:
+//                    fillRoom4Cells(null, null, 400, null, null, null, null);
+//                    break;
+//                case 5:
+//                    fillRoom5Cells(null, null, 500, null, null, null, null);
+//                    break;
+//                case 6:
+//                    fillRoom6Cells(null, null, 600, null, null, null, null);
+//                    break;
+//                case 7:
+//                    fillRoom7Cells(null, null, 700, null, null, null, null);
+//                    break;
+//                case 8:
+//                    fillRoom8Cells(null, null, 800, null, null, null, null);
+//                    break;
+//            }
+//            for (int a = 0; a < 14; a++)
+//            {
+//                int day = 1 + a;
+//                switch (roomRow)
+//                {
+//                    case 1:
+//                        fillRoom1Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 2:
+//                        fillRoom2Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 3:
+//                        fillRoom3Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 4:
+//                        fillRoom4Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 5:
+//                        fillRoom5Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 6:
+//                        fillRoom6Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 7:
+//                        fillRoom7Cells(null, null, day, null, null, null, null);
+//                        break;
+//                    case 8:
+//                        fillRoom8Cells(null, null, day, null, null, null, null);
+//                        break;
+//                }
+//            }
+        } else
+        {
+//        switch (roomRow)
+//        {
+//            case 1:
+//                fillRoom1Cells(rID, roomSize, 100, null, null, null, null);
+//                break;
+//            case 2:
+//                fillRoom2Cells(rID, roomSize, 200, null, null, null, null);
+//                break;
+//            case 3:
+//                fillRoom3Cells(rID, roomSize, 300, null, null, null, null);
+//                break;
+//            case 4:
+//                fillRoom4Cells(rID, roomSize, 400, null, null, null, null);
+//                break;
+//            case 5:
+//                fillRoom5Cells(rID, roomSize, 500, null, null, null, null);
+//                break;
+//            case 6:
+//                fillRoom6Cells(rID, roomSize, 600, null, null, null, null);
+//                break;
+//            case 7:
+//                fillRoom7Cells(rID, roomSize, 700, null, null, null, null);
+//                break;
+//            case 8:
+//                fillRoom8Cells(rID, roomSize, 800, null, null, null, null);
+//                break;
+//        }
+        for (int a = 0; a < 14; a++)
+        {
+            //Get data from database/tables and add them to the variables below...
+            int day = 1 + a;
+            //------------------------------------------------------------------
+            //Create a method that increases the date by one day, before retrieving data from database/table...
+            //------------------------------------------------------------------
+            
+            boolean available = false; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
+//            switch (roomRow)
+//            {
+//                case 1:
+//                    fillRoom1Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 2:
+//                    fillRoom2Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 3:
+//                    fillRoom3Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 4:
+//                    fillRoom4Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 5:
+//                    fillRoom5Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 6:
+//                    fillRoom6Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 7:
+//                    fillRoom7Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//                case 8:
+//                    fillRoom8Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+//                    break;
+//            }
+        }
+    }
+    }
+    
+    private void fillRoom1Cells(String roomID, String roomSize, int roomDay, String firstName, String lastName, String availability, Color background)
+    {
+        switch (roomDay)
+        {
+            case 100:
+                jLabelRoom1RoomID.setText("" + roomID);
+                jLabelRoom1RoomSize.setText(roomSize);
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
+                break;
+            case 11:
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
+            case 14:
+                break;
         }
     }
 }
