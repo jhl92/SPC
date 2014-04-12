@@ -6504,27 +6504,12 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         return daysInMonth;
     }
     
-    private int getNumberOfNights(String dFrom, String dTo)
+    private int getNumberOfNights(Calendar dFrom, Calendar dTo)
     {
-        Date sDate = null;
-        Date eDate = null;
-        Calendar startDtemp = Calendar.getInstance();
-        Calendar endDtemp = Calendar.getInstance();
-        
-        try
-        {
-            sDate = format.parse(dFrom);
-            eDate = format.parse(dTo);
-        } catch (ParseException ex)
-        {
-            Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        startDtemp.setTime(sDate);
-        endDtemp.setTime(eDate);
-        
         int daysBetween = 0;
-        while (startDtemp.before(endDtemp)) {
-            startDtemp.add(Calendar.DAY_OF_MONTH, 1);
+        while (dFrom.before(dTo))
+        {
+            dFrom.add(Calendar.DAY_OF_MONTH, 1);
             daysBetween++;
         }
         return daysBetween;
