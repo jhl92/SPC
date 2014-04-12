@@ -4439,87 +4439,283 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
 
         jLabelOC301.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC301.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC301.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC301MousePressed(evt);
+            }
+        });
 
         jLabelOC302.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC302.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC302.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC302MousePressed(evt);
+            }
+        });
 
         jLabelOC303.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC303.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC303.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC303MousePressed(evt);
+            }
+        });
 
         jLabelOC304.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC304.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC304.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC304MousePressed(evt);
+            }
+        });
 
         jLabelOC305.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC305.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC305.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC305MousePressed(evt);
+            }
+        });
 
         jLabelOC306.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC306.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC306.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC306MousePressed(evt);
+            }
+        });
 
         jLabelOC307.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC307.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC307.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC307MousePressed(evt);
+            }
+        });
 
         jLabelOC308.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC308.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC308.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC308MousePressed(evt);
+            }
+        });
 
         jLabelOC309.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC309.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC309.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC309MousePressed(evt);
+            }
+        });
 
         jLabelOC310.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC310.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC310.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC310MousePressed(evt);
+            }
+        });
 
         jLabelOC311.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC311.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC311.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC311MousePressed(evt);
+            }
+        });
 
         jLabelOC312.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC312.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC312.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC312MousePressed(evt);
+            }
+        });
 
         jLabelOC313.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC313.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC313.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC313MousePressed(evt);
+            }
+        });
 
         jLabelOC314.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC314.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC314.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC314MousePressed(evt);
+            }
+        });
 
         jLabelOC401.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC401.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC401.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC401MousePressed(evt);
+            }
+        });
 
         jLabelOC402.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC402.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC402.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC402MousePressed(evt);
+            }
+        });
 
         jLabelOC403.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC403.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC403.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC403MousePressed(evt);
+            }
+        });
 
         jLabelOC404.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC404.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC404.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC404MousePressed(evt);
+            }
+        });
 
         jLabelOC405.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC405.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC405.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC405MousePressed(evt);
+            }
+        });
 
         jLabelOC406.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC406.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC406.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC406MousePressed(evt);
+            }
+        });
 
         jLabelOC407.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC407.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC407.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC407MousePressed(evt);
+            }
+        });
 
         jLabelOC408.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC408.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC408.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC408MousePressed(evt);
+            }
+        });
 
         jLabelOC409.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC409.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC409.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC409MousePressed(evt);
+            }
+        });
 
         jLabelOC410.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC410.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC410.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC410MousePressed(evt);
+            }
+        });
 
         jLabelOC411.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC411.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC411.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC411MousePressed(evt);
+            }
+        });
 
         jLabelOC412.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC412.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC412.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC412MousePressed(evt);
+            }
+        });
 
         jLabelOC413.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC413.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC413.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC413MousePressed(evt);
+            }
+        });
 
         jLabelOC414.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC414.setPreferredSize(new java.awt.Dimension(60, 60));
+        jLabelOC414.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mousePressed(java.awt.event.MouseEvent evt)
+            {
+                jLabelOC414MousePressed(evt);
+            }
+        });
 
         jLabelOC501.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabelOC501.setPreferredSize(new java.awt.Dimension(60, 60));
@@ -6152,6 +6348,146 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {//GEN-HEADEREND:event_jLabelOC214MousePressed
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabelOC214MousePressed
+
+    private void jLabelOC301MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC301MousePressed
+    {//GEN-HEADEREND:event_jLabelOC301MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC301MousePressed
+
+    private void jLabelOC302MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC302MousePressed
+    {//GEN-HEADEREND:event_jLabelOC302MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC302MousePressed
+
+    private void jLabelOC303MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC303MousePressed
+    {//GEN-HEADEREND:event_jLabelOC303MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC303MousePressed
+
+    private void jLabelOC304MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC304MousePressed
+    {//GEN-HEADEREND:event_jLabelOC304MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC304MousePressed
+
+    private void jLabelOC305MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC305MousePressed
+    {//GEN-HEADEREND:event_jLabelOC305MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC305MousePressed
+
+    private void jLabelOC306MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC306MousePressed
+    {//GEN-HEADEREND:event_jLabelOC306MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC306MousePressed
+
+    private void jLabelOC307MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC307MousePressed
+    {//GEN-HEADEREND:event_jLabelOC307MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC307MousePressed
+
+    private void jLabelOC308MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC308MousePressed
+    {//GEN-HEADEREND:event_jLabelOC308MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC308MousePressed
+
+    private void jLabelOC309MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC309MousePressed
+    {//GEN-HEADEREND:event_jLabelOC309MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC309MousePressed
+
+    private void jLabelOC310MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC310MousePressed
+    {//GEN-HEADEREND:event_jLabelOC310MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC310MousePressed
+
+    private void jLabelOC311MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC311MousePressed
+    {//GEN-HEADEREND:event_jLabelOC311MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC311MousePressed
+
+    private void jLabelOC312MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC312MousePressed
+    {//GEN-HEADEREND:event_jLabelOC312MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC312MousePressed
+
+    private void jLabelOC313MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC313MousePressed
+    {//GEN-HEADEREND:event_jLabelOC313MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC313MousePressed
+
+    private void jLabelOC314MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC314MousePressed
+    {//GEN-HEADEREND:event_jLabelOC314MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC314MousePressed
+
+    private void jLabelOC401MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC401MousePressed
+    {//GEN-HEADEREND:event_jLabelOC401MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC401MousePressed
+
+    private void jLabelOC402MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC402MousePressed
+    {//GEN-HEADEREND:event_jLabelOC402MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC402MousePressed
+
+    private void jLabelOC403MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC403MousePressed
+    {//GEN-HEADEREND:event_jLabelOC403MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC403MousePressed
+
+    private void jLabelOC404MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC404MousePressed
+    {//GEN-HEADEREND:event_jLabelOC404MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC404MousePressed
+
+    private void jLabelOC405MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC405MousePressed
+    {//GEN-HEADEREND:event_jLabelOC405MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC405MousePressed
+
+    private void jLabelOC406MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC406MousePressed
+    {//GEN-HEADEREND:event_jLabelOC406MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC406MousePressed
+
+    private void jLabelOC407MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC407MousePressed
+    {//GEN-HEADEREND:event_jLabelOC407MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC407MousePressed
+
+    private void jLabelOC408MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC408MousePressed
+    {//GEN-HEADEREND:event_jLabelOC408MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC408MousePressed
+
+    private void jLabelOC409MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC409MousePressed
+    {//GEN-HEADEREND:event_jLabelOC409MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC409MousePressed
+
+    private void jLabelOC410MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC410MousePressed
+    {//GEN-HEADEREND:event_jLabelOC410MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC410MousePressed
+
+    private void jLabelOC411MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC411MousePressed
+    {//GEN-HEADEREND:event_jLabelOC411MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC411MousePressed
+
+    private void jLabelOC412MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC412MousePressed
+    {//GEN-HEADEREND:event_jLabelOC412MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC412MousePressed
+
+    private void jLabelOC413MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC413MousePressed
+    {//GEN-HEADEREND:event_jLabelOC413MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC413MousePressed
+
+    private void jLabelOC414MousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabelOC414MousePressed
+    {//GEN-HEADEREND:event_jLabelOC414MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelOC414MousePressed
 
     private void setCurrentDate()
     {
