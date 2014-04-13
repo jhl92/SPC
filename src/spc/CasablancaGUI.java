@@ -56,7 +56,6 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private String Room6 = "006";
     private String Room7 = "007";
     private String Room8 = "008";
-    private int roomsShowing;
     private String detailsGuestID = "";
     private String bookingDateFrom;
     private String bookingDateTo;
@@ -64,11 +63,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     private String bookingRoomID;
     Font fontSystem = new Font("Tahoma", Font.ITALIC, 11);
     Font fontNormal = new Font("Tahoma", Font.BOLD, 11);
-    private final ImageIcon Free = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free.png"));
-    private final ImageIcon Book = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"));
-    private final ImageIcon FreeBook = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free-CheckIn.png"));
-    private final ImageIcon BookFree = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-Free.png"));
-    private final ImageIcon BookBook = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-CheckIn.png"));
+    private final ImageIcon IconFree = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free.png"));
+    private final ImageIcon IconBook = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Occupied.png"));
+    private final ImageIcon IconFreeBook = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free-CheckIn.png"));
+    private final ImageIcon IconBookFree = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-Free.png"));
+    private final ImageIcon IconBookBook = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-CheckIn.png"));
     private int currentWeekDay;
     private int currentDate;
     private int currentMonth;
@@ -6946,10 +6945,11 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }
     
-    private void findRoomStatus(String[] listOfRooms, Calendar OverviewStartDate)
+    private ImageIcon findRoomStatus(String frsRoomID, Calendar frsDate)
     {
-        // 1. Loop through all roomID's in listOfRooms to check one room at the time
         // 2. Start by retrieving a list of all bookings from database on the current roomID
+        ArrayList<RoomAvaBookConstructor> frsList = jdcbselect.getCheckAvaRoom(frsRoomID);
+        
         // 3. Remove all bookings from list with endDate before OverviewStartDate
         // 4. Loop through all remaining bookings to see if any booking overlap OverviewStartDate
             // If any booking overlap OverviewStartDate then return Occupied
@@ -6959,7 +6959,30 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         // 6. If no booking overlap and there is no check-out, then check if any bookings have check-in that day
             // Depending on the outcome, return Free-CheckIn or Free
         
-        for(int a = 0; a < listOfRooms.length; a++)
+        int a = 0;
+        while(a<frsList.size())
+        {
+            Calendar sBookDate = Calendar.getInstance();
+            Calendar eBookDate = Calendar.getInstance();
+            try
+            {
+                sBookDate.setTime(sdf.parse(frsList.get(a).getDateFrom()));
+                eBookDate.setTime(sdf.parse(frsList.get(a).getDateTo()));
+            } catch (ParseException ex)
+            {
+                Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            if(sBookDate.before(frsDate))
+            {
+                if (eBookDate.after(frsDate))
+                {
+                    return IconBook;
+                }
+            }
+        }
+        
+        
+        for(int a = 0; a < frsList.size(); a++)
         {
             
             
@@ -7669,42 +7692,34 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         if(listShowRooms.get(0).equals("")==false)
         {
             Room1 = listShowRooms.get(0);
-            roomsShowing = 1;
         }
         if(listShowRooms.get(1).equals("")==false)
         {
             Room2 = listShowRooms.get(1);
-            roomsShowing = 2;
         }
         if(listShowRooms.get(2).equals("")==false)
         {
             Room3 = listShowRooms.get(2);
-            roomsShowing = 3;
         }
         if(listShowRooms.get(3).equals("")==false)
         {
             Room4 = listShowRooms.get(3);
-            roomsShowing = 4;
         }
         if(listShowRooms.get(4).equals("")==false)
         {
             Room5 = listShowRooms.get(4);
-            roomsShowing = 5;
         }
         if(listShowRooms.get(5).equals("")==false)
         {
             Room6 = listShowRooms.get(5);
-            roomsShowing = 6;
         }
         if(listShowRooms.get(6).equals("")==false)
         {
             Room7 = listShowRooms.get(6);
-            roomsShowing = 7;
         }
         if(listShowRooms.get(7).equals("")==false)
         {
             Room8 = listShowRooms.get(7);
-            roomsShowing = 8;
         }
     }
     
@@ -7798,7 +7813,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
         }
     }
     
-    
+    //Filling all cells with information about a specific room on a specific date.
     private void fillRoomCells(String roomID, int roomRow, Calendar firstDate)
     {
         if (roomID.equals("000"))
@@ -7806,28 +7821,28 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             switch (roomRow)
             {
                 case 1:
-                    fillRoom1Cells(null, null, 100, null, null, null, null);
+                    fillRoom1Cells(100, null, null, null);
                     break;
                 case 2:
-                    fillRoom2Cells(null, null, 200, null, null, null, null);
+                    fillRoom2Cells(200, null, null, null);
                     break;
                 case 3:
-                    fillRoom3Cells(null, null, 300, null, null, null, null);
+                    fillRoom3Cells(300, null, null, null);
                     break;
                 case 4:
-                    fillRoom4Cells(null, null, 400, null, null, null, null);
+                    fillRoom4Cells(400, null, null, null);
                     break;
                 case 5:
-                    fillRoom5Cells(null, null, 500, null, null, null, null);
+                    fillRoom5Cells(500, null, null, null);
                     break;
                 case 6:
-                    fillRoom6Cells(null, null, 600, null, null, null, null);
+                    fillRoom6Cells(600, null, null, null);
                     break;
                 case 7:
-                    fillRoom7Cells(null, null, 700, null, null, null, null);
+                    fillRoom7Cells(700, null, null, null);
                     break;
                 case 8:
-                    fillRoom8Cells(null, null, 800, null, null, null, null);
+                    fillRoom8Cells(800, null, null, null);
                     break;
             }
             for (int a = 0; a < 14; a++)
@@ -7836,69 +7851,65 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 switch (roomRow)
                 {
                     case 1:
-                        fillRoom1Cells(null, null, day, null, null, null, null);
+                        fillRoom1Cells(day, null, null, null);
                         break;
                     case 2:
-                        fillRoom2Cells(null, null, day, null, null, null, null);
+                        fillRoom2Cells(day, null, null, null);
                         break;
                     case 3:
-                        fillRoom3Cells(null, null, day, null, null, null, null);
+                        fillRoom3Cells(day, null, null, null);
                         break;
                     case 4:
-                        fillRoom4Cells(null, null, day, null, null, null, null);
+                        fillRoom4Cells(day, null, null, null);
                         break;
                     case 5:
-                        fillRoom5Cells(null, null, day, null, null, null, null);
+                        fillRoom5Cells(day, null, null, null);
                         break;
                     case 6:
-                        fillRoom6Cells(null, null, day, null, null, null, null);
+                        fillRoom6Cells(day, null, null, null);
                         break;
                     case 7:
-                        fillRoom7Cells(null, null, day, null, null, null, null);
+                        fillRoom7Cells(day, null, null, null);
                         break;
                     case 8:
-                        fillRoom8Cells(null, null, day, null, null, null, null);
+                        fillRoom8Cells(day, null, null, null);
                         break;
                 }
             }
         } else
         {
-        switch (roomRow)
-        {
-            case 1:
-                fillRoom1Cells(rID, roomSize, 100, null, null, null, null);
-                break;
-            case 2:
-                fillRoom2Cells(rID, roomSize, 200, null, null, null, null);
-                break;
-            case 3:
-                fillRoom3Cells(rID, roomSize, 300, null, null, null, null);
-                break;
-            case 4:
-                fillRoom4Cells(rID, roomSize, 400, null, null, null, null);
-                break;
-            case 5:
-                fillRoom5Cells(rID, roomSize, 500, null, null, null, null);
-                break;
-            case 6:
-                fillRoom6Cells(rID, roomSize, 600, null, null, null, null);
-                break;
-            case 7:
-                fillRoom7Cells(rID, roomSize, 700, null, null, null, null);
-                break;
-            case 8:
-                fillRoom8Cells(rID, roomSize, 800, null, null, null, null);
-                break;
-        }
-        for (int a = 0; a < 14; a++)
-        {
-            //Get data from database/tables and add them to the variables below...
-            int day = 1 + a;
-            //------------------------------------------------------------------
-            //Create a method that increases the date by one day, before retrieving data from database/table...
-            //------------------------------------------------------------------
-            
-            boolean available = false; //"getBooleanFromTable_Availability_atTheSpecifiedDate";
+            ArrayList<RoomAvaBookConstructor> rList = jdcbselect.getCheckAvaRoom(roomID);
+            switch (roomRow)
+            {
+                case 1:
+                    fillRoom1Cells(100, roomID, rList.get(0).getRoomType(), null);
+                    break;
+                case 2:
+                    fillRoom2Cells(200, roomID, rList.get(0).getRoomType(), null);
+                    break;
+                case 3:
+                    fillRoom3Cells(300, roomID, rList.get(0).getRoomType(), null);
+                    break;
+                case 4:
+                    fillRoom4Cells(400, roomID, rList.get(0).getRoomType(), null);
+                    break;
+                case 5:
+                    fillRoom5Cells(500, roomID, rList.get(0).getRoomType(), null);
+                    break;
+                case 6:
+                    fillRoom6Cells(600, roomID, rList.get(0).getRoomType(), null);
+                    break;
+                case 7:
+                    fillRoom7Cells(700, roomID, rList.get(0).getRoomType(), null);
+                    break;
+                case 8:
+                    fillRoom8Cells(800, roomID, rList.get(0).getRoomType(), null);
+                    break;
+            }
+            for (int a = 0; a < 14; a++)
+            {
+                int day = 1 + a;
+                
 //            switch (roomRow)
 //            {
 //                case 1:
@@ -7938,33 +7949,33 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 jLabelRoom1RoomID.setText("" + roomID);
                 jLabelRoom1RoomType.setText(roomType);
                 break;
-            case 101:
+            case 1:
                 break;
-            case 102:
+            case 2:
                 break;
-            case 103:
+            case 3:
                 break;
-            case 104:
+            case 4:
                 break;
-            case 105:
+            case 5:
                 break;
-            case 106:
+            case 6:
                 break;
-            case 107:
+            case 7:
                 break;
-            case 108:
+            case 8:
                 break;
-            case 109:
+            case 9:
                 break;
-            case 110:
+            case 10:
                 break;
-            case 111:
+            case 11:
                 break;
-            case 112:
+            case 12:
                 break;
-            case 113:
+            case 13:
                 break;
-            case 114:
+            case 14:
                 break;
         }
     }
