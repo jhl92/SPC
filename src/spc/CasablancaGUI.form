@@ -4856,7 +4856,7 @@
         <Component class="javax.swing.JButton" name="jButtonPrevious14Days">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/pictures/ArrowDoubleLeft.png"/>
+              <Image iconType="3" name="/Pictures/ArrowDoubleLeft.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Previous 14 days"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -4877,7 +4877,7 @@
         <Component class="javax.swing.JButton" name="jButtonNext7Days">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/pictures/ArrowRight.png"/>
+              <Image iconType="3" name="/Pictures/ArrowRight.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Next 7 days"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -4899,7 +4899,7 @@
         <Component class="javax.swing.JButton" name="jButtonNext14Days">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/pictures/ArrowDoubleRight.png"/>
+              <Image iconType="3" name="/Pictures/ArrowDoubleRight.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Next 14 days"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -5156,9 +5156,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate01">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5168,9 +5165,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate01Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="01"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5233,9 +5227,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate02">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5245,9 +5236,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate02Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="02"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5310,9 +5298,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate03">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5322,9 +5307,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate03Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="03"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5387,9 +5369,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate04">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5399,9 +5378,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate04Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="04"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5464,9 +5440,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate05">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5476,9 +5449,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate05Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="05"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5541,9 +5511,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate06">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5553,9 +5520,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate06Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="06"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5618,9 +5582,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate07">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5630,9 +5591,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate07Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="07"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5695,9 +5653,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate08">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5707,9 +5662,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate08Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="08"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5772,9 +5724,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate09">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5784,9 +5733,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate09Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="09"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5849,9 +5795,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate10">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5861,9 +5804,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate10Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="10"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5926,9 +5866,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate11">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -5938,9 +5875,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate11Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="11"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -6003,9 +5937,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate12">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -6015,9 +5946,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate12Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="12"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -6080,9 +6008,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate13">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -6092,9 +6017,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate13Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="13"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -6157,9 +6079,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate14">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="24.March"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -6169,9 +6088,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelDate14Year">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="10" style="0"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="14"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -6204,7 +6120,7 @@
                   <EmptySpace min="4" max="32767" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
-                  <Component id="jLabelRoom1RoomSize" max="32767" attributes="0"/>
+                  <Component id="jLabelRoom1RoomType" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6215,7 +6131,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom1RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom1RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom1RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6234,7 +6150,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom1RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom1RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
@@ -6266,7 +6182,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRoom2RoomID" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRoom2RoomSize" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabelRoom2RoomType" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               </Group>
@@ -6278,7 +6194,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom2RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom2RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom2RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6297,7 +6213,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom2RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom2RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
@@ -6329,7 +6245,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRoom3RoomID" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRoom3RoomSize" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabelRoom3RoomType" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               </Group>
@@ -6341,7 +6257,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom3RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom3RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom3RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6360,7 +6276,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom3RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom3RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
@@ -6392,7 +6308,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRoom4RoomID" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRoom4RoomSize" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabelRoom4RoomType" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               </Group>
@@ -6404,7 +6320,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom4RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom4RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom4RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6423,7 +6339,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom4RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom4RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
@@ -6455,7 +6371,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRoom5RoomID" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRoom5RoomSize" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabelRoom5RoomType" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               </Group>
@@ -6467,7 +6383,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom5RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom5RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom5RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6486,7 +6402,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom5RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom5RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
@@ -6518,7 +6434,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRoom6RoomID" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRoom6RoomSize" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabelRoom6RoomType" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               </Group>
@@ -6530,7 +6446,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom6RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom6RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom6RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6549,7 +6465,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom6RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom6RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
@@ -6581,7 +6497,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRoom7RoomID" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRoom7RoomSize" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabelRoom7RoomType" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               </Group>
@@ -6593,7 +6509,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom7RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom7RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom7RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6612,7 +6528,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom7RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom7RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
@@ -6644,7 +6560,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRoom8RoomID" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRoom8RoomSize" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabelRoom8RoomType" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               </Group>
@@ -6656,7 +6572,7 @@
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Component id="jLabelRoom8RoomID" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="jLabelRoom8RoomSize" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabelRoom8RoomType" min="-2" pref="14" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -6675,7 +6591,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelRoom8RoomSize">
+        <Component class="javax.swing.JLabel" name="jLabelRoom8RoomType">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="(Single)"/>
