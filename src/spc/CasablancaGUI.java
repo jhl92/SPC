@@ -6947,23 +6947,17 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     
     private ImageIcon findRoomStatus(String frsRoomID, Calendar frsDate)
     {
-        // 2. Start by retrieving a list of all bookings from database on the current roomID
+        // Starts by retrieving a list of all bookings from database on the current roomID
         ArrayList<RoomAvaBookConstructor> frsList = jdcbselect.getCheckAvaRoom(frsRoomID);
-        
-        // 3. Remove all bookings from list with endDate before OverviewStartDate
-        // 4. Loop through all remaining bookings to see if any booking overlap OverviewStartDate
-            // If any booking overlap OverviewStartDate then return Occupied
-        // 5. If no booking overlap, then check if any bookings have check-out that day
-            // If room have check-out that day, then check if room have check-in same day
-                // Depending on the outcome, return CheckOut-Free or CheckOut-CheckIn
-        // 6. If no booking overlap and there is no check-out, then check if any bookings have check-in that day
-            // Depending on the outcome, return Free-CheckIn or Free
-        
-        int a = 0;
-        while(a<frsList.size())
+        // Loops through all bookings one by one...
+            //If any booking overlaps OverviewStartDate then returns IconBook
+            //If a bookings start/end-date equals the specified date, then search list to see if another bookings
+            //corresponding end/start-date also equals the specified date and return the correct Icon
+        //If no Icons have been returned by the end of the list, then return IconFree
+        Calendar sBookDate = Calendar.getInstance();
+        Calendar eBookDate = Calendar.getInstance();
+        for(int a = 0; a<frsList.size(); a++)
         {
-            Calendar sBookDate = Calendar.getInstance();
-            Calendar eBookDate = Calendar.getInstance();
             try
             {
                 sBookDate.setTime(sdf.parse(frsList.get(a).getDateFrom()));
@@ -6974,22 +6968,49 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
             if(sBookDate.before(frsDate))
             {
-                if (eBookDate.after(frsDate))
+                if(eBookDate.after(frsDate))
                 {
                     return IconBook;
                 }
             }
+            if(eBookDate.equals(frsDate))
+            {
+                for(int b = 1; b < frsList.size(); b++)
+                {
+                    try
+                    {
+                        sBookDate.setTime(sdf.parse(frsList.get(b).getDateFrom()));
+                    } catch (ParseException ex)
+                    {
+                        Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    if(sBookDate.equals(frsDate))
+                    {
+                        return IconBookBook;
+                    }
+                }
+                return IconBookFree;
+            }
+            if(sBookDate.equals(frsDate))
+            {
+                for(int b = 1; b < frsList.size(); b++)
+                {
+                    try
+                    {
+                        eBookDate.setTime(sdf.parse(frsList.get(b).getDateTo()));
+                    } catch (ParseException ex)
+                    {
+                        Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    if(eBookDate.equals(frsDate))
+                    {
+                        return IconBookBook;
+                    }
+                }
+                return IconFreeBook;
+            }
         }
-        
-        
-        for(int a = 0; a < frsList.size(); a++)
-        {
-            
-            
-            
-            
-            
-        }
+        return IconFree;
     }
     
     /**
