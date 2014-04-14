@@ -8386,4 +8386,375 @@ public class CasablancaGUI extends javax.swing.JFrame
                 break;
         }
     }
+    
+    private void fillRoom2Cells(int day, String roomID, String roomType, ImageIcon icon)
+    {
+        switch (day)
+        {
+            case 200:
+                jLabelRoom2RoomID.setText("" + roomID);
+                jLabelRoom2RoomType.setText(roomType);
+                break;
+            case 1:
+                jLabelOC201.setIcon(icon);
+                break;
+            case 2:
+                jLabelOC202.setIcon(icon);
+                break;
+            case 3:
+                jLabelOC203.setIcon(icon);
+                break;
+            case 4:
+                jLabelOC204.setIcon(icon);
+                break;
+            case 5:
+                jLabelOC205.setIcon(icon);
+                break;
+            case 6:
+                jLabelOC206.setIcon(icon);
+                break;
+            case 7:
+                jLabelOC207.setIcon(icon);
+                break;
+            case 8:
+                jLabelOC208.setIcon(icon);
+                break;
+            case 9:
+                jLabelOC209.setIcon(icon);
+                break;
+            case 10:
+                jLabelOC210.setIcon(icon);
+                break;
+            case 11:
+                jLabelOC211.setIcon(icon);
+                break;
+            case 12:
+                jLabelOC212.setIcon(icon);
+                break;
+            case 13:
+                jLabelOC213.setIcon(icon);
+                break;
+            case 14:
+                jLabelOC214.setIcon(icon);
+                break;
+        }
+    }
+    
+    private void fillRoom3Cells(int day, String roomID, String roomType, ImageIcon icon)
+    {
+        switch (day)
+        {
+            case 300:
+                jLabelRoom3RoomID.setText("" + roomID);
+                jLabelRoom3RoomType.setText(roomType);
+                break;
+            case 1:
+                jLabelOC301.setIcon(icon);
+                break;
+            case 2:
+                jLabelOC302.setIcon(icon);
+                break;
+            case 3:
+                jLabelOC303.setIcon(icon);
+                break;
+            case 4:
+                jLabelOC304.setIcon(icon);
+                break;
+            case 5:
+                jLabelOC305.setIcon(icon);
+                break;
+            case 6:
+                jLabelOC306.setIcon(icon);
+                break;
+            case 7:
+                jLabelOC307.setIcon(icon);
+                break;
+            case 8:
+                jLabelOC308.setIcon(icon);
+                break;
+            case 9:
+                jLabelOC309.setIcon(icon);
+                break;
+            case 10:
+                jLabelOC310.setIcon(icon);
+                break;
+            case 11:
+                jLabelOC311.setIcon(icon);
+                break;
+            case 12:
+                jLabelOC312.setIcon(icon);
+                break;
+            case 13:
+                jLabelOC313.setIcon(icon);
+                break;
+            case 14:
+                jLabelOC314.setIcon(icon);
+                break;
+        }
+    }
+    
+    private void fillRoom4Cells(int day, String roomID, String roomType, ImageIcon icon)
+    {
+        switch (day)
+        {
+            case 400:
+                jLabelRoom4RoomID.setText("" + roomID);
+                jLabelRoom4RoomType.setText(roomType);
+                break;
+            case 1:
+                jLabelOC401.setIcon(icon);
+                break;
+            case 2:
+                jLabelOC402.setIcon(icon);
+                break;
+            case 3:
+                jLabelOC403.setIcon(icon);
+                break;
+            case 4:
+                jLabelOC404.setIcon(icon);
+                break;
+            case 5:
+                jLabelOC405.setIcon(icon);
+                break;
+            case 6:
+                jLabelOC406.setIcon(icon);
+                break;
+            case 7:
+                jLabelOC407.setIcon(icon);
+                break;
+            case 8:
+                jLabelOC408.setIcon(icon);
+                break;
+            case 9:
+                jLabelOC409.setIcon(icon);
+                break;
+            case 10:
+                jLabelOC410.setIcon(icon);
+                break;
+            case 11:
+                jLabelOC411.setIcon(icon);
+                break;
+            case 12:
+                jLabelOC412.setIcon(icon);
+                break;
+            case 13:
+                jLabelOC413.setIcon(icon);
+                break;
+            case 14:
+                jLabelOC414.setIcon(icon);
+                break;
+        }
+    }
+    
+    private void fillRoom5Cells(int day, String roomID, String roomType, ImageIcon icon)
+    {
+        switch (day)
+        {
+            case 500:
+                jLabelRoom5RoomID.setText("" + roomID);
+                jLabelRoom5RoomType.setText(roomType);
+                break;
+            case 1:
+                jLabelOC501.setIcon(icon);
+                break;
+            case 2:
+                jLabelOC502.setIcon(icon);
+                break;
+            case 3:
+                jLabelOC503.setIcon(icon);
+                break;
+            case 4:
+                jLabelOC504.setIcon(icon);
+                break;
+            case 5:
+                jLabelOC505.setIcon(icon);
+                break;
+            case 6:
+                jLabelOC506.setIcon(icon);
+                break;
+            case 7:
+                jLabelOC507.setIcon(icon);
+                break;
+            case 8:
+                jLabelOC508.setIcon(icon);
+                break;
+            case 9:
+                jLabelOC509.setIcon(icon);
+                break;
+            case 10:
+                jLabelOC510.setIcon(icon);
+                break;
+            case 11:
+                jLabelOC511.setIcon(icon);
+                break;
+            case 12:
+                jLabelOC512.setIcon(icon);
+                break;
+            case 13:
+                jLabelOC513.setIcon(icon);
+                break;
+            case 14:
+                jLabelOC514.setIcon(icon);
+                break;
+        }
+    }
+    
+    private void fillRoom6Cells(int day, String roomID, String roomType, ImageIcon icon)
+    {
+        switch (day)
+        {
+            case 600:
+                jLabelRoom6RoomID.setText("" + roomID);
+                jLabelRoom6RoomType.setText(roomType);
+                break;
+            case 1:
+                jLabelOC601.setIcon(icon);
+                break;
+            case 2:
+                jLabelOC602.setIcon(icon);
+                break;
+            case 3:
+                jLabelOC603.setIcon(icon);
+                break;
+            case 4:
+                jLabelOC604.setIcon(icon);
+                break;
+            case 5:
+                jLabelOC605.setIcon(icon);
+                break;
+            case 6:
+                jLabelOC606.setIcon(icon);
+                break;
+            case 7:
+                jLabelOC607.setIcon(icon);
+                break;
+            case 8:
+                jLabelOC608.setIcon(icon);
+                break;
+            case 9:
+                jLabelOC609.setIcon(icon);
+                break;
+            case 10:
+                jLabelOC610.setIcon(icon);
+                break;
+            case 11:
+                jLabelOC611.setIcon(icon);
+                break;
+            case 12:
+                jLabelOC612.setIcon(icon);
+                break;
+            case 13:
+                jLabelOC613.setIcon(icon);
+                break;
+            case 14:
+                jLabelOC614.setIcon(icon);
+                break;
+        }
+    }
+    
+    private void fillRoom7Cells(int day, String roomID, String roomType, ImageIcon icon)
+    {
+        switch (day)
+        {
+            case 700:
+                jLabelRoom7RoomID.setText("" + roomID);
+                jLabelRoom7RoomType.setText(roomType);
+                break;
+            case 1:
+                jLabelOC701.setIcon(icon);
+                break;
+            case 2:
+                jLabelOC702.setIcon(icon);
+                break;
+            case 3:
+                jLabelOC703.setIcon(icon);
+                break;
+            case 4:
+                jLabelOC704.setIcon(icon);
+                break;
+            case 5:
+                jLabelOC705.setIcon(icon);
+                break;
+            case 6:
+                jLabelOC706.setIcon(icon);
+                break;
+            case 7:
+                jLabelOC707.setIcon(icon);
+                break;
+            case 8:
+                jLabelOC708.setIcon(icon);
+                break;
+            case 9:
+                jLabelOC709.setIcon(icon);
+                break;
+            case 10:
+                jLabelOC710.setIcon(icon);
+                break;
+            case 11:
+                jLabelOC711.setIcon(icon);
+                break;
+            case 12:
+                jLabelOC712.setIcon(icon);
+                break;
+            case 13:
+                jLabelOC713.setIcon(icon);
+                break;
+            case 14:
+                jLabelOC714.setIcon(icon);
+                break;
+        }
+    }
+    
+    private void fillRoom8Cells(int day, String roomID, String roomType, ImageIcon icon)
+    {
+        switch (day)
+        {
+            case 800:
+                jLabelRoom8RoomID.setText("" + roomID);
+                jLabelRoom8RoomType.setText(roomType);
+                break;
+            case 1:
+                jLabelOC801.setIcon(icon);
+                break;
+            case 2:
+                jLabelOC802.setIcon(icon);
+                break;
+            case 3:
+                jLabelOC803.setIcon(icon);
+                break;
+            case 4:
+                jLabelOC804.setIcon(icon);
+                break;
+            case 5:
+                jLabelOC805.setIcon(icon);
+                break;
+            case 6:
+                jLabelOC806.setIcon(icon);
+                break;
+            case 7:
+                jLabelOC807.setIcon(icon);
+                break;
+            case 8:
+                jLabelOC808.setIcon(icon);
+                break;
+            case 9:
+                jLabelOC809.setIcon(icon);
+                break;
+            case 10:
+                jLabelOC810.setIcon(icon);
+                break;
+            case 11:
+                jLabelOC811.setIcon(icon);
+                break;
+            case 12:
+                jLabelOC812.setIcon(icon);
+                break;
+            case 13:
+                jLabelOC813.setIcon(icon);
+                break;
+            case 14:
+                jLabelOC814.setIcon(icon);
+                break;
+        }
+    }
 }
