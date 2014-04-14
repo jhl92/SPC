@@ -8,8 +8,6 @@ package spc;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -26,7 +24,7 @@ import javax.swing.ImageIcon;
  *
  * @author Zarkov
  */
-public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
+public class CasablancaGUI extends javax.swing.JFrame
 {
     Random r = new Random();
     Calendar cal = new GregorianCalendar();
@@ -97,7 +95,7 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
     {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -8302,34 +8300,36 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
             }
             for (int a = 0; a < 14; a++)
             {
+                ImageIcon icon = findRoomStatus(roomID, firstDate);
                 int day = 1 + a;
                 switch (roomRow)
                 {
                     case 1:
-                        fillRoom1Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom1Cells(day, null, null, icon);
                         break;
                     case 2:
-                        fillRoom2Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom2Cells(day, null, null, icon);
                         break;
                     case 3:
-                        fillRoom3Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom3Cells(day, null, null, icon);
                         break;
                     case 4:
-                        fillRoom4Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom4Cells(day, null, null, icon);
                         break;
                     case 5:
-                        fillRoom5Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom5Cells(day, null, null, icon);
                         break;
                     case 6:
-                        fillRoom6Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom6Cells(day, null, null, icon);
                         break;
                     case 7:
-                        fillRoom7Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom7Cells(day, null, null, icon);
                         break;
                     case 8:
-                        fillRoom8Cells(rID, null, day, firstName, lastName, availability, cellBackground);
+                        fillRoom8Cells(day, null, null, icon);
                         break;
                 }
+                firstDate.add(Calendar.DATE, 1);
             }
         }
     }
@@ -8343,32 +8343,46 @@ public class CasablancaGUI extends javax.swing.JFrame implements ActionListener
                 jLabelRoom1RoomType.setText(roomType);
                 break;
             case 1:
+                jLabelOC101.setIcon(icon);
                 break;
             case 2:
+                jLabelOC102.setIcon(icon);
                 break;
             case 3:
+                jLabelOC103.setIcon(icon);
                 break;
             case 4:
+                jLabelOC104.setIcon(icon);
                 break;
             case 5:
+                jLabelOC105.setIcon(icon);
                 break;
             case 6:
+                jLabelOC106.setIcon(icon);
                 break;
             case 7:
+                jLabelOC107.setIcon(icon);
                 break;
             case 8:
+                jLabelOC108.setIcon(icon);
                 break;
             case 9:
+                jLabelOC109.setIcon(icon);
                 break;
             case 10:
+                jLabelOC110.setIcon(icon);
                 break;
             case 11:
+                jLabelOC111.setIcon(icon);
                 break;
             case 12:
+                jLabelOC112.setIcon(icon);
                 break;
             case 13:
+                jLabelOC113.setIcon(icon);
                 break;
             case 14:
+                jLabelOC114.setIcon(icon);
                 break;
         }
     }
