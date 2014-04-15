@@ -246,6 +246,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonCheckOutShowAllCustomers = new javax.swing.JButton();
         jButtonCheckOutExit = new javax.swing.JButton();
         jButtonCheckOutLoad = new javax.swing.JButton();
+        jLabelCheckOutNotifier = new javax.swing.JLabel();
         jDialogCheckOutAccountDetails = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
         jDialogEditDetails = new javax.swing.JDialog();
@@ -1014,7 +1015,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addComponent(jRadioButtonSearchRoom2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(jRadioButtonSearchRoom3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(15, 15, 15))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1189,7 +1190,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelSearchRoomNumberNights.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelSearchRoomNumberNights.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelSearchRoomNumberNights.setText("(7 Nights)");
-        jLabelSearchRoomNumberNights.setPreferredSize(new java.awt.Dimension(150, 20));
+        jLabelSearchRoomNumberNights.setPreferredSize(new java.awt.Dimension(178, 34));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1214,7 +1215,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         .addComponent(jComboBoxSearchEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabelSearchRoomResultNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonRoomSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabelSearchRoomNumberNights, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabelSearchRoomNumberNights, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
         jPanel3Layout.setVerticalGroup(
@@ -1234,9 +1235,9 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jComboBoxSearchEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxSearchEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxSearchEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelSearchRoomNumberNights, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelSearchRoomNumberNights, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabelSearchRoomResultNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonRoomSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1515,9 +1516,10 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelBookingRoomNotifier.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jLabelBookingRoomNotifier.setText("<html>There are no available rooms of the selected type in the specified period...</html>");
 
-        jLabelBookingNumberNights.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabelBookingNumberNights.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelBookingNumberNights.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelBookingNumberNights.setText("(7 Nights)");
-        jLabelBookingNumberNights.setPreferredSize(new java.awt.Dimension(150, 20));
+        jLabelBookingNumberNights.setPreferredSize(new java.awt.Dimension(178, 34));
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1550,7 +1552,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabelBookingNumberNights, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelBookingNumberNights, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel11Layout.setVerticalGroup(
@@ -1576,7 +1578,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
+                .addGap(10, 10, 10)
                 .addComponent(jLabelBookingNumberNights, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabelBookingRoomNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1696,6 +1698,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelCheckInNotifier.setText("Customer checked in...");
 
         jButtonCheckInLoad.setText("Find Check-Ins");
+        jButtonCheckInLoad.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckInLoadActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelCheckInButtonsLayout = new javax.swing.GroupLayout(jPanelCheckInButtons);
         jPanelCheckInButtons.setLayout(jPanelCheckInButtonsLayout);
@@ -1743,7 +1752,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(10, 10, 10)
                 .addComponent(jButtonCheckInLoad)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabelCheckInNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1864,6 +1873,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButtonCheckOutLoad.setText("Find Check-Outs");
 
+        jLabelCheckOutNotifier.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelCheckOutNotifier.setText("Customer checked out...");
+
         javax.swing.GroupLayout jPanelCheckOutButtonsLayout = new javax.swing.GroupLayout(jPanelCheckOutButtons);
         jPanelCheckOutButtons.setLayout(jPanelCheckOutButtonsLayout);
         jPanelCheckOutButtonsLayout.setHorizontalGroup(
@@ -1897,6 +1909,10 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addContainerGap()
                 .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCheckOutButtonsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelCheckOutNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanelCheckOutButtonsLayout.setVerticalGroup(
             jPanelCheckOutButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1908,9 +1924,11 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jComboBoxCheckOutDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxCheckOutMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxCheckOutYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(10, 10, 10)
                 .addComponent(jButtonCheckOutLoad)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelCheckOutNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
                 .addComponent(jButtonCheckOutCheckOut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jButtonCheckOutShowAllCustomers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2582,13 +2600,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jDialogSetupOverview.setTitle("Setup Overview");
         jDialogSetupOverview.setAlwaysOnTop(true);
-        jDialogSetupOverview.setMinimumSize(new java.awt.Dimension(420, 450));
+        jDialogSetupOverview.setMinimumSize(new java.awt.Dimension(419, 437));
         jDialogSetupOverview.setResizable(false);
 
         jPanelSetupOverviewSelectRoomsAtRows.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabelSetupOverviewNoChange1.setText("<html>Select up to 8 specific rooms to be <br>shown in Overview-window:</html>");
-        jLabelSetupOverviewNoChange1.setPreferredSize(new java.awt.Dimension(200, 40));
+        jLabelSetupOverviewNoChange1.setPreferredSize(new java.awt.Dimension(170, 30));
 
         jLabelSetupOverviewNoChange2.setText("Row 1:");
         jLabelSetupOverviewNoChange2.setPreferredSize(new java.awt.Dimension(40, 20));
@@ -2610,6 +2628,13 @@ public class CasablancaGUI extends javax.swing.JFrame
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
                 jTextFieldRow1ActionPerformed(evt);
+            }
+        });
+        jTextFieldRow1.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyTyped(java.awt.event.KeyEvent evt)
+            {
+                jTextFieldRow1KeyTyped(evt);
             }
         });
 
@@ -2750,8 +2775,8 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabelSetupOverviewNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jLabelSetupOverviewNoChange10, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)))
+                            .addComponent(jLabelSetupOverviewNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelSetupOverviewNoChange10)))
                     .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -2778,7 +2803,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelSetupOverviewSelectRoomsAtRowsLayout.setVerticalGroup(
             jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addComponent(jLabelSetupOverviewNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2820,7 +2845,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelSetupOverviewSelect14DaysPeriod.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabelSetupOverviewNoChange12.setText("<html>Select a specific period of 14 consecutive<br>days to be shown in Overview-window:</html>");
-        jLabelSetupOverviewNoChange12.setPreferredSize(new java.awt.Dimension(200, 40));
+        jLabelSetupOverviewNoChange12.setPreferredSize(new java.awt.Dimension(200, 30));
 
         jLabelSetupOverviewNoChange13.setText("Specify start date:");
 
@@ -2838,6 +2863,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxSetupOverviewStartDate.setMaximumRowCount(13);
         jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         jComboBoxSetupOverviewStartDate.setPreferredSize(new java.awt.Dimension(40, 22));
+        jComboBoxSetupOverviewStartDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxSetupOverviewStartDateActionPerformed(evt);
+            }
+        });
 
         jComboBoxSetupOverviewStartYear.setMaximumRowCount(13);
         jComboBoxSetupOverviewStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
@@ -2866,7 +2898,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelSetupOverviewSelect14DaysPeriodLayout.setHorizontalGroup(
             jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelSetupOverviewNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelSetupOverviewNoChange13)
@@ -2888,7 +2920,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelSetupOverviewSelect14DaysPeriodLayout.setVerticalGroup(
             jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addComponent(jLabelSetupOverviewNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelSetupOverviewNoChange13)
@@ -2904,11 +2936,11 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jTextFieldSetupOverviewEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldSetupOverviewEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldSetupOverviewEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addGap(18, 18, 18))
         );
 
         jButtonSetupOverviewShowRooms.setText("Show Rooms");
-        jButtonSetupOverviewShowRooms.setPreferredSize(new java.awt.Dimension(95, 25));
+        jButtonSetupOverviewShowRooms.setPreferredSize(new java.awt.Dimension(199, 35));
         jButtonSetupOverviewShowRooms.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -2918,7 +2950,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         });
 
         jButtonSetupOverviewExit.setText("Cancel");
-        jButtonSetupOverviewExit.setPreferredSize(new java.awt.Dimension(95, 25));
+        jButtonSetupOverviewExit.setPreferredSize(new java.awt.Dimension(199, 35));
         jButtonSetupOverviewExit.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -2931,20 +2963,22 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
                 .addComponent(jButtonSetupOverviewExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(jButtonSetupOverviewShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jButtonSetupOverviewShowRooms, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonSetupOverviewShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonSetupOverviewExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButtonSetupOverviewExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButtonSetupOverviewShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
         );
 
@@ -2963,10 +2997,14 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogSetupOverviewLayout.setVerticalGroup(
             jDialogSetupOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogSetupOverviewLayout.createSequentialGroup()
-                .addComponent(jPanelSetupOverviewSelect14DaysPeriod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanelSetupOverviewSelectRoomsAtRows, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jDialogSetupOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jDialogSetupOverviewLayout.createSequentialGroup()
+                        .addGap(0, 0, 0)
+                        .addComponent(jPanelSetupOverviewSelect14DaysPeriod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanelSetupOverviewSelectRoomsAtRows, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -5863,12 +5901,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonSetupOverviewActionPerformed
-        setupDialogSetupOverview(Room1, Room2, Room3, Room4, Room5, Room6, Room7, Room8);
+        setupDialogSetupOverview(overviewCellRoom1, overviewCellRoom2, overviewCellRoom3, overviewCellRoom4, overviewCellRoom5, overviewCellRoom6, overviewCellRoom7, overviewCellRoom8, overviewCellStartDate);
     }//GEN-LAST:event_jButtonSetupOverviewActionPerformed
 
     private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
     {//GEN-HEADEREND:event_jButtonResetOveriewActionPerformed
-        setupDialogSetupOverview("001", "002", "003", "004", "005", "006", "007", "008");
+        overviewCellStartDate = Calendar.getInstance();
+        setupDialogSetupOverview("001", "002", "003", "004", "005", "006", "007", "008", overviewCellStartDate);
     }//GEN-LAST:event_jButtonResetOveriewActionPerformed
 
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
@@ -6412,7 +6451,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonSetupOverviewShowRoomsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewShowRoomsActionPerformed
     {//GEN-HEADEREND:event_jButtonSetupOverviewShowRoomsActionPerformed
-
+        
     }//GEN-LAST:event_jButtonSetupOverviewShowRoomsActionPerformed
 
     private void jButtonSetupOverviewExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewExitActionPerformed
@@ -6527,15 +6566,15 @@ public class CasablancaGUI extends javax.swing.JFrame
                 //Gets a list of FAMILY rooms
                 roomsList = jdcbselect.getRoomsFromType("Family");
             }
-            
+
             //Searches for rooms after the selected parameter
-            if (jRadioButtonSearchRoom1.isSelected())
+            if (jRadioButtonSearchRoom0.isSelected())
+            {
+                roomsListResult.addAll(roomsList);
+            } else if (jRadioButtonSearchRoom1.isSelected())
             {
                 //Searches and finds all rooms of specified type, that is available from specified start-date to specified end-date
                 roomsListResult = checkRoomAvailability(roomsList, startDate, endDate);
-                
-                //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
-                
             } else if (jRadioButtonSearchRoom2.isSelected())
             {
                 //Searches Database for all rooms of selected type, that have check-in on the specified start-date.
@@ -6560,6 +6599,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 String rType = roomList.get(i).getRoomType();
                 writeList.addElement("Room  " + rID + "  -  " + rType);
             }
+            
         } else
         {
             jLabelSearchRoomNumberNights.setText("<html>");
@@ -7233,6 +7273,22 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookingSearchCustomerActionPerformed
         setupDialogSearchCustomer(true);
     }//GEN-LAST:event_jButtonBookingSearchCustomerActionPerformed
+
+    private void jTextFieldRow1KeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jTextFieldRow1KeyTyped
+    {//GEN-HEADEREND:event_jTextFieldRow1KeyTyped
+        String text = jTextFieldRow1.getText();
+         
+    }//GEN-LAST:event_jTextFieldRow1KeyTyped
+
+    private void jComboBoxSetupOverviewStartDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSetupOverviewStartDateActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxSetupOverviewStartDateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxSetupOverviewStartDateActionPerformed
+
+    private void jButtonCheckInLoadActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInLoadActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckInLoadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckInLoadActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
@@ -7564,6 +7620,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelCheckInNotifier;
     private javax.swing.JLabel jLabelCheckOutNoChange1;
     private javax.swing.JLabel jLabelCheckOutNoChange2;
+    private javax.swing.JLabel jLabelCheckOutNotifier;
     private javax.swing.JLabel jLabelDate01;
     private javax.swing.JLabel jLabelDate01Day;
     private javax.swing.JLabel jLabelDate01Year;
@@ -8105,11 +8162,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
         //Setup the StartDate using the recieved date-variable in the method.
-        int year = (jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014);
-        int month = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
-        int dim = getDaysInMonth(month, year);
+        DateVar dateObject = getDateSettings(sDate);
+        int dim = getDaysInMonth(dateObject.getMonth(), dateObject.getYear());
         String[] list = getComboBoxList(dim);
         jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth());
+        jComboBoxSetupOverviewStartDate.setSelectedIndex(dateObject.getDate()-1);
+        jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear()-2014);
         jDialogSetupOverview.setVisible(true);
     }
     
