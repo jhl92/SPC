@@ -1364,34 +1364,37 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabelBookingNoChange6" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelBookingNoChange2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelBookingNoChange1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldBookingLastName" alignment="0" max="-2" attributes="0"/>
-                          <Component id="jTextFieldBookingFirstName" alignment="0" max="-2" attributes="0"/>
-                          <Component id="jLabelBookingNoChange3" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldBookingCountry" alignment="0" max="-2" attributes="0"/>
-                          <Component id="jLabelBookingNoChange4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldBookingEmail" alignment="0" max="-2" attributes="0"/>
-                          <Component id="jLabelBookingNoChange5" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTextFieldBookingGuestID" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Component id="jButtonBookingCreateID" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jLabelBookingNoChange6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelBookingNoChange2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelBookingNoChange1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldBookingLastName" alignment="0" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldBookingFirstName" alignment="0" max="-2" attributes="0"/>
+                                  <Component id="jLabelBookingNoChange3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldBookingCountry" alignment="0" max="-2" attributes="0"/>
+                                  <Component id="jLabelBookingNoChange4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldBookingEmail" alignment="0" max="-2" attributes="0"/>
+                                  <Component id="jLabelBookingNoChange5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jTextFieldBookingGuestID" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Component id="jButtonBookingCreateID" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jTextFieldBookingPhoneNumber" alignment="0" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="jTextFieldBookingPhoneNumber" alignment="0" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jButtonBookingSearchCustomer" alignment="0" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButtonBookingSearchCustomer" alignment="0" max="-2" attributes="0"/>
-                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1586,6 +1589,9 @@
                   <Dimension value="[178, 35]"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBookingExitActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -3924,10 +3930,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="jPanelSetupOverviewSelect14DaysPeriod" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPanel17" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jPanel17" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jPanelSetupOverviewSelectRoomsAtRows" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -3971,15 +3977,15 @@
                                   <Component id="jLabelSetupOverviewNoChange2" alignment="0" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jTextFieldRow7" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldRow6" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldRow5" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldRow4" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldRow3" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldRow1" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldRow8" alignment="1" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldRow2" alignment="0" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTextFieldRow1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRow2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRow3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRow4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRow5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRow6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRow7" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldRow8" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -3995,12 +4001,12 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabelSetupOverviewNoChange2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldRow1" alignment="3" max="-2" attributes="0"/>
+                          <Component id="jTextFieldRow1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabelSetupOverviewNoChange3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldRow2" alignment="3" max="-2" attributes="0"/>
+                          <Component id="jTextFieldRow2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4055,26 +4061,6 @@
                   <Dimension value="[40, 20]"/>
                 </Property>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldRow1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="11" style="2"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
-                </Property>
-                <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="1"/>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[30, 20]"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextFieldRow1MouseClicked"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow1ActionPerformed"/>
-                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextFieldRow1KeyTyped"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelSetupOverviewNoChange3">
               <Properties>
@@ -4132,13 +4118,37 @@
                 </Property>
               </Properties>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabelSetupOverviewNoChange10">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;Leave a cell blank to generate an&lt;br&gt;empty row in Overview-window.&lt;/html&gt;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldRow1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="11" style="2"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="66" green="66" red="66" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="1"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[30, 20]"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow1FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow1FocusLost"/>
+              </Events>
+            </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldRow2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="2"/>
@@ -4147,8 +4157,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextFieldRow2MouseClicked"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow2ActionPerformed"/>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow2FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow2FocusLost"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldRow3">
@@ -4157,7 +4167,7 @@
                   <Font name="Tahoma" size="11" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="3"/>
@@ -4166,8 +4176,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextFieldRow3MouseClicked"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow3ActionPerformed"/>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow3FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow3FocusLost"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldRow4">
@@ -4176,7 +4186,7 @@
                   <Font name="Tahoma" size="11" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="4"/>
@@ -4185,7 +4195,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow4ActionPerformed"/>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow4FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow4FocusLost"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldRow5">
@@ -4194,7 +4205,7 @@
                   <Font name="Tahoma" size="11" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="5"/>
@@ -4203,7 +4214,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow5ActionPerformed"/>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow5FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow5FocusLost"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldRow6">
@@ -4212,7 +4224,7 @@
                   <Font name="Tahoma" size="11" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="6"/>
@@ -4221,7 +4233,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow6ActionPerformed"/>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow6FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow6FocusLost"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldRow7">
@@ -4230,7 +4243,7 @@
                   <Font name="Tahoma" size="11" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="7"/>
@@ -4239,7 +4252,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow7ActionPerformed"/>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow7FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow7FocusLost"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldRow8">
@@ -4248,7 +4262,7 @@
                   <Font name="Tahoma" size="11" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="8"/>
@@ -4257,13 +4271,9 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldRow8ActionPerformed"/>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow8FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldRow8FocusLost"/>
               </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabelSetupOverviewNoChange10">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;Leave a cell blank to generate an&lt;br&gt;empty row in Overview-window.&lt;/html&gt;"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -4279,27 +4289,35 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelSetupOverviewNoChange12" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelSetupOverviewNoChange13" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jComboBoxSetupOverviewStartMonth" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldSetupOverviewEndMonth" alignment="0" max="32767" attributes="0"/>
-                              </Group>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jComboBoxSetupOverviewStartDate" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldSetupOverviewEndDate" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabelSetupOverviewNoChange12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelSetupOverviewNoChange13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jComboBoxSetupOverviewStartMonth" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jTextFieldSetupOverviewEndMonth" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jComboBoxSetupOverviewStartDate" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jTextFieldSetupOverviewEndDate" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jComboBoxSetupOverviewStartYear" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jTextFieldSetupOverviewEndYear" alignment="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jComboBoxSetupOverviewStartYear" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldSetupOverviewEndYear" alignment="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
@@ -4327,7 +4345,9 @@
                           <Component id="jTextFieldSetupOverviewEndDate" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="jTextFieldSetupOverviewEndYear" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4490,6 +4510,11 @@
                 </Property>
               </Properties>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="(Both days included)"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel17">
@@ -4498,27 +4523,24 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                              <Component id="jButtonSetupOverviewExit" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButtonSetupOverviewShowRooms" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Component id="jButtonSetupOverviewExit" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jButtonSetupOverviewShowRooms" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jButtonSetupOverviewExit" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace pref="31" max="32767" attributes="0"/>
                       <Component id="jButtonSetupOverviewShowRooms" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Component id="jButtonSetupOverviewExit" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -4538,7 +4560,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonSetupOverviewExit">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Cancel"/>
+                <Property name="text" type="java.lang.String" value="Cancel and Exit"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[199, 35]"/>
                 </Property>

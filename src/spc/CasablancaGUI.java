@@ -41,6 +41,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     ArrayList<String> showRoomsList = new ArrayList<>();
     DefaultListModel writeList = new DefaultListModel();
     DefaultListModel writeList1 = new DefaultListModel();
+    DefaultListModel EmptyList = new DefaultListModel();
     ArrayList<InfoObjectConstructor> guestList = new ArrayList<>();
     ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
     private boolean SearchCustomerResult = false;
@@ -75,8 +76,9 @@ public class CasablancaGUI extends javax.swing.JFrame
     private SimpleDateFormat sdfMonthInt = new SimpleDateFormat("M");
     private SimpleDateFormat sdfYearshort = new SimpleDateFormat("yy");
     private SimpleDateFormat sdfWeekDayName = new SimpleDateFormat("EEEEE", Locale.ENGLISH);
-    private SimpleDateFormat sdfMonthName = new SimpleDateFormat("MMM", Locale.ENGLISH);
+    private SimpleDateFormat sdfMonthNameShort = new SimpleDateFormat("MMM", Locale.ENGLISH);
     private SimpleDateFormat sdfYearLong = new SimpleDateFormat("yyyy");
+    private SimpleDateFormat sdfMonthName = new SimpleDateFormat("MMMMM", Locale.ENGLISH);
     private final String[] list28days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28"};
     private final String[] list29days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"};
     private final String[] list30days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"};
@@ -319,7 +321,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelSetupOverviewSelectRoomsAtRows = new javax.swing.JPanel();
         jLabelSetupOverviewNoChange1 = new javax.swing.JLabel();
         jLabelSetupOverviewNoChange2 = new javax.swing.JLabel();
-        jTextFieldRow1 = new javax.swing.JTextField();
         jLabelSetupOverviewNoChange3 = new javax.swing.JLabel();
         jLabelSetupOverviewNoChange4 = new javax.swing.JLabel();
         jLabelSetupOverviewNoChange5 = new javax.swing.JLabel();
@@ -327,6 +328,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelSetupOverviewNoChange7 = new javax.swing.JLabel();
         jLabelSetupOverviewNoChange8 = new javax.swing.JLabel();
         jLabelSetupOverviewNoChange9 = new javax.swing.JLabel();
+        jLabelSetupOverviewNoChange10 = new javax.swing.JLabel();
+        jTextFieldRow1 = new javax.swing.JTextField();
         jTextFieldRow2 = new javax.swing.JTextField();
         jTextFieldRow3 = new javax.swing.JTextField();
         jTextFieldRow4 = new javax.swing.JTextField();
@@ -334,7 +337,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow6 = new javax.swing.JTextField();
         jTextFieldRow7 = new javax.swing.JTextField();
         jTextFieldRow8 = new javax.swing.JTextField();
-        jLabelSetupOverviewNoChange10 = new javax.swing.JLabel();
         jPanelSetupOverviewSelect14DaysPeriod = new javax.swing.JPanel();
         jLabelSetupOverviewNoChange12 = new javax.swing.JLabel();
         jLabelSetupOverviewNoChange13 = new javax.swing.JLabel();
@@ -345,6 +347,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldSetupOverviewEndMonth = new javax.swing.JTextField();
         jTextFieldSetupOverviewEndDate = new javax.swing.JTextField();
         jTextFieldSetupOverviewEndYear = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         jButtonSetupOverviewShowRooms = new javax.swing.JButton();
         jButtonSetupOverviewExit = new javax.swing.JButton();
@@ -1335,30 +1338,31 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabelBookingNoChange6)
-                    .addComponent(jLabelBookingNoChange2)
-                    .addComponent(jLabelBookingNoChange1)
-                    .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelBookingNoChange3)
-                    .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelBookingNoChange4)
-                    .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelBookingNoChange5)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jTextFieldBookingGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(jButtonBookingCreateID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonBookingSearchCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addContainerGap())
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabelBookingNoChange6)
+                            .addComponent(jLabelBookingNoChange2)
+                            .addComponent(jLabelBookingNoChange1)
+                            .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelBookingNoChange3)
+                            .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelBookingNoChange4)
+                            .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelBookingNoChange5)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jTextFieldBookingGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jButtonBookingCreateID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButtonBookingSearchCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1408,6 +1412,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButtonBookingExit.setText("Exit");
         jButtonBookingExit.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonBookingExit.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookingExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -2611,33 +2622,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelSetupOverviewNoChange2.setText("Row 1:");
         jLabelSetupOverviewNoChange2.setPreferredSize(new java.awt.Dimension(40, 20));
 
-        jTextFieldRow1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow1.setForeground(java.awt.Color.gray);
-        jTextFieldRow1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextFieldRow1.setText("1");
-        jTextFieldRow1.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow1.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
-                jTextFieldRow1MouseClicked(evt);
-            }
-        });
-        jTextFieldRow1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jTextFieldRow1ActionPerformed(evt);
-            }
-        });
-        jTextFieldRow1.addKeyListener(new java.awt.event.KeyAdapter()
-        {
-            public void keyTyped(java.awt.event.KeyEvent evt)
-            {
-                jTextFieldRow1KeyTyped(evt);
-            }
-        });
-
         jLabelSetupOverviewNoChange3.setText("Row 2:");
         jLabelSetupOverviewNoChange3.setPreferredSize(new java.awt.Dimension(40, 20));
 
@@ -2659,112 +2643,143 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelSetupOverviewNoChange9.setText("Row 8:");
         jLabelSetupOverviewNoChange9.setPreferredSize(new java.awt.Dimension(40, 20));
 
+        jLabelSetupOverviewNoChange10.setText("<html>Leave a cell blank to generate an<br>empty row in Overview-window.</html>");
+
+        jTextFieldRow1.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jTextFieldRow1.setForeground(new java.awt.Color(102, 102, 102));
+        jTextFieldRow1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextFieldRow1.setText("1");
+        jTextFieldRow1.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow1.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                jTextFieldRow1FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                jTextFieldRow1FocusLost(evt);
+            }
+        });
+
         jTextFieldRow2.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow2.setForeground(java.awt.Color.gray);
+        jTextFieldRow2.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldRow2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow2.setText("2");
         jTextFieldRow2.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow2.addMouseListener(new java.awt.event.MouseAdapter()
+        jTextFieldRow2.addFocusListener(new java.awt.event.FocusAdapter()
         {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
+            public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow2MouseClicked(evt);
+                jTextFieldRow2FocusGained(evt);
             }
-        });
-        jTextFieldRow2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void focusLost(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow2ActionPerformed(evt);
+                jTextFieldRow2FocusLost(evt);
             }
         });
 
         jTextFieldRow3.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow3.setForeground(java.awt.Color.gray);
+        jTextFieldRow3.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldRow3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow3.setText("3");
         jTextFieldRow3.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow3.addMouseListener(new java.awt.event.MouseAdapter()
+        jTextFieldRow3.addFocusListener(new java.awt.event.FocusAdapter()
         {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
+            public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow3MouseClicked(evt);
+                jTextFieldRow3FocusGained(evt);
             }
-        });
-        jTextFieldRow3.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void focusLost(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow3ActionPerformed(evt);
+                jTextFieldRow3FocusLost(evt);
             }
         });
 
         jTextFieldRow4.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow4.setForeground(java.awt.Color.gray);
+        jTextFieldRow4.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldRow4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow4.setText("4");
         jTextFieldRow4.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow4.addActionListener(new java.awt.event.ActionListener()
+        jTextFieldRow4.addFocusListener(new java.awt.event.FocusAdapter()
         {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow4ActionPerformed(evt);
+                jTextFieldRow4FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                jTextFieldRow4FocusLost(evt);
             }
         });
 
         jTextFieldRow5.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow5.setForeground(java.awt.Color.gray);
+        jTextFieldRow5.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldRow5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow5.setText("5");
         jTextFieldRow5.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow5.addActionListener(new java.awt.event.ActionListener()
+        jTextFieldRow5.addFocusListener(new java.awt.event.FocusAdapter()
         {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow5ActionPerformed(evt);
+                jTextFieldRow5FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                jTextFieldRow5FocusLost(evt);
             }
         });
 
         jTextFieldRow6.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow6.setForeground(java.awt.Color.gray);
+        jTextFieldRow6.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldRow6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow6.setText("6");
         jTextFieldRow6.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow6.addActionListener(new java.awt.event.ActionListener()
+        jTextFieldRow6.addFocusListener(new java.awt.event.FocusAdapter()
         {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow6ActionPerformed(evt);
+                jTextFieldRow6FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                jTextFieldRow6FocusLost(evt);
             }
         });
 
         jTextFieldRow7.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow7.setForeground(java.awt.Color.gray);
+        jTextFieldRow7.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldRow7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow7.setText("7");
         jTextFieldRow7.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow7.addActionListener(new java.awt.event.ActionListener()
+        jTextFieldRow7.addFocusListener(new java.awt.event.FocusAdapter()
         {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow7ActionPerformed(evt);
+                jTextFieldRow7FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                jTextFieldRow7FocusLost(evt);
             }
         });
 
         jTextFieldRow8.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        jTextFieldRow8.setForeground(java.awt.Color.gray);
+        jTextFieldRow8.setForeground(new java.awt.Color(102, 102, 102));
         jTextFieldRow8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow8.setText("8");
         jTextFieldRow8.setPreferredSize(new java.awt.Dimension(30, 20));
-        jTextFieldRow8.addActionListener(new java.awt.event.ActionListener()
+        jTextFieldRow8.addFocusListener(new java.awt.event.FocusAdapter()
         {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jTextFieldRow8ActionPerformed(evt);
+                jTextFieldRow8FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                jTextFieldRow8FocusLost(evt);
             }
         });
-
-        jLabelSetupOverviewNoChange10.setText("<html>Leave a cell blank to generate an<br>empty row in Overview-window.</html>");
 
         javax.swing.GroupLayout jPanelSetupOverviewSelectRoomsAtRowsLayout = new javax.swing.GroupLayout(jPanelSetupOverviewSelectRoomsAtRows);
         jPanelSetupOverviewSelectRoomsAtRows.setLayout(jPanelSetupOverviewSelectRoomsAtRowsLayout);
@@ -2789,15 +2804,15 @@ public class CasablancaGUI extends javax.swing.JFrame
                             .addComponent(jLabelSetupOverviewNoChange3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabelSetupOverviewNoChange2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, 0)
-                        .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextFieldRow7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRow6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRow5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRow4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRow3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRow1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRow8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldRow2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextFieldRow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRow4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRow5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRow6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRow7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldRow8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(10, 10, 10))
         );
         jPanelSetupOverviewSelectRoomsAtRowsLayout.setVerticalGroup(
@@ -2808,11 +2823,11 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(18, 18, 18)
                 .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelSetupOverviewNoChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldRow1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldRow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelSetupOverviewNoChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldRow2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldRow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanelSetupOverviewSelectRoomsAtRowsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelSetupOverviewNoChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2893,28 +2908,35 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldSetupOverviewEndYear.setEditable(false);
         jTextFieldSetupOverviewEndYear.setPreferredSize(new java.awt.Dimension(65, 22));
 
+        jLabel2.setText("(Both days included)");
+
         javax.swing.GroupLayout jPanelSetupOverviewSelect14DaysPeriodLayout = new javax.swing.GroupLayout(jPanelSetupOverviewSelect14DaysPeriod);
         jPanelSetupOverviewSelect14DaysPeriod.setLayout(jPanelSetupOverviewSelect14DaysPeriodLayout);
         jPanelSetupOverviewSelect14DaysPeriodLayout.setHorizontalGroup(
             jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
                 .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelSetupOverviewNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelSetupOverviewNoChange13)
-                    .addComponent(jLabel13)
                     .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
-                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBoxSetupOverviewStartMonth, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextFieldSetupOverviewEndMonth, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(10, 10, 10)
-                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBoxSetupOverviewStartDate, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextFieldSetupOverviewEndDate))
+                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelSetupOverviewNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelSetupOverviewNoChange13)
+                            .addComponent(jLabel13)
+                            .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
+                                .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jComboBoxSetupOverviewStartMonth, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldSetupOverviewEndMonth, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jComboBoxSetupOverviewStartDate, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldSetupOverviewEndDate))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jComboBoxSetupOverviewStartYear, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldSetupOverviewEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))))
+                    .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBoxSetupOverviewStartYear, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextFieldSetupOverviewEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
+                        .addComponent(jLabel2)))
                 .addGap(5, 5, 5))
         );
         jPanelSetupOverviewSelect14DaysPeriodLayout.setVerticalGroup(
@@ -2936,7 +2958,9 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jTextFieldSetupOverviewEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldSetupOverviewEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldSetupOverviewEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(12, 12, 12))
         );
 
         jButtonSetupOverviewShowRooms.setText("Show Rooms");
@@ -2949,7 +2973,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonSetupOverviewExit.setText("Cancel");
+        jButtonSetupOverviewExit.setText("Cancel and Exit");
         jButtonSetupOverviewExit.setPreferredSize(new java.awt.Dimension(199, 35));
         jButtonSetupOverviewExit.addActionListener(new java.awt.event.ActionListener()
         {
@@ -2964,22 +2988,21 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel17Layout.createSequentialGroup()
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jButtonSetupOverviewExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButtonSetupOverviewShowRooms, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10)
+                .addComponent(jButtonSetupOverviewExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonSetupOverviewShowRooms, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonSetupOverviewExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addContainerGap(31, Short.MAX_VALUE)
                 .addComponent(jButtonSetupOverviewShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButtonSetupOverviewExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16))
         );
 
@@ -2999,10 +3022,10 @@ public class CasablancaGUI extends javax.swing.JFrame
             jDialogSetupOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogSetupOverviewLayout.createSequentialGroup()
                 .addGroup(jDialogSetupOverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jDialogSetupOverviewLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDialogSetupOverviewLayout.createSequentialGroup()
                         .addComponent(jPanelSetupOverviewSelect14DaysPeriod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanelSetupOverviewSelectRoomsAtRows, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -6362,91 +6385,24 @@ public class CasablancaGUI extends javax.swing.JFrame
         setupDialogEditDetails(detailsGuestID);
     }//GEN-LAST:event_jButtonChangeDetailsActionPerformed
 
-    private void jTextFieldRow1MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow1MouseClicked
-    {//GEN-HEADEREND:event_jTextFieldRow1MouseClicked
-        jTextFieldRow1.setText("");
-        jTextFieldRow1.setFont(fontNormal);
-        jTextFieldRow1.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow1MouseClicked
-
-    private void jTextFieldRow1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow1ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow1ActionPerformed
-        jTextFieldRow1.setText("");
-        jTextFieldRow1.setFont(fontNormal);
-        jTextFieldRow1.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow1ActionPerformed
-
-    private void jTextFieldRow2MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow2MouseClicked
-    {//GEN-HEADEREND:event_jTextFieldRow2MouseClicked
-        jTextFieldRow2.setText("");
-        jTextFieldRow2.setFont(fontNormal);
-        jTextFieldRow2.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow2MouseClicked
-
-    private void jTextFieldRow2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow2ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow2ActionPerformed
-        jTextFieldRow2.setText("");
-        jTextFieldRow2.setFont(fontNormal);
-        jTextFieldRow2.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow2ActionPerformed
-
-    private void jTextFieldRow3MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow3MouseClicked
-    {//GEN-HEADEREND:event_jTextFieldRow3MouseClicked
-        jTextFieldRow3.setText("");
-        jTextFieldRow3.setFont(fontNormal);
-        jTextFieldRow3.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow3MouseClicked
-
-    private void jTextFieldRow3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow3ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow3ActionPerformed
-        jTextFieldRow3.setText("");
-        jTextFieldRow3.setFont(fontNormal);
-        jTextFieldRow3.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow3ActionPerformed
-
-    private void jTextFieldRow4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow4ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow4ActionPerformed
-        jTextFieldRow4.setText("");
-        jTextFieldRow4.setFont(fontNormal);
-        jTextFieldRow4.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow4ActionPerformed
-
-    private void jTextFieldRow5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow5ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow5ActionPerformed
-        jTextFieldRow5.setText("");
-        jTextFieldRow5.setFont(fontNormal);
-        jTextFieldRow5.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow5ActionPerformed
-
-    private void jTextFieldRow6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow6ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow6ActionPerformed
-        jTextFieldRow6.setText("");
-        jTextFieldRow6.setFont(fontNormal);
-        jTextFieldRow6.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow6ActionPerformed
-
-    private void jTextFieldRow7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow7ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow7ActionPerformed
-        jTextFieldRow7.setText("");
-        jTextFieldRow7.setFont(fontNormal);
-        jTextFieldRow7.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow7ActionPerformed
-
-    private void jTextFieldRow8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldRow8ActionPerformed
-    {//GEN-HEADEREND:event_jTextFieldRow8ActionPerformed
-        jTextFieldRow8.setText("");
-        jTextFieldRow8.setFont(fontNormal);
-        jTextFieldRow8.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextFieldRow8ActionPerformed
-
     private void jComboBoxSetupOverviewStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSetupOverviewStartMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxSetupOverviewStartMonthActionPerformed
-        // TODO add your handling code here:
+        int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
+        int ocMonth = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
+        int dim = getDaysInMonth(ocMonth, ocYear);
+        String[] list = getComboBoxList(dim);
+        jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupOverviewEndDate();
     }//GEN-LAST:event_jComboBoxSetupOverviewStartMonthActionPerformed
 
     private void jComboBoxSetupOverviewStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSetupOverviewStartYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxSetupOverviewStartYearActionPerformed
-        // TODO add your handling code here:
+        int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
+        int ocMonth = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
+        int dim = getDaysInMonth(ocMonth, ocYear);
+        String[] list = getComboBoxList(dim);
+        jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupOverviewEndDate();
     }//GEN-LAST:event_jComboBoxSetupOverviewStartYearActionPerformed
 
     private void jButtonSetupOverviewShowRoomsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewShowRoomsActionPerformed
@@ -6455,7 +6411,30 @@ public class CasablancaGUI extends javax.swing.JFrame
         int ocMonth = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
         int ocDate = jComboBoxSetupOverviewStartDate.getSelectedIndex()+1;
         overviewCellStartDate.set(ocYear, ocMonth, ocDate);
-        
+        String r1 = jTextFieldRow1.getText();
+        String row1 = fixRoomID(r1);
+        String r2 = jTextFieldRow2.getText();
+        String row2 = fixRoomID(r2);
+        String r3 = jTextFieldRow3.getText();
+        String row3 = fixRoomID(r3);
+        String r4 = jTextFieldRow4.getText();
+        String row4 = fixRoomID(r4);
+        String r5 = jTextFieldRow5.getText();
+        String row5 = fixRoomID(r5);
+        String r6 = jTextFieldRow6.getText();
+        String row6 = fixRoomID(r6);
+        String r7 = jTextFieldRow7.getText();
+        String row7 = fixRoomID(r7);
+        String r8 = jTextFieldRow8.getText();
+        String row8 = fixRoomID(r8);
+        fillRoomCells(row1, 1, overviewCellStartDate);
+        fillRoomCells(row2, 2, overviewCellStartDate);
+        fillRoomCells(row3, 3, overviewCellStartDate);
+        fillRoomCells(row4, 4, overviewCellStartDate);
+        fillRoomCells(row5, 5, overviewCellStartDate);
+        fillRoomCells(row6, 6, overviewCellStartDate);
+        fillRoomCells(row7, 7, overviewCellStartDate);
+        fillRoomCells(row8, 8, overviewCellStartDate);
     }//GEN-LAST:event_jButtonSetupOverviewShowRoomsActionPerformed
 
     private void jButtonSetupOverviewExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewExitActionPerformed
@@ -7278,28 +7257,124 @@ public class CasablancaGUI extends javax.swing.JFrame
         setupDialogSearchCustomer(true);
     }//GEN-LAST:event_jButtonBookingSearchCustomerActionPerformed
 
-    private void jTextFieldRow1KeyTyped(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jTextFieldRow1KeyTyped
-    {//GEN-HEADEREND:event_jTextFieldRow1KeyTyped
-        String text = jTextFieldRow1.getText();
-        if(text.matches("[0-9]+"))
-        {
-            
-        }
-        if(Integer.parseInt(text)<1)
-        {
-            jTextFieldRow1.setText("1");
-        }
-    }//GEN-LAST:event_jTextFieldRow1KeyTyped
-
     private void jComboBoxSetupOverviewStartDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSetupOverviewStartDateActionPerformed
     {//GEN-HEADEREND:event_jComboBoxSetupOverviewStartDateActionPerformed
-        // TODO add your handling code here:
+        setupOverviewEndDate();
     }//GEN-LAST:event_jComboBoxSetupOverviewStartDateActionPerformed
 
     private void jButtonCheckInLoadActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInLoadActionPerformed
     {//GEN-HEADEREND:event_jButtonCheckInLoadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCheckInLoadActionPerformed
+
+    private void jTextFieldRow1FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow1FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow1FocusLost
+        String text = jTextFieldRow1.getText();
+        jTextFieldRow1.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow1FocusLost
+
+    private void jTextFieldRow1FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow1FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow1FocusGained
+        jTextFieldRow1.setText("");
+        jTextFieldRow1.setFont(fontNormal);
+        jTextFieldRow1.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow1FocusGained
+
+    private void jTextFieldRow2FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow2FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow2FocusGained
+        jTextFieldRow2.setText("");
+        jTextFieldRow2.setFont(fontNormal);
+        jTextFieldRow2.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow2FocusGained
+
+    private void jTextFieldRow2FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow2FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow2FocusLost
+        String text = jTextFieldRow2.getText();
+        jTextFieldRow2.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow2FocusLost
+
+    private void jTextFieldRow3FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow3FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow3FocusGained
+        jTextFieldRow3.setText("");
+        jTextFieldRow3.setFont(fontNormal);
+        jTextFieldRow3.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow3FocusGained
+
+    private void jTextFieldRow3FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow3FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow3FocusLost
+        String text = jTextFieldRow3.getText();
+        jTextFieldRow3.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow3FocusLost
+
+    private void jTextFieldRow4FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow4FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow4FocusGained
+        jTextFieldRow4.setText("");
+        jTextFieldRow4.setFont(fontNormal);
+        jTextFieldRow4.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow4FocusGained
+
+    private void jTextFieldRow4FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow4FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow4FocusLost
+        String text = jTextFieldRow4.getText();
+        jTextFieldRow4.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow4FocusLost
+
+    private void jTextFieldRow5FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow5FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow5FocusGained
+        jTextFieldRow5.setText("");
+        jTextFieldRow5.setFont(fontNormal);
+        jTextFieldRow5.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow5FocusGained
+
+    private void jTextFieldRow5FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow5FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow5FocusLost
+        String text = jTextFieldRow5.getText();
+        jTextFieldRow5.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow5FocusLost
+
+    private void jTextFieldRow6FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow6FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow6FocusGained
+        jTextFieldRow6.setText("");
+        jTextFieldRow6.setFont(fontNormal);
+        jTextFieldRow6.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow6FocusGained
+
+    private void jTextFieldRow6FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow6FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow6FocusLost
+        String text = jTextFieldRow6.getText();
+        jTextFieldRow6.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow6FocusLost
+
+    private void jTextFieldRow7FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow7FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow7FocusGained
+        jTextFieldRow7.setText("");
+        jTextFieldRow7.setFont(fontNormal);
+        jTextFieldRow7.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow7FocusGained
+
+    private void jTextFieldRow7FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow7FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow7FocusLost
+        String text = jTextFieldRow7.getText();
+        jTextFieldRow7.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow7FocusLost
+
+    private void jTextFieldRow8FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow8FocusGained
+    {//GEN-HEADEREND:event_jTextFieldRow8FocusGained
+        jTextFieldRow8.setText("");
+        jTextFieldRow8.setFont(fontNormal);
+        jTextFieldRow8.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow8FocusGained
+
+    private void jTextFieldRow8FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow8FocusLost
+    {//GEN-HEADEREND:event_jTextFieldRow8FocusLost
+        String text = jTextFieldRow8.getText();
+        jTextFieldRow8.setText(checkInputSetupOverview(text));
+    }//GEN-LAST:event_jTextFieldRow8FocusLost
+
+    private void jButtonBookingExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingExitActionPerformed
+    {//GEN-HEADEREND:event_jButtonBookingExitActionPerformed
+        jDialogBooking.setVisible(false);
+    }//GEN-LAST:event_jButtonBookingExitActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
@@ -7308,7 +7383,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         currentDate = Integer.parseInt(sdfDateInt.format(cal.getTime()));
         currentMonth = Integer.parseInt(sdfMonthInt.format(cal.getTime()));
         currentYear = Integer.parseInt(sdfYearshort.format(cal.getTime()));
-        String currentMonthName = sdfMonthName.format(cal.getTime());
+        String currentMonthName = sdfMonthNameShort.format(cal.getTime());
         String currentWeekdayName = sdfWeekDayName.format(cal.getTime());
         int currentYearLong = Integer.parseInt(sdfYearLong.format(cal.getTime()));
         String showDate = (currentWeekdayName + " - " + currentDate + ". " + currentMonthName + " - " + currentYearLong);
@@ -7344,7 +7419,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         int dayOut = (Integer.parseInt(getD.format(dateIn.getTime()))-1);
         int monthOut = (Integer.parseInt(getM.format(dateIn.getTime())));
         int yearOut = (Integer.parseInt(getY.format(dateIn.getTime()))-14);
-        DateVar dateOut = new DateVar(dayOut, monthOut, yearOut);
+        DateVar dateOut = new DateVar(yearOut, monthOut, dayOut);
         return dateOut;
     }
     
@@ -7484,6 +7559,52 @@ public class CasablancaGUI extends javax.swing.JFrame
         return IconFree;
     }
     
+    private String fixRoomID(String roomID)
+    {
+        if(roomID.length()==0)
+        {
+            return "000";
+        } else if(roomID.length()==1)
+        {
+            String ret = "00" + roomID;
+            return ret;
+        } else if(roomID.length()==2)
+        {
+            String ret = "0" + roomID;
+            return ret;
+        } else
+        {
+            return roomID;
+        }
+    }
+    
+    private String checkInputSetupOverview(String text)
+    {
+        int textValue = 0;
+        try
+        {
+            textValue = Integer.parseInt(text);
+        } catch (NumberFormatException numberFormatException)
+        {
+            return "";
+        }
+        if(textValue <= 0)
+        {
+            if(text.length() > 0)
+            {
+                return "1";
+            } else
+            {
+                return "";
+            } 
+        }
+        if(textValue > 104)
+        {
+            return "104";
+        }
+        return "" + textValue;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -7611,6 +7732,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JDialog jDialogSetupOverview;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel63;
@@ -7991,6 +8113,22 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldSetupOverviewEndYear;
     // End of variables declaration//GEN-END:variables
     
+    private void setupOverviewEndDate()
+    {
+        int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
+        int ocMonth = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
+        int ocDate = jComboBoxSetupOverviewStartDate.getSelectedIndex()+1;
+        Calendar sDate = Calendar.getInstance();
+        sDate.set(ocYear, ocMonth, ocDate);
+        sDate.add(Calendar.DATE, 13);
+        String monthName = sdfMonthName.format(sDate.getTime());
+        int dateCount = Integer.parseInt(sdfDateInt.format(sDate.getTime()));
+        int yearCount = Integer.parseInt(sdfYearLong.format(sDate.getTime()));
+        jTextFieldSetupOverviewEndMonth.setText(monthName);
+        jTextFieldSetupOverviewEndDate.setText("" + dateCount);
+        jTextFieldSetupOverviewEndYear.setText("" + yearCount);
+    }
+    
     public void setupDialogBooking()
     {
         setCurrentDate();
@@ -8089,8 +8227,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelSearchCustomerPhone.setText("");
         jLabelSearchCustomerEmail.setText("");
         jLabelSearchCustomerGuestID.setText("");
-        jListSearchCustomerResult.setModel(null);
-        jListSearchCustomerBookingsHistory.setModel(null);
+        jListSearchCustomerResult.setModel(EmptyList);
+        jListSearchCustomerBookingsHistory.setModel(EmptyList);
         jButtonSearchCustomerReturnToBooking.setVisible(returnButton);
         jDialogSearchCustomer.setVisible(true);
     }
@@ -8098,7 +8236,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void setupDialogSearchRoom()
     {
         setCurrentDate();
-        jListSearchRoomResult.setModel(null);
+        jListSearchRoomResult.setModel(EmptyList);
         
         jComboBoxSearchRoomType.setSelectedIndex(0);
         jLabelSearchRoomTypePersonsNotifier.setText("");
@@ -8178,8 +8316,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         String[] list = getComboBoxList(dim);
         jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
         jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth());
-        jComboBoxSetupOverviewStartDate.setSelectedIndex(dateObject.getDate()-1);
-        jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear()-2014);
+        jComboBoxSetupOverviewStartDate.setSelectedIndex(dateObject.getDate());
+        jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear());
         jDialogSetupOverview.setVisible(true);
     }
     
@@ -8239,7 +8377,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             ocD = Integer.parseInt(sdfDateInt.format(sDate.getTime()));
             ocY = Integer.parseInt(sdfYearLong.format(sDate.getTime()));
-            ocM = sdfMonthName.format(sDate.getTime());
+            ocM = sdfMonthNameShort.format(sDate.getTime());
             ocW = sdfWeekDayName.format(sDate.getTime());
             switch (a)
             {

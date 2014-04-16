@@ -14,7 +14,7 @@ public class DateVar
 {
     private int vDate, vMonth, vYear;
     
-    public DateVar(int date, int month, int year)
+    public DateVar(int year, int month, int date)
     {
         this.vDate = date;
         this.vMonth = month;
