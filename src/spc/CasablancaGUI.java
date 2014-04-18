@@ -1704,6 +1704,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButtonCheckInExit.setText("Exit");
         jButtonCheckInExit.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckInExit.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckInExitActionPerformed(evt);
+            }
+        });
 
         jLabelCheckInNotifier.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelCheckInNotifier.setText("Customer checked in...");
@@ -1881,6 +1888,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButtonCheckOutExit.setText("Exit");
         jButtonCheckOutExit.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckOutExit.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckOutExitActionPerformed(evt);
+            }
+        });
 
         jButtonCheckOutLoad.setText("Find Check-Outs");
 
@@ -2650,6 +2664,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow1.setText("1");
         jTextFieldRow1.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow1.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow1MouseClicked(evt);
+            }
+        });
         jTextFieldRow1.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -2667,6 +2688,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow2.setText("2");
         jTextFieldRow2.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow2.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow2MouseClicked(evt);
+            }
+        });
         jTextFieldRow2.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -2684,6 +2712,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow3.setText("3");
         jTextFieldRow3.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow3.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow3MouseClicked(evt);
+            }
+        });
         jTextFieldRow3.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -2701,6 +2736,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow4.setText("4");
         jTextFieldRow4.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow4.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow4MouseClicked(evt);
+            }
+        });
         jTextFieldRow4.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -2718,6 +2760,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow5.setText("5");
         jTextFieldRow5.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow5.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow5MouseClicked(evt);
+            }
+        });
         jTextFieldRow5.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -2735,6 +2784,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow6.setText("6");
         jTextFieldRow6.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow6.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow6MouseClicked(evt);
+            }
+        });
         jTextFieldRow6.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -2752,6 +2808,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow7.setText("7");
         jTextFieldRow7.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow7.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow7MouseClicked(evt);
+            }
+        });
         jTextFieldRow7.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -2769,6 +2832,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldRow8.setText("8");
         jTextFieldRow8.setPreferredSize(new java.awt.Dimension(30, 20));
+        jTextFieldRow8.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jTextFieldRow8MouseClicked(evt);
+            }
+        });
         jTextFieldRow8.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -7275,16 +7345,10 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jTextFieldRow1FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow1FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow1FocusGained
-        jTextFieldRow1.setText("");
-        jTextFieldRow1.setFont(fontNormal);
-        jTextFieldRow1.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow1FocusGained
 
     private void jTextFieldRow2FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow2FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow2FocusGained
-        jTextFieldRow2.setText("");
-        jTextFieldRow2.setFont(fontNormal);
-        jTextFieldRow2.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow2FocusGained
 
     private void jTextFieldRow2FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow2FocusLost
@@ -7295,9 +7359,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jTextFieldRow3FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow3FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow3FocusGained
-        jTextFieldRow3.setText("");
-        jTextFieldRow3.setFont(fontNormal);
-        jTextFieldRow3.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow3FocusGained
 
     private void jTextFieldRow3FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow3FocusLost
@@ -7308,9 +7369,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jTextFieldRow4FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow4FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow4FocusGained
-        jTextFieldRow4.setText("");
-        jTextFieldRow4.setFont(fontNormal);
-        jTextFieldRow4.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow4FocusGained
 
     private void jTextFieldRow4FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow4FocusLost
@@ -7321,9 +7379,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jTextFieldRow5FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow5FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow5FocusGained
-        jTextFieldRow5.setText("");
-        jTextFieldRow5.setFont(fontNormal);
-        jTextFieldRow5.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow5FocusGained
 
     private void jTextFieldRow5FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow5FocusLost
@@ -7334,9 +7389,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jTextFieldRow6FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow6FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow6FocusGained
-        jTextFieldRow6.setText("");
-        jTextFieldRow6.setFont(fontNormal);
-        jTextFieldRow6.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow6FocusGained
 
     private void jTextFieldRow6FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow6FocusLost
@@ -7347,9 +7399,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jTextFieldRow7FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow7FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow7FocusGained
-        jTextFieldRow7.setText("");
-        jTextFieldRow7.setFont(fontNormal);
-        jTextFieldRow7.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow7FocusGained
 
     private void jTextFieldRow7FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow7FocusLost
@@ -7360,9 +7409,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jTextFieldRow8FocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow8FocusGained
     {//GEN-HEADEREND:event_jTextFieldRow8FocusGained
-        jTextFieldRow8.setText("");
-        jTextFieldRow8.setFont(fontNormal);
-        jTextFieldRow8.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow8FocusGained
 
     private void jTextFieldRow8FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow8FocusLost
@@ -7375,6 +7421,72 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookingExitActionPerformed
         jDialogBooking.setVisible(false);
     }//GEN-LAST:event_jButtonBookingExitActionPerformed
+
+    private void jButtonCheckInExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInExitActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckInExitActionPerformed
+        jDialogCheckIn.setVisible(false);
+    }//GEN-LAST:event_jButtonCheckInExitActionPerformed
+
+    private void jButtonCheckOutExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutExitActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckOutExitActionPerformed
+        jDialogCheckOut.setVisible(false);
+    }//GEN-LAST:event_jButtonCheckOutExitActionPerformed
+
+    private void jTextFieldRow1MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow1MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow1MouseClicked
+        jTextFieldRow1.setText("");
+        jTextFieldRow1.setFont(fontNormal);
+        jTextFieldRow1.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow1MouseClicked
+
+    private void jTextFieldRow2MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow2MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow2MouseClicked
+        jTextFieldRow2.setText("");
+        jTextFieldRow2.setFont(fontNormal);
+        jTextFieldRow2.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow2MouseClicked
+
+    private void jTextFieldRow3MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow3MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow3MouseClicked
+        jTextFieldRow3.setText("");
+        jTextFieldRow3.setFont(fontNormal);
+        jTextFieldRow3.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow3MouseClicked
+
+    private void jTextFieldRow4MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow4MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow4MouseClicked
+        jTextFieldRow4.setText("");
+        jTextFieldRow4.setFont(fontNormal);
+        jTextFieldRow4.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow4MouseClicked
+
+    private void jTextFieldRow5MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow5MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow5MouseClicked
+        jTextFieldRow5.setText("");
+        jTextFieldRow5.setFont(fontNormal);
+        jTextFieldRow5.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow5MouseClicked
+
+    private void jTextFieldRow6MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow6MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow6MouseClicked
+        jTextFieldRow6.setText("");
+        jTextFieldRow6.setFont(fontNormal);
+        jTextFieldRow6.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow6MouseClicked
+
+    private void jTextFieldRow7MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow7MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow7MouseClicked
+        jTextFieldRow7.setText("");
+        jTextFieldRow7.setFont(fontNormal);
+        jTextFieldRow7.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow7MouseClicked
+
+    private void jTextFieldRow8MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jTextFieldRow8MouseClicked
+    {//GEN-HEADEREND:event_jTextFieldRow8MouseClicked
+        jTextFieldRow8.setText("");
+        jTextFieldRow8.setFont(fontNormal);
+        jTextFieldRow8.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jTextFieldRow8MouseClicked
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
