@@ -882,7 +882,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonSearchCustomerReturnToBooking.setText("Return to Booking with selected customer");
+        jButtonSearchCustomerReturnToBooking.setText("Return to Booking using found customer");
         jButtonSearchCustomerReturnToBooking.setPreferredSize(new java.awt.Dimension(237, 35));
         jButtonSearchCustomerReturnToBooking.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1474,6 +1474,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxBookingStartDate.setMaximumRowCount(12);
         jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         jComboBoxBookingStartDate.setPreferredSize(new java.awt.Dimension(38, 20));
+        jComboBoxBookingStartDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBookingStartDateActionPerformed(evt);
+            }
+        });
 
         jComboBoxBookingStartYear.setMaximumRowCount(12);
         jComboBoxBookingStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
@@ -1502,6 +1509,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxBookingEndDate.setMaximumRowCount(12);
         jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         jComboBoxBookingEndDate.setPreferredSize(new java.awt.Dimension(38, 20));
+        jComboBoxBookingEndDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBookingEndDateActionPerformed(evt);
+            }
+        });
 
         jComboBoxBookingEndYear.setMaximumRowCount(12);
         jComboBoxBookingEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
@@ -5968,7 +5982,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSearchCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerActionPerformed
         //Opens Dialog-window "Search Customer"
-        jDialogSearchCustomer.setVisible(true);
+        jDialogSearchCustomer.setVisible(false);
     }//GEN-LAST:event_jButtonSearchCustomerActionPerformed
 
     private void jButtonSearchRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomActionPerformed
@@ -6164,38 +6178,26 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jComboBoxBookingStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartMonthActionPerformed
-        int year = (jComboBoxBookingStartYear.getSelectedIndex()+2014);
-        int month = jComboBoxBookingStartMonth.getSelectedIndex();
-        int dim = getDaysInMonth(month, year);
-        String[] list = getComboBoxList(dim);
-        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupBookingStartDate();
+        setupBookingNightsNotifier();
     }//GEN-LAST:event_jComboBoxBookingStartMonthActionPerformed
 
     private void jComboBoxBookingStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingStartYearActionPerformed
-        int year = (jComboBoxBookingStartYear.getSelectedIndex()+2014);
-        int month = jComboBoxBookingStartMonth.getSelectedIndex();
-        int dim = getDaysInMonth(month, year);
-        String[] list = getComboBoxList(dim);
-        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupBookingStartDate();
+        setupBookingNightsNotifier();
     }//GEN-LAST:event_jComboBoxBookingStartYearActionPerformed
 
     private void jComboBoxBookingEndMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndMonthActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndMonthActionPerformed
-        int year = (jComboBoxBookingEndYear.getSelectedIndex()+2014);
-        int month = jComboBoxBookingEndMonth.getSelectedIndex();
-        int dim = getDaysInMonth(month, year);
-        String[] list = getComboBoxList(dim);
-        jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupBookingEndDate();
+        setupBookingNightsNotifier();
     }//GEN-LAST:event_jComboBoxBookingEndMonthActionPerformed
 
     private void jComboBoxBookingEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndYearActionPerformed
     {//GEN-HEADEREND:event_jComboBoxBookingEndYearActionPerformed
-        int year = (jComboBoxBookingEndYear.getSelectedIndex()+2014);
-        int month = jComboBoxBookingEndMonth.getSelectedIndex();
-        int dim = getDaysInMonth(month, year);
-        String[] list = getComboBoxList(dim);
-        jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupBookingEndDate();
+        setupBookingNightsNotifier();
     }//GEN-LAST:event_jComboBoxBookingEndYearActionPerformed
 
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
@@ -7487,6 +7489,16 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setFont(fontNormal);
         jTextFieldRow8.setForeground(Color.BLACK);
     }//GEN-LAST:event_jTextFieldRow8MouseClicked
+
+    private void jComboBoxBookingStartDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingStartDateActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxBookingStartDateActionPerformed
+        setupBookingNightsNotifier();
+    }//GEN-LAST:event_jComboBoxBookingStartDateActionPerformed
+
+    private void jComboBoxBookingEndDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxBookingEndDateActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxBookingEndDateActionPerformed
+        setupBookingNightsNotifier();
+    }//GEN-LAST:event_jComboBoxBookingEndDateActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
@@ -7498,7 +7510,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         String currentMonthName = sdfMonthNameShort.format(cal.getTime());
         String currentWeekdayName = sdfWeekDayName.format(cal.getTime());
         int currentYearLong = Integer.parseInt(sdfYearLong.format(cal.getTime()));
-        String showDate = (currentWeekdayName + " - " + currentDate + ". " + currentMonthName + " - " + currentYearLong);
+        String showDate = (currentWeekdayName + ",  " + currentDate + ".  " + currentMonthName + "  -  " + currentYearLong);
         jLabelMainShowDate.setText(showDate);
     }
     
@@ -8225,6 +8237,40 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldSetupOverviewEndYear;
     // End of variables declaration//GEN-END:variables
     
+    private void setupBookingStartDate()
+    {
+        int year = (jComboBoxBookingStartYear.getSelectedIndex()+2014);
+        int month = jComboBoxBookingStartMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxBookingStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+    }
+    
+    private void setupBookingEndDate()
+    {
+        int year = (jComboBoxBookingEndYear.getSelectedIndex()+2014);
+        int month = jComboBoxBookingEndMonth.getSelectedIndex();
+        int dim = getDaysInMonth(month, year);
+        String[] list = getComboBoxList(dim);
+        jComboBoxBookingEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+    }
+    
+    private void setupBookingNightsNotifier()
+    {
+        Calendar dFrom = Calendar.getInstance();
+        Calendar dTo = Calendar.getInstance();
+        dFrom.set((jComboBoxBookingStartYear.getSelectedIndex()+2014), jComboBoxBookingStartMonth.getSelectedIndex(), (jComboBoxBookingStartDate.getSelectedIndex()+1));
+        dTo.set((jComboBoxBookingEndYear.getSelectedIndex()+2014), jComboBoxBookingEndMonth.getSelectedIndex(), (jComboBoxBookingEndDate.getSelectedIndex()+1));
+        int numberNights = getNumberOfNights(dFrom, dTo);
+        if(numberNights<1)
+        {
+            jLabelBookingNumberNights.setText("");
+        } else
+        {
+            jLabelBookingNumberNights.setText("(" + numberNights + " Nights)");
+        }
+    }
+    
     private void setupOverviewEndDate()
     {
         int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
@@ -8258,6 +8304,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
         jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
         jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
+        jLabelBookingNumberNights.setText("");
+        jLabelBookingRoomNotifier.setText("");
+        jLabelBookingRoomTypePersonsNotifier.setText("(1 person)");
         jDialogBooking.setVisible(true);
     }
     
