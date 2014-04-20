@@ -37,7 +37,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
     JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
-    ArrayList<String> tempList = new ArrayList<>();
     ArrayList<String> showRoomsList = new ArrayList<>();
     DefaultListModel writeList = new DefaultListModel();
     DefaultListModel writeList1 = new DefaultListModel();
@@ -927,7 +926,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jDialogSearchRoom.setTitle("Search Room Details");
         jDialogSearchRoom.setAlwaysOnTop(true);
-        jDialogSearchRoom.setMinimumSize(new java.awt.Dimension(532, 463));
+        jDialogSearchRoom.setMinimumSize(new java.awt.Dimension(532, 530));
         jDialogSearchRoom.setResizable(false);
 
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1072,11 +1071,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(100, 100, 100)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel61)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jButtonSearchRoomShowRooms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1122,6 +1121,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jComboBoxSearchStartDate.setMaximumRowCount(13);
         jComboBoxSearchStartDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        jComboBoxSearchStartDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxSearchStartDateActionPerformed(evt);
+            }
+        });
 
         jComboBoxSearchStartYear.setMaximumRowCount(13);
         jComboBoxSearchStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
@@ -1147,6 +1153,13 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jComboBoxSearchEndDate.setMaximumRowCount(12);
         jComboBoxSearchEndDate.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        jComboBoxSearchEndDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxSearchEndDateActionPerformed(evt);
+            }
+        });
 
         jComboBoxSearchEndYear.setMaximumRowCount(12);
         jComboBoxSearchEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
@@ -2981,28 +2994,24 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelSetupOverviewSelect14DaysPeriodLayout.setHorizontalGroup(
             jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
                 .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelSetupOverviewNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelSetupOverviewNoChange13)
+                    .addComponent(jLabel13)
                     .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
+                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jComboBoxSetupOverviewStartMonth, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTextFieldSetupOverviewEndMonth, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(10, 10, 10)
-                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelSetupOverviewNoChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelSetupOverviewNoChange13)
-                            .addComponent(jLabel13)
-                            .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
-                                .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jComboBoxSetupOverviewStartMonth, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextFieldSetupOverviewEndMonth, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jComboBoxSetupOverviewStartDate, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextFieldSetupOverviewEndDate))
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jComboBoxSetupOverviewStartYear, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextFieldSetupOverviewEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))))
-                    .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createSequentialGroup()
+                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jComboBoxSetupOverviewStartDate, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTextFieldSetupOverviewEndDate))
                         .addGap(10, 10, 10)
-                        .addComponent(jLabel2)))
+                        .addGroup(jPanelSetupOverviewSelect14DaysPeriodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jComboBoxSetupOverviewStartYear, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTextFieldSetupOverviewEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
+                    .addComponent(jLabel2))
                 .addGap(5, 5, 5))
         );
         jPanelSetupOverviewSelect14DaysPeriodLayout.setVerticalGroup(
@@ -5964,13 +5973,13 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSearchCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerActionPerformed
         //Opens Dialog-window "Search Customer"
-        jDialogSearchCustomer.setVisible(false);
+        setupDialogSearchCustomer(false);
     }//GEN-LAST:event_jButtonSearchCustomerActionPerformed
 
     private void jButtonSearchRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchRoomActionPerformed
         //Opens Dialog-window "Search Room"
-        jDialogSearchRoom.setVisible(true);
+        setupDialogSearchRoom();
     }//GEN-LAST:event_jButtonSearchRoomActionPerformed
 
     private void jButtonRoomArrowUpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomArrowUpActionPerformed
@@ -6247,8 +6256,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonBookingBookActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingBookActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
-        //Check if there is an available room of the selected type in the specified period
-        //This method will be the same method as the one checking availability for Dialog-searchRoom
         String returnGuest;
         ArrayList guestListBooking = jdcbselect.checkIdAva();
         if(guestListBooking.contains(jTextFieldBookingGuestID.getText()))
@@ -6645,50 +6652,56 @@ public class CasablancaGUI extends javax.swing.JFrame
         SearchRoomSpecifiedDate.set((jComboBoxSearchStartYear.getSelectedIndex()+2014), jComboBoxSearchStartMonth.getSelectedIndex(), (jComboBoxSearchStartDate.getSelectedIndex()+1));
         ArrayList<String> roomsList = new ArrayList<>();
         ArrayList<String> roomsListResult = new ArrayList<>();
+        ArrayList<RoomAvaBookConstructor> tempList = new ArrayList<>();
         writeList.clear();
         
-        //Checking if specified endDate is after specified startDate
-        if(endDate.after(startDate))
+        //Searches Database for all rooms of the selected room type
+        int srt = jComboBoxSearchRoomType.getSelectedIndex();
+        if (srt == 0)
         {
-            //Searches Database for all rooms of the selected room type
-            int srt = jComboBoxSearchRoomType.getSelectedIndex();
-            if (srt == 0)
+            //Gets a list of ALL rooms
+            roomsList.addAll(jdcbselect.getRoomsFromType("Single"));
+            roomsList.addAll(jdcbselect.getRoomsFromType("Double"));
+            roomsList.addAll(jdcbselect.getRoomsFromType("Family"));
+        } else if (srt == 1)
+        {
+            //Gets a list of SINGLE rooms
+            roomsList = jdcbselect.getRoomsFromType("Single");
+        } else if (srt == 2)
+        {
+            //Gets a list of DOUBLE rooms
+            roomsList = jdcbselect.getRoomsFromType("Double");
+        } else
+        {
+            //Gets a list of FAMILY rooms
+            roomsList = jdcbselect.getRoomsFromType("Family");
+        }
+        
+        //Searches for rooms after the selected parameter
+        if (jRadioButtonSearchRoom0.isSelected())
+        {
+            //Searches for all rooms
+            roomsListResult.addAll(roomsList);
+        } else if (jRadioButtonSearchRoom1.isSelected())
+        {
+            //Searches and finds all rooms of specified type, that is available from specified start-date to specified end-date
+            roomsListResult = checkRoomAvailability(roomsList, startDate, endDate);
+        } else if (jRadioButtonSearchRoom2.isSelected())
+        {
+            //Searches Database for all rooms of selected type, that have check-in on the specified start-date.
+            for(int i = 0; i<roomsList.size(); i++)
             {
-                //Gets a list of ALL rooms
-                roomsList.addAll(jdcbselect.getRoomsFromType("Single"));
-                roomsList.addAll(jdcbselect.getRoomsFromType("Double"));
-                roomsList.addAll(jdcbselect.getRoomsFromType("Family"));
-            } else if (srt == 1)
-            {
-                //Gets a list of SINGLE rooms
-                roomsList = jdcbselect.getRoomsFromType("Single");
-            } else if (srt == 2)
-            {
-                //Gets a list of DOUBLE rooms
-                roomsList = jdcbselect.getRoomsFromType("Double");
-            } else if (srt == 3)
-            {
-                //Gets a list of FAMILY rooms
-                roomsList = jdcbselect.getRoomsFromType("Family");
+                tempList = jdcbselect.getCheckAvaRoom(roomsList.get(i));
+                for(int j = 0; j<tempList.size(); j++)
+                {
+                    if(tempList.get(j).getDateFrom().equals())
+                }
             }
-
-            //Searches for rooms after the selected parameter
-            if (jRadioButtonSearchRoom0.isSelected())
-            {
-                roomsListResult.addAll(roomsList);
-            } else if (jRadioButtonSearchRoom1.isSelected())
-            {
-                //Searches and finds all rooms of specified type, that is available from specified start-date to specified end-date
-                roomsListResult = checkRoomAvailability(roomsList, startDate, endDate);
-            } else if (jRadioButtonSearchRoom2.isSelected())
-            {
-                //Searches Database for all rooms of selected type, that have check-in on the specified start-date.
-                //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
-            } else if (jRadioButtonSearchRoom3.isSelected())
-            {
-                //Searches Database for all rooms of selected type, that have check-out on the specified start-date.
-                //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
-            }
+        } else if (jRadioButtonSearchRoom3.isSelected())
+        {
+            //Searches Database for all rooms of selected type, that have check-out on the specified start-date.
+            //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
+        }
             
             for (int j = 0; j < roomsListResult.size(); j++)
             {
@@ -6704,11 +6717,6 @@ public class CasablancaGUI extends javax.swing.JFrame
                 String rType = roomList.get(i).getRoomType();
                 writeList.addElement("Room  " + rID + "  -  " + rType);
             }
-            
-        } else
-        {
-            jLabelSearchRoomNumberNights.setText("<html>");
-        }
     }//GEN-LAST:event_jButtonRoomSearchActionPerformed
 
     private void jComboBoxSearchEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchEndYearActionPerformed
@@ -6718,6 +6726,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         int dim = getDaysInMonth(month, year);
         String[] list = getComboBoxList(dim);
         jComboBoxSearchEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupSearchRoomNightsNotifier();
     }//GEN-LAST:event_jComboBoxSearchEndYearActionPerformed
 
     private void jComboBoxSearchEndMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchEndMonthActionPerformed
@@ -6727,6 +6736,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         int dim = getDaysInMonth(month, year);
         String[] list = getComboBoxList(dim);
         jComboBoxSearchEndDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupSearchRoomNightsNotifier();
     }//GEN-LAST:event_jComboBoxSearchEndMonthActionPerformed
 
     private void jComboBoxSearchStartYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchStartYearActionPerformed
@@ -6736,6 +6746,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         int dim = getDaysInMonth(month, year);
         String[] list = getComboBoxList(dim);
         jComboBoxSearchStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupSearchRoomNightsNotifier();
     }//GEN-LAST:event_jComboBoxSearchStartYearActionPerformed
 
     private void jComboBoxSearchStartMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchStartMonthActionPerformed
@@ -6745,6 +6756,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         int dim = getDaysInMonth(month, year);
         String[] list = getComboBoxList(dim);
         jComboBoxSearchStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
+        setupSearchRoomNightsNotifier();
     }//GEN-LAST:event_jComboBoxSearchStartMonthActionPerformed
 
     private void jButtonSearchRoomExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomExitActionPerformed
@@ -7549,6 +7561,16 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jComboBoxBookingEndDateActionPerformed
         setupBookingNightsNotifier();
     }//GEN-LAST:event_jComboBoxBookingEndDateActionPerformed
+
+    private void jComboBoxSearchStartDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchStartDateActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxSearchStartDateActionPerformed
+        setupSearchRoomNightsNotifier();
+    }//GEN-LAST:event_jComboBoxSearchStartDateActionPerformed
+
+    private void jComboBoxSearchEndDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchEndDateActionPerformed
+    {//GEN-HEADEREND:event_jComboBoxSearchEndDateActionPerformed
+        setupSearchRoomNightsNotifier();
+    }//GEN-LAST:event_jComboBoxSearchEndDateActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
@@ -7557,7 +7579,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         currentDate = Integer.parseInt(sdfDateInt.format(cal.getTime()));
         currentMonth = Integer.parseInt(sdfMonthInt.format(cal.getTime()));
         currentYear = Integer.parseInt(sdfYearshort.format(cal.getTime()));
-        String currentMonthName = sdfMonthNameShort.format(cal.getTime());
+        String currentMonthName = sdfMonthName.format(cal.getTime());
         String currentWeekdayName = sdfWeekDayName.format(cal.getTime());
         int currentYearLong = Integer.parseInt(sdfYearLong.format(cal.getTime()));
         String showDate = (currentWeekdayName + ",  " + currentDate + ".  " + currentMonthName + "  -  " + currentYearLong);
@@ -7591,7 +7613,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         SimpleDateFormat getM = new SimpleDateFormat("M");
         SimpleDateFormat getY = new SimpleDateFormat("yy");
         int dayOut = (Integer.parseInt(getD.format(dateIn.getTime()))-1);
-        int monthOut = (Integer.parseInt(getM.format(dateIn.getTime()))-1);
+        int monthOut = (Integer.parseInt(getM.format(dateIn.getTime())));
         int yearOut = (Integer.parseInt(getY.format(dateIn.getTime()))-14);
         DateVar dateOut = new DateVar(yearOut, monthOut, dayOut);
         return dateOut;
@@ -8320,6 +8342,22 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
     }
     
+    private void setupSearchRoomNightsNotifier()
+    {
+        Calendar dFrom = Calendar.getInstance();
+        Calendar dTo = Calendar.getInstance();
+        dFrom.set((jComboBoxSearchStartYear.getSelectedIndex()+2014), jComboBoxSearchStartMonth.getSelectedIndex(), (jComboBoxSearchStartDate.getSelectedIndex()+1));
+        dTo.set((jComboBoxSearchEndYear.getSelectedIndex()+2014), jComboBoxSearchEndMonth.getSelectedIndex(), (jComboBoxSearchEndDate.getSelectedIndex()+1));
+        int numberNights = getNumberOfNights(dFrom, dTo);
+        if(numberNights<1)
+        {
+            jLabelSearchRoomNumberNights.setText("");
+        } else
+        {
+            jLabelSearchRoomNumberNights.setText("(" + numberNights + " Nights)");
+        }
+    }
+    
     private void setupOverviewEndDate()
     {
         int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
@@ -8377,21 +8415,15 @@ public class CasablancaGUI extends javax.swing.JFrame
                 jComboBoxBookingRoomType.setSelectedIndex(2);
                 break;
         }
-        
-        jTextFieldBookingFirstName.setText("");
-        jTextFieldBookingLastName.setText("");
-        jTextFieldBookingCountry.setText("");
-        jTextFieldBookingPhoneNumber.setText("");
-        jTextFieldBookingEmail.setText("");
-        jTextFieldBookingGuestID.setText("");
         jButtonBookingBook.setVisible(false);
-        jComboBoxBookingRoomType.setSelectedIndex(0);
-        jComboBoxBookingStartMonth.setSelectedIndex(0);
-        jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
-        jComboBoxBookingStartDate.setSelectedIndex(currentDate-1);
-        jComboBoxBookingEndMonth.setSelectedIndex(currentMonth-1);
-        jComboBoxBookingEndYear.setSelectedIndex(currentYear-14);
-        jComboBoxBookingEndDate.setSelectedIndex(currentDate-1);
+        DateVar sd = getDateSettings(sDate);
+        DateVar ed = getDateSettings(eDate);
+        jComboBoxBookingStartMonth.setSelectedIndex(sd.getMonth());
+        jComboBoxBookingStartYear.setSelectedIndex(sd.getYear());
+        jComboBoxBookingStartDate.setSelectedIndex(sd.getDate());
+        jComboBoxBookingEndMonth.setSelectedIndex(ed.getMonth());
+        jComboBoxBookingEndYear.setSelectedIndex(ed.getYear());
+        jComboBoxBookingEndDate.setSelectedIndex(ed.getDate());
         jDialogBooking.setVisible(true);
     }
     
@@ -8451,6 +8483,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxSearchRoomType.setSelectedIndex(0);
         jLabelSearchRoomTypePersonsNotifier.setText("");
         jLabelSearchRoomResultNotifier.setText("");
+        jLabelSearchRoomNumberNights.setText("");
         jRadioButtonSearchRoom1.setSelected(true);
         setCurrentDate();
         jComboBoxSearchStartMonth.setSelectedIndex(currentMonth-1);
@@ -8522,62 +8555,55 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setText(r8);
         jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
-        //Setup the StartDate using the recieved date-variable in the method.
         DateVar dateObject = getDateSettings(sDate);
-        System.out.println(sDate);
-        int dim = getDaysInMonth(dateObject.getMonth(), dateObject.getYear());
-        System.out.println("dateObject.getMonth():" + dateObject.getMonth());
-        System.out.println("dateObject.getDate():" + dateObject.getDate());
-        System.out.println("dateObject.getYear():" + dateObject.getYear());
-        String[] list = getComboBoxList(dim);
-        jComboBoxSetupOverviewStartDate.setModel(new javax.swing.DefaultComboBoxModel(list));
-        jDialogSetupOverview.setVisible(true);
-        jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth()-1);
-        jComboBoxSetupOverviewStartDate.setSelectedIndex(dateObject.getDate());
+        jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth());
         jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear());
+        jComboBoxSetupOverviewStartDate.setSelectedIndex(dateObject.getDate());
+        jDialogSetupOverview.setVisible(true);
     }
     
     private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
     {
         setCurrentDate();
-        if(listShowRooms.get(0).equals("")==false)
+        if(!listShowRooms.get(0).equals(""))
         {
             overviewCellRoom1 = listShowRooms.get(0);
         }
-        if(listShowRooms.get(1).equals("")==false)
+        if(!listShowRooms.get(1).equals(""))
         {
             overviewCellRoom2 = listShowRooms.get(1);
         }
-        if(listShowRooms.get(2).equals("")==false)
+        if(!listShowRooms.get(2).equals(""))
         {
             overviewCellRoom3 = listShowRooms.get(2);
         }
-        if(listShowRooms.get(3).equals("")==false)
+        if(!listShowRooms.get(3).equals(""))
         {
             overviewCellRoom4 = listShowRooms.get(3);
         }
-        if(listShowRooms.get(4).equals("")==false)
+        if(!listShowRooms.get(4).equals(""))
         {
             overviewCellRoom5 = listShowRooms.get(4);
         }
-        if(listShowRooms.get(5).equals("")==false)
+        if(!listShowRooms.get(5).equals(""))
         {
             overviewCellRoom6 = listShowRooms.get(5);
         }
-        if(listShowRooms.get(6).equals("")==false)
+        if(!listShowRooms.get(6).equals(""))
         {
             overviewCellRoom7 = listShowRooms.get(6);
         }
-        if(listShowRooms.get(7).equals("")==false)
+        if(!listShowRooms.get(7).equals(""))
         {
             overviewCellRoom8 = listShowRooms.get(7);
         }
+        
+        
     }
     
     private void resetMainScreen(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8)
     {
         setCurrentDate();
-        //Updates the cells in Overview-window
         cal = Calendar.getInstance();
         overviewCellStartDate = cal;
         fillDateCells(cal);
@@ -8747,7 +8773,8 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         } else
         {
-            ArrayList<RoomAvaBookConstructor> rList = jdcbselect.getCheckAvaRoom(roomID);
+            ArrayList<RoomAvaBookConstructor> rList = new ArrayList<>();
+            rList.addAll(jdcbselect.getCheckAvaRoom(roomID));
             switch (roomRow)
             {
                 case 1:
