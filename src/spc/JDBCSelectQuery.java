@@ -837,4 +837,10 @@ public class JDBCSelectQuery
         } System.out.println("Done.");
             return null;
     }
+
+    RoomTypeIDConstructor getRoomInfoFromRoomID(String roomID)
+    {
+        //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
+        return null;
+    }
 }
