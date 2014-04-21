@@ -486,18 +486,21 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jScrollPane1" pref="237" max="32767" attributes="0"/>
-                          <Component id="jLabelSearchCustomerNoChange15" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jScrollPane1" pref="237" max="32767" attributes="0"/>
+                                  <Component id="jLabelSearchCustomerNoChange15" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jButtonShowSelectedCustomerDetails" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="10" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButtonShowSelectedCustomerDetails" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1346,35 +1349,55 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabelBookingNoChange6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelBookingNoChange2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelBookingNoChange1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldBookingLastName" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldBookingFirstName" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabelBookingNoChange3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldBookingCountry" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabelBookingNoChange4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldBookingEmail" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabelBookingNoChange5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jTextFieldBookingGuestID" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                      <Component id="jButtonBookingCreateID" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jLabelBookingNoChange6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelBookingNoChange2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldBookingLastName" alignment="0" max="-2" attributes="0"/>
+                                          <Component id="jLabelBookingNoChange3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldBookingCountry" alignment="0" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jTextFieldBookingGuestID" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              <Component id="jButtonBookingCreateID" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
-                                  <Component id="jTextFieldBookingPhoneNumber" alignment="0" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jButtonBookingSearchCustomer" alignment="0" max="-2" attributes="0"/>
+                                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButtonBookingSearchCustomer" alignment="0" max="-2" attributes="0"/>
-                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jLabelBookingNoChange1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldBookingFirstName" alignment="0" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jTextFieldBookingEmail" alignment="0" max="-2" attributes="0"/>
+                                          <Component id="jLabelBookingNoChange5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelBookingNoChange4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldBookingPhoneNumber" alignment="0" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1382,14 +1405,6 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Component id="jLabelBookingNoChange4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Component id="jTextFieldBookingPhoneNumber" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="jLabelBookingNoChange5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Component id="jTextFieldBookingEmail" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jLabelBookingNoChange1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jTextFieldBookingFirstName" min="-2" max="-2" attributes="0"/>
@@ -1401,6 +1416,14 @@
                       <Component id="jLabelBookingNoChange3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jTextFieldBookingCountry" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jLabelBookingNoChange4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="jTextFieldBookingPhoneNumber" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jLabelBookingNoChange5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="jTextFieldBookingEmail" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jLabelBookingNoChange6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -1457,18 +1480,6 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabelBookingNoChange4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Enter Phone-Number:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldBookingPhoneNumber">
-              <Properties>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[178, 20]"/>
-                </Property>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabelBookingNoChange5">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Enter E-mail Address:"/>
@@ -1519,6 +1530,18 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Existing customer?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabelBookingNoChange4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter Phone-Number:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldBookingPhoneNumber">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[178, 20]"/>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>
@@ -1587,39 +1610,43 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jComboBoxBookingStartMonth" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jComboBoxBookingStartDate" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jComboBoxBookingStartYear" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabelBookingNumberNights" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jLabelBookingNoChange8" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelBookingNoChange9" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jComboBoxBookingEndMonth" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jComboBoxBookingEndDate" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jComboBoxBookingEndYear" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jLabelBookingNoChange7" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jComboBoxBookingRoomType" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Component id="jLabelBookingRoomTypePersonsNotifier" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jComboBoxBookingStartMonth" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jComboBoxBookingStartDate" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jComboBoxBookingStartYear" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabelBookingNoChange8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelBookingNoChange9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jComboBoxBookingEndMonth" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jComboBoxBookingEndDate" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jComboBoxBookingEndYear" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabelBookingNoChange7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jComboBoxBookingRoomType" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Component id="jLabelBookingRoomTypePersonsNotifier" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabelBookingRoomNotifier" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jButtonSearchForAvailableRoom" alignment="0" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="jLabelBookingRoomNotifier" pref="0" max="32767" attributes="0"/>
-                          <Component id="jButtonSearchForAvailableRoom" alignment="0" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="10" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabelBookingNumberNights" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>

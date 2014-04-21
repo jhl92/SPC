@@ -34,15 +34,15 @@ public class CasablancaGUI extends javax.swing.JFrame
     private Calendar startDateTemp = Calendar.getInstance();
     private Calendar endDateTemp = Calendar.getInstance();
     private Calendar SearchRoomSpecifiedDate = Calendar.getInstance();
-    JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
-    JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
-    JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
-    ArrayList<String> showRoomsList = new ArrayList<>();
-    DefaultListModel writeList = new DefaultListModel();
-    DefaultListModel writeList1 = new DefaultListModel();
-    DefaultListModel EmptyList = new DefaultListModel();
-    ArrayList<InfoObjectConstructor> guestList = new ArrayList<>();
-    ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
+    private JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
+    private JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
+    private JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
+    private DefaultListModel writeList = new DefaultListModel();
+    private DefaultListModel writeList1 = new DefaultListModel();
+    private DefaultListModel EmptyList = new DefaultListModel();
+    private ArrayList<String> showRoomsList = new ArrayList<>();
+    private ArrayList<InfoObjectConstructor> guestList = new ArrayList<>();
+    private ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
     private boolean SearchCustomerResult = false;
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
@@ -187,8 +187,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldBookingLastName = new javax.swing.JTextField();
         jLabelBookingNoChange3 = new javax.swing.JLabel();
         jTextFieldBookingCountry = new javax.swing.JTextField();
-        jLabelBookingNoChange4 = new javax.swing.JLabel();
-        jTextFieldBookingPhoneNumber = new javax.swing.JTextField();
         jLabelBookingNoChange5 = new javax.swing.JLabel();
         jTextFieldBookingEmail = new javax.swing.JTextField();
         jLabelBookingNoChange6 = new javax.swing.JLabel();
@@ -196,6 +194,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonBookingCreateID = new javax.swing.JButton();
         jButtonBookingSearchCustomer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabelBookingNoChange4 = new javax.swing.JLabel();
+        jTextFieldBookingPhoneNumber = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jButtonBookingBook = new javax.swing.JButton();
         jButtonBookingExit = new javax.swing.JButton();
@@ -821,15 +821,16 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
-                    .addComponent(jLabelSearchCustomerNoChange15))
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
+                            .addComponent(jLabelSearchCustomerNoChange15)))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButtonShowSelectedCustomerDetails, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButtonShowSelectedCustomerDetails, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1293,10 +1294,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jTextFieldBookingCountry.setPreferredSize(new java.awt.Dimension(178, 20));
 
-        jLabelBookingNoChange4.setText("Enter Phone-Number:");
-
-        jTextFieldBookingPhoneNumber.setPreferredSize(new java.awt.Dimension(178, 20));
-
         jLabelBookingNoChange5.setText("Enter E-mail Address:");
 
         jTextFieldBookingEmail.setPreferredSize(new java.awt.Dimension(178, 20));
@@ -1328,6 +1325,10 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabel1.setText("Existing customer?");
 
+        jLabelBookingNoChange4.setText("Enter Phone-Number:");
+
+        jTextFieldBookingPhoneNumber.setPreferredSize(new java.awt.Dimension(178, 20));
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -1335,42 +1336,46 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabelBookingNoChange6)
-                            .addComponent(jLabelBookingNoChange2)
-                            .addComponent(jLabelBookingNoChange1)
-                            .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelBookingNoChange3)
-                            .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelBookingNoChange4)
-                            .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelBookingNoChange5)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jTextFieldBookingGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
-                                .addComponent(jButtonBookingCreateID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabelBookingNoChange6)
+                                    .addComponent(jLabelBookingNoChange2)
+                                    .addComponent(jTextFieldBookingLastName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelBookingNoChange3)
+                                    .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jTextFieldBookingGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jButtonBookingCreateID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButtonBookingSearchCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1))))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonBookingSearchCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabelBookingNoChange1)
+                                    .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelBookingNoChange5)
+                                    .addComponent(jLabelBookingNoChange4)
+                                    .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabelBookingNoChange4)
-                .addGap(0, 0, 0)
-                .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(jLabelBookingNoChange5)
-                .addGap(0, 0, 0)
-                .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
                 .addComponent(jLabelBookingNoChange1)
                 .addGap(0, 0, 0)
                 .addComponent(jTextFieldBookingFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1382,6 +1387,14 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addComponent(jLabelBookingNoChange3)
                 .addGap(0, 0, 0)
                 .addComponent(jTextFieldBookingCountry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange4)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabelBookingNoChange5)
+                .addGap(0, 0, 0)
+                .addComponent(jTextFieldBookingEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(jLabelBookingNoChange6)
                 .addGap(0, 0, 0)
@@ -1546,33 +1559,35 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabelBookingNumberNights, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabelBookingNoChange8)
-                    .addComponent(jLabelBookingNoChange9)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabelBookingNoChange7)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jComboBoxBookingRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
-                        .addComponent(jLabelBookingRoomTypePersonsNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabelBookingRoomNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jButtonSearchForAvailableRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelBookingNumberNights, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jComboBoxBookingStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBoxBookingStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBoxBookingStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelBookingNoChange8)
+                            .addComponent(jLabelBookingNoChange9)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jComboBoxBookingEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBoxBookingEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBoxBookingEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelBookingNoChange7)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jComboBoxBookingRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabelBookingRoomTypePersonsNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelBookingRoomNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jButtonSearchForAvailableRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel11Layout.setVerticalGroup(
@@ -6011,7 +6026,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSearchCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerDetailsActionPerformed
         //Setup variables neccessary for this method
-        ArrayList<InfoObjectConstructor> stringListTemp = new ArrayList<>();
         boolean booleanList = true;
         int searchParameter = 0;
         String scGuestID = jTextFieldSearchCustomerGuestID.getText().toLowerCase();
@@ -6020,6 +6034,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         String scCountry = jTextFieldSearchCustomerCountry.getText().toLowerCase();
         String scPhone = jTextFieldSearchCustomerPhoneNumber.getText().toLowerCase();
         String scEmail = jTextFieldSearchCustomerEmail.getText().toLowerCase();
+        ArrayList<String> tempListGuestID = new ArrayList<>();
         writeList.clear();
         guestList.clear();
         
@@ -6079,144 +6094,116 @@ public class CasablancaGUI extends javax.swing.JFrame
             if(guestList.size() > 0)
             {
                 int i = 0;
-                boolean alreadyAdded = false;
                 switch (searchParameter)
                 {
                     case 1:
                         i = 0;
-                        alreadyAdded = false;
                         while(i < guestList.size())
                         {
                             if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName))
                             {
-                                for (int j = 0; j<stringListTemp.size(); j++)
+                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
-                                    if(guestList.get(i).getGuestID().equalsIgnoreCase(stringListTemp.get(j).getGuestID()))
-                                    {
-                                        alreadyAdded = true;
-                                    }
-                                }
-                                if (alreadyAdded == false)
+                                    guestList.remove(i);
+                                } else
                                 {
-                                    stringListTemp.add(guestList.get(i));
+                                    tempListGuestID.add(guestList.get(i).getGuestID());
+                                    i++;
                                 }
-                                guestList.remove(i);
                             } else
                             {
-                                i++;
+                                guestList.remove(i);
                             }
                         }
                     case 2:
                         i = 0;
-                        alreadyAdded = false;
                         while(i < guestList.size())
                         {
                             if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName))
                             {
-                                for (int j = 0; j<stringListTemp.size(); j++)
+                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
-                                    if(guestList.get(i).getGuestID().equalsIgnoreCase(stringListTemp.get(j).getGuestID()))
-                                    {
-                                        alreadyAdded = true;
-                                    }
-                                }
-                                if (alreadyAdded == false)
+                                    guestList.remove(i);
+                                } else
                                 {
-                                    stringListTemp.add(guestList.get(i));
+                                    tempListGuestID.add(guestList.get(i).getGuestID());
+                                    i++;
                                 }
-                                guestList.remove(i);
                             } else
                             {
-                                i++;
+                                guestList.remove(i);
                             }
                         }
                     case 3:
                         i = 0;
-                        alreadyAdded = false;
                         while(i < guestList.size())
                         {
                             if (guestList.get(i).getCountry().toLowerCase().contains(scCountry))
                             {
-                                for (int j = 0; j<stringListTemp.size(); j++)
+                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
-                                    if(guestList.get(i).getGuestID().equalsIgnoreCase(stringListTemp.get(j).getGuestID()))
-                                    {
-                                        alreadyAdded = true;
-                                    }
-                                }
-                                if (alreadyAdded == false)
+                                    guestList.remove(i);
+                                } else
                                 {
-                                    stringListTemp.add(guestList.get(i));
+                                    tempListGuestID.add(guestList.get(i).getGuestID());
+                                    i++;
                                 }
-                                guestList.remove(i);
                             } else
                             {
-                                i++;
+                                guestList.remove(i);
                             }
                         }
                     case 4:
                         i = 0;
-                        alreadyAdded = false;
                         while(i < guestList.size())
                         {
                             if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone))
                             {
-                                for (int j = 0; j<stringListTemp.size(); j++)
+                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
-                                    if(guestList.get(i).getGuestID().equalsIgnoreCase(stringListTemp.get(j).getGuestID()))
-                                    {
-                                        alreadyAdded = true;
-                                    }
-                                }
-                                if (alreadyAdded == false)
+                                    guestList.remove(i);
+                                } else
                                 {
-                                    stringListTemp.add(guestList.get(i));
+                                    tempListGuestID.add(guestList.get(i).getGuestID());
+                                    i++;
                                 }
-                                guestList.remove(i);
                             } else
                             {
-                                i++;
+                                guestList.remove(i);
                             }
                         }
                     case 5:
                         i = 0;
-                        alreadyAdded = false;
                         while(i < guestList.size())
                         {
                             if (guestList.get(i).getEmail().toLowerCase().contains(scEmail))
                             {
-                                for (int j = 0; j<stringListTemp.size(); j++)
+                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
-                                    if(guestList.get(i).getGuestID().equalsIgnoreCase(stringListTemp.get(j).getGuestID()))
-                                    {
-                                        alreadyAdded = true;
-                                    }
-                                }
-                                if (alreadyAdded == false)
+                                    guestList.remove(i);
+                                } else
                                 {
-                                    stringListTemp.add(guestList.get(i));
+                                    tempListGuestID.add(guestList.get(i).getGuestID());
+                                    i++;
                                 }
-                                guestList.remove(i);
                             } else
                             {
-                                i++;
+                                guestList.remove(i);
                             }
                         }
                     default:
                         break;
                 }
                 
-                guestList = stringListTemp;
-                
                 //Copies the remaining list with search-results from the entered data to a defaultlist and writes the list in GUI.
-                for (int k = 0; k < stringListTemp.size(); ++k)
+                for (int k = 0; k < guestList.size(); ++k)
                 {
-                    String searchFirstName = stringListTemp.get(k).getGuestFirstname();
-                    String searchLastName = stringListTemp.get(k).getGuestLastName();
-                    String searchCountry = stringListTemp.get(k).getCountry();
-                    String searchPhoneNumber = stringListTemp.get(k).getContanctPhone();
-                    String searchEmail = stringListTemp.get(k).getEmail();
-                    String searchGuestID = stringListTemp.get(k).getGuestID();
+                    String searchFirstName = guestList.get(k).getGuestFirstname();
+                    String searchLastName = guestList.get(k).getGuestLastName();
+                    String searchCountry = guestList.get(k).getCountry();
+                    String searchPhoneNumber = guestList.get(k).getContanctPhone();
+                    String searchEmail = guestList.get(k).getEmail();
+                    String searchGuestID = guestList.get(k).getGuestID();
                     writeList.addElement(searchGuestID + " - " + searchLastName + ", " + searchFirstName + " - " + searchCountry + " - " + searchPhoneNumber + " - " + searchEmail);
                 }
                 jListSearchCustomerResult.setModel(writeList);
@@ -6429,6 +6416,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonShowSelectedCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonShowSelectedCustomerDetailsActionPerformed
     {//GEN-HEADEREND:event_jButtonShowSelectedCustomerDetailsActionPerformed
         int selectedCustomer = jListSearchCustomerResult.getSelectedIndex();
+        writeList1.clear();
         if(selectedCustomer >= 0)
         {
             jLabelSearchCustomerGuestID.setText(guestList.get(selectedCustomer).getGuestID());
@@ -6446,9 +6434,9 @@ public class CasablancaGUI extends javax.swing.JFrame
                 String rID = guestInfo.get(a).getRoomID();
                 String dFrom = guestInfo.get(a).getRoomID();
                 String dTo = guestInfo.get(a).getRoomID();
-                writeList.addElement(dFrom + "  to  " + dTo + ",  " + rType + " Room");
+                writeList1.addElement(dFrom + "  to  " + dTo + ",  " + rType + " Room");
             }
-            jListSearchCustomerBookingsHistory.setModel(writeList);
+            jListSearchCustomerBookingsHistory.setModel(writeList1);
         }
     }//GEN-LAST:event_jButtonShowSelectedCustomerDetailsActionPerformed
 
@@ -6472,22 +6460,18 @@ public class CasablancaGUI extends javax.swing.JFrame
         dTo.set((jComboBoxBookingEndYear.getSelectedIndex()+2014), jComboBoxBookingEndMonth.getSelectedIndex(), (jComboBoxBookingEndDate.getSelectedIndex()+1));
         ArrayList<String> tempRoomsList = new ArrayList<>();
         
-        
         if(dTo.after(dFrom))
         {
             //Searches Database for all rooms of the selected room type.
             int srt = jComboBoxBookingRoomType.getSelectedIndex();
             if (srt == 0)
             {
-                //Get a list of SINGLE rooms
                 tempRoomsList = jdcbselect.getRoomsFromType("Single");
             } else if (srt == 1)
             {
-                //Get a list of DOUBLE rooms
                 tempRoomsList = jdcbselect.getRoomsFromType("Double");
             } else if (srt == 2)
             {
-                //Get a list of FAMILY rooms
                 tempRoomsList = jdcbselect.getRoomsFromType("Family");
             }
         }
@@ -7383,7 +7367,14 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonSearchCustomerReturnToBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerReturnToBookingActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerReturnToBookingActionPerformed
+        String gID = jLabelSearchCustomerGuestID.getText();
+        String firstName = jLabelSearchCustomerFirstName.getText();
+        String lastName = jLabelSearchCustomerFirstName.getText();
+        String country = jLabelSearchCustomerFirstName.getText();
+        String phone = jLabelSearchCustomerFirstName.getText();
+        String email = jLabelSearchCustomerFirstName.getText();
         jDialogSearchCustomer.setVisible(false);
+        jTextFieldBookingGuestID.
     }//GEN-LAST:event_jButtonSearchCustomerReturnToBookingActionPerformed
 
     private void jButtonBookingSearchCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingSearchCustomerActionPerformed
