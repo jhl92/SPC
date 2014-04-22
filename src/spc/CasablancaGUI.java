@@ -34,9 +34,9 @@ public class CasablancaGUI extends javax.swing.JFrame
     private Calendar startDateTemp = Calendar.getInstance();
     private Calendar endDateTemp = Calendar.getInstance();
     private Calendar SearchRoomSpecifiedDate = Calendar.getInstance();
-    private JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
-    private JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
-    private JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
+    JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
+    JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
+    JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
     private DefaultListModel writeList = new DefaultListModel();
     private DefaultListModel writeList1 = new DefaultListModel();
     private DefaultListModel EmptyList = new DefaultListModel();
@@ -1332,7 +1332,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldBookingGuestID.setPreferredSize(new java.awt.Dimension(84, 20));
 
         jButtonBookingCreateID.setText("Create ID");
-        jButtonBookingCreateID.setEnabled(false);
         jButtonBookingCreateID.setPreferredSize(new java.awt.Dimension(84, 20));
         jButtonBookingCreateID.addActionListener(new java.awt.event.ActionListener()
         {
@@ -6157,34 +6156,34 @@ public class CasablancaGUI extends javax.swing.JFrame
                             } else
                             {
                                 searchParameter = 6;
-                                 guestList.addAll(jdcbselect.getInfoFromMail(jTextFieldSearchCustomerEmail.getText()));
+                                guestList.addAll(jdcbselect.getInfoFromMail(jTextFieldSearchCustomerEmail.getText()));
                             }
                         } else
                         {
                             searchParameter = 5;
-                             guestList.addAll(jdcbselect.getInfoFromPhone(jTextFieldSearchCustomerPhoneNumber.getText()));
+                            guestList.addAll(jdcbselect.getInfoFromPhone(jTextFieldSearchCustomerPhoneNumber.getText()));
                         }
                     } else
                     {
                         searchParameter = 4;
-                         guestList.addAll(jdcbselect.getInfoFromCountry(jTextFieldSearchCustomerCountry.getText()));
+                        guestList.addAll(jdcbselect.getInfoFromCountry(jTextFieldSearchCustomerCountry.getText()));
                     }
                 } else
                 {
                     searchParameter = 3;
-                     guestList.addAll(jdcbselect.getInfoFromLastName(jTextFieldSearchCustomerLastName.getText()));
+                    guestList.addAll(jdcbselect.getInfoFromLastName(jTextFieldSearchCustomerLastName.getText()));
                 }
             } else
             {
                 searchParameter = 2;
-                 guestList.addAll(jdcbselect.getInfoFromFirstName(jTextFieldSearchCustomerFirstName.getText()));
+                guestList.addAll(jdcbselect.getInfoFromFirstName(jTextFieldSearchCustomerFirstName.getText()));
             }
         } else
         {
             searchParameter = 1;
             guestList.addAll(jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText()));
         }
-        
+        System.out.println("guestList.size: " + guestList.size());
         //Continues to remove objects that does not match any other entered search parameters
         if(booleanList == true)
         {
@@ -6421,6 +6420,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         boolean IDcreated = false;
         String IDtemp = "";
         ArrayList GuestIDtemp = jdcbselect.checkIdAva();
+        System.out.println("GuestIDtemp.size: " + GuestIDtemp.size());
         while (IDcreated == false)
         {
             String characters = "123456789ABCDEFGHIJKLMNPQRSTUVWXYZ";
