@@ -23,12 +23,13 @@ public class JDBCDeleteQuery
     static final String user = "SEM2_TEST_GR13";
     static final String pass = "SEM2_TEST_GR13";
 
-    public void JDBCDeleteFacBooking (String guestID, String facID, String timeStart)
+    public void JDBCDeleteFacBooking (String guestID, String facID, String timeStart) throws SQLException
     {
         Connection conn = null;
         Statement stmt = null;
         try
         {
+            conn.setAutoCommit(false);
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
@@ -44,12 +45,14 @@ public class JDBCDeleteQuery
             ResultSet rs; 
             rs = stmt.executeQuery("DELETE FROM FACBOOK WHERE GUESTID='"+guestID
                     +"' AND FACID='"+facID+"' AND TIMESTART='"+timeStart+"'");
-           
+            conn.commit();
             rs.close(); 
         } catch (SQLException se) {
             se.printStackTrace();
+            conn.rollback();
         } catch (Exception e) {
             e.printStackTrace();
+            conn.rollback();
         } finally {
             try {
                 if (stmt != null) {
