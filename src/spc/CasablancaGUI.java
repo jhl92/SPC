@@ -1299,7 +1299,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jDialogBooking.setTitle("New Booking");
         jDialogBooking.setAlwaysOnTop(true);
-        jDialogBooking.setMinimumSize(new java.awt.Dimension(410, 488));
+        jDialogBooking.setMinimumSize(new java.awt.Dimension(410, 478));
         jDialogBooking.setResizable(false);
 
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1576,6 +1576,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         });
 
         jLabelBookingRoomNotifier.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabelBookingRoomNotifier.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelBookingRoomNotifier.setText("<html>There are no available rooms of the selected type in the specified period...</html>");
 
         jLabelBookingNumberNights.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -6599,13 +6600,13 @@ public class CasablancaGUI extends javax.swing.JFrame
             jButtonBookingBook.setVisible(false);
         } else
         {
+            jButtonBookingBook.setEnabled(true);
             jLabelBookingRoomNotifier.setText("Found room: " + roomToBeBooked.get(0));
             bookingRoomID = roomToBeBooked.get(0);
             bookingDateFrom = sdf.format(dFrom);
             bookingDateTo = sdf.format(dTo);
             int nights = getNumberOfNights(dFrom, dTo);
             bookingNumberNights = nights + "";
-            jButtonBookingBook.setVisible(true);
         }
     }//GEN-LAST:event_jButtonSearchForAvailableRoomActionPerformed
 
@@ -8571,7 +8572,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldBookingPhoneNumber.setText("");
         jTextFieldBookingEmail.setText("");
         jTextFieldBookingGuestID.setText("");
-        jButtonBookingBook.setVisible(false);
+        jButtonBookingBook.setEnabled(false);
         jComboBoxBookingRoomType.setSelectedIndex(0);
         jComboBoxBookingStartMonth.setSelectedIndex(currentMonth-1);
         jComboBoxBookingStartYear.setSelectedIndex(currentYear-14);
@@ -8614,17 +8615,17 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogBooking.setVisible(true);
         if(checkRoom(roomID, sDate, eDate))
         {
+            jButtonBookingBook.setEnabled(true);
             jLabelBookingRoomNotifier.setText("Found room: " + roomID);
             bookingRoomID = roomID;
             bookingDateFrom = sdf.format(sDate);
             bookingDateTo = sdf.format(eDate);
             int nights = getNumberOfNights(sDate, eDate);
             bookingNumberNights = nights + "";
-            jButtonBookingBook.setVisible(true);
         } else
         {
             jLabelBookingRoomNotifier.setText("Room " + roomID + "<html> is not available in the specified period...</html>");
-            jButtonBookingBook.setVisible(false);
+            jButtonBookingBook.setEnabled(false);
         }
     }
     
