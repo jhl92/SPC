@@ -1685,6 +1685,8 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelCheckInNoChange1.setText("Check-ins on the specified date:");
 
+        jScrollPane3.setPreferredSize(new java.awt.Dimension(350, 350));
+
         jListCheckIn.setModel(new javax.swing.AbstractListModel()
         {
             String[] strings = { "54D7G     Gjøe, Janus Kayser     40942510     ZarkovZZZ@Hotmail.com", "786LK     Borg, Jonas     12345678     Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com" };
@@ -1703,7 +1705,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(10, 10, 10)
                 .addGroup(jPanelCheckInListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelCheckInNoChange1)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
         jPanelCheckInListLayout.setVerticalGroup(
@@ -1712,7 +1714,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(10, 10, 10)
                 .addComponent(jLabelCheckInNoChange1)
                 .addGap(0, 0, 0)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
 
@@ -1748,12 +1750,33 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButtonCheckInPrint.setText("Print Next Days Check-In");
         jButtonCheckInPrint.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckInPrint.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckInPrintActionPerformed(evt);
+            }
+        });
 
         jButtonCheckInCheckIn.setText("Check-In Selected Customer");
         jButtonCheckInCheckIn.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckInCheckIn.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckInCheckInActionPerformed(evt);
+            }
+        });
 
         jButtonCheckInSearchCustomer.setText("Search Customer");
         jButtonCheckInSearchCustomer.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckInSearchCustomer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckInSearchCustomerActionPerformed(evt);
+            }
+        });
 
         jButtonCheckInExit.setText("Exit");
         jButtonCheckInExit.setPreferredSize(new java.awt.Dimension(178, 35));
@@ -1865,6 +1888,8 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelCheckOutNoChange1.setText("Check-outs on the specified date:");
 
+        jScrollPane5.setPreferredSize(new java.awt.Dimension(350, 350));
+
         jListCheckOut.setModel(new javax.swing.AbstractListModel()
         {
             String[] strings = { "54D7G     Gjøe, Janus Kayser     40942510     ZarkovZZZ@Hotmail.com", "786LK     Borg, Jonas     12345678     Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK, Borg, Jonas, 12345678, Email@Email.dk", "W51Q5, Pedersen, Michael, 555-8791, Email@Email.com", "54D7G - Gjøe - Janus Kayser - 40942510 - ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5 - Pedersen, Michael - 555-8791 - Email@Email.com" };
@@ -1883,8 +1908,8 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(10, 10, 10)
                 .addGroup(jPanelCheckOutListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelCheckOutNoChange1)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10))
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         jPanelCheckOutListLayout.setVerticalGroup(
             jPanelCheckOutListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1892,7 +1917,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(10, 10, 10)
                 .addComponent(jLabelCheckOutNoChange1)
                 .addGap(0, 0, 0)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
 
@@ -1928,16 +1953,44 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jButtonCheckOutPrint.setText("Print Daily Check-In/Out");
         jButtonCheckOutPrint.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckOutPrint.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckOutPrintActionPerformed(evt);
+            }
+        });
 
         jButtonCheckOutCheckOut.setText("Check-Out Selected Customer");
         jButtonCheckOutCheckOut.setMargin(new java.awt.Insets(2, 10, 2, 10));
         jButtonCheckOutCheckOut.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckOutCheckOut.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckOutCheckOutActionPerformed(evt);
+            }
+        });
 
         jButtonCheckOutSearchCustomer.setText("Search Customer");
         jButtonCheckOutSearchCustomer.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckOutSearchCustomer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckOutSearchCustomerActionPerformed(evt);
+            }
+        });
 
         jButtonCheckOutShowAllCustomers.setText("Early Check-Out");
         jButtonCheckOutShowAllCustomers.setPreferredSize(new java.awt.Dimension(178, 35));
+        jButtonCheckOutShowAllCustomers.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckOutShowAllCustomersActionPerformed(evt);
+            }
+        });
 
         jButtonCheckOutExit.setText("Exit");
         jButtonCheckOutExit.setPreferredSize(new java.awt.Dimension(178, 35));
@@ -1950,6 +2003,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         });
 
         jButtonCheckOutLoad.setText("Find Check-Outs");
+        jButtonCheckOutLoad.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonCheckOutLoadActionPerformed(evt);
+            }
+        });
 
         jLabelCheckOutNotifier.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelCheckOutNotifier.setText("Customer checked out...");
@@ -7636,6 +7696,47 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxSearchEndDate.setEnabled(true);
         jComboBoxSearchEndYear.setEnabled(true);
     }//GEN-LAST:event_jRadioButtonSearchRoom0ActionPerformed
+
+    private void jButtonCheckInSearchCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInSearchCustomerActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckInSearchCustomerActionPerformed
+        jDialogCheckIn.setVisible(false);
+        setupDialogSearchCustomer(false);
+    }//GEN-LAST:event_jButtonCheckInSearchCustomerActionPerformed
+
+    private void jButtonCheckInPrintActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInPrintActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckInPrintActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckInPrintActionPerformed
+
+    private void jButtonCheckInCheckInActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInCheckInActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckInCheckInActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckInCheckInActionPerformed
+
+    private void jButtonCheckOutCheckOutActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutCheckOutActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckOutCheckOutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckOutCheckOutActionPerformed
+
+    private void jButtonCheckOutLoadActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutLoadActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckOutLoadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckOutLoadActionPerformed
+
+    private void jButtonCheckOutShowAllCustomersActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutShowAllCustomersActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckOutShowAllCustomersActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckOutShowAllCustomersActionPerformed
+
+    private void jButtonCheckOutPrintActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutPrintActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckOutPrintActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckOutPrintActionPerformed
+
+    private void jButtonCheckOutSearchCustomerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutSearchCustomerActionPerformed
+    {//GEN-HEADEREND:event_jButtonCheckOutSearchCustomerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckOutSearchCustomerActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
@@ -7678,7 +7779,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         SimpleDateFormat getM = new SimpleDateFormat("M");
         SimpleDateFormat getY = new SimpleDateFormat("yy");
         int dayOut = (Integer.parseInt(getD.format(dateIn.getTime()))-1);
-        int monthOut = (Integer.parseInt(getM.format(dateIn.getTime())));
+        int monthOut = (Integer.parseInt(getM.format(dateIn.getTime()))-1);
         int yearOut = (Integer.parseInt(getY.format(dateIn.getTime()))-14);
         DateVar dateOut = new DateVar(yearOut, monthOut, dayOut);
         return dateOut;
@@ -8593,6 +8694,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     {
         setCurrentDate();
         jListCheckIn.setModel(EmptyList);
+        jLabelCheckInNotifier.setText("");
+        jComboBoxCheckInMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxCheckInYear.setSelectedIndex(currentYear-14);
+        jComboBoxCheckInDate.setSelectedIndex(currentDate-1);
         jDialogCheckIn.setVisible(true);
     }
     
@@ -8600,6 +8705,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     {
         setCurrentDate();
         jListCheckOut.setModel(EmptyList);
+        jLabelCheckOutNotifier.setText("");
+        jComboBoxCheckOutMonth.setSelectedIndex(currentMonth-1);
+        jComboBoxCheckOutYear.setSelectedIndex(currentYear-14);
+        jComboBoxCheckOutDate.setSelectedIndex(currentDate-1);
         jDialogCheckOut.setVisible(true);
     }
     
