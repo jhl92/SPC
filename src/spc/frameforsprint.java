@@ -4,6 +4,10 @@
  */
 package spc;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Jonas
@@ -11,10 +15,10 @@ package spc;
 public class frameforsprint extends javax.swing.JFrame
 {
 
-    JDBCInsertQuery insert = new JDBCInsertQuery();
-    JDBCSelectQuery select = new JDBCSelectQuery();
+//    JDBCInsertQuery insert = new JDBCInsertQuery();
+//    JDBCSelectQuery select = new JDBCSelectQuery();
     JDBCDeleteQuery delete = new JDBCDeleteQuery();
-    JDBCUpdateQuery update = new JDBCUpdateQuery();
+//    JDBCUpdateQuery update = new JDBCUpdateQuery();
     private InfoObjectConstructor info2;
     
     public frameforsprint()
@@ -63,6 +67,7 @@ public class frameforsprint extends javax.swing.JFrame
         jTextFieldReturningGuest = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jButtonSearch = new javax.swing.JButton();
         jTextFieldSearchLastName = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
@@ -181,6 +186,15 @@ public class frameforsprint extends javax.swing.JFrame
             }
         });
 
+        jButton3.setText("delete");
+        jButton3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -226,7 +240,10 @@ public class frameforsprint extends javax.swing.JFrame
                         .addComponent(jButton1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton2)))
+                        .addComponent(jButton2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -266,7 +283,9 @@ public class frameforsprint extends javax.swing.JFrame
                 .addComponent(jButton1)
                 .addGap(153, 153, 153)
                 .addComponent(jButton2)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                .addComponent(jButton3)
+                .addGap(93, 93, 93))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 0, -1, 724));
@@ -294,7 +313,7 @@ public class frameforsprint extends javax.swing.JFrame
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 84, -1));
 
         DELETEGUEST.setText("guestID");
-        getContentPane().add(DELETEGUEST, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
+        getContentPane().add(DELETEGUEST, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 570, -1, -1));
 
         DELETEFACID.setText("FAC");
         DELETEFACID.addActionListener(new java.awt.event.ActionListener()
@@ -304,7 +323,7 @@ public class frameforsprint extends javax.swing.JFrame
                 DELETEFACIDActionPerformed(evt);
             }
         });
-        getContentPane().add(DELETEFACID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
+        getContentPane().add(DELETEFACID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 600, -1, -1));
 
         DELETETIMESTART.setText("FACDATE");
         getContentPane().add(DELETETIMESTART, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
@@ -317,7 +336,7 @@ public class frameforsprint extends javax.swing.JFrame
                 FACTIMESTARTActionPerformed(evt);
             }
         });
-        getContentPane().add(FACTIMESTART, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
+        getContentPane().add(FACTIMESTART, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 630, -1, -1));
 
         FACTIMEEND.setText("TIMEEND");
         FACTIMEEND.addActionListener(new java.awt.event.ActionListener()
@@ -350,12 +369,7 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButtonBookITActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookITActionPerformed
     {//GEN-HEADEREND:event_jButtonBookITActionPerformed
-        insert.JDBCInsertRoom(jTextFieldGuestID.getText(), jTextFieldRoomID.getText(),
-                jTextFieldEmpID.getText(), jTextFieldDateFrom.getText(), jTextFieldnoofights.getText(),
-                jTextFieldDateTo.getText(), "N", jTextFieldFirstName.getText(), 
-                jTextFieldLastName.getText(), jTextFieldCountry.getText(), 
-                jTextFieldPhone.getText(), jTextFieldMail.getText(), 
-                jTextFieldReturningGuest.getText());
+      
     }//GEN-LAST:event_jButtonBookITActionPerformed
 
     private void jTextFieldLastNameActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextFieldLastNameActionPerformed
@@ -370,7 +384,7 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
-        select.printWriter(jTextField1.getText());
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField1ActionPerformed
@@ -393,7 +407,7 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        select.printBill("12345");
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void DELETEFACIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_DELETEFACIDActionPerformed
@@ -405,6 +419,11 @@ public class frameforsprint extends javax.swing.JFrame
     {//GEN-HEADEREND:event_FACTIMESTARTActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_FACTIMESTARTActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton3ActionPerformed
+    {//GEN-HEADEREND:event_jButton3ActionPerformed
+        delete.JDBCDeleteFacBooking("12345","01", "10.00");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
 
     public static void main(String args[])
@@ -455,6 +474,7 @@ public class frameforsprint extends javax.swing.JFrame
     private javax.swing.JTextField INSID;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonBookIT;
     private javax.swing.JButton jButtonSearch;
     private javax.swing.JLabel jLabel1;
