@@ -207,10 +207,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jDialogFacilityHelp = new javax.swing.JDialog();
         jPanelFacilityHelp = new javax.swing.JPanel();
-        jLabel96 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
         jDialogOverviewHelp = new javax.swing.JDialog();
         jPanelOverviewHelp = new javax.swing.JPanel();
         jLabel92 = new javax.swing.JLabel();
@@ -232,6 +234,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel104 = new javax.swing.JLabel();
         jButtonOverviewDeleteYes1 = new javax.swing.JButton();
         jButtonOverviewDeleteNo1 = new javax.swing.JButton();
+        jDialogFacilityInstrucHelp = new javax.swing.JDialog();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel115 = new javax.swing.JLabel();
+        jLabel117 = new javax.swing.JLabel();
+        jLabel118 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5Overview = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
@@ -295,6 +304,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel108 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jLabelGolfInstructorPrice = new javax.swing.JLabel();
+        jButtonGolfHelp = new javax.swing.JButton();
         jPanel1Handball = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
@@ -398,6 +408,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxSwimmingInstructorTimeTo = new javax.swing.JComboBox();
         jLabel40 = new javax.swing.JLabel();
         jButtonBookSwimming = new javax.swing.JButton();
+        jButtonSwimmingHelp = new javax.swing.JButton();
         jLabelSwimmingErrorMessageNoHours = new javax.swing.JLabel();
         jLabelSwimmingErrorMessageBook = new javax.swing.JLabel();
         jPanel2Fitness = new javax.swing.JPanel();
@@ -424,8 +435,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jPanelFacilityHelp.setMinimumSize(new java.awt.Dimension(400, 140));
 
-        jLabel96.setText("You can book up to 4 facilities, as long as you dont exceed 4 hours per day");
-
         jLabel72.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel72.setText("Help");
 
@@ -433,22 +442,27 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel95.setText("You can book between 1 and 4 hours. (max 4 hours per day)");
 
-        javax.swing.GroupLayout jPanelFacilityHelpLayout = new javax.swing.GroupLayout(jPanelFacilityHelp);
-        jPanelFacilityHelp.setLayout(jPanelFacilityHelpLayout);
-        jPanelFacilityHelpLayout.setHorizontalGroup(
-            jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelFacilityHelpLayout.createSequentialGroup()
+        jLabel96.setText("You can book up to 4 facilities, as long as you do not exceed 4 hours per day");
+
+        jLabel119.setText("The cost of the instructor will be added to your check-out bill");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel95)
                     .addComponent(jLabel72)
                     .addComponent(jLabel93)
-                    .addComponent(jLabel96))
-                .addContainerGap(30, Short.MAX_VALUE))
+                    .addComponent(jLabel96)
+                    .addComponent(jLabel119))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
-        jPanelFacilityHelpLayout.setVerticalGroup(
-            jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelFacilityHelpLayout.createSequentialGroup()
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel72)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -457,7 +471,24 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jLabel95)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel96)
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel119)
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanelFacilityHelpLayout = new javax.swing.GroupLayout(jPanelFacilityHelp);
+        jPanelFacilityHelp.setLayout(jPanelFacilityHelpLayout);
+        jPanelFacilityHelpLayout.setHorizontalGroup(
+            jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFacilityHelpLayout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanelFacilityHelpLayout.setVerticalGroup(
+            jPanelFacilityHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFacilityHelpLayout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jDialogFacilityHelpLayout = new javax.swing.GroupLayout(jDialogFacilityHelp.getContentPane());
@@ -672,6 +703,63 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jDialogFacilityInstrucHelp.setMinimumSize(new java.awt.Dimension(465, 200));
+        jDialogFacilityInstrucHelp.setPreferredSize(new java.awt.Dimension(465, 200));
+
+        jLabel101.setText("Use the scroll-panel to select the date and time you wish to hire an instructor");
+
+        jLabel115.setText("You can book between 1 and 4 hours. (max 4 hours per day)");
+
+        jLabel117.setText("You can book up to 4 hours, as long as you do not exceed 4 hours per day");
+
+        jLabel118.setText("The cost of the instructor will be added to your check-out bill");
+
+        jLabel73.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel73.setText("Help");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel118)
+                    .addComponent(jLabel115)
+                    .addComponent(jLabel117)
+                    .addComponent(jLabel101)
+                    .addComponent(jLabel73))
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel73)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel101)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel117)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel115)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel118)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jDialogFacilityInstrucHelpLayout = new javax.swing.GroupLayout(jDialogFacilityInstrucHelp.getContentPane());
+        jDialogFacilityInstrucHelp.getContentPane().setLayout(jDialogFacilityInstrucHelpLayout);
+        jDialogFacilityInstrucHelpLayout.setHorizontalGroup(
+            jDialogFacilityInstrucHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        jDialogFacilityInstrucHelpLayout.setVerticalGroup(
+            jDialogFacilityInstrucHelpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogFacilityInstrucHelpLayout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 13, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
@@ -766,7 +854,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                     .addComponent(jButtonOverviewDeleteBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButtonOverviewEditBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addContainerGap(194, Short.MAX_VALUE))))
+                        .addContainerGap(518, Short.MAX_VALUE))))
             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                 .addGap(315, 315, 315)
                 .addComponent(jButtonPrintInstrucCost)
@@ -800,7 +888,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jLabel91)
                 .addGap(70, 70, 70)
                 .addComponent(jButtonPrintInstrucCost)
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addContainerGap(404, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Overview", jPanel5Overview);
@@ -1063,11 +1151,21 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelGolfInstructorPrice.setText("*cost*");
         jPanel5.add(jLabelGolfInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, 48, 16));
 
+        jButtonGolfHelp.setText("Help");
+        jButtonGolfHelp.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonGolfHelpActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButtonGolfHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, -1, -1));
+
         javax.swing.GroupLayout jPanel3GolfLayout = new javax.swing.GroupLayout(jPanel3Golf);
         jPanel3Golf.setLayout(jPanel3GolfLayout);
         jPanel3GolfLayout.setHorizontalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 1311, Short.MAX_VALUE)
         );
         jPanel3GolfLayout.setVerticalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1515,21 +1613,29 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jTabbedPane1.addTab("Tennis", jPanel7Tennis);
 
+        jPanel5Swimming.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel22.setText("<html>Due to Marocco's hot climate, we highly recommend that you <br> try our beautiful swimming pool. It is great fun and great <br> excercise which you can do on your own or with other guests. ");
         jLabel22.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel5Swimming.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 115, -1, -1));
 
         jLabel41.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel41.setText("The facilities are available between 8am - 8pm every day");
+        jPanel5Swimming.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 506, -1, -1));
 
         jLabel59.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel59.setText("SWIMMING");
+        jPanel5Swimming.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
         jLabelSwimmingPriceLabel.setText("       ");
+        jPanel5Swimming.add(jLabelSwimmingPriceLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 117, -1, -1));
 
         jLabelSwimmingInstructorPrice.setText("         ");
+        jPanel5Swimming.add(jLabelSwimmingInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(496, 117, -1, -1));
 
         jLabel114.setText("<html>Useful info: <br>There are no player limits for this facility.");
+        jPanel5Swimming.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(832, 294, -1, -1));
 
         jCheckBoxSwimmingInstruct.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1584,6 +1690,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
+        jButtonSwimmingHelp.setText("Help");
+        jButtonSwimmingHelp.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSwimmingHelpActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
@@ -1615,7 +1730,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addComponent(jLabelSwimmingInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBoxSwimmingInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 69, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonSwimmingHelp)
+                        .addGap(0, 12, Short.MAX_VALUE))
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(jLabel40)
@@ -1635,14 +1752,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addComponent(jCheckBoxSwimmingInstruct)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelSwimmingInstructorDateTimeInfo)
-                .addGap(26, 26, 26)
+                .addGap(25, 25, 25)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBoxSwimmingInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBoxSwimmingInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelSwimmingInstructorTimeFrom)
                     .addComponent(jLabelSwimmingInstructorTimeTo)
                     .addComponent(jComboBoxSwimmingInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelSwimmingInstructorDate))
+                    .addComponent(jLabelSwimmingInstructorDate)
+                    .addComponent(jButtonSwimmingHelp))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel40)
@@ -1650,73 +1768,17 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel5Swimming.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 244, -1, -1));
+
         jLabelBadmintonErrorMessageNoHours.setVisible(false);
         jLabelSwimmingErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelSwimmingErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
+        jPanel5Swimming.add(jLabelSwimmingErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 440, 414, -1));
 
         jLabelSwimmingErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabelSwimmingErrorMessageBook.setVisible(false);
         jLabelSwimmingErrorMessageBook.setText("The hours you have selected are not eligible");
-
-        javax.swing.GroupLayout jPanel5SwimmingLayout = new javax.swing.GroupLayout(jPanel5Swimming);
-        jPanel5Swimming.setLayout(jPanel5SwimmingLayout);
-        jPanel5SwimmingLayout.setHorizontalGroup(
-            jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabelSwimmingPriceLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabelSwimmingInstructorPrice))
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addGap(0, 59, Short.MAX_VALUE)
-                        .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabelSwimmingErrorMessageBook, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(131, 131, 131))
-            .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel41)
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel59))
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addGap(299, 299, 299)
-                        .addComponent(jLabelSwimmingErrorMessageNoHours, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel5SwimmingLayout.setVerticalGroup(
-            jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel59)
-                        .addGap(80, 80, 80)
-                        .addGroup(jPanel5SwimmingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelSwimmingPriceLabel)
-                            .addComponent(jLabelSwimmingInstructorPrice)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(jPanel5SwimmingLayout.createSequentialGroup()
-                        .addGap(297, 297, 297)
-                        .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabelSwimmingErrorMessageBook)
-                        .addGap(33, 33, 33)))
-                .addComponent(jLabelSwimmingErrorMessageNoHours)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel41))
-        );
+        jPanel5Swimming.add(jLabelSwimmingErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 390, 290, -1));
 
         jTabbedPane1.addTab("Swimming", jPanel5Swimming);
 
@@ -1810,7 +1872,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel2Fitness.setLayout(jPanel2FitnessLayout);
         jPanel2FitnessLayout.setHorizontalGroup(
             jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelGolf, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
+            .addComponent(jPanelGolf, javax.swing.GroupLayout.DEFAULT_SIZE, 1311, Short.MAX_VALUE)
         );
         jPanel2FitnessLayout.setVerticalGroup(
             jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2294,6 +2356,18 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }else{jLabelGolfErrorMessageNoHours.setVisible(true);}
     }//GEN-LAST:event_jButtonBookSwimmingActionPerformed
 
+    private void jButtonGolfHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonGolfHelpActionPerformed
+    {//GEN-HEADEREND:event_jButtonGolfHelpActionPerformed
+        jDialogFacilityInstrucHelp.setVisible(true);
+        jDialogFacilityInstrucHelp.setLocation(700, 250);
+    }//GEN-LAST:event_jButtonGolfHelpActionPerformed
+
+    private void jButtonSwimmingHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSwimmingHelpActionPerformed
+    {//GEN-HEADEREND:event_jButtonSwimmingHelpActionPerformed
+        jDialogFacilityInstrucHelp.setVisible(true);
+        jDialogFacilityInstrucHelp.setLocation(700, 250);
+    }//GEN-LAST:event_jButtonSwimmingHelpActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2348,6 +2422,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonBookTennis;
     private javax.swing.JButton jButtonBookVolley;
     private javax.swing.JButton jButtonFitnessHelp;
+    private javax.swing.JButton jButtonGolfHelp;
     private javax.swing.JButton jButtonHandBallHelp;
     private javax.swing.JButton jButtonLoadBookings;
     private javax.swing.JButton jButtonOverviewDeleteBooking1;
@@ -2357,6 +2432,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonOverviewEditBookingSaveChanges1;
     private javax.swing.JButton jButtonOverviewHelp;
     private javax.swing.JButton jButtonPrintInstrucCost;
+    private javax.swing.JButton jButtonSwimmingHelp;
     private javax.swing.JButton jButtonTennisHelp;
     private javax.swing.JButton jButtonVolleybalHelp;
     private javax.swing.JCheckBox jCheckBoxBadmintonInstruct;
@@ -2396,12 +2472,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JComboBox jComboBoxVolleyballTimeFrom;
     private javax.swing.JComboBox jComboBoxVolleyballTimeTo;
     private javax.swing.JDialog jDialogFacilityHelp;
+    private javax.swing.JDialog jDialogFacilityInstrucHelp;
     private javax.swing.JDialog jDialogOverviewDelete;
     private javax.swing.JDialog jDialogOverviewEditBooking;
     private javax.swing.JDialog jDialogOverviewHelp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
@@ -2416,7 +2494,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel112;
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel115;
     private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -2473,6 +2555,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
@@ -2528,6 +2611,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelTennisInstructorPrice;
     private javax.swing.JLabel jLabelVolleyballErrorMessageBook;
     private javax.swing.JList jListBookedOverview;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -2536,6 +2620,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanel1Handball;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel2Fitness;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel3Golf;
     private javax.swing.JPanel jPanel4MountainBike;
     private javax.swing.JPanel jPanel5;
