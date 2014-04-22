@@ -20,7 +20,7 @@ public class JDBCInsertQuery
     public void JDBCInsertRoom(String guestID, String roomID, String empID,
             String dateFrom, String noOfNights, String dateTo, String roomAvailability,
             String guestFirstName, String guestLastName, String gCountry,
-            String gPhone, String gMail, String returnGuest)
+            String gPhone, String gMail, String returnGuest) throws SQLException
     {
         Connection conn = null;
         Statement stmt = null;
@@ -34,6 +34,9 @@ public class JDBCInsertQuery
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
 
+            //Sætter autoCommint til false
+            conn.setAutoCommit(false);
+            
             //Query
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
@@ -47,17 +50,19 @@ public class JDBCInsertQuery
                     +noOfNights+"','"+ dateTo + "','" + roomAvailability + "')";
             
             stmt.executeUpdate(sql);
-
+            conn.commit();
             System.out.println("Inserted records into the table...");
 
         } catch (SQLException se)
         {
             //Håndterer JDBC relaterede fejl
             se.printStackTrace();
+            conn.rollback();
         } catch (Exception e)
         {
             //Håndterer Class relaterede fejl
             e.printStackTrace();
+            conn.rollback();
         } finally
         {
             //Luk forbindelsen
@@ -85,7 +90,7 @@ public class JDBCInsertQuery
     }
 
     public void JDBCInsertFacility(String guestID, String facID, String facDate, 
-            String timeStart, String timeEnd, String insID, String participants)
+            String timeStart, String timeEnd, String insID, String participants) throws SQLException
     {
         Connection conn = null;
         Statement stmt = null;
@@ -99,6 +104,9 @@ public class JDBCInsertQuery
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
 
+            //Sætter autoCommint til false
+            conn.setAutoCommit(false);
+            
             //Query
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
@@ -109,14 +117,17 @@ public class JDBCInsertQuery
 //            stmt.executeUpdate(sql);
             System.out.println("Inserted records into the table...");
 
+            conn.commit();
         } catch (SQLException se)
         {
             //Håndterer JDBC relaterede fejl
             se.printStackTrace();
+            conn.rollback();
         } catch (Exception e)
         {
             //Håndterer Class relaterede fejl
             e.printStackTrace();
+            conn.rollback();
         } finally
         {
             //Luk forbindelsen
@@ -143,7 +154,7 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
     
-    public void JDBCInsertInstructorCost(String guestID, String noOfHours, int facID) {
+    public void JDBCInsertInstructorCost(String guestID, String noOfHours, int facID) throws SQLException {
         Connection conn = null;
         Statement stmt = null;
         String sql = "";
@@ -159,6 +170,9 @@ public class JDBCInsertQuery
             System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
+            
+            //Sætter autoCommint til false
+            conn.setAutoCommit(false);
             
             //Query
             System.out.println("Inserting records into the table...");
@@ -191,15 +205,17 @@ public class JDBCInsertQuery
                 break;
             }
             System.out.println("Inserted records into the table...");
-
+            conn.commit();
         } catch (SQLException se)
         {
             //Håndterer JDBC relaterede fejl
             se.printStackTrace();
+            conn.rollback();
         } catch (Exception e)
         {
             //Håndterer Class relaterede fejl
             e.printStackTrace();
+            conn.rollback();
         } finally
         {
             //Luk forbindelsen
