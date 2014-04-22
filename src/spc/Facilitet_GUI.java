@@ -2165,8 +2165,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private void jButtonOverviewDeleteYes1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewDeleteYes1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewDeleteYes1ActionPerformed
         int a = jListBookedOverview.getSelectedIndex();
-        delete.JDBCDeleteFacBooking("12345", tempBookOverview.get(a).getFacID(), 
-        tempBookOverview.get(a).getTimeStart());
+        //delete.JDBCDeleteFacBooking(tempBookOverview.get(a).getGuestID(), tempBookOverview.get(a).getFacID(), tempBookOverview.get(a).getTimeStart());
         jDialogOverviewDelete.setVisible(false);
         loadListOverview();
     }//GEN-LAST:event_jButtonOverviewDeleteYes1ActionPerformed
