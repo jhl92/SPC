@@ -13,6 +13,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.Random;
@@ -6603,10 +6604,13 @@ public class CasablancaGUI extends javax.swing.JFrame
             jButtonBookingBook.setEnabled(true);
             jLabelBookingRoomNotifier.setText("Found room: " + roomToBeBooked.get(0));
             bookingRoomID = roomToBeBooked.get(0);
-            bookingDateFrom = sdf.format(dFrom);
-            bookingDateTo = sdf.format(dTo);
+            Date df = dFrom.getTime();
+            Date dt = dTo.getTime();
+            bookingDateFrom = sdf.format(df);
+            bookingDateTo = sdf.format(dt);
             int nights = getNumberOfNights(dFrom, dTo);
-            bookingNumberNights = nights + "";
+            bookingNumberNights = "" + nights;
+            System.out.println(bookingNumberNights);
         }
     }//GEN-LAST:event_jButtonSearchForAvailableRoomActionPerformed
 
@@ -8621,7 +8625,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             bookingDateFrom = sdf.format(sDate);
             bookingDateTo = sdf.format(eDate);
             int nights = getNumberOfNights(sDate, eDate);
-            bookingNumberNights = nights + "";
+            bookingNumberNights = "" + nights;
         } else
         {
             jLabelBookingRoomNotifier.setText("Room " + roomID + "<html> is not available in the specified period...</html>");
