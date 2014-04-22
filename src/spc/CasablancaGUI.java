@@ -8,6 +8,7 @@ package spc;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -6348,8 +6349,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             returnGuest = "N";
         }
-        
-        jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), bookingRoomID, "E05", bookingDateFrom, bookingNumberNights, bookingDateTo, "RoomAvailability", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText(), returnGuest);
+        try
+        {
+            jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), bookingRoomID, "E05", bookingDateFrom, bookingNumberNights, bookingDateTo, "RoomAvailability", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText(), returnGuest);
+        } catch (SQLException ex)
+        {
+            Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
         setupDialogBooking();
         jLabelBookingRoomNotifier.setText("Room has been booked...");
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
