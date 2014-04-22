@@ -2177,10 +2177,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonOverviewEditBookingSaveChanges1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
-//        int a = jListBookedOverview.getSelectedIndex();
-//        update.updateFacBook("12345", jComboBoxOverviewEditBookingDate1.getSelectedIndex(), 
-//        (jComboBoxOverviewEditBookingTimeFrom1.getSelectedIndex()+8)+"", (jComboBoxOverviewEditBookingTimeFrom1.getSelectedIndex()+9)+"",
-//        tempBookOverview.get(a).getTimeStart(), tempBookOverview.get(a).getTimeEnd());
+        int a = jListBookedOverview.getSelectedIndex();
+        update.updateFacBook("12345", jComboBoxOverviewEditBookingDate1.getSelectedItem().toString(), 
+        (jComboBoxOverviewEditBookingTimeFrom1.getSelectedIndex()+8)+"", (jComboBoxOverviewEditBookingTimeFrom1.getSelectedIndex()+9)+"",
+        tempBookOverview.get(a).getTimeStart(), tempBookOverview.get(a).getTimeEnd());
     }//GEN-LAST:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
 
     private void jComboBoxOverviewEditBookingTimeFrom1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxOverviewEditBookingTimeFrom1ActionPerformed
