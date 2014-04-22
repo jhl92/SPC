@@ -841,6 +841,52 @@ public class JDBCSelectQuery
     RoomTypeIDConstructor getRoomInfoFromRoomID(String roomID)
     {
         //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
-        return null;
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<RoomTypeIDConstructor> roomInfo = new ArrayList<>();
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+ 
+            rs = stmt.executeQuery("SELECT ROOMS.ROOMID, ROOMS.ROOMTYPE, " +
+                    "ROOMS.ROOMPRICE, BOOKROOM.DATEFROM, BOOKROOM.DATETO" +
+                    " FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = '"+roomID+"'");
+           
+            while (rs.next()) {
+                String rsRoomID = rs.getString("RoomID");
+                String rsRoomType = rs.getString("RoomType");
+                String rsDateFrom = rs.getString("dateFrom");
+                String rsNoOfNights = rs.getString("noOfNights");
+                String rsDateTo = rs.getString("dateTo");
+                RoomAvaBookConstructor avaRoom = new RoomAvaBookConstructor(rsDateFrom,
+                        rsNoOfNights, rsDateTo, rsRoomID, rsRoomType);
+                RoomAvailability.add(avaRoom);
+            }
+            return RoomAvailability;
+        } catch (SQLException se)
+        { se.printStackTrace(); } 
+        catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) {
+                    conn.close();}
+            } catch (SQLException se){}
+            try { if (conn != null) {
+                    conn.close(); }
+            } catch (SQLException se) {
+                se.printStackTrace(); }
+        } System.out.println("Done.");
+            return null;
     }
 }
