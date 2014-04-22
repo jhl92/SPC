@@ -12,11 +12,17 @@ package spc;
  */
 public class RoomTypeIDConstructor
 {
-    private String roomID, roomType;
-    public RoomTypeIDConstructor(String roomID, String roomType)
+    private String roomID, roomType, roomPrice;
+    public RoomTypeIDConstructor(String roomID, String roomType, String roomPrice)
     {
         this.roomID = roomID;
         this.roomType = roomType;
+        this.roomPrice = roomPrice;
+    }
+
+    public String getRoomPrice()
+    {
+        return roomPrice;
     }
 
     public String getRoomID()
