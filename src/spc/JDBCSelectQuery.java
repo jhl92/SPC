@@ -1047,7 +1047,7 @@ public class JDBCSelectQuery
         //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
         Connection conn = null;
         Statement stmt = null;
-    RoomTypeIDConstructor rtidc;
+        RoomTypeIDConstructor rtidc = new RoomTypeIDConstructor("", "", "");
         try
         {
             //Registrer JDBC driver
@@ -1070,8 +1070,7 @@ public class JDBCSelectQuery
                 String rsRoomType = rs.getString("RoomType");
                 String rsRoomPrice = rs.getString("RoomPrice");
                 rtidc = new RoomTypeIDConstructor(rsRoomID, rsRoomType, rsRoomPrice);
-                        }
-
+            }
             return rtidc;
         } catch (SQLException se)
         {
