@@ -6120,7 +6120,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         boolean booleanList = true;
         int searchParameter = 0;
         String scGuestID = jTextFieldSearchCustomerGuestID.getText().toLowerCase();
-        String scFirstName = jTextFieldSearchCustomerFirstName.getText().toLowerCase();
+        String scFirstName = jTextFieldSearchCustomerFirstName.getText();
         String scLastName = jTextFieldSearchCustomerLastName.getText().toLowerCase();
         String scCountry = jTextFieldSearchCustomerCountry.getText().toLowerCase();
         String scPhone = jTextFieldSearchCustomerPhoneNumber.getText().toLowerCase();
@@ -6176,7 +6176,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             } else
             {
                 searchParameter = 2;
-                guestList.addAll(jdcbselect.getInfoFromFirstName(jTextFieldSearchCustomerFirstName.getText()));
+                guestList = (jdcbselect.getInfoFromFirstName(jTextFieldSearchCustomerFirstName.getText()));
             }
         } else
         {
