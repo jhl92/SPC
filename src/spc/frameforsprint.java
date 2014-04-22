@@ -422,7 +422,13 @@ public class frameforsprint extends javax.swing.JFrame
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton3ActionPerformed
     {//GEN-HEADEREND:event_jButton3ActionPerformed
-        delete.JDBCDeleteFacBooking("12345","01", "10.00");
+        try
+        {
+            delete.JDBCDeleteFacBooking("12345","01", "08.00");
+        } catch (SQLException ex)
+        {
+            Logger.getLogger(frameforsprint.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
 

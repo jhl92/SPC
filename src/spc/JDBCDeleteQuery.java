@@ -29,7 +29,6 @@ public class JDBCDeleteQuery
         Statement stmt = null;
         try
         {
-            conn.setAutoCommit(false);
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
@@ -38,6 +37,9 @@ public class JDBCDeleteQuery
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
 
+            //Sætter autoCommint til false
+            conn.setAutoCommit(false);
+            
             //Query
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
@@ -71,7 +73,7 @@ public class JDBCDeleteQuery
         System.out.println("Done.");
     }
     
-    public void JDBCDeleteRoomBooking (String guestID)
+    public void JDBCDeleteRoomBooking (String guestID) throws SQLException
     {
         Connection conn = null;
         Statement stmt = null;
@@ -85,6 +87,9 @@ public class JDBCDeleteQuery
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Connected database successfully...");
 
+            //Sætter autoCommint til false
+            conn.setAutoCommit(false);
+            
             //Query
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
@@ -92,11 +97,14 @@ public class JDBCDeleteQuery
             ResultSet rs; 
             rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID='"+guestID+"'");
            
+            conn.commit();
             rs.close(); 
         } catch (SQLException se) {
             se.printStackTrace();
+            conn.rollback();
         } catch (Exception e) {
             e.printStackTrace();
+            conn.rollback();
         } finally {
             try {
                 if (stmt != null) {
