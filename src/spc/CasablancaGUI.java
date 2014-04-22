@@ -45,6 +45,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private ArrayList<String> showRoomsList = new ArrayList<>();
     private ArrayList<InfoObjectConstructor> guestList = new ArrayList<>();
     private ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
+    private ArrayList<RoomTypeIDConstructor> roomListInfo = new ArrayList<>();
     private boolean SearchCustomerResult = false;
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
@@ -6793,7 +6794,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         if (jRadioButtonSearchRoom0.isSelected())
         {
             //Searches for all rooms
-            roomsListResult.addAll(roomsList);
+            roomsListResult = roomsList;
         } else if (jRadioButtonSearchRoom1.isSelected())
         {
             //Searches and finds all rooms of specified type, that is available from specified start-date to specified end-date
@@ -6816,24 +6817,36 @@ public class CasablancaGUI extends javax.swing.JFrame
         } else if (jRadioButtonSearchRoom3.isSelected())
         {
             //Searches Database for all rooms of selected type, that have check-out on the specified start-date.
-            //List of results is copied to ArrayList roomList and lastly printed in "jListSearchRoomResult"
+            String ed = sdf.format(startDate);
+            for(int i = 0; i<roomsList.size(); i++)
+            {
+                tempList = jdcbselect.getCheckAvaRoom(roomsList.get(i));
+                for(int j = 0; j<tempList.size(); j++)
+                {
+                    if(tempList.get(j).getDateTo().equals(ed));
+                    {
+                        roomsListResult.add(tempList.get(j).getRoomID());
+                    }
+                }
+            }
         }
-            
-            for (int j = 0; j < roomsListResult.size(); j++)
-            {
-                String rID = roomsListResult.get(j);
-                ArrayList<RoomAvaBookConstructor> listTemp = jdcbselect.getCheckAvaRoom(rID);
-                roomList.add(listTemp.get(0));
-            }
-            
-            //
-            for (int i = 0; i < roomList.size(); i++)
-            {
-                String rID = roomList.get(i).getRoomID();
-                String rType = roomList.get(i).getRoomType();
-                writeList.addElement("Room  " + rID + "  -  " + rType);
-            }
-            jLabelSearchRoomResultNotifier.setText(roomList.size() + " rooms found...");
+        
+        //Gets the corresponding RoomType of all rooms in list
+        for (int j = 0; j < roomsListResult.size(); j++)
+        {
+            String rID = roomsListResult.get(j);
+            RoomTypeIDConstructor listTemp = jdcbselect.getRoomInfoFromRoomID(rID);
+            roomListInfo.add(listTemp);
+        }
+        
+        //Copies list to defaultlist which is then printed in GUI
+        for (int i = 0; i < roomListInfo.size(); i++)
+        {
+            String rID = roomListInfo.get(i).getRoomID();
+            String rType = roomListInfo.get(i).getRoomType();
+            writeList.addElement("Room  " + rID + "  -  " + rType);
+        }
+        jLabelSearchRoomResultNotifier.setText(roomListInfo.size() + " rooms found");
     }//GEN-LAST:event_jButtonRoomSearchActionPerformed
 
     private void jComboBoxSearchEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchEndYearActionPerformed
@@ -6884,7 +6897,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSearchRoomBookRoomActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomBookRoomActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchRoomBookRoomActionPerformed
         int book = jListSearchRoomResult.getSelectedIndex();
-        String rID = roomList.get(book).getRoomID();
+        String rID = roomListInfo.get(book).getRoomID();
         jDialogSearchRoom.setVisible(false);
         setupDialogBookingWithRoom(rID, startDate, endDate);
     }//GEN-LAST:event_jButtonSearchRoomBookRoomActionPerformed
@@ -7819,30 +7832,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     }
     
     //Gets a list of rooms and checks the availability of each room one by one, using the "checkRoom" method.
-    private ArrayList<String> checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate)
-    {
-        int a = 0;
-        while(a<listOfRooms.size())
-        {
-            String rID = listOfRooms.get(a);
-            if(checkRoom(rID, sDate, eDate)==true)
-            {
-                a++;
-            } else
-            {
-                listOfRooms.remove(a);
-            }
-        }
-        if(listOfRooms.size()>0)
-        {
-            return listOfRooms;
-        } else
-        {
-            return null;
-        }
-    }
-    
-    //Gets a list of rooms of a specific type and returns the first
     private ArrayList<String> checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate)
     {
         int a = 0;
@@ -8812,40 +8801,63 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
     {
         setCurrentDate();
-        if(!listShowRooms.get(0).equals(""))
+        int listSize = listShowRooms.size();
+        if (listSize > 7)
         {
-            overviewCellRoom1 = listShowRooms.get(0);
+            if (!listShowRooms.get(7).equals(""))
+            {
+                overviewCellRoom8 = listShowRooms.get(7);
+            }
         }
-        if(!listShowRooms.get(1).equals(""))
+        if (listSize > 6)
         {
-            overviewCellRoom2 = listShowRooms.get(1);
+            if (!listShowRooms.get(6).equals(""))
+            {
+                overviewCellRoom7 = listShowRooms.get(6);
+            }
         }
-        if(!listShowRooms.get(2).equals(""))
+        if (listSize > 5)
         {
-            overviewCellRoom3 = listShowRooms.get(2);
+            if (!listShowRooms.get(5).equals(""))
+            {
+                overviewCellRoom6 = listShowRooms.get(5);
+            }
         }
-        if(!listShowRooms.get(3).equals(""))
+        if (listSize > 4)
         {
-            overviewCellRoom4 = listShowRooms.get(3);
+            if (!listShowRooms.get(4).equals(""))
+            {
+                overviewCellRoom5 = listShowRooms.get(4);
+            }
         }
-        if(!listShowRooms.get(4).equals(""))
+        if (listSize > 3)
         {
-            overviewCellRoom5 = listShowRooms.get(4);
+            if (!listShowRooms.get(3).equals(""))
+            {
+                overviewCellRoom4 = listShowRooms.get(3);
+            }
         }
-        if(!listShowRooms.get(5).equals(""))
+        if (listSize > 2)
         {
-            overviewCellRoom6 = listShowRooms.get(5);
+            if (!listShowRooms.get(2).equals(""))
+            {
+                overviewCellRoom3 = listShowRooms.get(2);
+            }
         }
-        if(!listShowRooms.get(6).equals(""))
+        if (listSize > 1)
         {
-            overviewCellRoom7 = listShowRooms.get(6);
+            if (!listShowRooms.get(1).equals(""))
+            {
+                overviewCellRoom2 = listShowRooms.get(1);
+            }
         }
-        if(!listShowRooms.get(7).equals(""))
+        if (listSize > 0)
         {
-            overviewCellRoom8 = listShowRooms.get(7);
+            if (!listShowRooms.get(0).equals(""))
+            {
+                overviewCellRoom1 = listShowRooms.get(0);
+            }
         }
-        
-        
     }
     
     private void resetMainScreen(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8)
@@ -8963,28 +8975,28 @@ public class CasablancaGUI extends javax.swing.JFrame
             switch (roomRow)
             {
                 case 1:
-                    fillRoom1Cells(100, null, null, null);
+                    fillRoom1Cells(100, "", "", null);
                     break;
                 case 2:
-                    fillRoom2Cells(200, null, null, null);
+                    fillRoom2Cells(200, "", "", null);
                     break;
                 case 3:
-                    fillRoom3Cells(300, null, null, null);
+                    fillRoom3Cells(300, "", "", null);
                     break;
                 case 4:
-                    fillRoom4Cells(400, null, null, null);
+                    fillRoom4Cells(400, "", "", null);
                     break;
                 case 5:
-                    fillRoom5Cells(500, null, null, null);
+                    fillRoom5Cells(500, "", "", null);
                     break;
                 case 6:
-                    fillRoom6Cells(600, null, null, null);
+                    fillRoom6Cells(600, "", "", null);
                     break;
                 case 7:
-                    fillRoom7Cells(700, null, null, null);
+                    fillRoom7Cells(700, "", "", null);
                     break;
                 case 8:
-                    fillRoom8Cells(800, null, null, null);
+                    fillRoom8Cells(800, "", "", null);
                     break;
             }
             for (int a = 0; a < 14; a++)
@@ -9020,33 +9032,33 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         } else
         {
-            ArrayList<RoomAvaBookConstructor> rList = new ArrayList<>();
-            rList.addAll(jdcbselect.getCheckAvaRoom(roomID));
+            RoomTypeIDConstructor rList;
+            rList = jdcbselect.getRoomInfoFromRoomID(roomID);
             switch (roomRow)
             {
                 case 1:
-                    fillRoom1Cells(100, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom1Cells(100, roomID, rList.getRoomType(), null);
                     break;
                 case 2:
-                    fillRoom2Cells(200, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom2Cells(200, roomID, rList.getRoomType(), null);
                     break;
                 case 3:
-                    fillRoom3Cells(300, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom3Cells(300, roomID, rList.getRoomType(), null);
                     break;
                 case 4:
-                    fillRoom4Cells(400, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom4Cells(400, roomID, rList.getRoomType(), null);
                     break;
                 case 5:
-                    fillRoom5Cells(500, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom5Cells(500, roomID, rList.getRoomType(), null);
                     break;
                 case 6:
-                    fillRoom6Cells(600, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom6Cells(600, roomID, rList.getRoomType(), null);
                     break;
                 case 7:
-                    fillRoom7Cells(700, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom7Cells(700, roomID, rList.getRoomType(), null);
                     break;
                 case 8:
-                    fillRoom8Cells(800, roomID, rList.get(0).getRoomType(), null);
+                    fillRoom8Cells(800, roomID, rList.getRoomType(), null);
                     break;
             }
             for (int a = 0; a < 14; a++)
@@ -9091,7 +9103,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             case 100:
                 jLabelRoom1RoomID.setText("" + roomID);
-                jLabelRoom1RoomType.setText(roomType);
+                jLabelRoom1RoomType.setText("" + roomType);
                 break;
             case 1:
                 jLabelOC101.setIcon(icon);
