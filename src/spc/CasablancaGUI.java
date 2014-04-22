@@ -6801,12 +6801,16 @@ public class CasablancaGUI extends javax.swing.JFrame
         } else if (jRadioButtonSearchRoom2.isSelected())
         {
             //Searches Database for all rooms of selected type, that have check-in on the specified start-date.
+            String sd = sdf.format(startDate);
             for(int i = 0; i<roomsList.size(); i++)
             {
                 tempList = jdcbselect.getCheckAvaRoom(roomsList.get(i));
                 for(int j = 0; j<tempList.size(); j++)
                 {
-                    if(tempList.get(j).getDateFrom().equals(""));
+                    if(tempList.get(j).getDateFrom().equals(sd));
+                    {
+                        roomsListResult.add(tempList.get(j).getRoomID());
+                    }
                 }
             }
         } else if (jRadioButtonSearchRoom3.isSelected())
@@ -7815,6 +7819,30 @@ public class CasablancaGUI extends javax.swing.JFrame
     }
     
     //Gets a list of rooms and checks the availability of each room one by one, using the "checkRoom" method.
+    private ArrayList<String> checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate)
+    {
+        int a = 0;
+        while(a<listOfRooms.size())
+        {
+            String rID = listOfRooms.get(a);
+            if(checkRoom(rID, sDate, eDate)==true)
+            {
+                a++;
+            } else
+            {
+                listOfRooms.remove(a);
+            }
+        }
+        if(listOfRooms.size()>0)
+        {
+            return listOfRooms;
+        } else
+        {
+            return null;
+        }
+    }
+    
+    //Gets a list of rooms of a specific type and returns the first
     private ArrayList<String> checkRoomAvailability(ArrayList<String> listOfRooms, Calendar sDate, Calendar eDate)
     {
         int a = 0;
