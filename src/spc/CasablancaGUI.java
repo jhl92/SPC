@@ -6342,6 +6342,11 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookingBookActionPerformed
         String returnGuest;
         ArrayList guestListBooking = jdcbselect.checkIdAva();
+        String bookingFirstName = jTextFieldBookingFirstName.getText();
+        String bookingLastName = jTextFieldBookingLastName.getText();
+        String bookingCountry = jTextFieldBookingCountry.getText();
+        String bookingPhone = jTextFieldBookingPhoneNumber.getText();
+        String bookingEmail = jTextFieldBookingEmail.getText();
         if(guestListBooking.contains(jTextFieldBookingGuestID.getText()))
         {
             returnGuest = "Y";
@@ -6351,13 +6356,19 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
         try
         {
-            jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), bookingRoomID, "E05", bookingDateFrom, bookingNumberNights, bookingDateTo, "RoomAvailability", jTextFieldBookingFirstName.getText(), jTextFieldBookingLastName.getText(), jTextFieldBookingCountry.getText(), jTextFieldBookingPhoneNumber.getText(), jTextFieldBookingEmail.getText(), returnGuest);
+            jdcbinsert.JDBCInsertRoom(jTextFieldBookingGuestID.getText(), bookingRoomID, "E05", bookingDateFrom, bookingNumberNights,
+                    bookingDateTo, "Y", bookingFirstName, bookingLastName, bookingCountry,
+                    bookingPhone, bookingEmail, returnGuest);
         } catch (SQLException ex)
         {
             Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         setupDialogBooking();
         jLabelBookingRoomNotifier.setText("Room has been booked...");
+        bookingRoomID = "";
+        bookingNumberNights = "";
+        bookingDateFrom = "";
+        bookingDateTo = "";
     }//GEN-LAST:event_jButtonBookingBookActionPerformed
 
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
@@ -6589,6 +6600,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         } else
         {
             jLabelBookingRoomNotifier.setText("Found room: " + roomToBeBooked.get(0));
+            bookingRoomID = roomToBeBooked.get(0);
+            bookingDateFrom = sdf.format(dFrom);
+            bookingDateTo = sdf.format(dTo);
+            int nights = getNumberOfNights(dFrom, dTo);
+            bookingNumberNights = nights + "";
             jButtonBookingBook.setVisible(true);
         }
     }//GEN-LAST:event_jButtonSearchForAvailableRoomActionPerformed
@@ -8599,6 +8615,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         if(checkRoom(roomID, sDate, eDate))
         {
             jLabelBookingRoomNotifier.setText("Found room: " + roomID);
+            bookingRoomID = roomID;
+            bookingDateFrom = sdf.format(sDate);
+            bookingDateTo = sdf.format(eDate);
+            int nights = getNumberOfNights(sDate, eDate);
+            bookingNumberNights = nights + "";
             jButtonBookingBook.setVisible(true);
         } else
         {
