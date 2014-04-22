@@ -155,12 +155,14 @@ public class JDBCUpdateQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-            rs = stmt.executeQuery("UPDATE FACBOOK SET TIMESTART ='"
-                    +NEWtimeStart+"', TIMEEND ='"+NEWtimeEnd+"' "
+            String sql = "UPDATE FACBOOK SET FACDATE = '"+NEWfacDate+"', TIMESTART ='"
+                    +NEWtimeStart+".00', TIMEEND ='"+NEWtimeEnd+".00' "
                     +"WHERE GUESTID ='"+guestID+"' AND TIMESTART='"
-                    +CURRtimeStart+"' AND FACDATE ='"+CURRfacDate+"'");
+                    +CURRtimeStart+"' AND FACDATE ='"+CURRfacDate+"'";
+
+            stmt.executeUpdate(sql);
             conn.commit();
-            rs.close(); 
+            
         } catch (SQLException se){
             se.printStackTrace();
             conn.rollback();
