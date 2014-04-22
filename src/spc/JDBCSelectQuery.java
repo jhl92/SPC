@@ -877,8 +877,8 @@ public class JDBCSelectQuery
                 String rsDateFrom = rs.getString("dateFrom");
                 String rsNoOfNights = rs.getString("noOfNights");
                 String rsDateTo = rs.getString("dateTo");
-                RoomAvaBookConstructor avaRoom = new RoomAvaBookConstructor(rsDateFrom,
-                        rsNoOfNights, rsDateTo, rsRoomID, rsRoomType);
+                RoomAvaBookConstructor avaRoom = new RoomAvaBookConstructor(rsRoomID, rsDateFrom,
+                        rsNoOfNights, rsDateTo, rsRoomType);
                 RoomAvailability.add(avaRoom);
             }
             return RoomAvailability;
