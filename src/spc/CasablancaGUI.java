@@ -6592,25 +6592,27 @@ public class CasablancaGUI extends javax.swing.JFrame
             {
                 tempRoomsList = jdcbselect.getRoomsFromType("Family");
             }
-        }
-        
-        ArrayList<String> roomToBeBooked = checkRoomAvailability(tempRoomsList, dFrom, dTo);
-        if(roomToBeBooked.size()<1)
-        {
-            jLabelBookingRoomNotifier.setText("<html>There are no available rooms of the selected type in the specified period...</html>");
-            jButtonBookingBook.setVisible(false);
+            ArrayList<String> roomToBeBooked = checkRoomAvailability(tempRoomsList, dFrom, dTo);
+            if (roomToBeBooked.size() < 1)
+            {
+                jLabelBookingRoomNotifier.setText("<html>There are no available rooms of the selected type in the specified period...</html>");
+                jButtonBookingBook.setVisible(false);
+            } else
+            {
+                jButtonBookingBook.setEnabled(true);
+                jLabelBookingRoomNotifier.setText("Found room: " + roomToBeBooked.get(0));
+                bookingRoomID = roomToBeBooked.get(0);
+                Date df = dFrom.getTime();
+                Date dt = dTo.getTime();
+                bookingDateFrom = sdf.format(df);
+                bookingDateTo = sdf.format(dt);
+                int nights = getNumberOfNights(dFrom, dTo);
+                bookingNumberNights = "" + nights;
+                System.out.println(bookingNumberNights);
+            }
         } else
         {
-            jButtonBookingBook.setEnabled(true);
-            jLabelBookingRoomNotifier.setText("Found room: " + roomToBeBooked.get(0));
-            bookingRoomID = roomToBeBooked.get(0);
-            Date df = dFrom.getTime();
-            Date dt = dTo.getTime();
-            bookingDateFrom = sdf.format(df);
-            bookingDateTo = sdf.format(dt);
-            int nights = getNumberOfNights(dFrom, dTo);
-            bookingNumberNights = "" + nights;
-            System.out.println(bookingNumberNights);
+            jLabelBookingNumberNights.setText("Enter a valid start/end date...");
         }
     }//GEN-LAST:event_jButtonSearchForAvailableRoomActionPerformed
 
