@@ -187,8 +187,8 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
-                    + "bookroom.guestid = guest.guestid where guest.guestfirstname ='"
-                    + firstName + "'");
+                    + "bookroom.guestid = guest.guestid where guest.guestfirstname like '%"
+                    + firstName + "%'");
 
             while (rs.next())
             {
@@ -262,8 +262,8 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
-                    + "bookroom.guestid = guest.guestid where guest.guestlastname ='"
-                    + lastName + "'");
+                    + "bookroom.guestid = guest.guestid where guest.guestlastname LIKE '%"
+                    + lastName + "%'");
 
             while (rs.next())
             {
@@ -337,8 +337,8 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
-                    + "bookroom.guestid = guest.guestid where guest.guestcountry ='"
-                    + country + "'");
+                    + "bookroom.guestid = guest.guestid where guest.guestcountry LIKE '%"
+                    + country + "%'");
 
             while (rs.next())
             {
@@ -412,8 +412,8 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
-                    + "bookroom.guestid = guest.guestid where guest.guestcontactphone ='"
-                    + phone + "'");
+                    + "bookroom.guestid = guest.guestid where guest.guestcontactphone LIKE '%"
+                    + phone + "%'");
 
             while (rs.next())
             {
@@ -487,8 +487,8 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
-                    + "bookroom.guestid = guest.guestid where guest.guestemail ='"
-                    + mail + "'");
+                    + "bookroom.guestid = guest.guestid where guest.guestemail LIKE '%"
+                    + mail + "%'");
 
             while (rs.next())
             {
