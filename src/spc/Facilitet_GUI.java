@@ -2133,7 +2133,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jComboBoxOverviewEditBookingDate1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxOverviewEditBookingDate1ActionPerformed
     {//GEN-HEADEREND:event_jComboBoxOverviewEditBookingDate1ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBoxOverviewEditBookingDate1ActionPerformed
 
     private void jButtonBookFitnessActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookFitnessActionPerformed
@@ -2200,7 +2200,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jComboBoxGolfInstructorDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxGolfInstructorDateActionPerformed
     {//GEN-HEADEREND:event_jComboBoxGolfInstructorDateActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBoxGolfInstructorDateActionPerformed
 
     private void jButtonPrintInstrucCostActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrintInstrucCostActionPerformed
@@ -2243,7 +2243,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jComboBoxOverviewEditBookingTimeFrom1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxOverviewEditBookingTimeFrom1ActionPerformed
     {//GEN-HEADEREND:event_jComboBoxOverviewEditBookingTimeFrom1ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBoxOverviewEditBookingTimeFrom1ActionPerformed
 
     private void jButtonBookGolfActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookGolfActionPerformed
