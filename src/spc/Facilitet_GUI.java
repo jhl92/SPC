@@ -198,13 +198,18 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jListBookedOverview.setModel(bookedOverview);
     }
     
-    private void loadWaitlistOverview(String facID, String facDate) {
+    private void loadWaitlistOverview(String guestID) {
         waitlistOverview.removeAllElements();
-        tempPos = select.getWaitlistPosition("54321", facID, facDate);
+        tempPos = select.getWaitlistPosition(guestID);
         for(int i=0; i<tempPos.size(); ++i) {
             String pos = tempPos.get(i).getPos();
+            String facType = tempPos.get(i).getFacType();
+            String timeStart = tempPos.get(i).getTimeStart();
+            String timeEnd = tempPos.get(i).getTimeEnd();
+            String facDate = tempPos.get(i).getFacDate();
             
-            waitlistOverview.addElement(pos.substring(1));
+            waitlistOverview.addElement("("+facDate+") Facility: "+facType+", From "+timeStart+" to "
+                    +timeEnd+". Position in queue: "+pos.substring(1));
         }
         jListWaitOverview.setModel(waitlistOverview);
             
@@ -267,6 +272,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jScrollPane1 = new javax.swing.JScrollPane();
         jListBookedOverview = new javax.swing.JList();
         jButtonLoadBookings = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jListWaitOverview = new javax.swing.JList();
+        jButtonGetWaitOverview = new javax.swing.JButton();
         jPanel1Badminton = new javax.swing.JPanel();
         jButtonBookBadminton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -338,9 +346,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel64 = new javax.swing.JLabel();
         jComboBoxHandballNoParti = new javax.swing.JComboBox();
         jLabel11 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jListWaitOverview = new javax.swing.JList();
         jLabel32 = new javax.swing.JLabel();
         jPanel4MountainBike = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -801,7 +806,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabel91.setText("venteliste");
+        jLabel91.setText("Waiting List:");
 
         jButtonOverviewHelp.setText("Help");
         jButtonOverviewHelp.addActionListener(new java.awt.event.ActionListener()
@@ -812,8 +817,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
+        jLabelOverviewGuestID.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jLabelOverviewGuestID.setText("12345");
 
+        jLabel116.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jLabel116.setText("jLabel116");
 
         jButtonPrintInstrucCost.setText("Print current balance for instructor cost");
@@ -836,6 +843,17 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
+        jScrollPane3.setViewportView(jListWaitOverview);
+
+        jButtonGetWaitOverview.setText("Refresh");
+        jButtonGetWaitOverview.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonGetWaitOverviewActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5OverviewLayout = new javax.swing.GroupLayout(jPanel5Overview);
         jPanel5Overview.setLayout(jPanel5OverviewLayout);
         jPanel5OverviewLayout.setHorizontalGroup(
@@ -849,7 +867,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addComponent(jButtonLoadBookings)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
+                        .addComponent(jButtonPrintInstrucCost)
+                        .addGap(95, 95, 95))
+                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                         .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
+                                .addComponent(jLabel91)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                                     .addComponent(jLabel71)
@@ -859,19 +886,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                     .addComponent(jLabel70)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel116)))
-                            .addComponent(jLabel91)
                             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 609, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31)
+                                .addComponent(jScrollPane1)
+                                .addGap(18, 18, 18)
                                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButtonOverviewDeleteBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButtonOverviewEditBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addContainerGap(518, Short.MAX_VALUE))))
-            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                .addGap(315, 315, 315)
-                .addComponent(jButtonPrintInstrucCost)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(328, 328, 328)))
+                        .addContainerGap())))
         );
         jPanel5OverviewLayout.setVerticalGroup(
             jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -897,11 +920,19 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addGap(18, 18, 18)
                         .addComponent(jButtonOverviewHelp))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addComponent(jLabel91)
-                .addGap(70, 70, 70)
-                .addComponent(jButtonPrintInstrucCost)
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addGap(129, 129, 129)
+                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel91)
+                    .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                        .addComponent(jButtonPrintInstrucCost)
+                        .addGap(39, 39, 39))
+                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
 
         jTabbedPane1.addTab("Overview", jPanel5Overview);
@@ -1264,20 +1295,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel11.setText("Number of Participants:");
         jPanel8.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, 20));
-
-        jButton1.setText("Refresh");
-        jButton1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, 80, -1));
-
-        jScrollPane2.setViewportView(jListWaitOverview);
-
-        jPanel8.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 150, 70));
 
         jLabel32.setPreferredSize(new java.awt.Dimension(320, 200));
 
@@ -2393,10 +2410,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jDialogFacilityInstrucHelp.setLocation(700, 250);
     }//GEN-LAST:event_jButtonSwimmingHelpActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
-        loadWaitlistOverview("01", "23-04-2014");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButtonGetWaitOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonGetWaitOverviewActionPerformed
+    {//GEN-HEADEREND:event_jButtonGetWaitOverviewActionPerformed
+        loadWaitlistOverview("54321");
+    }//GEN-LAST:event_jButtonGetWaitOverviewActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2443,7 +2460,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonBadmintonHelp;
     private javax.swing.JButton jButtonBookBadminton;
     private javax.swing.JButton jButtonBookFitness;
@@ -2453,6 +2469,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonBookTennis;
     private javax.swing.JButton jButtonBookVolley;
     private javax.swing.JButton jButtonFitnessHelp;
+    private javax.swing.JButton jButtonGetWaitOverview;
     private javax.swing.JButton jButtonGolfHelp;
     private javax.swing.JButton jButtonHandBallHelp;
     private javax.swing.JButton jButtonLoadBookings;
@@ -2669,7 +2686,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelOverviewEditBooking;
     private javax.swing.JPanel jPanelOverviewHelp;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }

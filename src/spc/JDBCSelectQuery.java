@@ -1104,7 +1104,7 @@ public class JDBCSelectQuery
         return null;
     }
     
-    public ArrayList<PositionOverviewConstructor> getWaitlistPosition(String guestID, String facID, String facDate)
+    public ArrayList<PositionOverviewConstructor> getWaitlistPosition(String guestID)
     {
         //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
         Connection conn = null;
@@ -1124,13 +1124,19 @@ public class JDBCSelectQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-            rs = stmt.executeQuery("SELECT POSITION FROM WAITLIST WHERE GUESTID = '"+guestID+"'"
-                    + " AND FACID = '"+facID+"' AND WFACDATE = '"+facDate+"'");
+            rs = stmt.executeQuery("SELECT WAITLIST.POSITION, FACILITY.FACTYPE, WAITLIST.WTIMESTART, WAITLIST.WTIMEEND"
+                    + ", WAITLIST.WFACDATE FROM WAITLIST INNER JOIN FACILITY ON WAITLIST.FACID = FACILITY.FACID"
+                    + " WHERE WAITLIST.GUESTID = '"+guestID+"'");
 
             while (rs.next())
             {
                 String rsPos = rs.getString("Position");
-                PositionOverviewConstructor posOverview = new PositionOverviewConstructor(rsPos);
+                String rsFacType = rs.getString("FacType");
+                String rsTimeStart = rs.getString("WTimeStart");
+                String rsTimeEnd = rs.getString("WTimeend");
+                String rsDate = rs.getString("WFacDate");
+                
+                PositionOverviewConstructor posOverview = new PositionOverviewConstructor(rsPos, rsFacType, rsTimeStart, rsTimeEnd, rsDate);
                 posOverviewForGuest.add(posOverview);             
             }
             return posOverviewForGuest;
