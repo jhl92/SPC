@@ -6376,7 +6376,8 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
-        // Show the selected rooms, but 14 days previous the current period
+        overviewCellStartDate.add(Calendar.DATE, -14);
+        
     }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
 
     private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
@@ -6545,7 +6546,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jLabelSearchCustomerPhone.setText(guestList.get(selectedCustomer).getContanctPhone());
             jLabelSearchCustomerEmail.setText(guestList.get(selectedCustomer).getEmail());
             
-            //Search Database for all bookings attached to the selected guests GuestID and prints them to "jListSearchCustomerBookingsHistory"
+            //Search Database for all bookings attached to the selected guests GuestID and prints them in GUI
             ArrayList<InfoObjectConstructor> guestInfo = jdcbselect.getInfoFromGuestID(guestList.get(selectedCustomer).getGuestID());
             for(int a = 0; a<guestInfo.size(); a++)
             {
@@ -6581,7 +6582,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         
         if(dTo.after(dFrom))
         {
-            //Searches Database for all rooms of the selected room type.
+            //Searches Database for all rooms of the selected roomtype.
             int srt = jComboBoxBookingRoomType.getSelectedIndex();
             if (srt == 0)
             {
@@ -6677,6 +6678,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         fillRoomCells(row6, 6, overviewCellStartDate);
         fillRoomCells(row7, 7, overviewCellStartDate);
         fillRoomCells(row8, 8, overviewCellStartDate);
+        jDialogSetupOverview.setVisible(false);
     }//GEN-LAST:event_jButtonSetupOverviewShowRoomsActionPerformed
 
     private void jButtonSetupOverviewExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewExitActionPerformed
@@ -7899,7 +7901,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     }
     
     //Finds the status of a specified room on a specified date and returns the corresponding ImageIcon
-    private ImageIcon findRoomStatus(String frsRoomID, Calendar frsDate)
+    private ImageIcon findRoomStatus(String frsRoomID, Calendar frsDate, ArrayList<RoomAvaBookConstructor> frsList)
     {
         // Starts by retrieving a list of all bookings from database on the current roomID
         // Loops through all bookings one by one...
@@ -7907,7 +7909,8 @@ public class CasablancaGUI extends javax.swing.JFrame
             //If a bookings start/end-date equals the specified date, then search list to see if another bookings-
                     //corresponding end/start-date also equals the specified date and return the corresponding icon
         //If no Icons have been returned by the end of the list, then return IconFree
-        ArrayList<RoomAvaBookConstructor> frsList = jdcbselect.getCheckAvaRoom(frsRoomID);
+        Date frsD = frsDate.getTime();
+        String frsDateString = sdf.format(frsD);
         Calendar sBookDate = Calendar.getInstance();
         Calendar eBookDate = Calendar.getInstance();
         for(int a = 0; a<frsList.size(); a++)
@@ -7927,36 +7930,22 @@ public class CasablancaGUI extends javax.swing.JFrame
                     return IconBook;
                 }
             }
-            if(eBookDate.equals(frsDate))
+            if(frsDateString.equals(frsList.get(a).getDateTo()))
             {
-                for(int b = 1; b < frsList.size(); b++)
+                for(int b = 0; b < frsList.size(); b++)
                 {
-                    try
-                    {
-                        sBookDate.setTime(sdf.parse(frsList.get(b).getDateFrom()));
-                    } catch (ParseException ex)
-                    {
-                        Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                    if(sBookDate.equals(frsDate))
+                    if(frsDateString.equals(frsList.get(a).getDateFrom()))
                     {
                         return IconBookBook;
                     }
                 }
                 return IconBookFree;
             }
-            if(sBookDate.equals(frsDate))
+            if(frsDateString.equals(frsList.get(a).getDateFrom()))
             {
-                for(int b = 1; b < frsList.size(); b++)
+                for(int b = 0; b < frsList.size(); b++)
                 {
-                    try
-                    {
-                        eBookDate.setTime(sdf.parse(frsList.get(b).getDateTo()));
-                    } catch (ParseException ex)
-                    {
-                        Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                    if(eBookDate.equals(frsDate))
+                    if(frsDateString.equals(frsList.get(a).getDateTo()))
                     {
                         return IconBookBook;
                     }
@@ -8864,7 +8853,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     {
         setCurrentDate();
         cal = Calendar.getInstance();
-        overviewCellStartDate = cal;
+        overviewCellStartDate.set(currentYear, currentMonth, currentDate);
         fillDateCells(cal);
         fillRoomCells(r1, 1, cal);
         fillRoomCells(r2, 2, cal);
@@ -9061,9 +9050,10 @@ public class CasablancaGUI extends javax.swing.JFrame
                     fillRoom8Cells(800, roomID, rList.getRoomType(), null);
                     break;
             }
+            ArrayList<RoomAvaBookConstructor> frsList = jdcbselect.getCheckAvaRoom(roomID);
             for (int a = 0; a < 14; a++)
             {
-                ImageIcon icon = findRoomStatus(roomID, firstDate);
+                ImageIcon icon = findRoomStatus(roomID, firstDate, frsList);
                 int day = 1 + a;
                 switch (roomRow)
                 {
