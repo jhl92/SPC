@@ -385,6 +385,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonVolleybalHelp = new javax.swing.JButton();
         jLabel52 = new javax.swing.JLabel();
         jButtonBookVolley = new javax.swing.JButton();
+        jLabelVolleyballNoSignText = new javax.swing.JLabel();
+        jLabelVolleyballNoSign = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabelVolleyballErrorMessageBook = new javax.swing.JLabel();
         jPanel7Tennis = new javax.swing.JPanel();
         jButtonBookTennis = new javax.swing.JButton();
@@ -1019,7 +1022,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 .addComponent(jLabel69)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButtonLoadBookings)))
-                        .addGap(0, 626, Short.MAX_VALUE))
+                        .addGap(0, 950, Short.MAX_VALUE))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1058,7 +1061,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonPrintInstrucCost))
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addContainerGap(417, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Overview", jPanel5Overview);
@@ -1550,6 +1553,19 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
+        jLabelVolleyballNoSignText.setText("The current number of sign-ups for the chosen time:");
+
+        jLabelVolleyballNoSign.setText("***");
+
+        jButton1.setText("Refresh");
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -1560,6 +1576,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addComponent(jLabelVolleyballNoSignText)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabelVolleyballNoSign)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1))
                     .addComponent(jLabel74)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel75)
@@ -1583,7 +1605,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelVolleyballNoSignText)
+                    .addComponent(jLabelVolleyballNoSign)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel74)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1596,7 +1623,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     .addComponent(jButtonVolleybalHelp))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel52)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(jButtonBookVolley, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -2533,6 +2560,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jDialogWaitOrNo.setVisible(false);
     }//GEN-LAST:event_jButtonWaitNoActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        jLabelVolleyballNoSign.setText(Integer.toString(select.getfacAvail("03", jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
+                jComboBoxVolleyballTimeFrom.getSelectedItem().toString(), 
+                jComboBoxVolleyballTimeTo.getSelectedItem().toString()).size()));
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     private void loginPop() {
         jDialogLogIn.setSize(300, 150);
         jDialogLogIn.setVisible(true);
@@ -2580,6 +2614,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonBadmintonHelp;
     private javax.swing.JButton jButtonBookBadminton;
     private javax.swing.JButton jButtonBookFitness;
@@ -2777,6 +2812,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelTennisInstructHourLabel;
     private javax.swing.JLabel jLabelTennisInstructorPrice;
     private javax.swing.JLabel jLabelVolleyballErrorMessageBook;
+    private javax.swing.JLabel jLabelVolleyballNoSign;
+    private javax.swing.JLabel jLabelVolleyballNoSignText;
     private javax.swing.JList jListBookedOverview;
     private javax.swing.JList jListWaitOverview;
     private javax.swing.JPanel jPanel1;
