@@ -1103,4 +1103,60 @@ public class JDBCSelectQuery
         System.out.println("Done.");
         return null;
     }
+    
+    public ArrayList<PositionOverviewConstructor> getWaitlistPosition(String guestID, String facID, String facDate)
+    {
+        //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<PositionOverviewConstructor> posOverviewForGuest = new ArrayList<>();
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+
+            rs = stmt.executeQuery("SELECT POSITION FROM WAITLIST WHERE GUESTID = '"+guestID+"'"
+                    + " AND FACID = '"+facID+"' AND WFACDATE = '"+facDate+"'");
+
+            while (rs.next())
+            {
+                String rsPos = rs.getString("Position");
+                PositionOverviewConstructor posOverview = new PositionOverviewConstructor(rsPos);
+                posOverviewForGuest.add(posOverview);             
+            }
+            return posOverviewForGuest;
+        } catch (SQLException se)
+        {
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        } finally
+        {
+            try {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se){}
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+        return null;
+    }
 }
