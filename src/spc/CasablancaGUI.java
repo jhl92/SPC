@@ -12,6 +12,7 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -85,7 +86,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private final String[] list29days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"};
     private final String[] list30days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"};
     private final String[] list31days = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
-    private final String[] normalView = {"001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", 
+    private final String[] normalView = new String[] {"001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", 
         "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", 
         "035", "036", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052", "053", "054", 
         "055", "056", "057", "058", "059", "060", "061", "062", "063", "064", "065", "066", "067", "068", "069", "070", "071", "072", "073", "074", 
@@ -6377,7 +6378,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
         overviewCellStartDate.add(Calendar.DATE, -14);
-        
+        updateCells(3);
     }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
 
     private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
@@ -6670,6 +6671,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         String row7 = fixRoomID(r7);
         String r8 = jTextFieldRow8.getText();
         String row8 = fixRoomID(r8);
+        showRoomsList.clear();
+        jButtonRoomArrowUp.setEnabled(false);
+        jButtonRoomArrowDown.setEnabled(false);
         fillRoomCells(row1, 1, overviewCellStartDate);
         fillRoomCells(row2, 2, overviewCellStartDate);
         fillRoomCells(row3, 3, overviewCellStartDate);
@@ -8787,6 +8791,31 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogSetupOverview.setVisible(true);
     }
     
+    private void updateCells(int action)
+    {
+        switch (action)
+        {
+            case 1:
+                
+                break;
+            case 2:
+                
+                break;
+            case 3:
+                
+                break;
+            case 4:
+                
+                break;
+            case 5:
+                
+                break;
+            case 6:
+                
+                break;
+        }
+    }
+    
     private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
     {
         setCurrentDate();
@@ -8854,6 +8883,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         setCurrentDate();
         cal = Calendar.getInstance();
         overviewCellStartDate.set(currentYear, currentMonth, currentDate);
+        showRoomsList.clear();
+        showRoomsList.addAll(Arrays.asList(normalView));
         fillDateCells(cal);
         fillRoomCells(r1, 1, cal);
         fillRoomCells(r2, 2, cal);
