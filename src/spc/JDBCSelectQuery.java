@@ -1171,7 +1171,7 @@ public class JDBCSelectQuery
         //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
         Connection conn = null;
         Statement stmt = null;
-        ArrayList<checkFacAvailabilityConstructor> facAvail = new ArrayList<>();
+        ArrayList<checkFacAvailabilityConstructor> facAvail = new ArrayList<checkFacAvailabilityConstructor>();
         try
         {
             //Registrer JDBC driver
