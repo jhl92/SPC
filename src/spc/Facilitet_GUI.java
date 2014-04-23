@@ -2182,7 +2182,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookBadmintonActionPerformed
         if (select.getfacAvail("02", jComboBoxBadmintonSelectDate.getSelectedItem().toString(), 
                 jComboBoxBadmintonTimeFrom.getSelectedItem().toString(), 
-                jComboBoxBadmintonTimeTo.getSelectedItem().toString()).length() < 4) 
+                jComboBoxBadmintonTimeTo.getSelectedItem().toString()).size() < 4) 
                 {
                     String noHours = jComboBoxBadmintonInstrucHours.getSelectedItem().toString();
                     jLabelBadmintonErrorMessageBook.setVisible(false);
@@ -2233,7 +2233,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         }
                     } else {
                         jLabelBadmintonErrorMessageBook.setVisible(true); }  
-                } else {System.out.println("jus"); }
+                } else {System.out.println("Well met!"); }
     }//GEN-LAST:event_jButtonBookBadmintonActionPerformed
 
     private void jButtonVolleybalHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVolleybalHelpActionPerformed
