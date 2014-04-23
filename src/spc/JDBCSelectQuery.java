@@ -1165,4 +1165,62 @@ public class JDBCSelectQuery
         System.out.println("Done.");
         return null;
     }
+    
+    public ArrayList<GetfacAvailabilityConstructor> getfacAvail(String facID, String facDate, String timeStart, String timeEnd)
+    {
+        //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<GetfacAvailabilityConstructor> facAvail = new ArrayList<GetfacAvailabilityConstructor>();
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Query
+            System.out.println("Creating statement...");
+            stmt = conn.createStatement();
+
+            rs = stmt.executeQuery("SELECT GUESTID FROM FACBOOK WHERE FACID='"+facID+"' AND "
+                    + "FACDATE='"+facDate+"' AND TIMESTART='"+timeStart+"' AND "
+                    + "TIMEEND='"+timeEnd+"'");
+
+            while (rs.next())
+            {
+                String rsGuestID = rs.getString("GuestID");
+                
+                GetfacAvailabilityConstructor posOverview = new GetfacAvailabilityConstructor(rsGuestID);
+                facAvail.add(posOverview);             
+            }
+            return facAvail;
+        } catch (SQLException se)
+        {
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        } finally
+        {
+            try {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se){}
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+        return null;
+    }
 }

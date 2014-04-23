@@ -90,7 +90,7 @@ public class JDBCInsertQuery
     }
 
     public void JDBCInsertFacility(String guestID, String facID, String facDate, 
-            String timeStart, String timeEnd, String insID, String participants) throws SQLException
+            String timeStart, String timeEnd, String insID) throws SQLException
     {
         Connection conn = null;
         Statement stmt = null;
@@ -111,7 +111,7 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','N','"+insID+"','"+participants+"')";
+            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','"+insID+"')";
             stmt.executeUpdate(sql);
 //            sql = "INSERT INTO GUEST VALUES";
 //            stmt.executeUpdate(sql);
@@ -128,6 +128,69 @@ public class JDBCInsertQuery
             //Håndterer Class relaterede fejl
             e.printStackTrace();
             conn.rollback();
+        } finally
+        {
+            //Luk forbindelsen
+            try
+            {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+            }
+            try
+            {
+                if (conn != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+    }
+    
+    public void JDBCInsertWait(String guestID, String facID, String pos, String timeStart, String timeEnd, String facDate)
+    {
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Sætter autoCommint til false
+            conn.setAutoCommit(false);
+            
+            //Query
+            System.out.println("Inserting records into the table...");
+            stmt = conn.createStatement();
+
+            String sql = "INSERT INTO WAITLIST VALUES ('"+guestID+"','"+facID+"','"
+                    +pos+"','"+timeStart+"','"+timeEnd+"','"+facDate+"')";
+            stmt.executeUpdate(sql);
+//            sql = "INSERT INTO GUEST VALUES";
+//            stmt.executeUpdate(sql);
+            System.out.println("Inserted records into the table...");
+
+            conn.commit();
+        } catch (SQLException se)
+        {
+            //Håndterer JDBC relaterede fejl
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            //Håndterer Class relaterede fejl
+            e.printStackTrace();
         } finally
         {
             //Luk forbindelsen
@@ -188,7 +251,6 @@ public class JDBCInsertQuery
                 case 02: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
                         + " WHERE GUESTID='"+guestID+"'";
-                    System.out.println(sql);
                 stmt.executeUpdate(sql);      
                 break;
             
