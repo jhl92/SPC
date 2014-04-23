@@ -111,7 +111,7 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','N','"+insID+"')";
+            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','"+insID+"')";
             stmt.executeUpdate(sql);
 //            sql = "INSERT INTO GUEST VALUES";
 //            stmt.executeUpdate(sql);
@@ -188,7 +188,6 @@ public class JDBCInsertQuery
                 case 02: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
                         + " WHERE GUESTID='"+guestID+"'";
-                    System.out.println(sql);
                 stmt.executeUpdate(sql);      
                 break;
             
