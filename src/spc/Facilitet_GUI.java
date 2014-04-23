@@ -11,6 +11,7 @@ import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
+import javax.swing.JTextField;
 
 
 
@@ -20,6 +21,7 @@ import javax.swing.DefaultListModel;
  **/
 public class Facilitet_GUI extends javax.swing.JFrame
 {
+    public String finalGuestID;
     private SimpleDateFormat cDate = new SimpleDateFormat("dd");
     private SimpleDateFormat cMonth = new SimpleDateFormat("MM");
     private SimpleDateFormat cYear = new SimpleDateFormat("yy");
@@ -257,6 +259,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel117 = new javax.swing.JLabel();
         jLabel118 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
+        jDialogLogIn = new javax.swing.JDialog();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jTextFieldFinalGuestID = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jButtonSignIn = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5Overview = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
@@ -266,7 +274,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonOverviewDeleteBooking1 = new javax.swing.JButton();
         jLabel91 = new javax.swing.JLabel();
         jButtonOverviewHelp = new javax.swing.JButton();
-        jLabelOverviewGuestID = new javax.swing.JLabel();
         jLabel116 = new javax.swing.JLabel();
         jButtonPrintInstrucCost = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -275,6 +282,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jScrollPane3 = new javax.swing.JScrollPane();
         jListWaitOverview = new javax.swing.JList();
         jButtonGetWaitOverview = new javax.swing.JButton();
+        jLabelOverviewGuestID = new javax.swing.JLabel();
         jPanel1Badminton = new javax.swing.JPanel();
         jButtonBookBadminton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -778,6 +786,68 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGap(0, 13, Short.MAX_VALUE))
         );
 
+        jDialogLogIn.setFocusable(false);
+        jDialogLogIn.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel12.setText("Please enter your guestID:");
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Welcome dear guest!");
+
+        jButtonSignIn.setText("Sign in");
+        jButtonSignIn.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSignInActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel12)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jButtonSignIn)
+                                .addGap(12, 12, 12)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextFieldFinalGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jTextFieldFinalGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonSignIn)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDialogLogInLayout = new javax.swing.GroupLayout(jDialogLogIn.getContentPane());
+        jDialogLogIn.getContentPane().setLayout(jDialogLogInLayout);
+        jDialogLogInLayout.setHorizontalGroup(
+            jDialogLogInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jDialogLogInLayout.setVerticalGroup(
+            jDialogLogInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
@@ -817,9 +887,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabelOverviewGuestID.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabelOverviewGuestID.setText("12345");
-
         jLabel116.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jLabel116.setText("jLabel116");
 
@@ -854,6 +921,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
+        jLabelOverviewGuestID.setText("*****");
+
         javax.swing.GroupLayout jPanel5OverviewLayout = new javax.swing.GroupLayout(jPanel5Overview);
         jPanel5Overview.setLayout(jPanel5OverviewLayout);
         jPanel5OverviewLayout.setHorizontalGroup(
@@ -862,39 +931,37 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGap(36, 36, 36)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addComponent(jLabel69)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonLoadBookings)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButtonOverviewDeleteBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonOverviewEditBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(328, 328, 328))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
-                        .addComponent(jButtonPrintInstrucCost)
-                        .addGap(95, 95, 95))
+                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel70)
+                            .addComponent(jLabel71))
+                        .addGap(12, 12, 12)
+                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel116, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelOverviewGuestID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                         .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                                 .addComponent(jLabel91)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                    .addComponent(jLabel71)
-                                    .addGap(54, 54, 54)
-                                    .addComponent(jLabelOverviewGuestID))
-                                .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                    .addComponent(jLabel70)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel116)))
                             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                .addComponent(jScrollPane1)
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButtonOverviewDeleteBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButtonOverviewEditBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(328, 328, 328)))
-                        .addContainerGap())))
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(251, 251, 251)
+                                .addComponent(jButtonPrintInstrucCost))
+                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
+                                .addComponent(jLabel69)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonLoadBookings)))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel5OverviewLayout.setVerticalGroup(
             jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -920,19 +987,18 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addGap(18, 18, 18)
                         .addComponent(jButtonOverviewHelp))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(129, 129, 129)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel91)
                     .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                        .addComponent(jButtonPrintInstrucCost)
-                        .addGap(39, 39, 39))
-                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(jButtonPrintInstrucCost)))
+                .addContainerGap(428, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Overview", jPanel5Overview);
@@ -2415,12 +2481,23 @@ public class Facilitet_GUI extends javax.swing.JFrame
         loadWaitlistOverview("54321");
     }//GEN-LAST:event_jButtonGetWaitOverviewActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jButtonSignInActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignInActionPerformed
+    {//GEN-HEADEREND:event_jButtonSignInActionPerformed
+        jTextFieldFinalGuestID.setText("sdsjds");
+        //finalGuestID = jTextFieldFinalGuestID.getText();
+        jLabelOverviewGuestID.setText(finalGuestID);
+        //jLabelOverviewGuestID.setVisible(true);
+        jDialogLogIn.setVisible(false);
+    }//GEN-LAST:event_jButtonSignInActionPerformed
+
+    private void loginPop() {
+        jDialogLogIn.setSize(300, 150);
+        jDialogLogIn.setVisible(true);
+        jDialogLogIn.setLocation(700, 250);
+    }
     public static void main(String args[])
     {
-        /* Set the Nimbus look and feel */
+        
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -2449,13 +2526,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
             java.util.logging.Logger.getLogger(Facilitet_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable()
         {
             public void run()
             {
                 new Facilitet_GUI().setVisible(true);
+                new Facilitet_GUI().loginPop();
             }
         });
     }
@@ -2480,6 +2557,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonOverviewEditBookingSaveChanges1;
     private javax.swing.JButton jButtonOverviewHelp;
     private javax.swing.JButton jButtonPrintInstrucCost;
+    private javax.swing.JButton jButtonSignIn;
     private javax.swing.JButton jButtonSwimmingHelp;
     private javax.swing.JButton jButtonTennisHelp;
     private javax.swing.JButton jButtonVolleybalHelp;
@@ -2521,6 +2599,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JComboBox jComboBoxVolleyballTimeTo;
     private javax.swing.JDialog jDialogFacilityHelp;
     private javax.swing.JDialog jDialogFacilityInstrucHelp;
+    private javax.swing.JDialog jDialogLogIn;
     private javax.swing.JDialog jDialogOverviewDelete;
     private javax.swing.JDialog jDialogOverviewEditBooking;
     private javax.swing.JDialog jDialogOverviewHelp;
@@ -2547,6 +2626,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -2671,6 +2752,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanel2Fitness;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel3Golf;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel4MountainBike;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel5Overview;
@@ -2688,5 +2770,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextFieldFinalGuestID;
     // End of variables declaration//GEN-END:variables
 }
