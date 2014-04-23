@@ -1166,12 +1166,12 @@ public class JDBCSelectQuery
         return null;
     }
     
-    public ArrayList<checkFacAvailabilityConstructor> getfacAvail(String facID, String facDate, String timeStart, String timeEnd)
+    public ArrayList<CheckFacAvailabilityConstructor> getfacAvail(String facID, String facDate, String timeStart, String timeEnd)
     {
         //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
         Connection conn = null;
         Statement stmt = null;
-        ArrayList<checkFacAvailabilityConstructor> facAvail = new ArrayList<checkFacAvailabilityConstructor>();
+        ArrayList<CheckFacAvailabilityConstructor> facAvail = new ArrayList<>();
         try
         {
             //Registrer JDBC driver
@@ -1194,7 +1194,7 @@ public class JDBCSelectQuery
             {
                 String rsGuestID = rs.getString("GuestID");
                 
-                checkFacAvailabilityConstructor posOverview = new checkFacAvailabilityConstructor(rsGuestID);
+                CheckFacAvailabilityConstructor posOverview = new CheckFacAvailabilityConstructor(rsGuestID);
                 facAvail.add(posOverview);             
             }
             return facAvail;
