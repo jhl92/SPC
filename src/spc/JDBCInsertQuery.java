@@ -154,6 +154,69 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
     
+    public void JDBCInsertWait(String guestID, String facID, String pos, String timeStart, String timeEnd, String facDate)
+    {
+        Connection conn = null;
+        Statement stmt = null;
+        try
+        {
+            //Registrer JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Åben forbindelsen
+            System.out.println("Connecting to a selected database...");
+            conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connected database successfully...");
+
+            //Sætter autoCommint til false
+            conn.setAutoCommit(false);
+            
+            //Query
+            System.out.println("Inserting records into the table...");
+            stmt = conn.createStatement();
+
+            String sql = "INSERT INTO WAITLIST VALUES ('"+guestID+"','"+facID+"','"
+                    +pos+"','"+timeStart+"','"+timeEnd+"','"+facDate+"')";
+            stmt.executeUpdate(sql);
+//            sql = "INSERT INTO GUEST VALUES";
+//            stmt.executeUpdate(sql);
+            System.out.println("Inserted records into the table...");
+
+            conn.commit();
+        } catch (SQLException se)
+        {
+            //Håndterer JDBC relaterede fejl
+            se.printStackTrace();
+        } catch (Exception e)
+        {
+            //Håndterer Class relaterede fejl
+            e.printStackTrace();
+        } finally
+        {
+            //Luk forbindelsen
+            try
+            {
+                if (stmt != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+            }
+            try
+            {
+                if (conn != null)
+                {
+                    conn.close();
+                }
+            } catch (SQLException se)
+            {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Done.");
+    }
+    
     public void JDBCInsertInstructorCost(String guestID, String noOfHours, int facID) throws SQLException {
         Connection conn = null;
         Statement stmt = null;

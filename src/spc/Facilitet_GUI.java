@@ -265,6 +265,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jTextFieldFinalGuestID = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jButtonSignIn = new javax.swing.JButton();
+        jDialogWaitOrNo = new javax.swing.JDialog();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jButtonWaitYes = new javax.swing.JButton();
+        jButtonWaitNo = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5Overview = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
@@ -777,7 +783,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         );
 
         jDialogLogIn.setFocusable(false);
-        jDialogLogIn.setPreferredSize(new java.awt.Dimension(400, 300));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jLabel12.setText("Please enter your guestID:");
@@ -836,6 +841,73 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jDialogLogInLayout.setVerticalGroup(
             jDialogLogInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel4.setText("The chosen date & time is currently overbooked.");
+
+        jLabel8.setText("Do you wish to be put on a waiting list?");
+
+        jButtonWaitYes.setText("Yes");
+        jButtonWaitYes.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonWaitYesActionPerformed(evt);
+            }
+        });
+
+        jButtonWaitNo.setText("No");
+        jButtonWaitNo.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonWaitNoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(73, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addGap(26, 26, 26)))
+                        .addGap(64, 64, 64))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(jButtonWaitYes)
+                        .addGap(41, 41, 41)
+                        .addComponent(jButtonWaitNo)
+                        .addGap(136, 136, 136))))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addGap(25, 25, 25)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonWaitYes)
+                    .addComponent(jButtonWaitNo))
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDialogWaitOrNoLayout = new javax.swing.GroupLayout(jDialogWaitOrNo.getContentPane());
+        jDialogWaitOrNo.getContentPane().setLayout(jDialogWaitOrNoLayout);
+        jDialogWaitOrNoLayout.setHorizontalGroup(
+            jDialogWaitOrNoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jDialogWaitOrNoLayout.setVerticalGroup(
+            jDialogWaitOrNoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -2233,7 +2305,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         }
                     } else {
                         jLabelBadmintonErrorMessageBook.setVisible(true); }  
-                } else {System.out.println("Well met!"); }
+                } else {jDialogWaitOrNo.setVisible(true);}
     }//GEN-LAST:event_jButtonBookBadmintonActionPerformed
 
     private void jButtonVolleybalHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVolleybalHelpActionPerformed
@@ -2436,7 +2508,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonGetWaitOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonGetWaitOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonGetWaitOverviewActionPerformed
-        loadWaitlistOverview("54321");
+        loadWaitlistOverview("12345");
     }//GEN-LAST:event_jButtonGetWaitOverviewActionPerformed
 
     private void jButtonSignInActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignInActionPerformed
@@ -2448,6 +2520,18 @@ public class Facilitet_GUI extends javax.swing.JFrame
         //jLabelOverviewGuestID.setVisible(true);
         jDialogLogIn.setVisible(false);
     }//GEN-LAST:event_jButtonSignInActionPerformed
+
+    private void jButtonWaitYesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonWaitYesActionPerformed
+    {//GEN-HEADEREND:event_jButtonWaitYesActionPerformed
+        insert.JDBCInsertWait("12345", "02", "1", jComboBoxBadmintonTimeFrom.getSelectedItem().toString(),
+                jComboBoxBadmintonTimeTo.getSelectedItem().toString(), jComboBoxBadmintonSelectDate.getSelectedItem().toString());
+        jDialogWaitOrNo.setVisible(false);
+    }//GEN-LAST:event_jButtonWaitYesActionPerformed
+
+    private void jButtonWaitNoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonWaitNoActionPerformed
+    {//GEN-HEADEREND:event_jButtonWaitNoActionPerformed
+        jDialogWaitOrNo.setVisible(false);
+    }//GEN-LAST:event_jButtonWaitNoActionPerformed
 
     private void loginPop() {
         jDialogLogIn.setSize(300, 150);
@@ -2520,6 +2604,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonSwimmingHelp;
     private javax.swing.JButton jButtonTennisHelp;
     private javax.swing.JButton jButtonVolleybalHelp;
+    private javax.swing.JButton jButtonWaitNo;
+    private javax.swing.JButton jButtonWaitYes;
     private javax.swing.JCheckBox jCheckBoxBadmintonInstruct;
     private javax.swing.JCheckBox jCheckBoxGolfInstruct;
     private javax.swing.JCheckBox jCheckBoxSwimmingInstruct;
@@ -2557,6 +2643,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JDialog jDialogOverviewDelete;
     private javax.swing.JDialog jDialogOverviewEditBooking;
     private javax.swing.JDialog jDialogOverviewHelp;
+    private javax.swing.JDialog jDialogWaitOrNo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
@@ -2602,6 +2689,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -2642,6 +2730,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
@@ -2706,6 +2795,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel5Overview;
     private javax.swing.JPanel jPanel5Swimming;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel6TableTennis;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel7Tennis;
