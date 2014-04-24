@@ -8021,7 +8021,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
             {
-                if ("Windows".equals(info.getName()))
+                if ("Windows Classic".equals(info.getName()))
                 {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
@@ -8824,7 +8824,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void setupOverviewList(Calendar startDate)
     {
         setCurrentDate();
-        jButtonRoomArrowUp.setEnabled(false);
         if (ovcShowRoomsList.size() > 0)
         {
             if (ovcShowRoomsList.size() > 7)
