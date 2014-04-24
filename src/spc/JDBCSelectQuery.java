@@ -1104,7 +1104,8 @@ public class JDBCSelectQuery
         return null;
     }
     
-    public ArrayList<PositionOverviewConstructor> getWaitlistPosition(String guestID)
+    public ArrayList<PositionOverviewConstructor> getWaitlistPosition(String date, String timeStart, 
+            String timeEnd, String facility)
     {
         //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
         Connection conn = null;
@@ -1124,19 +1125,19 @@ public class JDBCSelectQuery
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
-            rs = stmt.executeQuery("SELECT WAITLIST.POSITION, FACILITY.FACTYPE, WAITLIST.WTIMESTART, WAITLIST.WTIMEEND"
-                    + ", WAITLIST.WFACDATE FROM WAITLIST INNER JOIN FACILITY ON WAITLIST.FACID = FACILITY.FACID"
-                    + " WHERE WAITLIST.GUESTID = '"+guestID+"'");
+            rs = stmt.executeQuery("SELECT WAITLIST.GUESTID, GUEST.GUESTLASTNAME, GUEST.GUESTFIRSTNAME " +
+                "FROM WAITLIST INNER JOIN FACILITY ON WAITLIST.FACID = FACILITY.FACID " 
+                    + "INNER JOIN GUEST ON WAITLIST.GUESTID = GUEST.GUESTID " 
+                    + "WHERE WAITLIST.WFACDATE = '"+date+"' AND WAITLIST.WTIMESTART = '"+timeStart+"' " 
+                    + "AND WAITLIST.WTIMEEND = '"+timeEnd+"' AND FACILITY.FACTYPE = '"+facility+"'");
 
             while (rs.next())
             {
-                String rsPos = rs.getString("Position");
-                String rsFacType = rs.getString("FacType");
-                String rsTimeStart = rs.getString("WTimeStart");
-                String rsTimeEnd = rs.getString("WTimeend");
-                String rsDate = rs.getString("WFacDate");
+                String rsGuestID = rs.getString("GuestID");
+                String rsLastName = rs.getString("GuestLastName");
+                String rsFirstName = rs.getString("GuestFirstName");
                 
-                PositionOverviewConstructor posOverview = new PositionOverviewConstructor(rsPos, rsFacType, rsTimeStart, rsTimeEnd, rsDate);
+                PositionOverviewConstructor posOverview = new PositionOverviewConstructor(rsGuestID, rsLastName, rsFirstName);
                 posOverviewForGuest.add(posOverview);             
             }
             return posOverviewForGuest;
