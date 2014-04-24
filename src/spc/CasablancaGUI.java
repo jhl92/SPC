@@ -31,7 +31,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 {
     Random r = new Random();
     Calendar cal = new GregorianCalendar();
-    private Calendar overviewCellStartDate = Calendar.getInstance();
+    private Calendar ovcStartDate = Calendar.getInstance();
     private Calendar startDate = Calendar.getInstance();
     private Calendar endDate = Calendar.getInstance();
     private Calendar startDateTemp = Calendar.getInstance();
@@ -50,7 +50,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
     private ArrayList<String> ovcShowRoomsList = new ArrayList<>();
-    private int ovcListIndex;
+    private int ovcListIndex = 0;
     private String ovcRoom1 = "001";
     private String ovcRoom2 = "002";
     private String ovcRoom3 = "003";
@@ -361,6 +361,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonBooking = new javax.swing.JButton();
         jPanelMainInfoNotifier = new javax.swing.JPanel();
         jLabelMainShowDate = new javax.swing.JLabel();
+        jLabelOverviewInfoNotifier = new javax.swing.JLabel();
         jPanelOverviewCellsButtons1 = new javax.swing.JPanel();
         jButtonSetupOverview = new javax.swing.JButton();
         jButtonResetOveriew = new javax.swing.JButton();
@@ -3219,6 +3220,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         setMinimumSize(new java.awt.Dimension(967, 662));
         setResizable(false);
 
+        jPanelOverviewCellsButtons2.setPreferredSize(new java.awt.Dimension(61, 546));
+
         jButtonRoomArrowUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"))); // NOI18N
         jButtonRoomArrowUp.setBorderPainted(false);
         jButtonRoomArrowUp.setPreferredSize(new java.awt.Dimension(51, 36));
@@ -3320,17 +3323,22 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelMainShowDate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabelMainShowDate.setText("Wednesday, 21. September - 2014");
 
+        jLabelOverviewInfoNotifier.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+
         javax.swing.GroupLayout jPanelMainInfoNotifierLayout = new javax.swing.GroupLayout(jPanelMainInfoNotifier);
         jPanelMainInfoNotifier.setLayout(jPanelMainInfoNotifierLayout);
         jPanelMainInfoNotifierLayout.setHorizontalGroup(
             jPanelMainInfoNotifierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMainInfoNotifierLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(61, 61, 61)
+                .addComponent(jLabelOverviewInfoNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabelMainShowDate, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanelMainInfoNotifierLayout.setVerticalGroup(
             jPanelMainInfoNotifierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabelMainShowDate, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+            .addComponent(jLabelOverviewInfoNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanelOverviewCellsButtons1.setPreferredSize(new java.awt.Dimension(841, 24));
@@ -6014,7 +6022,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanelMainInfoNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, 959, Short.MAX_VALUE)
+                .addComponent(jPanelMainInfoNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, 960, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -6067,7 +6075,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 546, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -6095,11 +6103,14 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonRoomArrowUpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomArrowUpActionPerformed
     {//GEN-HEADEREND:event_jButtonRoomArrowUpActionPerformed
         //Show the 8 rooms below what is shown at Room1. If below 0 (zero) show RoomID's 001-008.
+        ovcListIndex = ovcListIndex - 8;
+        setupOverviewList(ovcStartDate);
     }//GEN-LAST:event_jButtonRoomArrowUpActionPerformed
 
     private void jButtonRoomArrowDownActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRoomArrowDownActionPerformed
     {//GEN-HEADEREND:event_jButtonRoomArrowDownActionPerformed
         //Show the next 8 rooms higher than what is shown at Room8. If higher than maximum room (RoomID 104) then show RoomID's 097-104.
+        ovcListIndex = ovcListIndex + 8;
     }//GEN-LAST:event_jButtonRoomArrowDownActionPerformed
 
     private void jButtonFacilitiesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonFacilitiesActionPerformed
@@ -6110,13 +6121,13 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonSetupOverviewActionPerformed
         //Opens Dialog-window "Setup Overview"
-        setupDialogSetupOverview(ovcRoom1, ovcRoom2, ovcRoom3, ovcRoom4, ovcRoom5, ovcRoom6, ovcRoom7, ovcRoom8, overviewCellStartDate);
+        setupDialogSetupOverview(ovcRoom1, ovcRoom2, ovcRoom3, ovcRoom4, ovcRoom5, ovcRoom6, ovcRoom7, ovcRoom8, ovcStartDate);
     }//GEN-LAST:event_jButtonSetupOverviewActionPerformed
 
     private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
     {//GEN-HEADEREND:event_jButtonResetOveriewActionPerformed
         //Shows rooms 1 to 8, starting from today in the cells in main-window
-        overviewCellStartDate = Calendar.getInstance();
+        ovcStartDate = Calendar.getInstance();
         resetMainScreen("001", "002", "003", "004", "005", "006", "007", "008");
     }//GEN-LAST:event_jButtonResetOveriewActionPerformed
 
@@ -6378,7 +6389,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
-        overviewCellStartDate.add(Calendar.DATE, -14);
+        ovcStartDate.add(Calendar.DATE, -14);
         updateCells(3);
     }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
 
@@ -6655,7 +6666,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
         int ocMonth = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
         int ocDate = jComboBoxSetupOverviewStartDate.getSelectedIndex()+1;
-        overviewCellStartDate.set(ocYear, ocMonth, ocDate);
+        ovcStartDate.set(ocYear, ocMonth, ocDate);
         String r1 = jTextFieldRow1.getText();
         String row1 = fixRoomID(r1);
         String r2 = jTextFieldRow2.getText();
@@ -6673,16 +6684,17 @@ public class CasablancaGUI extends javax.swing.JFrame
         String r8 = jTextFieldRow8.getText();
         String row8 = fixRoomID(r8);
         ovcShowRoomsList.clear();
+        ovcListIndex = 0;
         jButtonRoomArrowUp.setEnabled(false);
         jButtonRoomArrowDown.setEnabled(false);
-        fillRoomCells(row1, 1, overviewCellStartDate);
-        fillRoomCells(row2, 2, overviewCellStartDate);
-        fillRoomCells(row3, 3, overviewCellStartDate);
-        fillRoomCells(row4, 4, overviewCellStartDate);
-        fillRoomCells(row5, 5, overviewCellStartDate);
-        fillRoomCells(row6, 6, overviewCellStartDate);
-        fillRoomCells(row7, 7, overviewCellStartDate);
-        fillRoomCells(row8, 8, overviewCellStartDate);
+        fillRoomCells(row1, 1, ovcStartDate);
+        fillRoomCells(row2, 2, ovcStartDate);
+        fillRoomCells(row3, 3, ovcStartDate);
+        fillRoomCells(row4, 4, ovcStartDate);
+        fillRoomCells(row5, 5, ovcStartDate);
+        fillRoomCells(row6, 6, ovcStartDate);
+        fillRoomCells(row7, 7, ovcStartDate);
+        fillRoomCells(row8, 8, ovcStartDate);
         jDialogSetupOverview.setVisible(false);
     }//GEN-LAST:event_jButtonSetupOverviewShowRoomsActionPerformed
 
@@ -8360,6 +8372,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelOC812;
     private javax.swing.JLabel jLabelOC813;
     private javax.swing.JLabel jLabelOC814;
+    private javax.swing.JLabel jLabelOverviewInfoNotifier;
     private javax.swing.JLabel jLabelRoom1RoomID;
     private javax.swing.JLabel jLabelRoom1RoomType;
     private javax.swing.JLabel jLabelRoom2RoomID;
@@ -8792,76 +8805,109 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogSetupOverview.setVisible(true);
     }
     
-    private void updateCells(int action)
+    private void updateCellsWithDate()
     {
         setCurrentDate();
-        switch (action)
-        {
-            case 1:
-                
-                break;
-            case 2:
-                
-                break;
-            case 3:
-                
-                break;
-            case 4:
-                
-                break;
-            case 5:
-                
-                break;
-            case 6:
-                
-                break;
-            case 7:
-                
-                break;
-        }
+        
     }
     
     private void setupOverviewList(Calendar startDate)
     {
         setCurrentDate();
+//        jButtonRoomArrowUp.setEnabled(false);
         if (ovcShowRoomsList.size() > 0)
         {
-            if (ovcShowRoomsList.size() > 7)
+            if (ovcShowRoomsList.size() > 8)
             {
-                jButtonRoomArrowDown.setEnabled(true);
-                ovcListIndex = 8;
-                ovcRoom1 = ovcShowRoomsList.get(0);
-                ovcRoom2 = ovcShowRoomsList.get(1);
-                ovcRoom3 = ovcShowRoomsList.get(2);
-                ovcRoom4 = ovcShowRoomsList.get(3);
-                ovcRoom5 = ovcShowRoomsList.get(4);
-                ovcRoom6 = ovcShowRoomsList.get(5);
-                ovcRoom7 = ovcShowRoomsList.get(6);
-                ovcRoom8 = ovcShowRoomsList.get(7);
+                if (ovcListIndex <= 8)
+                {
+                    ovcListIndex = 8;
+                    jButtonRoomArrowUp.setEnabled(false);
+                } else
+                {
+                    jButtonRoomArrowUp.setEnabled(true);
+                }
+                if (ovcListIndex > ovcShowRoomsList.size())
+                {
+                    ovcListIndex = ovcShowRoomsList.size();
+                    jButtonRoomArrowDown.setEnabled(false);
+                } else
+                {
+                    jButtonRoomArrowDown.setEnabled(true);
+                }
+                ovcRoom1 = ovcShowRoomsList.get(ovcListIndex - 8);
+                ovcRoom2 = ovcShowRoomsList.get(ovcListIndex - 7);
+                ovcRoom3 = ovcShowRoomsList.get(ovcListIndex - 6);
+                ovcRoom4 = ovcShowRoomsList.get(ovcListIndex - 5);
+                ovcRoom5 = ovcShowRoomsList.get(ovcListIndex - 4);
+                ovcRoom6 = ovcShowRoomsList.get(ovcListIndex - 3);
+                ovcRoom7 = ovcShowRoomsList.get(ovcListIndex - 2);
+                ovcRoom8 = ovcShowRoomsList.get(ovcListIndex - 1);
             } else
             {
                 jButtonRoomArrowDown.setEnabled(false);
-                int listSize = 9 - ovcShowRoomsList.size();
-                switch (listSize)
+                ovcListIndex = 0;
+                int listSize = ovcShowRoomsList.size();
+                if(ovcShowRoomsList.size()>7)
                 {
-                    case 1:
-                        ovcRoom8 = ovcShowRoomsList.get(7);
-                    case 2:
-                        ovcRoom7 = ovcShowRoomsList.get(6);
-                    case 3:
-                        ovcRoom6 = ovcShowRoomsList.get(5);
-                    case 4:
-                        ovcRoom5 = ovcShowRoomsList.get(4);
-                    case 5:
-                        ovcRoom4 = ovcShowRoomsList.get(3);
-                    case 6:
-                        ovcRoom3 = ovcShowRoomsList.get(2);
-                    case 7:
-                        ovcRoom2 = ovcShowRoomsList.get(1);
-                    case 8:
-                        ovcRoom1 = ovcShowRoomsList.get(0);
+                    ovcRoom8 = ovcShowRoomsList.get(7);
+                } else
+                {
+                    ovcRoom8 = "000";
+                }
+                if(ovcShowRoomsList.size()>6)
+                {
+                    ovcRoom7 = ovcShowRoomsList.get(6);
+                } else
+                {
+                    ovcRoom7 = "000";
+                }
+                if(ovcShowRoomsList.size()>5)
+                {
+                    ovcRoom6 = ovcShowRoomsList.get(5);
+                } else
+                {
+                    ovcRoom6 = "000";
+                }
+                if(ovcShowRoomsList.size()>4)
+                {
+                    ovcRoom5 = ovcShowRoomsList.get(4);
+                } else
+                {
+                    ovcRoom5 = "000";
+                }
+                if(ovcShowRoomsList.size()>3)
+                {
+                    ovcRoom4 = ovcShowRoomsList.get(3);
+                } else
+                {
+                    ovcRoom4 = "000";
+                }
+                if(ovcShowRoomsList.size()>2)
+                {
+                    ovcRoom3 = ovcShowRoomsList.get(2);
+                } else
+                {
+                    ovcRoom3 = "000";
+                }
+                if(ovcShowRoomsList.size()>1)
+                {
+                    ovcRoom2 = ovcShowRoomsList.get(1);
+                } else
+                {
+                    ovcRoom2 = "000";
+                }
+                if(ovcShowRoomsList.size()>0)
+                {
+                    ovcRoom1 = ovcShowRoomsList.get(0);
+                } else
+                {
+                    ovcRoom1 = "000";
                 }
             }
+        } else
+        {
+            jLabelOverviewInfoNotifier.setText("No rooms to show...");
         }
     }
     
@@ -8870,7 +8916,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         setCurrentDate();
         cal = Calendar.getInstance();
         ovcListIndex = 0;
-        overviewCellStartDate.set(currentYear, currentMonth, currentDate);
+        ovcStartDate.set(currentYear, currentMonth, currentDate);
         ovcShowRoomsList.clear();
         ovcShowRoomsList.addAll(Arrays.asList(normalView));
         fillDateCells(cal);
