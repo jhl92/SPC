@@ -22,6 +22,7 @@ import javax.swing.JTextField;
 public class Facilitet_GUI extends javax.swing.JFrame
 {
     public String finalGuestID;
+    public String tempFacID;
     private SimpleDateFormat cDate = new SimpleDateFormat("dd");
     private SimpleDateFormat cMonth = new SimpleDateFormat("MM");
     private SimpleDateFormat cYear = new SimpleDateFormat("yy");
@@ -34,6 +35,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
     ArrayList<BookedOverviewConstructor> tempBookOverview = new ArrayList<>();
     ArrayList<PositionOverviewConstructor> tempPos = new ArrayList<>();
+    ArrayList<InfoObjectConstructor> tempGuestName = new ArrayList<>();
     Calendar presentDate = Calendar.getInstance();
     Calendar cal = Calendar.getInstance();
     
@@ -280,7 +282,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonOverviewDeleteBooking1 = new javax.swing.JButton();
         jLabel91 = new javax.swing.JLabel();
         jButtonOverviewHelp = new javax.swing.JButton();
-        jLabel116 = new javax.swing.JLabel();
+        jLabelSignInGuestName = new javax.swing.JLabel();
         jButtonPrintInstrucCost = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jListBookedOverview = new javax.swing.JList();
@@ -288,7 +290,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jScrollPane3 = new javax.swing.JScrollPane();
         jListWaitOverview = new javax.swing.JList();
         jButtonGetWaitOverview = new javax.swing.JButton();
-        jLabelOverviewGuestID = new javax.swing.JLabel();
+        jButtonSignInMain = new javax.swing.JButton();
+        jButtonSignOutMain = new javax.swing.JButton();
+        jTextFieldSignInGuestID = new javax.swing.JTextField();
         jPanel1Badminton = new javax.swing.JPanel();
         jButtonBookBadminton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -846,6 +850,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jDialogWaitOrNo.setPreferredSize(new java.awt.Dimension(277, 109));
+
         jLabel4.setText("The chosen date & time is currently overbooked.");
 
         jLabel8.setText("Do you wish to be put on a waiting list?");
@@ -873,7 +879,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(73, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -952,8 +958,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabel116.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabel116.setText("jLabel116");
+        jLabelSignInGuestName.setVisible(false);
+        jLabelSignInGuestName.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabelSignInGuestName.setText("****");
 
         jButtonPrintInstrucCost.setText("Print current balance for instructor cost");
         jButtonPrintInstrucCost.addActionListener(new java.awt.event.ActionListener()
@@ -986,7 +993,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabelOverviewGuestID.setText("*****");
+        jButtonSignInMain.setText("Sign in");
+        jButtonSignInMain.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonSignInMainActionPerformed(evt);
+            }
+        });
+
+        jButtonSignOutMain.setText("Sign out");
 
         javax.swing.GroupLayout jPanel5OverviewLayout = new javax.swing.GroupLayout(jPanel5Overview);
         jPanel5Overview.setLayout(jPanel5OverviewLayout);
@@ -1003,15 +1019,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
                             .addComponent(jButtonOverviewEditBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(328, 328, 328))
-                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel70)
-                            .addComponent(jLabel71))
-                        .addGap(12, 12, 12)
-                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel116, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabelOverviewGuestID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5OverviewLayout.createSequentialGroup()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                        .addComponent(jButtonPrintInstrucCost)
+                        .addGap(54, 54, 54))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                         .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
@@ -1023,23 +1035,35 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButtonLoadBookings)))
                         .addGap(0, 950, Short.MAX_VALUE))
-                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonPrintInstrucCost)
-                        .addGap(54, 54, 54))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5OverviewLayout.createSequentialGroup()
+                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel70)
+                            .addComponent(jLabel71))
+                        .addGap(12, 12, 12)
+                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
+                                .addComponent(jTextFieldSignInGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonSignInMain, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonSignOutMain))
+                            .addComponent(jLabelSignInGuestName, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel5OverviewLayout.setVerticalGroup(
             jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel70)
-                    .addComponent(jLabel116))
+                    .addComponent(jLabelSignInGuestName))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel71)
-                    .addComponent(jLabelOverviewGuestID))
+                    .addComponent(jTextFieldSignInGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButtonSignInMain, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSignOutMain, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel69)
@@ -1061,7 +1085,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonPrintInstrucCost))
-                .addContainerGap(417, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Overview", jPanel5Overview);
@@ -2332,7 +2356,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         }
                     } else {
                         jLabelBadmintonErrorMessageBook.setVisible(true); }  
-                } else {jDialogWaitOrNo.setVisible(true);}
+                } else {waitNoPop();}
+        tempFacID = "02";
     }//GEN-LAST:event_jButtonBookBadmintonActionPerformed
 
     private void jButtonVolleybalHelpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVolleybalHelpActionPerformed
@@ -2540,19 +2565,20 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonSignInActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignInActionPerformed
     {//GEN-HEADEREND:event_jButtonSignInActionPerformed
-        jLabelOverviewGuestID.setText("sdsjds");
-        
-        //finalGuestID = jTextFieldFinalGuestID.getText();
-        //jLabelOverviewGuestID.setText(finalGuestID);
-        //jLabelOverviewGuestID.setVisible(true);
-        jDialogLogIn.setVisible(false);
+//        finalGuestID = jTextFieldFinalGuestID.getText();
+//        jLabelOverviewGuestID.setText(finalGuestID);
+//        jLabelOverviewGuestID.setVisible(true);
+//        
+//        jDialogLogIn.setVisible(false);
+//        System.out.println(finalGuestID);
     }//GEN-LAST:event_jButtonSignInActionPerformed
 
     private void jButtonWaitYesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonWaitYesActionPerformed
     {//GEN-HEADEREND:event_jButtonWaitYesActionPerformed
-        insert.JDBCInsertWait("12345", "02", "1", jComboBoxBadmintonTimeFrom.getSelectedItem().toString(),
+        insert.JDBCInsertWait("12345", tempFacID, jComboBoxBadmintonTimeFrom.getSelectedItem().toString(),
                 jComboBoxBadmintonTimeTo.getSelectedItem().toString(), jComboBoxBadmintonSelectDate.getSelectedItem().toString());
         jDialogWaitOrNo.setVisible(false);
+        System.out.println(tempFacID);
     }//GEN-LAST:event_jButtonWaitYesActionPerformed
 
     private void jButtonWaitNoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonWaitNoActionPerformed
@@ -2567,10 +2593,29 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxVolleyballTimeTo.getSelectedItem().toString()).size()));
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButtonSignInMainActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignInMainActionPerformed
+    {//GEN-HEADEREND:event_jButtonSignInMainActionPerformed
+        finalGuestID = jTextFieldSignInGuestID.getText();
+        System.out.println(finalGuestID);
+        tempGuestName = select.getInfoFromGuestID(finalGuestID);
+        if (tempGuestName.size() > 0){
+            jLabelSignInGuestName.setVisible(true);
+            String firstName = tempGuestName.get(0).getGuestFirstname();
+            String lastName = tempGuestName.get(0).getGuestLastName();
+            jLabelSignInGuestName.setText(firstName+" "+lastName);
+        } else {System.out.println("Mistakes has benn made");}
+    }//GEN-LAST:event_jButtonSignInMainActionPerformed
+
     private void loginPop() {
         jDialogLogIn.setSize(300, 150);
         jDialogLogIn.setVisible(true);
         jDialogLogIn.setLocation(700, 250);
+    }
+    
+    private void waitNoPop() {
+        jDialogWaitOrNo.setSize(300, 210);
+        jDialogWaitOrNo.setVisible(true);
+        jDialogWaitOrNo.setLocation(700, 250);
     }
     public static void main(String args[])
     {
@@ -2636,6 +2681,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonOverviewHelp;
     private javax.swing.JButton jButtonPrintInstrucCost;
     private javax.swing.JButton jButtonSignIn;
+    private javax.swing.JButton jButtonSignInMain;
+    private javax.swing.JButton jButtonSignOutMain;
     private javax.swing.JButton jButtonSwimmingHelp;
     private javax.swing.JButton jButtonTennisHelp;
     private javax.swing.JButton jButtonVolleybalHelp;
@@ -2696,7 +2743,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
     private javax.swing.JLabel jLabel115;
-    private javax.swing.JLabel jLabel116;
     private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
@@ -2796,7 +2842,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelGolfInstructorTimeFrom;
     private javax.swing.JLabel jLabelGolfInstructorTimeTo;
     private javax.swing.JLabel jLabelHandballErrorMessageBook;
-    private javax.swing.JLabel jLabelOverviewGuestID;
+    private javax.swing.JLabel jLabelSignInGuestName;
     private javax.swing.JLabel jLabelSwimmingErrorMessageBook;
     private javax.swing.JLabel jLabelSwimmingErrorMessageNoHours;
     private javax.swing.JLabel jLabelSwimmingInstructHourLabel;
@@ -2847,5 +2893,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextFieldFinalGuestID;
+    private javax.swing.JTextField jTextFieldSignInGuestID;
     // End of variables declaration//GEN-END:variables
 }
