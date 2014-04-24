@@ -31,7 +31,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 {
     Random r = new Random();
     Calendar cal = new GregorianCalendar();
-    private Calendar ovcStartDate = Calendar.getInstance();
     private Calendar startDate = Calendar.getInstance();
     private Calendar endDate = Calendar.getInstance();
     private Calendar startDateTemp = Calendar.getInstance();
@@ -50,6 +49,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
     private ArrayList<String> ovcShowRoomsList = new ArrayList<>();
+    private Calendar ovcStartDate = Calendar.getInstance();
     private int ovcListIndex = 0;
     private String ovcRoom1 = "001";
     private String ovcRoom2 = "002";
@@ -3286,7 +3286,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         );
 
         jPanelMainBookingButtons.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        jPanelMainBookingButtons.setPreferredSize(new java.awt.Dimension(144, 60));
+        jPanelMainBookingButtons.setPreferredSize(new java.awt.Dimension(144, 59));
 
         jButtonBooking.setText("New Booking");
         jButtonBooking.setPreferredSize(new java.awt.Dimension(120, 35));
@@ -3305,7 +3305,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             .addGroup(jPanelMainBookingButtonsLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jButtonBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(10, 10, 10))
         );
         jPanelMainBookingButtonsLayout.setVerticalGroup(
             jPanelMainBookingButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3567,15 +3567,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelMainSearchButtonsLayout.setVerticalGroup(
             jPanelMainSearchButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelMainSearchButtonsLayout.createSequentialGroup()
-                .addGroup(jPanelMainSearchButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMainSearchButtonsLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanelMainSearchButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanelMainSearchButtonsLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10)
+                .addGroup(jPanelMainSearchButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonSearchRoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
@@ -6028,11 +6024,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelMainSearchButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelMainCheckInOutButtons, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
                     .addComponent(jPanelMainFacilityButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanelMainBookingButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelMainSearchButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelMainCheckInOutButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanelMainBookingButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0)
                 .addComponent(jPanelMainInfoNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -6874,6 +6870,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             writeList.addElement("Room  " + rID + "  -  " + rType);
         }
         jLabelSearchRoomResultNotifier.setText(roomListInfo.size() + " rooms found");
+        jListSearchRoomResult.setModel(writeList);
     }//GEN-LAST:event_jButtonRoomSearchActionPerformed
 
     private void jComboBoxSearchEndYearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxSearchEndYearActionPerformed
@@ -6931,23 +6928,21 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonSearchRoomRemoveFromListActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomRemoveFromListActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchRoomRemoveFromListActionPerformed
-        int delete = jListSearchRoomResult.getSelectedIndex();
-        roomList.remove(delete);
-        for (int i = 0; i < roomList.size(); i++)
+        if (!jListSearchRoomResult.isSelectionEmpty())
         {
-            String roomID = roomList.get(i).getRoomID();
-            String roomType = roomList.get(i).getRoomID(); //This line should get RoomType, not RoomID. RoomType needs to be added to Room Constructor
-            writeList.addElement("Room " + roomID + "  -  " + roomType);
+            int delete = jListSearchRoomResult.getSelectedIndex();
+            writeList.remove(delete);
+            jListSearchRoomResult.setModel(writeList);
         }
     }//GEN-LAST:event_jButtonSearchRoomRemoveFromListActionPerformed
 
     private void jButtonSearchRoomShowRoomsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomShowRoomsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchRoomShowRoomsActionPerformed
-        if (roomList.size() > 0)
+        if (roomListInfo.size() > 0)
         {
             ovcShowRoomsList.clear();
             ovcListIndex = 8;
-            for (int i = 0; i < roomList.size(); i++)
+            for (int i = 0; i < roomListInfo.size(); i++)
             {
                 String roomID = roomList.get(i).getRoomID();
                 ovcShowRoomsList.add(roomID);
@@ -8046,7 +8041,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
             {
-                if ("Windows Classic".equals(info.getName()))
+                if ("Metal".equals(info.getName()))
                 {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
