@@ -154,7 +154,7 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
     
-    public void JDBCInsertWait(String guestID, String facID, String pos, String timeStart, String timeEnd, String facDate)
+    public void JDBCInsertWait(String guestID, String facID, String timeStart, String timeEnd, String facDate)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -175,8 +175,8 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO WAITLIST VALUES ('"+guestID+"','"+facID+"','"
-                    +pos+"','"+timeStart+"','"+timeEnd+"','"+facDate+"')";
+            String sql = "INSERT INTO WAITLIST VALUES ('"+guestID+"','"+facID+"',POSITIONINCREASE.NEXTVAL"
+                    +",'"+timeStart+"','"+timeEnd+"','"+facDate+"')";
             stmt.executeUpdate(sql);
 //            sql = "INSERT INTO GUEST VALUES";
 //            stmt.executeUpdate(sql);
