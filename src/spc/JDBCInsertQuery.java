@@ -240,28 +240,32 @@ public class JDBCInsertQuery
             stmt = conn.createStatement();
             switch(facID) {
                 
-                case 01:  
+                case 1:  
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
                         + " WHERE GUESTID = '"+guestID+"'";
                 stmt.executeUpdate(sql);
+                conn.commit();
                 break;    
             
-                case 02: 
+                case 7: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
                         + " WHERE GUESTID='"+guestID+"'";
-                stmt.executeUpdate(sql);      
+                stmt.executeUpdate(sql);
+                conn.commit();
                 break;
             
-                case 05: 
+                case 2: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost40
                         + " WHERE GUESTID='"+guestID+"'";
-                stmt.executeUpdate(sql);
+                stmt.executeUpdate(sql); //<- point of madness
+                conn.commit();
                 break;
                     
-                case 06: 
+                case 8: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost40
                         + " WHERE GUESTID='"+guestID+"'";
                 stmt.executeUpdate(sql);
+                conn.commit();
                 break;
             }
             System.out.println("Inserted records into the table...");
