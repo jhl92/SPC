@@ -43,21 +43,22 @@ public class CasablancaGUI extends javax.swing.JFrame
     private DefaultListModel writeList = new DefaultListModel();
     private DefaultListModel writeList1 = new DefaultListModel();
     private DefaultListModel EmptyList = new DefaultListModel();
-    private ArrayList<String> showRoomsList = new ArrayList<>();
     private ArrayList<InfoObjectConstructor> guestList = new ArrayList<>();
     private ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
     private ArrayList<RoomTypeIDConstructor> roomListInfo = new ArrayList<>();
     private boolean SearchCustomerResult = false;
     private boolean SearchRoomAddSpecific = true;
     private boolean SearchRoomShowSpecific = true;
-    private String overviewCellRoom1 = "001";
-    private String overviewCellRoom2 = "002";
-    private String overviewCellRoom3 = "003";
-    private String overviewCellRoom4 = "004";
-    private String overviewCellRoom5 = "005";
-    private String overviewCellRoom6 = "006";
-    private String overviewCellRoom7 = "007";
-    private String overviewCellRoom8 = "008";
+    private ArrayList<String> ovcShowRoomsList = new ArrayList<>();
+    private int ovcListIndex;
+    private String ovcRoom1 = "001";
+    private String ovcRoom2 = "002";
+    private String ovcRoom3 = "003";
+    private String ovcRoom4 = "004";
+    private String ovcRoom5 = "005";
+    private String ovcRoom6 = "006";
+    private String ovcRoom7 = "007";
+    private String ovcRoom8 = "008";
     private String detailsGuestID;
     private String bookingDateFrom;
     private String bookingDateTo;
@@ -6109,7 +6110,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonSetupOverviewActionPerformed
         //Opens Dialog-window "Setup Overview"
-        setupDialogSetupOverview(overviewCellRoom1, overviewCellRoom2, overviewCellRoom3, overviewCellRoom4, overviewCellRoom5, overviewCellRoom6, overviewCellRoom7, overviewCellRoom8, overviewCellStartDate);
+        setupDialogSetupOverview(ovcRoom1, ovcRoom2, ovcRoom3, ovcRoom4, ovcRoom5, ovcRoom6, ovcRoom7, ovcRoom8, overviewCellStartDate);
     }//GEN-LAST:event_jButtonSetupOverviewActionPerformed
 
     private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
@@ -6671,7 +6672,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         String row7 = fixRoomID(r7);
         String r8 = jTextFieldRow8.getText();
         String row8 = fixRoomID(r8);
-        showRoomsList.clear();
+        ovcShowRoomsList.clear();
         jButtonRoomArrowUp.setEnabled(false);
         jButtonRoomArrowDown.setEnabled(false);
         fillRoomCells(row1, 1, overviewCellStartDate);
@@ -6922,14 +6923,14 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonSearchRoomShowRoomsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchRoomShowRoomsActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchRoomShowRoomsActionPerformed
-        showRoomsList.clear();
+        ovcShowRoomsList.clear();
         for(int i = 0; i < roomList.size(); i++)
         {
             String roomID = roomList.get(i).getRoomID();
-            showRoomsList.add(roomID);
+            ovcShowRoomsList.add(roomID);
         }
         jDialogSearchRoom.setVisible(false);
-        setupOverviewList(showRoomsList, SearchRoomSpecifiedDate);
+        setupOverviewList(SearchRoomSpecifiedDate);
     }//GEN-LAST:event_jButtonSearchRoomShowRoomsActionPerformed
 
     private void jListSearchRoomResultMousePressed(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jListSearchRoomResultMousePressed
@@ -8793,6 +8794,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     
     private void updateCells(int action)
     {
+        setCurrentDate();
         switch (action)
         {
             case 1:
@@ -8813,67 +8815,53 @@ public class CasablancaGUI extends javax.swing.JFrame
             case 6:
                 
                 break;
+            case 7:
+                
+                break;
         }
     }
     
-    private void setupOverviewList(ArrayList<String> listShowRooms, Calendar startDate)
+    private void setupOverviewList(Calendar startDate)
     {
         setCurrentDate();
-        int listSize = listShowRooms.size();
-        if (listSize > 7)
+        jButtonRoomArrowUp.setEnabled(false);
+        if (ovcShowRoomsList.size() > 0)
         {
-            if (!listShowRooms.get(7).equals(""))
+            if (ovcShowRoomsList.size() > 7)
             {
-                overviewCellRoom8 = listShowRooms.get(7);
-            }
-        }
-        if (listSize > 6)
-        {
-            if (!listShowRooms.get(6).equals(""))
+                jButtonRoomArrowDown.setEnabled(true);
+                ovcListIndex = 8;
+                ovcRoom1 = ovcShowRoomsList.get(0);
+                ovcRoom2 = ovcShowRoomsList.get(1);
+                ovcRoom3 = ovcShowRoomsList.get(2);
+                ovcRoom4 = ovcShowRoomsList.get(3);
+                ovcRoom5 = ovcShowRoomsList.get(4);
+                ovcRoom6 = ovcShowRoomsList.get(5);
+                ovcRoom7 = ovcShowRoomsList.get(6);
+                ovcRoom8 = ovcShowRoomsList.get(7);
+            } else
             {
-                overviewCellRoom7 = listShowRooms.get(6);
-            }
-        }
-        if (listSize > 5)
-        {
-            if (!listShowRooms.get(5).equals(""))
-            {
-                overviewCellRoom6 = listShowRooms.get(5);
-            }
-        }
-        if (listSize > 4)
-        {
-            if (!listShowRooms.get(4).equals(""))
-            {
-                overviewCellRoom5 = listShowRooms.get(4);
-            }
-        }
-        if (listSize > 3)
-        {
-            if (!listShowRooms.get(3).equals(""))
-            {
-                overviewCellRoom4 = listShowRooms.get(3);
-            }
-        }
-        if (listSize > 2)
-        {
-            if (!listShowRooms.get(2).equals(""))
-            {
-                overviewCellRoom3 = listShowRooms.get(2);
-            }
-        }
-        if (listSize > 1)
-        {
-            if (!listShowRooms.get(1).equals(""))
-            {
-                overviewCellRoom2 = listShowRooms.get(1);
-            }
-        }
-        if (listSize > 0)
-        {
-            if (!listShowRooms.get(0).equals(""))
-            {
-                overviewCellRoom1 = listShowRooms.get(0);
+                jButtonRoomArrowDown.setEnabled(false);
+                int listSize = 9 - ovcShowRoomsList.size();
+                switch (listSize)
+                {
+                    case 1:
+                        ovcRoom8 = ovcShowRoomsList.get(7);
+                    case 2:
+                        ovcRoom7 = ovcShowRoomsList.get(6);
+                    case 3:
+                        ovcRoom6 = ovcShowRoomsList.get(5);
+                    case 4:
+                        ovcRoom5 = ovcShowRoomsList.get(4);
+                    case 5:
+                        ovcRoom4 = ovcShowRoomsList.get(3);
+                    case 6:
+                        ovcRoom3 = ovcShowRoomsList.get(2);
+                    case 7:
+                        ovcRoom2 = ovcShowRoomsList.get(1);
+                    case 8:
+                        ovcRoom1 = ovcShowRoomsList.get(0);
+                }
             }
         }
     }
@@ -8882,9 +8870,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     {
         setCurrentDate();
         cal = Calendar.getInstance();
+        ovcListIndex = 0;
         overviewCellStartDate.set(currentYear, currentMonth, currentDate);
-        showRoomsList.clear();
-        showRoomsList.addAll(Arrays.asList(normalView));
+        ovcShowRoomsList.clear();
+        ovcShowRoomsList.addAll(Arrays.asList(normalView));
         fillDateCells(cal);
         fillRoomCells(r1, 1, cal);
         fillRoomCells(r2, 2, cal);
