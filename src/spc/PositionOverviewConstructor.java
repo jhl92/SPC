@@ -12,67 +12,43 @@ package spc;
  */
 public class PositionOverviewConstructor
 {
-    private String pos, facType, timeStart, timeEnd, facDate;
+    private String guestID, firstName, lastName;
+    //private String pos, facType, timeStart, timeEnd, facDate;
 
-    public String getPos()
+    public String getGuestID()
     {
-        return pos;
+        return guestID;
     }
 
-    public void setPos(String pos)
+    public void setGuestID(String guestID)
     {
-        this.pos = pos;
+        this.guestID = guestID;
     }
 
-    public String getFacType()
+    public String getFirstName()
     {
-        return facType;
+        return firstName;
     }
 
-    public void setFacType(String facType)
+    public void setFirstName(String firstName)
     {
-        this.facType = facType;
+        this.firstName = firstName;
     }
 
-    public String getTimeStart()
+    public String getLastName()
     {
-        return timeStart;
+        return lastName;
     }
 
-    public void setTimeStart(String timeStart)
+    public void setLastName(String lastName)
     {
-        this.timeStart = timeStart;
+        this.lastName = lastName;
     }
 
-    public String getTimeEnd()
+    public PositionOverviewConstructor(String guestID, String firstName, String lastName)
     {
-        return timeEnd;
+        this.guestID = guestID;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
-
-    public void setTimeEnd(String timeEnd)
-    {
-        this.timeEnd = timeEnd;
-    }
-
-    public String getFacDate()
-    {
-        return facDate;
-    }
-
-    public void setFacDate(String facDate)
-    {
-        this.facDate = facDate;
-    }
-
-    public PositionOverviewConstructor(String pos, String facType, String timeStart, String timeEnd, String facDate)
-    {
-        this.pos = pos;
-        this.facType = facType;
-        this.timeStart = timeStart;
-        this.timeEnd = timeEnd;
-        this.facDate = facDate;
-    }
-
-   
-
 }
