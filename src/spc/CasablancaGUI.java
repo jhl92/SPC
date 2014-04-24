@@ -6390,7 +6390,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
         ovcStartDate.add(Calendar.DATE, -14);
-        updateCells(3);
+        updateCellsWithDate(ovcStartDate);
     }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
 
     private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
@@ -8805,7 +8805,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogSetupOverview.setVisible(true);
     }
     
-    private void updateCellsWithDate()
+    private void updateCellsWithDate(Calendar sDate)
     {
         setCurrentDate();
         
