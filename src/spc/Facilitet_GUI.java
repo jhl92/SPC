@@ -2203,18 +2203,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookHandballActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookHandballActionPerformed
     {//GEN-HEADEREND:event_jButtonBookHandballActionPerformed
+        tempFacID = "03";
         jLabelHandballErrorMessageBook.setVisible(false);
         if(jComboBoxHandballTimeFrom.getSelectedIndex() <= jComboBoxHandballTimeTo.getSelectedIndex()) {
             String handballDate = (String)jComboBoxHandballSelectDate.getSelectedItem();
             String handballTimeFrom = (String)jComboBoxHandballTimeFrom.getSelectedItem();
             String handballTimeTo = (String)jComboBoxHandballTimeTo.getSelectedItem();
-            try
-            {
-                insert.JDBCInsertFacility(finalGuestID, "02", handballDate, handballTimeFrom, handballTimeTo, "09098");
-            } catch (SQLException ex)
-            {
-                Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            insert.JDBCInsertFacility(finalGuestID, tempFacID, handballDate, handballTimeFrom, handballTimeTo, "09098");
+            
         } else {jLabelHandballErrorMessageBook.setVisible(true);}
     }//GEN-LAST:event_jButtonBookHandballActionPerformed
 
@@ -2363,40 +2359,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
                                 String badmintonTimeFrom = (String)jComboBoxBadmintonTimeFrom.getSelectedItem();
                                 String badmintonTimeTo = (String)jComboBoxBadmintonTimeTo.getSelectedItem();
-                                try
-                                {
-                                    insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "Y");
-                                } catch (SQLException ex)
-                                {
-                                    Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-                                }
-                                try
-                                {
-                                    insert.JDBCInsertInstructorCost(finalGuestID, noHours, 02);
-                                } catch (SQLException ex)
-                                {
-                                    Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-                                }
-                            jLabelBadmintonErrorMessageNoHours.setVisible(false);                  
+                                insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "Y");
+                                insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));
+                                jLabelBadmintonErrorMessageNoHours.setVisible(false);                  
                             }
                         } else {
                                 String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
                                 String badmintonTimeFrom = (String)jComboBoxBadmintonTimeFrom.getSelectedItem();
                                 String badmintonTimeTo = (String)jComboBoxBadmintonTimeTo.getSelectedItem();
-                            try
-                            {
                                 insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "N");
-                            } catch (SQLException ex)
-                            {
-                                Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-                            }
-                            try
-                            {
-                                insert.JDBCInsertInstructorCost(finalGuestID, noHours, 02);
-                            } catch (SQLException ex)
-                            {
-                                Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-                            }
+                                insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));   
                         }
                     } else {
                         jLabelBadmintonErrorMessageBook.setVisible(true); }  
@@ -2438,18 +2410,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookFitnessActionPerformed
         if(jComboBoxFitnessTimeFrom.getSelectedIndex() <= jComboBoxFitnessTimeTo.getSelectedIndex()) {
             
-                String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
-                String fitnessTimeFrom = (String)jComboBoxFitnessTimeFrom.getSelectedItem();
-                String fitnessTimeTo = (String)jComboBoxFitnessTimeTo.getSelectedItem();
-            try
-            {
-                insert.JDBCInsertFacility(finalGuestID, "02", fitnessDate, fitnessTimeFrom, fitnessTimeTo, "09098");
-            } catch (SQLException ex)
-            {
-                Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-            }
- 
-            jLabelFitnessErrorMessageBook1.setVisible(false);   
+            String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
+            String fitnessTimeFrom = (String)jComboBoxFitnessTimeFrom.getSelectedItem();
+            String fitnessTimeTo = (String)jComboBoxFitnessTimeTo.getSelectedItem();
+            insert.JDBCInsertFacility(finalGuestID, "02", fitnessDate, fitnessTimeFrom, fitnessTimeTo, "09098");
+            jLabelFitnessErrorMessageBook1.setVisible(false);  
+            
         } else {
             jLabelFitnessErrorMessageBook1.setVisible(true); } 
     }//GEN-LAST:event_jButtonBookFitnessActionPerformed
@@ -2461,13 +2427,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
             String volleyballDate = (String)jComboBoxVolleyballSelectDate.getSelectedItem();
             String volleyTimeFrom = (String)jComboBoxVolleyballTimeFrom.getSelectedItem();
             String volleyTimeTo = (String)jComboBoxVolleyballTimeTo.getSelectedItem();
-            try
-            {
-                insert.JDBCInsertFacility(finalGuestID, "02", volleyballDate, volleyTimeFrom, volleyTimeTo, "09098");
-            } catch (SQLException ex)
-            {
-                Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            insert.JDBCInsertFacility(finalGuestID, "02", volleyballDate, volleyTimeFrom, volleyTimeTo, "09098");
         }else{jLabelVolleyballErrorMessageBook.setVisible(true);}
     }//GEN-LAST:event_jButtonBookVolleyActionPerformed
 
@@ -2482,14 +2442,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem();
                 String tennisTimeFrom = (String)jComboBoxTennisTimeFrom.getSelectedItem();
                 String tennisTimeTo = (String)jComboBoxTennisTimeTo.getSelectedItem();
-                try
-                {
-                    insert.JDBCInsertFacility(finalGuestID, "02", tennisballDate, tennisTimeFrom, tennisTimeTo, "09098");
-                } catch (SQLException ex)
-                {
-                    Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-                }
-        jLabelTennisErrorMessageNoHours.setVisible(false);   
+                insert.JDBCInsertFacility(finalGuestID, "02", tennisballDate, tennisTimeFrom, tennisTimeTo, "09098");
+                jLabelTennisErrorMessageNoHours.setVisible(false);   
         }} else {jLabelTennisErrorMessageBook.setVisible(true); } 
     }//GEN-LAST:event_jButtonBookTennisActionPerformed
 
@@ -2543,6 +2497,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookGolfActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookGolfActionPerformed
     {//GEN-HEADEREND:event_jButtonBookGolfActionPerformed
+        tempFacID = "02";
         jLabelGolfErrorMessageBook.setVisible(false);
         jLabelGolfErrorMessageNoHours.setVisible(false);
         if(jComboBoxGolfInstructorTimeFrom.getSelectedIndex() <= jComboBoxGolfInstructorTimeTo.getSelectedIndex()) {
@@ -2552,13 +2507,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     String golfDate = (String)jComboBoxGolfInstructorDate.getSelectedItem();
                     String golfTimeFrom = (String)jComboBoxGolfInstructorTimeFrom.getSelectedItem();
                     String golfTimeTo = (String)jComboBoxGolfInstructorTimeTo.getSelectedItem();
-                try
-                {
-                    insert.JDBCInsertFacility(finalGuestID, "05", golfDate, golfTimeFrom, golfTimeTo, "09098");
-                } catch (SQLException ex)
-                {
-                    Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                    insert.JDBCInsertFacility(finalGuestID, tempFacID, golfDate, golfTimeFrom, golfTimeTo, "09098");
                     jLabelGolfErrorMessageBook.setVisible(false);   
                 {
                 jLabelGolfErrorMessageBook.setVisible(true); } }
@@ -2576,13 +2525,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     String golfDate = (String)jComboBoxSwimmingInstructorDate.getSelectedItem();
                     String golfTimeFrom = (String)jComboBoxSwimmingInstructorTimeFrom.getSelectedItem();
                     String golfTimeTo = (String)jComboBoxSwimmingInstructorTimeTo.getSelectedItem();
-                try
-                {
                     insert.JDBCInsertFacility(finalGuestID, "05", golfDate, golfTimeFrom, golfTimeTo, "09098");
-                } catch (SQLException ex)
-                {
-                    Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
-                }
                     jLabelGolfErrorMessageBook.setVisible(false);   
                 {
                 jLabelGolfErrorMessageBook.setVisible(true); } }
@@ -2632,7 +2575,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private void jButtonSignInMainActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignInMainActionPerformed
     {//GEN-HEADEREND:event_jButtonSignInMainActionPerformed
         finalGuestID = jTextFieldSignInGuestID.getText();
-        System.out.println(finalGuestID);
         tempGuestName = select.getInfoFromGuestID(finalGuestID);
         if(jTextFieldSignInGuestID.getText().equals("")) {
             jLabelSignInErrorMessage.setText("The box above is empty, you have to insert your guest ID");

@@ -90,7 +90,7 @@ public class JDBCInsertQuery
     }
 
     public void JDBCInsertFacility(String guestID, String facID, String facDate, 
-            String timeStart, String timeEnd, String insID) throws SQLException
+            String timeStart, String timeEnd, String ins)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -111,7 +111,7 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','"+insID+"')";
+            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','"+ins+"')";
             stmt.executeUpdate(sql);
 //            sql = "INSERT INTO GUEST VALUES";
 //            stmt.executeUpdate(sql);
@@ -122,12 +122,10 @@ public class JDBCInsertQuery
         {
             //Håndterer JDBC relaterede fejl
             se.printStackTrace();
-            conn.rollback();
         } catch (Exception e)
         {
             //Håndterer Class relaterede fejl
             e.printStackTrace();
-            conn.rollback();
         } finally
         {
             //Luk forbindelsen
@@ -217,7 +215,7 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
     
-    public void JDBCInsertInstructorCost(String guestID, String noOfHours, int facID) throws SQLException {
+    public void JDBCInsertInstructorCost(String guestID, String noOfHours, int facID) {
         Connection conn = null;
         Statement stmt = null;
         String sql = "";
@@ -272,12 +270,10 @@ public class JDBCInsertQuery
         {
             //Håndterer JDBC relaterede fejl
             se.printStackTrace();
-            conn.rollback();
         } catch (Exception e)
         {
             //Håndterer Class relaterede fejl
             e.printStackTrace();
-            conn.rollback();
         } finally
         {
             //Luk forbindelsen
