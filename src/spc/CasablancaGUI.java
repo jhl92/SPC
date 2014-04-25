@@ -39,6 +39,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
     JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
+    JDBCUpdateQuery jdcbUpdate = new JDBCUpdateQuery();
     private DefaultListModel writeList = new DefaultListModel();
     private DefaultListModel writeList1 = new DefaultListModel();
     private DefaultListModel EmptyList = new DefaultListModel();
@@ -46,8 +47,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
     private ArrayList<RoomTypeIDConstructor> roomListInfo = new ArrayList<>();
     private boolean SearchCustomerResult = false;
-    private boolean SearchRoomAddSpecific = true;
-    private boolean SearchRoomShowSpecific = true;
+    private boolean newGuestID = true;
     private ArrayList<String> ovcShowRoomsList = new ArrayList<>();
     private Calendar ovcStartDate = Calendar.getInstance();
     private int ovcListIndex = 0;
@@ -78,6 +78,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private String deleteBookingRoomID;
     private String deleteBookingGuestID;
     private String deleteBookingStartDate;
+    private String deleteBookingEndDate;
     private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
     private SimpleDateFormat sdfDateInt = new SimpleDateFormat("d");
     private SimpleDateFormat sdfMonthInt = new SimpleDateFormat("M");
@@ -342,6 +343,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel17 = new javax.swing.JPanel();
         jButtonSetupOverviewShowRooms = new javax.swing.JButton();
         jButtonSetupOverviewExit = new javax.swing.JButton();
+        jDialogRequestDeleteBooking = new javax.swing.JDialog();
+        jPanel10 = new javax.swing.JPanel();
+        jLabelRequestDeleteBooking = new javax.swing.JLabel();
+        jButtonRequestContinue = new javax.swing.JButton();
+        jButtonRequestCancel = new javax.swing.JButton();
         jPanelOverviewCellsButtons2 = new javax.swing.JPanel();
         jButtonRoomArrowUp = new javax.swing.JButton();
         jButtonRoomArrowDown = new javax.swing.JButton();
@@ -2985,6 +2991,66 @@ public class CasablancaGUI extends javax.swing.JFrame
                         .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanelSetupOverviewSelectRoomsAtRows, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jLabelRequestDeleteBooking.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRequestDeleteBooking.setText("<html>To change this booking, the booking will be deleted and the Booking-window will open in order for you change roomtype and the bookings start- or end dates.</html>");
+
+        jButtonRequestContinue.setText("Continue?");
+        jButtonRequestContinue.setPreferredSize(new java.awt.Dimension(115, 30));
+        jButtonRequestContinue.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonRequestContinueActionPerformed(evt);
+            }
+        });
+
+        jButtonRequestCancel.setText("Cancel");
+        jButtonRequestCancel.setPreferredSize(new java.awt.Dimension(115, 30));
+        jButtonRequestCancel.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonRequestCancelActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(jButtonRequestContinue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonRequestCancel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRequestDeleteBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20))
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabelRequestDeleteBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonRequestContinue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonRequestCancel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15))
+        );
+
+        javax.swing.GroupLayout jDialogRequestDeleteBookingLayout = new javax.swing.GroupLayout(jDialogRequestDeleteBooking.getContentPane());
+        jDialogRequestDeleteBooking.getContentPane().setLayout(jDialogRequestDeleteBookingLayout);
+        jDialogRequestDeleteBookingLayout.setHorizontalGroup(
+            jDialogRequestDeleteBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jDialogRequestDeleteBookingLayout.setVerticalGroup(
+            jDialogRequestDeleteBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -5955,7 +6021,6 @@ public class CasablancaGUI extends javax.swing.JFrame
             searchParameter = 1;
             guestList.addAll(jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText()));
         }
-        System.out.println("guestList.size: " + guestList.size());
         //Continues to remove objects that does not match any other entered search parameters
         if(booleanList == true)
         {
@@ -6212,31 +6277,34 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonBookingCreateIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingCreateIDActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingCreateIDActionPerformed
-        //Creates a new random guestID and makes sure that it does not exist already
-        boolean IDcreated = false;
-        String IDtemp = "";
-        ArrayList GuestIDtemp = jdcbselect.checkIdAva();
-        System.out.println("GuestIDtemp.size: " + GuestIDtemp.size());
-        while (IDcreated == false)
+        if (newGuestID)
         {
-            String characters = "123456789ABCDEFGHIJKLMNPQRSTUVWXYZ";
-            int i1 = r.nextInt(34);
-            int i2 = r.nextInt(34);
-            int i3 = r.nextInt(34);
-            int i4 = r.nextInt(34);
-            int i5 = r.nextInt(34);
-            String s1 = characters.substring(i1, (i1 + 1));
-            String s2 = characters.substring(i2, (i2 + 1));
-            String s3 = characters.substring(i3, (i3 + 1));
-            String s4 = characters.substring(i4, (i4 + 1));
-            String s5 = characters.substring(i5, (i5 + 1));
-            IDtemp = (s1 + s2 + s3 + s4 + s5).toString();
-            if (!GuestIDtemp.contains(IDtemp))
+            //Creates a new random guestID and makes sure that it does not exist already
+            boolean IDcreated = false;
+            String IDtemp = "";
+            ArrayList GuestIDtemp = jdcbselect.checkIdAva();
+            System.out.println("GuestIDtemp.size: " + GuestIDtemp.size());
+            while (IDcreated == false)
             {
-                IDcreated = true;
+                String characters = "123456789ABCDEFGHIJKLMNPQRSTUVWXYZ";
+                int i1 = r.nextInt(34);
+                int i2 = r.nextInt(34);
+                int i3 = r.nextInt(34);
+                int i4 = r.nextInt(34);
+                int i5 = r.nextInt(34);
+                String s1 = characters.substring(i1, (i1 + 1));
+                String s2 = characters.substring(i2, (i2 + 1));
+                String s3 = characters.substring(i3, (i3 + 1));
+                String s4 = characters.substring(i4, (i4 + 1));
+                String s5 = characters.substring(i5, (i5 + 1));
+                IDtemp = (s1 + s2 + s3 + s4 + s5).toString();
+                if (!GuestIDtemp.contains(IDtemp))
+                {
+                    IDcreated = true;
+                }
             }
+            jTextFieldBookingGuestID.setText(IDtemp);
         }
-        jTextFieldBookingGuestID.setText(IDtemp);
     }//GEN-LAST:event_jButtonBookingCreateIDActionPerformed
 
     private void jComboBoxCheckInMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxCheckInMonthActionPerformed
@@ -6319,7 +6387,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         } else
         {
             jDialogSearchCustomer.setVisible(false);
-            setupDialogEditCustomer(gID);
+            setupDialogEditDetails(gID);
         }
     }//GEN-LAST:event_jButtonEditSelectedCustomerDetailsActionPerformed
 
@@ -7600,6 +7668,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             deleteBookingRoomID = "";
             deleteBookingGuestID = "";
             deleteBookingStartDate = "";
+            deleteBookingEndDate = "";
         } else
         {
             int bookingIndex = jListDetailsFutureBookings.getSelectedIndex();
@@ -7625,6 +7694,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             deleteBookingRoomID = rID;
             deleteBookingGuestID = guestList.get(bookingIndex).getGuestID();
             deleteBookingStartDate = dFrom;
+            deleteBookingEndDate = dTo;
         }
     }//GEN-LAST:event_jButtonDetailsShowBookingActionPerformed
 
@@ -7639,9 +7709,61 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
         } else
         {
-            
+            jLabelRequestDeleteBooking.setText("<html>To change this booking, the booking will be deleted and the Booking-window will open in order for you change roomtype aswell as the bookings start- or end dates.</html>");
+            jDialogRequestDeleteBooking.setVisible(true);
         }
     }//GEN-LAST:event_jButtonDetailsChangeBookingActionPerformed
+
+    private void jButtonRequestContinueActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRequestContinueActionPerformed
+    {//GEN-HEADEREND:event_jButtonRequestContinueActionPerformed
+        jdcbdelete.JDBCDeleteRoomBooking();
+        jButtonBookingCreateID.setEnabled(false);
+        RoomTypeIDConstructor roomInfo = jdcbselect.getRoomInfoFromRoomID(deleteBookingRoomID);
+        String rType = roomInfo.getRoomType();
+        switch (rType)
+        {
+            case "Single":
+                jComboBoxBookingRoomType.setSelectedIndex(0);
+                break;
+            case "Double":
+                jComboBoxBookingRoomType.setSelectedIndex(1);
+                break;
+            case "Family":
+                jComboBoxBookingRoomType.setSelectedIndex(2);
+                break;
+        }
+        DateVar sd = getDateSettings(deleteBookingStartDate);
+        DateVar ed = getDateSettings(deleteBookingEndDate);
+        jComboBoxBookingStartMonth.setSelectedIndex(sd.getMonth());
+        jComboBoxBookingStartYear.setSelectedIndex(sd.getYear());
+        jComboBoxBookingStartDate.setSelectedIndex(sd.getDate());
+        jComboBoxBookingEndMonth.setSelectedIndex(ed.getMonth());
+        jComboBoxBookingEndYear.setSelectedIndex(ed.getYear());
+        jComboBoxBookingEndDate.setSelectedIndex(ed.getDate());
+        jButtonBookingCreateID.setEnabled(true);
+        jDialogBooking.setVisible(true);
+        if(checkRoom(roomID, sDate, eDate))
+        {
+            jButtonBookingBook.setEnabled(true);
+            jLabelBookingRoomNotifier.setText("Found room: " + roomID);
+            bookingRoomID = roomID;
+            bookingDateFrom = sdf.format(sDate);
+            bookingDateTo = sdf.format(eDate);
+            int nights = getNumberOfNights(sDate, eDate);
+            bookingNumberNights = "" + nights;
+        } else
+        {
+            jLabelBookingRoomNotifier.setText("Room " + roomID + "<html> is not available in the specified period...</html>");
+            jButtonBookingBook.setEnabled(false);
+        
+        
+        h
+    }//GEN-LAST:event_jButtonRequestContinueActionPerformed
+
+    private void jButtonRequestCancelActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRequestCancelActionPerformed
+    {//GEN-HEADEREND:event_jButtonRequestCancelActionPerformed
+        jDialogRequestDeleteBooking.setVisible(false);
+    }//GEN-LAST:event_jButtonRequestCancelActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
@@ -7930,6 +8052,8 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonNext7Days;
     private javax.swing.JButton jButtonPrevious14Days;
     private javax.swing.JButton jButtonPrevious7Days;
+    private javax.swing.JButton jButtonRequestCancel;
+    private javax.swing.JButton jButtonRequestContinue;
     private javax.swing.JButton jButtonResetOveriew;
     private javax.swing.JButton jButtonRoomArrowDown;
     private javax.swing.JButton jButtonRoomArrowUp;
@@ -7972,6 +8096,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JDialog jDialogCheckInOut;
     private javax.swing.JDialog jDialogDetails;
     private javax.swing.JDialog jDialogEditDetails;
+    private javax.swing.JDialog jDialogRequestDeleteBooking;
     private javax.swing.JDialog jDialogSearchCustomer;
     private javax.swing.JDialog jDialogSearchRoom;
     private javax.swing.JDialog jDialogSetupOverview;
@@ -8200,6 +8325,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelOC813;
     private javax.swing.JLabel jLabelOC814;
     private javax.swing.JLabel jLabelOverviewInfoMessage;
+    private javax.swing.JLabel jLabelRequestDeleteBooking;
     private javax.swing.JLabel jLabelRoom1RoomID;
     private javax.swing.JLabel jLabelRoom1RoomType;
     private javax.swing.JLabel jLabelRoom2RoomID;
@@ -8261,6 +8387,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JList jListSearchCustomerResult;
     private javax.swing.JList jListSearchRoomResult;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
@@ -8466,6 +8593,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxBookingEndMonth.setSelectedIndex(ed.getMonth());
         jComboBoxBookingEndYear.setSelectedIndex(ed.getYear());
         jComboBoxBookingEndDate.setSelectedIndex(ed.getDate());
+        jButtonBookingCreateID.setEnabled(true);
         jDialogBooking.setVisible(true);
         if(checkRoom(roomID, sDate, eDate))
         {
@@ -8481,33 +8609,6 @@ public class CasablancaGUI extends javax.swing.JFrame
             jLabelBookingRoomNotifier.setText("Room " + roomID + "<html> is not available in the specified period...</html>");
             jButtonBookingBook.setEnabled(false);
         }
-    }
-    
-    public void setupDialogEditDetails(String guestID)
-    {
-        setCurrentDate();
-        ArrayList<InfoObjectConstructor> editDetailsList = new ArrayList<>();
-        editDetailsList = jdcbselect.getInfoFromGuestID(guestID);
-        
-        jLabelEditGuestIDOriginal.setText(guestID);
-        jLabelEditFirstNameOriginal.setText(editDetailsList.get(0).getGuestFirstname());
-        jLabelEditLastNameOriginal.setText(editDetailsList.get(0).getGuestLastName());
-        jLabelEditCountryOriginal.setText(editDetailsList.get(0).getCountry());
-        jLabelEditPhoneOriginal.setText(editDetailsList.get(0).getContanctPhone());
-        jLabelEditEmailOriginal.setText(editDetailsList.get(0).getEmail());
-        
-        jTextFieldEditFirstNameNew.setText("");
-        jTextFieldEditLastNameNew.setText("");
-        jTextFieldEditCountryNew.setText("");
-        jTextFieldEditPhoneNew.setText("");
-        jTextFieldEditEmailNew.setText("");
-        
-        
-        
-        
-        
-        
-        
     }
     
     private void setupDialogSearchCustomer(boolean returnButton)
@@ -8554,12 +8655,13 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogSearchRoom.setVisible(true);
     }
     
-    private void setupDialogEditCustomer(String guestID)
+    private void setupDialogEditDetails(String guestID)
     {
         setCurrentDate();
         deleteBookingRoomID = "";
         deleteBookingGuestID = "";
         deleteBookingStartDate = "";
+        deleteBookingEndDate = "";
         jTextFieldEditFirstNameNew.setText("");
         jTextFieldEditLastNameNew.setText("");
         jTextFieldEditCountryNew.setText("");
