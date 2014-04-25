@@ -281,84 +281,94 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonWaitNo = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5Overview = new javax.swing.JPanel();
-        jLabel69 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
         jLabel70 = new javax.swing.JLabel();
-        jLabel71 = new javax.swing.JLabel();
-        jButtonOverviewEditBooking1 = new javax.swing.JButton();
-        jButtonOverviewDeleteBooking1 = new javax.swing.JButton();
-        jLabel91 = new javax.swing.JLabel();
-        jButtonOverviewHelp = new javax.swing.JButton();
         jLabelSignInGuestName = new javax.swing.JLabel();
-        jButtonPrintInstrucCost = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jListBookedOverview = new javax.swing.JList();
-        jButtonLoadBookings = new javax.swing.JButton();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jListWaitOverview = new javax.swing.JList();
-        jButtonGetWaitOverview = new javax.swing.JButton();
+        jLabel71 = new javax.swing.JLabel();
+        jTextFieldSignInGuestID = new javax.swing.JTextField();
         jButtonSignInMain = new javax.swing.JButton();
         jButtonSignOutMain = new javax.swing.JButton();
-        jTextFieldSignInGuestID = new javax.swing.JTextField();
         jLabelSignInErrorMessage = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jComboBoxOverviewSelectDate = new javax.swing.JComboBox();
-        jLabel37 = new javax.swing.JLabel();
-        jComboBoxOverviewTimeFrom = new javax.swing.JComboBox();
-        jLabel38 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jButtonOverviewEditBooking1 = new javax.swing.JButton();
+        jButtonOverviewDeleteBooking1 = new javax.swing.JButton();
+        jButtonOverviewHelp = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jListBookedOverview = new javax.swing.JList();
+        jLabel69 = new javax.swing.JLabel();
+        jButtonLoadBookings = new javax.swing.JButton();
+        jPanel15 = new javax.swing.JPanel();
         jComboBoxOverviewTimeTo = new javax.swing.JComboBox();
+        jLabel38 = new javax.swing.JLabel();
+        jComboBoxOverviewTimeFrom = new javax.swing.JComboBox();
+        jButtonGetWaitOverview = new javax.swing.JButton();
+        jLabel37 = new javax.swing.JLabel();
         jComboBoxOverviewFacility = new javax.swing.JComboBox();
+        jComboBoxOverviewSelectDate = new javax.swing.JComboBox();
+        jLabel36 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jListWaitOverview = new javax.swing.JList();
+        jLabel91 = new javax.swing.JLabel();
+        jButtonPrintInstrucCost = new javax.swing.JButton();
         jPanel1Badminton = new javax.swing.JPanel();
-        jButtonBookBadminton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jLabelBadmintonCostText = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        jLabelBadmintonErrorMessageBook = new javax.swing.JLabel();
+        jPanel16 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
         jComboBoxBadmintonSelectDate = new javax.swing.JComboBox();
+        jLabel29 = new javax.swing.JLabel();
         jComboBoxBadmintonTimeFrom = new javax.swing.JComboBox();
         jLabel27 = new javax.swing.JLabel();
         jComboBoxBadmintonTimeTo = new javax.swing.JComboBox();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jButtonBadmintonHelp = new javax.swing.JButton();
-        jLabel105 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jCheckBoxBadmintonInstruct = new javax.swing.JCheckBox();
-        jComboBoxBadmintonInstrucHours = new javax.swing.JComboBox();
         jLabelBadmintonInstructHourLabel = new javax.swing.JLabel();
+        jComboBoxBadmintonInstrucHours = new javax.swing.JComboBox();
+        jLabelBadmintonCostText = new javax.swing.JLabel();
         jLabelBadmintonInstructorPrice = new javax.swing.JLabel();
+        jButtonBookBadminton = new javax.swing.JButton();
         jLabelBadmintonErrorMessageNoHours = new javax.swing.JLabel();
-        jLabelBadmintonErrorMessageBook = new javax.swing.JLabel();
         jPanel3Golf = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel108 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jPanel17 = new javax.swing.JPanel();
+        jLabel67 = new javax.swing.JLabel();
+        jCheckBoxGolfInstruct = new javax.swing.JCheckBox();
+        jLabelGolfInstructHourLabel = new javax.swing.JLabel();
+        jComboBoxGolfInstrucHours = new javax.swing.JComboBox();
+        jLabelGolfInstructorDateTimeInfo = new javax.swing.JLabel();
         jLabelGolfInstructorDate = new javax.swing.JLabel();
         jComboBoxGolfInstructorDate = new javax.swing.JComboBox();
         jLabelGolfInstructorTimeFrom = new javax.swing.JLabel();
         jComboBoxGolfInstructorTimeFrom = new javax.swing.JComboBox();
         jLabelGolfInstructorTimeTo = new javax.swing.JLabel();
         jComboBoxGolfInstructorTimeTo = new javax.swing.JComboBox();
-        jLabelGolfInstructorDateTimeInfo = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
-        jCheckBoxGolfInstruct = new javax.swing.JCheckBox();
-        jLabelGolfInstructHourLabel = new javax.swing.JLabel();
-        jComboBoxGolfInstrucHours = new javax.swing.JComboBox();
+        jButtonGolfHelp = new javax.swing.JButton();
         jButtonBookGolf = new javax.swing.JButton();
         jLabelGolfCostText = new javax.swing.JLabel();
-        jLabelGolfErrorMessageBook = new javax.swing.JLabel();
-        jLabelGolfErrorMessageNoHours = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel108 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
         jLabelGolfInstructorPrice = new javax.swing.JLabel();
-        jButtonGolfHelp = new javax.swing.JButton();
+        jLabelGolfErrorMessageNoHours = new javax.swing.JLabel();
         jPanel1Handball = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         jComboBoxHandballSelectDate = new javax.swing.JComboBox();
@@ -369,12 +379,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonHandBallHelp = new javax.swing.JButton();
         jLabel51 = new javax.swing.JLabel();
         jButtonBookHandball = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel106 = new javax.swing.JLabel();
-        jLabel107 = new javax.swing.JLabel();
         jLabelHandballErrorMessageBook = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jPanel4MountainBike = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -406,11 +411,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonBookVolley = new javax.swing.JButton();
         jLabelVolleyballNoSignText = new javax.swing.JLabel();
         jLabelVolleyballNoSign = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jButtonVolleyballRefreshAmount = new javax.swing.JButton();
         jLabelVolleyballErrorMessageBook = new javax.swing.JLabel();
         jPanel7Tennis = new javax.swing.JPanel();
-        jButtonBookTennis = new javax.swing.JButton();
-        jLabelTennisCostText = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel78 = new javax.swing.JLabel();
@@ -422,24 +425,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxTennisTimeTo = new javax.swing.JComboBox();
         jButtonTennisHelp = new javax.swing.JButton();
         jLabel68 = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        jPanel13 = new javax.swing.JPanel();
-        jLabel112 = new javax.swing.JLabel();
-        jLabelGUIISBULLSHIT = new javax.swing.JLabel();
-        jLabelTennisErrorMessageNoHours = new javax.swing.JLabel();
-        jLabelTennisErrorMessageBook = new javax.swing.JLabel();
-        jLabelTennisInstructorPrice = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jCheckBoxTennisInstruct = new javax.swing.JCheckBox();
         jLabelTennisInstructHourLabel = new javax.swing.JLabel();
         jComboBoxTennisInstrucHours = new javax.swing.JComboBox();
+        jLabelTennisCostText = new javax.swing.JLabel();
+        jLabelTennisInstructorPrice = new javax.swing.JLabel();
+        jButtonBookTennis = new javax.swing.JButton();
+        jLabelTennisErrorMessageBook = new javax.swing.JLabel();
+        jLabel112 = new javax.swing.JLabel();
+        jLabelGUIISBULLSHIT = new javax.swing.JLabel();
+        jLabelTennisErrorMessageNoHours = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jPanel5Swimming = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         jLabel59 = new javax.swing.JLabel();
-        jLabelSwimmingPriceLabel = new javax.swing.JLabel();
-        jLabelSwimmingInstructorPrice = new javax.swing.JLabel();
         jLabel114 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jCheckBoxSwimmingInstruct = new javax.swing.JCheckBox();
@@ -456,8 +457,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel40 = new javax.swing.JLabel();
         jButtonBookSwimming = new javax.swing.JButton();
         jButtonSwimmingHelp = new javax.swing.JButton();
+        jLabelSwimmingInstructorPrice = new javax.swing.JLabel();
         jLabelSwimmingErrorMessageNoHours = new javax.swing.JLabel();
-        jLabelSwimmingErrorMessageBook = new javax.swing.JLabel();
         jPanel2Fitness = new javax.swing.JPanel();
         jPanelGolf = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
@@ -874,76 +875,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jLabel69.setText("You have booked following facilities:");
+        jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel70.setText("Guestname");
-
-        jLabel71.setText("GuestID");
-
-        jButtonOverviewEditBooking1.setText("Edit Booking");
-        jButtonOverviewEditBooking1.setActionCommand("jButton9");
-        jButtonOverviewEditBooking1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonOverviewEditBooking1ActionPerformed(evt);
-            }
-        });
-
-        jButtonOverviewDeleteBooking1.setText("Delete Booking");
-        jButtonOverviewDeleteBooking1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonOverviewDeleteBooking1ActionPerformed(evt);
-            }
-        });
-
-        jLabel91.setText("Waiting List:");
-
-        jButtonOverviewHelp.setText("Help");
-        jButtonOverviewHelp.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonOverviewHelpActionPerformed(evt);
-            }
-        });
 
         jLabelSignInGuestName.setVisible(false);
         jLabelSignInGuestName.setText("****");
         jLabelSignInGuestName.setToolTipText("");
 
-        jButtonPrintInstrucCost.setText("Print current balance for instructor cost");
-        jButtonPrintInstrucCost.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonPrintInstrucCostActionPerformed(evt);
-            }
-        });
-
-        jScrollPane1.setViewportView(jListBookedOverview);
-
-        jButtonLoadBookings.setText("Load Bookings");
-        jButtonLoadBookings.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonLoadBookingsActionPerformed(evt);
-            }
-        });
-
-        jScrollPane3.setViewportView(jListWaitOverview);
-
-        jButtonGetWaitOverview.setText("Refresh");
-        jButtonGetWaitOverview.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonGetWaitOverviewActionPerformed(evt);
-            }
-        });
+        jLabel71.setText("GuestID");
 
         jButtonSignInMain.setText("Sign in");
         jButtonSignInMain.addActionListener(new java.awt.event.ActionListener()
@@ -967,28 +907,136 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelSignInErrorMessage.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         jLabelSignInErrorMessage.setText("You have to write your guest ID in the box above");
 
-        jLabel36.setText("Date:");
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelSignInErrorMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel70)
+                            .addComponent(jLabel71))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jTextFieldSignInGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonSignInMain, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonSignOutMain))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabelSignInGuestName, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel70)
+                    .addComponent(jLabelSignInGuestName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButtonSignInMain, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSignOutMain, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel71)
+                        .addComponent(jTextFieldSignInGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelSignInErrorMessage)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
-        jComboBoxOverviewSelectDate.addActionListener(new java.awt.event.ActionListener()
+        jPanel14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jButtonOverviewEditBooking1.setText("Edit Booking");
+        jButtonOverviewEditBooking1.setActionCommand("jButton9");
+        jButtonOverviewEditBooking1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jComboBoxOverviewSelectDateActionPerformed(evt);
+                jButtonOverviewEditBooking1ActionPerformed(evt);
             }
         });
 
-        jLabel37.setText("From:");
-
-        jComboBoxOverviewTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
-        jComboBoxOverviewTimeFrom.addActionListener(new java.awt.event.ActionListener()
+        jButtonOverviewDeleteBooking1.setText("Delete Booking");
+        jButtonOverviewDeleteBooking1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jComboBoxOverviewTimeFromActionPerformed(evt);
+                jButtonOverviewDeleteBooking1ActionPerformed(evt);
             }
         });
 
-        jLabel38.setText("To");
+        jButtonOverviewHelp.setText("Help");
+        jButtonOverviewHelp.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonOverviewHelpActionPerformed(evt);
+            }
+        });
+
+        jScrollPane1.setViewportView(jListBookedOverview);
+
+        jLabel69.setText("You have booked following facilities:");
+
+        jButtonLoadBookings.setText("Load Bookings");
+        jButtonLoadBookings.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonLoadBookingsActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(19, 19, 19)
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButtonOverviewDeleteBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonOverviewEditBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addComponent(jLabel69)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonLoadBookings)))
+                .addContainerGap(54, Short.MAX_VALUE))
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel69)
+                    .addComponent(jButtonLoadBookings))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                        .addComponent(jButtonOverviewEditBooking1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonOverviewDeleteBooking1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonOverviewHelp)
+                        .addGap(30, 30, 30))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
+        );
+
+        jPanel15.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jComboBoxOverviewTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
         jComboBoxOverviewTimeTo.addActionListener(new java.awt.event.ActionListener()
@@ -999,9 +1047,115 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
+        jLabel38.setText("To");
+
+        jComboBoxOverviewTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
+        jComboBoxOverviewTimeFrom.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxOverviewTimeFromActionPerformed(evt);
+            }
+        });
+
+        jButtonGetWaitOverview.setText("Refresh");
+        jButtonGetWaitOverview.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonGetWaitOverviewActionPerformed(evt);
+            }
+        });
+
+        jLabel37.setText("From:");
+
         jComboBoxOverviewFacility.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Badminton", "Handball", "Volleyball", "Tennis", "Fitness" }));
 
+        jComboBoxOverviewSelectDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxOverviewSelectDateActionPerformed(evt);
+            }
+        });
+
+        jLabel36.setText("Date:");
+
         jLabel9.setText("Facility:");
+
+        jScrollPane3.setViewportView(jListWaitOverview);
+
+        jLabel91.setText("Waiting List:");
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addComponent(jLabel91)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel36)
+                            .addComponent(jLabel9))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(jComboBoxOverviewSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel37)
+                                .addGap(5, 5, 5)
+                                .addComponent(jComboBoxOverviewTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
+                                .addComponent(jComboBoxOverviewTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(jComboBoxOverviewFacility, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(53, 53, 53)
+                                .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel91)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBoxOverviewSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBoxOverviewTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel36)
+                                    .addComponent(jLabel37))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(jComboBoxOverviewFacility, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jComboBoxOverviewTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel38)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jButtonPrintInstrucCost.setText("Print current balance for instructor cost");
+        jButtonPrintInstrucCost.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonPrintInstrucCostActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5OverviewLayout = new javax.swing.GroupLayout(jPanel5Overview);
         jPanel5Overview.setLayout(jPanel5OverviewLayout);
@@ -1011,195 +1165,44 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGap(36, 36, 36)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                .addComponent(jLabel69)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButtonLoadBookings))
-                            .addComponent(jLabelSignInErrorMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 571, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                         .addComponent(jButtonPrintInstrucCost)
-                        .addGap(54, 54, 54))
-                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel70)
-                                    .addComponent(jLabel71))
-                                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addComponent(jTextFieldSignInGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButtonSignInMain, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButtonSignOutMain))
-                                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabelSignInGuestName, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                .addComponent(jLabel91)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel36)
-                                    .addComponent(jLabel9))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                        .addComponent(jComboBoxOverviewSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(jLabel37)
-                                        .addGap(5, 5, 5)
-                                        .addComponent(jComboBoxOverviewTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(7, 7, 7)
-                                        .addComponent(jComboBoxOverviewTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                        .addComponent(jComboBoxOverviewFacility, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(53, 53, 53)
-                                        .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(315, 448, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5OverviewLayout.createSequentialGroup()
-                        .addComponent(jScrollPane1)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButtonOverviewDeleteBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButtonOverviewEditBooking1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButtonOverviewHelp, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(328, 328, 328))))
+                        .addGap(72, 72, 72))))
         );
         jPanel5OverviewLayout.setVerticalGroup(
             jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel70)
-                    .addComponent(jLabelSignInGuestName))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButtonSignInMain, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonSignOutMain, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel71)
-                        .addComponent(jTextFieldSignInGuestID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelSignInErrorMessage)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel69)
-                    .addComponent(jButtonLoadBookings))
-                .addGap(10, 10, 10)
+                .addGap(12, 12, 12)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addComponent(jButtonOverviewEditBooking1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonOverviewDeleteBooking1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonOverviewHelp))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel91)
-                            .addComponent(jComboBoxOverviewSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBoxOverviewTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel36)
-                                    .addComponent(jLabel37))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonPrintInstrucCost)
-                            .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jComboBoxOverviewFacility, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(10, 10, 10)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(jComboBoxOverviewTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel38)))
-                .addContainerGap(65, Short.MAX_VALUE))
+                        .addGap(125, 125, 125)
+                        .addComponent(jButtonPrintInstrucCost)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Overview", jPanel5Overview);
 
         jPanel1Badminton.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButtonBookBadminton.setText("BOOK");
-        jButtonBookBadminton.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonBookBadmintonActionPerformed(evt);
-            }
-        });
-        jPanel1Badminton.add(jButtonBookBadminton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 390, 101, 43));
-
         jLabel7.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel7.setText("The facilities are available between 8am - 8pm every day");
         jPanel1Badminton.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 330, -1));
 
-        jLabelBadmintonCostText.setText("The following amount has been added to your bill:");
-        jLabelBadmintonCostText.setVisible(false);
-        jPanel1Badminton.add(jLabelBadmintonCostText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, 290, -1));
-
-        jLabel16.setText("Select the date and hour/hours you wish to play");
-        jPanel1Badminton.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, -1, -1));
-
-        jLabel17.setText("Date:");
-        jPanel1Badminton.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 317, -1, -1));
-
         jLabel19.setText("<html>Badminton is a racquet sport usually played individually against each other <br>but can also be a 2v2 team sport. Bring your sweaty pants <br> and prepare for loads of fun and action in a game of strength, speed and <br> skills. Our highly experienced instructors are always available for hire</html>");
         jLabel19.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel1Badminton.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 395, 134));
-
-        jComboBoxBadmintonSelectDate.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxBadmintonSelectDateActionPerformed(evt);
-            }
-        });
-        jPanel1Badminton.add(jComboBoxBadmintonSelectDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 314, 169, -1));
-
-        jComboBoxBadmintonTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
-        jComboBoxBadmintonTimeFrom.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxBadmintonTimeFromActionPerformed(evt);
-            }
-        });
-        jPanel1Badminton.add(jComboBoxBadmintonTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 314, -1, -1));
-
-        jLabel27.setText("To");
-        jPanel1Badminton.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(411, 317, 20, -1));
-
-        jComboBoxBadmintonTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
-        jComboBoxBadmintonTimeTo.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxBadmintonTimeToActionPerformed(evt);
-            }
-        });
-        jPanel1Badminton.add(jComboBoxBadmintonTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 314, -1, -1));
-
-        jLabel28.setText("(max 4 facilities allowed per guest/day)");
-        jPanel1Badminton.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 345, -1, -1));
-
-        jLabel29.setText("From:");
-        jPanel1Badminton.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(282, 317, -1, -1));
+        jPanel1Badminton.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 410, 134));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -1211,16 +1214,60 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addContainerGap(509, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1Badminton.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 612, 68));
+        jPanel1Badminton.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 130, 30));
+
+        jLabel105.setText("<html>Useful info: <br> There are a total of 4 badminton courts, each with 4 players max/court. <br> The equipment will be given to you.");
+        jPanel1Badminton.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 280, 267, 76));
+
+        jLabelBadmintonErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelBadmintonErrorMessageBook.setVisible(false);
+        jLabelBadmintonErrorMessageBook.setText("The hours you have selected are not eligible");
+        jPanel1Badminton.add(jLabelBadmintonErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, -1, -1));
+
+        jPanel16.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel16.setText("Select the date and hour/hours you wish to play");
+
+        jLabel17.setText("Date:");
+
+        jComboBoxBadmintonSelectDate.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBadmintonSelectDateActionPerformed(evt);
+            }
+        });
+
+        jLabel29.setText("From:");
+
+        jComboBoxBadmintonTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
+        jComboBoxBadmintonTimeFrom.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBadmintonTimeFromActionPerformed(evt);
+            }
+        });
+
+        jLabel27.setText("To");
+
+        jComboBoxBadmintonTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
+        jComboBoxBadmintonTimeTo.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jComboBoxBadmintonTimeToActionPerformed(evt);
+            }
+        });
 
         jButtonBadmintonHelp.setText("Help");
         jButtonBadmintonHelp.addActionListener(new java.awt.event.ActionListener()
@@ -1230,13 +1277,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonBadmintonHelpActionPerformed(evt);
             }
         });
-        jPanel1Badminton.add(jButtonBadmintonHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 313, -1, -1));
 
-        jLabel105.setText("<html>Useful info: <br> There are a total of 4 badminton courts, each with 4 players max/court. <br> The equipment will be given to you.");
-        jPanel1Badminton.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 280, 267, 76));
+        jLabel28.setText("(max 4 facilities allowed per guest/day)");
 
         jLabel2.setText("Do you wish to hire an instructor?");
-        jPanel1Badminton.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, -1, 20));
 
         jCheckBoxBadmintonInstruct.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1245,7 +1289,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jCheckBoxBadmintonInstructActionPerformed(evt);
             }
         });
-        jPanel1Badminton.add(jCheckBoxBadmintonInstruct, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 370, 20, 20));
+
+        jLabelBadmintonInstructHourLabel.setVisible(false);
+        jLabelBadmintonInstructHourLabel.setText("...for how many hours?");
 
         jComboBoxBadmintonInstrucHours.setVisible(false);
         jComboBoxBadmintonInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4" }));
@@ -1256,66 +1302,154 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxBadmintonInstrucHoursActionPerformed(evt);
             }
         });
-        jPanel1Badminton.add(jComboBoxBadmintonInstrucHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, -1, -1));
 
-        jLabelBadmintonInstructHourLabel.setVisible(false);
-        jLabelBadmintonInstructHourLabel.setText("...for how many hours?");
-        jPanel1Badminton.add(jLabelBadmintonInstructHourLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 133, 22));
+        jLabelBadmintonCostText.setText("The following amount has been added to your bill:");
+        jLabelBadmintonCostText.setVisible(false);
 
         jLabelBadmintonInstructorPrice.setVisible(false);
         jLabelBadmintonInstructorPrice.setText("*cost*");
-        jPanel1Badminton.add(jLabelBadmintonInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, 48, 16));
+
+        jButtonBookBadminton.setText("BOOK");
+        jButtonBookBadminton.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookBadmintonActionPerformed(evt);
+            }
+        });
 
         jLabelBadmintonErrorMessageNoHours.setVisible(false);
         jLabelBadmintonErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelBadmintonErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
-        jPanel1Badminton.add(jLabelBadmintonErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 440, 410, -1));
 
-        jLabelBadmintonErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelBadmintonErrorMessageBook.setVisible(false);
-        jLabelBadmintonErrorMessageBook.setText("The hours you have selected are not eligible");
-        jPanel1Badminton.add(jLabelBadmintonErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, -1, -1));
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addComponent(jLabel17)
+                                .addGap(12, 12, 12)
+                                .addComponent(jComboBoxBadmintonSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel29)
+                                .addGap(5, 5, 5)
+                                .addComponent(jComboBoxBadmintonTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30)
+                                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
+                                .addComponent(jComboBoxBadmintonTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(jLabelBadmintonCostText, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabelBadmintonInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(jButtonBadmintonHelp)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                                .addComponent(jButtonBookBadminton, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(jLabel16))
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addGap(147, 147, 147)
+                                .addComponent(jLabel28))
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(jLabel2)
+                                .addGap(8, 8, 8)
+                                .addComponent(jCheckBoxBadmintonInstruct, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabelBadmintonInstructHourLabel)
+                                .addGap(17, 17, 17)
+                                .addComponent(jComboBoxBadmintonInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelBadmintonErrorMessageNoHours, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(88, 88, 88))
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16)
+                .addGap(17, 17, 17)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel17))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxBadmintonSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel29))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxBadmintonTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel27))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxBadmintonTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonBadmintonHelp))
+                .addGap(7, 7, 7)
+                .addComponent(jLabel28)
+                .addGap(9, 9, 9)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxBadmintonInstruct, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelBadmintonInstructHourLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxBadmintonInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(5, 5, 5)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabelBadmintonCostText)
+                        .addComponent(jLabelBadmintonInstructorPrice))
+                    .addComponent(jButtonBookBadminton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelBadmintonErrorMessageNoHours)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1Badminton.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 610, 210));
 
         jTabbedPane1.addTab("Badminton", jPanel1Badminton);
 
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelGolfInstructorDate.setText("Date:");
-        jLabelGolfInstructorDate.setVisible(false);
-        jPanel5.add(jLabelGolfInstructorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, 30));
+        jLabel57.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        jLabel57.setText("The facilities are available between 8am - 8pm every day");
+        jPanel5.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
 
-        jComboBoxGolfInstructorDate.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jComboBoxGolfInstructorDateActionPerformed(evt);
-            }
-        });
-        jComboBoxGolfInstructorDate.setVisible(false);
-        jPanel5.add(jComboBoxGolfInstructorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 168, -1));
+        jLabel25.setText("<html> Outdoor golf in a huge area in an exotic environment. <br> You dont have to book time just show up and swing your club.");
+        jLabel25.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel5.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
 
-        jLabelGolfInstructorTimeFrom.setText("From:");
-        jLabelGolfInstructorTimeFrom.setVisible(false);
-        jPanel5.add(jLabelGolfInstructorTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 370, -1, 20));
+        jLabel108.setText("<html>Useful info: <br> There are no player limits on this facility.<br> The equipment will be given to you.");
+        jPanel5.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 310, -1, -1));
 
-        jComboBoxGolfInstructorTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
-        jComboBoxGolfInstructorTimeFrom.setVisible(false);
-        jPanel5.add(jComboBoxGolfInstructorTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 370, -1, -1));
+        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel58.setText("GOLF");
+        jPanel5.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
-        jLabelGolfInstructorTimeTo.setText("To:");
-        jLabelGolfInstructorTimeTo.setVisible(false);
-        jPanel5.add(jLabelGolfInstructorTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 26, 20));
-
-        jComboBoxGolfInstructorTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
-        jComboBoxGolfInstructorTimeTo.setVisible(false);
-        jPanel5.add(jComboBoxGolfInstructorTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, -1, -1));
-
-        jLabelGolfInstructorDateTimeInfo.setText("On which date and time:");
-        jPanel5.add(jLabelGolfInstructorDateTimeInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
-        jLabelGolfInstructorDateTimeInfo.setVisible(false);
+        jPanel17.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel67.setText("Do you wish to hire an instructor?");
-        jPanel5.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, 25));
 
         jCheckBoxGolfInstruct.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1324,11 +1458,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jCheckBoxGolfInstructActionPerformed(evt);
             }
         });
-        jPanel5.add(jCheckBoxGolfInstruct, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, -1, -1));
 
         jLabelGolfInstructHourLabel.setVisible(false);
         jLabelGolfInstructHourLabel.setText("...for how many hours?");
-        jPanel5.add(jLabelGolfInstructHourLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, -1, 22));
 
         jComboBoxGolfInstrucHours.setVisible(false);
         jComboBoxGolfInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4" }));
@@ -1339,51 +1471,32 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxGolfInstrucHoursActionPerformed(evt);
             }
         });
-        jPanel5.add(jComboBoxGolfInstrucHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, -1, -1));
 
-        jButtonBookGolf.setText("BOOK");
-        jButtonBookGolf.addActionListener(new java.awt.event.ActionListener()
+        jLabelGolfInstructorDateTimeInfo.setText("On which date and time:");
+
+        jLabelGolfInstructorDate.setText("Date:");
+        jLabelGolfInstructorDate.setVisible(false);
+
+        jComboBoxGolfInstructorDate.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButtonBookGolfActionPerformed(evt);
+                jComboBoxGolfInstructorDateActionPerformed(evt);
             }
         });
-        jPanel5.add(jButtonBookGolf, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 400, 101, 43));
+        jComboBoxGolfInstructorDate.setVisible(false);
 
-        jLabelGolfCostText.setVisible(false);
-        jLabelGolfCostText.setText("The following amount has been added to your bill:");
-        jPanel5.add(jLabelGolfCostText, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
+        jLabelGolfInstructorTimeFrom.setText("From:");
+        jLabelGolfInstructorTimeFrom.setVisible(false);
 
-        jLabelGolfErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelGolfErrorMessageBook.setVisible(false);
-        jLabelGolfErrorMessageBook.setText("The hours you have selected are not eligible");
-        jPanel5.add(jLabelGolfErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 410, -1, -1));
+        jComboBoxGolfInstructorTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
+        jComboBoxGolfInstructorTimeFrom.setVisible(false);
 
-        jLabelGolfErrorMessageNoHours.setVisible(false);
-        jLabelGolfErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabelGolfErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
-        jPanel5.add(jLabelGolfErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 450, 418, -1));
+        jLabelGolfInstructorTimeTo.setText("To:");
+        jLabelGolfInstructorTimeTo.setVisible(false);
 
-        jLabel57.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
-        jLabel57.setText("The facilities are available between 8am - 8pm every day");
-        jPanel5.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
-
-        jLabel25.setText("<html> Outdoor golf in a huge area in an exotic environment. <br> You dont have to book time just show up and swing your club.");
-        jLabel25.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel5.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
-
-        jLabel108.setText("<html>Useful info: <br> There are no player limits on this facility.<br> The equipment will be given to you.");
-        jPanel5.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 280, -1, -1));
-
-        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel58.setText("GOLF");
-        jPanel5.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
-
-        jLabelGolfInstructorPrice.setVisible(false);
-        jLabelGolfInstructorPrice.setText("*cost*");
-        jPanel5.add(jLabelGolfInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, 48, 16));
+        jComboBoxGolfInstructorTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
+        jComboBoxGolfInstructorTimeTo.setVisible(false);
 
         jButtonGolfHelp.setText("Help");
         jButtonGolfHelp.addActionListener(new java.awt.event.ActionListener()
@@ -1393,13 +1506,129 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonGolfHelpActionPerformed(evt);
             }
         });
-        jPanel5.add(jButtonGolfHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, -1, -1));
+
+        jButtonBookGolf.setText("BOOK");
+        jButtonBookGolf.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookGolfActionPerformed(evt);
+            }
+        });
+
+        jLabelGolfCostText.setVisible(false);
+        jLabelGolfCostText.setText("The following amount has been added to your bill:");
+
+        jLabelGolfInstructorPrice.setVisible(false);
+        jLabelGolfInstructorPrice.setText("*cost*");
+
+        jLabelGolfErrorMessageNoHours.setVisible(false);
+        jLabelGolfErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelGolfErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addComponent(jLabel67)
+                        .addGap(8, 8, 8)
+                        .addComponent(jCheckBoxGolfInstruct)
+                        .addGap(15, 15, 15)
+                        .addComponent(jLabelGolfInstructHourLabel)
+                        .addGap(17, 17, 17)
+                        .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(jLabelGolfInstructorDateTimeInfo))
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(jLabelGolfInstructorDate)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jComboBoxGolfInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabelGolfInstructorTimeFrom)
+                        .addGap(5, 5, 5)
+                        .addComponent(jComboBoxGolfInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(jLabelGolfInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(4, 4, 4)
+                        .addComponent(jComboBoxGolfInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21)
+                        .addComponent(jButtonGolfHelp))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabelGolfCostText)
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabelGolfInstructorPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69)
+                        .addComponent(jButtonBookGolf, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelGolfErrorMessageNoHours, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64))
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxGolfInstruct)
+                    .addComponent(jLabelGolfInstructHourLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxGolfInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelGolfInstructorDateTimeInfo)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jComboBoxGolfInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelGolfInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabelGolfInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jComboBoxGolfInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabelGolfInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jComboBoxGolfInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jButtonGolfHelp)))
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabelGolfCostText))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabelGolfInstructorPrice)
+                            .addComponent(jButtonBookGolf, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelGolfErrorMessageNoHours)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabelGolfInstructorDateTimeInfo.setVisible(false);
+
+        jPanel5.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 560, 210));
 
         javax.swing.GroupLayout jPanel3GolfLayout = new javax.swing.GroupLayout(jPanel3Golf);
         jPanel3Golf.setLayout(jPanel3GolfLayout);
         jPanel3GolfLayout.setHorizontalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 1311, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
         );
         jPanel3GolfLayout.setVerticalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1414,25 +1643,37 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel5.setText("<html>Handball is a teamsport usually 6 players on each team. <br> Test your accuracy and have fun with your teammates. ");
+        jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel8.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, -1, -1));
+
+        jLabel106.setText("<html>Useful info: <br> There are a total of 2 Handball courts, each with 12 players max/court. <br> The handballs will of cause be given to you.");
+        jPanel8.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 320, 78));
+
+        jLabel107.setText("<html>please note that if too few people have <br> booked within the given time, the facility will be cancelled.");
+        jPanel8.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, -1, -1));
+
+        jLabel43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel43.setText("Handball");
+        jPanel8.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel64.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        jLabel64.setText("The facilities are available between 8am - 8pm every day");
+        jPanel8.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
+
+        jPanel18.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
         jLabel45.setText("Select the date and hour/hours you wish to play");
-        jPanel8.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 259, -1, -1));
 
         jLabel46.setText("Date");
-        jPanel8.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 302, -1, -1));
-
-        jPanel8.add(jComboBoxHandballSelectDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 299, 154, -1));
 
         jLabel47.setText("From:");
-        jPanel8.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 302, -1, -1));
 
         jComboBoxHandballTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
-        jPanel8.add(jComboBoxHandballTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 299, -1, -1));
 
         jLabel55.setText("To:");
-        jPanel8.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 302, -1, -1));
 
         jComboBoxHandballTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
-        jPanel8.add(jComboBoxHandballTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(381, 299, -1, -1));
 
         jButtonHandBallHelp.setText("Help");
         jButtonHandBallHelp.addActionListener(new java.awt.event.ActionListener()
@@ -1442,10 +1683,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonHandBallHelpActionPerformed(evt);
             }
         });
-        jPanel8.add(jButtonHandBallHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 298, -1, -1));
 
         jLabel51.setText("(max 4 facilities allowed per guest/day)");
-        jPanel8.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 330, -1, -1));
 
         jButtonBookHandball.setText("BOOK");
         jButtonBookHandball.addActionListener(new java.awt.event.ActionListener()
@@ -1455,30 +1694,80 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonBookHandballActionPerformed(evt);
             }
         });
-        jPanel8.add(jButtonBookHandball, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 112, 48));
-
-        jLabel5.setText("<html>Handball is a teamsport usually 6 players on each team. <br> Test your accuracy and have fun with your teammates. ");
-        jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel8.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 49, -1, -1));
-
-        jLabel106.setText("<html>Useful info: <br> There are a total of 2 Handball courts, each with 12 players max/court. <br> The handballs will of cause be given to you.");
-        jPanel8.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 260, 320, 78));
-
-        jLabel107.setText("<html>please note that if too few people have <br> booked within the given time, the facility will be cancelled.");
-        jPanel8.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 340, -1, -1));
 
         jLabelHandballErrorMessageBook.setVisible(false);
         jLabelHandballErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabelHandballErrorMessageBook.setText("The hours you have selected are not eligible");
-        jPanel8.add(jLabelHandballErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 430, -1, -1));
 
-        jLabel43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel43.setText("Handball");
-        jPanel8.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel45)
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addComponent(jLabel46)
+                        .addGap(12, 12, 12)
+                        .addComponent(jComboBoxHandballSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel47)
+                        .addGap(12, 12, 12)
+                        .addComponent(jComboBoxHandballTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel55)
+                        .addGap(5, 5, 5)
+                        .addComponent(jComboBoxHandballTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(jButtonHandBallHelp))
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(317, 317, 317)
+                        .addComponent(jLabel51)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelHandballErrorMessageBook)
+                .addGap(48, 48, 48)
+                .addComponent(jButtonBookHandball, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34))
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel45)
+                .addGap(23, 23, 23)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel46))
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxHandballSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel47))
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxHandballTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel55))
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jComboBoxHandballTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonHandBallHelp))
+                .addGap(7, 7, 7)
+                .addComponent(jLabel51)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonBookHandball, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelHandballErrorMessageBook, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
+        );
 
-        jLabel64.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
-        jLabel64.setText("The facilities are available between 8am - 8pm every day");
-        jPanel8.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
+        jPanel8.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 630, 190));
 
         jLabel32.setPreferredSize(new java.awt.Dimension(320, 200));
 
@@ -1565,7 +1854,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel23.setText("<html>Playing volleyball is a great way to meet the other guests at the resort.<br> Sign-up at your preferred time and you will join a team consisting of other<br> guests and compete and have fun.");
         jLabel23.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel8Volleyball.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 126, -1, -1));
+        jPanel8Volleyball.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel35.setText("The facilities are available between 8am - 8pm every day");
@@ -1578,11 +1867,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel111.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel111.setText("<html> Useful info: <br>  There are a total of 2 volleyball courts, each with 12 players max/court. <br> The equipment will be given to you.");
-        jPanel8Volleyball.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 284, -1));
+        jPanel8Volleyball.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 284, -1));
+
+        jPanel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel74.setText("Select the date and hour/hours you wish to play");
+        jPanel9.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 15, -1, -1));
 
         jLabel75.setText("Date:");
+        jPanel9.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 53, -1, -1));
 
         jComboBoxVolleyballSelectDate.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1591,14 +1885,19 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxVolleyballSelectDateActionPerformed(evt);
             }
         });
+        jPanel9.add(jComboBoxVolleyballSelectDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 50, 170, -1));
 
         jLabel76.setText("From:");
+        jPanel9.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 53, -1, -1));
 
         jComboBoxVolleyballTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
+        jPanel9.add(jComboBoxVolleyballTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(299, 50, -1, -1));
 
         jLabel77.setText("To");
+        jPanel9.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 53, 20, -1));
 
         jComboBoxVolleyballTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
+        jPanel9.add(jComboBoxVolleyballTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 50, -1, -1));
 
         jButtonVolleybalHelp.setText("Help");
         jButtonVolleybalHelp.addActionListener(new java.awt.event.ActionListener()
@@ -1608,8 +1907,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonVolleybalHelpActionPerformed(evt);
             }
         });
+        jPanel9.add(jButtonVolleybalHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 49, -1, -1));
 
         jLabel52.setText("(max 4 facilities allowed per guest/day)");
+        jPanel9.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, -1, -1));
 
         jButtonBookVolley.setText("BOOK");
         jButtonBookVolley.addActionListener(new java.awt.event.ActionListener()
@@ -1619,115 +1920,44 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonBookVolleyActionPerformed(evt);
             }
         });
+        jPanel9.add(jButtonBookVolley, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 101, 43));
 
         jLabelVolleyballNoSignText.setText("The current number of sign-ups for the chosen time:");
+        jPanel9.add(jLabelVolleyballNoSignText, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
         jLabelVolleyballNoSign.setText("***");
+        jPanel9.add(jLabelVolleyballNoSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, -1, -1));
 
-        jButton1.setText("Refresh");
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        jButtonVolleyballRefreshAmount.setText("Refresh");
+        jButtonVolleyballRefreshAmount.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                jButtonVolleyballRefreshAmountActionPerformed(evt);
             }
         });
+        jPanel9.add(jButtonVolleyballRefreshAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 110, -1, 16));
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButtonBookVolley, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(jLabelVolleyballNoSignText)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabelVolleyballNoSign)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
-                    .addComponent(jLabel74)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(jLabel75)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxVolleyballSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel76)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel52)
-                            .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addComponent(jComboBoxVolleyballTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBoxVolleyballTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButtonVolleybalHelp)))))
-                .addContainerGap(58, Short.MAX_VALUE))
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelVolleyballNoSignText)
-                    .addComponent(jLabelVolleyballNoSign)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel74)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel75)
-                    .addComponent(jLabel76)
-                    .addComponent(jLabel77)
-                    .addComponent(jComboBoxVolleyballTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxVolleyballTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxVolleyballSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonVolleybalHelp))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel52)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addComponent(jButtonBookVolley, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        jPanel8Volleyball.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 241, -1, 210));
-
-        jLabelVolleyballErrorMessageBook.setVisible(false);
         jLabelVolleyballErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabelVolleyballErrorMessageBook.setText("The hours you have selected are not eligible");
-        jPanel8Volleyball.add(jLabelVolleyballErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, -1, -1));
+        jPanel9.add(jLabelVolleyballErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 290, -1));
+
+        jPanel8Volleyball.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 550, 210));
 
         jTabbedPane1.addTab("Volleyball", jPanel8Volleyball);
 
         jPanel7Tennis.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButtonBookTennis.setText("BOOK");
-        jButtonBookTennis.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonBookTennisActionPerformed(evt);
-            }
-        });
-        jPanel7Tennis.add(jButtonBookTennis, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 101, 43));
-
-        jLabelTennisCostText.setText("The following amount has been added to your bill:");
-        jLabelTennisCostText.setVisible(false);
-        jPanel7Tennis.add(jLabelTennisCostText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, -1));
 
         jLabel61.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel61.setText("TENNIS");
         jPanel7Tennis.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
+        jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel78.setText("Select the date and hour/hours you wish to play");
-        jPanel10.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+        jPanel10.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
 
         jLabel79.setText("Date:");
         jPanel10.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, 20));
@@ -1761,71 +1991,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonTennisHelpActionPerformed(evt);
             }
         });
-        jPanel10.add(jButtonTennisHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, -1, -1));
+        jPanel10.add(jButtonTennisHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 70, -1, -1));
 
         jLabel68.setText("(max 4 facilities allowed per guest/day)");
         jPanel10.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, -1, -1));
 
-        jPanel7Tennis.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 218, -1, 120));
-
-        jLabel20.setText("<html> At Casablanca we have 6 state-of- the-art tennis courts. <br> You have the choice to book one of our highly experienced instructors, <br> who can make your game even better, or play with whoever you want.<html>");
-        jLabel20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
-        );
-
-        jPanel7Tennis.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, 80));
-
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 528, Short.MAX_VALUE)
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 58, Short.MAX_VALUE)
-        );
-
-        jPanel7Tennis.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
-
-        jLabel112.setText("<html>Useful info: <br> There are a total of 6 tennis courts, each with 4 players max/court. <br> The equipment will be given to you.");
-        jPanel7Tennis.add(jLabel112, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 300, 312, -1));
-
-        jLabelGUIISBULLSHIT.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
-        jLabelGUIISBULLSHIT.setText("The facilities are available between 8am - 8pm every day");
-        jPanel7Tennis.add(jLabelGUIISBULLSHIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
-
-        jLabelTennisErrorMessageNoHours.setVisible(false);
-        jLabelTennisErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabelTennisErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
-        jPanel7Tennis.add(jLabelTennisErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 460, 360, -1));
-
-        jLabelTennisErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelTennisErrorMessageBook.setVisible(false);
-        jLabelTennisErrorMessageBook.setText("The hours you have selected are not eligible");
-        jPanel7Tennis.add(jLabelTennisErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, -1, -1));
-
-        jLabelTennisInstructorPrice.setVisible(false);
-        jLabelTennisInstructorPrice.setText("*cost*");
-        jPanel7Tennis.add(jLabelTennisInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 48, 16));
-
         jLabel6.setText("Do you wish to hire an instructor?");
-        jPanel7Tennis.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, 20));
+        jPanel10.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, 20));
 
         jCheckBoxTennisInstruct.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1834,11 +2006,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jCheckBoxTennisInstructActionPerformed(evt);
             }
         });
-        jPanel7Tennis.add(jCheckBoxTennisInstruct, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, -1));
+        jPanel10.add(jCheckBoxTennisInstruct, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, -1, -1));
 
         jLabelTennisInstructHourLabel.setVisible(false);
         jLabelTennisInstructHourLabel.setText("...for how many hours?");
-        jPanel7Tennis.add(jLabelTennisInstructHourLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, -1, 20));
+        jPanel10.add(jLabelTennisInstructHourLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, -1, 20));
 
         jComboBoxTennisInstrucHours.setVisible(false);
         jComboBoxTennisInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4" }));
@@ -1849,7 +2021,48 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxTennisInstrucHoursActionPerformed(evt);
             }
         });
-        jPanel7Tennis.add(jComboBoxTennisInstrucHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, -1, -1));
+        jPanel10.add(jComboBoxTennisInstrucHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, -1, -1));
+
+        jLabelTennisCostText.setText("The following amount has been added to your bill:");
+        jLabelTennisCostText.setVisible(false);
+        jPanel10.add(jLabelTennisCostText, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+
+        jLabelTennisInstructorPrice.setVisible(false);
+        jLabelTennisInstructorPrice.setText("*cost*");
+        jPanel10.add(jLabelTennisInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 48, -1));
+
+        jButtonBookTennis.setText("BOOK");
+        jButtonBookTennis.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonBookTennisActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButtonBookTennis, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 101, 43));
+
+        jLabelTennisErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelTennisErrorMessageBook.setVisible(false);
+        jLabelTennisErrorMessageBook.setText("The hours you have selected are not eligible");
+        jPanel10.add(jLabelTennisErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
+
+        jPanel7Tennis.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 550, 250));
+
+        jLabel112.setText("<html>Useful info: <br> There are a total of 6 tennis courts, each with 4 players max/court. <br> The equipment will be given to you.");
+        jPanel7Tennis.add(jLabel112, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 320, 312, -1));
+
+        jLabelGUIISBULLSHIT.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        jLabelGUIISBULLSHIT.setText("The facilities are available between 8am - 8pm every day");
+        jPanel7Tennis.add(jLabelGUIISBULLSHIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, -1));
+
+        jLabelTennisErrorMessageNoHours.setVisible(false);
+        jLabelTennisErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelTennisErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
+        jPanel7Tennis.add(jLabelTennisErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 360, -1));
+
+        jLabel20.setText("<html> At Casablanca we have 6 state-of- the-art tennis courts. <br> You have the choice to book one of our highly experienced instructors, <br> who can make your game even better, or play with whoever you want.<html>");
+        jLabel20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel7Tennis.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, -1, -1));
 
         jTabbedPane1.addTab("Tennis", jPanel7Tennis);
 
@@ -1868,14 +2081,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel59.setText("SWIMMING");
         jPanel5Swimming.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
 
-        jLabelSwimmingPriceLabel.setText("       ");
-        jPanel5Swimming.add(jLabelSwimmingPriceLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 117, -1, -1));
-
-        jLabelSwimmingInstructorPrice.setText("         ");
-        jPanel5Swimming.add(jLabelSwimmingInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(496, 117, -1, -1));
-
         jLabel114.setText("<html>Useful info: <br>There are no player limits for this facility.");
-        jPanel5Swimming.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(832, 294, -1, -1));
+        jPanel5Swimming.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 330, -1, -1));
+
+        jPanel12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jCheckBoxSwimmingInstruct.addActionListener(new java.awt.event.ActionListener()
         {
@@ -1884,10 +2094,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jCheckBoxSwimmingInstructActionPerformed(evt);
             }
         });
+        jPanel12.add(jCheckBoxSwimmingInstruct, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, -1, -1));
 
         jLabel85.setText("Do you wish to hire an instructor?");
+        jPanel12.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 15, -1, -1));
 
-        jLabelSwimmingInstructHourLabel.setText("                         ");
+        jLabelSwimmingInstructHourLabel.setText("...for how many hours?");
+        jPanel12.add(jLabelSwimmingInstructHourLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 18, -1, -1));
 
         jComboBoxSwimmingInstrucHours.setVisible(false);
         jComboBoxSwimmingInstrucHours.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "1", "2", "3", "4" }));
@@ -1898,28 +2111,37 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxSwimmingInstrucHoursActionPerformed(evt);
             }
         });
+        jPanel12.add(jComboBoxSwimmingInstrucHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 15, -1, -1));
 
         jLabelSwimmingInstructorDateTimeInfo.setText("On which date and time:");
         jLabelSwimmingInstructorDateTimeInfo.setVisible(false);
+        jPanel12.add(jLabelSwimmingInstructorDateTimeInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 50, -1, -1));
 
         jLabelSwimmingInstructorDate.setText("Date:");
         jLabelSwimmingInstructorDate.setVisible(false);
+        jPanel12.add(jLabelSwimmingInstructorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 95, -1, -1));
 
         jComboBoxSwimmingInstructorDate.setVisible(false);
+        jPanel12.add(jComboBoxSwimmingInstructorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 92, 145, -1));
 
         jLabelSwimmingInstructorTimeFrom.setText("From:");
         jLabelSwimmingInstructorTimeFrom.setVisible(false);
+        jPanel12.add(jLabelSwimmingInstructorTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 95, -1, -1));
 
         jComboBoxSwimmingInstructorTimeFrom.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00" }));
         jComboBoxSwimmingInstructorTimeFrom.setVisible(false);
+        jPanel12.add(jComboBoxSwimmingInstructorTimeFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 92, -1, -1));
 
         jLabelSwimmingInstructorTimeTo.setText("To:");
         jLabelSwimmingInstructorTimeTo.setVisible(false);
+        jPanel12.add(jLabelSwimmingInstructorTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 95, 29, -1));
 
         jComboBoxSwimmingInstructorTimeTo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00", "19.00", "20.00" }));
         jComboBoxSwimmingInstructorTimeTo.setVisible(false);
+        jPanel12.add(jComboBoxSwimmingInstructorTimeTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 92, -1, -1));
 
-        jLabel40.setText("The cost for the instructor has been added to your bill ");
+        jLabel40.setText("The cost for the instructor has been added to your bill: ");
+        jPanel12.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         jButtonBookSwimming.setText("BOOK");
         jButtonBookSwimming.addActionListener(new java.awt.event.ActionListener()
@@ -1929,6 +2151,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonBookSwimmingActionPerformed(evt);
             }
         });
+        jPanel12.add(jButtonBookSwimming, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 134, 101, 43));
 
         jButtonSwimmingHelp.setText("Help");
         jButtonSwimmingHelp.addActionListener(new java.awt.event.ActionListener()
@@ -1938,87 +2161,17 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jButtonSwimmingHelpActionPerformed(evt);
             }
         });
+        jPanel12.add(jButtonSwimmingHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(469, 91, -1, -1));
 
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addComponent(jLabel85)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBoxSwimmingInstruct)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabelSwimmingInstructHourLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBoxSwimmingInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabelSwimmingInstructorDateTimeInfo))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addComponent(jLabelSwimmingInstructorDate)
-                        .addGap(18, 18, 18)
-                        .addComponent(jComboBoxSwimmingInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)
-                        .addComponent(jLabelSwimmingInstructorTimeFrom)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxSwimmingInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabelSwimmingInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxSwimmingInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonSwimmingHelp)
-                        .addGap(0, 12, Short.MAX_VALUE))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel40)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonBookSwimming, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jComboBoxSwimmingInstrucHours, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabelSwimmingInstructHourLabel))
-                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel85)
-                        .addComponent(jCheckBoxSwimmingInstruct)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelSwimmingInstructorDateTimeInfo)
-                .addGap(25, 25, 25)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxSwimmingInstructorDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxSwimmingInstructorTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelSwimmingInstructorTimeFrom)
-                    .addComponent(jLabelSwimmingInstructorTimeTo)
-                    .addComponent(jComboBoxSwimmingInstructorTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelSwimmingInstructorDate)
-                    .addComponent(jButtonSwimmingHelp))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel40)
-                    .addComponent(jButtonBookSwimming, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabelSwimmingInstructorPrice.setText("*cost*");
+        jPanel12.add(jLabelSwimmingInstructorPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, -1, -1));
 
-        jPanel5Swimming.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 244, -1, -1));
+        jPanel5Swimming.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 244, 540, 190));
 
         jLabelBadmintonErrorMessageNoHours.setVisible(false);
         jLabelSwimmingErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelSwimmingErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
         jPanel5Swimming.add(jLabelSwimmingErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 440, 414, -1));
-
-        jLabelSwimmingErrorMessageBook.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelSwimmingErrorMessageBook.setVisible(false);
-        jLabelSwimmingErrorMessageBook.setText("The hours you have selected are not eligible");
-        jPanel5Swimming.add(jLabelSwimmingErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 390, 290, -1));
 
         jTabbedPane1.addTab("Swimming", jPanel5Swimming);
 
@@ -2142,10 +2295,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jCheckBoxSwimmingInstructActionPerformed
         if(jCheckBoxSwimmingInstruct.isSelected())
         {
-            jLabelSwimmingInstructHourLabel.setText("...for how many hours?");
+            jLabelSwimmingInstructHourLabel.setVisible(true);
             jComboBoxSwimmingInstrucHours.setVisible(true);
             jComboBoxSwimmingInstrucHours.setSelectedIndex(0);
-            jLabelSwimmingPriceLabel.setText("Price:");
             jLabelSwimmingInstructorDate.setVisible(true);
             jLabelSwimmingInstructorDateTimeInfo.setVisible(true);
             jLabelSwimmingInstructorTimeFrom.setVisible(true);
@@ -2153,12 +2305,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jComboBoxSwimmingInstructorDate.setVisible(true);
             jComboBoxSwimmingInstructorTimeFrom.setVisible(true);
             jComboBoxSwimmingInstructorTimeTo.setVisible(true);
+            jLabelSwimmingInstructorPrice.setVisible(true);
         } else
         {
-            jLabelSwimmingInstructHourLabel.setText("");
+            jLabelSwimmingInstructHourLabel.setVisible(false);
             jComboBoxSwimmingInstrucHours.setVisible(false);
-            jLabelSwimmingPriceLabel.setText("");
-            jLabelSwimmingInstructorPrice.setText("");
+            jLabelSwimmingInstructorPrice.setVisible(false);
             jLabelSwimmingInstructorDate.setVisible(false);
             jLabelSwimmingInstructorDateTimeInfo.setVisible(false);
             jLabelSwimmingInstructorTimeFrom.setVisible(false);
@@ -2203,15 +2355,19 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookHandballActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookHandballActionPerformed
     {//GEN-HEADEREND:event_jButtonBookHandballActionPerformed
-        tempFacID = "03";
-        jLabelHandballErrorMessageBook.setVisible(false);
-        if(jComboBoxHandballTimeFrom.getSelectedIndex() <= jComboBoxHandballTimeTo.getSelectedIndex()) {
-            String handballDate = (String)jComboBoxHandballSelectDate.getSelectedItem();
-            String handballTimeFrom = (String)jComboBoxHandballTimeFrom.getSelectedItem();
-            String handballTimeTo = (String)jComboBoxHandballTimeTo.getSelectedItem();
-            insert.JDBCInsertFacility(finalGuestID, tempFacID, handballDate, handballTimeFrom, handballTimeTo, "09098");
-            
-        } else {jLabelHandballErrorMessageBook.setVisible(true);}
+        tempFacID = "3";
+        if(select.getfacAvail(tempFacID, jComboBoxHandballSelectDate.getSelectedItem().toString(),
+                jComboBoxHandballTimeFrom.getSelectedItem().toString(),
+                jComboBoxHandballTimeTo.getSelectedItem().toString()).size() < 12) {
+                    jLabelHandballErrorMessageBook.setVisible(false);
+                    if(jComboBoxHandballTimeFrom.getSelectedIndex() <= jComboBoxHandballTimeTo.getSelectedIndex()) {
+                    String handballDate = (String)jComboBoxHandballSelectDate.getSelectedItem();
+                    String handballTimeFrom = (String)jComboBoxHandballTimeFrom.getSelectedItem();
+                    String handballTimeTo = (String)jComboBoxHandballTimeTo.getSelectedItem();
+                    insert.JDBCInsertFacility(finalGuestID, tempFacID, handballDate, handballTimeFrom, handballTimeTo, "N");
+                    } else {jLabelHandballErrorMessageBook.setVisible(true);} 
+        } else {waitNoPop();}
+        
     }//GEN-LAST:event_jButtonBookHandballActionPerformed
 
     private void jCheckBoxGolfInstructActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jCheckBoxGolfInstructActionPerformed
@@ -2342,7 +2498,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookBadmintonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookBadmintonActionPerformed
     {//GEN-HEADEREND:event_jButtonBookBadmintonActionPerformed
-        tempFacID = "01";
+        tempFacID = "1";
         if (select.getfacAvail(tempFacID, jComboBoxBadmintonSelectDate.getSelectedItem().toString(), 
                 jComboBoxBadmintonTimeFrom.getSelectedItem().toString(), 
                 jComboBoxBadmintonTimeTo.getSelectedItem().toString()).size() < 4) 
@@ -2364,11 +2520,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 jLabelBadmintonErrorMessageNoHours.setVisible(false);                  
                             }
                         } else {
-                                String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
-                                String badmintonTimeFrom = (String)jComboBoxBadmintonTimeFrom.getSelectedItem();
-                                String badmintonTimeTo = (String)jComboBoxBadmintonTimeTo.getSelectedItem();
-                                insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "N");
-                                insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));   
+                            String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
+                            String badmintonTimeFrom = (String)jComboBoxBadmintonTimeFrom.getSelectedItem();
+                            String badmintonTimeTo = (String)jComboBoxBadmintonTimeTo.getSelectedItem();
+                            insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "N");
+                            insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));   
                         }
                     } else {
                         jLabelBadmintonErrorMessageBook.setVisible(true); }  
@@ -2408,43 +2564,75 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookFitnessActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookFitnessActionPerformed
     {//GEN-HEADEREND:event_jButtonBookFitnessActionPerformed
-        if(jComboBoxFitnessTimeFrom.getSelectedIndex() <= jComboBoxFitnessTimeTo.getSelectedIndex()) {
-            
-            String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
-            String fitnessTimeFrom = (String)jComboBoxFitnessTimeFrom.getSelectedItem();
-            String fitnessTimeTo = (String)jComboBoxFitnessTimeTo.getSelectedItem();
-            insert.JDBCInsertFacility(finalGuestID, "02", fitnessDate, fitnessTimeFrom, fitnessTimeTo, "09098");
-            jLabelFitnessErrorMessageBook1.setVisible(false);  
-            
-        } else {
-            jLabelFitnessErrorMessageBook1.setVisible(true); } 
+        tempFacID="9";
+        if(select.getfacAvail(tempFacID, jComboBoxFitnessSelectDate.getSelectedItem().toString(), 
+            jComboBoxFitnessTimeFrom.getSelectedItem().toString(), 
+            jComboBoxFitnessTimeTo.getSelectedItem().toString()).size() < 20)
+            {
+                if(jComboBoxFitnessTimeFrom.getSelectedIndex() <= jComboBoxFitnessTimeTo.getSelectedIndex()) {
+
+                    String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
+                    String fitnessTimeFrom = (String)jComboBoxFitnessTimeFrom.getSelectedItem();
+                    String fitnessTimeTo = (String)jComboBoxFitnessTimeTo.getSelectedItem();
+                    insert.JDBCInsertFacility(finalGuestID, tempFacID, fitnessDate, fitnessTimeFrom, fitnessTimeTo, "N");
+                    jLabelFitnessErrorMessageBook1.setVisible(false);  
+                } else {
+                    jLabelFitnessErrorMessageBook1.setVisible(true); } 
+            }else{waitNoPop();}
     }//GEN-LAST:event_jButtonBookFitnessActionPerformed
 
     private void jButtonBookVolleyActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookVolleyActionPerformed
     {//GEN-HEADEREND:event_jButtonBookVolleyActionPerformed
-        jLabelVolleyballErrorMessageBook.setVisible(false);
-        if(jComboBoxVolleyballTimeFrom.getSelectedIndex() <= jComboBoxVolleyballTimeTo.getSelectedIndex()) {
-            String volleyballDate = (String)jComboBoxVolleyballSelectDate.getSelectedItem();
-            String volleyTimeFrom = (String)jComboBoxVolleyballTimeFrom.getSelectedItem();
-            String volleyTimeTo = (String)jComboBoxVolleyballTimeTo.getSelectedItem();
-            insert.JDBCInsertFacility(finalGuestID, "02", volleyballDate, volleyTimeFrom, volleyTimeTo, "09098");
-        }else{jLabelVolleyballErrorMessageBook.setVisible(true);}
+        tempFacID="6";
+        if(select.getfacAvail(tempFacID, jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
+                jComboBoxVolleyballTimeFrom.getSelectedItem().toString(),
+                jComboBoxVolleyballTimeTo.getSelectedItem().toString()).size() < 12) {
+            
+                    jLabelVolleyballErrorMessageBook.setVisible(false);
+                    if(jComboBoxVolleyballTimeFrom.getSelectedIndex() <= jComboBoxVolleyballTimeTo.getSelectedIndex()) {
+                    String volleyballDate = (String)jComboBoxVolleyballSelectDate.getSelectedItem();
+                    String volleyTimeFrom = (String)jComboBoxVolleyballTimeFrom.getSelectedItem();
+                    String volleyTimeTo = (String)jComboBoxVolleyballTimeTo.getSelectedItem();
+                    insert.JDBCInsertFacility(finalGuestID, tempFacID, volleyballDate, volleyTimeFrom, volleyTimeTo, "N");
+                    }else{jLabelVolleyballErrorMessageBook.setVisible(true);}
+        } else {waitNoPop();}
+                
     }//GEN-LAST:event_jButtonBookVolleyActionPerformed
 
     private void jButtonBookTennisActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookTennisActionPerformed
     {//GEN-HEADEREND:event_jButtonBookTennisActionPerformed
+        tempFacID="7";
         jLabelTennisErrorMessageBook.setVisible(false);
         jLabelTennisErrorMessageNoHours.setVisible(false);
-        if(jComboBoxTennisTimeFrom.getSelectedIndex() <= jComboBoxTennisTimeTo.getSelectedIndex()) {
-        
-            if(jComboBoxTennisInstrucHours.getSelectedIndex()==0){ jLabelTennisErrorMessageNoHours.setVisible(true); }
-            else {
-                String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem();
-                String tennisTimeFrom = (String)jComboBoxTennisTimeFrom.getSelectedItem();
-                String tennisTimeTo = (String)jComboBoxTennisTimeTo.getSelectedItem();
-                insert.JDBCInsertFacility(finalGuestID, "02", tennisballDate, tennisTimeFrom, tennisTimeTo, "09098");
-                jLabelTennisErrorMessageNoHours.setVisible(false);   
-        }} else {jLabelTennisErrorMessageBook.setVisible(true); } 
+        if(select.getfacAvail(tempFacID, jComboBoxTennisSelectDate.getSelectedItem().toString(), 
+                jComboBoxTennisTimeFrom.getSelectedItem().toString(), 
+                jComboBoxTennisTimeTo.getSelectedItem().toString()).size() < 6)
+                {
+                    String noHours = jComboBoxTennisInstrucHours.getSelectedItem().toString();
+                    jLabelTennisErrorMessageBook.setVisible(false);
+                    jLabelTennisErrorMessageNoHours.setVisible(false);
+                    if(jComboBoxTennisTimeFrom.getSelectedIndex() <= jComboBoxTennisTimeTo.getSelectedIndex()) {
+
+                        if(jCheckBoxTennisInstruct.isSelected()){
+                            
+                            if(jComboBoxTennisInstrucHours.getSelectedIndex()==0){ jLabelTennisErrorMessageNoHours.setVisible(true); }
+                            else {
+                                String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem(); //tennisballdate? Whaaaaaaaaaaaaat
+                                String tennisTimeFrom = (String)jComboBoxTennisTimeFrom.getSelectedItem();
+                                String tennisTimeTo = (String)jComboBoxTennisTimeTo.getSelectedItem();
+                                insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "Y");
+                                insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));
+                                jLabelTennisErrorMessageNoHours.setVisible(false); 
+                            }
+                        }else{
+                            String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem();
+                            String tennisTimeFrom = (String)jComboBoxTennisTimeFrom.getSelectedItem();
+                            String tennisTimeTo = (String)jComboBoxTennisTimeTo.getSelectedItem();
+                            insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "N");
+                            insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));
+                        }
+                    } else {jLabelTennisErrorMessageBook.setVisible(true); }          
+                } else {waitNoPop();}
     }//GEN-LAST:event_jButtonBookTennisActionPerformed
 
     private void jComboBoxGolfInstructorDateActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxGolfInstructorDateActionPerformed
@@ -2497,38 +2685,31 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookGolfActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookGolfActionPerformed
     {//GEN-HEADEREND:event_jButtonBookGolfActionPerformed
-        tempFacID = "02";
-        jLabelGolfErrorMessageBook.setVisible(false);
+        tempFacID = "2";
         jLabelGolfErrorMessageNoHours.setVisible(false);
         if(jComboBoxGolfInstructorTimeFrom.getSelectedIndex() <= jComboBoxGolfInstructorTimeTo.getSelectedIndex()) {
             if(jComboBoxGolfInstrucHours.getSelectedIndex()==0){ jLabelGolfErrorMessageNoHours.setVisible(true); }
                 else {
                     jLabelGolfErrorMessageNoHours.setVisible(false);  
-                    String golfDate = (String)jComboBoxGolfInstructorDate.getSelectedItem();
-                    String golfTimeFrom = (String)jComboBoxGolfInstructorTimeFrom.getSelectedItem();
-                    String golfTimeTo = (String)jComboBoxGolfInstructorTimeTo.getSelectedItem();
-                    insert.JDBCInsertFacility(finalGuestID, tempFacID, golfDate, golfTimeFrom, golfTimeTo, "09098");
-                    jLabelGolfErrorMessageBook.setVisible(false);   
-                {
-                jLabelGolfErrorMessageBook.setVisible(true); } }
+                    insert.JDBCInsertInstructorCost(finalGuestID, 
+                            jComboBoxGolfInstrucHours.getSelectedItem().toString(), 
+                            Integer.parseInt(tempFacID));
+                }
             }else{jLabelGolfErrorMessageNoHours.setVisible(true);}
     }//GEN-LAST:event_jButtonBookGolfActionPerformed
 
     private void jButtonBookSwimmingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookSwimmingActionPerformed
     {//GEN-HEADEREND:event_jButtonBookSwimmingActionPerformed
-        jLabelSwimmingErrorMessageBook.setVisible(false);
+        tempFacID="8";
         jLabelSwimmingErrorMessageNoHours.setVisible(false);
         if(jComboBoxSwimmingInstructorTimeFrom.getSelectedIndex() <= jComboBoxSwimmingInstructorTimeTo.getSelectedIndex()) {
             if(jComboBoxSwimmingInstrucHours.getSelectedIndex()==0){ jLabelSwimmingErrorMessageNoHours.setVisible(true); }
                 else {
                     jLabelSwimmingErrorMessageNoHours.setVisible(false);  
-                    String golfDate = (String)jComboBoxSwimmingInstructorDate.getSelectedItem();
-                    String golfTimeFrom = (String)jComboBoxSwimmingInstructorTimeFrom.getSelectedItem();
-                    String golfTimeTo = (String)jComboBoxSwimmingInstructorTimeTo.getSelectedItem();
-                    insert.JDBCInsertFacility(finalGuestID, "05", golfDate, golfTimeFrom, golfTimeTo, "09098");
-                    jLabelGolfErrorMessageBook.setVisible(false);   
-                {
-                jLabelGolfErrorMessageBook.setVisible(true); } }
+                    insert.JDBCInsertInstructorCost(finalGuestID, 
+                            jComboBoxSwimmingInstrucHours.getSelectedItem().toString(), 
+                            Integer.parseInt(tempFacID));
+                }
             }else{jLabelGolfErrorMessageNoHours.setVisible(true);}
     }//GEN-LAST:event_jButtonBookSwimmingActionPerformed
 
@@ -2565,12 +2746,12 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jDialogWaitOrNo.setVisible(false);
     }//GEN-LAST:event_jButtonWaitNoActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
-        jLabelVolleyballNoSign.setText(Integer.toString(select.getfacAvail("03", jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
+    private void jButtonVolleyballRefreshAmountActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVolleyballRefreshAmountActionPerformed
+    {//GEN-HEADEREND:event_jButtonVolleyballRefreshAmountActionPerformed
+        jLabelVolleyballNoSign.setText(Integer.toString(select.getfacAvail("3", jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
                 jComboBoxVolleyballTimeFrom.getSelectedItem().toString(), 
                 jComboBoxVolleyballTimeTo.getSelectedItem().toString()).size()));
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonVolleyballRefreshAmountActionPerformed
 
     private void jButtonSignInMainActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignInMainActionPerformed
     {//GEN-HEADEREND:event_jButtonSignInMainActionPerformed
@@ -2669,7 +2850,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonBadmintonHelp;
     private javax.swing.JButton jButtonBookBadminton;
     private javax.swing.JButton jButtonBookFitness;
@@ -2695,6 +2875,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonSwimmingHelp;
     private javax.swing.JButton jButtonTennisHelp;
     private javax.swing.JButton jButtonVolleybalHelp;
+    private javax.swing.JButton jButtonVolleyballRefreshAmount;
     private javax.swing.JButton jButtonWaitNo;
     private javax.swing.JButton jButtonWaitYes;
     private javax.swing.JCheckBox jCheckBoxBadmintonInstruct;
@@ -2847,7 +3028,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelFitnessErrorMessageBook1;
     private javax.swing.JLabel jLabelGUIISBULLSHIT;
     private javax.swing.JLabel jLabelGolfCostText;
-    private javax.swing.JLabel jLabelGolfErrorMessageBook;
     private javax.swing.JLabel jLabelGolfErrorMessageNoHours;
     private javax.swing.JLabel jLabelGolfInstructHourLabel;
     private javax.swing.JLabel jLabelGolfInstructorDate;
@@ -2858,7 +3038,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelHandballErrorMessageBook;
     private javax.swing.JLabel jLabelSignInErrorMessage;
     private javax.swing.JLabel jLabelSignInGuestName;
-    private javax.swing.JLabel jLabelSwimmingErrorMessageBook;
     private javax.swing.JLabel jLabelSwimmingErrorMessageNoHours;
     private javax.swing.JLabel jLabelSwimmingInstructHourLabel;
     private javax.swing.JLabel jLabelSwimmingInstructorDate;
@@ -2866,7 +3045,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelSwimmingInstructorPrice;
     private javax.swing.JLabel jLabelSwimmingInstructorTimeFrom;
     private javax.swing.JLabel jLabelSwimmingInstructorTimeTo;
-    private javax.swing.JLabel jLabelSwimmingPriceLabel;
     private javax.swing.JLabel jLabelTennisCostText;
     private javax.swing.JLabel jLabelTennisErrorMessageBook;
     private javax.swing.JLabel jLabelTennisErrorMessageNoHours;
@@ -2879,15 +3057,19 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JList jListWaitOverview;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel1Badminton;
     private javax.swing.JPanel jPanel1Handball;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel2Fitness;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel3Golf;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel4MountainBike;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel5Overview;
