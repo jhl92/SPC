@@ -626,7 +626,6 @@ public class JDBCSelectQuery
             conn = DriverManager.getConnection(url, user, pass);
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT GUEST.GUESTID, GUEST.GUESTLASTNAME, "
