@@ -75,6 +75,9 @@ public class CasablancaGUI extends javax.swing.JFrame
     private int currentDate;
     private int currentMonth;
     private int currentYear;
+    private String deleteBookingRoomID;
+    private String deleteBookingGuestID;
+    private String deleteBookingStartDate;
     private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
     private SimpleDateFormat sdfDateInt = new SimpleDateFormat("d");
     private SimpleDateFormat sdfMonthInt = new SimpleDateFormat("M");
@@ -239,6 +242,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelEditDetailsNoChange9 = new javax.swing.JLabel();
         jLabelDetailsRoomType = new javax.swing.JLabel();
         jLabelDetailsRoomID = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabelDetailsDateFrom = new javax.swing.JLabel();
+        jLabelDetailsDateTo = new javax.swing.JLabel();
         jPanelEditBookingCustomer = new javax.swing.JPanel();
         jLabelEditDetailsNoChange1 = new javax.swing.JLabel();
         jTextFieldEditFirstNameNew = new javax.swing.JTextField();
@@ -264,13 +272,16 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelEditDetailsNoChange17 = new javax.swing.JLabel();
         jLabelEditDetailsNoChange5 = new javax.swing.JLabel();
         jLabelEditDetailsNoChange4 = new javax.swing.JLabel();
+        jLabelDetailsResultNotifier = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
-        jButtonSaveCustomerDetails = new javax.swing.JButton();
+        jButtonDetailsSaveChanges = new javax.swing.JButton();
+        jButtonDetailsExit = new javax.swing.JButton();
+        jButtonDetailsChangeBooking = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList();
-        jButton1 = new javax.swing.JButton();
+        jListDetailsFutureBookings = new javax.swing.JList();
+        jButtonDetailsShowBooking = new javax.swing.JButton();
         jDialogDetails = new javax.swing.JDialog();
         jPanelDetailsRoom = new javax.swing.JPanel();
         jLabelDetailsRoomID1 = new javax.swing.JLabel();
@@ -1823,11 +1834,12 @@ public class CasablancaGUI extends javax.swing.JFrame
                             .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(10, 10, 10)
-                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(10, 10, 10))))
         );
 
@@ -1852,7 +1864,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jDialogEditDetails.setTitle("Edit Details");
         jDialogEditDetails.setAlwaysOnTop(true);
-        jDialogEditDetails.setMinimumSize(new java.awt.Dimension(757, 542));
+        jDialogEditDetails.setMinimumSize(new java.awt.Dimension(724, 502));
         jDialogEditDetails.setResizable(false);
 
         jPanelEditBookingRoom.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1871,31 +1883,66 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelDetailsRoomID.setText("001");
         jLabelDetailsRoomID.setPreferredSize(new java.awt.Dimension(60, 30));
 
+        jLabel4.setText("Room:");
+        jLabel4.setPreferredSize(new java.awt.Dimension(47, 30));
+
+        jLabel5.setText("From:");
+        jLabel5.setPreferredSize(new java.awt.Dimension(47, 30));
+
+        jLabel6.setText("To:");
+        jLabel6.setPreferredSize(new java.awt.Dimension(47, 30));
+
+        jLabelDetailsDateFrom.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelDetailsDateFrom.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
+        jLabelDetailsDateTo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelDetailsDateTo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         javax.swing.GroupLayout jPanelEditBookingRoomLayout = new javax.swing.GroupLayout(jPanelEditBookingRoom);
         jPanelEditBookingRoom.setLayout(jPanelEditBookingRoomLayout);
         jPanelEditBookingRoomLayout.setHorizontalGroup(
             jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelEditDetailsNoChange9)
                     .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
-                        .addComponent(jLabelEditDetailsNoChange9)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEditBookingRoomLayout.createSequentialGroup()
-                        .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(61, 61, 61))))
+                        .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
+                                .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEditBookingRoomLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabelDetailsDateFrom, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                                    .addComponent(jLabelDetailsDateTo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                .addGap(10, 10, 10))
         );
         jPanelEditBookingRoomLayout.setVerticalGroup(
             jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addComponent(jLabelEditDetailsNoChange9)
-                .addGap(31, 31, 31)
-                .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelDetailsDateFrom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelDetailsDateTo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1984,6 +2031,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelEditDetailsNoChange4.setText("<html>Change a specific customer-detail by typing the desired data in the white fields.<br>Leave a cell blank to keep the original data of the specific detail.</html>");
 
+        jLabelDetailsResultNotifier.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDetailsResultNotifier.setText("No guest-information found...");
+
         javax.swing.GroupLayout jPanelEditBookingCustomerLayout = new javax.swing.GroupLayout(jPanelEditBookingCustomer);
         jPanelEditBookingCustomer.setLayout(jPanelEditBookingCustomerLayout);
         jPanelEditBookingCustomerLayout.setHorizontalGroup(
@@ -2042,8 +2092,13 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelEditGuestIDOriginal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelEditDetailsNoChange17, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addComponent(jLabelEditDetailsNoChange17, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanelEditBookingCustomerLayout.createSequentialGroup()
+                                .addComponent(jLabelEditGuestIDOriginal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabelDetailsResultNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addGap(10, 10, 10))
         );
         jPanelEditBookingCustomerLayout.setVerticalGroup(
@@ -2056,7 +2111,9 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(15, 15, 15)
                 .addComponent(jLabelEditDetailsNoChange17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(jLabelEditGuestIDOriginal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelDetailsResultNotifier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelEditGuestIDOriginal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(15, 15, 15)
                 .addGroup(jPanelEditBookingCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelEditDetailsNoChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2095,13 +2152,33 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(59, 59, 59))
         );
 
-        jButtonSaveCustomerDetails.setText("Save Details");
-        jButtonSaveCustomerDetails.setPreferredSize(new java.awt.Dimension(200, 33));
-        jButtonSaveCustomerDetails.addActionListener(new java.awt.event.ActionListener()
+        jButtonDetailsSaveChanges.setText("Save changes");
+        jButtonDetailsSaveChanges.setPreferredSize(new java.awt.Dimension(200, 35));
+        jButtonDetailsSaveChanges.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButtonSaveCustomerDetailsActionPerformed(evt);
+                jButtonDetailsSaveChangesActionPerformed(evt);
+            }
+        });
+
+        jButtonDetailsExit.setText("Exit");
+        jButtonDetailsExit.setPreferredSize(new java.awt.Dimension(200, 35));
+        jButtonDetailsExit.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonDetailsExitActionPerformed(evt);
+            }
+        });
+
+        jButtonDetailsChangeBooking.setText("Change booking");
+        jButtonDetailsChangeBooking.setPreferredSize(new java.awt.Dimension(200, 35));
+        jButtonDetailsChangeBooking.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonDetailsChangeBookingActionPerformed(evt);
             }
         });
 
@@ -2111,14 +2188,21 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(jButtonSaveCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButtonDetailsSaveChanges, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(jButtonDetailsChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonDetailsExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jButtonSaveCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButtonDetailsChangeBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonDetailsExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonDetailsSaveChanges, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
@@ -2126,27 +2210,28 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabel3.setText("Future bookings of current customer:");
 
-        jList1.setModel(new javax.swing.AbstractListModel()
-        {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane3.setViewportView(jList1);
+        jScrollPane3.setViewportView(jListDetailsFutureBookings);
 
-        jButton1.setText("Show booking details");
-        jButton1.setPreferredSize(new java.awt.Dimension(230, 35));
+        jButtonDetailsShowBooking.setText("Show booking details");
+        jButtonDetailsShowBooking.setPreferredSize(new java.awt.Dimension(230, 35));
+        jButtonDetailsShowBooking.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButtonDetailsShowBookingActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3)
                     .addComponent(jScrollPane3)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonDetailsShowBooking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(10, 10, 10))
         );
         jPanel1Layout.setVerticalGroup(
@@ -2157,7 +2242,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(0, 0, 0)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonDetailsShowBooking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
 
@@ -2166,16 +2251,15 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogEditDetailsLayout.setHorizontalGroup(
             jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
-                .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
                         .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1, 1, 1)
                         .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                        .addGap(0, 191, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE))))
+                .addGap(0, 0, 0))
         );
         jDialogEditDetailsLayout.setVerticalGroup(
             jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2187,7 +2271,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         .addGap(1, 1, 1)
                         .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
                     .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
@@ -6417,14 +6501,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonRoomArrowDown.setBorderPainted(false);
     }//GEN-LAST:event_jButtonRoomArrowDownMouseExited
 
-    private void jButtonSaveCustomerDetailsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSaveCustomerDetailsActionPerformed
-    {//GEN-HEADEREND:event_jButtonSaveCustomerDetailsActionPerformed
-        if(jTextFieldEditFirstNameNew.equals(""))
-        {
-            
-        }
-    }//GEN-LAST:event_jButtonSaveCustomerDetailsActionPerformed
-
     private void jButtonSearchCustomerExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSearchCustomerExitActionPerformed
     {//GEN-HEADEREND:event_jButtonSearchCustomerExitActionPerformed
         jDialogSearchCustomer.setVisible(false);
@@ -7485,6 +7561,87 @@ public class CasablancaGUI extends javax.swing.JFrame
         }
         jListCheckInOut.setModel(writeList);
     }//GEN-LAST:event_jButtonCheckOutLoadActionPerformed
+
+    private void jButtonDetailsSaveChangesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonDetailsSaveChangesActionPerformed
+    {//GEN-HEADEREND:event_jButtonDetailsSaveChangesActionPerformed
+        String fn = jTextFieldEditFirstNameNew.getText();
+        String ln = jTextFieldEditLastNameNew.getText();
+        String cn = jTextFieldEditCountryNew.getText();
+        String pn = jTextFieldEditPhoneNew.getText();
+        String en = jTextFieldEditEmailNew.getText();
+        if(fn.equals(""))
+        {
+            
+        }
+        if(ln.equals(""))
+        {
+            
+        }
+        if(cn.equals(""))
+        {
+            
+        }
+        if(pn.equals(""))
+        {
+            
+        }
+        if(en.equals(""))
+        {
+            
+        }
+    }//GEN-LAST:event_jButtonDetailsSaveChangesActionPerformed
+
+    private void jButtonDetailsShowBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonDetailsShowBookingActionPerformed
+    {//GEN-HEADEREND:event_jButtonDetailsShowBookingActionPerformed
+        Calendar df = Calendar.getInstance();
+        Calendar dt = Calendar.getInstance();
+        if (jListDetailsFutureBookings.isSelectionEmpty())
+        {
+            deleteBookingRoomID = "";
+            deleteBookingGuestID = "";
+            deleteBookingStartDate = "";
+        } else
+        {
+            int bookingIndex = jListDetailsFutureBookings.getSelectedIndex();
+            String rID = guestList.get(bookingIndex).getRoomID();
+            String dFrom = guestList.get(bookingIndex).getDateFrom();
+            String dTo = guestList.get(bookingIndex).getDateTo();
+            RoomTypeIDConstructor bList = jdcbselect.getRoomInfoFromRoomID(rID);
+            String rType = bList.getRoomType();
+            try
+            {
+                df.setTime(sdf.parse(dFrom));
+                dt.setTime(sdf.parse(dTo));
+            } catch (ParseException ex)
+            {
+                Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            String dateFrom = sdfMonthName.format(df.getTime()) + " " + sdfDateInt.format(df.getTime()) + ". - " + sdfYearLong.format(df.getTime());
+            String dateTo = sdfMonthName.format(dt.getTime()) + " " + sdfDateInt.format(dt.getTime()) + ". - " + sdfYearLong.format(dt.getTime());
+            jLabelDetailsRoomID.setText(rID);
+            jLabelDetailsRoomType.setText(rType);
+            jLabelDetailsDateFrom.setText(dateFrom);
+            jLabelDetailsDateTo.setText(dateTo);
+            deleteBookingRoomID = rID;
+            deleteBookingGuestID = guestList.get(bookingIndex).getGuestID();
+            deleteBookingStartDate = dFrom;
+        }
+    }//GEN-LAST:event_jButtonDetailsShowBookingActionPerformed
+
+    private void jButtonDetailsExitActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonDetailsExitActionPerformed
+    {//GEN-HEADEREND:event_jButtonDetailsExitActionPerformed
+        jDialogEditDetails.setVisible(false);
+    }//GEN-LAST:event_jButtonDetailsExitActionPerformed
+
+    private void jButtonDetailsChangeBookingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonDetailsChangeBookingActionPerformed
+    {//GEN-HEADEREND:event_jButtonDetailsChangeBookingActionPerformed
+        if(deleteBookingRoomID.equals("") || deleteBookingGuestID.equals("") || deleteBookingStartDate.equals(""))
+        {
+        } else
+        {
+            
+        }
+    }//GEN-LAST:event_jButtonDetailsChangeBookingActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
     private void setCurrentDate()
@@ -7749,7 +7906,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
@@ -7763,6 +7919,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonCheckInPrint;
     private javax.swing.JButton jButtonCheckInSearchCustomer;
     private javax.swing.JButton jButtonCheckOutLoad;
+    private javax.swing.JButton jButtonDetailsChangeBooking;
+    private javax.swing.JButton jButtonDetailsExit;
+    private javax.swing.JButton jButtonDetailsSaveChanges;
+    private javax.swing.JButton jButtonDetailsShowBooking;
     private javax.swing.JButton jButtonEditSelectedCustomerDetails;
     private javax.swing.JButton jButtonExitDetails;
     private javax.swing.JButton jButtonFacilities;
@@ -7774,7 +7934,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonRoomArrowDown;
     private javax.swing.JButton jButtonRoomArrowUp;
     private javax.swing.JButton jButtonRoomSearch;
-    private javax.swing.JButton jButtonSaveCustomerDetails;
     private javax.swing.JButton jButtonSearchCustomer;
     private javax.swing.JButton jButtonSearchCustomerDetails;
     private javax.swing.JButton jButtonSearchCustomerExit;
@@ -7820,7 +7979,10 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabelBookingNoChange1;
@@ -7881,12 +8043,15 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelDate14Year;
     private javax.swing.JLabel jLabelDetailsBookingDate;
     private javax.swing.JLabel jLabelDetailsCountry;
+    private javax.swing.JLabel jLabelDetailsDateFrom;
+    private javax.swing.JLabel jLabelDetailsDateTo;
     private javax.swing.JLabel jLabelDetailsEmail;
     private javax.swing.JLabel jLabelDetailsEndDate;
     private javax.swing.JLabel jLabelDetailsFirstName;
     private javax.swing.JLabel jLabelDetailsGuestID;
     private javax.swing.JLabel jLabelDetailsLastName;
     private javax.swing.JLabel jLabelDetailsPhone;
+    private javax.swing.JLabel jLabelDetailsResultNotifier;
     private javax.swing.JLabel jLabelDetailsRoomID;
     private javax.swing.JLabel jLabelDetailsRoomID1;
     private javax.swing.JLabel jLabelDetailsRoomType;
@@ -8090,8 +8255,8 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelSetupOverviewNoChange7;
     private javax.swing.JLabel jLabelSetupOverviewNoChange8;
     private javax.swing.JLabel jLabelSetupOverviewNoChange9;
-    private javax.swing.JList jList1;
     private javax.swing.JList jListCheckInOut;
+    private javax.swing.JList jListDetailsFutureBookings;
     private javax.swing.JList jListSearchCustomerBookingsHistory;
     private javax.swing.JList jListSearchCustomerResult;
     private javax.swing.JList jListSearchRoomResult;
@@ -8392,19 +8557,69 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void setupDialogEditCustomer(String guestID)
     {
         setCurrentDate();
+        deleteBookingRoomID = "";
+        deleteBookingGuestID = "";
+        deleteBookingStartDate = "";
         jTextFieldEditFirstNameNew.setText("");
         jTextFieldEditLastNameNew.setText("");
         jTextFieldEditCountryNew.setText("");
         jTextFieldEditPhoneNew.setText("");
         jTextFieldEditEmailNew.setText("");
+        jLabelDetailsResultNotifier.setText("");
+        jLabelDetailsRoomID.setText("");
+        jLabelDetailsRoomType.setText("");
+        jLabelDetailsDateFrom.setText("");
+        jLabelDetailsDateTo.setText("");
+        RoomTypeIDConstructor bList;
+        Calendar sBookDate = Calendar.getInstance();
+        Calendar dateNow = Calendar.getInstance();
         guestList.clear();
+        writeList.clear();
         guestList = jdcbselect.getInfoFromGuestID(guestID);
-        jLabelEditGuestIDOriginal.setText(guestList.get(0).getGuestID());
-        jLabelEditFirstNameOriginal.setText(guestList.get(0).getGuestFirstname());
-        jLabelEditLastNameOriginal.setText(guestList.get(0).getGuestLastName());
-        jLabelEditCountryOriginal.setText(guestList.get(0).getCountry());
-        jLabelEditPhoneOriginal.setText(guestList.get(0).getContanctPhone());
-        jLabelEditEmailOriginal.setText(guestList.get(0).getEmail());
+        bList = jdcbselect.getRoomInfoFromRoomID(guestID);
+        if (guestList.size() > 0)
+        {
+            jButtonDetailsSaveChanges.setEnabled(true);
+            jLabelEditGuestIDOriginal.setText(guestList.get(0).getGuestID());
+            jLabelEditFirstNameOriginal.setText(guestList.get(0).getGuestFirstname());
+            jLabelEditLastNameOriginal.setText(guestList.get(0).getGuestLastName());
+            jLabelEditCountryOriginal.setText(guestList.get(0).getCountry());
+            jLabelEditPhoneOriginal.setText(guestList.get(0).getContanctPhone());
+            jLabelEditEmailOriginal.setText(guestList.get(0).getEmail());
+            for(int i = 0; i < guestList.size(); i++)
+            {
+                try
+                {
+                    sBookDate.setTime(sdf.parse(guestList.get(i).getDateFrom()));
+                } catch (ParseException ex)
+                {
+                    Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                if (sBookDate.after(dateNow))
+                {
+                    String rID = guestList.get(i).getRoomID();
+                    String rType = bList.getRoomType();
+                    String df = guestList.get(i).getDateFrom();
+                    String dt = guestList.get(i).getDateTo();
+                    writeList.addElement("Room " + rID + " (" + rType + "), From " + df + ", To " + dt);
+                }
+            }
+            if(writeList.isEmpty())
+            {
+                writeList.addElement("No future bookings found...");
+                jButtonDetailsChangeBooking.setEnabled(false);
+                jButtonDetailsShowBooking.setEnabled(false);
+            } else
+            {
+                jButtonDetailsChangeBooking.setEnabled(true);
+                jButtonDetailsShowBooking.setEnabled(true);
+            }
+            jListDetailsFutureBookings.setModel(writeList);
+        } else
+        {
+            jLabelDetailsResultNotifier.setText("No guest-information found...");
+            jButtonDetailsSaveChanges.setEnabled(false);
+        }
     }
     
     private void setupDialogCheckIn()
