@@ -33,62 +33,42 @@ public class JDBCSelectQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT GUESTID from "
                     + "GUEST");
-            System.out.println("Statement acceptet");
 
-            try
-            {
-
-                while (rs.next())
-                {
+            try {
+                while (rs.next()) {
                     String guestID = rs.getString("GUESTID");
                     guestIDArray.add(guestID);
                 }
                 return guestIDArray;
-            } catch (Exception e)
-            {
+            } catch (Exception e){
                 System.err.println(e);
-            }
-
-            rs.close();
-        } catch (SQLException se)
-        {
+            } rs.close();
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try {
+                if (stmt != null) {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try {
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -103,20 +83,16 @@ public class JDBCSelectQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where guest.guestid ='"
                     + guestID + "'");
-
-            while (rs.next())
-            {
+            
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -135,35 +111,26 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
+        } finally{
+            try{
                 if (stmt != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
-            }
-            try
-            {
+            } catch (SQLException se){}
+            try {
                 if (conn != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -172,26 +139,21 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
-        try
-        {
+        try {
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where guest.guestfirstname like '%"
                     + firstName + "%'");
 
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -210,35 +172,25 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
+        } finally{
+            try{
                 if (stmt != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
-            }
-            try
-            {
-                if (conn != null)
-                {
+            } catch (SQLException se){}
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -253,20 +205,16 @@ public class JDBCSelectQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where guest.guestlastname LIKE '%"
                     + lastName + "%'");
 
-            while (rs.next())
-            {
+            while (rs.next()) {
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -285,35 +233,24 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
-            }
-            try
-            {
-                if (conn != null)
-                {
+            } catch (SQLException se){}
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -322,26 +259,21 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where guest.guestcountry LIKE '%"
                     + country + "%'");
 
-            while (rs.next())
-            {
+            while (rs.next()) {
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -360,35 +292,25 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -403,20 +325,16 @@ public class JDBCSelectQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where guest.guestcontactphone LIKE '%"
                     + phone + "%'");
 
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -435,31 +353,24 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
+        } finally{
+            try{
                 if (stmt != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
+            try{
                 if (conn != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
@@ -472,26 +383,21 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where guest.guestemail LIKE '%"
                     + mail + "%'");
 
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -510,35 +416,27 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
+        } finally{
+            try{
                 if (stmt != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
+            try{
                 if (conn != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -553,20 +451,16 @@ public class JDBCSelectQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where bookroom.datefrom ='"
                     + dateFrom + "'");
 
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -585,35 +479,25 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -622,26 +506,21 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<InfoObjectConstructor> guestIDHistory = new ArrayList<>();
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
                     + "bookroom.guestid = guest.guestid where bookroom.dateto ='"
                     + dateTo + "'");
 
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstname");
@@ -660,35 +539,25 @@ public class JDBCSelectQuery
                 guestIDHistory.add(info1);
             }
             return guestIDHistory;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -696,8 +565,7 @@ public class JDBCSelectQuery
     { //skriver regningen fra instrukionsomkostningerne på en fil
         Connection conn = null;
         Statement stmt = null;
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
@@ -710,12 +578,8 @@ public class JDBCSelectQuery
             rs = stmt.executeQuery("SELECT GUESTLASTNAME,GUESTFIRSTNAME,INSTRUCTORBILL"
                     + " FROM GUEST WHERE GUESTID='" + guestID + "'");
             String guestList = guestID + " - Instructor Bill.txt";
-
-            try (PrintWriter writer = new PrintWriter(guestList))
-            {
-
-                while (rs.next())
-                {
+            try (PrintWriter writer = new PrintWriter(guestList)){
+                while (rs.next()){
                     String lastName = rs.getString("GUESTLASTNAME");
                     String firstName = rs.getString("GUESTFIRSTNAME");
                     String cost = rs.getString("INSTRUCTORBILL");
@@ -725,40 +589,28 @@ public class JDBCSelectQuery
                             + " instructions hours: " + cost);
                 }
                 writer.close();
-            } catch (FileNotFoundException e)
-            {
+            } catch (FileNotFoundException e){
                 System.err.println(e);
             }
-
             rs.close();
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
-            System.out.println("done");
         }
     }
 
@@ -766,16 +618,12 @@ public class JDBCSelectQuery
     {
         Connection conn = null;
         Statement stmt = null;
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
-            System.out.println(tomorrowDate);
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
             System.out.println("Creating statement...");
@@ -786,65 +634,47 @@ public class JDBCSelectQuery
                     + "GUEST INNER JOIN BOOKROOM ON BOOKROOM.GUESTID=GUEST.GUESTID "
                     + "Where BOOKROOM.DATEFROM = '" + tomorrowDate
                     + "' ORDER BY GUEST.GUESTLASTNAME");
-            System.out.println("Statement acceptet");
             String guestList = tomorrowDate + " - List of Check-ins.txt";
 
-            try (PrintWriter writer = new PrintWriter(guestList))
-            {
+            try (PrintWriter writer = new PrintWriter(guestList)){
 
-                while (rs.next())
-                {
+                while (rs.next()){
                     String lastName = rs.getString("GUESTLASTNAME");
                     String firstName = rs.getString("GUESTFIRSTNAME");
                     String guestID = rs.getString("GUESTID");
                     String returningGuest = rs.getString("RETURNINGGUEST");
-                    if (returningGuest.equals("Y"))
-                    {
+                    if (returningGuest.equals("Y")){
                         writer.println(lastName + ", " + firstName + " - Guest ID: "
                                 + guestID + " (This person is a returning guest)");
-                    } else
-                    {
+                    } else{
                         writer.println(lastName + ", " + firstName + " - Guest ID: "
                                 + guestID);
                     }
                 }
                 writer.close();
-            } catch (FileNotFoundException e)
-            {
+            } catch (FileNotFoundException e){
                 System.err.println(e);
             }
-
             rs.close();
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
-
     }
 
     public ArrayList<RoomAvaBookConstructor> getCheckAvaRoom(String roomID)
@@ -852,26 +682,21 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<RoomAvaBookConstructor> RoomAvailability = new ArrayList<>();
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT ROOMS.ROOMID, ROOMS.ROOMTYPE, "
                     + "ROOMS.ROOMPRICE, BOOKROOM.DATEFROM, BOOKROOM.DATETO"
                     + " FROM BOOKROOM INNER JOIN ROOMS ON BOOKROOM.ROOMID = '" + roomID + "'");
 
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsRoomID = rs.getString("RoomID");
                 String rsRoomType = rs.getString("RoomType");
                 String rsDateFrom = rs.getString("dateFrom");
@@ -882,35 +707,25 @@ public class JDBCSelectQuery
                 RoomAvailability.add(avaRoom);
             }
             return RoomAvailability;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -919,58 +734,41 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<String> RoomIDFromRoomType = new ArrayList<>();
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT ROOMID FROM ROOMS "
                     + "WHERE UPPER (ROOMTYPE) = UPPER ('" + roomType + "')");
-
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsRoomID = rs.getString("RoomID");
                 RoomIDFromRoomType.add(rsRoomID);
             }
             return RoomIDFromRoomType;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
-            }
-            try
-            {
-                if (conn != null)
-                {
+            } catch (SQLException se){}
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -979,27 +777,21 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<BookedOverviewConstructor> bookOverviewForGuest = new ArrayList<>();
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT FACBOOK.GUESTID, FACBOOK.FACID, "
                     + "FACILITY.FACTYPE, FACBOOK.FACDATE, FACBOOK.TIMESTART, FACBOOK.TIMEEND "
                     + "FROM FACBOOK INNER JOIN FACILITY ON FACBOOK.FACID = FACILITY.FACID "
                     + "WHERE FACBOOK.GUESTID='" + guestID + "' ORDER BY FACBOOK.FACDATE");
-
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsFacID = rs.getString("FacID");
                 String rsFacType = rs.getString("FacType");
@@ -1010,35 +802,25 @@ public class JDBCSelectQuery
                 bookOverviewForGuest.add(bookOverview);
             }
             return bookOverviewForGuest;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
-                if (stmt != null)
-                {
+        } finally{
+            try{
+                if (stmt != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 
@@ -1048,59 +830,44 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         RoomTypeIDConstructor rtidc = new RoomTypeIDConstructor("", "", "");
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT ROOMS.ROOMID, ROOMS.ROOMTYPE, ROOMS.ROOMPRICE FROM ROOMS WHERE ROOMID = '" + roomID + "'");
-
-            if (rs.next())
-            {
+            if (rs.next()){
                 String rsRoomID = rs.getString("RoomID");
                 String rsRoomType = rs.getString("RoomType");
                 String rsRoomPrice = rs.getString("RoomPrice");
                 rtidc = new RoomTypeIDConstructor(rsRoomID, rsRoomType, rsRoomPrice);
             }
             return rtidc;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
-            try
-            {
+        } finally{
+            try{
                 if (stmt != null)
                 {
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
             }
-            try
-            {
-                if (conn != null)
-                {
+            try{
+                if (conn != null){
                     conn.close();
                 }
-            } catch (SQLException se)
-            {
+            } catch (SQLException se){
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
     
@@ -1117,12 +884,9 @@ public class JDBCSelectQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT WAITLIST.GUESTID, GUEST.GUESTLASTNAME, GUEST.GUESTFIRSTNAME " +
@@ -1130,9 +894,7 @@ public class JDBCSelectQuery
                     + "INNER JOIN GUEST ON WAITLIST.GUESTID = GUEST.GUESTID " 
                     + "WHERE WAITLIST.WFACDATE = '"+date+"' AND WAITLIST.WTIMESTART = '"+timeStart+"' " 
                     + "AND WAITLIST.WTIMEEND = '"+timeEnd+"' AND FACILITY.FACTYPE = '"+facility+"'");
-
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsLastName = rs.getString("GuestLastName");
                 String rsFirstName = rs.getString("GuestFirstName");
@@ -1141,17 +903,13 @@ public class JDBCSelectQuery
                 posOverviewForGuest.add(posOverview);             
             }
             return posOverviewForGuest;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
+        } finally{
             try {
-                if (stmt != null)
-                {
+                if (stmt != null){
                     conn.close();
                 }
             } catch (SQLException se){}
@@ -1163,7 +921,6 @@ public class JDBCSelectQuery
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
     
@@ -1173,43 +930,32 @@ public class JDBCSelectQuery
         Connection conn = null;
         Statement stmt = null;
         ArrayList<GetfacAvailabilityConstructor> facAvail = new ArrayList<GetfacAvailabilityConstructor>();
-        try
-        {
+        try{
             //Registrer JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT GUESTID FROM FACBOOK WHERE FACID='"+facID+"' AND "
                     + "FACDATE='"+facDate+"' AND TIMESTART='"+timeStart+"' AND "
                     + "TIMEEND='"+timeEnd+"'");
-
-            while (rs.next())
-            {
+            while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
-                
                 GetfacAvailabilityConstructor posOverview = new GetfacAvailabilityConstructor(rsGuestID);
                 facAvail.add(posOverview);             
             }
             return facAvail;
-        } catch (SQLException se)
-        {
+        } catch (SQLException se){
             se.printStackTrace();
-        } catch (Exception e)
-        {
+        } catch (Exception e){
             e.printStackTrace();
-        } finally
-        {
+        } finally{
             try {
-                if (stmt != null)
-                {
+                if (stmt != null){
                     conn.close();
                 }
             } catch (SQLException se){}
@@ -1221,7 +967,6 @@ public class JDBCSelectQuery
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
         return null;
     }
 }
