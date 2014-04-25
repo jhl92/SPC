@@ -3019,7 +3019,7 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="jButtonDetailsSaveChanges">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Save changes"/>
+                <Property name="text" type="java.lang.String" value="Save customer changes"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[200, 35]"/>
                 </Property>

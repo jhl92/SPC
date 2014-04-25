@@ -2158,7 +2158,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(59, 59, 59))
         );
 
-        jButtonDetailsSaveChanges.setText("Save changes");
+        jButtonDetailsSaveChanges.setText("Save customer changes");
         jButtonDetailsSaveChanges.setPreferredSize(new java.awt.Dimension(200, 35));
         jButtonDetailsSaveChanges.addActionListener(new java.awt.event.ActionListener()
         {
@@ -7617,7 +7617,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonCheckOutLoadActionPerformed
         Calendar specifiedDate = Calendar.getInstance();
         specifiedDate.set((jComboBoxCheckInYear.getSelectedIndex()+2014), jComboBoxCheckInMonth.getSelectedIndex(), (jComboBoxCheckInDate.getSelectedIndex()+1));
-        String sd = sdf.format(specifiedDate);
+        String sd = sdf.format(specifiedDate.getTime());
         ArrayList<InfoObjectConstructor> tempList = new ArrayList<>();
         writeList.clear();
         tempList = jdcbselect.getInfoFromDateTo(sd);
@@ -8786,6 +8786,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void updateCells()
     {
         setCurrentDate();
+        fillDateCells(ovcStartDate);
         fillRoomCells(ovcRoom1, 1, ovcStartDate);
         fillRoomCells(ovcRoom2, 2, ovcStartDate);
         fillRoomCells(ovcRoom3, 3, ovcStartDate);
