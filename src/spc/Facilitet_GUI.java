@@ -1145,7 +1145,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addGap(3, 3, 3)
                         .addComponent(jLabel38)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 395, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1172,7 +1172,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 415, Short.MAX_VALUE)
                         .addComponent(jButtonPrintInstrucCost)
                         .addGap(72, 72, 72))))
         );
@@ -1551,7 +1551,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel3Golf.setLayout(jPanel3GolfLayout);
         jPanel3GolfLayout.setHorizontalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 987, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 1311, Short.MAX_VALUE)
         );
         jPanel3GolfLayout.setVerticalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1577,8 +1577,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel8.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, -1, -1));
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel43.setText("Handball");
-        jPanel8.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel43.setText("HANDBALL");
+        jPanel8.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         jLabel64.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel64.setText("The facilities are available between 8am - 8pm every day");
@@ -2213,16 +2213,15 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jComboBoxFitnessSelectDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel31))
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel33))
                     .addComponent(jComboBoxFitnessTimeFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel34))
                     .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jComboBoxFitnessTimeTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonFitnessHelp)))
+                        .addComponent(jButtonFitnessHelp))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel34))))
                 .addGap(7, 7, 7)
                 .addComponent(jLabel44)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2635,7 +2634,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private void jButtonOverviewDeleteYes1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewDeleteYes1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewDeleteYes1ActionPerformed
         int a = jListBookedOverview.getSelectedIndex();
-        //delete.JDBCDeleteFacBooking(tempBookOverview.get(a).getGuestID(), tempBookOverview.get(a).getFacID(), tempBookOverview.get(a).getTimeStart());
+        delete.JDBCDeleteFacBooking(tempBookOverview.get(a).getGuestID(), tempBookOverview.get(a).getFacID(), tempBookOverview.get(a).getTimeStart());
         jDialogOverviewDelete.setVisible(false);
         loadListOverview();
     }//GEN-LAST:event_jButtonOverviewDeleteYes1ActionPerformed

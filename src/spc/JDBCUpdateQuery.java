@@ -161,6 +161,7 @@ public class JDBCUpdateQuery
                     +CURRtimeStart+"' AND FACDATE ='"+CURRfacDate+"'";
 
             stmt.executeUpdate(sql);
+            
             conn.commit();
             
         } catch (SQLException se){
