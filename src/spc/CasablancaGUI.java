@@ -222,8 +222,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogCheckInOut = new javax.swing.JDialog();
         jPanelCheckInList = new javax.swing.JPanel();
         jLabelCheckInOutNotifier = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jListCheckIn = new javax.swing.JList();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jListCheckInOut = new javax.swing.JList();
         jPanelCheckInButtons = new javax.swing.JPanel();
         jLabelCheckInNoChange2 = new javax.swing.JLabel();
         jComboBoxCheckInMonth = new javax.swing.JComboBox();
@@ -237,8 +237,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogEditDetails = new javax.swing.JDialog();
         jPanelEditBookingRoom = new javax.swing.JPanel();
         jLabelEditDetailsNoChange9 = new javax.swing.JLabel();
-        jPanelDetailsAvailabilityMarker = new javax.swing.JPanel();
-        jLabelDetailsAvailabilityMarkerText = new javax.swing.JLabel();
         jLabelDetailsRoomType = new javax.swing.JLabel();
         jLabelDetailsRoomID = new javax.swing.JLabel();
         jPanelEditBookingCustomer = new javax.swing.JPanel();
@@ -268,6 +266,11 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelEditDetailsNoChange4 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jButtonSaveCustomerDetails = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList();
+        jButton1 = new javax.swing.JButton();
         jDialogDetails = new javax.swing.JDialog();
         jPanelDetailsRoom = new javax.swing.JPanel();
         jLabelDetailsRoomID1 = new javax.swing.JLabel();
@@ -1657,24 +1660,16 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jDialogCheckInOut.setTitle("Find Check-In/Out");
         jDialogCheckInOut.setAlwaysOnTop(true);
-        jDialogCheckInOut.setMinimumSize(new java.awt.Dimension(483, 400));
+        jDialogCheckInOut.setMinimumSize(new java.awt.Dimension(605, 377));
         jDialogCheckInOut.setResizable(false);
 
         jPanelCheckInList.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelCheckInList.setPreferredSize(new java.awt.Dimension(600, 250));
 
         jLabelCheckInOutNotifier.setText("Check-ins on the specified date:");
 
-        jScrollPane3.setPreferredSize(new java.awt.Dimension(350, 350));
-
-        jListCheckIn.setModel(new javax.swing.AbstractListModel()
-        {
-            String[] strings = { "54D7G     Gjøe, Janus Kayser     40942510     ZarkovZZZ@Hotmail.com", "786LK     Borg, Jonas     12345678     Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com", "54D7G, Gjøe, Janus Kayser, 40942510, ZarkovZZZ@Hotmail.com", "786LK - Borg - Jonas - 12345678 - Email@Email.dk", "W51Q5     Pedersen, Michael     555-8791     Email@Email.com" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
-        jListCheckIn.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jListCheckIn.setPreferredSize(new java.awt.Dimension(315, 50));
-        jScrollPane3.setViewportView(jListCheckIn);
+        jListCheckInOut.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane5.setViewportView(jListCheckInOut);
 
         javax.swing.GroupLayout jPanelCheckInListLayout = new javax.swing.GroupLayout(jPanelCheckInList);
         jPanelCheckInList.setLayout(jPanelCheckInListLayout);
@@ -1682,10 +1677,12 @@ public class CasablancaGUI extends javax.swing.JFrame
             jPanelCheckInListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelCheckInListLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanelCheckInListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelCheckInOutNotifier)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jScrollPane5)
                 .addGap(10, 10, 10))
+            .addGroup(jPanelCheckInListLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelCheckInOutNotifier, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelCheckInListLayout.setVerticalGroup(
             jPanelCheckInListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1693,7 +1690,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(10, 10, 10)
                 .addComponent(jLabelCheckInOutNotifier)
                 .addGap(0, 0, 0)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
                 .addGap(10, 10, 10))
         );
 
@@ -1792,43 +1789,46 @@ public class CasablancaGUI extends javax.swing.JFrame
                                 .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabelCheckInNoChange2))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCheckInButtonsLayout.createSequentialGroup()
+                            .addComponent(jLabelCheckInNoChange2)))
+                    .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonCheckInSearchCustomer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(10, 10, 10))
-            .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
-                .addContainerGap()
+                        .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(21, 21, 21)
                 .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonCheckInLoad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
+                        .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21)
+                        .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
+                        .addComponent(jButtonCheckInLoad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21)
+                        .addComponent(jButtonCheckInSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10))
         );
         jPanelCheckInButtonsLayout.setVerticalGroup(
             jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabelCheckInNoChange2)
-                .addGap(0, 0, 0)
-                .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addComponent(jButtonCheckInLoad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButtonCheckInSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelCheckInButtonsLayout.createSequentialGroup()
+                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButtonCheckInLoad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonCheckInSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
+                        .addComponent(jLabelCheckInNoChange2)
+                        .addGap(0, 0, 0)
+                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(10, 10, 10))))
         );
 
         javax.swing.GroupLayout jDialogCheckInOutLayout = new javax.swing.GroupLayout(jDialogCheckInOut.getContentPane());
@@ -1836,17 +1836,17 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogCheckInOutLayout.setHorizontalGroup(
             jDialogCheckInOutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogCheckInOutLayout.createSequentialGroup()
-                .addComponent(jPanelCheckInList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(jPanelCheckInButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jDialogCheckInOutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelCheckInList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanelCheckInButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, 0))
         );
         jDialogCheckInOutLayout.setVerticalGroup(
             jDialogCheckInOutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogCheckInOutLayout.createSequentialGroup()
-                .addGroup(jDialogCheckInOutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanelCheckInList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelCheckInButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanelCheckInList, 248, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jPanelCheckInButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
 
@@ -1859,33 +1859,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelEditBookingRoom.setPreferredSize(new java.awt.Dimension(300, 457));
 
         jLabelEditDetailsNoChange9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabelEditDetailsNoChange9.setText("Room Details");
-
-        jPanelDetailsAvailabilityMarker.setBackground(new java.awt.Color(255, 0, 0));
-        jPanelDetailsAvailabilityMarker.setPreferredSize(new java.awt.Dimension(150, 30));
-
-        jLabelDetailsAvailabilityMarkerText.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelDetailsAvailabilityMarkerText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDetailsAvailabilityMarkerText.setText("BOOKED");
-        jLabelDetailsAvailabilityMarkerText.setMaximumSize(new java.awt.Dimension(50, 20));
-        jLabelDetailsAvailabilityMarkerText.setMinimumSize(new java.awt.Dimension(50, 20));
-        jLabelDetailsAvailabilityMarkerText.setPreferredSize(new java.awt.Dimension(50, 20));
-
-        javax.swing.GroupLayout jPanelDetailsAvailabilityMarkerLayout = new javax.swing.GroupLayout(jPanelDetailsAvailabilityMarker);
-        jPanelDetailsAvailabilityMarker.setLayout(jPanelDetailsAvailabilityMarkerLayout);
-        jPanelDetailsAvailabilityMarkerLayout.setHorizontalGroup(
-            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelDetailsAvailabilityMarkerLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
-        );
-        jPanelDetailsAvailabilityMarkerLayout.setVerticalGroup(
-            jPanelDetailsAvailabilityMarkerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelDetailsAvailabilityMarkerLayout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(jLabelDetailsAvailabilityMarkerText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jLabelEditDetailsNoChange9.setText("Booking Details");
 
         jLabelDetailsRoomType.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelDetailsRoomType.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -1906,14 +1880,11 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
                         .addComponent(jLabelEditDetailsNoChange9)
-                        .addContainerGap(196, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEditBookingRoomLayout.createSequentialGroup()
-                        .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanelEditBookingRoomLayout.createSequentialGroup()
-                                .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(61, 61, 61))))
         );
         jPanelEditBookingRoomLayout.setVerticalGroup(
@@ -1925,9 +1896,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanelEditBookingRoomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelDetailsRoomID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelDetailsRoomType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
-                .addComponent(jPanelDetailsAvailabilityMarker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanelEditBookingCustomer.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -2141,16 +2110,55 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addComponent(jButtonSaveCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(10, 10, 10)
                 .addComponent(jButtonSaveCustomerDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12))
+                .addGap(10, 10, 10))
+        );
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel3.setText("Future bookings of current customer:");
+
+        jList1.setModel(new javax.swing.AbstractListModel()
+        {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane3.setViewportView(jList1);
+
+        jButton1.setText("Show booking details");
+        jButton1.setPreferredSize(new java.awt.Dimension(230, 35));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel3)
+                    .addComponent(jScrollPane3)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addGap(0, 0, 0)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
         );
 
         javax.swing.GroupLayout jDialogEditDetailsLayout = new javax.swing.GroupLayout(jDialogEditDetails.getContentPane());
@@ -2158,23 +2166,29 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogEditDetailsLayout.setHorizontalGroup(
             jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 0, 0))
+                .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
+                        .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(0, 191, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jDialogEditDetailsLayout.setVerticalGroup(
             jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
                 .addGroup(jDialogEditDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jDialogEditDetailsLayout.createSequentialGroup()
-                        .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1, 1, 1)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jPanelEditBookingRoom, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
+                    .addComponent(jPanelEditBookingCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
 
@@ -6505,7 +6519,14 @@ public class CasablancaGUI extends javax.swing.JFrame
             String rType = roomListInfo.get(i).getRoomType();
             writeList.addElement("Room  " + rID + "  -  " + rType);
         }
-        jLabelSearchRoomResultNotifier.setText(roomListInfo.size() + " rooms found");
+        if(writeList.isEmpty())
+        {
+            writeList.addElement("No results found...");
+            jLabelSearchRoomResultNotifier.setText("");
+        } else
+        {
+            jLabelSearchRoomResultNotifier.setText(roomListInfo.size() + " rooms found");
+        }
         jListSearchRoomResult.setModel(writeList);
     }//GEN-LAST:event_jButtonRoomSearchActionPerformed
 
@@ -7207,7 +7228,28 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonCheckInLoadActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInLoadActionPerformed
     {//GEN-HEADEREND:event_jButtonCheckInLoadActionPerformed
-        // TODO add your handling code here:
+        Calendar specifiedDate = Calendar.getInstance();
+        specifiedDate.set((jComboBoxCheckInYear.getSelectedIndex()+2014), jComboBoxCheckInMonth.getSelectedIndex(), (jComboBoxCheckInDate.getSelectedIndex()+1));
+        String sd = sdf.format(specifiedDate);
+        ArrayList<InfoObjectConstructor> tempList = new ArrayList<>();
+        writeList.clear();
+        tempList = jdcbselect.getInfoFromDateFrom(sd);
+        for (int i = 0; i < tempList.size(); i++)
+        {
+            String rID = tempList.get(i).getRoomID();
+            String gID = tempList.get(i).getGuestID();
+            String fName = tempList.get(i).getGuestFirstname();
+            String lName = tempList.get(i).getGuestLastName();
+            String Phone = tempList.get(i).getContanctPhone();
+            String Email = tempList.get(i).getEmail();
+            writeList.addElement("Room " + rID + "  -  " + gID + "  -  " + lName + ", " + fName + "  -  " + Email + "  -  " + Phone);
+        }
+        jLabelCheckInOutNotifier.setText("Check-ins on the specified date:");
+        if(writeList.isEmpty())
+        {
+            writeList.addElement("No results found...");
+        }
+        jListCheckInOut.setModel(writeList);
     }//GEN-LAST:event_jButtonCheckInLoadActionPerformed
 
     private void jTextFieldRow1FocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_jTextFieldRow1FocusLost
@@ -7412,12 +7454,36 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonCheckInPrintActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckInPrintActionPerformed
     {//GEN-HEADEREND:event_jButtonCheckInPrintActionPerformed
-        // TODO add your handling code here:
+        Calendar specifiedDate = Calendar.getInstance();
+        specifiedDate.set((jComboBoxCheckInYear.getSelectedIndex()+2014), jComboBoxCheckInMonth.getSelectedIndex(), (jComboBoxCheckInDate.getSelectedIndex()+1));
+        String sd = sdf.format(specifiedDate);
+        jdcbselect.printWriter(sd);
     }//GEN-LAST:event_jButtonCheckInPrintActionPerformed
 
     private void jButtonCheckOutLoadActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonCheckOutLoadActionPerformed
     {//GEN-HEADEREND:event_jButtonCheckOutLoadActionPerformed
-        // TODO add your handling code here:
+        Calendar specifiedDate = Calendar.getInstance();
+        specifiedDate.set((jComboBoxCheckInYear.getSelectedIndex()+2014), jComboBoxCheckInMonth.getSelectedIndex(), (jComboBoxCheckInDate.getSelectedIndex()+1));
+        String sd = sdf.format(specifiedDate);
+        ArrayList<InfoObjectConstructor> tempList = new ArrayList<>();
+        writeList.clear();
+        tempList = jdcbselect.getInfoFromDateTo(sd);
+        for (int i = 0; i < tempList.size(); i++)
+        {
+            String rID = tempList.get(i).getRoomID();
+            String gID = tempList.get(i).getGuestID();
+            String fName = tempList.get(i).getGuestFirstname();
+            String lName = tempList.get(i).getGuestLastName();
+            String Phone = tempList.get(i).getContanctPhone();
+            String Email = tempList.get(i).getEmail();
+            writeList.addElement("Room " + rID + "  -  " + gID + "  -  " + lName + ", " + fName + "  -  " + Email + "  -  " + Phone);
+        }
+        jLabelCheckInOutNotifier.setText("Check-outs on the specified date:");
+        if(writeList.isEmpty())
+        {
+            writeList.addElement("No results found...");
+        }
+        jListCheckInOut.setModel(writeList);
     }//GEN-LAST:event_jButtonCheckOutLoadActionPerformed
     
     //Finds the date of today and sets an int for date, month and year respectively.
@@ -7683,6 +7749,7 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroupSearchRoomChoice;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonBooking;
     private javax.swing.JButton jButtonBookingBook;
@@ -7752,6 +7819,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel63;
@@ -7811,7 +7879,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelDate14;
     private javax.swing.JLabel jLabelDate14Day;
     private javax.swing.JLabel jLabelDate14Year;
-    private javax.swing.JLabel jLabelDetailsAvailabilityMarkerText;
     private javax.swing.JLabel jLabelDetailsBookingDate;
     private javax.swing.JLabel jLabelDetailsCountry;
     private javax.swing.JLabel jLabelDetailsEmail;
@@ -8023,10 +8090,12 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelSetupOverviewNoChange7;
     private javax.swing.JLabel jLabelSetupOverviewNoChange8;
     private javax.swing.JLabel jLabelSetupOverviewNoChange9;
-    private javax.swing.JList jListCheckIn;
+    private javax.swing.JList jList1;
+    private javax.swing.JList jListCheckInOut;
     private javax.swing.JList jListSearchCustomerBookingsHistory;
     private javax.swing.JList jListSearchCustomerResult;
     private javax.swing.JList jListSearchRoomResult;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
@@ -8056,7 +8125,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelDay12;
     private javax.swing.JPanel jPanelDay13;
     private javax.swing.JPanel jPanelDay14;
-    private javax.swing.JPanel jPanelDetailsAvailabilityMarker;
     private javax.swing.JPanel jPanelDetailsCustomer;
     private javax.swing.JPanel jPanelDetailsRoom;
     private javax.swing.JPanel jPanelEditBookingCustomer;
@@ -8087,6 +8155,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTextField jTextFieldBookingCountry;
     private javax.swing.JTextField jTextFieldBookingEmail;
     private javax.swing.JTextField jTextFieldBookingFirstName;
@@ -8342,7 +8411,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     {
         setCurrentDate();
         jLabelCheckInOutNotifier.setText("");
-        jListCheckIn.setModel(EmptyList);
+        jListCheckInOut.setModel(EmptyList);
         jComboBoxCheckInMonth.setSelectedIndex(currentMonth-1);
         jComboBoxCheckInYear.setSelectedIndex(currentYear-14);
         jComboBoxCheckInDate.setSelectedIndex(currentDate-1);
