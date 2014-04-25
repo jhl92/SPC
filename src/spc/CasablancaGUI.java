@@ -5949,7 +5949,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonSetupOverviewActionPerformed
         //Opens Dialog-window "Setup Overview"
-        setupDialogSetupOverview(ovcRoom1, ovcRoom2, ovcRoom3, ovcRoom4, ovcRoom5, ovcRoom6, ovcRoom7, ovcRoom8, ovcStartDate);
+        setupDialogSetupOverview(ovcRoom1, ovcRoom2, ovcRoom3, ovcRoom4, ovcRoom5, ovcRoom6, ovcRoom7, ovcRoom8);
     }//GEN-LAST:event_jButtonSetupOverviewActionPerformed
 
     private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
@@ -7641,30 +7641,38 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonDetailsSaveChangesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonDetailsSaveChangesActionPerformed
     {//GEN-HEADEREND:event_jButtonDetailsSaveChangesActionPerformed
-        String fn = jTextFieldEditFirstNameNew.getText();
-        String ln = jTextFieldEditLastNameNew.getText();
-        String cn = jTextFieldEditCountryNew.getText();
-        String pn = jTextFieldEditPhoneNew.getText();
-        String en = jTextFieldEditEmailNew.getText();
-        if(fn.equals(""))
+        String newFN = jTextFieldEditFirstNameNew.getText();
+        String newLN = jTextFieldEditLastNameNew.getText();
+        String newC = jTextFieldEditCountryNew.getText();
+        String newP = jTextFieldEditPhoneNew.getText();
+        String newE = jTextFieldEditEmailNew.getText();
+        String guestID = jLabelEditGuestIDOriginal.getText();
+        if(newFN.equals(""))
         {
-            
+            newFN = jLabelEditFirstNameOriginal.getText();
         }
-        if(ln.equals(""))
+        if(newLN.equals(""))
         {
-            
+            newLN = jLabelEditFirstNameOriginal.getText();
         }
-        if(cn.equals(""))
+        if(newC.equals(""))
         {
-            
+            newC = jLabelEditFirstNameOriginal.getText();
         }
-        if(pn.equals(""))
+        if(newP.equals(""))
         {
-            
+            newP = jLabelEditFirstNameOriginal.getText();
         }
-        if(en.equals(""))
+        if(newE.equals(""))
         {
-            
+            newE = jLabelEditFirstNameOriginal.getText();
+        }
+        try
+        {
+            jdcbUpdate.updateGuest(guestID, newFN, newLN, newC, newP, newE);
+        } catch (SQLException ex)
+        {
+            Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButtonDetailsSaveChangesActionPerformed
 
@@ -7736,6 +7744,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
+        jDialogRequestDeleteBooking.setVisible(false);
+        jDialogEditDetails.setVisible(false);
+        jDialogBooking.setVisible(true);
         jButtonBookingCreateID.setEnabled(false);
         jButtonBookingSearchCustomer.setEnabled(false);
         RoomTypeIDConstructor roomInfo = jdcbselect.getRoomInfoFromRoomID(deleteBookingRoomID);
@@ -7761,10 +7772,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         jComboBoxBookingEndYear.setSelectedIndex(dt.getYear());
         jComboBoxBookingEndDate.setSelectedIndex(dt.getDate());
         jButtonBookingCreateID.setEnabled(true);
-        jDialogBooking.setVisible(true);
         jLabelBookingRoomNotifier.setText("Room: " + deleteBookingRoomID);
         jButtonBookingBook.setEnabled(false);
-        
     }//GEN-LAST:event_jButtonRequestContinueActionPerformed
 
     private void jButtonRequestCancelActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRequestCancelActionPerformed
@@ -8748,7 +8757,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jDialogCheckInOut.setVisible(true);
     }
     
-    public void setupDialogSetupOverview(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8, Calendar sDate)
+    public void setupDialogSetupOverview(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8)
     {
         setCurrentDate();
         jTextFieldRow1.setText(r1);
@@ -8775,7 +8784,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setText(r8);
         jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
-        DateVar dateObject = getDateSettings(sDate);
+        DateVar dateObject = getDateSettings(ovcStartDate);
         System.out.println("Year " + dateObject.getYear() + " - Month " + dateObject.getMonth() + " - Date " + dateObject.getDate());
         jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth());
         jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear());
@@ -8786,7 +8795,8 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void updateCells()
     {
         setCurrentDate();
-        fillDateCells(ovcStartDate);
+        Calendar sDate = ovcStartDate;
+        fillDateCells(sDate);
         fillRoomCells(ovcRoom1, 1, ovcStartDate);
         fillRoomCells(ovcRoom2, 2, ovcStartDate);
         fillRoomCells(ovcRoom3, 3, ovcStartDate);
