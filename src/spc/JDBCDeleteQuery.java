@@ -23,7 +23,7 @@ public class JDBCDeleteQuery
     static final String user = "SEM2_TEST_GR13";
     static final String pass = "SEM2_TEST_GR13";
 
-    public void JDBCDeleteFacBooking (String guestID, String facID, String timeStart) throws SQLException
+    public void JDBCDeleteFacBooking (String guestID, String facID, String timeStart)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -33,15 +33,12 @@ public class JDBCDeleteQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Sætter autoCommint til false
             conn.setAutoCommit(false);
             
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             ResultSet rs; 
@@ -51,10 +48,8 @@ public class JDBCDeleteQuery
             rs.close(); 
         } catch (SQLException se) {
             se.printStackTrace();
-            conn.rollback();
         } catch (Exception e) {
             e.printStackTrace();
-            conn.rollback();
         } finally {
             try {
                 if (stmt != null) {
@@ -70,10 +65,9 @@ public class JDBCDeleteQuery
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
     }
     
-    public void JDBCDeleteRoomBooking (String guestID) throws SQLException
+    public void JDBCDeleteRoomBooking (String guestID, String roomID, String dateFrom)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -83,28 +77,24 @@ public class JDBCDeleteQuery
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             //Åben forbindelsen
-            System.out.println("Connecting to a selected database...");
             conn = DriverManager.getConnection(url, user, pass);
-            System.out.println("Connected database successfully...");
 
             //Sætter autoCommint til false
             conn.setAutoCommit(false);
             
             //Query
-            System.out.println("Creating statement...");
             stmt = conn.createStatement();
 
             ResultSet rs; 
-            rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID='"+guestID+"'");
+            rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID='"+guestID+"'"
+                +" AND ROOMID ='"+roomID+"' AND DATEFROM='"+dateFrom+"'");
            
             conn.commit();
             rs.close(); 
         } catch (SQLException se) {
             se.printStackTrace();
-            conn.rollback();
         } catch (Exception e) {
             e.printStackTrace();
-            conn.rollback();
         } finally {
             try {
                 if (stmt != null) {
@@ -120,6 +110,5 @@ public class JDBCDeleteQuery
                 se.printStackTrace();
             }
         }
-        System.out.println("Done.");
     }
 }
