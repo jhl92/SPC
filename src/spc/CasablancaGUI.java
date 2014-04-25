@@ -7716,48 +7716,50 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonRequestContinueActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRequestContinueActionPerformed
     {//GEN-HEADEREND:event_jButtonRequestContinueActionPerformed
-        jdcbdelete.JDBCDeleteRoomBooking();
-        jButtonBookingCreateID.setEnabled(false);
-        RoomTypeIDConstructor roomInfo = jdcbselect.getRoomInfoFromRoomID(deleteBookingRoomID);
-        String rType = roomInfo.getRoomType();
-        switch (rType)
-        {
-            case "Single":
-                jComboBoxBookingRoomType.setSelectedIndex(0);
-                break;
-            case "Double":
-                jComboBoxBookingRoomType.setSelectedIndex(1);
-                break;
-            case "Family":
-                jComboBoxBookingRoomType.setSelectedIndex(2);
-                break;
-        }
-        DateVar sd = getDateSettings(deleteBookingStartDate);
-        DateVar ed = getDateSettings(deleteBookingEndDate);
-        jComboBoxBookingStartMonth.setSelectedIndex(sd.getMonth());
-        jComboBoxBookingStartYear.setSelectedIndex(sd.getYear());
-        jComboBoxBookingStartDate.setSelectedIndex(sd.getDate());
-        jComboBoxBookingEndMonth.setSelectedIndex(ed.getMonth());
-        jComboBoxBookingEndYear.setSelectedIndex(ed.getYear());
-        jComboBoxBookingEndDate.setSelectedIndex(ed.getDate());
-        jButtonBookingCreateID.setEnabled(true);
-        jDialogBooking.setVisible(true);
-        if(checkRoom(roomID, sDate, eDate))
-        {
-            jButtonBookingBook.setEnabled(true);
-            jLabelBookingRoomNotifier.setText("Found room: " + roomID);
-            bookingRoomID = roomID;
-            bookingDateFrom = sdf.format(sDate);
-            bookingDateTo = sdf.format(eDate);
-            int nights = getNumberOfNights(sDate, eDate);
-            bookingNumberNights = "" + nights;
-        } else
-        {
-            jLabelBookingRoomNotifier.setText("Room " + roomID + "<html> is not available in the specified period...</html>");
-            jButtonBookingBook.setEnabled(false);
-        
-        
-        h
+        jdcbdelete.JDBCDeleteRoomBooking(deleteBookingGuestID, deleteBookingRoomID, deleteBookingStartDate);
+//        sBookDate.setTime(sdf.parse(tempRoomBookings.get(a).getDateFrom()));
+//        eBookDate.setTime(sdf.parse(tempRoomBookings.get(a).getDateTo()));
+//        jButtonBookingCreateID.setEnabled(false);
+//        RoomTypeIDConstructor roomInfo = jdcbselect.getRoomInfoFromRoomID(deleteBookingRoomID);
+//        String rType = roomInfo.getRoomType();
+//        switch (rType)
+//        {
+//            case "Single":
+//                jComboBoxBookingRoomType.setSelectedIndex(0);
+//                break;
+//            case "Double":
+//                jComboBoxBookingRoomType.setSelectedIndex(1);
+//                break;
+//            case "Family":
+//                jComboBoxBookingRoomType.setSelectedIndex(2);
+//                break;
+//        }
+//        DateVar sd = getDateSettings(deleteBookingStartDate);
+//        DateVar ed = getDateSettings(deleteBookingEndDate);
+//        jComboBoxBookingStartMonth.setSelectedIndex(sd.getMonth());
+//        jComboBoxBookingStartYear.setSelectedIndex(sd.getYear());
+//        jComboBoxBookingStartDate.setSelectedIndex(sd.getDate());
+//        jComboBoxBookingEndMonth.setSelectedIndex(ed.getMonth());
+//        jComboBoxBookingEndYear.setSelectedIndex(ed.getYear());
+//        jComboBoxBookingEndDate.setSelectedIndex(ed.getDate());
+//        jButtonBookingCreateID.setEnabled(true);
+//        jDialogBooking.setVisible(true);
+//        if(checkRoom(roomID, sDate, eDate))
+//        {
+//            jButtonBookingBook.setEnabled(true);
+//            jLabelBookingRoomNotifier.setText("Found room: " + roomID);
+//            bookingRoomID = roomID;
+//            bookingDateFrom = sdf.format(sDate);
+//            bookingDateTo = sdf.format(eDate);
+//            int nights = getNumberOfNights(sDate, eDate);
+//            bookingNumberNights = "" + nights;
+//        } else
+//        {
+//            jLabelBookingRoomNotifier.setText("Room " + roomID + "<html> is not available in the specified period...</html>");
+//            jButtonBookingBook.setEnabled(false);
+//        
+//        
+//        h
     }//GEN-LAST:event_jButtonRequestContinueActionPerformed
 
     private void jButtonRequestCancelActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonRequestCancelActionPerformed
