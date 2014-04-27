@@ -4,14 +4,23 @@
  */
 package spc;
 
+import java.util.Calendar;
+
 /**
  *
  * @author Junheng Li
  */
 public class SPC
 {
-
-    /**
-     * @param args the command line arguments
-     */
+    private Calendar ovcStartDate = Calendar.getInstance();
+    
+    public Calendar getOVCdate()
+    {
+        return ovcStartDate;
+    }
+    
+    public void setOVCdate(Calendar date)
+    {
+        this.ovcStartDate = date;
+    }
 }

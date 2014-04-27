@@ -36,6 +36,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private Calendar startDateTemp = Calendar.getInstance();
     private Calendar endDateTemp = Calendar.getInstance();
     private Calendar SearchRoomSpecifiedDate = Calendar.getInstance();
+    SPC spc = new SPC();
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
     JDBCSelectQuery jdcbselect = new JDBCSelectQuery();
     JDBCDeleteQuery jdcbdelete = new JDBCDeleteQuery();
@@ -5955,7 +5956,8 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonResetOveriewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonResetOveriewActionPerformed
     {//GEN-HEADEREND:event_jButtonResetOveriewActionPerformed
         //Shows rooms 1 to 8, starting from today in the cells in main-window
-        ovcStartDate = Calendar.getInstance();
+        cal = Calendar.getInstance();
+        spc.setOVCdate(cal);
         resetMainScreen("001", "002", "003", "004", "005", "006", "007", "008");
     }//GEN-LAST:event_jButtonResetOveriewActionPerformed
 
@@ -5964,12 +5966,12 @@ public class CasablancaGUI extends javax.swing.JFrame
         //Searching for customers that matches or contains the entered search parameters in dialog-window "Search Customer"
         boolean booleanList = true;
         int searchParameter = 0;
-        String scGuestID = jTextFieldSearchCustomerGuestID.getText().toLowerCase();
+        String scGuestID = jTextFieldSearchCustomerGuestID.getText().toUpperCase();
         String scFirstName = jTextFieldSearchCustomerFirstName.getText();
-        String scLastName = jTextFieldSearchCustomerLastName.getText().toLowerCase();
-        String scCountry = jTextFieldSearchCustomerCountry.getText().toLowerCase();
-        String scPhone = jTextFieldSearchCustomerPhoneNumber.getText().toLowerCase();
-        String scEmail = jTextFieldSearchCustomerEmail.getText().toLowerCase();
+        String scLastName = jTextFieldSearchCustomerLastName.getText();
+        String scCountry = jTextFieldSearchCustomerCountry.getText();
+        String scPhone = jTextFieldSearchCustomerPhoneNumber.getText();
+        String scEmail = jTextFieldSearchCustomerEmail.getText();
         ArrayList<String> tempListGuestID = new ArrayList<>();
         jLabelSearchCustomerGuestID.setText("");
         jLabelSearchCustomerFirstName.setText("");
@@ -6040,7 +6042,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         i = 0;
                         while(i < guestList.size())
                         {
-                            if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName))
+                            if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName.toLowerCase()))
                             {
                                 if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
@@ -6059,7 +6061,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         i = 0;
                         while(i < guestList.size())
                         {
-                            if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName))
+                            if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName.toLowerCase()))
                             {
                                 if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
@@ -6078,7 +6080,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         i = 0;
                         while(i < guestList.size())
                         {
-                            if (guestList.get(i).getCountry().toLowerCase().contains(scCountry))
+                            if (guestList.get(i).getCountry().toLowerCase().contains(scCountry.toLowerCase()))
                             {
                                 if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
@@ -6097,7 +6099,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         i = 0;
                         while(i < guestList.size())
                         {
-                            if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone))
+                            if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone.toLowerCase()))
                             {
                                 if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
@@ -6116,7 +6118,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         i = 0;
                         while(i < guestList.size())
                         {
-                            if (guestList.get(i).getEmail().toLowerCase().contains(scEmail))
+                            if (guestList.get(i).getEmail().toLowerCase().contains(scEmail.toLowerCase()))
                             {
                                 if(tempListGuestID.contains(guestList.get(i).getGuestID()))
                                 {
@@ -6217,30 +6219,40 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
         // Show the selected rooms, but 14 days previous the current period
+        ovcStartDate.clear();
+        ovcStartDate = spc.getOVCdate();
         ovcStartDate.add(Calendar.DAY_OF_MONTH, -14);
+        spc.setOVCdate(ovcStartDate);
         updateCells();
     }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
 
     private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious7DaysActionPerformed
         // Show the selected rooms, but 7 days previous the current period
+        ovcStartDate.clear();
+        ovcStartDate = spc.getOVCdate();
         ovcStartDate.add(Calendar.DAY_OF_MONTH, -7);
+        spc.setOVCdate(ovcStartDate);
         updateCells();
     }//GEN-LAST:event_jButtonPrevious7DaysActionPerformed
 
     private void jButtonNext7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext7DaysActionPerformed
         // Show the selected rooms, but 7 days after the current period
+        ovcStartDate.clear();
+        ovcStartDate = spc.getOVCdate();
         ovcStartDate.add(Calendar.DAY_OF_MONTH, 7);
+        spc.setOVCdate(ovcStartDate);
         updateCells();
     }//GEN-LAST:event_jButtonNext7DaysActionPerformed
 
     private void jButtonNext14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext14DaysActionPerformed
         // Show the selected rooms, but 14 days after the current period
-        System.out.println(sdf.format(ovcStartDate.getTime()));
+        ovcStartDate.clear();
+        ovcStartDate = spc.getOVCdate();
         ovcStartDate.add(Calendar.DAY_OF_MONTH, 14);
-        System.out.println(sdf.format(ovcStartDate.getTime()));
+        spc.setOVCdate(ovcStartDate);
         updateCells();
         System.out.println(sdf.format(ovcStartDate.getTime()));
     }//GEN-LAST:event_jButtonNext14DaysActionPerformed
@@ -6292,8 +6304,8 @@ public class CasablancaGUI extends javax.swing.JFrame
             //Creates a new random guestID and makes sure that it does not exist already
             boolean IDcreated = false;
             String IDtemp = "";
-            ArrayList GuestIDtemp = jdcbselect.checkIdAva();
-            System.out.println("GuestIDtemp.size: " + GuestIDtemp.size());
+            ArrayList<InfoObjectConstructor> GuestIDtemp = new ArrayList<>();
+            GuestIDtemp = jdcbselect.checkIdAva();
             while (IDcreated == false)
             {
                 String characters = "123456789ABCDEFGHIJKLMNPQRSTUVWXYZ";
@@ -6482,7 +6494,9 @@ public class CasablancaGUI extends javax.swing.JFrame
         int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
         int ocMonth = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
         int ocDate = jComboBoxSetupOverviewStartDate.getSelectedIndex()+1;
+        ovcStartDate.clear();
         ovcStartDate.set(ocYear, ocMonth, ocDate);
+        spc.setOVCdate(ovcStartDate);
         String r1 = jTextFieldRow1.getText();
         String row1 = fixRoomID(r1);
         String r2 = jTextFieldRow2.getText();
@@ -6764,7 +6778,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                 ovcShowRoomsList.add(roomID);
             }
             jDialogSearchRoom.setVisible(false);
-            ovcStartDate = SearchRoomSpecifiedDate;
+            spc.setOVCdate(SearchRoomSpecifiedDate);
             setupOverviewList();
         }
     }//GEN-LAST:event_jButtonSearchRoomShowRoomsActionPerformed
@@ -8805,6 +8819,8 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setText(r8);
         jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
+        ovcStartDate.clear();
+        ovcStartDate = spc.getOVCdate();
         DateVar dateObject = getDateSettings(ovcStartDate);
         jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth());
         jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear());
@@ -8815,7 +8831,8 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void updateCells()
     {
         setCurrentDate();
-        Calendar sDate = ovcStartDate;
+        Calendar sDate = Calendar.getInstance();
+        sDate = spc.getOVCdate();
         fillDateCells(sDate);
         fillRoomCells(ovcRoom1, 1, sDate);
         fillRoomCells(ovcRoom2, 2, sDate);
@@ -8941,7 +8958,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         setCurrentDate();
         cal = Calendar.getInstance();
         ovcListIndex = 8;
-        ovcStartDate.set(currentYear, currentMonth, currentDate);
         ovcShowRoomsList.clear();
         ovcShowRoomsList.addAll(Arrays.asList(normalView));
         fillDateCells(cal);
