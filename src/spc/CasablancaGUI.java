@@ -6238,8 +6238,11 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonNext14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext14DaysActionPerformed
         // Show the selected rooms, but 14 days after the current period
+        System.out.println(sdf.format(ovcStartDate.getTime()));
         ovcStartDate.add(Calendar.DAY_OF_MONTH, 14);
+        System.out.println(sdf.format(ovcStartDate.getTime()));
         updateCells();
+        System.out.println(sdf.format(ovcStartDate.getTime()));
     }//GEN-LAST:event_jButtonNext14DaysActionPerformed
 
     private void jButtonNext14DaysMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jButtonNext14DaysMouseEntered
@@ -7609,7 +7612,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonCheckInPrintActionPerformed
         Calendar specifiedDate = Calendar.getInstance();
         specifiedDate.set((jComboBoxCheckInYear.getSelectedIndex()+2014), jComboBoxCheckInMonth.getSelectedIndex(), (jComboBoxCheckInDate.getSelectedIndex()+1));
-        String sd = sdf.format(specifiedDate);
+        String sd = sdf.format(specifiedDate.getTime());
         jdcbselect.printWriter(sd);
     }//GEN-LAST:event_jButtonCheckInPrintActionPerformed
 
@@ -7818,6 +7821,24 @@ public class CasablancaGUI extends javax.swing.JFrame
             daysBetween++;
         }
         return daysBetween;
+    }
+    
+    private Calendar rollDate(Calendar sDate, int numberOfDays, boolean addDays)
+    {
+        if(addDays)
+        {
+            for(int i = 0; i < numberOfDays; i++)
+            {
+                sDate.add(Calendar.DAY_OF_MONTH, 1);
+            }
+        } else
+        {
+            for(int i = 0; i < numberOfDays; i++)
+            {
+                sDate.add(Calendar.DAY_OF_MONTH, -1);
+            }
+        }
+        return sDate;
     }
     
     //Converts a date into int's for day, month and year and returns them as an object
@@ -8623,8 +8644,8 @@ public class CasablancaGUI extends javax.swing.JFrame
             jButtonBookingBook.setEnabled(true);
             jLabelBookingRoomNotifier.setText("Found room: " + roomID);
             bookingRoomID = roomID;
-            bookingDateFrom = sdf.format(sDate);
-            bookingDateTo = sdf.format(eDate);
+            bookingDateFrom = sdf.format(sDate.getTime());
+            bookingDateTo = sdf.format(eDate.getTime());
             int nights = getNumberOfNights(sDate, eDate);
             bookingNumberNights = "" + nights;
         } else
@@ -8796,14 +8817,14 @@ public class CasablancaGUI extends javax.swing.JFrame
         setCurrentDate();
         Calendar sDate = ovcStartDate;
         fillDateCells(sDate);
-        fillRoomCells(ovcRoom1, 1, ovcStartDate);
-        fillRoomCells(ovcRoom2, 2, ovcStartDate);
-        fillRoomCells(ovcRoom3, 3, ovcStartDate);
-        fillRoomCells(ovcRoom4, 4, ovcStartDate);
-        fillRoomCells(ovcRoom5, 5, ovcStartDate);
-        fillRoomCells(ovcRoom6, 6, ovcStartDate);
-        fillRoomCells(ovcRoom7, 7, ovcStartDate);
-        fillRoomCells(ovcRoom8, 8, ovcStartDate);
+        fillRoomCells(ovcRoom1, 1, sDate);
+        fillRoomCells(ovcRoom2, 2, sDate);
+        fillRoomCells(ovcRoom3, 3, sDate);
+        fillRoomCells(ovcRoom4, 4, sDate);
+        fillRoomCells(ovcRoom5, 5, sDate);
+        fillRoomCells(ovcRoom6, 6, sDate);
+        fillRoomCells(ovcRoom7, 7, sDate);
+        fillRoomCells(ovcRoom8, 8, sDate);
     }
     
     private void setupOverviewList()
