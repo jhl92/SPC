@@ -45,7 +45,7 @@ public class JDBCUpdateQuery
             rs = stmt.executeQuery("UPDATE BOOKROOM SET ROOMID ='"+roomID
                     +"', DATEFROM ='"+dateFrom+"', NOOFNIGHTS ='"+noOfNights+"', "
                     + "DATETO ='"+dateTo+"' "
-                    + "WHERE GUESTID ='"+guestID+"' OR ROOMID = '"+roomID+"'");
+                    + "WHERE GUESTID = UPPER('"+guestID+"') OR ROOMID = '"+roomID+"'");
            
             conn.commit();
             rs.close(); 
@@ -101,7 +101,7 @@ public class JDBCUpdateQuery
             rs = stmt.executeQuery("UPDATE GUEST SET GUESTFIRSTNAME ='"+guestFirstName
                     +"', GUESTLASTNAME ='"+guestLastName+"', GUESTCOUNTRY ='"+guestCountry+"', "
                     + "GUESTCONTACTPHONE ="+phone+", GUESTEMAIL ='"+mail
-                    +"' WHERE GUESTID ='"+guestID+"'");
+                    +"' WHERE GUESTID = UPPER('"+guestID+"')");
            
             conn.commit();
             rs.close(); 
@@ -157,7 +157,7 @@ public class JDBCUpdateQuery
 
             String sql = "UPDATE FACBOOK SET FACDATE = '"+NEWfacDate+"', TIMESTART ='"
                     +NEWtimeStart+".00', TIMEEND ='"+NEWtimeEnd+".00' "
-                    +"WHERE GUESTID ='"+guestID+"' AND TIMESTART='"
+                    +"WHERE GUESTID = UPPER('"+guestID+"') AND TIMESTART='"
                     +CURRtimeStart+"' AND FACDATE ='"+CURRfacDate+"'";
 
             stmt.executeUpdate(sql);

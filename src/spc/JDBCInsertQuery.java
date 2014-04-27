@@ -41,11 +41,11 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO GUEST VALUEs ('" + guestID + "','" + guestFirstName 
+            String sql = "INSERT INTO GUEST VALUEs (UPPER('" + guestID + "'),'" + guestFirstName 
                     + "','" + guestLastName + "','" + gCountry + "','" 
                     + gPhone + "','" + gMail + "','" + returnGuest + "',0)";
             stmt.executeUpdate(sql);
-            sql = "INSERT INTO BOOKROOM VALUES ('" + guestID + "','"
+            sql = "INSERT INTO BOOKROOM VALUES (UPPER('" + guestID + "'),'"
                     + roomID + "','" + empID + "','" + dateFrom + "','"
                     +noOfNights+"','"+ dateTo + "','" + roomAvailability + "')";
             
@@ -111,7 +111,9 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO FACBOOK VALUES ('"+guestID+"','"+facID+"','"+facDate+"','"+timeStart+"','"+timeEnd+"','"+ins+"')";
+            String sql = "INSERT INTO FACBOOK VALUES (UPPER('"+guestID+"'),"
+                    + "'"+facID+"','"+facDate+"','"+timeStart+"',"
+                    + "'"+timeEnd+"','"+ins+"')";
             stmt.executeUpdate(sql);
 //            sql = "INSERT INTO GUEST VALUES";
 //            stmt.executeUpdate(sql);
@@ -152,7 +154,8 @@ public class JDBCInsertQuery
         System.out.println("Done.");
     }
     
-    public void JDBCInsertWait(String guestID, String facID, String timeStart, String timeEnd, String facDate)
+    public void JDBCInsertWait(String guestID, String facID, String timeStart, 
+            String timeEnd, String facDate)
     {
         Connection conn = null;
         Statement stmt = null;
@@ -173,7 +176,7 @@ public class JDBCInsertQuery
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO WAITLIST VALUES ('"+guestID+"','"+facID+"',POSITIONINCREASE.NEXTVAL"
+            String sql = "INSERT INTO WAITLIST VALUES (UPPER('"+guestID+"'),'"+facID+"',POSITIONINCREASE.NEXTVAL"
                     +",'"+timeStart+"','"+timeEnd+"','"+facDate+"')";
             stmt.executeUpdate(sql);
 //            sql = "INSERT INTO GUEST VALUES";
@@ -242,28 +245,28 @@ public class JDBCInsertQuery
                 
                 case 1:  
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
-                        + " WHERE GUESTID = '"+guestID+"'";
+                        + " WHERE GUESTID = UPPER('"+guestID+"')";
                 stmt.executeUpdate(sql);
                 conn.commit();
                 break;    
             
                 case 7: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost30
-                        + " WHERE GUESTID='"+guestID+"'";
+                        + " WHERE GUESTID = UPPER('"+guestID+"')";
                 stmt.executeUpdate(sql);
                 conn.commit();
                 break;
             
                 case 2: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost40
-                        + " WHERE GUESTID='"+guestID+"'";
+                        + " WHERE GUESTID = UPPER('"+guestID+"')";
                 stmt.executeUpdate(sql); //<- point of madness
                 conn.commit();
                 break;
                     
                 case 8: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost40
-                        + " WHERE GUESTID='"+guestID+"'";
+                        + " WHERE GUESTID = UPPER('"+guestID+"')";
                 stmt.executeUpdate(sql);
                 conn.commit();
                 break;

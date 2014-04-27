@@ -89,8 +89,8 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("Select * from GUEST inner join BOOKROOM on "
-                    + "bookroom.guestid = guest.guestid where guest.guestid ='"
-                    + guestID + "'");
+                    + "bookroom.guestid = guest.guestid where guest.guestid = UPPER('"
+                    + guestID + "')");
             
             while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
@@ -576,15 +576,15 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT GUESTLASTNAME,GUESTFIRSTNAME,INSTRUCTORBILL"
-                    + " FROM GUEST WHERE GUESTID='" + guestID + "'");
-            String guestList = guestID + " - Instructor Bill.txt";
+                    + " FROM GUEST WHERE GUESTID = UPPER('" + guestID.toUpperCase() + "')");
+            String guestList = guestID.toUpperCase() + " - Instructor Bill.txt";
             try (PrintWriter writer = new PrintWriter(guestList)){
                 while (rs.next()){
                     String lastName = rs.getString("GUESTLASTNAME");
                     String firstName = rs.getString("GUESTFIRSTNAME");
                     String cost = rs.getString("INSTRUCTORBILL");
 
-                    writer.println("Guest ID: " + guestID + "\r\n" + "Name: "
+                    writer.println("Guest ID: " + guestID.toUpperCase() + "\r\n" + "Name: "
                             + lastName + ", " + firstName + "\r\n" + "The current cost for"
                             + " instructions hours: " + cost);
                 }
@@ -789,7 +789,7 @@ public class JDBCSelectQuery
             rs = stmt.executeQuery("SELECT FACBOOK.GUESTID, FACBOOK.FACID, "
                     + "FACILITY.FACTYPE, FACBOOK.FACDATE, FACBOOK.TIMESTART, FACBOOK.TIMEEND "
                     + "FROM FACBOOK INNER JOIN FACILITY ON FACBOOK.FACID = FACILITY.FACID "
-                    + "WHERE FACBOOK.GUESTID='" + guestID + "' ORDER BY FACBOOK.FACDATE");
+                    + "WHERE FACBOOK.GUESTID = UPPER('" + guestID + "') ORDER BY FACBOOK.FACDATE");
             while (rs.next()){
                 String rsGuestID = rs.getString("GuestID");
                 String rsFacID = rs.getString("FacID");
