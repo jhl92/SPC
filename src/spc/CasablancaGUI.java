@@ -6374,7 +6374,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonShowSelectedCustomerDetailsActionPerformed
         int selectedCustomer = jListSearchCustomerResult.getSelectedIndex();
         writeList1.clear();
-        if(selectedCustomer >= 0)
+        if(selectedCustomer >= 0 && guestList.size() > 0)
         {
             jLabelSearchCustomerGuestID.setText(guestList.get(selectedCustomer).getGuestID());
             jLabelSearchCustomerFirstName.setText(guestList.get(selectedCustomer).getGuestFirstname());
@@ -7945,21 +7945,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         Calendar eBookDate = Calendar.getInstance();
         for(int a = 0; a<frsList.size(); a++)
         {
-            try
-            {
-                sBookDate.setTime(sdf.parse(frsList.get(a).getDateFrom()));
-                eBookDate.setTime(sdf.parse(frsList.get(a).getDateTo()));
-            } catch (ParseException ex)
-            {
-                Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            if(sBookDate.before(frsDate))
-            {
-                if(eBookDate.after(frsDate))
-                {
-                    return IconBook;
-                }
-            }
             if(frsDateString.equals(frsList.get(a).getDateTo()))
             {
                 for(int b = 0; b < frsList.size(); b++)
@@ -7981,6 +7966,21 @@ public class CasablancaGUI extends javax.swing.JFrame
                     }
                 }
                 return IconFreeBook;
+            }
+            try
+            {
+                sBookDate.setTime(sdf.parse(frsList.get(a).getDateFrom()));
+                eBookDate.setTime(sdf.parse(frsList.get(a).getDateTo()));
+            } catch (ParseException ex)
+            {
+                Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            if(sBookDate.before(frsDate))
+            {
+                if(eBookDate.after(frsDate))
+                {
+                    return IconBook;
+                }
             }
         }
         return IconFree;
