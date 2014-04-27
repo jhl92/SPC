@@ -42,8 +42,8 @@ public class JDBCDeleteQuery
             stmt = conn.createStatement();
 
             ResultSet rs; 
-            rs = stmt.executeQuery("DELETE FROM FACBOOK WHERE GUESTID='"+guestID
-                    +"' AND FACID='"+facID+"' AND TIMESTART='"+timeStart+"'");
+            rs = stmt.executeQuery("DELETE FROM FACBOOK WHERE GUESTID = UPPER('"
+                    +guestID+"') AND FACID='"+facID+"' AND TIMESTART='"+timeStart+"'");
             conn.commit();
             rs.close(); 
         } catch (SQLException se) {
@@ -86,8 +86,8 @@ public class JDBCDeleteQuery
             stmt = conn.createStatement();
 
             ResultSet rs; 
-            rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID='"+guestID+"'"
-                +" AND ROOMID ='"+roomID+"' AND DATEFROM='"+dateFrom+"'");
+            rs = stmt.executeQuery("DELETE FROM BOOKROOM WHERE GUESTID = UPPER('"
+                    +guestID+"')"+" AND ROOMID ='"+roomID+"' AND DATEFROM='"+dateFrom+"'");
            
             conn.commit();
             rs.close(); 
