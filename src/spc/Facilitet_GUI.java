@@ -246,12 +246,21 @@ public class Facilitet_GUI extends javax.swing.JFrame
         return false;
     }
     
-//    private void checkForDoubleBook(String cFacID, String cFacDate, String cTimeStart, String cTimeEnd) {
-//        tempFacID = select.getfacAvail(cFacID, cFacDate, cTimeStart, cTimeEnd);
-//        for
-//        
-//    }
-    
+    public String convertFac (String entireBooking) {
+        String[] split = entireBooking.split(" ");
+        String facType = split[1];
+        switch (facType){
+            case "BADMINTON,": return "1"; 
+            case "GOLF,": return "2";
+            case "HANDBALL,": return "3";
+            case "MOUNTAIN": return "4";
+            case "TABLE": return "5";
+            case "VOLLEYBALL,": return "6";
+            case "TENNIS,": return "7";
+            case "SWIMMING,": return "8";
+            case "FITNESS,": return "9";
+        } return "This shouldn't happend";        
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -278,10 +287,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel99 = new javax.swing.JLabel();
         jComboBoxOverviewEditBookingTimeFrom1 = new javax.swing.JComboBox();
         jLabel100 = new javax.swing.JLabel();
-        jLabel102 = new javax.swing.JLabel();
+        jLabelCurrentBooking = new javax.swing.JLabel();
         jLabel103 = new javax.swing.JLabel();
         jButtonOverviewEditBookingSaveChanges1 = new javax.swing.JButton();
-        jLabelAlreadyBooked = new javax.swing.JLabel();
+        jLabelEditAlreadyBooked = new javax.swing.JLabel();
         jDialogOverviewDelete = new javax.swing.JDialog();
         jPanel7 = new javax.swing.JPanel();
         jLabel104 = new javax.swing.JLabel();
@@ -641,7 +650,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel100.setText("From:");
 
-        jLabel102.setText("Current booking:");
+        jLabelCurrentBooking.setText("Current booking:");
 
         jLabel103.setText("Change your booking to following date and time:");
 
@@ -654,7 +663,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabelAlreadyBooked.setText("already booked message");
+        jLabelEditAlreadyBooked.setVisible(false);
+        jLabelEditAlreadyBooked.setText("already booked message");
 
         javax.swing.GroupLayout jPanelOverviewEditBookingLayout = new javax.swing.GroupLayout(jPanelOverviewEditBooking);
         jPanelOverviewEditBooking.setLayout(jPanelOverviewEditBookingLayout);
@@ -662,9 +672,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
             jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
                 .addGroup(jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel98)
-                    .addComponent(jLabel102)
-                    .addComponent(jLabel103)
                     .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
                         .addGroup(jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
@@ -674,20 +681,26 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 .addGap(42, 42, 42)
                                 .addComponent(jLabel100)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBoxOverviewEditBookingTimeFrom1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelOverviewEditBookingLayout.createSequentialGroup()
-                                .addComponent(jLabelAlreadyBooked)
-                                .addGap(131, 131, 131)))
-                        .addComponent(jButtonOverviewEditBookingSaveChanges1, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)))
+                                .addComponent(jComboBoxOverviewEditBookingTimeFrom1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelEditAlreadyBooked, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonOverviewEditBookingSaveChanges1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
+                        .addGroup(jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel98)
+                            .addComponent(jLabel103))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(39, 39, 39))
+            .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
+                .addComponent(jLabelCurrentBooking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanelOverviewEditBookingLayout.setVerticalGroup(
             jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelOverviewEditBookingLayout.createSequentialGroup()
                 .addComponent(jLabel98)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel102)
+                .addComponent(jLabelCurrentBooking)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(jLabel103)
                 .addGap(18, 18, 18)
@@ -699,7 +712,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelOverviewEditBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOverviewEditBookingSaveChanges1)
-                    .addComponent(jLabelAlreadyBooked))
+                    .addComponent(jLabelEditAlreadyBooked))
                 .addGap(8, 8, 8))
         );
 
@@ -2449,6 +2462,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonOverviewEditBooking1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewEditBooking1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewEditBooking1ActionPerformed
+        tempFacID=convertFac(jListBookedOverview.getSelectedValue().toString());
+        jLabelCurrentBooking.setText("Current booking: "+jListBookedOverview.getSelectedValue().toString());
         String[] list = getComboBoxListFromToday();
         jComboBoxOverviewEditBookingDate1.setModel(new javax.swing.DefaultComboBoxModel(list));
         if(jListBookedOverview.isSelectionEmpty()) {
@@ -2738,7 +2753,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
         int a = jListBookedOverview.getSelectedIndex();
         loadListOverview();
-        //if (select.getfacAvail(tempFacID, tempFacID, tempFacID, tempFacID))
+        jLabelEditAlreadyBooked.setVisible(false);
+        if(doubleBook(tempFacID, jComboBoxOverviewEditBookingDate1.getSelectedItem().toString(),
+                jComboBoxOverviewEditBookingTimeFrom1.getSelectedIndex()+8+".00", 
+                jComboBoxOverviewEditBookingTimeFrom1.getSelectedIndex()+9+".00") == false) {
             try
             {
                 update.updateFacBook(finalGuestID, jComboBoxOverviewEditBookingDate1.getSelectedItem().toString(),
@@ -2751,6 +2769,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 Logger.getLogger(Facilitet_GUI.class.getName()).log(Level.SEVERE, null, ex);
                 System.out.println("That was a mistake...");
             }
+        } else {jLabelEditAlreadyBooked.setText("This time and date is already booked by another guest");
+            jLabelEditAlreadyBooked.setVisible(true);}
     }//GEN-LAST:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
 
     private void jComboBoxOverviewEditBookingTimeFrom1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxOverviewEditBookingTimeFrom1ActionPerformed
@@ -2998,7 +3018,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
     private javax.swing.JLabel jLabel105;
@@ -3095,12 +3114,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
-    private javax.swing.JLabel jLabelAlreadyBooked;
     private javax.swing.JLabel jLabelBadmintonCostText;
     private javax.swing.JLabel jLabelBadmintonErrorMessageBook;
     private javax.swing.JLabel jLabelBadmintonErrorMessageNoHours;
     private javax.swing.JLabel jLabelBadmintonInstructHourLabel;
     private javax.swing.JLabel jLabelBadmintonInstructorPrice;
+    private javax.swing.JLabel jLabelCurrentBooking;
+    private javax.swing.JLabel jLabelEditAlreadyBooked;
     private javax.swing.JLabel jLabelFitnessErrorMessageBook1;
     private javax.swing.JLabel jLabelGUIISBULLSHIT;
     private javax.swing.JLabel jLabelGolfCostText;
