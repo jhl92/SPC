@@ -1797,20 +1797,16 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelCheckInButtonsLayout.setHorizontalGroup(
             jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
                 .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
-                                .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabelCheckInNoChange2)))
-                    .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelCheckInNoChange2)
+                    .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
@@ -1845,8 +1841,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                             .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(10, 10, 10))))
         );
 
@@ -2466,7 +2461,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonChangeDetails.setText("Change Details");
+        jButtonChangeDetails.setText("Edit Details");
         jButtonChangeDetails.setPreferredSize(new java.awt.Dimension(164, 35));
         jButtonChangeDetails.addActionListener(new java.awt.event.ActionListener()
         {
@@ -8697,7 +8692,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelSearchRoomResultNotifier.setText("");
         jLabelSearchRoomNumberNights.setText("");
         jRadioButtonSearchRoom1.setSelected(true);
-        setCurrentDate();
         jComboBoxSearchStartMonth.setSelectedIndex(currentMonth-1);
         jComboBoxSearchStartYear.setSelectedIndex(currentYear-14);
         jComboBoxSearchStartDate.setSelectedIndex(currentDate-1);
@@ -8966,16 +8960,18 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void fillDateCells(Calendar sDate)
     {
         setCurrentDate();
+        Calendar sD = Calendar.getInstance();
+        sD.setTime(sDate.getTime());
         int ocD = 0;
         int ocY = 0;
         String ocM;
         String ocW;
         for(int a = 0; a<14; a++)
         {
-            ocD = Integer.parseInt(sdfDateInt.format(sDate.getTime()));
-            ocY = Integer.parseInt(sdfYearLong.format(sDate.getTime()));
-            ocM = sdfMonthNameShort.format(sDate.getTime());
-            ocW = sdfWeekDayName.format(sDate.getTime());
+            ocD = Integer.parseInt(sdfDateInt.format(sD.getTime()));
+            ocY = Integer.parseInt(sdfYearLong.format(sD.getTime()));
+            ocM = sdfMonthNameShort.format(sD.getTime());
+            ocW = sdfWeekDayName.format(sD.getTime());
             switch (a)
             {
                 case 0:
@@ -9049,13 +9045,15 @@ public class CasablancaGUI extends javax.swing.JFrame
                     jLabelDate14Year.setText(ocY + "");
                     break;
             }
-            sDate.add(Calendar.DATE, 1);
+            sD.add(Calendar.DATE, 1);
         }
     }
     
     //Filling all cells with a specific Icon, depending on its availability-status
     private void fillRoomCells(String roomID, int roomRow, Calendar firstDate)
     {
+        Calendar fDate = Calendar.getInstance();
+        fDate.setTime(firstDate.getTime());
         if (roomID.equals("000"))
         {
             switch (roomRow)
@@ -9151,7 +9149,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             frsList = jdcbselect.getCheckAvaRoom(roomID);
             for (int a = 0; a < 14; a++)
             {
-                ImageIcon icon = findRoomStatus(firstDate, frsList);
+                ImageIcon icon = findRoomStatus(fDate, frsList);
                 int day = 1 + a;
                 switch (roomRow)
                 {
@@ -9180,7 +9178,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         fillRoom8Cells(day, null, null, icon);
                         break;
                 }
-                firstDate.add(Calendar.DAY_OF_MONTH, 1);
+                fDate.add(Calendar.DAY_OF_MONTH, 1);
             }
         }
     }
