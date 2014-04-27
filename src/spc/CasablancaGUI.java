@@ -6219,8 +6219,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
         // Show the selected rooms, but 14 days previous the current period
-        ovcStartDate.clear();
-        ovcStartDate = spc.getOVCdate();
+        ovcStartDate.setTime(spc.getOVCdate().getTime());
         ovcStartDate.add(Calendar.DAY_OF_MONTH, -14);
         spc.setOVCdate(ovcStartDate);
         updateCells();
@@ -6229,8 +6228,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious7DaysActionPerformed
         // Show the selected rooms, but 7 days previous the current period
-        ovcStartDate.clear();
-        ovcStartDate = spc.getOVCdate();
+        ovcStartDate.setTime(spc.getOVCdate().getTime());
         ovcStartDate.add(Calendar.DAY_OF_MONTH, -7);
         spc.setOVCdate(ovcStartDate);
         updateCells();
@@ -6239,8 +6237,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonNext7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext7DaysActionPerformed
         // Show the selected rooms, but 7 days after the current period
-        ovcStartDate.clear();
-        ovcStartDate = spc.getOVCdate();
+        ovcStartDate.setTime(spc.getOVCdate().getTime());
         ovcStartDate.add(Calendar.DAY_OF_MONTH, 7);
         spc.setOVCdate(ovcStartDate);
         updateCells();
@@ -6249,8 +6246,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonNext14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext14DaysActionPerformed
         // Show the selected rooms, but 14 days after the current period
-        ovcStartDate.clear();
-        ovcStartDate = spc.getOVCdate();
+        ovcStartDate.setTime(spc.getOVCdate().getTime());
         ovcStartDate.add(Calendar.DAY_OF_MONTH, 14);
         spc.setOVCdate(ovcStartDate);
         updateCells();
@@ -6494,7 +6490,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         int ocYear = jComboBoxSetupOverviewStartYear.getSelectedIndex()+2014;
         int ocMonth = jComboBoxSetupOverviewStartMonth.getSelectedIndex();
         int ocDate = jComboBoxSetupOverviewStartDate.getSelectedIndex()+1;
-        ovcStartDate.clear();
         ovcStartDate.set(ocYear, ocMonth, ocDate);
         spc.setOVCdate(ovcStartDate);
         String r1 = jTextFieldRow1.getText();
@@ -7948,19 +7943,21 @@ public class CasablancaGUI extends javax.swing.JFrame
         String frsDateString = sdf.format(frsD);
         Calendar sBookDate = Calendar.getInstance();
         Calendar eBookDate = Calendar.getInstance();
+        Calendar tempDate = Calendar.getInstance();
         for(int a = 0; a<frsList.size(); a++)
         {
             try
             {
                 sBookDate.setTime(sdf.parse(frsList.get(a).getDateFrom()));
                 eBookDate.setTime(sdf.parse(frsList.get(a).getDateTo()));
+                tempDate.setTime(sdf.parse(frsDateString));
             } catch (ParseException ex)
             {
                 Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
             }
-            if(sBookDate.before(frsDate))
+            if(sBookDate.before(tempDate))
             {
-                if(eBookDate.after(frsDate))
+                if(eBookDate.after(tempDate))
                 {
                     return IconBook;
                 }
@@ -8819,8 +8816,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setText(r8);
         jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
-        ovcStartDate.clear();
-        ovcStartDate = spc.getOVCdate();
+        ovcStartDate.setTime(spc.getOVCdate().getTime());
         DateVar dateObject = getDateSettings(ovcStartDate);
         jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth());
         jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear());
@@ -8831,17 +8827,15 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void updateCells()
     {
         setCurrentDate();
-        Calendar sDate = Calendar.getInstance();
-        sDate = spc.getOVCdate();
-        fillDateCells(sDate);
-        fillRoomCells(ovcRoom1, 1, sDate);
-        fillRoomCells(ovcRoom2, 2, sDate);
-        fillRoomCells(ovcRoom3, 3, sDate);
-        fillRoomCells(ovcRoom4, 4, sDate);
-        fillRoomCells(ovcRoom5, 5, sDate);
-        fillRoomCells(ovcRoom6, 6, sDate);
-        fillRoomCells(ovcRoom7, 7, sDate);
-        fillRoomCells(ovcRoom8, 8, sDate);
+        fillDateCells(spc.getOVCdate());
+        fillRoomCells(ovcRoom1, 1, spc.getOVCdate());
+        fillRoomCells(ovcRoom2, 2, spc.getOVCdate());
+        fillRoomCells(ovcRoom3, 3, spc.getOVCdate());
+        fillRoomCells(ovcRoom4, 4, spc.getOVCdate());
+        fillRoomCells(ovcRoom5, 5, spc.getOVCdate());
+        fillRoomCells(ovcRoom6, 6, spc.getOVCdate());
+        fillRoomCells(ovcRoom7, 7, spc.getOVCdate());
+        fillRoomCells(ovcRoom8, 8, spc.getOVCdate());
     }
     
     private void setupOverviewList()
@@ -8956,19 +8950,18 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void resetMainScreen(String r1, String r2, String r3, String r4, String r5, String r6, String r7, String r8)
     {
         setCurrentDate();
-        cal = Calendar.getInstance();
         ovcListIndex = 8;
         ovcShowRoomsList.clear();
         ovcShowRoomsList.addAll(Arrays.asList(normalView));
-        fillDateCells(cal);
-        fillRoomCells(r1, 1, cal);
-        fillRoomCells(r2, 2, cal);
-        fillRoomCells(r3, 3, cal);
-        fillRoomCells(r4, 4, cal);
-        fillRoomCells(r5, 5, cal);
-        fillRoomCells(r6, 6, cal);
-        fillRoomCells(r7, 7, cal);
-        fillRoomCells(r8, 8, cal);
+        fillDateCells(spc.getOVCdate());
+        fillRoomCells(r1, 1, spc.getOVCdate());
+        fillRoomCells(r2, 2, spc.getOVCdate());
+        fillRoomCells(r3, 3, spc.getOVCdate());
+        fillRoomCells(r4, 4, spc.getOVCdate());
+        fillRoomCells(r5, 5, spc.getOVCdate());
+        fillRoomCells(r6, 6, spc.getOVCdate());
+        fillRoomCells(r7, 7, spc.getOVCdate());
+        fillRoomCells(r8, 8, spc.getOVCdate());
     }
     
     //Fills the top cells in Overview-window with the dates and weekdays of each column.
@@ -9188,7 +9181,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         fillRoom8Cells(day, null, null, icon);
                         break;
                 }
-                firstDate.add(Calendar.DATE, 1);
+                firstDate.add(Calendar.DAY_OF_MONTH, 1);
             }
         }
     }
