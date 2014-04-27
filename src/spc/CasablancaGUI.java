@@ -6217,28 +6217,28 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void jButtonPrevious14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious14DaysActionPerformed
         // Show the selected rooms, but 14 days previous the current period
-        ovcStartDate.add(Calendar.DATE, -14);
+        ovcStartDate.add(Calendar.DAY_OF_MONTH, -14);
         updateCells();
     }//GEN-LAST:event_jButtonPrevious14DaysActionPerformed
 
     private void jButtonPrevious7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrevious7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonPrevious7DaysActionPerformed
         // Show the selected rooms, but 7 days previous the current period
-        ovcStartDate.add(Calendar.DATE, -7);
+        ovcStartDate.add(Calendar.DAY_OF_MONTH, -7);
         updateCells();
     }//GEN-LAST:event_jButtonPrevious7DaysActionPerformed
 
     private void jButtonNext7DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext7DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext7DaysActionPerformed
         // Show the selected rooms, but 7 days after the current period
-        ovcStartDate.add(Calendar.DATE, 7);
+        ovcStartDate.add(Calendar.DAY_OF_MONTH, 7);
         updateCells();
     }//GEN-LAST:event_jButtonNext7DaysActionPerformed
 
     private void jButtonNext14DaysActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonNext14DaysActionPerformed
     {//GEN-HEADEREND:event_jButtonNext14DaysActionPerformed
         // Show the selected rooms, but 14 days after the current period
-        ovcStartDate.add(Calendar.DATE, 14);
+        ovcStartDate.add(Calendar.DAY_OF_MONTH, 14);
         updateCells();
     }//GEN-LAST:event_jButtonNext14DaysActionPerformed
 
@@ -8785,7 +8785,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jTextFieldRow8.setFont(fontSystem);
         jTextFieldRow8.setForeground(Color.DARK_GRAY);
         DateVar dateObject = getDateSettings(ovcStartDate);
-        System.out.println("Year " + dateObject.getYear() + " - Month " + dateObject.getMonth() + " - Date " + dateObject.getDate());
         jComboBoxSetupOverviewStartMonth.setSelectedIndex(dateObject.getMonth());
         jComboBoxSetupOverviewStartYear.setSelectedIndex(dateObject.getYear());
         jComboBoxSetupOverviewStartDate.setSelectedIndex(dateObject.getDate());
