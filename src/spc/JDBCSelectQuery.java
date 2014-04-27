@@ -584,7 +584,7 @@ public class JDBCSelectQuery
                     String firstName = rs.getString("GUESTFIRSTNAME");
                     String cost = rs.getString("INSTRUCTORBILL");
 
-                    writer.println("Guest ID: " + guestID + "\r\n" + "Name: "
+                    writer.println("Guest ID: " + guestID.toUpperCase() + "\r\n" + "Name: "
                             + lastName + ", " + firstName + "\r\n" + "The current cost for"
                             + " instructions hours: " + cost);
                 }

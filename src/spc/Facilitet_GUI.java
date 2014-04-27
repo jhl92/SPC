@@ -342,6 +342,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jListWaitOverview = new javax.swing.JList();
         jLabel91 = new javax.swing.JLabel();
         jButtonPrintInstrucCost = new javax.swing.JButton();
+        jLabelOverviewBillPrintDone = new javax.swing.JLabel();
         jPanel1Badminton = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -1160,7 +1161,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 .addComponent(jComboBoxOverviewFacility, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(53, 53, 53)
                                 .addComponent(jButtonGetWaitOverview, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1200,19 +1201,25 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
+        jLabelOverviewBillPrintDone.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelOverviewBillPrintDone.setVisible(false);
+        jLabelOverviewBillPrintDone.setText("jLabel10");
+
         javax.swing.GroupLayout jPanel5OverviewLayout = new javax.swing.GroupLayout(jPanel5Overview);
         jPanel5Overview.setLayout(jPanel5OverviewLayout);
         jPanel5OverviewLayout.setHorizontalGroup(
             jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5OverviewLayout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(jButtonPrintInstrucCost)
+                .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButtonPrintInstrucCost, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelOverviewBillPrintDone, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(72, 72, 72))
         );
         jPanel5OverviewLayout.setVerticalGroup(
@@ -1225,8 +1232,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5OverviewLayout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addComponent(jButtonPrintInstrucCost)))
+                        .addGap(197, 197, 197)
+                        .addComponent(jButtonPrintInstrucCost)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabelOverviewBillPrintDone)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -2462,14 +2471,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonOverviewEditBooking1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewEditBooking1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewEditBooking1ActionPerformed
-        tempFacID=convertFac(jListBookedOverview.getSelectedValue().toString());
-        jLabelCurrentBooking.setText("Current booking: "+jListBookedOverview.getSelectedValue().toString());
-        String[] list = getComboBoxListFromToday();
-        jComboBoxOverviewEditBookingDate1.setModel(new javax.swing.DefaultComboBoxModel(list));
         if(jListBookedOverview.isSelectionEmpty()) {
             jLabelPleaseSelectBooking.setVisible(true);
             jLabelPleaseSelectBooking.setText("Please select a booking på delete or edit");
         } else {
+            tempFacID=convertFac(jListBookedOverview.getSelectedValue().toString());
+            jLabelCurrentBooking.setText("Current booking: "+jListBookedOverview.getSelectedValue().toString());
+            String[] list = getComboBoxListFromToday();
+            jComboBoxOverviewEditBookingDate1.setModel(new javax.swing.DefaultComboBoxModel(list));
             jDialogOverviewEditBooking.setVisible(true);
             jDialogOverviewEditBooking.setLocation(400, 250);
         }
@@ -2729,6 +2738,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private void jButtonPrintInstrucCostActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonPrintInstrucCostActionPerformed
     {//GEN-HEADEREND:event_jButtonPrintInstrucCostActionPerformed
         select.printBill(finalGuestID);
+        jLabelOverviewBillPrintDone.setText("Your bill has been added to the folder");
+        jLabelOverviewBillPrintDone.setVisible(true);
     }//GEN-LAST:event_jButtonPrintInstrucCostActionPerformed
 
     private void jButtonLoadBookingsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonLoadBookingsActionPerformed
@@ -3132,6 +3143,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelGolfInstructorTimeFrom;
     private javax.swing.JLabel jLabelGolfInstructorTimeTo;
     private javax.swing.JLabel jLabelHandballErrorMessageBook;
+    private javax.swing.JLabel jLabelOverviewBillPrintDone;
     private javax.swing.JLabel jLabelPleaseSelectBooking;
     private javax.swing.JLabel jLabelSignInErrorMessage;
     private javax.swing.JLabel jLabelSignInGuestName;
