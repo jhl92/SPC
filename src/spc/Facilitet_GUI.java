@@ -11,9 +11,6 @@ import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
-import javax.swing.JTextField;
-
-
 
 /**
  *
@@ -368,6 +365,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelBadmintonInstructorPrice = new javax.swing.JLabel();
         jButtonBookBadminton = new javax.swing.JButton();
         jLabelBadmintonErrorMessageNoHours = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jPanel3Golf = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel57 = new javax.swing.JLabel();
@@ -391,6 +389,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelGolfCostText = new javax.swing.JLabel();
         jLabelGolfInstructorPrice = new javax.swing.JLabel();
         jLabelGolfErrorMessageNoHours = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jPanel1Handball = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
@@ -419,12 +418,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel53 = new javax.swing.JLabel();
         jLabel66 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         jPanel6TableTennis = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jLabel110 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jPanel8Volleyball = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
@@ -445,6 +446,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelVolleyballNoSign = new javax.swing.JLabel();
         jButtonVolleyballRefreshAmount = new javax.swing.JButton();
         jLabelVolleyballErrorMessageBook = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jPanel7Tennis = new javax.swing.JPanel();
         jLabel61 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
@@ -469,6 +471,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelGUIISBULLSHIT = new javax.swing.JLabel();
         jLabelTennisErrorMessageNoHours = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jPanel5Swimming = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
@@ -491,6 +494,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonSwimmingHelp = new javax.swing.JButton();
         jLabelSwimmingInstructorPrice = new javax.swing.JLabel();
         jLabelSwimmingErrorMessageNoHours = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
         jPanel2Fitness = new javax.swing.JPanel();
         jPanelGolf = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
@@ -509,6 +513,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonFitnessHelp = new javax.swing.JButton();
         jLabel31 = new javax.swing.JLabel();
         jLabelFitnessErrorMessageBook1 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
 
         jDialogFacilityHelp.setMinimumSize(new java.awt.Dimension(435, 145));
 
@@ -1213,9 +1218,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addGap(36, 36, 36)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(jPanel5OverviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButtonPrintInstrucCost, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1476,6 +1480,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jPanel1Badminton.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 610, 210));
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/BadmintonRESIZED.jpg"))); // NOI18N
+        jPanel1Badminton.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, -1, -1));
+
         jTabbedPane1.addTab("Badminton", jPanel1Badminton);
 
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1595,11 +1602,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jPanel5.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 560, 210));
 
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/GolfRESIZED.jpg"))); // NOI18N
+        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, -1, -1));
+
         javax.swing.GroupLayout jPanel3GolfLayout = new javax.swing.GroupLayout(jPanel3Golf);
         jPanel3Golf.setLayout(jPanel3GolfLayout);
         jPanel3GolfLayout.setHorizontalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 1311, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3GolfLayout.setVerticalGroup(
             jPanel3GolfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1796,6 +1806,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel109.setText("<html>Useful info: <br>There are no player limits on this facility. <br> The equipment will be given to you.");
         jPanel4MountainBike.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(629, 372, -1, -1));
 
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/bikingRESIZED.jpg"))); // NOI18N
+        jPanel4MountainBike.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 90, -1, -1));
+
         jTabbedPane1.addTab("Mountain Biking", jPanel4MountainBike);
 
         jPanel6TableTennis.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1819,13 +1832,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel110.setText("<html> Useful info: <br> The equipment will be given to you.");
         jPanel6TableTennis.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/bordtennisRESIZED.jpg"))); // NOI18N
+        jPanel6TableTennis.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, -1, -1));
+
         jTabbedPane1.addTab("Table Tennis", jPanel6TableTennis);
 
         jPanel8Volleyball.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel23.setText("<html>Playing volleyball is a great way to meet the other guests at the resort.<br> Sign-up at your preferred time and you will join a team consisting of other<br> guests and compete and have fun.");
         jLabel23.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel8Volleyball.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, -1, -1));
+        jPanel8Volleyball.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jLabel35.setText("The facilities are available between 8am - 8pm every day");
@@ -1838,7 +1854,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel111.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel111.setText("<html> Useful info: <br>  There are a total of 2 volleyball courts, each with 12 players max/court. <br> The equipment will be given to you.");
-        jPanel8Volleyball.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 284, -1));
+        jPanel8Volleyball.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 350, 284, -1));
 
         jPanel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1915,6 +1931,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jPanel9.add(jLabelVolleyballErrorMessageBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 290, -1));
 
         jPanel8Volleyball.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 550, 210));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/volleyballRESIZED.jpg"))); // NOI18N
+        jPanel8Volleyball.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, -1, -1));
 
         jTabbedPane1.addTab("Volleyball", jPanel8Volleyball);
 
@@ -2036,6 +2055,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel7Tennis.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, -1, -1));
 
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/TennisRESIZED.jpg"))); // NOI18N
+        jPanel7Tennis.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 60, -1, -1));
+
         jTabbedPane1.addTab("Tennis", jPanel7Tennis);
 
         jPanel5Swimming.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -2144,6 +2166,9 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelSwimmingErrorMessageNoHours.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelSwimmingErrorMessageNoHours.setText("You have to specify the number of hours you wish to hire an instructor");
         jPanel5Swimming.add(jLabelSwimmingErrorMessageNoHours, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 440, 414, -1));
+
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/SwimmingRESIZED.jpg"))); // NOI18N
+        jPanel5Swimming.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 60, -1, -1));
 
         jTabbedPane1.addTab("Swimming", jPanel5Swimming);
 
@@ -2282,11 +2307,14 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jPanelGolf.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 580, 170));
 
+        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/Fitness CenterRESIZED.jpg"))); // NOI18N
+        jPanelGolf.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, -1, -1));
+
         javax.swing.GroupLayout jPanel2FitnessLayout = new javax.swing.GroupLayout(jPanel2Fitness);
         jPanel2Fitness.setLayout(jPanel2FitnessLayout);
         jPanel2FitnessLayout.setHorizontalGroup(
             jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelGolf, javax.swing.GroupLayout.DEFAULT_SIZE, 1311, Short.MAX_VALUE)
+            .addComponent(jPanelGolf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2FitnessLayout.setVerticalGroup(
             jPanel2FitnessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3027,6 +3055,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JDialog jDialogOverviewHelp;
     private javax.swing.JDialog jDialogWaitOrNo;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel103;
@@ -3036,6 +3065,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel110;
     private javax.swing.JLabel jLabel111;
     private javax.swing.JLabel jLabel112;
@@ -3045,6 +3075,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -3070,6 +3104,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
@@ -3079,6 +3114,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
