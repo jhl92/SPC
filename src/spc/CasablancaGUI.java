@@ -364,8 +364,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jButtonPrevious14Days = new javax.swing.JButton();
         jButtonNext7Days = new javax.swing.JButton();
         jButtonNext14Days = new javax.swing.JButton();
-        jPanelMainFacilityButton = new javax.swing.JPanel();
-        jButtonFacilities = new javax.swing.JButton();
         jPanelMainSearchButtons = new javax.swing.JPanel();
         jButtonSearchCustomer = new javax.swing.JButton();
         jButtonSearchRoom = new javax.swing.JButton();
@@ -3331,35 +3329,6 @@ public class CasablancaGUI extends javax.swing.JFrame
                     .addComponent(jButtonNext14Days, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        jPanelMainFacilityButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jButtonFacilities.setText("Facilities");
-        jButtonFacilities.setPreferredSize(new java.awt.Dimension(120, 35));
-        jButtonFacilities.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jButtonFacilitiesActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanelMainFacilityButtonLayout = new javax.swing.GroupLayout(jPanelMainFacilityButton);
-        jPanelMainFacilityButton.setLayout(jPanelMainFacilityButtonLayout);
-        jPanelMainFacilityButtonLayout.setHorizontalGroup(
-            jPanelMainFacilityButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelMainFacilityButtonLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
-        );
-        jPanelMainFacilityButtonLayout.setVerticalGroup(
-            jPanelMainFacilityButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelMainFacilityButtonLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jButtonFacilities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
-        );
-
         jPanelMainSearchButtons.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jButtonSearchCustomer.setText("Search Customer");
@@ -5794,9 +5763,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         .addGap(1, 1, 1)
                         .addComponent(jPanelMainSearchButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1, 1, 1)
-                        .addComponent(jPanelMainCheckInOutButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jPanelMainFacilityButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanelMainCheckInOutButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -5852,7 +5819,6 @@ public class CasablancaGUI extends javax.swing.JFrame
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanelMainFacilityButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelMainBookingButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelMainSearchButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelMainCheckInOutButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -5898,7 +5864,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 546, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 546, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -5936,11 +5902,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         ovcListIndex = ovcListIndex + 8;
         setupOverviewList();
     }//GEN-LAST:event_jButtonRoomArrowDownActionPerformed
-
-    private void jButtonFacilitiesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonFacilitiesActionPerformed
-    {//GEN-HEADEREND:event_jButtonFacilitiesActionPerformed
-        //Opens a Facility-window where employees can view and edit informations about facilities...
-    }//GEN-LAST:event_jButtonFacilitiesActionPerformed
 
     private void jButtonSetupOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSetupOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonSetupOverviewActionPerformed
@@ -8076,7 +8037,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JButton jButtonDetailsShowBooking;
     private javax.swing.JButton jButtonEditSelectedCustomerDetails;
     private javax.swing.JButton jButtonExitDetails;
-    private javax.swing.JButton jButtonFacilities;
     private javax.swing.JButton jButtonNext14Days;
     private javax.swing.JButton jButtonNext7Days;
     private javax.swing.JButton jButtonPrevious14Days;
@@ -8453,7 +8413,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private javax.swing.JPanel jPanelEditBookingRoom;
     private javax.swing.JPanel jPanelMainBookingButtons;
     private javax.swing.JPanel jPanelMainCheckInOutButtons;
-    private javax.swing.JPanel jPanelMainFacilityButton;
     private javax.swing.JPanel jPanelMainInfoNotifier;
     private javax.swing.JPanel jPanelMainSearchButtons;
     private javax.swing.JPanel jPanelOverviewCells;
