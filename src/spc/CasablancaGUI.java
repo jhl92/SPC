@@ -5998,139 +5998,140 @@ public class CasablancaGUI extends javax.swing.JFrame
                             } else
                             {
                                 searchParameter = 6;
-                                guestList.addAll(jdcbselect.getInfoFromMail(jTextFieldSearchCustomerEmail.getText()));
+                                guestList = (jdcbselect.getInfoFromMail(scEmail));
                             }
                         } else
                         {
                             searchParameter = 5;
-                            guestList.addAll(jdcbselect.getInfoFromPhone(jTextFieldSearchCustomerPhoneNumber.getText()));
+                            guestList = (jdcbselect.getInfoFromPhone(scPhone));
                         }
                     } else
                     {
                         searchParameter = 4;
-                        guestList.addAll(jdcbselect.getInfoFromCountry(jTextFieldSearchCustomerCountry.getText()));
+                        guestList = (jdcbselect.getInfoFromCountry(scCountry));
                     }
                 } else
                 {
                     searchParameter = 3;
-                    guestList.addAll(jdcbselect.getInfoFromLastName(jTextFieldSearchCustomerLastName.getText()));
+                    guestList = (jdcbselect.getInfoFromLastName(scLastName));
                 }
             } else
             {
                 searchParameter = 2;
-                guestList = (jdcbselect.getInfoFromFirstName(jTextFieldSearchCustomerFirstName.getText()));
+                guestList = (jdcbselect.getInfoFromFirstName(scFirstName));
             }
         } else
         {
             searchParameter = 1;
-            guestList.addAll(jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText()));
+            guestList.addAll(jdcbselect.getInfoFromGuestID(scGuestID));
         }
+        System.out.println("list size: " + guestList.size());
         //Continues to remove objects that does not match any other entered search parameters
         if(booleanList == true)
         {
             if(guestList.size() > 0)
             {
                 int i = 0;
-                switch (searchParameter)
-                {
-                    case 1:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 2:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 3:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getCountry().toLowerCase().contains(scCountry.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 4:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 5:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getEmail().toLowerCase().contains(scEmail.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    default:
-                        break;
-                }
+//                switch (searchParameter)
+//                {
+//                    case 1:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 2:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 3:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getCountry().toLowerCase().contains(scCountry.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 4:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 5:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getEmail().toLowerCase().contains(scEmail.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    default:
+//                        break;
+//                }
                 
                 //Copies the remaining list with search-results from the entered data to a defaultlist and writes the list in GUI.
                 for (int k = 0; k < guestList.size(); ++k)
@@ -6382,11 +6383,12 @@ public class CasablancaGUI extends javax.swing.JFrame
             ArrayList<InfoObjectConstructor> guestInfo = jdcbselect.getInfoFromGuestID(guestList.get(selectedCustomer).getGuestID());
             for(int a = 0; a<guestInfo.size(); a++)
             {
-                String rType = guestInfo.get(a).getRoomID();
+                RoomTypeIDConstructor rt = jdcbselect.getRoomInfoFromRoomID(guestInfo.get(a).getRoomID());
+                String rType = rt.getRoomType();
                 String rID = guestInfo.get(a).getRoomID();
-                String dFrom = guestInfo.get(a).getRoomID();
-                String dTo = guestInfo.get(a).getRoomID();
-                writeList1.addElement(dFrom + "  to  " + dTo + ",  " + rType + " Room");
+                String dFrom = guestInfo.get(a).getDateFrom();
+                String dTo = guestInfo.get(a).getDateTo();
+                writeList1.addElement(dFrom + " to " + dTo + ",   " + rType + " Room");
             }
             jListSearchCustomerBookingsHistory.setModel(writeList1);
         }
@@ -7825,24 +7827,6 @@ public class CasablancaGUI extends javax.swing.JFrame
             daysBetween++;
         }
         return daysBetween;
-    }
-    
-    private Calendar rollDate(Calendar sDate, int numberOfDays, boolean addDays)
-    {
-        if(addDays)
-        {
-            for(int i = 0; i < numberOfDays; i++)
-            {
-                sDate.add(Calendar.DAY_OF_MONTH, 1);
-            }
-        } else
-        {
-            for(int i = 0; i < numberOfDays; i++)
-            {
-                sDate.add(Calendar.DAY_OF_MONTH, -1);
-            }
-        }
-        return sDate;
     }
     
     //Converts a date into int's for day, month and year and returns them as an object
