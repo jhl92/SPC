@@ -260,7 +260,7 @@ public class JDBCInsertQuery
                 case 2: 
                 sql = "UPDATE GUEST SET INSTRUCTORBILL = INSTRUCTORBILL + "+cost40
                         + " WHERE GUESTID = UPPER('"+guestID+"')";
-                stmt.executeUpdate(sql); //<- point of madness
+                stmt.executeUpdate(sql);
                 conn.commit();
                 break;
                     
