@@ -2791,7 +2791,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private void jButtonOverviewEditBookingSaveChanges1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
         int a = jListBookedOverview.getSelectedIndex();
-        loadListOverview();
         jLabelEditAlreadyBooked.setVisible(false);
         if(doubleBook(tempFacID, jComboBoxOverviewEditBookingDate1.getSelectedItem().toString(),
                 jComboBoxOverviewEditBookingTimeFrom1.getSelectedIndex()+8+".00", 
