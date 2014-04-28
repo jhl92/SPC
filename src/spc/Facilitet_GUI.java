@@ -1038,7 +1038,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
             }
         });
 
-        jLabelPleaseSelectBooking.setText("*please select a booking error mess*");
+        jLabelPleaseSelectBooking.setText("*booking error mess*");
         jLabelPleaseSelectBooking.setVisible(false);
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
@@ -1208,7 +1208,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabelOverviewBillPrintDone.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelOverviewBillPrintDone.setVisible(false);
-        jLabelOverviewBillPrintDone.setText("jLabel10");
+        jLabelOverviewBillPrintDone.setText("*printed mess*");
 
         javax.swing.GroupLayout jPanel5OverviewLayout = new javax.swing.GroupLayout(jPanel5Overview);
         jPanel5Overview.setLayout(jPanel5OverviewLayout);

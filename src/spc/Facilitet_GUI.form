@@ -960,7 +960,7 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabelPleaseSelectBooking">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="*please select a booking error mess*"/>
+                    <Property name="text" type="java.lang.String" value="*booking error mess*"/>
                   </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jLabelPleaseSelectBooking.setVisible(false);"/>
@@ -1186,7 +1186,7 @@
             <Component class="javax.swing.JLabel" name="jLabelOverviewBillPrintDone">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0" postCode="jLabelOverviewBillPrintDone.setVisible(false);"/>
-                <Property name="text" type="java.lang.String" value="jLabel10"/>
+                <Property name="text" type="java.lang.String" value="*printed mess*"/>
               </Properties>
             </Component>
           </SubComponents>
