@@ -2892,7 +2892,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonSignInMainActionPerformed
         finalGuestID = jTextFieldSignInGuestID.getText();
         tempGuestName = select.getInfoFromGuestID(finalGuestID);
-        if(jTextFieldSignInGuestID.getText().equals("")) {
+        if(jTextFieldSignInGuestID.getText().isEmpty() ==true) {
             jLabelSignInErrorMessage.setText("The box above is empty, you have to insert your guest ID");
             jLabelSignInErrorMessage.setVisible(true);
         } else {
