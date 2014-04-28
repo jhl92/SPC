@@ -307,8 +307,8 @@
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="9">
-                    <StringItem index="0" value="08.00 - 09.00"/>
-                    <StringItem index="1" value="09.00 - 10.00"/>
+                    <StringItem index="0" value="8.00 - 9.00"/>
+                    <StringItem index="1" value="9.00 - 10.00"/>
                     <StringItem index="2" value="11.00 - 12.00"/>
                     <StringItem index="3" value="12.00 - 13.00"/>
                     <StringItem index="4" value="14.00 - 15.00"/>
@@ -1466,8 +1466,8 @@
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="12">
-                        <StringItem index="0" value="08.00"/>
-                        <StringItem index="1" value="09.00"/>
+                        <StringItem index="0" value="8.00"/>
+                        <StringItem index="1" value="9.00"/>
                         <StringItem index="2" value="10.00"/>
                         <StringItem index="3" value="11.00"/>
                         <StringItem index="4" value="12.00"/>
@@ -1494,7 +1494,7 @@
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="12">
-                        <StringItem index="0" value="09.00"/>
+                        <StringItem index="0" value="9.00"/>
                         <StringItem index="1" value="10.00"/>
                         <StringItem index="2" value="11.00"/>
                         <StringItem index="3" value="12.00"/>
