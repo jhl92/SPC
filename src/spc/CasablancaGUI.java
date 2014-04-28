@@ -1797,20 +1797,16 @@ public class CasablancaGUI extends javax.swing.JFrame
         jPanelCheckInButtonsLayout.setHorizontalGroup(
             jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
                 .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
-                                .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabelCheckInNoChange2)))
-                    .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jComboBoxCheckInMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxCheckInDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxCheckInYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelCheckInNoChange2)
+                    .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelCheckInButtonsLayout.createSequentialGroup()
@@ -1845,8 +1841,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                             .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jButtonCheckOutLoad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButtonCheckInExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanelCheckInButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jButtonCheckInPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(10, 10, 10))))
         );
 
@@ -2466,7 +2461,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonChangeDetails.setText("Change Details");
+        jButtonChangeDetails.setText("Edit Details");
         jButtonChangeDetails.setPreferredSize(new java.awt.Dimension(164, 35));
         jButtonChangeDetails.addActionListener(new java.awt.event.ActionListener()
         {
@@ -6003,139 +5998,140 @@ public class CasablancaGUI extends javax.swing.JFrame
                             } else
                             {
                                 searchParameter = 6;
-                                guestList.addAll(jdcbselect.getInfoFromMail(jTextFieldSearchCustomerEmail.getText()));
+                                guestList = (jdcbselect.getInfoFromMail(scEmail));
                             }
                         } else
                         {
                             searchParameter = 5;
-                            guestList.addAll(jdcbselect.getInfoFromPhone(jTextFieldSearchCustomerPhoneNumber.getText()));
+                            guestList = (jdcbselect.getInfoFromPhone(scPhone));
                         }
                     } else
                     {
                         searchParameter = 4;
-                        guestList.addAll(jdcbselect.getInfoFromCountry(jTextFieldSearchCustomerCountry.getText()));
+                        guestList = (jdcbselect.getInfoFromCountry(scCountry));
                     }
                 } else
                 {
                     searchParameter = 3;
-                    guestList.addAll(jdcbselect.getInfoFromLastName(jTextFieldSearchCustomerLastName.getText()));
+                    guestList = (jdcbselect.getInfoFromLastName(scLastName));
                 }
             } else
             {
                 searchParameter = 2;
-                guestList = (jdcbselect.getInfoFromFirstName(jTextFieldSearchCustomerFirstName.getText()));
+                guestList = (jdcbselect.getInfoFromFirstName(scFirstName));
             }
         } else
         {
             searchParameter = 1;
-            guestList.addAll(jdcbselect.getInfoFromGuestID(jTextFieldSearchCustomerGuestID.getText()));
+            guestList.addAll(jdcbselect.getInfoFromGuestID(scGuestID));
         }
+        
         //Continues to remove objects that does not match any other entered search parameters
         if(booleanList == true)
         {
             if(guestList.size() > 0)
             {
                 int i = 0;
-                switch (searchParameter)
-                {
-                    case 1:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 2:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 3:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getCountry().toLowerCase().contains(scCountry.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 4:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    case 5:
-                        i = 0;
-                        while(i < guestList.size())
-                        {
-                            if (guestList.get(i).getEmail().toLowerCase().contains(scEmail.toLowerCase()))
-                            {
-                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
-                                {
-                                    guestList.remove(i);
-                                } else
-                                {
-                                    tempListGuestID.add(guestList.get(i).getGuestID());
-                                    i++;
-                                }
-                            } else
-                            {
-                                guestList.remove(i);
-                            }
-                        }
-                    default:
-                        break;
-                }
+//                switch (searchParameter)
+//                {
+//                    case 1:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getGuestFirstname().toLowerCase().contains(scFirstName.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 2:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getGuestLastName().toLowerCase().contains(scLastName.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 3:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getCountry().toLowerCase().contains(scCountry.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 4:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getContanctPhone().toLowerCase().contains(scPhone.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    case 5:
+//                        i = 0;
+//                        while(i < guestList.size())
+//                        {
+//                            if (guestList.get(i).getEmail().toLowerCase().contains(scEmail.toLowerCase()))
+//                            {
+//                                if(tempListGuestID.contains(guestList.get(i).getGuestID()))
+//                                {
+//                                    guestList.remove(i);
+//                                } else
+//                                {
+//                                    tempListGuestID.add(guestList.get(i).getGuestID());
+//                                    i++;
+//                                }
+//                            } else
+//                            {
+//                                guestList.remove(i);
+//                            }
+//                        }
+//                    default:
+//                        break;
+//                }
                 
                 //Copies the remaining list with search-results from the entered data to a defaultlist and writes the list in GUI.
                 for (int k = 0; k < guestList.size(); ++k)
@@ -6374,7 +6370,7 @@ public class CasablancaGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonShowSelectedCustomerDetailsActionPerformed
         int selectedCustomer = jListSearchCustomerResult.getSelectedIndex();
         writeList1.clear();
-        if(selectedCustomer >= 0)
+        if(selectedCustomer >= 0 && guestList.size() > 0)
         {
             jLabelSearchCustomerGuestID.setText(guestList.get(selectedCustomer).getGuestID());
             jLabelSearchCustomerFirstName.setText(guestList.get(selectedCustomer).getGuestFirstname());
@@ -6387,11 +6383,12 @@ public class CasablancaGUI extends javax.swing.JFrame
             ArrayList<InfoObjectConstructor> guestInfo = jdcbselect.getInfoFromGuestID(guestList.get(selectedCustomer).getGuestID());
             for(int a = 0; a<guestInfo.size(); a++)
             {
-                String rType = guestInfo.get(a).getRoomID();
+                RoomTypeIDConstructor rt = jdcbselect.getRoomInfoFromRoomID(guestInfo.get(a).getRoomID());
+                String rType = rt.getRoomType();
                 String rID = guestInfo.get(a).getRoomID();
-                String dFrom = guestInfo.get(a).getRoomID();
-                String dTo = guestInfo.get(a).getRoomID();
-                writeList1.addElement(dFrom + "  to  " + dTo + ",  " + rType + " Room");
+                String dFrom = guestInfo.get(a).getDateFrom();
+                String dTo = guestInfo.get(a).getDateTo();
+                writeList1.addElement(dFrom + " to " + dTo + ",   " + rType + " Room");
             }
             jListSearchCustomerBookingsHistory.setModel(writeList1);
         }
@@ -7832,24 +7829,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         return daysBetween;
     }
     
-    private Calendar rollDate(Calendar sDate, int numberOfDays, boolean addDays)
-    {
-        if(addDays)
-        {
-            for(int i = 0; i < numberOfDays; i++)
-            {
-                sDate.add(Calendar.DAY_OF_MONTH, 1);
-            }
-        } else
-        {
-            for(int i = 0; i < numberOfDays; i++)
-            {
-                sDate.add(Calendar.DAY_OF_MONTH, -1);
-            }
-        }
-        return sDate;
-    }
-    
     //Converts a date into int's for day, month and year and returns them as an object
     private DateVar getDateSettings(Calendar dateIn)
     {
@@ -7945,21 +7924,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         Calendar eBookDate = Calendar.getInstance();
         for(int a = 0; a<frsList.size(); a++)
         {
-            try
-            {
-                sBookDate.setTime(sdf.parse(frsList.get(a).getDateFrom()));
-                eBookDate.setTime(sdf.parse(frsList.get(a).getDateTo()));
-            } catch (ParseException ex)
-            {
-                Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            if(sBookDate.before(frsDate))
-            {
-                if(eBookDate.after(frsDate))
-                {
-                    return IconBook;
-                }
-            }
             if(frsDateString.equals(frsList.get(a).getDateTo()))
             {
                 for(int b = 0; b < frsList.size(); b++)
@@ -7981,6 +7945,21 @@ public class CasablancaGUI extends javax.swing.JFrame
                     }
                 }
                 return IconFreeBook;
+            }
+            try
+            {
+                sBookDate.setTime(sdf.parse(frsList.get(a).getDateFrom()));
+                eBookDate.setTime(sdf.parse(frsList.get(a).getDateTo()));
+            } catch (ParseException ex)
+            {
+                Logger.getLogger(CasablancaGUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            if(sBookDate.before(frsDate))
+            {
+                if(eBookDate.after(frsDate))
+                {
+                    return IconBook;
+                }
             }
         }
         return IconFree;
@@ -8697,7 +8676,6 @@ public class CasablancaGUI extends javax.swing.JFrame
         jLabelSearchRoomResultNotifier.setText("");
         jLabelSearchRoomNumberNights.setText("");
         jRadioButtonSearchRoom1.setSelected(true);
-        setCurrentDate();
         jComboBoxSearchStartMonth.setSelectedIndex(currentMonth-1);
         jComboBoxSearchStartYear.setSelectedIndex(currentYear-14);
         jComboBoxSearchStartDate.setSelectedIndex(currentDate-1);
@@ -8774,6 +8752,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jLabelDetailsResultNotifier.setText("No guest-information found...");
             jButtonDetailsSaveChanges.setEnabled(false);
         }
+        jDialogEditDetails.setVisible(true);
     }
     
     private void setupDialogCheckIn()
@@ -8966,16 +8945,18 @@ public class CasablancaGUI extends javax.swing.JFrame
     private void fillDateCells(Calendar sDate)
     {
         setCurrentDate();
+        Calendar sD = Calendar.getInstance();
+        sD.setTime(sDate.getTime());
         int ocD = 0;
         int ocY = 0;
         String ocM;
         String ocW;
         for(int a = 0; a<14; a++)
         {
-            ocD = Integer.parseInt(sdfDateInt.format(sDate.getTime()));
-            ocY = Integer.parseInt(sdfYearLong.format(sDate.getTime()));
-            ocM = sdfMonthNameShort.format(sDate.getTime());
-            ocW = sdfWeekDayName.format(sDate.getTime());
+            ocD = Integer.parseInt(sdfDateInt.format(sD.getTime()));
+            ocY = Integer.parseInt(sdfYearLong.format(sD.getTime()));
+            ocM = sdfMonthNameShort.format(sD.getTime());
+            ocW = sdfWeekDayName.format(sD.getTime());
             switch (a)
             {
                 case 0:
@@ -9049,13 +9030,15 @@ public class CasablancaGUI extends javax.swing.JFrame
                     jLabelDate14Year.setText(ocY + "");
                     break;
             }
-            sDate.add(Calendar.DATE, 1);
+            sD.add(Calendar.DATE, 1);
         }
     }
     
     //Filling all cells with a specific Icon, depending on its availability-status
     private void fillRoomCells(String roomID, int roomRow, Calendar firstDate)
     {
+        Calendar fDate = Calendar.getInstance();
+        fDate.setTime(firstDate.getTime());
         if (roomID.equals("000"))
         {
             switch (roomRow)
@@ -9151,7 +9134,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             frsList = jdcbselect.getCheckAvaRoom(roomID);
             for (int a = 0; a < 14; a++)
             {
-                ImageIcon icon = findRoomStatus(firstDate, frsList);
+                ImageIcon icon = findRoomStatus(fDate, frsList);
                 int day = 1 + a;
                 switch (roomRow)
                 {
@@ -9180,7 +9163,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                         fillRoom8Cells(day, null, null, icon);
                         break;
                 }
-                firstDate.add(Calendar.DAY_OF_MONTH, 1);
+                fDate.add(Calendar.DAY_OF_MONTH, 1);
             }
         }
     }
