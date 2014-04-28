@@ -8752,6 +8752,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             jLabelDetailsResultNotifier.setText("No guest-information found...");
             jButtonDetailsSaveChanges.setEnabled(false);
         }
+        jDialogEditDetails.setVisible(true);
     }
     
     private void setupDialogCheckIn()
