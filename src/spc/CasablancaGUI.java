@@ -6025,7 +6025,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             searchParameter = 1;
             guestList.addAll(jdcbselect.getInfoFromGuestID(scGuestID));
         }
-        System.out.println("list size: " + guestList.size());
+        
         //Continues to remove objects that does not match any other entered search parameters
         if(booleanList == true)
         {
