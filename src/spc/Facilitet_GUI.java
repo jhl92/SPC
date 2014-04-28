@@ -184,7 +184,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxSwimmingInstructorDate.addItem(sdf.format(cal.getTime()));
     }
     
-    private String[] getComboBoxListFromToday()
+    private String[] getComboBoxListFromToday() //Genererer de næste 7 dage (inklusiv dagens dato)
     {
         int currentDate = Integer.parseInt(cDate.format(presentDate.getTime()));
         int currentMonth = Integer.parseInt(cMonth.format(presentDate.getTime()));
@@ -200,7 +200,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         return listOfDates;
     }
     
-    private void loadListOverview() {
+    private void loadListOverview() { //henter en liste over en kundes bookinger (facilitet)
         bookedOverview.removeAllElements();
         tempBookOverview = select.getBookedOverview(finalGuestID);
         for(int i = 0;  i<tempBookOverview.size(); ++i) {
@@ -214,7 +214,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jListBookedOverview.setModel(bookedOverview);
     }
     
-    private void loadWaitlistOverview(String date, String timeStart, String timeEnd, String facility) {
+    private void loadWaitlistOverview(String date, String timeStart, String timeEnd, String facility) { //henter ventelisten for en given facilitet på en given dato & tid
         waitlistOverview.removeAllElements();
         tempPos = select.getWaitlistPosition(date, timeStart, timeEnd, facility);
         for(int i=0; i<tempPos.size(); ++i) {
@@ -227,7 +227,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jListWaitOverview.setModel(waitlistOverview);
     }
     
-    public boolean doubleBook (String cfacID, String cfacDate, String ctimeStart, String ctimeEnd){
+    public boolean doubleBook (String cfacID, String cfacDate, String ctimeStart, String ctimeEnd){ //tjekker om en given booking allerede eksisterer
         tempBookOverview = select.getBookedOverview(finalGuestID);
         for(int i=0; i<tempBookOverview.size(); ++i) {
             String facID = tempBookOverview.get(i).getFacID();
@@ -243,7 +243,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         return false;
     }
     
-    public String convertFac (String entireBooking) {
+    public String convertFac (String entireBooking) { //Modtager en String, deler den op og konventerer derefter Facilitetstypen til et Facilitets ID
         String[] split = entireBooking.split(" ");
         String facType = split[1];
         switch (facType){
