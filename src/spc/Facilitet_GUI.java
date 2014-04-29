@@ -57,6 +57,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jComboBoxOverviewSelectDate.addItem(sdf.format(cal.getTime()));
         
         // jComboBoxBadmintonSelectDate
+        cal.roll(Calendar.DAY_OF_YEAR, -6);
         jComboBoxBadmintonSelectDate.addItem(sdf.format(cal.getTime()));
         cal.roll(Calendar.DAY_OF_YEAR, true);
         jComboBoxBadmintonSelectDate.addItem(sdf.format(cal.getTime()));
