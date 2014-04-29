@@ -367,6 +367,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonBookBadminton = new javax.swing.JButton();
         jLabelBadmintonErrorMessageNoHours = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabelBadmintonBookDone = new javax.swing.JLabel();
         jPanel3Golf = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel57 = new javax.swing.JLabel();
@@ -391,6 +392,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelGolfInstructorPrice = new javax.swing.JLabel();
         jLabelGolfErrorMessageNoHours = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabelGolfBookDone = new javax.swing.JLabel();
         jPanel1Handball = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
@@ -412,6 +414,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel51 = new javax.swing.JLabel();
         jButtonBookHandball = new javax.swing.JButton();
         jLabelHandballErrorMessageBook = new javax.swing.JLabel();
+        jLabelHandballBookDone = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jPanel4MountainBike = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -448,6 +451,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jButtonVolleyballRefreshAmount = new javax.swing.JButton();
         jLabelVolleyballErrorMessageBook = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabelVolleyballBookDone = new javax.swing.JLabel();
         jPanel7Tennis = new javax.swing.JPanel();
         jLabel61 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
@@ -473,6 +477,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelTennisErrorMessageNoHours = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        jLabelTennisBookDone = new javax.swing.JLabel();
         jPanel5Swimming = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
@@ -496,6 +501,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabelSwimmingInstructorPrice = new javax.swing.JLabel();
         jLabelSwimmingErrorMessageNoHours = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
+        jLabelSwimingBookDone = new javax.swing.JLabel();
         jPanel2Fitness = new javax.swing.JPanel();
         jPanelGolf = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
@@ -515,6 +521,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel31 = new javax.swing.JLabel();
         jLabelFitnessErrorMessageBook1 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
+        jLabelFitnessBookDone = new javax.swing.JLabel();
 
         jDialogFacilityHelp.setMinimumSize(new java.awt.Dimension(435, 145));
 
@@ -618,7 +625,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 50, Short.MAX_VALUE))
+                .addGap(0, 40, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jDialogOverviewHelpLayout = new javax.swing.GroupLayout(jDialogOverviewHelp.getContentPane());
@@ -1484,6 +1491,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/BadmintonRESIZED.jpg"))); // NOI18N
         jPanel1Badminton.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, -1, -1));
 
+        jLabelBadmintonBookDone.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelBadmintonBookDone.setVisible(false);
+        jLabelBadmintonBookDone.setText("Booking accepted!");
+        jPanel1Badminton.add(jLabelBadmintonBookDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 410, 270, -1));
+
         jTabbedPane1.addTab("Badminton", jPanel1Badminton);
 
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1605,6 +1617,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/GolfRESIZED.jpg"))); // NOI18N
         jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, -1, -1));
+
+        jLabelGolfBookDone.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelGolfBookDone.setVisible(false);
+        jLabelGolfBookDone.setText("Booking accepted!");
+        jPanel5.add(jLabelGolfBookDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 390, 270, -1));
 
         javax.swing.GroupLayout jPanel3GolfLayout = new javax.swing.GroupLayout(jPanel3Golf);
         jPanel3Golf.setLayout(jPanel3GolfLayout);
@@ -1750,6 +1767,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         );
 
         jPanel8.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 630, 190));
+
+        jLabelHandballBookDone.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelHandballBookDone.setVisible(false);
+        jLabelHandballBookDone.setText("Booking accepted!");
+        jPanel8.add(jLabelHandballBookDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, 270, -1));
 
         jLabel32.setPreferredSize(new java.awt.Dimension(320, 200));
 
@@ -1936,6 +1958,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/volleyballRESIZED.jpg"))); // NOI18N
         jPanel8Volleyball.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, -1, -1));
 
+        jLabelVolleyballBookDone.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelVolleyballBookDone.setVisible(false);
+        jLabelVolleyballBookDone.setText("Booking accepted!");
+        jPanel8Volleyball.add(jLabelVolleyballBookDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, 270, -1));
+
         jTabbedPane1.addTab("Volleyball", jPanel8Volleyball);
 
         jPanel7Tennis.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -2059,6 +2086,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/TennisRESIZED.jpg"))); // NOI18N
         jPanel7Tennis.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 60, -1, -1));
 
+        jLabelTennisBookDone.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelTennisBookDone.setVisible(false);
+        jLabelTennisBookDone.setText("Booking accepted!");
+        jPanel7Tennis.add(jLabelTennisBookDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 410, 270, -1));
+
         jTabbedPane1.addTab("Tennis", jPanel7Tennis);
 
         jPanel5Swimming.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -2170,6 +2202,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
         jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/SwimmingRESIZED.jpg"))); // NOI18N
         jPanel5Swimming.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 60, -1, -1));
+
+        jLabelSwimingBookDone.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelSwimingBookDone.setVisible(false);
+        jLabelSwimingBookDone.setText("Booking accepted!");
+        jPanel5Swimming.add(jLabelSwimingBookDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 410, 270, -1));
 
         jTabbedPane1.addTab("Swimming", jPanel5Swimming);
 
@@ -2311,6 +2348,11 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/Fitness CenterRESIZED.jpg"))); // NOI18N
         jPanelGolf.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, -1, -1));
 
+        jLabelFitnessBookDone.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelFitnessBookDone.setVisible(false);
+        jLabelFitnessBookDone.setText("Booking accepted!");
+        jPanelGolf.add(jLabelFitnessBookDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 410, 270, -1));
+
         javax.swing.GroupLayout jPanel2FitnessLayout = new javax.swing.GroupLayout(jPanel2Fitness);
         jPanel2Fitness.setLayout(jPanel2FitnessLayout);
         jPanel2FitnessLayout.setHorizontalGroup(
@@ -2416,6 +2458,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookHandballActionPerformed
         tempFacID = "3"; 
         jLabelHandballErrorMessageBook.setVisible(false);
+        jLabelHandballBookDone.setVisible(false);
         if(doubleBook(tempFacID, jComboBoxHandballSelectDate.getSelectedItem().toString(),
                 jComboBoxHandballTimeFrom.getSelectedItem().toString(),
                 jComboBoxHandballTimeTo.getSelectedItem().toString())==false) {
@@ -2428,6 +2471,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         String handballTimeFrom = (String)jComboBoxHandballTimeFrom.getSelectedItem();
                         String handballTimeTo = (String)jComboBoxHandballTimeTo.getSelectedItem();
                         insert.JDBCInsertFacility(finalGuestID, tempFacID, handballDate, handballTimeFrom, handballTimeTo, "N");
+                        jLabelHandballBookDone.setVisible(true);
                         } else {
                             jLabelHandballErrorMessageBook.setVisible(true);
                             jLabelHandballErrorMessageBook.setText("The hours you have selected are not eligible");
@@ -2577,6 +2621,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private void jButtonBookBadmintonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookBadmintonActionPerformed
     {//GEN-HEADEREND:event_jButtonBookBadmintonActionPerformed
         tempFacID = "1";
+        jLabelBadmintonBookDone.setVisible(false);
         jLabelBadmintonErrorMessageBook.setVisible(false);
         jLabelBadmintonErrorMessageNoHours.setVisible(false);
         tempGetFac = select.getfacAvail(tempFacID, jComboBoxBadmintonSelectDate.getSelectedItem().toString(), 
@@ -2602,14 +2647,16 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                     String badmintonTimeTo = (String)jComboBoxBadmintonTimeTo.getSelectedItem();
                                     insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "Y");
                                     insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));
-                                    jLabelBadmintonErrorMessageNoHours.setVisible(false);                  
+                                    jLabelBadmintonErrorMessageNoHours.setVisible(false);   
+                                    jLabelBadmintonBookDone.setVisible(true);
                                 }
                             } else {
                                 String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
                                 String badmintonTimeFrom = (String)jComboBoxBadmintonTimeFrom.getSelectedItem();
                                 String badmintonTimeTo = (String)jComboBoxBadmintonTimeTo.getSelectedItem();
                                 insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "N");
-                                insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));   
+                                insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID)); 
+                                jLabelBadmintonBookDone.setVisible(true);
                             }
                         } else {
                             jLabelBadmintonErrorMessageBook.setVisible(true); 
@@ -2656,6 +2703,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookFitnessActionPerformed
         tempFacID="9";
         jLabelFitnessErrorMessageBook1.setVisible(false);
+        jLabelFitnessBookDone.setVisible(false);
         if(doubleBook(tempFacID, jComboBoxFitnessSelectDate.getSelectedItem().toString(), 
             jComboBoxFitnessTimeFrom.getSelectedItem().toString(), 
             jComboBoxFitnessTimeTo.getSelectedItem().toString())==false) {
@@ -2670,6 +2718,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         String fitnessTimeTo = (String)jComboBoxFitnessTimeTo.getSelectedItem();
                         insert.JDBCInsertFacility(finalGuestID, tempFacID, fitnessDate, fitnessTimeFrom, fitnessTimeTo, "N");
                         jLabelFitnessErrorMessageBook1.setVisible(false);  
+                        jLabelFitnessBookDone.setVisible(true);
                     } else {
                         jLabelFitnessErrorMessageBook1.setVisible(true); 
                         jLabelFitnessErrorMessageBook1.setText("The hours you have selected are not eligible");
@@ -2685,6 +2734,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookVolleyActionPerformed
         tempFacID="6";
         jLabelVolleyballErrorMessageBook.setVisible(false);
+        jLabelVolleyballBookDone.setVisible(false);
         if(doubleBook(tempFacID, jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
                 jComboBoxVolleyballTimeFrom.getSelectedItem().toString(),
                 jComboBoxVolleyballTimeTo.getSelectedItem().toString()) == false) {
@@ -2698,6 +2748,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                         String volleyTimeFrom = (String)jComboBoxVolleyballTimeFrom.getSelectedItem();
                         String volleyTimeTo = (String)jComboBoxVolleyballTimeTo.getSelectedItem();
                         insert.JDBCInsertFacility(finalGuestID, tempFacID, volleyballDate, volleyTimeFrom, volleyTimeTo, "N");
+                        jLabelVolleyballBookDone.setVisible(true);
                         }else{
                             jLabelVolleyballErrorMessageBook.setVisible(true);
                             jLabelVolleyballErrorMessageBook.setText("The hours you have selected are not eligible");
@@ -2715,6 +2766,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         tempFacID="7";
         jLabelTennisErrorMessageBook.setVisible(false);
         jLabelTennisErrorMessageNoHours.setVisible(false);
+        jLabelTennisBookDone.setVisible(false);
         tempGetFac = select.getfacAvail(tempFacID, jComboBoxTennisSelectDate.getSelectedItem().toString(), 
                 jComboBoxTennisTimeFrom.getSelectedItem().toString(), 
                 jComboBoxTennisTimeTo.getSelectedItem().toString());
@@ -2740,6 +2792,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                     insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "Y");
                                     insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));
                                     jLabelTennisErrorMessageNoHours.setVisible(false); 
+                                    jLabelTennisBookDone.setVisible(true);
                                 }
                             }else{
                                 String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem();
@@ -2747,6 +2800,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                                 String tennisTimeTo = (String)jComboBoxTennisTimeTo.getSelectedItem();
                                 insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "N");
                                 insert.JDBCInsertInstructorCost(finalGuestID, noHours, Integer.parseInt(tempFacID));
+                                jLabelTennisBookDone.setVisible(true);
                             }
                         } else {
                             jLabelTennisErrorMessageBook.setVisible(true); 
@@ -2821,6 +2875,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookGolfActionPerformed
         tempFacID = "2";
         jLabelGolfErrorMessageNoHours.setVisible(false);
+        jLabelGolfBookDone.setVisible(false);
         if(jComboBoxGolfInstructorTimeFrom.getSelectedIndex() <= jComboBoxGolfInstructorTimeTo.getSelectedIndex()) {
             if(jComboBoxGolfInstrucHours.getSelectedIndex()==0){ jLabelGolfErrorMessageNoHours.setVisible(true); }
                 else {
@@ -2828,6 +2883,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     insert.JDBCInsertInstructorCost(finalGuestID, 
                             jComboBoxGolfInstrucHours.getSelectedItem().toString(), 
                             Integer.parseInt(tempFacID));
+                    jLabelGolfBookDone.setVisible(true);
                 }
             }else{jLabelGolfErrorMessageNoHours.setVisible(true);}
     }//GEN-LAST:event_jButtonBookGolfActionPerformed
@@ -2836,7 +2892,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButtonBookSwimmingActionPerformed
         tempFacID="8";
         jLabelSwimmingErrorMessageNoHours.setVisible(false);
-        
+        jLabelSwimingBookDone.setVisible(false);
         if(jComboBoxSwimmingInstructorTimeFrom.getSelectedIndex() <= jComboBoxSwimmingInstructorTimeTo.getSelectedIndex()) {
             if(jComboBoxSwimmingInstrucHours.getSelectedIndex()==0){ jLabelSwimmingErrorMessageNoHours.setVisible(true); }
                 else {
@@ -2844,6 +2900,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
                     insert.JDBCInsertInstructorCost(finalGuestID, 
                             jComboBoxSwimmingInstrucHours.getSelectedItem().toString(), 
                             Integer.parseInt(tempFacID));
+                    jLabelSwimingBookDone.setVisible(true);
                 }
             }else{jLabelGolfErrorMessageNoHours.setVisible(true);}
     }//GEN-LAST:event_jButtonBookSwimmingActionPerformed
@@ -3161,6 +3218,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
+    private javax.swing.JLabel jLabelBadmintonBookDone;
     private javax.swing.JLabel jLabelBadmintonCostText;
     private javax.swing.JLabel jLabelBadmintonErrorMessageBook;
     private javax.swing.JLabel jLabelBadmintonErrorMessageNoHours;
@@ -3168,8 +3226,10 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelBadmintonInstructorPrice;
     private javax.swing.JLabel jLabelCurrentBooking;
     private javax.swing.JLabel jLabelEditAlreadyBooked;
+    private javax.swing.JLabel jLabelFitnessBookDone;
     private javax.swing.JLabel jLabelFitnessErrorMessageBook1;
     private javax.swing.JLabel jLabelGUIISBULLSHIT;
+    private javax.swing.JLabel jLabelGolfBookDone;
     private javax.swing.JLabel jLabelGolfCostText;
     private javax.swing.JLabel jLabelGolfErrorMessageNoHours;
     private javax.swing.JLabel jLabelGolfInstructHourLabel;
@@ -3178,11 +3238,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelGolfInstructorPrice;
     private javax.swing.JLabel jLabelGolfInstructorTimeFrom;
     private javax.swing.JLabel jLabelGolfInstructorTimeTo;
+    private javax.swing.JLabel jLabelHandballBookDone;
     private javax.swing.JLabel jLabelHandballErrorMessageBook;
     private javax.swing.JLabel jLabelOverviewBillPrintDone;
     private javax.swing.JLabel jLabelPleaseSelectBooking;
     private javax.swing.JLabel jLabelSignInErrorMessage;
     private javax.swing.JLabel jLabelSignInGuestName;
+    private javax.swing.JLabel jLabelSwimingBookDone;
     private javax.swing.JLabel jLabelSwimmingErrorMessageNoHours;
     private javax.swing.JLabel jLabelSwimmingInstructHourLabel;
     private javax.swing.JLabel jLabelSwimmingInstructorDate;
@@ -3190,11 +3252,13 @@ public class Facilitet_GUI extends javax.swing.JFrame
     private javax.swing.JLabel jLabelSwimmingInstructorPrice;
     private javax.swing.JLabel jLabelSwimmingInstructorTimeFrom;
     private javax.swing.JLabel jLabelSwimmingInstructorTimeTo;
+    private javax.swing.JLabel jLabelTennisBookDone;
     private javax.swing.JLabel jLabelTennisCostText;
     private javax.swing.JLabel jLabelTennisErrorMessageBook;
     private javax.swing.JLabel jLabelTennisErrorMessageNoHours;
     private javax.swing.JLabel jLabelTennisInstructHourLabel;
     private javax.swing.JLabel jLabelTennisInstructorPrice;
+    private javax.swing.JLabel jLabelVolleyballBookDone;
     private javax.swing.JLabel jLabelVolleyballErrorMessageBook;
     private javax.swing.JLabel jLabelVolleyballNoSign;
     private javax.swing.JLabel jLabelVolleyballNoSignText;
