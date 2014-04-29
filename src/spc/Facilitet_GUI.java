@@ -201,6 +201,23 @@ public class Facilitet_GUI extends javax.swing.JFrame
         return listOfDates;
     }
     
+    private boolean bookLimitReached (String tfacDate){
+        tempBookOverview = select.getBookedOverview(finalGuestID);
+        ArrayList<String> limit = new ArrayList<>();
+        for(int i=0; i<tempBookOverview.size(); ++i) {
+            String facDate = tempBookOverview.get(i).getFacDate();
+            String facID = tempBookOverview.get(i).getFacID();
+            if (facDate.equals(tfacDate)) {
+                if (facID.equals("2") || facID.equals("8")){}
+                else {
+                    limit.add(facDate);
+                }
+            }
+        }
+        if (limit.size()>=4) {return true;}
+        return false;
+    }
+    
     private void loadListOverview() { //henter en liste over en kundes bookinger (facilitet)
         bookedOverview.removeAllElements();
         tempBookOverview = select.getBookedOverview(finalGuestID);
@@ -2252,18 +2269,24 @@ public class Facilitet_GUI extends javax.swing.JFrame
         if(doubleBook(tempFacID, jComboBoxHandballSelectDate.getSelectedItem().toString(),
                 jComboBoxHandballTimeFrom.getSelectedIndex()+8+".00",
                 jComboBoxHandballTimeFrom.getSelectedIndex()+9+".00")==false) {
-            if(select.getfacAvail(tempFacID, jComboBoxHandballSelectDate.getSelectedItem().toString(),
-                    jComboBoxHandballTimeFrom.getSelectedIndex()+8+".00",
-                    jComboBoxHandballTimeFrom.getSelectedIndex()+9+".00").size() < 12) 
+            if(bookLimitReached(jComboBoxHandballSelectDate.getSelectedItem().toString()) == false)
             {
-                        jLabelHandballErrorMessageBook.setVisible(false);
-                        String handballDate = (String)jComboBoxHandballSelectDate.getSelectedItem();
-                        String handballTimeFrom = jComboBoxHandballTimeFrom.getSelectedIndex()+8+".00";
-                        String handballTimeTo = jComboBoxHandballTimeFrom.getSelectedIndex()+9+".00";
-                        insert.JDBCInsertFacility(finalGuestID, tempFacID, handballDate, handballTimeFrom, handballTimeTo, "N");
-                        jLabelHandballBookDone.setVisible(true);
-                    
-            } else {waitNoPop();}
+                
+          
+                if(select.getfacAvail(tempFacID, jComboBoxHandballSelectDate.getSelectedItem().toString(),
+                        jComboBoxHandballTimeFrom.getSelectedIndex()+8+".00",
+                        jComboBoxHandballTimeFrom.getSelectedIndex()+9+".00").size() < 12) 
+                {
+                            jLabelHandballErrorMessageBook.setVisible(false);
+                            String handballDate = (String)jComboBoxHandballSelectDate.getSelectedItem();
+                            String handballTimeFrom = jComboBoxHandballTimeFrom.getSelectedIndex()+8+".00";
+                            String handballTimeTo = jComboBoxHandballTimeFrom.getSelectedIndex()+9+".00";
+                            insert.JDBCInsertFacility(finalGuestID, tempFacID, handballDate, handballTimeFrom, handballTimeTo, "N");
+                            jLabelHandballBookDone.setVisible(true);
+
+                } else {waitNoPop();}
+            } else {jLabelHandballErrorMessageBook.setText("You have booked too many facilities today");
+                    jLabelHandballErrorMessageBook.setVisible(true);}
         } else {
             jLabelHandballErrorMessageBook.setText("You have already booked this");
             jLabelHandballErrorMessageBook.setVisible(true);
@@ -2369,32 +2392,37 @@ public class Facilitet_GUI extends javax.swing.JFrame
         if(doubleBook(tempFacID, jComboBoxBadmintonSelectDate.getSelectedItem().toString(), 
                     jComboBoxBadmintonTimeFrom.getSelectedIndex()+8+".00", 
                     jComboBoxBadmintonTimeFrom.getSelectedIndex()+9+".00") == false )
+        {   
+            if (bookLimitReached(jComboBoxBadmintonSelectDate.getSelectedItem().toString()) == false) 
             {   
-            if (tempGetFac.size() < 4) 
-                    {
-                        jLabelBadmintonErrorMessageBook.setVisible(false);
-                        jLabelBadmintonErrorMessageNoHours.setVisible(false);
+                if (tempGetFac.size() < 4) 
+                        {
+                            jLabelBadmintonErrorMessageBook.setVisible(false);
+                            jLabelBadmintonErrorMessageNoHours.setVisible(false);
 
-                        if(jCheckBoxBadmintonInstruct.isSelected()){
-                            String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
-                            String badmintonTimeFrom = jComboBoxBadmintonTimeFrom.getSelectedIndex()+8+".00";
-                            System.out.println(badmintonTimeFrom);
-                            String badmintonTimeTo = jComboBoxBadmintonTimeFrom.getSelectedIndex()+9+".00";
-                            insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "Y");
-                            insert.JDBCInsertInstructorCost(finalGuestID, "1", Integer.parseInt(tempFacID));
-                            jLabelBadmintonErrorMessageNoHours.setVisible(false);   
-                            jLabelBadmintonBookDone.setVisible(true);
-                            
-                        } else {
-                            String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
-                            String badmintonTimeFrom = jComboBoxBadmintonTimeFrom.getSelectedIndex()+8+".00";
-                            String badmintonTimeTo = jComboBoxBadmintonTimeFrom.getSelectedIndex()+9+".00";
-                            insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "N");
-                            insert.JDBCInsertInstructorCost(finalGuestID, "0", Integer.parseInt(tempFacID)); 
-                            jLabelBadmintonBookDone.setVisible(true);
-                        }  
-                    } else {waitNoPop();}     
-            } else {jLabelBadmintonErrorMessageBook.setText("You have already booked this");
+                            if(jCheckBoxBadmintonInstruct.isSelected()){
+                                String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
+                                String badmintonTimeFrom = jComboBoxBadmintonTimeFrom.getSelectedIndex()+8+".00";
+                                System.out.println(badmintonTimeFrom);
+                                String badmintonTimeTo = jComboBoxBadmintonTimeFrom.getSelectedIndex()+9+".00";
+                                insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "Y");
+                                insert.JDBCInsertInstructorCost(finalGuestID, "1", Integer.parseInt(tempFacID));
+                                jLabelBadmintonErrorMessageNoHours.setVisible(false);   
+                                jLabelBadmintonBookDone.setVisible(true);
+
+                            } else {
+                                String badmintonDate = (String)jComboBoxBadmintonSelectDate.getSelectedItem();
+                                String badmintonTimeFrom = jComboBoxBadmintonTimeFrom.getSelectedIndex()+8+".00";
+                                String badmintonTimeTo = jComboBoxBadmintonTimeFrom.getSelectedIndex()+9+".00";
+                                insert.JDBCInsertFacility(finalGuestID, tempFacID, badmintonDate, badmintonTimeFrom, badmintonTimeTo, "N");
+                                insert.JDBCInsertInstructorCost(finalGuestID, "0", Integer.parseInt(tempFacID)); 
+                                jLabelBadmintonBookDone.setVisible(true);
+                            }  
+                        } else {waitNoPop();} 
+                
+            } else {jLabelBadmintonErrorMessageBook.setText("You have booked too many facilities today");
+                    jLabelBadmintonErrorMessageBook.setVisible(true);}
+        } else {jLabelBadmintonErrorMessageBook.setText("You have already booked this");
                 jLabelBadmintonErrorMessageBook.setVisible(true);}
                 
     }//GEN-LAST:event_jButtonBookBadmintonActionPerformed
@@ -2438,18 +2466,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
         if(doubleBook(tempFacID, jComboBoxFitnessSelectDate.getSelectedItem().toString(), 
             jComboBoxFitnessTimeFrom.getSelectedIndex()+8+".00", 
             jComboBoxFitnessTimeFrom.getSelectedIndex()+9+".00")==false) {
-            if(select.getfacAvail(tempFacID, jComboBoxFitnessSelectDate.getSelectedItem().toString(), 
-                jComboBoxFitnessTimeFrom.getSelectedIndex()+8+".00", 
-                jComboBoxFitnessTimeFrom.getSelectedIndex()+9+".00").size() < 20)
+            if(bookLimitReached(jComboBoxFitnessSelectDate.getSelectedItem().toString()) == false)
+            {
+                if(select.getfacAvail(tempFacID, jComboBoxFitnessSelectDate.getSelectedItem().toString(), 
+                    jComboBoxFitnessTimeFrom.getSelectedIndex()+8+".00", 
+                    jComboBoxFitnessTimeFrom.getSelectedIndex()+9+".00").size() < 20)
                 {
-                    String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
-                    String fitnessTimeFrom = jComboBoxFitnessTimeFrom.getSelectedIndex()+8+".00";
-                    String fitnessTimeTo = jComboBoxFitnessTimeFrom.getSelectedIndex()+9+".00";
-                    insert.JDBCInsertFacility(finalGuestID, tempFacID, fitnessDate, fitnessTimeFrom, fitnessTimeTo, "N");
-                    jLabelFitnessErrorMessageBook1.setVisible(false);  
-                    jLabelFitnessBookDone.setVisible(true);
+                        String fitnessDate = (String)jComboBoxFitnessSelectDate.getSelectedItem();
+                        String fitnessTimeFrom = jComboBoxFitnessTimeFrom.getSelectedIndex()+8+".00";
+                        String fitnessTimeTo = jComboBoxFitnessTimeFrom.getSelectedIndex()+9+".00";
+                        insert.JDBCInsertFacility(finalGuestID, tempFacID, fitnessDate, fitnessTimeFrom, fitnessTimeTo, "N");
+                        jLabelFitnessErrorMessageBook1.setVisible(false);  
+                        jLabelFitnessBookDone.setVisible(true);
 
                 }else{waitNoPop();}
+            } else {jLabelFitnessErrorMessageBook1.setText("You have booked too many facilities today");
+                    jLabelFitnessErrorMessageBook1.setVisible(true);}
         } else {
             jLabelFitnessErrorMessageBook1.setText("You have already booked this");
             jLabelFitnessErrorMessageBook1.setVisible(true);
@@ -2464,18 +2496,22 @@ public class Facilitet_GUI extends javax.swing.JFrame
         if(doubleBook(tempFacID, jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
                 jComboBoxVolleyballTimeFrom.getSelectedIndex()+8+".00",
                 jComboBoxVolleyballTimeFrom.getSelectedIndex()+9+".00") == false) {
-            if(select.getfacAvail(tempFacID, jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
-                    jComboBoxVolleyballTimeFrom.getSelectedIndex()+8+".00",
-                    jComboBoxVolleyballTimeFrom.getSelectedIndex()+9+".00").size() < 12) {
+            if(bookLimitReached(jComboBoxVolleyballSelectDate.getSelectedItem().toString()) ==false)
+            {
+                if(select.getfacAvail(tempFacID, jComboBoxVolleyballSelectDate.getSelectedItem().toString(),
+                        jComboBoxVolleyballTimeFrom.getSelectedIndex()+8+".00",
+                        jComboBoxVolleyballTimeFrom.getSelectedIndex()+9+".00").size() < 12) {
 
-                        jLabelVolleyballErrorMessageBook.setVisible(false);
-                        String volleyballDate = (String)jComboBoxVolleyballSelectDate.getSelectedItem();
-                        String volleyTimeFrom = jComboBoxVolleyballTimeFrom.getSelectedIndex()+8+".00";
-                        String volleyTimeTo = jComboBoxVolleyballTimeFrom.getSelectedIndex()+9+".00";
-                        insert.JDBCInsertFacility(finalGuestID, tempFacID, volleyballDate, volleyTimeFrom, volleyTimeTo, "N");
-                        jLabelVolleyballBookDone.setVisible(true);
+                            jLabelVolleyballErrorMessageBook.setVisible(false);
+                            String volleyballDate = (String)jComboBoxVolleyballSelectDate.getSelectedItem();
+                            String volleyTimeFrom = jComboBoxVolleyballTimeFrom.getSelectedIndex()+8+".00";
+                            String volleyTimeTo = jComboBoxVolleyballTimeFrom.getSelectedIndex()+9+".00";
+                            insert.JDBCInsertFacility(finalGuestID, tempFacID, volleyballDate, volleyTimeFrom, volleyTimeTo, "N");
+                            jLabelVolleyballBookDone.setVisible(true);
 
-            } else {waitNoPop();}
+                } else {waitNoPop();}
+            } else {jLabelVolleyballErrorMessageBook.setText("You have booked too many facilities today");
+                    jLabelVolleyballErrorMessageBook.setVisible(true);}
         } else {
             jLabelVolleyballErrorMessageBook.setText("You have already booked this");
             jLabelVolleyballErrorMessageBook.setVisible(true);
@@ -2497,27 +2533,31 @@ public class Facilitet_GUI extends javax.swing.JFrame
                 jComboBoxTennisTimeFrom.getSelectedIndex()+8+".00", 
                 jComboBoxTennisTimeFrom.getSelectedIndex()+9+".00") == false ) 
         {
-            if(tempGetFac.size() < 6)
-                    {
-                        jLabelTennisErrorMessageBook.setVisible(false);
-                        jLabelTennisErrorMessageNoHours.setVisible(false);
-                        if(jCheckBoxTennisInstruct.isSelected()){
-                            String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem(); //tennisballdate? Whaaaaaaaaaaaaat
-                            String tennisTimeFrom = jComboBoxTennisTimeFrom.getSelectedIndex()+8+".00";
-                            String tennisTimeTo = jComboBoxTennisTimeFrom.getSelectedIndex()+9+".00";
-                            insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "Y");
-                            insert.JDBCInsertInstructorCost(finalGuestID, "1", Integer.parseInt(tempFacID));
-                            jLabelTennisErrorMessageNoHours.setVisible(false); 
-                            jLabelTennisBookDone.setVisible(true);
-                        }else{
-                            String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem();
-                            String tennisTimeFrom = jComboBoxTennisTimeFrom.getSelectedIndex()+8+".00";
-                            String tennisTimeTo = jComboBoxTennisTimeFrom.getSelectedIndex()+9+".00";
-                            insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "N");
-                            insert.JDBCInsertInstructorCost(finalGuestID, "0", Integer.parseInt(tempFacID));
-                            jLabelTennisBookDone.setVisible(true);
-                        }       
-                    } else {waitNoPop();}
+            if(bookLimitReached(jComboBoxTennisSelectDate.getSelectedItem().toString())==false)
+            {
+                if(tempGetFac.size() < 6)
+                {
+                    jLabelTennisErrorMessageBook.setVisible(false);
+                    jLabelTennisErrorMessageNoHours.setVisible(false);
+                    if(jCheckBoxTennisInstruct.isSelected()){
+                        String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem(); //tennisballdate? Whaaaaaaaaaaaaat
+                        String tennisTimeFrom = jComboBoxTennisTimeFrom.getSelectedIndex()+8+".00";
+                        String tennisTimeTo = jComboBoxTennisTimeFrom.getSelectedIndex()+9+".00";
+                        insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "Y");
+                        insert.JDBCInsertInstructorCost(finalGuestID, "1", Integer.parseInt(tempFacID));
+                        jLabelTennisErrorMessageNoHours.setVisible(false); 
+                        jLabelTennisBookDone.setVisible(true);
+                    }else{
+                        String tennisballDate = (String)jComboBoxTennisSelectDate.getSelectedItem();
+                        String tennisTimeFrom = jComboBoxTennisTimeFrom.getSelectedIndex()+8+".00";
+                        String tennisTimeTo = jComboBoxTennisTimeFrom.getSelectedIndex()+9+".00";
+                        insert.JDBCInsertFacility(finalGuestID, tempFacID, tennisballDate, tennisTimeFrom, tennisTimeTo, "N");
+                        insert.JDBCInsertInstructorCost(finalGuestID, "0", Integer.parseInt(tempFacID));
+                        jLabelTennisBookDone.setVisible(true);
+                    }       
+                } else {waitNoPop();}
+            } else {jLabelTennisErrorMessageBook.setText("You have booked too many facilities today");
+                    jLabelTennisErrorMessageBook.setVisible(true);}
         } else {
             jLabelTennisErrorMessageBook.setText("You have already booked this");
             jLabelTennisErrorMessageBook.setVisible(true);
@@ -2658,7 +2698,6 @@ public class Facilitet_GUI extends javax.swing.JFrame
          tempGetFac = select.getfacAvail("6", jComboBoxVolleyballSelectDate.getSelectedItem().toString(), 
                 jComboBoxVolleyballTimeFrom.getSelectedIndex()+8+".00", 
                 jComboBoxVolleyballTimeFrom.getSelectedIndex()+9+".00");
-         System.out.println(Integer.toString(tempGetFac.size()));
          jLabelVolleyballNoSign.setText(Integer.toString(tempGetFac.size()));
     }//GEN-LAST:event_jButtonVolleyballRefreshAmountActionPerformed
 
