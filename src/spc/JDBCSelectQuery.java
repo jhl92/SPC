@@ -787,7 +787,8 @@ public class JDBCSelectQuery
             stmt = conn.createStatement();
 
             rs = stmt.executeQuery("SELECT FACBOOK.GUESTID, FACBOOK.FACID, "
-                    + "FACILITY.FACTYPE, FACBOOK.FACDATE, FACBOOK.TIMESTART, FACBOOK.TIMEEND "
+                    + "FACILITY.FACTYPE, FACBOOK.FACDATE, FACBOOK.TIMESTART, FACBOOK.TIMEEND, "
+                    + "FACBOOK.INSTRUCTOR "
                     + "FROM FACBOOK INNER JOIN FACILITY ON FACBOOK.FACID = FACILITY.FACID "
                     + "WHERE FACBOOK.GUESTID = UPPER('" + guestID + "') ORDER BY FACBOOK.FACDATE");
             while (rs.next()){
@@ -797,7 +798,8 @@ public class JDBCSelectQuery
                 String rsFacDate = rs.getString("FacDate");
                 String rsTimeStart = rs.getString("TimeStart");
                 String rsTimeEnd = rs.getString("TimeEnd");
-                BookedOverviewConstructor bookOverview = new BookedOverviewConstructor(rsGuestID, rsFacID, rsFacType, rsFacDate, rsTimeStart, rsTimeEnd);
+                String rsInstructor = rs.getString("Instructor");
+                BookedOverviewConstructor bookOverview = new BookedOverviewConstructor(rsGuestID, rsFacID, rsFacType, rsFacDate, rsTimeStart, rsTimeEnd, rsInstructor);
                 bookOverviewForGuest.add(bookOverview);
             }
             return bookOverviewForGuest;
