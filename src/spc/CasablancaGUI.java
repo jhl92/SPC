@@ -2981,6 +2981,10 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
+        jDialogRequestDeleteBooking.setMinimumSize(new java.awt.Dimension(295, 161));
+
+        jPanel10.setMinimumSize(new java.awt.Dimension(295, 161));
+
         jLabelRequestDeleteBooking.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelRequestDeleteBooking.setText("<html>To change this booking, the booking will be deleted and the Booking-window will open in order for you change roomtype and the bookings start- or end dates.</html>");
 
@@ -3027,18 +3031,18 @@ public class CasablancaGUI extends javax.swing.JFrame
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonRequestContinue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonRequestCancel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jDialogRequestDeleteBookingLayout = new javax.swing.GroupLayout(jDialogRequestDeleteBooking.getContentPane());
         jDialogRequestDeleteBooking.getContentPane().setLayout(jDialogRequestDeleteBookingLayout);
         jDialogRequestDeleteBookingLayout.setHorizontalGroup(
             jDialogRequestDeleteBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jDialogRequestDeleteBookingLayout.setVerticalGroup(
             jDialogRequestDeleteBookingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -5845,7 +5849,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 546, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 546, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -7684,6 +7688,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             jLabelRequestDeleteBooking.setText("<html>To change this booking, the booking will be deleted and the Booking-window will open in order for you change roomtype aswell as the bookings start- or end dates.</html>");
             jDialogRequestDeleteBooking.setVisible(true);
+            jDialogRequestDeleteBooking.setAlwaysOnTop(true);
         }
     }//GEN-LAST:event_jButtonDetailsChangeBookingActionPerformed
 
