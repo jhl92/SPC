@@ -799,7 +799,8 @@ public class JDBCSelectQuery
                 String rsTimeStart = rs.getString("TimeStart");
                 String rsTimeEnd = rs.getString("TimeEnd");
                 String rsInstructor = rs.getString("Instructor");
-                BookedOverviewConstructor bookOverview = new BookedOverviewConstructor(rsGuestID, rsFacID, rsFacType, rsFacDate, rsTimeStart, rsTimeEnd, rsInstructor);
+                BookedOverviewConstructor bookOverview = new BookedOverviewConstructor(rsGuestID, 
+                        rsFacID, rsFacType, rsFacDate, rsTimeStart, rsTimeEnd, rsInstructor);
                 bookOverviewForGuest.add(bookOverview);
             }
             return bookOverviewForGuest;
