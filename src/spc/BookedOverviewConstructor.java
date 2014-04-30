@@ -10,41 +10,16 @@ package spc;
  */
 public class BookedOverviewConstructor
 {
-    private String guestID, facID, facType, facDate, timeStart, timeEnd;
-
-    public void setGuestID(String guestID)
-    {
-        this.guestID = guestID;
-    }
-
-    public void setFacID(String facID)
-    {
-        this.facID = facID;
-    }
-
-    public void setFacType(String facType)
-    {
-        this.facType = facType;
-    }
-
-    public void setFacDate(String facDate)
-    {
-        this.facDate = facDate;
-    }
-
-    public void setTimeStart(String timeStart)
-    {
-        this.timeStart = timeStart;
-    }
-
-    public void setTimeEnd(String timeEnd)
-    {
-        this.timeEnd = timeEnd;
-    }
+    private String guestID, facID, facType, facDate, timeStart, timeEnd, instructor;
 
     public String getGuestID()
     {
         return guestID;
+    }
+
+    public void setGuestID(String guestID)
+    {
+        this.guestID = guestID;
     }
 
     public String getFacID()
@@ -52,9 +27,19 @@ public class BookedOverviewConstructor
         return facID;
     }
 
+    public void setFacID(String facID)
+    {
+        this.facID = facID;
+    }
+
     public String getFacType()
     {
         return facType;
+    }
+
+    public void setFacType(String facType)
+    {
+        this.facType = facType;
     }
 
     public String getFacDate()
@@ -62,9 +47,19 @@ public class BookedOverviewConstructor
         return facDate;
     }
 
+    public void setFacDate(String facDate)
+    {
+        this.facDate = facDate;
+    }
+
     public String getTimeStart()
     {
         return timeStart;
+    }
+
+    public void setTimeStart(String timeStart)
+    {
+        this.timeStart = timeStart;
     }
 
     public String getTimeEnd()
@@ -72,7 +67,22 @@ public class BookedOverviewConstructor
         return timeEnd;
     }
 
-    public BookedOverviewConstructor(String guestID, String facID, String facType, String facDate, String timeStart, String timeEnd)
+    public void setTimeEnd(String timeEnd)
+    {
+        this.timeEnd = timeEnd;
+    }
+
+    public String getInstructor()
+    {
+        return instructor;
+    }
+
+    public void setInstructor(String instructor)
+    {
+        this.instructor = instructor;
+    }
+
+    public BookedOverviewConstructor(String guestID, String facID, String facType, String facDate, String timeStart, String timeEnd, String instructor)
     {
         this.guestID = guestID;
         this.facID = facID;
@@ -80,7 +90,6 @@ public class BookedOverviewConstructor
         this.facDate = facDate;
         this.timeStart = timeStart;
         this.timeEnd = timeEnd;
-    }
-    
-          
+        this.instructor = instructor;
+    }      
 }

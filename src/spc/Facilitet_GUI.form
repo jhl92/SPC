@@ -855,14 +855,13 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jScrollPane1" min="-2" pref="374" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" max="32767" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="jButtonOverviewDeleteBooking1" max="32767" attributes="0"/>
                                       <Component id="jButtonOverviewEditBooking1" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jButtonOverviewHelp" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
@@ -997,12 +996,8 @@
                                           <Component id="jComboBoxOverviewSelectDate" min="-2" pref="169" max="-2" attributes="0"/>
                                           <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                                           <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-                                          <Component id="jComboBoxOverviewTimeFrom" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabel38" min="-2" pref="20" max="-2" attributes="0"/>
-                                          <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
-                                          <Component id="jComboBoxOverviewTimeTo" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jComboBoxOverviewTimeFrom" min="-2" pref="137" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jComboBoxOverviewFacility" min="-2" pref="106" max="-2" attributes="0"/>
@@ -1012,7 +1007,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="80" max="32767" attributes="0"/>
+                          <EmptySpace pref="93" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1041,11 +1036,6 @@
                                       <Component id="jButtonGetWaitOverview" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="jComboBoxOverviewTimeTo" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                  <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane3" pref="98" max="32767" attributes="0"/>
@@ -1055,50 +1045,22 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JComboBox" name="jComboBoxOverviewTimeTo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="12">
-                        <StringItem index="0" value="09.00"/>
-                        <StringItem index="1" value="10.00"/>
-                        <StringItem index="2" value="11.00"/>
-                        <StringItem index="3" value="12.00"/>
-                        <StringItem index="4" value="13.00"/>
-                        <StringItem index="5" value="14.00"/>
-                        <StringItem index="6" value="15.00"/>
-                        <StringItem index="7" value="16.00"/>
-                        <StringItem index="8" value="17.00"/>
-                        <StringItem index="9" value="18.00"/>
-                        <StringItem index="10" value="19.00"/>
-                        <StringItem index="11" value="20.00"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxOverviewTimeToActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel38">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="To"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JComboBox" name="jComboBoxOverviewTimeFrom">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="12">
-                        <StringItem index="0" value="08.00"/>
-                        <StringItem index="1" value="09.00"/>
-                        <StringItem index="2" value="10.00"/>
-                        <StringItem index="3" value="11.00"/>
-                        <StringItem index="4" value="12.00"/>
-                        <StringItem index="5" value="13.00"/>
-                        <StringItem index="6" value="14.00"/>
-                        <StringItem index="7" value="15.00"/>
-                        <StringItem index="8" value="16.00"/>
-                        <StringItem index="9" value="17.00"/>
-                        <StringItem index="10" value="18.00"/>
-                        <StringItem index="11" value="19.00"/>
+                        <StringItem index="0" value="8.00 - 9.00"/>
+                        <StringItem index="1" value="9.00 - 10.00"/>
+                        <StringItem index="2" value="10.00 - 11.00"/>
+                        <StringItem index="3" value="11.00 - 12.00"/>
+                        <StringItem index="4" value="12.00 - 13.00"/>
+                        <StringItem index="5" value="13.00 - 14.00"/>
+                        <StringItem index="6" value="14.00 - 15.00"/>
+                        <StringItem index="7" value="15.00 - 16.00"/>
+                        <StringItem index="8" value="16.00 - 17.00"/>
+                        <StringItem index="9" value="17.00 - 18.00"/>
+                        <StringItem index="10" value="18.00 - 19.00"/>
+                        <StringItem index="11" value="19.00 - 20.00"/>
                       </StringArray>
                     </Property>
                   </Properties>
@@ -1314,26 +1276,21 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                                           <Component id="jComboBoxBadmintonSelectDate" min="-2" pref="169" max="-2" attributes="0"/>
                                           <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                                           <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-                                          <Component id="jComboBoxBadmintonTimeFrom" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jLabel27" min="-2" pref="20" max="-2" attributes="0"/>
-                                          <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
-                                          <Component id="jComboBoxBadmintonTimeTo" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                                          <Component id="jLabelBadmintonCostText" min="-2" pref="290" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabelBadmintonInstructorPrice" min="-2" pref="48" max="-2" attributes="0"/>
+                                          <Component id="jComboBoxBadmintonTimeFrom" min="-2" pref="109" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                                          <Component id="jLabelBadmintonCostText" min="-2" pref="324" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
@@ -1341,7 +1298,6 @@
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace pref="42" max="32767" attributes="0"/>
                                           <Component id="jButtonBookBadminton" min="-2" pref="101" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
@@ -1362,10 +1318,6 @@
                                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
                                           <Component id="jCheckBoxBadmintonInstruct" min="-2" pref="20" max="-2" attributes="0"/>
-                                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                          <Component id="jLabelBadmintonInstructHourLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                                          <Component id="jComboBoxBadmintonInstrucHours" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
@@ -1384,49 +1336,40 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                                          <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                                          <Component id="jComboBoxBadmintonSelectDate" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                                          <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jButtonBadmintonHelp" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                                  <Component id="jComboBoxBadmintonSelectDate" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                                  <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                   <Component id="jComboBoxBadmintonTimeFrom" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                                  <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                                  <Component id="jComboBoxBadmintonTimeTo" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jButtonBadmintonHelp" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                           <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel2" min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="jCheckBoxBadmintonInstruct" min="-2" pref="20" max="-2" attributes="0"/>
-                              <Component id="jLabelBadmintonInstructHourLabel" min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="jComboBoxBadmintonInstrucHours" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabelBadmintonCostText" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelBadmintonInstructorPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jLabelBadmintonCostText" min="-2" max="-2" attributes="0"/>
                               <Component id="jButtonBookBadminton" min="-2" pref="43" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -1466,51 +1409,23 @@
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="12">
-                        <StringItem index="0" value="8.00"/>
-                        <StringItem index="1" value="9.00"/>
-                        <StringItem index="2" value="10.00"/>
-                        <StringItem index="3" value="11.00"/>
-                        <StringItem index="4" value="12.00"/>
-                        <StringItem index="5" value="13.00"/>
-                        <StringItem index="6" value="14.00"/>
-                        <StringItem index="7" value="15.00"/>
-                        <StringItem index="8" value="16.00"/>
-                        <StringItem index="9" value="17.00"/>
-                        <StringItem index="10" value="18.00"/>
-                        <StringItem index="11" value="19.00"/>
+                        <StringItem index="0" value="8.00 - 9.00"/>
+                        <StringItem index="1" value="9.00 - 10.00"/>
+                        <StringItem index="2" value="10.00 - 11.00"/>
+                        <StringItem index="3" value="11.00 - 12.00"/>
+                        <StringItem index="4" value="12.00 - 13.00"/>
+                        <StringItem index="5" value="13.00 - 14.00"/>
+                        <StringItem index="6" value="14.00 - 15.00"/>
+                        <StringItem index="7" value="15.00 - 16.00"/>
+                        <StringItem index="8" value="16.00 - 17.00"/>
+                        <StringItem index="9" value="17.00 - 18.00"/>
+                        <StringItem index="10" value="18.00 - 19.00"/>
+                        <StringItem index="11" value="19.00 - 20.00"/>
                       </StringArray>
                     </Property>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBadmintonTimeFromActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel27">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="To"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBoxBadmintonTimeTo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="12">
-                        <StringItem index="0" value="9.00"/>
-                        <StringItem index="1" value="10.00"/>
-                        <StringItem index="2" value="11.00"/>
-                        <StringItem index="3" value="12.00"/>
-                        <StringItem index="4" value="13.00"/>
-                        <StringItem index="5" value="14.00"/>
-                        <StringItem index="6" value="15.00"/>
-                        <StringItem index="7" value="16.00"/>
-                        <StringItem index="8" value="17.00"/>
-                        <StringItem index="9" value="18.00"/>
-                        <StringItem index="10" value="19.00"/>
-                        <StringItem index="11" value="20.00"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBadmintonTimeToActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="jButtonBadmintonHelp">
@@ -1536,47 +1451,12 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxBadmintonInstructActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabelBadmintonInstructHourLabel">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="...for how many hours?"/>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelBadmintonInstructHourLabel.setVisible(false);"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBoxBadmintonInstrucHours">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="5">
-                        <StringItem index="0" value="0"/>
-                        <StringItem index="1" value="1"/>
-                        <StringItem index="2" value="2"/>
-                        <StringItem index="3" value="3"/>
-                        <StringItem index="4" value="4"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxBadmintonInstrucHoursActionPerformed"/>
-                  </Events>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jComboBoxBadmintonInstrucHours.setVisible(false);"/>
-                  </AuxValues>
-                </Component>
                 <Component class="javax.swing.JLabel" name="jLabelBadmintonCostText">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="The following amount has been added to your bill:"/>
+                    <Property name="text" type="java.lang.String" value="The following amount will be added to your bill: $30"/>
                   </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jLabelBadmintonCostText.setVisible(false);"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabelBadmintonInstructorPrice">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="*cost*"/>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelBadmintonInstructorPrice.setVisible(false);"/>
                   </AuxValues>
                 </Component>
                 <Component class="javax.swing.JButton" name="jButtonBookBadminton">
@@ -1609,6 +1489,19 @@
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="650" y="30" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabelBadmintonBookDone">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor" postCode="jLabelBadmintonBookDone.setVisible(false);">
+                  <Font name="Tahoma" size="12" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Booking accepted!"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="640" y="410" width="270" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -1735,43 +1628,6 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabelGolfInstructHourLabel">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="...for how many hours?"/>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelGolfInstructHourLabel.setVisible(false);"/>
-                      </AuxValues>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="254" y="15" width="-1" height="22"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JComboBox" name="jComboBoxGolfInstrucHours">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="5">
-                            <StringItem index="0" value="0"/>
-                            <StringItem index="1" value="1"/>
-                            <StringItem index="2" value="2"/>
-                            <StringItem index="3" value="3"/>
-                            <StringItem index="4" value="4"/>
-                          </StringArray>
-                        </Property>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxGolfInstrucHoursActionPerformed"/>
-                      </Events>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jComboBoxGolfInstrucHours.setVisible(false);"/>
-                      </AuxValues>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="404" y="15" width="-1" height="-1"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
                     <Component class="javax.swing.JLabel" name="jLabelGolfInstructorDateTimeInfo">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="On which date and time:"/>
@@ -1833,18 +1689,18 @@
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="12">
-                            <StringItem index="0" value="08.00"/>
-                            <StringItem index="1" value="09.00"/>
-                            <StringItem index="2" value="10.00"/>
-                            <StringItem index="3" value="11.00"/>
-                            <StringItem index="4" value="12.00"/>
-                            <StringItem index="5" value="13.00"/>
-                            <StringItem index="6" value="14.00"/>
-                            <StringItem index="7" value="15.00"/>
-                            <StringItem index="8" value="16.00"/>
-                            <StringItem index="9" value="17.00"/>
-                            <StringItem index="10" value="18.00"/>
-                            <StringItem index="11" value="19.00"/>
+                            <StringItem index="0" value="8.00 - 9.00"/>
+                            <StringItem index="1" value="9.00 - 10.00"/>
+                            <StringItem index="2" value="10.00 - 11.00"/>
+                            <StringItem index="3" value="11.00 - 12.00"/>
+                            <StringItem index="4" value="12.00 - 13.00"/>
+                            <StringItem index="5" value="13.00 - 14.00"/>
+                            <StringItem index="6" value="14.00 - 15.00"/>
+                            <StringItem index="7" value="15.00 - 16.00"/>
+                            <StringItem index="8" value="16.00 - 17.00"/>
+                            <StringItem index="9" value="17.00 - 18.00"/>
+                            <StringItem index="10" value="18.00 - 19.00"/>
+                            <StringItem index="11" value="19.00 - 20.00"/>
                           </StringArray>
                         </Property>
                       </Properties>
@@ -1853,48 +1709,7 @@
                       </AuxValues>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="294" y="85" width="-1" height="-1"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabelGolfInstructorTimeTo">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="To:"/>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jLabelGolfInstructorTimeTo.setVisible(false);"/>
-                      </AuxValues>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="364" y="85" width="26" height="20"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JComboBox" name="jComboBoxGolfInstructorTimeTo">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="12">
-                            <StringItem index="0" value="09.00"/>
-                            <StringItem index="1" value="10.00"/>
-                            <StringItem index="2" value="11.00"/>
-                            <StringItem index="3" value="12.00"/>
-                            <StringItem index="4" value="13.00"/>
-                            <StringItem index="5" value="14.00"/>
-                            <StringItem index="6" value="15.00"/>
-                            <StringItem index="7" value="16.00"/>
-                            <StringItem index="8" value="17.00"/>
-                            <StringItem index="9" value="18.00"/>
-                            <StringItem index="10" value="19.00"/>
-                            <StringItem index="11" value="20.00"/>
-                          </StringArray>
-                        </Property>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jComboBoxGolfInstructorTimeTo.setVisible(false);"/>
-                      </AuxValues>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="394" y="85" width="-1" height="-1"/>
+                          <AbsoluteConstraints x="294" y="85" width="100" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -1905,6 +1720,9 @@
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGolfHelpActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButtonGolfHelp.setVisible(false);"/>
+                      </AuxValues>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                           <AbsoluteConstraints x="474" y="85" width="-1" height="-1"/>
@@ -1918,6 +1736,9 @@
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBookGolfActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButtonBookGolf.setVisible(false);"/>
+                      </AuxValues>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                           <AbsoluteConstraints x="441" y="132" width="101" height="43"/>
@@ -1926,7 +1747,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabelGolfCostText">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="The following amount has been added to your bill:"/>
+                        <Property name="text" type="java.lang.String" value="The following amount will be added to your bill: $40"/>
                       </Properties>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelGolfCostText.setVisible(false);"/>
@@ -1937,32 +1758,19 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabelGolfInstructorPrice">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="*cost*"/>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelGolfInstructorPrice.setVisible(false);"/>
-                      </AuxValues>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="324" y="145" width="48" height="-1"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabelGolfErrorMessageNoHours">
+                    <Component class="javax.swing.JLabel" name="jLabelGolfErrorAlreadyBook">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="11" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="You have to specify the number of hours you wish to hire an instructor"/>
+                        <Property name="text" type="java.lang.String" value="You have already booked this"/>
                       </Properties>
                       <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelGolfErrorMessageNoHours.setVisible(false);"/>
+                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelGolfErrorAlreadyBook.setVisible(false);"/>
                       </AuxValues>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="76" y="188" width="418" height="-1"/>
+                          <AbsoluteConstraints x="370" y="190" width="180" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -1977,6 +1785,19 @@
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="620" y="50" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabelGolfBookDone">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor" postCode="jLabelGolfBookDone.setVisible(false);">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Booking accepted!"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="600" y="390" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -2133,13 +1954,9 @@
                                       <Component id="jComboBoxHandballSelectDate" min="-2" pref="154" max="-2" attributes="0"/>
                                       <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
                                       <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                                      <Component id="jComboBoxHandballTimeFrom" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                                      <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-                                      <Component id="jComboBoxHandballTimeTo" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                      <Component id="jComboBoxHandballTimeFrom" min="-2" pref="117" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                                       <Component id="jButtonHandBallHelp" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -2147,7 +1964,7 @@
                                       <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="71" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
@@ -2163,35 +1980,31 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                                      <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                                              <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                                              <Component id="jComboBoxHandballSelectDate" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                                              <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jButtonHandBallHelp" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                                      <Component id="jComboBoxHandballSelectDate" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                                      <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       <Component id="jComboBoxHandballTimeFrom" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                                      <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                                      <Component id="jComboBoxHandballTimeTo" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jButtonHandBallHelp" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                               <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="25" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -2230,43 +2043,18 @@
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="12">
-                            <StringItem index="0" value="08.00"/>
-                            <StringItem index="1" value="09.00"/>
-                            <StringItem index="2" value="10.00"/>
-                            <StringItem index="3" value="11.00"/>
-                            <StringItem index="4" value="12.00"/>
-                            <StringItem index="5" value="13.00"/>
-                            <StringItem index="6" value="14.00"/>
-                            <StringItem index="7" value="15.00"/>
-                            <StringItem index="8" value="16.00"/>
-                            <StringItem index="9" value="17.00"/>
-                            <StringItem index="10" value="18.00"/>
-                            <StringItem index="11" value="19.00"/>
-                          </StringArray>
-                        </Property>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel55">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="To:"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JComboBox" name="jComboBoxHandballTimeTo">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="12">
-                            <StringItem index="0" value="09.00"/>
-                            <StringItem index="1" value="10.00"/>
-                            <StringItem index="2" value="11.00"/>
-                            <StringItem index="3" value="12.00"/>
-                            <StringItem index="4" value="13.00"/>
-                            <StringItem index="5" value="14.00"/>
-                            <StringItem index="6" value="15.00"/>
-                            <StringItem index="7" value="16.00"/>
-                            <StringItem index="8" value="17.00"/>
-                            <StringItem index="9" value="18.00"/>
-                            <StringItem index="10" value="19.00"/>
-                            <StringItem index="11" value="20.00"/>
+                            <StringItem index="0" value="8.00 - 9.00"/>
+                            <StringItem index="1" value="9.00 - 10.00"/>
+                            <StringItem index="2" value="10.00 - 11.00"/>
+                            <StringItem index="3" value="11.00 - 12.00"/>
+                            <StringItem index="4" value="12.00 - 13.00"/>
+                            <StringItem index="5" value="13.00 - 14.00"/>
+                            <StringItem index="6" value="14.00 - 15.00"/>
+                            <StringItem index="7" value="15.00 - 16.00"/>
+                            <StringItem index="8" value="16.00 - 17.00"/>
+                            <StringItem index="9" value="17.00 - 18.00"/>
+                            <StringItem index="10" value="18.00 - 19.00"/>
+                            <StringItem index="11" value="19.00 - 20.00"/>
                           </StringArray>
                         </Property>
                       </Properties>
@@ -2305,6 +2093,19 @@
                     </Component>
                   </SubComponents>
                 </Container>
+                <Component class="javax.swing.JLabel" name="jLabelHandballBookDone">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor" postCode="jLabelHandballBookDone.setVisible(false);">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Booking accepted!"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="490" y="440" width="270" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
               </SubComponents>
             </Container>
             <Component class="javax.swing.JLabel" name="jLabel32">
@@ -2627,59 +2428,24 @@
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="12">
-                        <StringItem index="0" value="08.00"/>
-                        <StringItem index="1" value="09.00"/>
-                        <StringItem index="2" value="10.00"/>
-                        <StringItem index="3" value="11.00"/>
-                        <StringItem index="4" value="12.00"/>
-                        <StringItem index="5" value="13.00"/>
-                        <StringItem index="6" value="14.00"/>
-                        <StringItem index="7" value="15.00"/>
-                        <StringItem index="8" value="16.00"/>
-                        <StringItem index="9" value="17.00"/>
-                        <StringItem index="10" value="18.00"/>
-                        <StringItem index="11" value="19.00"/>
+                        <StringItem index="0" value="8.00 - 9.00"/>
+                        <StringItem index="1" value="9.00 - 10.00"/>
+                        <StringItem index="2" value="10.00 - 11.00"/>
+                        <StringItem index="3" value="11.00 - 12.00"/>
+                        <StringItem index="4" value="12.00 - 13.00"/>
+                        <StringItem index="5" value="13.00 - 14.00"/>
+                        <StringItem index="6" value="14.00 - 15.00"/>
+                        <StringItem index="7" value="15.00 - 16.00"/>
+                        <StringItem index="8" value="16.00 - 17.00"/>
+                        <StringItem index="9" value="17.00 - 18.00"/>
+                        <StringItem index="10" value="18.00 - 19.00"/>
+                        <StringItem index="11" value="19.00 - 20.00"/>
                       </StringArray>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="299" y="50" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel77">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="To"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="370" y="53" width="20" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBoxVolleyballTimeTo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="12">
-                        <StringItem index="0" value="09.00"/>
-                        <StringItem index="1" value="10.00"/>
-                        <StringItem index="2" value="11.00"/>
-                        <StringItem index="3" value="12.00"/>
-                        <StringItem index="4" value="13.00"/>
-                        <StringItem index="5" value="14.00"/>
-                        <StringItem index="6" value="15.00"/>
-                        <StringItem index="7" value="16.00"/>
-                        <StringItem index="8" value="17.00"/>
-                        <StringItem index="9" value="18.00"/>
-                        <StringItem index="10" value="19.00"/>
-                        <StringItem index="11" value="20.00"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="395" y="50" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="299" y="50" width="110" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -2779,6 +2545,19 @@
                 </Constraint>
               </Constraints>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabelVolleyballBookDone">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor" postCode="jLabelVolleyballBookDone.setVisible(false);">
+                  <Font name="Tahoma" size="12" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Booking accepted!"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="570" y="440" width="270" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel7Tennis">
@@ -2875,59 +2654,24 @@
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="12">
-                        <StringItem index="0" value="08.00"/>
-                        <StringItem index="1" value="09.00"/>
-                        <StringItem index="2" value="10.00"/>
-                        <StringItem index="3" value="11.00"/>
-                        <StringItem index="4" value="12.00"/>
-                        <StringItem index="5" value="13.00"/>
-                        <StringItem index="6" value="14.00"/>
-                        <StringItem index="7" value="15.00"/>
-                        <StringItem index="8" value="16.00"/>
-                        <StringItem index="9" value="17.00"/>
-                        <StringItem index="10" value="18.00"/>
-                        <StringItem index="11" value="19.00"/>
+                        <StringItem index="0" value="8.00 - 9.00"/>
+                        <StringItem index="1" value="9.00 - 10.00"/>
+                        <StringItem index="2" value="10.00 - 11.00"/>
+                        <StringItem index="3" value="11.00 - 12.00"/>
+                        <StringItem index="4" value="12.00 - 13.00"/>
+                        <StringItem index="5" value="13.00 - 14.00"/>
+                        <StringItem index="6" value="14.00 - 15.00"/>
+                        <StringItem index="7" value="15.00 - 16.00"/>
+                        <StringItem index="8" value="16.00 - 17.00"/>
+                        <StringItem index="9" value="17.00 - 18.00"/>
+                        <StringItem index="10" value="18.00 - 19.00"/>
+                        <StringItem index="11" value="19.00 - 20.00"/>
                       </StringArray>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="300" y="70" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel87">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="To"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="370" y="70" width="20" height="20"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBoxTennisTimeTo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="12">
-                        <StringItem index="0" value="09.00"/>
-                        <StringItem index="1" value="10.00"/>
-                        <StringItem index="2" value="11.00"/>
-                        <StringItem index="3" value="12.00"/>
-                        <StringItem index="4" value="13.00"/>
-                        <StringItem index="5" value="14.00"/>
-                        <StringItem index="6" value="15.00"/>
-                        <StringItem index="7" value="16.00"/>
-                        <StringItem index="8" value="17.00"/>
-                        <StringItem index="9" value="18.00"/>
-                        <StringItem index="10" value="19.00"/>
-                        <StringItem index="11" value="20.00"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="400" y="70" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="300" y="70" width="140" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -2974,46 +2718,9 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabelTennisInstructHourLabel">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="...for how many hours?"/>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelTennisInstructHourLabel.setVisible(false);"/>
-                  </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="240" y="140" width="-1" height="20"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBoxTennisInstrucHours">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="5">
-                        <StringItem index="0" value="0"/>
-                        <StringItem index="1" value="1"/>
-                        <StringItem index="2" value="2"/>
-                        <StringItem index="3" value="3"/>
-                        <StringItem index="4" value="4"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxTennisInstrucHoursActionPerformed"/>
-                  </Events>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jComboBoxTennisInstrucHours.setVisible(false);"/>
-                  </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="380" y="140" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
                 <Component class="javax.swing.JLabel" name="jLabelTennisCostText">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="The following amount has been added to your bill:"/>
+                    <Property name="text" type="java.lang.String" value="The following amount will be added to your bill: $30"/>
                   </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jLabelTennisCostText.setVisible(false);"/>
@@ -3021,19 +2728,6 @@
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="10" y="190" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabelTennisInstructorPrice">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="*cost*"/>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelTennisInstructorPrice.setVisible(false);"/>
-                  </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="300" y="190" width="48" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -3131,6 +2825,19 @@
                 </Constraint>
               </Constraints>
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabelTennisBookDone">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor" postCode="jLabelTennisBookDone.setVisible(false);">
+                  <Font name="Tahoma" size="12" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Booking accepted!"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="580" y="410" width="270" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel5Swimming">
@@ -3190,7 +2897,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel114">
               <Properties>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;Useful info: &lt;br&gt;There are no player limits for this facility."/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;Useful info: &lt;br&gt;There are no guest limits for this facility."/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3233,40 +2940,6 @@
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="14" y="15" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabelSwimmingInstructHourLabel">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="...for how many hours?"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="257" y="18" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBoxSwimmingInstrucHours">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="5">
-                        <StringItem index="0" value="0"/>
-                        <StringItem index="1" value="1"/>
-                        <StringItem index="2" value="2"/>
-                        <StringItem index="3" value="3"/>
-                        <StringItem index="4" value="4"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxSwimmingInstrucHoursActionPerformed"/>
-                  </Events>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jComboBoxSwimmingInstrucHours.setVisible(false);"/>
-                  </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="402" y="15" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -3328,18 +3001,18 @@
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="12">
-                        <StringItem index="0" value="08.00"/>
-                        <StringItem index="1" value="09.00"/>
-                        <StringItem index="2" value="10.00"/>
-                        <StringItem index="3" value="11.00"/>
-                        <StringItem index="4" value="12.00"/>
-                        <StringItem index="5" value="13.00"/>
-                        <StringItem index="6" value="14.00"/>
-                        <StringItem index="7" value="15.00"/>
-                        <StringItem index="8" value="16.00"/>
-                        <StringItem index="9" value="17.00"/>
-                        <StringItem index="10" value="18.00"/>
-                        <StringItem index="11" value="19.00"/>
+                        <StringItem index="0" value="8.00 - 9.00"/>
+                        <StringItem index="1" value="9.00 - 10.00"/>
+                        <StringItem index="2" value="10.00 - 11.00"/>
+                        <StringItem index="3" value="11.00 - 12.00"/>
+                        <StringItem index="4" value="12.00 - 13.00"/>
+                        <StringItem index="5" value="13.00 - 14.00"/>
+                        <StringItem index="6" value="14.00 - 15.00"/>
+                        <StringItem index="7" value="15.00 - 16.00"/>
+                        <StringItem index="8" value="16.00 - 17.00"/>
+                        <StringItem index="9" value="17.00 - 18.00"/>
+                        <StringItem index="10" value="18.00 - 19.00"/>
+                        <StringItem index="11" value="19.00 - 20.00"/>
                       </StringArray>
                     </Property>
                   </Properties>
@@ -3348,55 +3021,17 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="283" y="92" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="283" y="92" width="130" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabelSwimmingInstructorTimeTo">
+                <Component class="javax.swing.JLabel" name="jLabelSwimmingInstructorPrice">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="To:"/>
+                    <Property name="text" type="java.lang.String" value="The following amount will be added to your bill: $40 "/>
                   </Properties>
                   <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jLabelSwimmingInstructorTimeTo.setVisible(false);"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelSwimmingInstructorPrice.setVisible(false);"/>
                   </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="360" y="95" width="29" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBoxSwimmingInstructorTimeTo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="12">
-                        <StringItem index="0" value="09.00"/>
-                        <StringItem index="1" value="10.00"/>
-                        <StringItem index="2" value="11.00"/>
-                        <StringItem index="3" value="12.00"/>
-                        <StringItem index="4" value="13.00"/>
-                        <StringItem index="5" value="14.00"/>
-                        <StringItem index="6" value="15.00"/>
-                        <StringItem index="7" value="16.00"/>
-                        <StringItem index="8" value="17.00"/>
-                        <StringItem index="9" value="18.00"/>
-                        <StringItem index="10" value="19.00"/>
-                        <StringItem index="11" value="20.00"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jComboBoxSwimmingInstructorTimeTo.setVisible(false);"/>
-                  </AuxValues>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="394" y="92" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel40">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="The cost for the instructor has been added to your bill: "/>
-                  </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="10" y="150" width="-1" height="-1"/>
@@ -3410,6 +3045,9 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBookSwimmingActionPerformed"/>
                   </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButtonBookSwimming.setVisible(false);"/>
+                  </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="425" y="134" width="101" height="43"/>
@@ -3423,19 +3061,12 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSwimmingHelpActionPerformed"/>
                   </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButtonSwimmingHelp.setVisible(false);"/>
+                  </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="469" y="91" width="-1" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabelSwimmingInstructorPrice">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="*cost*"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="330" y="150" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -3446,14 +3077,14 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="You have to specify the number of hours you wish to hire an instructor"/>
+                <Property name="text" type="java.lang.String" value="You have already booked this"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabelSwimmingErrorMessageNoHours.setVisible(false);"/>
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="287" y="440" width="414" height="-1"/>
+                  <AbsoluteConstraints x="410" y="440" width="180" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -3466,6 +3097,19 @@
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="620" y="60" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabelSwimingBookDone">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor" postCode="jLabelSwimingBookDone.setVisible(false);">
+                  <Font name="Tahoma" size="12" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Booking accepted!"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="580" y="410" width="270" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -3583,13 +3227,9 @@
                                       <Component id="jComboBoxFitnessSelectDate" min="-2" pref="146" max="-2" attributes="0"/>
                                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                                       <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
-                                      <Component id="jComboBoxFitnessTimeFrom" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
-                                      <Component id="jLabel34" min="-2" pref="20" max="-2" attributes="0"/>
-                                      <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-                                      <Component id="jComboBoxFitnessTimeTo" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Component id="jComboBoxFitnessTimeFrom" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                       <Component id="jButtonFitnessHelp" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
@@ -3620,16 +3260,10 @@
                                       <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jComboBoxFitnessTimeFrom" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jComboBoxFitnessTimeTo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButtonFitnessHelp" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jButtonFitnessHelp" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
@@ -3674,49 +3308,24 @@
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="12">
-                            <StringItem index="0" value="08.00"/>
-                            <StringItem index="1" value="09.00"/>
-                            <StringItem index="2" value="10.00"/>
-                            <StringItem index="3" value="11.00"/>
-                            <StringItem index="4" value="12.00"/>
-                            <StringItem index="5" value="13.00"/>
-                            <StringItem index="6" value="14.00"/>
-                            <StringItem index="7" value="15.00"/>
-                            <StringItem index="8" value="16.00"/>
-                            <StringItem index="9" value="17.00"/>
-                            <StringItem index="10" value="18.00"/>
-                            <StringItem index="11" value="19.00"/>
+                            <StringItem index="0" value="8.00 - 9.00"/>
+                            <StringItem index="1" value="9.00 - 10.00"/>
+                            <StringItem index="2" value="10.00 - 11.00"/>
+                            <StringItem index="3" value="11.00 - 12.00"/>
+                            <StringItem index="4" value="12.00 - 13.00"/>
+                            <StringItem index="5" value="13.00 - 14.00"/>
+                            <StringItem index="6" value="14.00 - 15.00"/>
+                            <StringItem index="7" value="15.00 - 16.00"/>
+                            <StringItem index="8" value="16.00 - 17.00"/>
+                            <StringItem index="9" value="17.00 - 18.00"/>
+                            <StringItem index="10" value="18.00 - 19.00"/>
+                            <StringItem index="11" value="19.00 - 20.00"/>
                           </StringArray>
                         </Property>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxFitnessTimeFromActionPerformed"/>
                       </Events>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel34">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="To"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JComboBox" name="jComboBoxFitnessTimeTo">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="12">
-                            <StringItem index="0" value="09.00"/>
-                            <StringItem index="1" value="10.00"/>
-                            <StringItem index="2" value="11.00"/>
-                            <StringItem index="3" value="12.00"/>
-                            <StringItem index="4" value="13.00"/>
-                            <StringItem index="5" value="14.00"/>
-                            <StringItem index="6" value="15.00"/>
-                            <StringItem index="7" value="16.00"/>
-                            <StringItem index="8" value="17.00"/>
-                            <StringItem index="9" value="18.00"/>
-                            <StringItem index="10" value="19.00"/>
-                            <StringItem index="11" value="20.00"/>
-                          </StringArray>
-                        </Property>
-                      </Properties>
                     </Component>
                     <Component class="javax.swing.JButton" name="jButtonBookFitness">
                       <Properties>
@@ -3758,6 +3367,19 @@
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="640" y="70" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabelFitnessBookDone">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor" postCode="jLabelFitnessBookDone.setVisible(false);">
+                      <Font name="Tahoma" size="12" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Booking accepted!"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="620" y="410" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
