@@ -31,10 +31,8 @@ public class CasablancaGUI extends javax.swing.JFrame
 {
     Random r = new Random();
     Calendar cal = new GregorianCalendar();
-    private Calendar startDate = Calendar.getInstance();
-    private Calendar endDate = Calendar.getInstance();
-    private Calendar startDateTemp = Calendar.getInstance();
-    private Calendar endDateTemp = Calendar.getInstance();
+    private Calendar bookRoomStartDate = Calendar.getInstance();
+    private Calendar bookRoomEndDate = Calendar.getInstance();
     private Calendar SearchRoomSpecifiedDate = Calendar.getInstance();
     SPC spc = new SPC();
     JDBCInsertQuery jdcbinsert = new JDBCInsertQuery();
@@ -47,8 +45,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private ArrayList<InfoObjectConstructor> guestList = new ArrayList<>();
     private ArrayList<RoomAvaBookConstructor> roomList = new ArrayList<>();
     private ArrayList<RoomTypeIDConstructor> roomListInfo = new ArrayList<>();
-    private boolean SearchCustomerResult = false;
-    private boolean newGuestID = true;
     private ArrayList<String> ovcShowRoomsList = new ArrayList<>();
     private Calendar ovcStartDate = Calendar.getInstance();
     private int ovcListIndex = 0;
@@ -72,7 +68,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     private final ImageIcon IconFreeBook = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-Free-CheckIn.png"));
     private final ImageIcon IconBookFree = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-Free.png"));
     private final ImageIcon IconBookBook = new javax.swing.ImageIcon(getClass().getResource("/pictures/OVC-CheckOut-CheckIn.png"));
-    private int currentWeekDay;
     private int currentDate;
     private int currentMonth;
     private int currentYear;
@@ -6100,7 +6095,6 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
             if(guestList.size() < 1)
             {
-                SearchCustomerResult = false;
                 writeList.addElement("No results found...");
                 jListSearchCustomerResult.setModel(writeList);
             }
@@ -6243,34 +6237,31 @@ public class CasablancaGUI extends javax.swing.JFrame
 
     private void jButtonBookingCreateIDActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookingCreateIDActionPerformed
     {//GEN-HEADEREND:event_jButtonBookingCreateIDActionPerformed
-        if (newGuestID)
+        //Creates a new random guestID and makes sure that it does not exist already
+        boolean IDcreated = false;
+        String IDtemp = "";
+        ArrayList<String> GuestIDtemp = new ArrayList<>();
+        GuestIDtemp = jdcbselect.checkIdAva();
+        while (IDcreated == false)
         {
-            //Creates a new random guestID and makes sure that it does not exist already
-            boolean IDcreated = false;
-            String IDtemp = "";
-            ArrayList<InfoObjectConstructor> GuestIDtemp = new ArrayList<>();
-            GuestIDtemp = jdcbselect.checkIdAva();
-            while (IDcreated == false)
+            String characters = "123456789ABCDEFGHIJKLMNPQRSTUVWXYZ";
+            int i1 = r.nextInt(34);
+            int i2 = r.nextInt(34);
+            int i3 = r.nextInt(34);
+            int i4 = r.nextInt(34);
+            int i5 = r.nextInt(34);
+            String s1 = characters.substring(i1, (i1 + 1));
+            String s2 = characters.substring(i2, (i2 + 1));
+            String s3 = characters.substring(i3, (i3 + 1));
+            String s4 = characters.substring(i4, (i4 + 1));
+            String s5 = characters.substring(i5, (i5 + 1));
+            IDtemp = (s1 + s2 + s3 + s4 + s5).toString();
+            if (!GuestIDtemp.contains(IDtemp))
             {
-                String characters = "123456789ABCDEFGHIJKLMNPQRSTUVWXYZ";
-                int i1 = r.nextInt(34);
-                int i2 = r.nextInt(34);
-                int i3 = r.nextInt(34);
-                int i4 = r.nextInt(34);
-                int i5 = r.nextInt(34);
-                String s1 = characters.substring(i1, (i1 + 1));
-                String s2 = characters.substring(i2, (i2 + 1));
-                String s3 = characters.substring(i3, (i3 + 1));
-                String s4 = characters.substring(i4, (i4 + 1));
-                String s5 = characters.substring(i5, (i5 + 1));
-                IDtemp = (s1 + s2 + s3 + s4 + s5).toString();
-                if (!GuestIDtemp.contains(IDtemp))
-                {
-                    IDcreated = true;
-                }
+                IDcreated = true;
             }
-            jTextFieldBookingGuestID.setText(IDtemp);
         }
+        jTextFieldBookingGuestID.setText(IDtemp);
     }//GEN-LAST:event_jButtonBookingCreateIDActionPerformed
 
     private void jComboBoxCheckInMonthActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jComboBoxCheckInMonthActionPerformed
@@ -6582,13 +6573,21 @@ public class CasablancaGUI extends javax.swing.JFrame
         {
             //Searches for all rooms
             roomsListResult = roomsList;
+            jButtonSearchRoomBookRoom.setEnabled(false);
         } else if (jRadioButtonSearchRoom1.isSelected())
         {
             //Searches and finds all rooms of specified type, that is available from specified start-date to specified end-date
-            roomsListResult = checkRoomAvailability(roomsList, sDate, eDate);
+            if (eDate.after(sDate))
+            {
+                roomsListResult = checkRoomAvailability(roomsList, sDate, eDate);
+                jButtonSearchRoomBookRoom.setEnabled(true);
+                bookRoomStartDate.setTime(sDate.getTime());
+                bookRoomEndDate.setTime(eDate.getTime());
+            }
         } else if (jRadioButtonSearchRoom2.isSelected())
         {
             //Searches Database for all rooms of selected type, that have check-in on the specified start-date.
+            jButtonSearchRoomBookRoom.setEnabled(false);
             String sd = sdf.format(sDate.getTime());
             for(int i = 0; i<roomsList.size(); i++)
             {
@@ -6604,6 +6603,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         } else if (jRadioButtonSearchRoom3.isSelected())
         {
             //Searches Database for all rooms of selected type, that have check-out on the specified start-date.
+            jButtonSearchRoomBookRoom.setEnabled(false);
             String ed = sdf.format(sDate.getTime());
             for(int i = 0; i<roomsList.size(); i++)
             {
@@ -6696,7 +6696,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             int book = jListSearchRoomResult.getSelectedIndex();
             String rID = roomListInfo.get(book).getRoomID();
             jDialogSearchRoom.setVisible(false);
-            setupDialogBookingWithRoom(rID, startDate, endDate);
+            setupDialogBookingWithRoom(rID, bookRoomStartDate, bookRoomEndDate);
         }
     }//GEN-LAST:event_jButtonSearchRoomBookRoomActionPerformed
 
@@ -7859,12 +7859,6 @@ public class CasablancaGUI extends javax.swing.JFrame
     //Finds the status of a specified room on a specified date and returns the corresponding ImageIcon
     private ImageIcon findRoomStatus(Calendar frsDate, ArrayList<RoomAvaBookConstructor> frsList)
     {
-        // Starts by retrieving a list of all bookings from database on the current roomID
-        // Loops through all bookings one by one...
-            //If any booking overlaps OverviewStartDate then returns IconBook
-            //If a bookings start/end-date equals the specified date, then search list to see if another bookings-
-                    //corresponding end/start-date also equals the specified date and return the corresponding icon
-        //If no Icons have been returned by the end of the list, then return IconFree
         Date frsD = frsDate.getTime();
         String frsDateString = sdf.format(frsD);
         Calendar sBookDate = Calendar.getInstance();
