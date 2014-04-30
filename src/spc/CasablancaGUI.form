@@ -4497,9 +4497,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="jButtonRoomArrowUp">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/pictures/ArrowUp.png"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="UP"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[51, 36]"/>
@@ -4513,10 +4511,11 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonRoomArrowDown">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/pictures/ArrowDown.png"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="DOWN"/>
             <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+              <Insets value="[2, 1, 2, 1]"/>
+            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[51, 36]"/>
             </Property>
@@ -4681,12 +4680,8 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonPrevious7Days">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/pictures/ArrowLeft.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Previous 7 days"/>
+            <Property name="text" type="java.lang.String" value="&lt; Previous 7 days"/>
             <Property name="borderPainted" type="boolean" value="false"/>
-            <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[3, 0, 2, 0]"/>
             </Property>
@@ -4702,10 +4697,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonPrevious14Days">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Pictures/ArrowDoubleLeft.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Previous 14 days"/>
+            <Property name="text" type="java.lang.String" value="&lt;&lt;&lt; Previous 14 days"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
@@ -4723,12 +4715,8 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonNext7Days">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Pictures/ArrowRight.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Next 7 days"/>
+            <Property name="text" type="java.lang.String" value="Next 7 days &gt;&gt;&gt;"/>
             <Property name="borderPainted" type="boolean" value="false"/>
-            <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[3, 0, 2, 0]"/>
@@ -4745,10 +4733,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonNext14Days">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Pictures/ArrowDoubleRight.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Next 14 days"/>
+            <Property name="text" type="java.lang.String" value="Next 14 days&gt; "/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>

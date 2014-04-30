@@ -3046,7 +3046,7 @@ public class CasablancaGUI extends javax.swing.JFrame
         setMinimumSize(new java.awt.Dimension(967, 662));
         setResizable(false);
 
-        jButtonRoomArrowUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowUp.png"))); // NOI18N
+        jButtonRoomArrowUp.setText("UP");
         jButtonRoomArrowUp.setBorderPainted(false);
         jButtonRoomArrowUp.setPreferredSize(new java.awt.Dimension(51, 36));
         jButtonRoomArrowUp.addMouseListener(new java.awt.event.MouseAdapter()
@@ -3068,8 +3068,9 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonRoomArrowDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowDown.png"))); // NOI18N
+        jButtonRoomArrowDown.setText("DOWN");
         jButtonRoomArrowDown.setBorderPainted(false);
+        jButtonRoomArrowDown.setMargin(new java.awt.Insets(2, 1, 2, 1));
         jButtonRoomArrowDown.setPreferredSize(new java.awt.Dimension(51, 36));
         jButtonRoomArrowDown.addMouseListener(new java.awt.event.MouseAdapter()
         {
@@ -3184,10 +3185,8 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonPrevious7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ArrowLeft.png"))); // NOI18N
-        jButtonPrevious7Days.setText("Previous 7 days");
+        jButtonPrevious7Days.setText("< Previous 7 days");
         jButtonPrevious7Days.setBorderPainted(false);
-        jButtonPrevious7Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButtonPrevious7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
         jButtonPrevious7Days.setPreferredSize(new java.awt.Dimension(115, 22));
         jButtonPrevious7Days.addMouseListener(new java.awt.event.MouseAdapter()
@@ -3209,8 +3208,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonPrevious14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/ArrowDoubleLeft.png"))); // NOI18N
-        jButtonPrevious14Days.setText("Previous 14 days");
+        jButtonPrevious14Days.setText("<<< Previous 14 days");
         jButtonPrevious14Days.setBorderPainted(false);
         jButtonPrevious14Days.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButtonPrevious14Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
@@ -3234,10 +3232,8 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonNext7Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/ArrowRight.png"))); // NOI18N
-        jButtonNext7Days.setText("Next 7 days");
+        jButtonNext7Days.setText("Next 7 days >>>");
         jButtonNext7Days.setBorderPainted(false);
-        jButtonNext7Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext7Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jButtonNext7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
         jButtonNext7Days.setPreferredSize(new java.awt.Dimension(115, 22));
@@ -3260,8 +3256,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonNext14Days.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/ArrowDoubleRight.png"))); // NOI18N
-        jButtonNext14Days.setText("Next 14 days");
+        jButtonNext14Days.setText("Next 14 days> ");
         jButtonNext14Days.setBorderPainted(false);
         jButtonNext14Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext14Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
