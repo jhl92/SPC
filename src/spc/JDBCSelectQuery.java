@@ -826,7 +826,7 @@ public class JDBCSelectQuery
         return null;
     }
 
-    RoomTypeIDConstructor getRoomInfoFromRoomID(String roomID)
+    public RoomTypeIDConstructor getRoomInfoFromRoomID(String roomID)
     {
         //Gets RoomID and returns an object containing RoomID and RoomType, using the RoomTypeIDConstructor...
         Connection conn = null;
