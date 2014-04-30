@@ -2752,7 +2752,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         jDialogWaitOrNo.setVisible(true);
         jDialogWaitOrNo.setLocation(700, 250);
     }
-    public static void main(String args[])
+    public void FacGUI()
     {
         
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

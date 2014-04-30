@@ -58,12 +58,12 @@ public class Facilitet_GUITest
         //fail("The test case is a prototype.");
     }
 
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Facilitet_GUI.main(args);
-        //fail("The test case is a prototype.");
-    }
+//    @Test
+//    public void testMain() {
+//        System.out.println("main");
+//        String[] args = null;
+//        Facilitet_GUI.main;
+//        //fail("The test case is a prototype.");
+//    }
     
 }
