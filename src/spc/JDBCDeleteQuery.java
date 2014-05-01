@@ -12,7 +12,7 @@ import static spc.JDBCSelectQuery.url;
  *
  * @author Jonas
  */
-public class JDBCDeleteQuery
+public class JDBCDeleteQuery // Af Jonas Petersen & Junheng Li
 {
     // JDBC driver & database URL
 

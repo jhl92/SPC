@@ -7,7 +7,7 @@ package spc;
  */
 import java.sql.*;
 
-public class JDBCInsertQuery
+public class JDBCInsertQuery // Af Jonas Petersen & Junheng Li
 {
     // JDBC driver & database URL
 

@@ -11,7 +11,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import static spc.JDBCUpdateQuery.url;
 
-public class JDBCSelectQuery
+public class JDBCSelectQuery // Af Jonas Petersen & Junheng Li
 {
     // JDBC driver & database URL
 

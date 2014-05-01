@@ -14,7 +14,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author Jonas
+ * GUI Design Af Jonas Petersen, Esben Kaas & Junheng Li
  **/
 public class Facilitet_GUI extends javax.swing.JFrame
 {
@@ -184,7 +184,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         cal.roll(Calendar.DAY_OF_YEAR, true);
         jComboBoxSwimmingInstructorDate.addItem(sdf.format(cal.getTime()));
     }
-    
+    // Af Esben Kaas
     private String[] getComboBoxListFromToday() //Genererer de næste 7 dage (inklusiv dagens dato)
     {
         int currentDate = Integer.parseInt(cDate.format(presentDate.getTime()));
@@ -200,7 +200,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         }
         return listOfDates;
     }
-    
+    // Af Jonas Petersen
     private boolean bookLimitReached (String tfacDate){
         tempBookOverview = select.getBookedOverview(finalGuestID);
         ArrayList<String> limit = new ArrayList<>();
@@ -217,7 +217,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         if (limit.size()>=4) {return true;}
         return false;
     }
-    
+    // Af Jonas Petersen & Junheng Li
     private void loadListOverview() { //henter en liste over en kundes bookinger (facilitet)
         bookedOverview.removeAllElements();
         tempBookOverview = select.getBookedOverview(finalGuestID);
@@ -238,7 +238,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         }
         jListBookedOverview.setModel(bookedOverview);
     }
-    
+    // Af Jonas Petersen & Junheng Li
     private void loadWaitlistOverview(String date, String timeStart, String timeEnd, String facility) { //henter ventelisten for en given facilitet på en given dato & tid
         waitlistOverview.removeAllElements();
         tempPos = select.getWaitlistPosition(date, timeStart, timeEnd, facility);
@@ -251,7 +251,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         }
         jListWaitOverview.setModel(waitlistOverview);
     }
-    
+    // Af Jonas Petersen
     public boolean doubleBook (String cfacID, String cfacDate, String ctimeStart, String ctimeEnd){ //tjekker om en given booking allerede eksisterer
         tempBookOverview = select.getBookedOverview(finalGuestID);
         for(int i=0; i<tempBookOverview.size(); ++i) {
@@ -267,7 +267,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
         }
         return false;
     }
-    
+    // Af Jonas Petersen 
     public String convertFac (String entireBooking) { //Modtager en String, deler den op og konventerer derefter Facilitetstypen til et Facilitets ID
         String[] split = entireBooking.split(" ");
         String facType = split[1];
@@ -2263,6 +2263,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookHandballActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookHandballActionPerformed
     {//GEN-HEADEREND:event_jButtonBookHandballActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         tempFacID = "3"; 
         jLabelHandballErrorMessageBook.setVisible(false);
         jLabelHandballBookDone.setVisible(false);
@@ -2342,6 +2343,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonOverviewEditBooking1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewEditBooking1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewEditBooking1ActionPerformed
+        // Af Jonas Petersen & Junheng Li
         if(jListBookedOverview.isSelectionEmpty()) {
             jLabelPleaseSelectBooking.setVisible(true);
             jLabelPleaseSelectBooking.setText("Please select a booking på delete or edit");
@@ -2382,6 +2384,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookBadmintonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookBadmintonActionPerformed
     {//GEN-HEADEREND:event_jButtonBookBadmintonActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         tempFacID = "1";
         jLabelBadmintonBookDone.setVisible(false);
         jLabelBadmintonErrorMessageBook.setVisible(false);
@@ -2460,6 +2463,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookFitnessActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookFitnessActionPerformed
     {//GEN-HEADEREND:event_jButtonBookFitnessActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         tempFacID="9";
         jLabelFitnessErrorMessageBook1.setVisible(false);
         jLabelFitnessBookDone.setVisible(false);
@@ -2490,6 +2494,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookVolleyActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookVolleyActionPerformed
     {//GEN-HEADEREND:event_jButtonBookVolleyActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         tempFacID="6";
         jLabelVolleyballErrorMessageBook.setVisible(false);
         jLabelVolleyballBookDone.setVisible(false);
@@ -2521,6 +2526,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookTennisActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookTennisActionPerformed
     {//GEN-HEADEREND:event_jButtonBookTennisActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         tempFacID="7";
         jLabelTennisErrorMessageBook.setVisible(false);
         jLabelTennisErrorMessageNoHours.setVisible(false);
@@ -2596,6 +2602,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonOverviewEditBookingSaveChanges1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
     {//GEN-HEADEREND:event_jButtonOverviewEditBookingSaveChanges1ActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         int a = jListBookedOverview.getSelectedIndex();
         jLabelEditAlreadyBooked.setVisible(false);
         if(doubleBook(tempFacID, jComboBoxOverviewEditBookingDate1.getSelectedItem().toString(),
@@ -2624,6 +2631,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookGolfActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookGolfActionPerformed
     {//GEN-HEADEREND:event_jButtonBookGolfActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         tempFacID = "2";
         jLabelGolfErrorAlreadyBook.setVisible(false);
         jLabelGolfBookDone.setVisible(false);
@@ -2643,6 +2651,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonBookSwimmingActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonBookSwimmingActionPerformed
     {//GEN-HEADEREND:event_jButtonBookSwimmingActionPerformed
+        // Af Jonas Petersen, Esben Kaas & Junheng Li
         tempFacID="8";
         jLabelSwimmingErrorMessageNoHours.setVisible(false);
         jLabelSwimingBookDone.setVisible(false);
@@ -2674,6 +2683,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonGetWaitOverviewActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonGetWaitOverviewActionPerformed
     {//GEN-HEADEREND:event_jButtonGetWaitOverviewActionPerformed
+        // Af Jonas Petersen & Junheng Li
         loadWaitlistOverview(jComboBoxOverviewSelectDate.getSelectedItem().toString(),
                 jComboBoxOverviewTimeFrom.getSelectedIndex()+8+".00",
                 jComboBoxOverviewTimeFrom.getSelectedIndex()+9+".00",
@@ -2682,6 +2692,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonWaitYesActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonWaitYesActionPerformed
     {//GEN-HEADEREND:event_jButtonWaitYesActionPerformed
+        // Af Jonas Petersen & Junheng Li
         insert.JDBCInsertWait(finalGuestID, tempFacID, jComboBoxBadmintonTimeFrom.getSelectedIndex()+8+".00",
                 jComboBoxBadmintonTimeFrom.getSelectedIndex()+9+".00", jComboBoxBadmintonSelectDate.getSelectedItem().toString());
         jDialogWaitOrNo.setVisible(false);
@@ -2695,7 +2706,8 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonVolleyballRefreshAmountActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVolleyballRefreshAmountActionPerformed
     {//GEN-HEADEREND:event_jButtonVolleyballRefreshAmountActionPerformed
-         tempGetFac = select.getfacAvail("6", jComboBoxVolleyballSelectDate.getSelectedItem().toString(), 
+        // Af Jonas Petersen 
+        tempGetFac = select.getfacAvail("6", jComboBoxVolleyballSelectDate.getSelectedItem().toString(), 
                 jComboBoxVolleyballTimeFrom.getSelectedIndex()+8+".00", 
                 jComboBoxVolleyballTimeFrom.getSelectedIndex()+9+".00");
          jLabelVolleyballNoSign.setText(Integer.toString(tempGetFac.size()));
@@ -2703,6 +2715,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonSignInMainActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignInMainActionPerformed
     {//GEN-HEADEREND:event_jButtonSignInMainActionPerformed
+        // Af Jonas Petersen & Junheng Li
         finalGuestID = jTextFieldSignInGuestID.getText();
         tempGuestName = select.getInfoFromGuestID(finalGuestID);
         if(jTextFieldSignInGuestID.getText().isEmpty() ==true) {
@@ -2728,6 +2741,7 @@ public class Facilitet_GUI extends javax.swing.JFrame
 
     private void jButtonSignOutMainActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSignOutMainActionPerformed
     {//GEN-HEADEREND:event_jButtonSignOutMainActionPerformed
+        // Af Jonas Petersen & Junheng Li
         jTextFieldSignInGuestID.setText("");
         jLabelSignInGuestName.setText("");
         jTextFieldSignInGuestID.setEditable(true);

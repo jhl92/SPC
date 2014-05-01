@@ -8,8 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-
-public class JDBCUpdateQuery
+public class JDBCUpdateQuery // Af Jonas Petersen & Junheng Li
 {
     // JDBC driver & database URL
 
