@@ -25,7 +25,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Zarkov
+ * @author Janus Gjøe
  */
 public class CasablancaGUI extends javax.swing.JFrame
 {
