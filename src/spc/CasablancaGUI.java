@@ -3236,7 +3236,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonNext7Days.setText("Next 7 days >>>");
+        jButtonNext7Days.setText("Next 7 days >");
         jButtonNext7Days.setBorderPainted(false);
         jButtonNext7Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jButtonNext7Days.setMargin(new java.awt.Insets(3, 0, 2, 0));
@@ -3260,7 +3260,7 @@ public class CasablancaGUI extends javax.swing.JFrame
             }
         });
 
-        jButtonNext14Days.setText("Next 14 days> ");
+        jButtonNext14Days.setText("Next 14 days>>> ");
         jButtonNext14Days.setBorderPainted(false);
         jButtonNext14Days.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButtonNext14Days.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -3395,11 +3395,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate01Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate01Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate01Day.setText("Saturday");
         jLabelDate01Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate01.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate01.setText("24.March");
         jLabelDate01.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate01Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3433,11 +3431,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate02Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate02Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate02Day.setText("Wednesday");
         jLabelDate02Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate02.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate02.setText("24.March");
         jLabelDate02.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate02Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3471,11 +3467,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate03Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate03Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate03Day.setText("Monday");
         jLabelDate03Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate03.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate03.setText("24.March");
         jLabelDate03.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate03Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3509,11 +3503,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate04Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate04Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate04Day.setText("Monday");
         jLabelDate04Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate04.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate04.setText("24.March");
         jLabelDate04.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate04Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3547,11 +3539,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate05Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate05Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate05Day.setText("Monday");
         jLabelDate05Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate05.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate05.setText("24.March");
         jLabelDate05.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate05Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3585,11 +3575,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate06Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate06Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate06Day.setText("Monday");
         jLabelDate06Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate06.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate06.setText("24.March");
         jLabelDate06.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate06Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3623,11 +3611,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate07Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate07Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate07Day.setText("Monday");
         jLabelDate07Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate07.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate07.setText("24.March");
         jLabelDate07.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate07Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3661,11 +3647,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate08Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate08Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate08Day.setText("Monday");
         jLabelDate08Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate08.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate08.setText("24.March");
         jLabelDate08.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate08Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3699,11 +3683,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate09Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate09Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate09Day.setText("Monday");
         jLabelDate09Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate09.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate09.setText("24.March");
         jLabelDate09.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate09Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3737,11 +3719,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate10Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate10Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate10Day.setText("Monday");
         jLabelDate10Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate10.setText("24.March");
         jLabelDate10.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate10Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3775,11 +3755,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate11Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate11Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate11Day.setText("Monday");
         jLabelDate11Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate11.setText("24.March");
         jLabelDate11.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate11Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3813,11 +3791,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate12Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate12Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate12Day.setText("Monday");
         jLabelDate12Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate12.setText("24.March");
         jLabelDate12.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate12Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3851,11 +3827,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate13Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate13Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate13Day.setText("Monday");
         jLabelDate13Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate13.setText("24.March");
         jLabelDate13.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate13Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3889,11 +3863,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelDate14Day.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabelDate14Day.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate14Day.setText("Monday");
         jLabelDate14Day.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelDate14.setText("24.March");
         jLabelDate14.setPreferredSize(new java.awt.Dimension(56, 14));
 
         jLabelDate14Year.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3934,11 +3906,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom1RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom1RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom1RoomID.setText("4");
         jLabelRoom1RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom1RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom1RoomType.setText("(Single)");
         jLabelRoom1RoomType.setPreferredSize(new java.awt.Dimension(52, 14));
 
         javax.swing.GroupLayout jPanelRoom1Layout = new javax.swing.GroupLayout(jPanelRoom1);
@@ -3974,11 +3944,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom2RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom2RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom2RoomID.setText("32");
         jLabelRoom2RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom2RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom2RoomType.setText("(Single)");
         jLabelRoom2RoomType.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom2Layout = new javax.swing.GroupLayout(jPanelRoom2);
@@ -4013,11 +3981,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom3RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom3RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom3RoomID.setText("35");
         jLabelRoom3RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom3RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom3RoomType.setText("(Single)");
         jLabelRoom3RoomType.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom3Layout = new javax.swing.GroupLayout(jPanelRoom3);
@@ -4052,11 +4018,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom4RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom4RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom4RoomID.setText("60");
         jLabelRoom4RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom4RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom4RoomType.setText("(Single)");
         jLabelRoom4RoomType.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom4Layout = new javax.swing.GroupLayout(jPanelRoom4);
@@ -4091,11 +4055,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom5RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom5RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom5RoomID.setText("76");
         jLabelRoom5RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom5RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom5RoomType.setText("(Single)");
         jLabelRoom5RoomType.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom5Layout = new javax.swing.GroupLayout(jPanelRoom5);
@@ -4130,11 +4092,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom6RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom6RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom6RoomID.setText("78");
         jLabelRoom6RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom6RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom6RoomType.setText("(Single)");
         jLabelRoom6RoomType.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom6Layout = new javax.swing.GroupLayout(jPanelRoom6);
@@ -4169,11 +4129,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom7RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom7RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom7RoomID.setText("103");
         jLabelRoom7RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom7RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom7RoomType.setText("(Single)");
         jLabelRoom7RoomType.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom7Layout = new javax.swing.GroupLayout(jPanelRoom7);
@@ -4208,11 +4166,9 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelRoom8RoomID.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabelRoom8RoomID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom8RoomID.setText("104");
         jLabelRoom8RoomID.setPreferredSize(new java.awt.Dimension(56, 28));
 
         jLabelRoom8RoomType.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelRoom8RoomType.setText("(Single)");
         jLabelRoom8RoomType.setPreferredSize(new java.awt.Dimension(56, 14));
 
         javax.swing.GroupLayout jPanelRoom8Layout = new javax.swing.GroupLayout(jPanelRoom8);
@@ -5726,7 +5682,6 @@ public class CasablancaGUI extends javax.swing.JFrame
 
         jLabelMainShowDate.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabelMainShowDate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabelMainShowDate.setText("Wednesday, 21. September - 2014");
         jLabelMainShowDate.setPreferredSize(new java.awt.Dimension(250, 24));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -5849,7 +5804,7 @@ public class CasablancaGUI extends javax.swing.JFrame
                                 .addGap(0, 0, 0)
                                 .addComponent(jPanelRoom8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelOverviewCells, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, 546, Short.MAX_VALUE))
+                    .addComponent(jPanelOverviewCellsButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, 546, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
